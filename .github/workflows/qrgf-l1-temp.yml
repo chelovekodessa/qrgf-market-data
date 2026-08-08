@@ -1,0 +1,185 @@
+name: Temporary QRGF L1 bulk snapshot
+
+on:
+  push:
+    branches: [qrgf-l1-temp-20260808]
+    paths:
+      - ".github/workflows/qrgf-l1-temp.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-l1-temp-20260808
+  cancel-in-progress: true
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: qrgf-l1-temp-20260808
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect TradingView whole-market snapshot and align to L0
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import base64, csv, gzip, hashlib, io, json, math, urllib.request
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          branch_dir = Path('data/temp-l1')
+          branch_dir.mkdir(parents=True, exist_ok=True)
+
+          l0_b64 = Path('data/latest/l0-universe.csv.gz.b64').read_text(encoding='utf-8')
+          l0_csv = gzip.decompress(base64.b64decode(l0_b64)).decode('utf-8-sig')
+          l0_rows = list(csv.DictReader(io.StringIO(l0_csv)))
+          l0_by_ticker = {str(r.get('ticker') or '').strip().upper(): r for r in l0_rows if str(r.get('ticker') or '').strip()}
+
+          columns = [
+              'name', 'description', 'type', 'exchange', 'close', 'market_cap_basic',
+              'average_volume_90d_calc', 'Perf.3M', 'Perf.6M', 'Perf.Y',
+              'price_52_week_high', 'Volatility.M', 'sector', 'update_mode'
+          ]
+          payload = {
+              'markets': ['america'],
+              'symbols': {'query': {'types': []}, 'tickers': []},
+              'options': {'lang': 'en'},
+              'columns': columns,
+              'sort': {'sortBy': 'market_cap_basic', 'sortOrder': 'desc'},
+              'range': [0, 25000],
+          }
+          req = urllib.request.Request(
+              'https://scanner.tradingview.com/america/scan',
+              data=json.dumps(payload).encode('utf-8'),
+              headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'},
+              method='POST',
+          )
+          with urllib.request.urlopen(req, timeout=90) as resp:
+              tv = json.loads(resp.read().decode('utf-8'))
+
+          def finite(v):
+              try:
+                  x = float(v)
+                  return x if math.isfinite(x) else None
+              except (TypeError, ValueError):
+                  return None
+
+          exchange_map = {'Q': 'NASDAQ', 'N': 'NYSE', 'A': 'AMEX', 'P': 'AMEX', 'Z': 'CBOE'}
+          tv_by_symbol = {}
+          for item in tv.get('data', []):
+              sym_full = str(item.get('s') or '')
+              vals = item.get('d') or []
+              if len(vals) != len(columns) or ':' not in sym_full:
+                  continue
+              exch, symbol = sym_full.split(':', 1)
+              symbol = symbol.upper()
+              rec = dict(zip(columns, vals))
+              rec['_tv_exchange'] = exch.upper()
+              rec['_tv_symbol'] = symbol
+              for alias in {symbol, symbol.replace('.', '/'), symbol.replace('/', '.'), symbol.replace('-', '.')}:
+                  tv_by_symbol.setdefault(alias, []).append(rec)
+
+          retrieved = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+          out = []
+          matched = 0
+          exact_exchange = 0
+          missing = []
+          for ticker in sorted(l0_by_ticker):
+              base = l0_by_ticker[ticker]
+              candidates = tv_by_symbol.get(ticker, []) or tv_by_symbol.get(ticker.replace('.', '/'), []) or tv_by_symbol.get(ticker.replace('/', '.'), [])
+              wanted = exchange_map.get(str(base.get('listing_exchange') or '').upper())
+              rec = None
+              if wanted:
+                  rec = next((x for x in candidates if x['_tv_exchange'] == wanted), None)
+                  if rec is not None:
+                      exact_exchange += 1
+              if rec is None and len(candidates) == 1:
+                  rec = candidates[0]
+              if rec is None and candidates:
+                  # Prefer primary US exchanges deterministically when the symbol is duplicated.
+                  order = {'NASDAQ': 0, 'NYSE': 1, 'AMEX': 2, 'CBOE': 3}
+                  rec = sorted(candidates, key=lambda x: (order.get(x['_tv_exchange'], 99), x['_tv_exchange']))[0]
+
+              price = finite(rec.get('close')) if rec else None
+              cap = finite(rec.get('market_cap_basic')) if rec else None
+              avg_vol = finite(rec.get('average_volume_90d_calc')) if rec else None
+              high52 = finite(rec.get('price_52_week_high')) if rec else None
+              dd = None
+              if price is not None and high52 is not None and high52 > 0:
+                  dd = max(0.0, 100.0 * (1.0 - price / high52))
+              adv = price * avg_vol if price is not None and avg_vol is not None else None
+              if rec:
+                  matched += 1
+              else:
+                  missing.append(ticker)
+              out.append({
+                  'ticker': ticker,
+                  'company': base.get('company_name') or (rec.get('description') if rec else ''),
+                  'contract_id': base.get('contract_id') or '',
+                  'security_type': base.get('security_type') or '',
+                  'instrument_status': base.get('instrument_status') or '',
+                  'exchange': base.get('listing_exchange') or '',
+                  'sector': rec.get('sector') if rec else '',
+                  'price': price if price is not None else '',
+                  'market_cap': cap if cap is not None else '',
+                  'avg_dollar_volume': adv if adv is not None else '',
+                  'return_3m': finite(rec.get('Perf.3M')) if rec else '',
+                  'return_6m': finite(rec.get('Perf.6M')) if rec else '',
+                  'return_12m': finite(rec.get('Perf.Y')) if rec else '',
+                  'drawdown_52w': dd if dd is not None else '',
+                  'historical_volatility': finite(rec.get('Volatility.M')) if rec else '',
+                  'as_of': retrieved,
+                  'retrieved_at': retrieved,
+                  'percent_unit': 'percent',
+                  'source_priority': 50,
+              })
+
+          fields = list(out[0].keys())
+          csv_buf = io.StringIO(newline='')
+          writer = csv.DictWriter(csv_buf, fieldnames=fields)
+          writer.writeheader(); writer.writerows(out)
+          csv_bytes = csv_buf.getvalue().encode('utf-8')
+          gz_bytes = gzip.compress(csv_bytes, compresslevel=9, mtime=0)
+          b64_text = base64.encodebytes(gz_bytes).decode('ascii')
+          (branch_dir / 'l1-snapshot.csv.gz.b64').write_text(b64_text, encoding='ascii')
+          manifest = {
+              'schema_version': '1.0.0',
+              'source_id': 'tradingview_america_scanner_delayed',
+              'source_url': 'https://scanner.tradingview.com/america/scan',
+              'retrieved_at': retrieved,
+              'complete_request': True,
+              'scanner_total_count': tv.get('totalCount'),
+              'l0_rows': len(l0_rows),
+              'output_rows': len(out),
+              'matched_rows': matched,
+              'exact_exchange_matches': exact_exchange,
+              'missing_rows': len(missing),
+              'missing_tickers': missing,
+              'columns_requested': columns,
+              'derivations': {
+                  'avg_dollar_volume': 'close * average_volume_90d_calc',
+                  'drawdown_52w': '100 * (1 - close / price_52_week_high)',
+                  'historical_volatility': 'TradingView Volatility.M field, percent unit',
+              },
+              'percent_unit': 'percent',
+              'csv_sha256': hashlib.sha256(csv_bytes).hexdigest(),
+              'gzip_sha256': hashlib.sha256(gz_bytes).hexdigest(),
+              'bundle_sha256': hashlib.sha256(b64_text.encode('ascii')).hexdigest(),
+              'bundle_line_count': len(b64_text.splitlines()),
+          }
+          (branch_dir / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({k: manifest[k] for k in ['scanner_total_count','l0_rows','output_rows','matched_rows','exact_exchange_matches','missing_rows']}, indent=2))
+          PY
+      - name: Commit temporary snapshot to temporary branch
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-l1-temp-bot"
+          git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
+          git add data/temp-l1
+          git commit -m "Temporary L1 bulk snapshot"
+          git push origin HEAD:qrgf-l1-temp-20260808
