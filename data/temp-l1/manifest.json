@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "source_id": "tradingview_america_scanner_delayed",
   "source_url": "https://scanner.tradingview.com/america/scan",
-  "retrieved_at": "2026-08-08T08:33:41Z",
+  "retrieved_at": "2026-08-08T08:36:05Z",
   "complete_request": true,
   "scanner_total_count": 19809,
   "l0_rows": 5136,
@@ -39,14 +39,285 @@
     "sector",
     "update_mode"
   ],
+  "field_present_counts": {
+    "price": 5125,
+    "market_cap": 5058,
+    "avg_dollar_volume": 5002,
+    "return_3m": 5121,
+    "return_6m": 5121,
+    "return_12m": 5121,
+    "drawdown_52w": 5121,
+    "historical_volatility": 5121
+  },
+  "structurally_rankable_rows_by_L1_thresholds": 3117,
+  "structural_unresolved_rows_without_history_resolution": 42,
+  "structural_unresolved_reason_counts": {
+    "market_cap": 42
+  },
+  "structural_history_unknown_rows": 0,
+  "structural_history_unknown_tickers_sample": [],
+  "structural_unresolved_sample": [
+    {
+      "ticker": "CIBR",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "CLOU",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "HACK",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "IBB",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "ICLN",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "IGV",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "IJR",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "KBE",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "KRE",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "ONEQ",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "QQQ",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "SKYY",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "SMH",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "SOXX",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "SPY",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "TAN",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VAW",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VCR",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VDC",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VFH",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VGT",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VHT",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VIS",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VNQ",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VOO",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VOX",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "VPU",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "WCLD",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XBI",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLB",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLC",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLI",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLP",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLRE",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLV",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XLY",
+      "missing": [
+        "market_cap"
+      ]
+    },
+    {
+      "ticker": "XOP",
+      "missing": [
+        "market_cap"
+      ]
+    }
+  ],
   "derivations": {
     "avg_dollar_volume": "close * average_volume_90d_calc",
     "drawdown_52w": "100 * (1 - close / price_52_week_high)",
     "historical_volatility": "TradingView Volatility.M field, percent unit"
   },
   "percent_unit": "percent",
-  "csv_sha256": "ef22a97a2a9f1dee59f2571df8da808804944a22596d8917835359625f444a09",
-  "gzip_sha256": "42b6465344a579b50dc9b73f14b4805b359b3fdc9ee882ffcdea3be6a13d892a",
-  "bundle_sha256": "d538990b61430cebf7efddc13c3542a9505fb3c53e10e1da0f2c483e905d23d6",
+  "csv_sha256": "9385b0769e387a2824a8a240c82586fb6c708e77f61c9bc4190f588b0ba36bfc",
+  "gzip_sha256": "949d7e805a04e393df1a489786d9635747c587c3d379fc52b396947e523aee5e",
+  "bundle_sha256": "4dbf7ccfbaae420f0941024241f2f335c05539d3a6728aa12c817ea5460ce1ed",
   "bundle_line_count": 8158
 }
