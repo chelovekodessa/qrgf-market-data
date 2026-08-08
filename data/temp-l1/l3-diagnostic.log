@@ -1,0 +1,35 @@
+py_compile_exit=0
+Traceback (most recent call last):
+  File "/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/collect_and_rank_l3_sec.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/collect_and_rank_l3_sec.py", line 182, in main
+    l2=json.loads(args.l2_json.read_text(encoding='utf-8'));rows=l2.get('finalists') or [];mapping=ticker_map();throttle();retrieved=nowz();payloads=[];collection=[]
+                                                                                                   ^^^^^^^^^^^^
+  File "/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/collect_and_rank_l3_sec.py", line 42, in ticker_map
+    raw=get_json('https://www.sec.gov/files/company_tickers.json');out={}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/collect_and_rank_l3_sec.py", line 27, in get_json
+    raise err
+  File "/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/collect_and_rank_l3_sec.py", line 24, in get_json
+    with urllib.request.urlopen(req,timeout=45) as r:return json.loads(r.read().decode('utf-8'))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+run_exit=1
