@@ -1,0 +1,74 @@
+{
+  "etf": {
+    "ok": false,
+    "error": "<HTTPError 404: 'Not Found'>"
+  },
+  "global_etf": {
+    "ok": true,
+    "totalCount": 19809,
+    "samples": [
+      {
+        "s": "AMEX:IWM",
+        "d": [
+          "IWM",
+          301.56,
+          null
+        ]
+      },
+      {
+        "s": "NASDAQ:QQQ",
+        "d": [
+          "QQQ",
+          723.03,
+          null
+        ]
+      },
+      {
+        "s": "AMEX:SPY",
+        "d": [
+          "SPY",
+          773.26,
+          null
+        ]
+      }
+    ]
+  },
+  "america_etf_label": {
+    "ok": true,
+    "totalCount": 19809,
+    "samples": [
+      {
+        "s": "AMEX:XLK",
+        "d": [
+          "XLK",
+          187.97,
+          null
+        ]
+      },
+      {
+        "s": "AMEX:IWM",
+        "d": [
+          "IWM",
+          301.56,
+          null
+        ]
+      },
+      {
+        "s": "NASDAQ:QQQ",
+        "d": [
+          "QQQ",
+          723.03,
+          null
+        ]
+      },
+      {
+        "s": "AMEX:SPY",
+        "d": [
+          "SPY",
+          773.26,
+          null
+        ]
+      }
+    ]
+  }
+}
