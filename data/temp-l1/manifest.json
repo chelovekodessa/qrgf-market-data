@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "source_id": "tradingview_america_scanner_delayed",
+  "source_url": "https://scanner.tradingview.com/america/scan",
+  "retrieved_at": "2026-08-08T08:33:41Z",
+  "complete_request": true,
+  "scanner_total_count": 19809,
+  "l0_rows": 5136,
+  "output_rows": 5136,
+  "matched_rows": 5125,
+  "exact_exchange_matches": 5125,
+  "missing_rows": 11,
+  "missing_tickers": [
+    "ATCX",
+    "EFTY",
+    "HCHL",
+    "LAWR",
+    "MAGH",
+    "MCTA",
+    "NCL",
+    "OST",
+    "PC",
+    "QVC",
+    "SVA"
+  ],
+  "columns_requested": [
+    "name",
+    "description",
+    "type",
+    "exchange",
+    "close",
+    "market_cap_basic",
+    "average_volume_90d_calc",
+    "Perf.3M",
+    "Perf.6M",
+    "Perf.Y",
+    "price_52_week_high",
+    "Volatility.M",
+    "sector",
+    "update_mode"
+  ],
+  "derivations": {
+    "avg_dollar_volume": "close * average_volume_90d_calc",
+    "drawdown_52w": "100 * (1 - close / price_52_week_high)",
+    "historical_volatility": "TradingView Volatility.M field, percent unit"
+  },
+  "percent_unit": "percent",
+  "csv_sha256": "ef22a97a2a9f1dee59f2571df8da808804944a22596d8917835359625f444a09",
+  "gzip_sha256": "42b6465344a579b50dc9b73f14b4805b359b3fdc9ee882ffcdea3be6a13d892a",
+  "bundle_sha256": "d538990b61430cebf7efddc13c3542a9505fb3c53e10e1da0f2c483e905d23d6",
+  "bundle_line_count": 8158
+}
