@@ -42,7 +42,7 @@ jobs:
           l0_by_ticker = {str(r.get('ticker') or '').strip().upper(): r for r in l0_rows if str(r.get('ticker') or '').strip()}
 
           columns = [
-              'name', 'description', 'type', 'exchange', 'close', 'market_cap_basic', 'total_assets',
+              'name', 'description', 'type', 'exchange', 'close', 'market_cap_basic', 'aum',
               'average_volume_90d_calc', 'Perf.3M', 'Perf.6M', 'Perf.Y',
               'price_52_week_high', 'Volatility.M', 'sector', 'update_mode'
           ]
@@ -112,13 +112,13 @@ jobs:
               cap = finite(rec.get('market_cap_basic')) if rec else None
               size_metric_kind = 'market_cap_basic' if cap is not None else ''
               if sec == 'etf' and cap is None and rec:
-                  fund_assets = finite(rec.get('total_assets'))
-                  if fund_assets is not None and fund_assets > 0:
-                      cap = fund_assets
-                      size_metric_kind = 'etf_total_assets'
+                  fund_aum = finite(rec.get('aum'))
+                  if fund_aum is not None and fund_aum > 0:
+                      cap = fund_aum
+                      size_metric_kind = 'etf_aum'
                       etf_size_imputed += 1
                       if len(etf_size_samples) < 20:
-                          etf_size_samples.append({'ticker': ticker, 'total_assets': fund_assets})
+                          etf_size_samples.append({'ticker': ticker, 'aum': fund_aum})
               avg_vol = finite(rec.get('average_volume_90d_calc')) if rec else None
               high52 = finite(rec.get('price_52_week_high')) if rec else None
               dd = None
@@ -209,7 +209,7 @@ jobs:
               'missing_tickers': missing,
               'columns_requested': columns,
               'field_present_counts': present_counts,
-              'etf_size_metric_rule': 'For security_type=etf only, when market_cap_basic is missing, market_cap field carries TradingView total_assets as a fund-size proxy. This affects coverage only; bulk_prefilter market_cap_points gives ETFs a fixed score independent of this value.',
+              'etf_size_metric_rule': 'For security_type=etf only, when market_cap_basic is missing, market_cap field carries TradingView aum as a fund-size proxy. This affects coverage only; bulk_prefilter market_cap_points gives ETFs a fixed score independent of this value.',
               'etf_size_metric_imputed_rows': etf_size_imputed,
               'etf_size_metric_samples': etf_size_samples,
               'structurally_rankable_rows_by_L1_thresholds': len(structural),
@@ -242,5 +242,5 @@ jobs:
             echo "Temporary snapshot unchanged"
             exit 0
           fi
-          git commit -m "Temporary L1 bulk snapshot ETF size metric"
+          git commit -m "Temporary L1 bulk snapshot ETF AUM"
           git push origin HEAD:qrgf-l1-temp-20260808
