@@ -1,0 +1,338 @@
+{
+  "tradingview": {
+    "ok": true,
+    "first": {
+      "symbols_remaining": 0,
+      "symbols": [
+        {
+          "symbol": "<em>AAPL</em>",
+          "description": "Apple Inc.",
+          "type": "stock",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "037833100",
+          "isin": "US0378331005",
+          "cik_code": "0000320193",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "apple",
+          "logo": {
+            "style": "single",
+            "logoid": "apple"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "is_primary_listing": true,
+          "typespecs": [
+            "common"
+          ]
+        },
+        {
+          "symbol": "AAPU",
+          "description": "Direxion Daily <em>AAPL</em> Bull 2X ETF",
+          "type": "fund",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "25461A874",
+          "isin": "US25461A8743",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "direxion",
+          "logo": {
+            "style": "single",
+            "logoid": "direxion"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "typespecs": [
+            "etf"
+          ]
+        },
+        {
+          "symbol": "<em>AAPL</em>TXX",
+          "description": "Bank of Montreal Capped Point to Point Fully Principally Protected Note <em>AAPL</em>TXX",
+          "type": "structured",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "06374VRH1",
+          "isin": "US06374VRH14",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "bank-of-montreal",
+          "logo": {
+            "style": "single",
+            "logoid": "bank-of-montreal"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "params": [
+            "eod"
+          ]
+        },
+        {
+          "symbol": "<em>AAPL</em>ZXX",
+          "description": "Citigroup Global Markets Holdings Inc. Issuer Callable Contingent Interest Barrier Note <em>AAPL</em>ZXX",
+          "type": "structured",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "17331CYT8",
+          "isin": "US17331CYT88",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "citigroup",
+          "logo": {
+            "style": "single",
+            "logoid": "citigroup"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "params": [
+            "eod"
+          ]
+        },
+        {
+          "symbol": "<em>AAPL</em>WXX",
+          "description": "JPMorgan Chase Financial Company LLC Dual Directional Buffer Note <em>AAPL</em>WXX",
+          "type": "structured",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "48133VKW9",
+          "isin": "US48133VKW99",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "params": [
+            "eod"
+          ]
+        },
+        {
+          "symbol": "<em>AAPL</em>YXX",
+          "description": "Barclays Bank PLC Point to Point Buffer Note <em>AAPL</em>YXX",
+          "type": "structured",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "06749NUN0",
+          "isin": "US06749NUN01",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "barclays",
+          "logo": {
+            "style": "single",
+            "logoid": "barclays"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "params": [
+            "eod"
+          ]
+        },
+        {
+          "symbol": "<em>AAPL</em>IXX",
+          "description": "Barclays Bank PLC Point to Point Worst Of Buffer Note <em>AAPL</em>IXX",
+          "type": "structured",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "06749NZ70",
+          "isin": "US06749NZ709",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "barclays",
+          "logo": {
+            "style": "single",
+            "logoid": "barclays"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "params": [
+            "eod"
+          ]
+        },
+        {
+          "symbol": "<em>AAPL</em>DXX",
+          "description": "Barclays Bank PLC Capped Point to Point Fully Principally Protected Note <em>AAPL</em>DXX",
+          "type": "structured",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "06749NV58",
+          "isin": "US06749NV583",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "barclays",
+          "logo": {
+            "style": "single",
+            "logoid": "barclays"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "params": [
+            "eod"
+          ]
+        },
+        {
+          "symbol": "<em>AAPL</em>VXX",
+          "description": "Citigroup Global Markets Holdings Inc. Capped Point to Point Worst Of Barrier Note <em>AAPL</em>VXX",
+          "type": "structured",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "17331CEM5",
+          "isin": "US17331CEM55",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "citigroup",
+          "logo": {
+            "style": "single",
+            "logoid": "citigroup"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "params": [
+            "eod"
+          ]
+        },
+        {
+          "symbol": "AAPD",
+          "description": "Direxion Daily <em>AAPL</em> Bear 1X ETF",
+          "type": "fund",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "25461A304",
+          "isin": "US25461A3041",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "direxion",
+          "logo": {
+            "style": "single",
+            "logoid": "direxion"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "typespecs": [
+            "etf"
+          ]
+        },
+        {
+          "symbol": "AAPB",
+          "description": "GraniteShares 2x Long <em>AAPL</em> Daily ETF",
+          "type": "fund",
+          "exchange": "NASDAQ",
+          "found_by_isin": false,
+          "found_by_cusip": false,
+          "cusip": "38747R884",
+          "isin": "US38747R8842",
+          "currency_code": "USD",
+          "currency-logoid": "country/US",
+          "logoid": "graniteshares",
+          "logo": {
+            "style": "single",
+            "logoid": "graniteshares"
+          },
+          "provider_id": "ice",
+          "source_logoid": "source/NASDAQ",
+          "source2": {
+            "id": "NASDAQ",
+            "name": "Nasdaq Stock Market",
+            "description": "Nasdaq Stock Market"
+          },
+          "source_id": "NASDAQ",
+          "country": "US",
+          "typespecs": [
+            "etf"
+          ]
+        }
+      ]
+    }
+  },
+  "submissions": {
+    "ok": false,
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  "companyfacts": {
+    "ok": false,
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  "filing": {
+    "ok": false,
+    "error": "<HTTPError 403: 'Forbidden'>"
+  }
+}
