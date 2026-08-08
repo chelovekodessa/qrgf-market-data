@@ -1,5 +1,4 @@
-name: Temporary QRGF lineage export
-# compact-lineage-for-local-state
+name: Temporary QRGF linewise lineage export
 
 on:
   push:
@@ -21,7 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build compact lineage keys
+      - name: Build linewise lineage files
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -30,18 +29,15 @@ jobs:
           root=Path('data/temp-l1')
           l1=list(csv.DictReader((root/'l1-finalists.csv').open(encoding='utf-8',newline='')))
           l2=json.loads((root/'l2-output.json').read_text(encoding='utf-8'))
-          payload={
-            'l1_selected': [[r.get('ticker'),r.get('contract_id'),r.get('l1_score')] for r in l1],
-            'l2_selected': [[r.get('ticker'),r.get('contract_id')] for r in l2.get('finalists',[])],
-          }
-          (root/'lineage-sets.json').write_text(json.dumps(payload,separators=(',',':'))+'\n',encoding='utf-8')
-          print(len(payload['l1_selected']),len(payload['l2_selected']))
+          (root/'l1-selected.tsv').write_text(''.join(f"{r.get(\"ticker\")}\t{r.get(\"contract_id\")}\t{r.get(\"l1_score\")}\n" for r in l1),encoding='utf-8')
+          (root/'l2-selected.tsv').write_text(''.join(f"{r.get(\"ticker\")}\t{r.get(\"contract_id\")}\n" for r in l2.get('finalists',[])),encoding='utf-8')
+          print('l1',len(l1),'l2',len(l2.get('finalists',[])))
           PY
-      - name: Commit compact lineage
+      - name: Commit linewise lineage
         run: |
           set -euo pipefail
           git config user.name "qrgf-l1-temp-bot"
           git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
-          git add data/temp-l1/lineage-sets.json
-          git commit -m "Temporary compact L1 L2 lineage sets"
+          git add data/temp-l1/l1-selected.tsv data/temp-l1/l2-selected.tsv
+          git commit -m "Temporary linewise L1 L2 lineage keys"
           git push origin HEAD:qrgf-l1-temp-20260808
