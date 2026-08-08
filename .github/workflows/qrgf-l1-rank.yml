@@ -20,81 +20,64 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Decode L1 snapshot
+      - name: Run ranking with captured diagnostics
+        shell: bash
         run: |
-          set -euo pipefail
-          python - <<'PY'
+          set +e
+          mkdir -p data/temp-l1
+          : > data/temp-l1/l1-rank-diagnostic.log
+          python -m py_compile scripts/bulk_prefilter.py >> data/temp-l1/l1-rank-diagnostic.log 2>&1
+          echo "py_compile_exit=$?" >> data/temp-l1/l1-rank-diagnostic.log
+          python - <<'PY' >> data/temp-l1/l1-rank-diagnostic.log 2>&1
           import base64, gzip
           from pathlib import Path
           src = Path('data/temp-l1/l1-snapshot.csv.gz.b64')
           raw = base64.b64decode(src.read_text(encoding='ascii'))
           csv_bytes = gzip.decompress(raw)
           Path('data/temp-l1/l1-snapshot.csv').write_bytes(csv_bytes)
+          print('snapshot_rows', csv_bytes.count(b'\n') - 1)
           PY
-      - name: Run L1 global prefilter
-        run: |
-          set -euo pipefail
+          echo "decode_exit=$?" >> data/temp-l1/l1-rank-diagnostic.log
           python scripts/bulk_prefilter.py data/temp-l1/l1-snapshot.csv \
             --output data/temp-l1/l1-finalists.csv \
             --pending-output data/temp-l1/l1-pending.csv \
-            --summary data/temp-l1/l1-summary.json
-      - name: Build compact transfer bundles
-        run: |
-          set -euo pipefail
-          python - <<'PY'
+            --summary data/temp-l1/l1-summary.json >> data/temp-l1/l1-rank-diagnostic.log 2>&1
+          RANK_EXIT=$?
+          echo "rank_exit=$RANK_EXIT" >> data/temp-l1/l1-rank-diagnostic.log
+          if [ "$RANK_EXIT" -eq 0 ]; then
+            python - <<'PY' >> data/temp-l1/l1-rank-diagnostic.log 2>&1
           import base64, csv, gzip, hashlib, io, json
           from pathlib import Path
-
           root = Path('data/temp-l1')
           summary = json.loads((root/'l1-summary.json').read_text())
           finalists = list(csv.DictReader((root/'l1-finalists.csv').open(encoding='utf-8', newline='')))
           pending = list(csv.DictReader((root/'l1-pending.csv').open(encoding='utf-8', newline='')))
-
-          finalist_fields = [
-            'ticker','company','contract_id','security_type','instrument_status','exchange','sector',
-            'price','market_cap','avg_dollar_volume','return_3m','return_6m','return_12m','drawdown_52w',
-            'historical_volatility','momentum_history_status','history_sufficiency','as_of','retrieved_at',
-            'l1_score','l1_status','opportunity_coverage_pct','rankable','selected_for_next_stage'
-          ]
+          finalist_fields = ['ticker','company','contract_id','security_type','instrument_status','exchange','sector','price','market_cap','avg_dollar_volume','return_3m','return_6m','return_12m','drawdown_52w','historical_volatility','momentum_history_status','history_sufficiency','as_of','retrieved_at','l1_score','l1_status','opportunity_coverage_pct','rankable','selected_for_next_stage']
           state_fields = ['ticker','contract_id','l1_score','l1_status','history_sufficiency','opportunity_coverage_pct','rankable','selected_for_next_stage']
-
           def compact(rows, fields):
               buf = io.StringIO(newline='')
               w = csv.DictWriter(buf, fieldnames=fields)
               w.writeheader()
-              for r in rows:
-                  w.writerow({f:r.get(f,'') for f in fields})
+              for r in rows: w.writerow({f:r.get(f,'') for f in fields})
               return buf.getvalue().encode('utf-8')
-
           def bundle(name, payload):
               gz = gzip.compress(payload, compresslevel=9, mtime=0)
               b64 = base64.encodebytes(gz).decode('ascii')
               (root/f'{name}.csv.gz.b64').write_text(b64, encoding='ascii')
-              return {
-                'rows': payload.count(b'\n') - 1,
-                'csv_sha256': hashlib.sha256(payload).hexdigest(),
-                'gzip_sha256': hashlib.sha256(gz).hexdigest(),
-                'bundle_sha256': hashlib.sha256(b64.encode('ascii')).hexdigest(),
-                'bundle_line_count': len(b64.splitlines()),
-              }
-
-          finalist_payload = compact(finalists, finalist_fields)
-          all_rows = finalists + pending
-          all_state_payload = compact(all_rows, state_fields)
-          manifest = {
-            'summary': summary,
-            'finalists_bundle': bundle('l1-finalists-compact', finalist_payload),
-            'all_state_bundle': bundle('l1-all-state-compact', all_state_payload),
-            'top20': [{k:r.get(k) for k in ('ticker','company','l1_score','drawdown_52w','return_3m','return_6m','return_12m','avg_dollar_volume')} for r in finalists[:20]],
-          }
+              return {'rows': payload.count(b'\n') - 1, 'csv_sha256': hashlib.sha256(payload).hexdigest(), 'gzip_sha256': hashlib.sha256(gz).hexdigest(), 'bundle_sha256': hashlib.sha256(b64.encode('ascii')).hexdigest(), 'bundle_line_count': len(b64.splitlines())}
+          manifest = {'summary': summary, 'finalists_bundle': bundle('l1-finalists-compact', compact(finalists, finalist_fields)), 'all_state_bundle': bundle('l1-all-state-compact', compact(finalists + pending, state_fields)), 'top20': [{k:r.get(k) for k in ('ticker','company','l1_score','drawdown_52w','return_3m','return_6m','return_12m','avg_dollar_volume')} for r in finalists[:20]]}
           (root/'l1-rank-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
-          (root/'l1-snapshot.csv').unlink(missing_ok=True)
+          print('bundle_build_ok', len(finalists), len(pending))
           PY
-      - name: Commit L1 ranking results
-        run: |
-          set -euo pipefail
+            echo "bundle_exit=$?" >> data/temp-l1/l1-rank-diagnostic.log
+          fi
+          rm -f data/temp-l1/l1-snapshot.csv
           git config user.name "qrgf-l1-temp-bot"
           git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
-          git add data/temp-l1/l1-summary.json data/temp-l1/l1-finalists.csv data/temp-l1/l1-pending.csv data/temp-l1/l1-finalists-compact.csv.gz.b64 data/temp-l1/l1-all-state-compact.csv.gz.b64 data/temp-l1/l1-rank-manifest.json
-          git commit -m "Temporary L1 global ranking results"
-          git push origin HEAD:qrgf-l1-temp-20260808
+          git add data/temp-l1/l1-rank-diagnostic.log
+          for f in data/temp-l1/l1-summary.json data/temp-l1/l1-finalists.csv data/temp-l1/l1-pending.csv data/temp-l1/l1-finalists-compact.csv.gz.b64 data/temp-l1/l1-all-state-compact.csv.gz.b64 data/temp-l1/l1-rank-manifest.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          git commit -m "Temporary L1 ranking diagnostics and results" || true
+          git push origin HEAD:qrgf-l1-temp-20260808 || true
+          exit 0
