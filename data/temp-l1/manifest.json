@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "source_id": "tradingview_america_scanner_delayed",
   "source_url": "https://scanner.tradingview.com/america/scan",
-  "retrieved_at": "2026-08-08T08:36:05Z",
+  "retrieved_at": "2026-08-08T08:38:51Z",
   "complete_request": true,
   "scanner_total_count": 19809,
   "l0_rows": 5136,
@@ -30,6 +30,7 @@
     "exchange",
     "close",
     "market_cap_basic",
+    "total_assets",
     "average_volume_90d_calc",
     "Perf.3M",
     "Perf.6M",
@@ -49,6 +50,9 @@
     "drawdown_52w": 5121,
     "historical_volatility": 5121
   },
+  "etf_size_metric_rule": "For security_type=etf only, when market_cap_basic is missing, market_cap field carries TradingView total_assets as a fund-size proxy. This affects coverage only; bulk_prefilter market_cap_points gives ETFs a fixed score independent of this value.",
+  "etf_size_metric_imputed_rows": 0,
+  "etf_size_metric_samples": [],
   "structurally_rankable_rows_by_L1_thresholds": 3117,
   "structural_unresolved_rows_without_history_resolution": 42,
   "structural_unresolved_reason_counts": {
@@ -316,8 +320,8 @@
     "historical_volatility": "TradingView Volatility.M field, percent unit"
   },
   "percent_unit": "percent",
-  "csv_sha256": "9385b0769e387a2824a8a240c82586fb6c708e77f61c9bc4190f588b0ba36bfc",
-  "gzip_sha256": "949d7e805a04e393df1a489786d9635747c587c3d379fc52b396947e523aee5e",
-  "bundle_sha256": "4dbf7ccfbaae420f0941024241f2f335c05539d3a6728aa12c817ea5460ce1ed",
-  "bundle_line_count": 8158
+  "csv_sha256": "a9d5fe2daf1252188e923f395fe2439bb0d5770031122ec71cd514af9a7fa9ab",
+  "gzip_sha256": "16e3e87d656f445ee11e7bcc851a91e7574104705d8283c694c6a3770f98c8a9",
+  "bundle_sha256": "66bbcc2cd57252100afd434299e68221f54471269a17242d9f0be03e1eaa9512",
+  "bundle_line_count": 8262
 }
