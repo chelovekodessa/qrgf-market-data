@@ -1,5 +1,5 @@
-name: Temporary QRGF L1 runner
-# rerun-with-l1-helpers
+name: Temporary QRGF L2 runner
+# run-l2-from-complete-l1
 
 on:
   push:
@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  rank:
+  l2:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -25,65 +25,43 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Rank existing L1 snapshot and capture result
+      - name: Run canonical L2 batch
         shell: bash
         run: |
-          set +e
-          mkdir -p data/temp-l1
-          LOG=data/temp-l1/l1-rank-diagnostic.log
-          : > "$LOG"
-          python -m py_compile scripts/bulk_prefilter.py >> "$LOG" 2>&1
-          echo "py_compile_exit=$?" >> "$LOG"
-          python - <<'PY' >> "$LOG" 2>&1
-          import base64, gzip
+          set -euo pipefail
+          python -m py_compile scripts/qrgf_common.py scripts/classify_l2.py scripts/batch_l2.py
+          python scripts/batch_l2.py data/temp-l1/l1-finalists.csv \
+            --rules assets/l2-rules.json \
+            --keep 120 \
+            --output data/temp-l1/l2-output.json \
+            --ruleset-version 3.1.0 \
+            --ruleset-hash d7dbf15ca011e000eed39e89bf95a056fd8a9231a945c9fe20672290e6e00493
+      - name: Build lineage and summary
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import csv, json
           from pathlib import Path
-          src = Path('data/temp-l1/l1-snapshot.csv.gz.b64')
-          raw = base64.b64decode(src.read_text(encoding='ascii'))
-          csv_bytes = gzip.decompress(raw)
-          Path('data/temp-l1/l1-snapshot.csv').write_bytes(csv_bytes)
-          print('snapshot_rows', csv_bytes.count(b'\n') - 1)
+          root=Path('data/temp-l1')
+          l1=list(csv.DictReader((root/'l1-finalists.csv').open(encoding='utf-8',newline='')))
+          l2=json.loads((root/'l2-output.json').read_text(encoding='utf-8'))
+          l1_lineage=[{'ticker':r.get('ticker'),'contract_id':r.get('contract_id'),'l1_score':r.get('l1_score'),'l1_status':r.get('l1_status'),'selected_for_next_stage':True} for r in l1]
+          l2_lineage=[]
+          for r in l2.get('all_results',[]):
+              l2_lineage.append({k:r.get(k) for k in ('ticker','contract_id','l2_status','research_priority_score','research_priority_coverage_pct','l2_opportunity_score','l2_risk_score','risk_coverage_pct','preliminary_timing_status','selected_for_next_stage')})
+          summary={k:v for k,v in l2.items() if k not in {'all_results','finalists'}}
+          summary['finalist_count']=len(l2.get('finalists',[]))
+          summary['top20']=[{k:r.get(k) for k in ('ticker','contract_id','l2_status','research_priority_score','research_priority_coverage_pct','l2_risk_score','preliminary_timing_status')} for r in l2.get('finalists',[])[:20]]
+          (root/'l1-lineage.json').write_text(json.dumps(l1_lineage,indent=2)+'\n',encoding='utf-8')
+          (root/'l2-lineage.json').write_text(json.dumps(l2_lineage,indent=2)+'\n',encoding='utf-8')
+          (root/'l2-summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(summary,indent=2))
           PY
-          echo "decode_exit=$?" >> "$LOG"
-          python scripts/bulk_prefilter.py data/temp-l1/l1-snapshot.csv \
-            --output data/temp-l1/l1-finalists.csv \
-            --pending-output data/temp-l1/l1-pending.csv \
-            --summary data/temp-l1/l1-summary.json >> "$LOG" 2>&1
-          RANK_EXIT=$?
-          echo "rank_exit=$RANK_EXIT" >> "$LOG"
-          if [ "$RANK_EXIT" -eq 0 ]; then
-            python - <<'PY' >> "$LOG" 2>&1
-          import base64, csv, gzip, hashlib, io, json
-          from pathlib import Path
-          root = Path('data/temp-l1')
-          summary = json.loads((root/'l1-summary.json').read_text())
-          finalists = list(csv.DictReader((root/'l1-finalists.csv').open(encoding='utf-8', newline='')))
-          pending = list(csv.DictReader((root/'l1-pending.csv').open(encoding='utf-8', newline='')))
-          finalist_fields = ['ticker','company','contract_id','security_type','instrument_status','exchange','sector','price','market_cap','avg_dollar_volume','return_3m','return_6m','return_12m','drawdown_52w','historical_volatility','momentum_history_status','history_sufficiency','as_of','retrieved_at','l1_score','l1_status','opportunity_coverage_pct','rankable','selected_for_next_stage']
-          state_fields = ['ticker','contract_id','l1_score','l1_status','history_sufficiency','opportunity_coverage_pct','rankable','selected_for_next_stage']
-          def compact(rows, fields):
-              buf = io.StringIO(newline='')
-              w = csv.DictWriter(buf, fieldnames=fields)
-              w.writeheader()
-              for r in rows: w.writerow({f:r.get(f,'') for f in fields})
-              return buf.getvalue().encode('utf-8')
-          def bundle(name, payload):
-              gz = gzip.compress(payload, compresslevel=9, mtime=0)
-              b64 = base64.encodebytes(gz).decode('ascii')
-              (root/f'{name}.csv.gz.b64').write_text(b64, encoding='ascii')
-              return {'rows': payload.count(b'\n')-1, 'csv_sha256': hashlib.sha256(payload).hexdigest(), 'gzip_sha256': hashlib.sha256(gz).hexdigest(), 'bundle_sha256': hashlib.sha256(b64.encode('ascii')).hexdigest(), 'bundle_line_count': len(b64.splitlines())}
-          manifest = {'summary': summary, 'finalists_bundle': bundle('l1-finalists-compact', compact(finalists, finalist_fields)), 'all_state_bundle': bundle('l1-all-state-compact', compact(finalists+pending, state_fields)), 'top20': [{k:r.get(k) for k in ('ticker','company','l1_score','drawdown_52w','return_3m','return_6m','return_12m','avg_dollar_volume')} for r in finalists[:20]]}
-          (root/'l1-rank-manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
-          print('bundle_build_ok', len(finalists), len(pending))
-          PY
-            echo "bundle_exit=$?" >> "$LOG"
-          fi
-          rm -f data/temp-l1/l1-snapshot.csv
+      - name: Commit L2 results
+        run: |
+          set -euo pipefail
           git config user.name "qrgf-l1-temp-bot"
           git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
-          git add data/temp-l1/l1-rank-diagnostic.log
-          for f in data/temp-l1/l1-summary.json data/temp-l1/l1-finalists.csv data/temp-l1/l1-pending.csv data/temp-l1/l1-finalists-compact.csv.gz.b64 data/temp-l1/l1-all-state-compact.csv.gz.b64 data/temp-l1/l1-rank-manifest.json; do
-            if [ -f "$f" ]; then git add "$f"; fi
-          done
-          git commit -m "Temporary L1 ranking results" || true
-          git push origin HEAD:qrgf-l1-temp-20260808 || true
-          exit 0
+          git add data/temp-l1/l2-output.json data/temp-l1/l1-lineage.json data/temp-l1/l2-lineage.json data/temp-l1/l2-summary.json
+          git commit -m "Temporary L2 global triage results"
+          git push origin HEAD:qrgf-l1-temp-20260808
