@@ -103,7 +103,7 @@ def main() -> int:
     csv_writer.writerows(accepted)
     csv_bytes = csv_buffer.getvalue().encode("utf-8")
     gzip_bytes = gzip.compress(csv_bytes, compresslevel=9, mtime=0)
-    bundle_bytes = base64.b64encode(gzip_bytes)
+    bundle_bytes = base64.encodebytes(gzip_bytes)
     bundle_path = output / "l0-universe.csv.gz.b64"
     bundle_path.write_bytes(bundle_bytes)
     bundle = {
