@@ -1,5 +1,5 @@
-name: Temporary QRGF L2 runner
-# run-l2-from-complete-l1
+name: Temporary QRGF lineage export
+# compact-lineage-for-local-state
 
 on:
   push:
@@ -10,14 +10,10 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: qrgf-l1-temp-20260808
-  cancel-in-progress: true
-
 jobs:
-  l2:
+  lineage:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,43 +21,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run canonical L2 batch
-        shell: bash
-        run: |
-          set -euo pipefail
-          python -m py_compile scripts/qrgf_common.py scripts/classify_l2.py scripts/batch_l2.py
-          python scripts/batch_l2.py data/temp-l1/l1-finalists.csv \
-            --rules assets/l2-rules.json \
-            --keep 120 \
-            --output data/temp-l1/l2-output.json \
-            --ruleset-version 3.1.0 \
-            --ruleset-hash d7dbf15ca011e000eed39e89bf95a056fd8a9231a945c9fe20672290e6e00493
-      - name: Build lineage and summary
+      - name: Build compact lineage keys
         run: |
           set -euo pipefail
           python - <<'PY'
-          import csv, json
+          import csv,json
           from pathlib import Path
           root=Path('data/temp-l1')
           l1=list(csv.DictReader((root/'l1-finalists.csv').open(encoding='utf-8',newline='')))
           l2=json.loads((root/'l2-output.json').read_text(encoding='utf-8'))
-          l1_lineage=[{'ticker':r.get('ticker'),'contract_id':r.get('contract_id'),'l1_score':r.get('l1_score'),'l1_status':r.get('l1_status'),'selected_for_next_stage':True} for r in l1]
-          l2_lineage=[]
-          for r in l2.get('all_results',[]):
-              l2_lineage.append({k:r.get(k) for k in ('ticker','contract_id','l2_status','research_priority_score','research_priority_coverage_pct','l2_opportunity_score','l2_risk_score','risk_coverage_pct','preliminary_timing_status','selected_for_next_stage')})
-          summary={k:v for k,v in l2.items() if k not in {'all_results','finalists'}}
-          summary['finalist_count']=len(l2.get('finalists',[]))
-          summary['top20']=[{k:r.get(k) for k in ('ticker','contract_id','l2_status','research_priority_score','research_priority_coverage_pct','l2_risk_score','preliminary_timing_status')} for r in l2.get('finalists',[])[:20]]
-          (root/'l1-lineage.json').write_text(json.dumps(l1_lineage,indent=2)+'\n',encoding='utf-8')
-          (root/'l2-lineage.json').write_text(json.dumps(l2_lineage,indent=2)+'\n',encoding='utf-8')
-          (root/'l2-summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
-          print(json.dumps(summary,indent=2))
+          payload={
+            'l1_selected': [[r.get('ticker'),r.get('contract_id'),r.get('l1_score')] for r in l1],
+            'l2_selected': [[r.get('ticker'),r.get('contract_id')] for r in l2.get('finalists',[])],
+          }
+          (root/'lineage-sets.json').write_text(json.dumps(payload,separators=(',',':'))+'\n',encoding='utf-8')
+          print(len(payload['l1_selected']),len(payload['l2_selected']))
           PY
-      - name: Commit L2 results
+      - name: Commit compact lineage
         run: |
           set -euo pipefail
           git config user.name "qrgf-l1-temp-bot"
           git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
-          git add data/temp-l1/l2-output.json data/temp-l1/l1-lineage.json data/temp-l1/l2-lineage.json data/temp-l1/l2-summary.json
-          git commit -m "Temporary L2 global triage results"
+          git add data/temp-l1/lineage-sets.json
+          git commit -m "Temporary compact L1 L2 lineage sets"
           git push origin HEAD:qrgf-l1-temp-20260808
