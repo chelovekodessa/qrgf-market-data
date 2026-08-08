@@ -1,0 +1,251 @@
+ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+AVLN,Avalyn Pharma Inc. - common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVNT,Avient Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVNW,"Aviat Networks, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVO,"Mission Produce, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVPT,"AvePoint, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVR,Anteris Technologies Global Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVT,"Avnet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVTR,"Avantor, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVTX,"Avalo Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVX,Avax One Technology Ltd. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVY,Avery Dennison Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AWI,Armstrong World Industries Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AWI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AWK,"American Water Works Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AWK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AWP,abrdn Global Premier Properties Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AWP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AWR,American States Water Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AWR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AWRE,"Aware, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AWRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AWX,Avalon Holdings Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AWX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AX,"Axos Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXG,Solowin Holdings - Class A Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AXG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXGN,"Axogen, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AXGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXIL,"AXIL Brands, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AXIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXON,"Axon Enterprise, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AXON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXP,American Express Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AXP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXR,AMREP Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AXR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXS,Axis Capital Holdings Limited Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXSM,"Axsome Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AXSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXTA,Axalta Coating Systems Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AXTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AXTI,AXT Inc - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AXTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AYA,Aya Gold & Silver Inc. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AYI,Acuity Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AYI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AYTU,"Aytu BioPharma, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AYTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AZ,A2Z Cust2Mate Solutions Corp. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AZI,Autozi Internet Technology (Global) Ltd. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AZI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AZN,AstraZeneca PLC Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AZN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AZO,"AutoZone, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AZO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AZTA,"Azenta, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AZTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AZTR,Azitra Inc Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AZTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+B,Barrick Mining Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BA,Boeing Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAC,Bank of America Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAER,"Bridger Aerospace Group Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BAER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAFN,BayFirst Financial Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BAFN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAH,Booz Allen Hamilton Holding Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BALL,Ball Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BALL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BALY,Bally's Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BALY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BANC,"Banc of California, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BANC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAND,Bandwidth Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BAND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BANF,BancFirst Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BANF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BANL,CBL International Limited - Class B Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BANL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BANR,Banner Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BANR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAOS,Baosheng Media Group Holdings Limited - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BAOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAP,Credicorp Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAR,GraniteShares Gold Trust Shares of Beneficial Interest,P,,,common_equity,eligible,True,N,N,,nasdaqtrader:P:BAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BARK,"BARK, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BARK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BATL,Battalion Oil Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BATL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BATRA,"Atlanta Braves Holdings, Inc. - Series A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BATRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BATRK,"Atlanta Braves Holdings, Inc. - Series C Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BATRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BAX,Baxter International Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BB,BlackBerry Limited Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBAI,"BigBear.ai, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBBY,"Bed Bath & Beyond, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBBY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBCP,"Concrete Pumping Holdings, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBCP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBDC,"Barings BDC, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBIO,"BridgeBio Pharma, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBLG,Bone Biologics Corp - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBLG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBNX,"Beta Bionics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBOT,"BridgeBio Oncology Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBSI,"Barrett Business Services, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBT,Beacon Financial Corporation Common stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBVA,Banco Bilbao Vizcaya Argentaria S.A. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBW,"Build-A-Bear Workshop, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BBY,"Best Buy Co., Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BC,Brunswick Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCAL,California BanCorp - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCAT,BlackRock Capital Allocation Term Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCAX,Bicara Therapeutics Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCBP,"BCB Bancorp, Inc. (NJ) - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCC,"Boise Cascade, L.L.C. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCE,"BCE, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCG,"Binah Capital Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCHT,Birchtech Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BCHT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCML,BayCom Corp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCML,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCO,Brinks Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCPC,Balchem Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCRX,"BioCryst Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCS,Barclays PLC Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCSF,"Bain Capital Specialty Finance, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCSF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCSS,Bain Capital GSS Investment Corp. Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCTX,BriaCell Therapeutics Corp. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BCTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BCX,BlackRock Resources Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDC,Belden Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDCI,BTC Development Corp. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BDCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDL,"Flanigan's Enterprises, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDMD,Baird Medical Investment Holdings Ltd - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BDMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDN,Brandywine Realty Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDSX,"Biodesix, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BDSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDTX,"Black Diamond Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BDTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BDX,"Becton, Dickinson and Company Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BE,Bloom Energy Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BEAM,Beam Therapeutics Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BEAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BEBE,TGE Value Creative Solutions Corp Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BEBE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BEEM,Beam Global - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BEEM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BEEP,Mobile Infrastructure Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BEEP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BELFA,Bel Fuse Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BELFA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BELFB,Bel Fuse Inc. - Class B Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BELFB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BEN,"Franklin Resources, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BENF,Beneficient - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BENF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BESS,Bimergen Energy Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BESS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BETA,"Beta Technologies, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BETA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BETR,Better Home & Finance Holding Company - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BETR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BF.A,Brown Forman Inc Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BF.A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BF.B,Brown Forman Inc Class B Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BF.B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BFAM,Bright Horizons Family Solutions Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BFAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BFC,Bank First Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BFH,"Bread Financial Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BFH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BFLY,"Butterfly Network, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BFLY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BFRI,Biofrontera Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BFRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BFS,"Saul Centers, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BFST,"Business First Bancshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BFST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BG,Bunge Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGC,"BGC Group, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGDE,"Big Digital Energy, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BGDE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGH,Barings Global Short Duration High Yield Fund Common Shares of Beneficial Interests,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BGH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGI,Birks Group Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGIN,Bgin Blockchain Limited - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BGIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGLC,BioNexus Gene Lab Corp - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BGLC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGMS,"Bio Green Med Solution, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BGMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGS,"B&G Foods, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGSF,"BGSF, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BGSF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BGSI,Boyd Group Services Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BGSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BH,Biglari Holdings Inc. Class B Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BH.A,Biglari Holdings Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BH.A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHB,"Bar Harbor Bankshares, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BHB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHC,Bausch Health Companies Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHE,"Benchmark Electronics, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BHE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHF,"Brighthouse Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BHF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHM,"Bluerock Homes Trust, Inc. Class A Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BHM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHR,Braemar Hotels & Resorts Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BHR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHRB,Burke & Herbert Financial Services Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BHRB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHST,BioHarvest Sciences Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BHST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BHVN,Biohaven Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BHVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIIB,Biogen Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BIIB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BILL,"BILL Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BILL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIO,"Bio-Rad Laboratories, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIO.B,"Bio-Rad Laboratories, Inc. Class B  Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BIO.B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIOA,"BioAge Labs, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BIOA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIOT,Instinct Bio Technical Company Holdings Inc. - Common stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BIOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIRD,"Smartbird, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BIRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIRK,Birkenstock Holding plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BIRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIT,BlackRock Multi-Sector Income Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIVI,BioVie Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BIVI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BIYA,Baiya International Group Inc.  - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BIYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BJ,"BJ's Wholesale Club Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BJDX,"Bluejay Diagnostics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BJDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BJRI,"BJ's Restaurants, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BJRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKD,Brookdale Senior Living Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BKD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKE,"Buckle, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKH,Black Hills Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BKH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKKT,"Bakkt, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BKKT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKNG,Booking Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BKNG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKR,Baker Hughes Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKSY,BlackSky Technology Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BKSY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKTI,BK Technologies Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BKTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKU,"BankUnited, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BKU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKV,BKV Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BKV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BKYI,"BIO-key International, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BKYI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BL,"BlackLine, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLBD,Blue Bird Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLCO,Bausch + Lomb Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BLCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLDP,"Ballard Power Systems, Inc. - Common Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLDP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLDR,"Builders FirstSource, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BLDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLFS,"BioLife Solutions, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLIN,"Bridgeline Digital, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLIV,BeLive Holdings - ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLIV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLK,"BlackRock, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BLK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLKB,"Blackbaud, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLKB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLLN,"BillionToOne, Inc. - Class A common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLMN,"Bloomin' Brands, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLND,"Blend Labs, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BLND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLNE,"Beeline Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLSH,Bullish Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BLSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLSM,"BlossomHill Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLX,"Bladex, Inc. Class E Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BLZE,"Backblaze, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BLZE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMBL,Bumble Inc. - common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMBL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMEA,"Biomea Fusion, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMEZ,BlackRock Health Sciences Term Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BMEZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMGL,Basel Medical Group Ltd - ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMHL,Bluemount Holdings Limited - Class B Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMHL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMI,"Badger Meter, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMM,Blue Moon Metals Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMN,BlackRock 2037 Municipal Target Term Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMNR,"BitMine Immersion Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BMNR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMO,Bank Of Montreal Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BMO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMR,Beamr Imaging Ltd. - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMRA,"Biomerica, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMRC,Bank of Marin Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMRN,BioMarin Pharmaceutical Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BMRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BMY,Bristol-Myers Squibb Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BMY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNAI,Brand Engagement Network Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNC,CEA Industries Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNED,"Barnes & Noble Education, Inc Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BNED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNGO,"Bionano Genomics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNKK,"Bonk, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNKK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNL,"Broadstone Net Lease, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BNL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNRG,Brenmiller Energy Ltd - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNRG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNS,Bank Nova Scotia Halifax Pfd 3 Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNTC,Benitec Biopharma Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BNY,The Bank of New York Mellon Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOBS,"Bob's Discount Furniture, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BOBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOC,Boston Omaha Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BOC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BODI,"The Beachbody Company, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BODI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOE,Blackrock Enhanced Global Dividend Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BOE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOF,BranchOut Food Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOH,Bank of Hawaii Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BOH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOKF,BOK Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOKF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOLD,"Boundless Bio, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOLT,"Bolt Biotherapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOLT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BON,Bon Natural Life Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOOM,DMC Global Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOOM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOOT,"Boot Barn Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BOOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BORR,Borr Drilling Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BORR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOSC,B.O.S. Better Online Solutions - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOT,"RoboStrategy, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOTJ,"Bank of the James Financial Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BOTJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOW,Bowhead Specialty Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BOX,"Box, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BOX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BP,BP p.l.c. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BPOP,"Popular, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BPOP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BPRE,Bluerock Private Real Estate Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BPRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BPRN,"Princeton Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BPRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BQ,Boqii Holding Limited Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BR,"Broadridge Financial Solutions, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRAG,Bragg Gaming Group Inc. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRAI,Braiin Limited - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRBR,"BellRing Brands, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRBS,"Blue Ridge Bankshares, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BRBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRC,Brady Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRCB,"Black Rock Coffee Bar, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRCC,BRC Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRFH,Barfresh Food Group Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRFH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRIA,BrilliA Inc Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BRIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRID,Bridgford Foods Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRID,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRK.B,Berkshire Hathaway Inc. New Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRK.B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRKR,Bruker Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRLT,"Brilliant Earth Group, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRLT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRN,"Barnwell Industries, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRO,"Brown & Brown, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BROS,Dutch Bros Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BROS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRR,"ProCap Financial, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

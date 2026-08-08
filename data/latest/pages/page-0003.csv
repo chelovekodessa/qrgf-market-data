@@ -1,0 +1,251 @@
+ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+ALG,"Alamo Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALGM,"Allegro MicroSystems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALGN,"Align Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALGS,"Aligos Therapeutics, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALGT,Allegiant Travel Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALH,Alliance Laundry Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALHC,"Alignment Healthcare, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALIT,"Alight, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALK,"Alaska Air Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALKS,Alkermes plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALKS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALKT,"Alkami Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALKT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALL,Allstate Corporation (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALLE,Allegion plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALLE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALLO,"Allogene Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALLO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALLR,"Allarity Therapeutics, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALLT,Allot Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALLT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALLY,Ally Financial Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALLY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALM,Almonty Industries Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALMR,"Alamar Biosciences, Inc. - Class A common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALMS,Alumis Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALMU,"Aeluma, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALMU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALNT,Allient Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALNY,"Alnylam Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALOT,"AstroNova, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALOV,"Aldabra 4 Liquidity Opportunity Vehicle, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALOV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALOY,REalloys Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALOY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALRM,"Alarm.com Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALRS,Alerus Financial Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALSN,"Allison Transmission Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALT,"Altimmune, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALTG,Alta Equipment Group Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALTI,"AlTi Global, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALTO,"Alto Ingredients, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALV,"Autoliv, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALVO,Alvotech - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALX,"Alexander's, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ALXO,ALX Oncology Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALXO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AM,Antero Midstream Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMAL,Amalgamated Financial Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMAT,"Applied Materials, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMBA,"Ambarella, Inc. - Ordinary Shares",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMBP,Ardagh Metal Packaging S.A. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMBQ,"Ambiq Micro, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMBQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMC,"AMC Entertainment Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMCI,AMC Robotics Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMCR,Amcor plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMCX,AMC Global Media Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMD,"Advanced Micro Devices, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMG,"Affiliated Managers Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMGN,Amgen Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMH,American Homes 4 Rent Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMIX,"Autonomix Medical, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMKR,"Amkor Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMLX,"Amylyx Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMP,"Ameriprise Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMPG,"Amplitech Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMPH,"Amphastar Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMPL,"Amplitude, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMPX,"Amprius Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMPX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMPY,Amplify Energy Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMPY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMR,"Alpha Metallurgical Resources, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMRC,"Ameresco, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMRX,"Amneal Pharmaceuticals, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMRZ,Amrize Ltd Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMRZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMS,American Shared Hospital Services Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMSC,American Superconductor Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMSF,"AMERISAFE, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMSF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMST,Amesite Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMT,American Tower Corporation (REIT) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMTB,Amerant Bancorp Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMTB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMTM,"Amentum Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMTM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMTX,"Aemetis, Inc - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMWL,American Well Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AMWL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMZE,"Amaze Holdings, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AMZE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AMZN,"Amazon.com, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AMZN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AN,"AutoNation, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANAB,"AnaptysBio, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANDE,"The Andersons, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANDE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANDG,Andersen Group Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ANDG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANET,"Arista Networks, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ANET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANF,Abercrombie & Fitch Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ANF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANGH,Anghami Inc. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANGH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANGI,Angi Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANGO,"AngioDynamics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANGX,"Angel Studios, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ANGX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANIK,Anika Therapeutics Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANIK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANIP,"ANI Pharmaceuticals, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANIX,"Anixa Biosciences, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANNA,"AleAnna, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANNX,"Annexon, Inc. - common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANPA,Rich Sparkle Holdings Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANPA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANRO,"Alto Neuroscience, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ANRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANTA,Antalpha Platform Holding Company - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANTX,"AN2 Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANVS,"Annovis Bio, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ANVS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ANY,Sphere 3D Corp. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AOD,abrdn Total Dynamic Dividend Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AOD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AOMR,"Angel Oak Mortgage REIT, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AOMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AON,Aon plc Class A Ordinary Shares (Ireland),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AORT,"Artivion, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AORT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AOS,A.O. Smith Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AOSL,Alpha and Omega Semiconductor Limited - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AOSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AOUT,"American Outdoor Brands, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AOUT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AP,Ampco-Pittsburgh Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APA,APA Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APAM,Artisan Partners Asset Management Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:APAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APC,ARKO Petroleum Corp. - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APD,"Air Products and Chemicals, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:APD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APEI,"American Public Education, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APEI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APG,APi Group Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:APG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APGE,"Apogee Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APGE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APH,Amphenol Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:APH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APLD,Applied Digital Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APLE,"Apple Hospitality REIT, Inc. Common Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:APLE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APLM,Apollomics Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APLM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APMD,"Apnimed, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APO,"Apollo Global Management, Inc. (New) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:APO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APOG,"Apogee Enterprises, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APOG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APP,Applovin Corporation - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APPF,"AppFolio, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APPF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APPN,Appian Corporation - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APPS,"Digital Turbine, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APT,"Alpha Pro Tech, Ltd. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:APT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APTV,Aptiv PLC Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:APTV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APUR,Aperture AC - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APUS,"Apimeds Pharmaceuticals US, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:APUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APVO,Aptevo Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APWC,"Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APWC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APXT,Apex Treasury Corporation - Class A Ordinary Share,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+APYX,Apyx Medical Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:APYX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AQB,"AquaBounty Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AQB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AQMS,"Aqua Metals, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AQMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AQN,Algonquin Power & Utilities Corp. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AQN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AQST,"Aquestive Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AQST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AR,Antero Resources Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARBB,ARB IOT Group Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARBB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARCB,ArcBest Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARCI,Archimedes Tech SPAC Partners III Co. - Ordinary Share,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARCO,Arcos Dorados Holdings Inc. Class A Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARCT,Arcturus Therapeutics Holdings Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARDC,"Ares Dynamic Credit Allocation Fund, Inc. Common Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARDT,"Ardent Health, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARDX,"Ardelyx, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARE,"Alexandria Real Estate Equities, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AREN,"The Arena Group Holdings, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AREN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARES,Ares Management Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARHS,"Arhaus, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARHS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARIS,Aris Mining Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARIS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARKO,ARKO Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARKO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARKR,Ark Restaurants Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARL,"American Realty Investors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARLO,"Arlo Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARLO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARMK,Aramark Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARMK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARMP,"Armata Pharmaceuticals, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ARMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AROC,"Archrock, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AROC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AROW,Arrow Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AROW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARQ,"Arq, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARQQ,Arqit Quantum Inc. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARQQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARQT,"Arcutis Biotherapeutics, Inc. - Common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARQT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARRY,"Array Technologies, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARRY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARTL,"Artelo Biosciences, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARTNA,Artesian Resources Corporation - Class A Non-Voting Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARTNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARTV,"Artiva Biotherapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARTV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARTW,"Art's-Way Manufacturing Co., Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARTW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARVN,"Arvinas, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARW,"Arrow Electronics, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARWR,"Arrowhead Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARWR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARX,Accelerant Holdings Class A Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ARXS,"Arxis, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AS,"Amer Sports, Inc. Ordinary Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASAN,"Asana, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASB,Associated Banc-Corp Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASBP,"Aspire Biopharma Holdings, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASC,Ardmore Shipping Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASH,Ashland Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASIC,Ategrity Specialty Insurance Company Holdings Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASIX,AdvanSix Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASLE,AerSale Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASLE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASM,Avino Silver & Gold Mines Ltd. Common Shares (Canada),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ASM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASMB,"Assembly Biosciences, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASND,Ascendis Pharma A/S - Ordinary Share,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASO,"Academy Sports and Outdoors, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASPI,ASP Isotopes Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASPN,"Aspen Aerogels, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASPS,Altisource Portfolio Solutions S.A. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASR,"Grupo Aeroportuario del Sureste, S.A. de C.V. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ASR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASRV,AmeriServ Financial Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASRV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASST,"Strive, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASTC,Astrotech Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASTE,"Astec Industries, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASTE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASTH,Astrana Health Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASTI,"Ascent Solar Technologies, Inc - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASTL,Algoma Steel Group Inc. - Common Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASTS,"AST SpaceMobile, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASUR,Asure Software Inc - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ASYS,"Amtech Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ASYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATAI,AtaiBeckley Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATCH,"AtlasClear Holdings, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ATCH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATCX,Atlas Critical Minerals Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATEC,"Alphatec Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATEN,"A10 Networks, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ATEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATER,"Aterian, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATEX,Anterix Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATGL,Alpha Technology Group Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATHR,"Aether Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATHR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATI,ATI Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ATI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATII,Archimedes Tech SPAC Partners II Co. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATKR,Atkore Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ATKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATLC,Atlanticus Holdings Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATLC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATLO,Ames National Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATLO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATLX,Atlas Lithium Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATMU,Atmus Filtration Technologies Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ATMU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATNI,"ATN International, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATNI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATNM,"Actinium Pharmaceuticals, Inc. (Delaware) Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ATNM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATO,Atmos Energy Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ATO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATOM,Atomera Incorporated - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATOM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATOS,"Atossa Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATPC,Agape ATP Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATR,"AptarGroup, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ATR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATRA,"Atara Biotherapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATRC,"AtriCure, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATRO,Astronics Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATS,ATS Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ATS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATTO,"Attovia Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ATXG,Addentax Group Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ATXG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AU,AngloGold Ashanti PLC Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUB,Atlantic Union Bankshares Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AUB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUBN,"Auburn National Bancorporation, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AUBN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUC,ATIF Holdings Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AUC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUDC,AudioCodes Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AUDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUGO,Aura Minerals Inc. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AUGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUID,authID Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AUID,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUNA,Auna SA Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AUNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUPH,Aurinia Pharmaceuticals Inc - Common Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AUPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUR,"Aurora Innovation, Inc.  - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AURA,"Aura Biosciences, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AURA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AURE,Aurelion Inc.  - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AURE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AUST,Austin Gold Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AUST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVA,Avista Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVAH,Aveanna Healthcare Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVAT,Avalanche Treasury Corporation - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVAV,"AeroVironment, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVB,"AvalonBay Communities, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVBC,"Avidia Bancorp, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVBH,"Avidbank Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVBH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVBP,"ArriVent BioPharma, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVD,American Vanguard Corporation Common Stock ($0.10 Par Value),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVEX,AEVEX Corp. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVGO,Broadcom Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVIR,"Atea Pharmaceuticals, Inc. - common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVIR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

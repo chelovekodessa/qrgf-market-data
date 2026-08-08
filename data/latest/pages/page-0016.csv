@@ -1,0 +1,251 @@
+ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+PPIH,"Perma-Pipe International Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PPIH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PPL,PPL Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PPLI,People Incorporated - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PPLI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PPSI,"Pioneer Power Solutions, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PPSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PPT,Franklin Premier Income Trust Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PPTA,Perpetua Resources Corp. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PPTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PR,Permian Resources Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRAA,"PRA Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRAA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRAX,"Praxis Precision Medicines, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRCH,"Porch Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRCH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRCT,PROCEPT BioRobotics Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRDO,Perdoceo Education Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRDO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRE,Prenetics Global Limited - Class A Ordinary Share,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRFX,PRF Technologies Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRFX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRG,"PROG Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRGO,Perrigo Company plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRGS,Progress Software Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRHI,"Presurance Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRI,"Primerica, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRIM,Primoris Services Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRK,Park National Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:PRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRKS,United Parks & Resorts Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRKS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRLB,"Proto Labs, Inc. Common stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRLD,Prelude Therapeutics Incorporated - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRM,"Perimeter Solutions, SA Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRMB,Primo Brands Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRME,"Prime Medicine, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRME,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PROF,Profound Medical Corp. - common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PROF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PROK,ProKidney Corp. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PROK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PROV,"Provident Financial Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PROV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRPL,"Purple Innovation, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRPO,"Precipio, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRQR,ProQR Therapeutics N.V. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRQR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRSU,"Pursuit Attractions and Hospitality, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRSU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRTA,Prothena Corporation plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRTH,"Priority Technology Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRTS,"CarParts.com, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRU,"Prudential Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PRVA,"Privia Health Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PS,Pershing Square Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSA,Public Storage Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSBD,Palmer Square Capital BDC Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSFE,Paysafe Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSFE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSHG,Performance Shipping Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSIG,PS International Group Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSIX,"Power Solutions International, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSKY,Paramount Skydance Corporation - Class B Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSKY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSMT,"PriceSmart, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSN,Parsons Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSNL,"Personalis, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSNL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSO,"Pearson, Plc Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSQH,"PSQ Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSQH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSTL,"Postal Realty Trust, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSUS,"Pershing Square USA, Ltd. Common Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PSX,Phillips 66 Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTC,PTC Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTCT,"PTC Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTEN,"Patterson-UTI Energy, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTGX,"Protagonist Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTGX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTHS,Pelthos Therapeutics Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:PTHS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTLE,PTL LTD - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTLE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTLO,Portillo's Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTLO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTN,"Palatin Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTON,"Peloton Interactive, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PTRN,Pattern Group Inc. - Series A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PTRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PUBM,"PubMatic, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PUBM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PUK,Prudential Public Limited Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PUK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PULM,"Pulmatrix, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PULM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PUMP,ProPetro Holding Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PUMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PURR,Hyperliquid Strategies Inc - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PURR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PUSA,Aureus Greenway Holdings Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PUSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PVH,PVH Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PVH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PVLA,"Palvella Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PVLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PW,Power REIT (MD) Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:PW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PWCM,"PowerCompute, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PWCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PWP,Perella Weinberg Partners - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PWP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PWR,"Quanta Services, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PWR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PWRL,Powerlaw Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PWRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PXED,"Phoenix Education Partners, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PXED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PXLW,"Pixelworks, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PXLW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PXS,Pyxis Tankers Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PYPD,PolyPid Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PYPD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PYPL,"PayPal Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PYPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PYXS,"Pyxis Oncology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PYXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PZG,Paramount Gold Nevada Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:PZG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PZZA,"Papa John's International, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PZZA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+Q,"Qnity Electronics, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:Q,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QBTS,D-Wave Quantum Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QBTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QCLS,"Q/C Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QCLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QCOM,QUALCOMM Incorporated - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QCOM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QCRH,"QCR Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QCRH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QDEL,QuidelOrtho Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QDEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QGEN,Qiagen N.V. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:QGEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QH,Quhuo Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QLYS,"Qualys, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QMCO,Quantum Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QMCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QMLS,"QumulusAI, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QMLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QNC,Quantum eMotion Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:QNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QNCX,"Quince Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QNST,"QuinStreet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QNT,Quantinuum Inc. - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QRHC,Quest Resource Holding Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QRHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QRVO,"Qorvo, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QRVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QS,QuantumScape Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QSR,Restaurant Brands International Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:QSR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QTEX,QTREX Quantum Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QTEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QTI,"QT Imaging Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QTRX,Quanterix Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QTRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QTTB,Q32 Bio Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QTTB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QTWO,"Q2 Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:QTWO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QUAD,"Quad Graphics, Inc Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:QUAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QUBT,Quantum Computing Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QUBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QUCY,Quantum Cyber N.V. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QUCY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QUIK,QuickLogic Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QUIK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QURE,uniQure N.V. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QURE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QVC,"QVC Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QXL,Quantum X Labs Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QXL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QXO,"QXO, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:QXO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+R,"Ryder System, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:R,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RACC,Research Alliance Corporation III - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RACC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RACD,Research Alliance Corporation IV - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RACD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RACE,Ferrari N.V. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RACE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAIL,"Freightcar America, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAL,Ralliant Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAMP,"LiveRamp Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RAMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAPP,"Rapport Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAPP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RARE,Ultragenyx Pharmaceutical Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RARE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAVE,"Rave Restaurant Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAVE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAY,Raytech Holding Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAYA,Erayak Power Solution Group Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBA,"RB Global, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBB,RBB Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RBB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBBN,Ribbon Communications Inc.  - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RBBN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBC,RBC Bearings Incorporated Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBCAA,"Republic Bancorp, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RBCAA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBKB,"Rhinebeck Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RBKB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBLX,Roblox Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RBLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBNE,Robin Energy Ltd. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RBNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBRK,"Rubrik, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RBRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RC,Ready Capital Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCAT,"Red Cat Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RCAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCBC,River City Bank - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RCBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCEL,"Avita Medical, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RCEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCG,"RENN Fund, Inc Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCI,"Rogers Communication, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCKT,"Rocket Pharmaceuticals, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RCKT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCKY,"Rocky Brands, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RCKY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCL,Royal Caribbean Cruises Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCMT,"RCM Technologies, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RCMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RCUS,"Arcus Biosciences, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RCUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDCM,Radcom Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDDT,"Reddit, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RDDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDGT,"Ridgetech, Inc. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDI,Reading International Inc - Class A Non-voting Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDIB,Reading International Inc - Class B Voting Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDIB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDN,Radian Group Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDNT,"RadNet, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDNW,"RideNow Group, Inc. - Class B Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDVT,"Red Violet, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDW,Redwire Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RDW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDWR,Radware Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDWR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDY,Dr. Reddy's Laboratories Ltd Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RDY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RDZN,"Roadzen, Inc. - Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RDZN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REA,"Rare Earths Americas, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:REA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REAL,"The RealReal, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REAX,"The Real Brokerage, Inc. - Common Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REBN,"Reborn Coffee, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REBN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RECT,Rectitude Holdings Ltd - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RECT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REED,"Reed's, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:REED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REF,Reformation Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:REF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REFI,"Chicago Atlantic Real Estate Finance, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REG,Regency Centers Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REGN,"Regeneron Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REI,"Ring Energy, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:REI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RELL,"Richardson Electronics, Ltd. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RELL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RELY,"Remitly Global, Inc. - Common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RELY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RENT,"Rent the Runway, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RENT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RENX,RenX Enterprises Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RENX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REPL,"Replimune Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REPX,"Riley Exploration Permian, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:REPX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RES,"RPC, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RETO,"ReTo Eco-Solutions, Inc. - Class A Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RETO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REVB,"Revelation Biosciences, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REVB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REXR,"Rexford Industrial Realty, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:REXR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REYN,Reynolds Consumer Products Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:REYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+REZI,"Resideo Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:REZI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RF,Regions Financial Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RFI,"Cohen & Steers Total Return Realty Fund, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RFIL,"RF Industries, Ltd. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RFIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RFL,"Rafael Holdings, Inc. Class B Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RFL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGA,"Reinsurance Group of America, Incorporated Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RGA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGC,Regencell Bioscience Holdings Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGCO,RGC Resources Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGEN,Repligen Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGLD,"Royal Gold, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGNT,Regentis Biomaterials Ltd. Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RGNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGNX,REGENXBIO Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGP,"Resources Connection, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGR,"Sturm, Ruger & Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGS,Regis Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGT,"Royce Global Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RGTI,"Rigetti Computing, Inc.  - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RGTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RH,RH Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RHI,Robert Half Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RHLD,Resolute Holdings Management Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RHLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RICK,"RCI Hospitality Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RICK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RIG,Transocean Ltd (Switzerland) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RIGL,"Rigel Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RIGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RILY,"BRC Group Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RILY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RIO,Rio Tinto Plc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RIOT,"Riot Platforms, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RIOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RITM,Rithm Capital Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RITM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RIV,"RiverNorth Opportunities Fund, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RIV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RIVN,"Rivian Automotive, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RIVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RJET,Republic Airways Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RJET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RJF,"Raymond James Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RJF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RKDA,"Arcadia Biosciences, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RKDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RKLB,Rocket Lab Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RKLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RKT,"Rocket Companies, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RKT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RKTO,Rocket One Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RKTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RL,Ralph Lauren Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RLAY,"Relay Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RLAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RLGT,"Radiant Logistics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RLGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RLI,RLI Corp. Common Stock (DE),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RLI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RLJ,RLJ Lodging Trust Common Shares of Beneficial Interest $0.01 par value,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RLJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RLMD,"Relmada Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RLMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RLYB,Rallybio Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RLYB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RM,Regional Management Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMAX,"RE/MAX Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RMAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMBI,"Richmond Mutual Bancorporation, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMBS,"Rambus, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMCF,"Rocky Mountain Chocolate Factory, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMCF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMCO,Royalty Management Holding Corporation - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMD,ResMed Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMIX,"Suncrete, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMNI,"Rimini Street, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMNI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMR,The RMR Group Inc. - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMT,"Royce Micro-Cap Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RMTI,"Rockwell Medical, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RMTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNA,"Atrium Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNAC,"Cartesian Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RNAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNAZ,"TransCode Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RNAZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNG,"RingCentral, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RNG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNGR,"Ranger Energy Services, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RNGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNR,RenaissanceRe Holdings Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RNR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNST,Renasant Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RNST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNTX,"Rein Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RNTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RNW,ReNew Energy Global plc - Class A Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ROAD,"Construction Partners, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ROC,Rank One Computing Corporation - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

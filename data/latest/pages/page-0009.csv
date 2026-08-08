@@ -1,0 +1,251 @@
+ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+FOXF,Fox Factory Holding Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FOXF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FPH,"Five Point Holdings, LLC Class A Common Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FPI,Farmland Partners Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FPS,"Forgent Power Solutions, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FR,"First Industrial Realty Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRA,Blackrock Floating Rate Income Strategies Fund Inc  Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRAF,Franklin Financial Services Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRAF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRBA,First Bank  - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRBT,"Forbright, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRD,Friedman Industries Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRGT,"Freight Technologies, Inc. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRHC,Freedom Holding Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRME,First Merchants Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRME,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRMI,Fermi Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRMM,"Forum Markets, Incorporated - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRNM,"Freenome, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRNM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRO,Frontline Plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FROG,JFrog Ltd. - Ordinary shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FROG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRPH,"FRP Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRPT,"Freshpet, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRSH,Freshworks Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRST,Primis Financial Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRT,Federal Realty Investment Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRTT,Fort Technology Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRVO,Fervo Energy Company - Class A common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSBC,Five Star Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSBW,"FS Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSBW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSCO,FS Credit Opportunities Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSEA,"First Seacoast Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSI,Flexible Solutions International Inc. Common Stock (CDA),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSK,FS KKR Capital Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSLR,"First Solar, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSLY,"Fastly, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSLY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSM,Fortuna Mining Corp. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSP,Franklin Street Properties Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSS,Federal Signal Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSSL,FS Specialty Lending Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSTR,L.B. Foster Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSUN,FirstSun Capital Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSV,FirstService Corporation - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FT,Franklin Universal Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTAI,FTAI Aviation Ltd. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTCI,"FTC Solar, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTDR,"Frontdoor, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTEK,"Fuel Tech, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTEK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTF,Franklin Limited Duration Income Trust Common Shares of Beneficial Interest,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FTF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTFT,Future FinTech Group Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTH,"Faeth Therapeutics, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTHM,Fathom Holdings Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTHM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTI,TechnipFMC plc Ordinary Share,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTK,"Flotek Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTLF,"FitLife Brands, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTLF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTNT,"Fortinet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTRA,FutureCorp Space Acquisition 1 Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTRE,Fortrea Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTS,Fortis Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTV,Fortive Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTW,Presidio Production Company Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FUBO,FuboTV Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FUBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FUFU,BitFuFu Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FUFU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FUL,H. B. Fuller Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FUL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FULC,"Fulcrum Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FULC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FULT,Fulton Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FULT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FUN,Six Flags Entertainment Corporation Common Stock New,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FUNC,First United Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FUNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FURY,Fury Gold Mines Limited Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FURY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FUSB,"First US Bancshares, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FUSB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FVCB,"FVCBankcorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FVCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FVR,"FrontView REIT, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FVRR,"Fiverr International Ltd. Ordinary Shares, no par value",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FVRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FWDI,"Forward Industries, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FWDI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FWONA,Liberty Media Corporation - Series A Liberty Formula One Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FWONA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FWONK,Liberty Media Corporation - Series C Liberty Formula One Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FWONK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FWRD,Forward Air Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FWRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FWRG,"First Watch Restaurant Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FWRG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FXHO,UTime Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FXHO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FXNC,First National Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FXNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+G,Genpact Limited Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:G,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GAB,"Gabelli Equity Trust, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GABC,"German American Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GABC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GAIA,"Gaia, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GAIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GALT,Galectin Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GALT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GAM,"General American Investors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GANX,"Gain Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GANX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GAP,"Gap, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GASS,"StealthGas, Inc. - common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GASS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GATX,GATX Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GATX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GBCI,"Glacier Bancorp, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GBCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GBFH,GBank Financial Holdings Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GBFH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GBLI,"Global Indemnity Group, LLC - Class A Common Shares",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GBLI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GBR,"New Concept Energy, Inc Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GBTG,"Global Business Travel Group, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GBTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GBX,"Greenbrier Companies, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GBX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCBC,"Greene County Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GCBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCDT,Green Circle Decarbonize Technology Limited Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GCDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCGR,General Catalyst Global Resilience Merger Corp. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GCGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCMG,GCM Grosvenor Inc. - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GCMG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCO,Genesco Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCT,GigaCloud Technology Inc - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCTS,"GCT Semiconductor Holding, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GCTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GCV,"Gabelli Convertible and Income Securities Fund, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GCV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GD,General Dynamics Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDC,GD Culture Group Limited - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDDY,GoDaddy Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GDDY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDEV,GDEV Inc. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDEV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDHG,Golden Heaven Group Holdings Ltd.  - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDL,"GDL Fund, The Common Shares of Beneficial Interest",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDO,Western Asset Global Corporate Opportunity Fund Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GDO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDOT,"Green Dot Corporation Class A Common Stock, $0.001 par value",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GDOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDRX,"GoodRx Holdings, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDTC,CytoMed Therapeutics Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDV,Gabelli Dividend & Income Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GDV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GDYN,"Grid Dynamics Holdings, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GE,GE Aerospace Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEF,Greif Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GEF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEF.B,"Greif, Inc. Corporation Class B Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GEF.B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEG,"Great Elm Group, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEHC,GE HealthCare Technologies Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEMI,"Gemini Space Station, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEN,Gen Digital Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GENB,"Generate Biomedicines, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GENB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GENC,"Gencor Industries, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GENC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GENI,Genius Sports Limited Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GENI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GENK,"GEN Restaurant Group, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GENK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEOS,Geospace Technologies Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GERN,Geron Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GERN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GETY,"Getty Images Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GETY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEV,GE Vernova Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GEV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GEVO,"Gevo, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GF,"New Germany Fund, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GFF,Griffon Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GFF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GFR,Greenfire Resources Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GFR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GFS,GlobalFoundries Inc. - Ordinary Share,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GFUZ,General Fusion Group Ltd. - Common Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GFUZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GGB,Gerdau S.A. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GGB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GGG,Graco Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GGG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GGR,Gogoro Inc. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GGT,"Gabelli Multi-Media Trust, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GGZ,Gabelli Global Small and Mid Cap Value Trust (The) Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GGZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GH,"Guardant Health, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GHC,Graham Holdings Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GHM,Graham Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GHM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GHRS,GH Research PLC - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GHRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIB,CGI Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GIB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIBO,GIBO Holdings Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GIBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIC,Global Industrial Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIFT,"Giftify, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GIFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIGM,GigaMedia Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GIGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIII,"G-III Apparel Group, LTD. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GIII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIL,"Gildan Activewear, Inc. Class A Sub. Vot. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GILD,"Gilead Sciences, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GILD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GILT,Gilat Satellite Networks Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GILT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIS,"General Mills, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GIS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GITS,"Global Interactive Technologies, Inc. Common Stock - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GITS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIW,GigCapital8 Corp. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GIW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GIX,GigCapital9 Corp. - Class A Ordinary Share,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GKOS,Glaukos Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GKOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GL,Globe Life Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLBE,Global-E Online Ltd. - ordinary shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLBE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLBS,Globus Maritime Limited - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLDG,GoldMining Inc. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GLDG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLIBA,Liberty Capital Corporation - Series A GCI Group Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLIBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLIBK,Liberty Capital Corporation - Series C GCI Group Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLIBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLND,Greenland Energy Company - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLNG,Golar LNG Limited - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLNG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLO,Clough Global Opportunities Fund Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GLO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLOB,Globant S.A. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GLOB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLOO,"Gloo Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLOO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLPI,"Gaming and Leisure Properties, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLQ,Clough Global Equity Fund Clough Global Equity Fund Common Shares of Beneficial Interest,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GLQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLRE,"Greenlight Reinsurance, Ltd. - Class A Ordinary Shares",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLSI,"Greenwich LifeSciences, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLU,Gabelli Global Utility Common Shares of Beneficial Ownership,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GLU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLUE,"Monte Rosa Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLUE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLW,Corning Incorporated Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GLW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLXG,Galaxy Payroll Group Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLXG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GLXY,Galaxy Digital Inc. - Class A common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GLXY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GM,General Motors Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GME,GameStop Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GME,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GMED,"Globus Medical, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GMED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GMEX,GMEX ROBOTICS CORPORATION - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GMEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GMM,Global Mofy AI Limited  - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GMRS,GMR Solutions Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GMRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNE,Genie Energy Ltd. Class B Common Stock Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNK,Genco Shipping & Trading Limited Ordinary Shares New (Marshall Islands),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GNK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNL,"Global Net Lease, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GNL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNLN,"Greenlane Holdings, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GNLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNLX,Genelux Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GNLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNPX,"Genprex, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GNPX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNRC,Generac Holdlings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GNRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNS,Genius Group Limited Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNSS,Genasys Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GNSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNTX,Gentex Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GNTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GNW,Genworth Financial Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GO,Grocery Outlet Holding Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GOAI,Eva Live Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GOAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GOF,Guggenheim Strategic Opportunities Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GOF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GOGO,Gogo Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GOGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GOLD,"Gold.com, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GOLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GOLF,Acushnet Holdings Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GOLF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GOOG,Alphabet Inc. - Class C Capital Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GOOG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GOOGL,Alphabet Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GOOGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GORO,Goldgroup Mining Inc. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GORO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GP,GreenPower Motor Company Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPC,Genuine Parts Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPGI,"GPGI, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GPGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPI,"Group 1 Automotive, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPMT,Granite Point Mortgage Trust Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GPMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPN,Global Payments Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPOR,Gulfport Energy Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GPOR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPRE,"Green Plains, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GPRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPRK,Geopark Ltd Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GPRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GPUS,"Hyperscale Data, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GPUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRAB,Grab Holdings Limited - Class A Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRAL,"GRAIL, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRAN,Grande Group Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRBK,"Green Brick Partners, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GRBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRC,Gorman-Rupp Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRCE,"Grace Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRCE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRDN,"Guardian Pharmacy Services, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GRDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRDX,GridAI Technologies Corp.  - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRF,"Eagle Capital Growth Fund, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GRF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRI,"GRI Bio, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRMN,Garmin Ltd. Common Stock (Switzerland),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GRMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRND,Grindr Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GRND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRNQ,Greenpro Capital Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRNQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRNT,"Granite Ridge Resources, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GRNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRO,Brazil Potash Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GROV,"Grove Collaborative Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GROV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GROW,"U.S. Global Investors, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GROW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GROY,Gold Royalty Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GROY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRPN,"Groupon, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRRR,Gorilla Technology Group Inc. - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRSD,Grandstand Limited - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRSD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRWG,GrowGeneration Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GRWG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GRX,The Gabelli Healthcare & Wellness Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GS,"Goldman Sachs Group, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSAT,"Globalstar, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSBC,"Great Southern Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSBD,"Goldman Sachs BDC, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GSBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSHD,"Goosehead Insurance, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSHD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSIT,"GSI Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSIW,Garden Stage Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSIW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSL,Global Ship Lease Inc New Class A Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GSM,Ferroglobe PLC - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GT,The Goodyear Tire & Rubber Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GTE,Gran Tierra Energy Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:GTE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GTEN,"Gores Holdings X, Inc. - Class A ordinary shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GTEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GTES,Gates Industrial Corporation Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GTES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GTIM,Good Times Restaurants Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GTIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

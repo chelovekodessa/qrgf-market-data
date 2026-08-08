@@ -1,0 +1,251 @@
+ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+TGLS,Tecnoglass Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TGLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TGS,Transportadora de Gas del Sur SA TGS Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TGT,Target Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TGTX,"TG Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TGTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TH,Target Hospitality Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THC,Tenet Healthcare Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:THC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THCH,TH International Limited - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:THCH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THFF,First Financial Corporation  - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:THFF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THM,"International Tower Hill Mines, Ltd. Ordinary Shares (Canada)",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:THM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THO,"Thor Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:THO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THQ,abrdn Healthcare Opportunities Fund Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:THQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THRM,Gentherm Inc - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:THRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THRY,"Thryv Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:THRY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+THW,abrdn World Healthcare Fund Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:THW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TIC,"TIC Solutions, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TIGO,Millicom International Cellular S.A. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TIGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TII,Titan Mining Corporation Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TIL,"Instil Bio, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TILE,"Interface, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TILE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TIPT,Tiptree Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TIPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TISI,"Team, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TISI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TITN,Titan Machinery Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TITN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TJGC,TJGC Group Limited - ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TJGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TJX,"TJX Companies, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TJX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TK,Teekay Corporation Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TKC,Turkcell Iletisim Hizmetleri AS Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TKC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TKNO,"Alpha Teknova, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TKNO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TKO,"TKO Group Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TKO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TKR,Timken Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLF,"Tandy Leather Factory, Inc. - common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLIH,Ten-League International Holdings Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLIH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLN,Talen Energy Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLNC,Talon Capital Corp. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLPH,"Talphera, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLRY,"Tilray Brands, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLRY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLS,Telos Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLSA,Tiziana Life Sciences Ltd - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLSI,"TriSalus Life Sciences, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TLYS,"Tilly's, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TM,Toyota Motor Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMC,TMC the metals company Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMCI,"Treace Medical Concepts, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMCR,The Metals Royalty Company Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMDE,TMD Energy Limited Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TMDE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMDX,"TransMedics Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMO,Thermo Fisher Scientific Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TMO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMP,Tompkins Financial Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMQ,Trilogy Metals Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TMQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMS,Teamshares Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TMUS,"T-Mobile US, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TNC,Tennant Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TNDM,"Tandem Diabetes Care, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TNDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TNET,"TriNet Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TNET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TNGX,"Tango Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TNGX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TNL,Travel   Leisure Co. Common  Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TNL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TNXP,Tonix Pharmaceuticals Holding Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TNXP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOL,"Toll Brothers, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TOL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TONT,Graf Global Corp. Class A ordinary shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TONT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TONX,TON Strategy Company - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TONX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOON,"Kartoon Studios, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TOON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOP,TOP Financial Group Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TOP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOPP,Toppoint Holdings Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TOPP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOPS,"TOP Ships, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TOPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TORO,Toro Corp. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TORO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOST,"Toast, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TOST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOVX,"Theriva Biologics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TOVX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOWN,Towne Bank - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TOWN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TOYO,"TOYO Co., Ltd - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TOYO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TP,Ticketplus Ltd. Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPB,"Turning Point Brands, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPC,Tutor Perini Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPCS,TechPrecision Corporation - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TPCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPET,Trio Petroleum Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TPET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPG,TPG Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPL,Texas Pacific Land Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPR,"Tapestry, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TPVG,TriplePoint Venture Growth BDC Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPVG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TR,"Tootsie Roll Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRAD,APEX Tech Acquisition Inc. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRAK,"ReposiTrak, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRAX,"First Tracks Biotherapeutics, Inc. - Ordinary Shares",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRC,Tejon Ranch Co Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRDA,"Entrada Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TREE,"LendingTree, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TREE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TREX,"Trex Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TREX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRGP,"Targa Resources, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRGS,TRG Latin America Acquisitions Corp. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRI,Thomson Reuters Corp - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRIN,Trinity Capital Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRIP,"TripAdvisor, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRMB,Trimble Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRMD,TORM plc - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRMK,Trustmark Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRMK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRN,"Trinity Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRNO,Terreno Realty Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRNO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRNR,Interactive Strength Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRNR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRNS,"Transcat, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRON,Tron Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TROO,"TROOPS, Inc.  - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TROO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TROW,"T. Rowe Price Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TROW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TROX,Tronox Holdings plc Ordinary Shares (UK),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TROX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRP,TC Energy Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRS,TriMas Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRSG,Tungray Technologies Inc - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRST,TrustCo Bank Corp NY - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRT,Trio-Tech International Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRTX,"TPG RE Finance Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRU,TransUnion Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRUG,"TruGolf Holdings, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRUG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRUP,"Trupanion, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRUP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRV,"The Travelers Companies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRVI,"Trevi Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRVI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TRX,TRX Gold Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:TRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSAT,Telesat Corporation - Class A Common Shares and Class B Variable Voting Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TSAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSBK,"Timberland Bancorp, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TSBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSCO,Tractor Supply Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TSCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSEM,Tower Semiconductor Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TSEM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSHA,"Taysha Gene Therapies, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TSHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSLA,"Tesla, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TSLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSLX,"Sixth Street Specialty Lending, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TSLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSN,"Tyson Foods, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSQ,"Townsquare Media, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TSQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TSSI,"TSS, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TSSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTAM,Titan America SA Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TTAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTAN,"ServiceTitan, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTC,Toro Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTD,"The Trade Desk, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTE,TotalEnergies SE Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TTE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTEC,"TTEC Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTEK,"Tetra Tech, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTEK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTGT,"TechTarget, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTI,"Tetra Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTMI,"TTM Technologies, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTRX,Turn Therapeutics Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TTWO,"Take-Two Interactive Software, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTWO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TU,Telus Corporation Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TULP,"Bloomia Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TULP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TUSK,"Mammoth Energy Services, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TUSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TV,Grupo Televisa S.A.B. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TVC,Tennessee Valley Authority Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TVRD,"Tvardi Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TVRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TVTX,"Travere Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TVTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TW,Tradeweb Markets Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWAV,"TaoWeave, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWFG,"TWFG, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWG,Top Wealth Group Holding Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWI,"Titan International, Inc. (DE) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TWI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWIN,"Twin Disc, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWLO,Twilio Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TWLO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWLV,Twelve Seas Investment Company III - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWN,"Taiwan Fund, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TWN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWST,Twist Bioscience Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TXG,"10x Genomics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TXG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TXMD,"TherapeuticsMD, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TXMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TXN,Texas Instruments Incorporated - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TXN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TXNM,"TXNM Energy, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TXNM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TXRH,"Texas Roadhouse, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TXRH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TXT,Textron Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TY,Tri Continental Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TYG,Tortoise Energy Infrastructure Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TYG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TYGO,"Tigo Energy, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TYGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TYL,"Tyler Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TYL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TYRA,"Tyra Biosciences, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TYRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TZOO,Travelzoo - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TZOO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+U,Unity Software Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UA,"Under Armour, Inc. Class C Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UAA,"Under Armour, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UAA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UAL,"United Airlines Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UAMY,United States Antimony Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UAMY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UAVS,"AgEagle Aerial Systems, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:UAVS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UBCP,"United Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UBCP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UBER,"Uber Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UBER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UBS,UBS Group AG Registered Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UBSI,"United Bankshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UBSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UCAR,U Power Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UCAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UCB,"United Community Banks, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UCTT,"Ultra Clean Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UCTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UDR,"UDR, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UE,Urban Edge Properties Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UEC,Uranium Energy Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:UEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UEIC,Universal Electronics Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UEIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UFCS,"United Fire Group, Inc - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UFCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UFI,"Unifi, Inc. New Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UFPI,"UFP Industries, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UFPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UFPT,"UFP Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UFPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UG,"United-Guardian, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UGI,UGI Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UHAL,U-Haul Holding Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UHAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UHAL.B,U-Haul Holding Company Series N Non-Voting Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UHAL.B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UHS,"Universal Health Services, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UHS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UHT,Universal Health Realty Income Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UHT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UI,Ubiquiti Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UIS,Unisys Corporation New Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UIS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UK,Ucommune International Ltd  - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ULBI,Ultralife Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ULBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ULCC,"Frontier Group Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ULCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ULH,"Universal Logistics Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ULH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ULS,UL Solutions Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ULS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ULTA,"Ulta Beauty, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ULTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UMAC,"Unusual Machines, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:UMAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UMBF,UMB Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UMBF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UMC,United Microelectronics Corporation (NEW) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UMC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UMH,"UMH Properties, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UMH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNB,"Union Bankshares, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UNB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNCY,"Unicycive Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UNCY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNF,Unifirst Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UNF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNFI,"United Natural Foods, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UNFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNH,UnitedHealth Group Incorporated Common Stock (DE),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UNH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNIT,Uniti Group Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UNIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNM,Unum Group Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UNM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNP,Union Pacific Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UNP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UNTY,"Unity Bancorp, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UNTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UONE,"Urban One, Inc.  - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UONE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UONEK,"Urban One, Inc.  - Class D Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UONEK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UP,Wheels Up Experience Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UPB,"Upstream Bio, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UPB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UPBD,"Upbound Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UPBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UPC,Universe Pharmaceuticals Inc - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UPS,"United Parcel Service, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UPST,"Upstart Holdings, Inc. - Common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UPST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UPWK,Upwork Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UPWK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+URBN,"Urban Outfitters, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:URBN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+URG,Ur Energy Inc Common Shares (Canada),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:URG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+URGN,UroGen Pharma Ltd. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:URGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+URI,"United Rentals, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:URI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UROY,Uranium Royalty Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UROY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USA,Liberty All-Star Equity Fund Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:USA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USAR,"USA Rare Earth, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USAS,"Americas Gold and Silver Corporation Common Shares, no par value",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:USAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USAU,U.S. Gold Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USAU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USB,U.S. Bancorp Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:USB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USBC,"USBC, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:USBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USCB,"USCB Financial Holdings, Inc.  - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USDE,StablecoinX Inc. - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USDE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USEA,United Maritime Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USFD,US Foods Holding Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:USFD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USGO,U.S. GoldMining Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USIO,"Usio, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USLM,"United States Lime & Minerals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:USLM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USNA,"USANA Health Sciences, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:USNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+USPH,"U.S. Physical Therapy, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:USPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UTF,"Cohen & Steers Infrastructure Fund, Inc Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UTF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UTHR,United Therapeutics Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UTHR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UTI,Universal Technical Institute Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UTL,UNITIL Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UTMD,"Utah Medical Products, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UTMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UTSI,UTStarcom Holdings Corp - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:UTSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UTZ,Utz Brands Inc Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:UTZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UUU,"Universal Safety Products, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:UUU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+UUUU,Energy Fuels Inc Ordinary Shares (Canada),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:UUUU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
