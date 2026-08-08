@@ -1,74 +1,866 @@
 {
-  "etf": {
-    "ok": false,
-    "error": "<HTTPError 404: 'Not Found'>"
+  "scanner.tradingview.com/america/scan": {
+    "total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "assets_under_management": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "aum": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            806610420492.85
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            480677785000
+          ]
+        }
+      ]
+    },
+    "fund_aum": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "total_net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "net_asset_value": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_net_asset_value": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "total_assets_fund": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "assets_under_management_fund": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fundamental_total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    }
   },
-  "global_etf": {
-    "ok": true,
-    "totalCount": 19809,
-    "samples": [
-      {
-        "s": "AMEX:IWM",
-        "d": [
-          "IWM",
-          301.56,
-          null
-        ]
-      },
-      {
-        "s": "NASDAQ:QQQ",
-        "d": [
-          "QQQ",
-          723.03,
-          null
-        ]
-      },
-      {
-        "s": "AMEX:SPY",
-        "d": [
-          "SPY",
-          773.26,
-          null
-        ]
-      }
-    ]
+  "scanner.tradingview.com/america/scan?label-product=screener-etf": {
+    "total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "assets_under_management": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "aum": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            806610420492.85
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            480677785000
+          ]
+        }
+      ]
+    },
+    "fund_aum": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "total_net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "net_asset_value": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_net_asset_value": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "total_assets_fund": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "assets_under_management_fund": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fundamental_total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    }
   },
-  "america_etf_label": {
-    "ok": true,
-    "totalCount": 19809,
-    "samples": [
-      {
-        "s": "AMEX:XLK",
-        "d": [
-          "XLK",
-          187.97,
-          null
-        ]
-      },
-      {
-        "s": "AMEX:IWM",
-        "d": [
-          "IWM",
-          301.56,
-          null
-        ]
-      },
-      {
-        "s": "NASDAQ:QQQ",
-        "d": [
-          "QQQ",
-          723.03,
-          null
-        ]
-      },
-      {
-        "s": "AMEX:SPY",
-        "d": [
-          "SPY",
-          773.26,
-          null
-        ]
-      }
-    ]
+  "scanner.tradingview.com/global/scan?label-product=screener-etf": {
+    "total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "assets_under_management": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "aum": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            806610420492.85
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            480677785000
+          ]
+        }
+      ]
+    },
+    "fund_aum": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "total_net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_net_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "net_asset_value": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fund_net_asset_value": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "total_assets_fund": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "assets_under_management_fund": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    },
+    "fundamental_total_assets": {
+      "ok": true,
+      "totalCount": 2,
+      "data": [
+        {
+          "s": "AMEX:SPY",
+          "d": [
+            "SPY",
+            773.26,
+            null
+          ]
+        },
+        {
+          "s": "NASDAQ:QQQ",
+          "d": [
+            "QQQ",
+            723.03,
+            null
+          ]
+        }
+      ]
+    }
   }
 }
