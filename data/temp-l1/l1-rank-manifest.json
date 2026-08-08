@@ -1,0 +1,291 @@
+{
+  "summary": {
+    "actual_rankable_rows": 3117,
+    "assessed_rows": 5136,
+    "blocked_reason": null,
+    "broad_search_complete": true,
+    "coverage_gate_passed": true,
+    "effective_core_field_coverage_pct": {
+      "avg_dollar_volume": 100.0,
+      "drawdown_52w": 100.0,
+      "historical_volatility": 100.0,
+      "market_cap": 100.0,
+      "price": 100.0,
+      "return_12m": 100.0,
+      "return_3m": 100.0,
+      "return_6m": 100.0
+    },
+    "global_ranking_complete": true,
+    "history_insufficient_rows": 0,
+    "input_rows": 5136,
+    "merged_rows": 5136,
+    "minimum_score": 45.0,
+    "nonselected_rows": 4636,
+    "partial_or_test_mode": false,
+    "pending_recheck_rows": 0,
+    "production_floor_met": true,
+    "qualified_rows": 2693,
+    "rankable_rows": 3117,
+    "ranked_l1": 500,
+    "raw_core_field_coverage_pct": {
+      "avg_dollar_volume": 100.0,
+      "drawdown_52w": 100.0,
+      "historical_volatility": 100.0,
+      "market_cap": 100.0,
+      "price": 100.0,
+      "return_12m": 100.0,
+      "return_3m": 100.0,
+      "return_6m": 100.0
+    },
+    "retained_l1": 500,
+    "sources": [
+      {
+        "config": {
+          "id": "l1-snapshot.csv"
+        },
+        "resolved_columns": {
+          "as_of": "as_of",
+          "avg_dollar_volume": "avg_dollar_volume",
+          "company": "company",
+          "contract_id": "contract_id",
+          "drawdown_52w": "drawdown_52w",
+          "exchange": "exchange",
+          "historical_volatility": "historical_volatility",
+          "instrument_status": "instrument_status",
+          "market_cap": "market_cap",
+          "percent_unit": "percent_unit",
+          "price": "price",
+          "retrieved_at": "retrieved_at",
+          "return_12m": "return_12m",
+          "return_3m": "return_3m",
+          "return_6m": "return_6m",
+          "sector": "sector",
+          "security_type": "security_type",
+          "source_priority": "source_priority",
+          "ticker": "ticker"
+        },
+        "rows": 5136,
+        "source": "data/temp-l1/l1-snapshot.csv"
+      }
+    ],
+    "structurally_eligible_rows": 3117,
+    "unresolved_core_rows": 0,
+    "unresolved_mature_core_rows": 0
+  },
+  "finalists_bundle": {
+    "rows": 500,
+    "csv_sha256": "a9c5e1fc71568238c8e8de7f9947c7d3fff273ffa1c7bae46f241c3d4bbe9f95",
+    "gzip_sha256": "8af2fbce63e208c715dbb0680f34a8a04af3d56150fce133a3a88d61a96f75da",
+    "bundle_sha256": "4e14d545d7d15adb298ba6a6d231c2f3a7095ece70b9f3236ee6c169a22a389b",
+    "bundle_line_count": 898
+  },
+  "all_state_bundle": {
+    "rows": 5136,
+    "csv_sha256": "e7183178f86981a02f8d4bc3d6851b625139504576f28818f8f76f3120f3c33b",
+    "gzip_sha256": "43d04e32a33625593d0bf9d27b603ba104310fa20ab7b8a5d98557dd7962a203",
+    "bundle_sha256": "6620c8c1781e1ad1588cb06fec3c4bfd4da84d1c68f3c3ce440fd78afcc98944",
+    "bundle_line_count": 781
+  },
+  "top20": [
+    {
+      "ticker": "SPOT",
+      "company": "Spotify Technology S.A. Ordinary Shares",
+      "l1_score": "74.9689",
+      "drawdown_52w": "34.76680475745022",
+      "return_3m": "14.54383330204617",
+      "return_6m": "15.1735365594696",
+      "return_12m": "-26.9251497005988",
+      "avg_dollar_volume": "1005779102.9191111"
+    },
+    {
+      "ticker": "KLAC",
+      "company": "KLA Corporation  - Common Stock",
+      "l1_score": "74.9635",
+      "drawdown_52w": "35.5476368713975",
+      "return_3m": "9.053577228164238",
+      "return_6m": "43.854018414708534",
+      "return_12m": "117.1306444541868",
+      "avg_dollar_volume": "2350119849.1955557"
+    },
+    {
+      "ticker": "LRCX",
+      "company": "Lam Research Corporation - Common Stock",
+      "l1_score": "74.1995",
+      "drawdown_52w": "28.99657924743443",
+      "return_3m": "5.287185296653889",
+      "return_6m": "41.0930348484162",
+      "return_12m": "215.78680460469602",
+      "avg_dollar_volume": "3419929099.4122205"
+    },
+    {
+      "ticker": "ASTS",
+      "company": "AST SpaceMobile, Inc. - Class A Common Stock",
+      "l1_score": "73.7495",
+      "drawdown_52w": "46.257243580788575",
+      "return_3m": "7.823741007194243",
+      "return_6m": "-26.404092071611252",
+      "return_12m": "38.26638477801268",
+      "avg_dollar_volume": "1462674418.458"
+    },
+    {
+      "ticker": "QCOM",
+      "company": "QUALCOMM Incorporated - Common Stock",
+      "l1_score": "73.4721",
+      "drawdown_52w": "35.41859033548784",
+      "return_3m": "-21.19248826291079",
+      "return_6m": "22.641922992620742",
+      "return_12m": "13.17421790722763",
+      "avg_dollar_volume": "3311216140.642667"
+    },
+    {
+      "ticker": "NOW",
+      "company": "ServiceNow, Inc. Common Stock",
+      "l1_score": "73.4421",
+      "drawdown_52w": "35.868861887986206",
+      "return_3m": "37.03500493800066",
+      "return_6m": "22.816679779701012",
+      "return_12m": "-32.27765726681128",
+      "avg_dollar_volume": "3433319089.542222"
+    },
+    {
+      "ticker": "CRM",
+      "company": "Salesforce, Inc. Common Stock",
+      "l1_score": "73.3672",
+      "drawdown_52w": "28.37872988740664",
+      "return_3m": "7.268477292965272",
+      "return_6m": "0.5792412461514448",
+      "return_12m": "-23.11619928995971",
+      "avg_dollar_volume": "2773050786.8322225"
+    },
+    {
+      "ticker": "RKLB",
+      "company": "Rocket Lab Corporation - Common Stock",
+      "l1_score": "73.3236",
+      "drawdown_52w": "45.14565903686029",
+      "return_3m": "-3.7252281048410514",
+      "return_6m": "20.043478260869563",
+      "return_12m": "87.46180830598618",
+      "avg_dollar_volume": "2096287514.2513332"
+    },
+    {
+      "ticker": "PINS",
+      "company": "Pinterest, Inc. Class A Common Stock",
+      "l1_score": "73.2597",
+      "drawdown_52w": "38.60513352346383",
+      "return_3m": "10.809546092653246",
+      "return_6m": "21.24935995903737",
+      "return_12m": "-40.547326136078325",
+      "avg_dollar_volume": "393747818.99377775"
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood Markets, Inc. - Class A Common Stock",
+      "l1_score": "73.2089",
+      "drawdown_52w": "39.366917565915486",
+      "return_3m": "22.36358866736623",
+      "return_6m": "19.81762137169279",
+      "return_12m": "-13.532301418111034",
+      "avg_dollar_volume": "2656962078.496556"
+    },
+    {
+      "ticker": "SOFI",
+      "company": "SoFi Technologies, Inc.  - Common Stock",
+      "l1_score": "73.1604",
+      "drawdown_52w": "43.84356859150627",
+      "return_3m": "14.660012476606347",
+      "return_6m": "-9.413504189255791",
+      "return_12m": "-15.649380449747591",
+      "avg_dollar_volume": "1362383031.3733335"
+    },
+    {
+      "ticker": "CDE",
+      "company": "Coeur Mining, Inc. Common Stock",
+      "l1_score": "73.0914",
+      "drawdown_52w": "37.37846597047173",
+      "return_3m": "-5.54046713742531",
+      "return_6m": "-14.377154111275226",
+      "return_12m": "73.03482587064676",
+      "avg_dollar_volume": "516565786.06111115"
+    },
+    {
+      "ticker": "FPS",
+      "company": "Forgent Power Solutions, Inc. Class A Common Stock",
+      "l1_score": "73.0768",
+      "drawdown_52w": "41.348484848484844",
+      "return_3m": "-4.77244772447724",
+      "return_6m": "29.140950792326937",
+      "return_12m": "48.88461538461539",
+      "avg_dollar_volume": "278455256.78522223"
+    },
+    {
+      "ticker": "AEM",
+      "company": "Agnico Eagle Mines Limited Common Stock",
+      "l1_score": "73.0754",
+      "drawdown_52w": "29.940448205610416",
+      "return_3m": "-5.640863278982638",
+      "return_6m": "-8.104219127396068",
+      "return_12m": "30.458889618443134",
+      "avg_dollar_volume": "461076173.8811111"
+    },
+    {
+      "ticker": "INSM",
+      "company": "Insmed Incorporated - Common Stock",
+      "l1_score": "73.0248",
+      "drawdown_52w": "38.378378378378386",
+      "return_3m": "21.377650217572437",
+      "return_6m": "-14.347314778518234",
+      "return_12m": "23.040825903331765",
+      "avg_dollar_volume": "459823938.9866666"
+    },
+    {
+      "ticker": "IT",
+      "company": "Gartner, Inc. Common Stock",
+      "l1_score": "72.858",
+      "drawdown_52w": "30.185354873558758",
+      "return_3m": "19.081226741947887",
+      "return_6m": "22.22588080342443",
+      "return_12m": "-24.83395431718775",
+      "avg_dollar_volume": "288605368.60444444"
+    },
+    {
+      "ticker": "TER",
+      "company": "Teradyne, Inc. - Common Stock",
+      "l1_score": "72.8011",
+      "drawdown_52w": "22.25820335717653",
+      "return_3m": "3.3542234332425074",
+      "return_6m": "34.66467852451449",
+      "return_12m": "254.379408604662",
+      "avg_dollar_volume": "1564762911.2034445"
+    },
+    {
+      "ticker": "RIVN",
+      "company": "Rivian Automotive, Inc. - Class A Common Stock",
+      "l1_score": "72.7646",
+      "drawdown_52w": "29.484354341119445",
+      "return_3m": "12.123335669236164",
+      "return_6m": "15.64871702204553",
+      "return_12m": "35.93882752761258",
+      "avg_dollar_volume": "506169961.6"
+    },
+    {
+      "ticker": "DDOG",
+      "company": "Datadog, Inc. - Class A Common Stock",
+      "l1_score": "72.7612",
+      "drawdown_52w": "20.084039355015037",
+      "return_3m": "26.107816711590303",
+      "return_6m": "114.61467889908256",
+      "return_12m": "58.32825719120135",
+      "avg_dollar_volume": "1286998663.3945556"
+    },
+    {
+      "ticker": "AKAM",
+      "company": "Akamai Technologies, Inc. - Common Stock",
+      "l1_score": "72.7584",
+      "drawdown_52w": "33.188274403142934",
+      "return_3m": "-24.001375042970082",
+      "return_6m": "19.418786798465952",
+      "return_12m": "46.488205671879165",
+      "avg_dollar_volume": "542950857.1477778"
+    }
+  ]
+}

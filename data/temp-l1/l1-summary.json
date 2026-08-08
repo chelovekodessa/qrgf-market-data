@@ -1,0 +1,73 @@
+{
+  "actual_rankable_rows": 3117,
+  "assessed_rows": 5136,
+  "blocked_reason": null,
+  "broad_search_complete": true,
+  "coverage_gate_passed": true,
+  "effective_core_field_coverage_pct": {
+    "avg_dollar_volume": 100.0,
+    "drawdown_52w": 100.0,
+    "historical_volatility": 100.0,
+    "market_cap": 100.0,
+    "price": 100.0,
+    "return_12m": 100.0,
+    "return_3m": 100.0,
+    "return_6m": 100.0
+  },
+  "global_ranking_complete": true,
+  "history_insufficient_rows": 0,
+  "input_rows": 5136,
+  "merged_rows": 5136,
+  "minimum_score": 45.0,
+  "nonselected_rows": 4636,
+  "partial_or_test_mode": false,
+  "pending_recheck_rows": 0,
+  "production_floor_met": true,
+  "qualified_rows": 2693,
+  "rankable_rows": 3117,
+  "ranked_l1": 500,
+  "raw_core_field_coverage_pct": {
+    "avg_dollar_volume": 100.0,
+    "drawdown_52w": 100.0,
+    "historical_volatility": 100.0,
+    "market_cap": 100.0,
+    "price": 100.0,
+    "return_12m": 100.0,
+    "return_3m": 100.0,
+    "return_6m": 100.0
+  },
+  "retained_l1": 500,
+  "sources": [
+    {
+      "config": {
+        "id": "l1-snapshot.csv"
+      },
+      "resolved_columns": {
+        "as_of": "as_of",
+        "avg_dollar_volume": "avg_dollar_volume",
+        "company": "company",
+        "contract_id": "contract_id",
+        "drawdown_52w": "drawdown_52w",
+        "exchange": "exchange",
+        "historical_volatility": "historical_volatility",
+        "instrument_status": "instrument_status",
+        "market_cap": "market_cap",
+        "percent_unit": "percent_unit",
+        "price": "price",
+        "retrieved_at": "retrieved_at",
+        "return_12m": "return_12m",
+        "return_3m": "return_3m",
+        "return_6m": "return_6m",
+        "sector": "sector",
+        "security_type": "security_type",
+        "source_priority": "source_priority",
+        "ticker": "ticker"
+      },
+      "rows": 5136,
+      "source": "data/temp-l1/l1-snapshot.csv"
+    }
+  ],
+  "structurally_eligible_rows": 3117,
+  "unresolved_core_rows": 0,
+  "unresolved_mature_core_rows": 0
+}

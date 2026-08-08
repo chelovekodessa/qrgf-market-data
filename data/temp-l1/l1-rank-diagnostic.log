@@ -1,8 +1,6 @@
 py_compile_exit=0
 snapshot_rows 5136
 decode_exit=0
-Traceback (most recent call last):
-  File "/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/bulk_prefilter.py", line 24, in <module>
-    from qrgf_common import (
-ImportError: cannot import name 'clamp' from 'qrgf_common' (/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/qrgf_common.py)
-rank_exit=1
+rank_exit=0
+bundle_build_ok 500 4636
+bundle_exit=0
