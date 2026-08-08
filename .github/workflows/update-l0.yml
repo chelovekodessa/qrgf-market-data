@@ -1,0 +1,69 @@
+name: Update QRGF L0 snapshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-l0.yml"
+      - "scripts/build_universe.py"
+      - "scripts/qrgf_common.py"
+      - "scripts/publish_l0_snapshot.py"
+      - "config/approved-etfs.csv"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-l0-snapshot
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download and classify official Nasdaq Trader directory
+        run: |
+          set -euo pipefail
+          mkdir -p .work
+          python scripts/build_universe.py \
+            --download-url "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt" \
+            --download-to .work/nasdaqtraded.txt \
+            --include-etfs \
+            --approved-etfs config/approved-etfs.csv \
+            --output .work/l0-universe.csv \
+            --rejected .work/l0-rejected.csv \
+            --summary .work/l0-summary.json
+          python scripts/publish_l0_snapshot.py \
+            --accepted .work/l0-universe.csv \
+            --rejected .work/l0-rejected.csv \
+            --summary .work/l0-summary.json \
+            --raw .work/nasdaqtraded.txt \
+            --output-dir data/latest \
+            --source-id nasdaq_trader_all_us_listed \
+            --source-url "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt" \
+            --page-size 250 \
+            --producer-file scripts/build_universe.py \
+            --producer-file scripts/qrgf_common.py \
+            --producer-file config/approved-etfs.csv \
+            --producer-file scripts/publish_l0_snapshot.py \
+            --producer-file .github/workflows/update-l0.yml
+      - name: Commit snapshot when changed
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add data/latest
+          if git diff --cached --quiet; then
+            echo "Snapshot unchanged"
+            exit 0
+          fi
+          git commit -m "Update Nasdaq L0 snapshot"
+          git push
