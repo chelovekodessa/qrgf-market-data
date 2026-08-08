@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "source_id": "tradingview_america_scanner_delayed",
   "source_url": "https://scanner.tradingview.com/america/scan",
-  "retrieved_at": "2026-08-08T08:38:51Z",
+  "retrieved_at": "2026-08-08T08:41:23Z",
   "complete_request": true,
   "scanner_total_count": 19809,
   "l0_rows": 5136,
@@ -30,7 +30,7 @@
     "exchange",
     "close",
     "market_cap_basic",
-    "total_assets",
+    "aum",
     "average_volume_90d_calc",
     "Perf.3M",
     "Perf.6M",
@@ -42,7 +42,7 @@
   ],
   "field_present_counts": {
     "price": 5125,
-    "market_cap": 5058,
+    "market_cap": 5100,
     "avg_dollar_volume": 5002,
     "return_3m": 5121,
     "return_6m": 5121,
@@ -50,278 +50,104 @@
     "drawdown_52w": 5121,
     "historical_volatility": 5121
   },
-  "etf_size_metric_rule": "For security_type=etf only, when market_cap_basic is missing, market_cap field carries TradingView total_assets as a fund-size proxy. This affects coverage only; bulk_prefilter market_cap_points gives ETFs a fixed score independent of this value.",
-  "etf_size_metric_imputed_rows": 0,
-  "etf_size_metric_samples": [],
-  "structurally_rankable_rows_by_L1_thresholds": 3117,
-  "structural_unresolved_rows_without_history_resolution": 42,
-  "structural_unresolved_reason_counts": {
-    "market_cap": 42
-  },
-  "structural_history_unknown_rows": 0,
-  "structural_history_unknown_tickers_sample": [],
-  "structural_unresolved_sample": [
+  "etf_size_metric_rule": "For security_type=etf only, when market_cap_basic is missing, market_cap field carries TradingView aum as a fund-size proxy. This affects coverage only; bulk_prefilter market_cap_points gives ETFs a fixed score independent of this value.",
+  "etf_size_metric_imputed_rows": 42,
+  "etf_size_metric_samples": [
     {
       "ticker": "CIBR",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 15311123294.922
     },
     {
       "ticker": "CLOU",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 258340757.180829
     },
     {
       "ticker": "HACK",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 2894155000.0
     },
     {
       "ticker": "IBB",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 9530771640.0
     },
     {
       "ticker": "ICLN",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 2074941440.0
     },
     {
       "ticker": "IGV",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 13959891837.85
     },
     {
       "ticker": "IJR",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 111652205128.1
     },
     {
       "ticker": "IWM",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 80721553037.6
     },
     {
       "ticker": "KBE",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 1739904489.46578
     },
     {
       "ticker": "KRE",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 4640748610.30563
     },
     {
       "ticker": "ONEQ",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 10723231533.0
     },
     {
       "ticker": "QQQ",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 480677785000.0
     },
     {
       "ticker": "SKYY",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 3093166357.014
     },
     {
       "ticker": "SMH",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 70214984461.7414
     },
     {
       "ticker": "SOXX",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 43477033924.6
     },
     {
       "ticker": "SPY",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 806610420492.85
     },
     {
       "ticker": "TAN",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 1310479880.0
     },
     {
       "ticker": "VAW",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 3062727093.14545
     },
     {
       "ticker": "VCR",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 6188605434.56771
     },
     {
       "ticker": "VDC",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VFH",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VGT",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VHT",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VIS",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VNQ",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VOO",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VOX",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "VPU",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "WCLD",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XBI",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLB",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLC",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLE",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLF",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLI",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLK",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLP",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLRE",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLU",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLV",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XLY",
-      "missing": [
-        "market_cap"
-      ]
-    },
-    {
-      "ticker": "XOP",
-      "missing": [
-        "market_cap"
-      ]
+      "aum": 7983546093.6253
     }
   ],
+  "structurally_rankable_rows_by_L1_thresholds": 3117,
+  "structural_unresolved_rows_without_history_resolution": 0,
+  "structural_unresolved_reason_counts": {},
+  "structural_history_unknown_rows": 0,
+  "structural_history_unknown_tickers_sample": [],
+  "structural_unresolved_sample": [],
   "derivations": {
     "avg_dollar_volume": "close * average_volume_90d_calc",
     "drawdown_52w": "100 * (1 - close / price_52_week_high)",
     "historical_volatility": "TradingView Volatility.M field, percent unit"
   },
   "percent_unit": "percent",
-  "csv_sha256": "a9d5fe2daf1252188e923f395fe2439bb0d5770031122ec71cd514af9a7fa9ab",
-  "gzip_sha256": "16e3e87d656f445ee11e7bcc851a91e7574104705d8283c694c6a3770f98c8a9",
-  "bundle_sha256": "66bbcc2cd57252100afd434299e68221f54471269a17242d9f0be03e1eaa9512",
-  "bundle_line_count": 8262
+  "csv_sha256": "395e90c961517d62480924b7ecd3275c719da178c17c0d2b3c1a00b52a5c8688",
+  "gzip_sha256": "78ebde8e88c0de6f29ba5be994232c2a2ea3cdfd3771fc9d691a0fdc000e1c33",
+  "bundle_sha256": "3cb8bb97cc7a6173df969321855c23476293e6efe1a3d056f45f0e702a4433c7",
+  "bundle_line_count": 8270
 }
