@@ -4,7 +4,10 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import csv
+import gzip
+import io
 import datetime as dt
 import hashlib
 import json
@@ -94,6 +97,25 @@ def main() -> int:
         write_rows(page_path, chunk, fields)
         pages.append({"name": name, "rows": len(chunk), "sha256": sha256_file(page_path)})
 
+    csv_buffer = io.StringIO(newline="")
+    csv_writer = csv.DictWriter(csv_buffer, fieldnames=fields, extrasaction="ignore")
+    csv_writer.writeheader()
+    csv_writer.writerows(accepted)
+    csv_bytes = csv_buffer.getvalue().encode("utf-8")
+    gzip_bytes = gzip.compress(csv_bytes, compresslevel=9, mtime=0)
+    bundle_bytes = base64.b64encode(gzip_bytes)
+    bundle_path = output / "l0-universe.csv.gz.b64"
+    bundle_path.write_bytes(bundle_bytes)
+    bundle = {
+        "name": bundle_path.name,
+        "encoding": "base64+gzip",
+        "rows": len(accepted),
+        "sha256": hashlib.sha256(bundle_bytes).hexdigest(),
+        "gzip_sha256": hashlib.sha256(gzip_bytes).hexdigest(),
+        "csv_sha256": hashlib.sha256(csv_bytes).hexdigest(),
+        "bytes": len(bundle_bytes),
+    }
+
     producer_hashes = {path.name: sha256_file(path) for path in args.producer_file}
     rejection_reasons = Counter(str(row.get("rejection_reason") or "unknown") for row in rejected)
     manifest = {
@@ -110,6 +132,7 @@ def main() -> int:
         "page_size": args.page_size,
         "page_count": len(pages),
         "pages": pages,
+        "bundle": bundle,
         "producer_hashes": producer_hashes,
         "summary": summary,
         "rejection_reason_counts": dict(sorted(rejection_reasons.items())),
