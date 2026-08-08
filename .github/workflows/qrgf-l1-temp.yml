@@ -1,4 +1,4 @@
-name: Temporary QRGF L3 runner
+name: Temporary QRGF L3 transport probe
 
 on:
   push:
@@ -9,14 +9,10 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: qrgf-l3-temp-20260808
-  cancel-in-progress: true
-
 jobs:
-  l3:
+  probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,27 +20,40 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Collect SEC fundamentals and rank L3
+      - name: Probe TradingView CIK and SEC endpoints
         shell: bash
         run: |
           set +e
           mkdir -p data/temp-l1
-          LOG=data/temp-l1/l3-diagnostic.log
-          : > "$LOG"
-          python -m py_compile scripts/qrgf_common.py scripts/qrgf_l3_common.py scripts/evaluate_l3.py scripts/collect_and_rank_l3_sec.py >> "$LOG" 2>&1
-          echo "py_compile_exit=$?" >> "$LOG"
-          python scripts/collect_and_rank_l3_sec.py data/temp-l1/l2-output.json \
-            --out-dir data/temp-l1 \
-            --ruleset-version 3.1.0 \
-            --ruleset-hash d7dbf15ca011e000eed39e89bf95a056fd8a9231a945c9fe20672290e6e00493 >> "$LOG" 2>&1
-          RUN_EXIT=$?
-          echo "run_exit=$RUN_EXIT" >> "$LOG"
+          python - <<'PY' > data/temp-l1/l3-transport-probe.json 2>&1
+          import json, urllib.parse, urllib.request, urllib.error
+          out={}
+          params=urllib.parse.urlencode({'text':'AAPL','hl':'true','exchange':'NASDAQ'})
+          url='https://symbol-search.tradingview.com/symbol_search/v3/?'+params
+          try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0','Origin':'https://www.tradingview.com','Referer':'https://www.tradingview.com/'})
+              with urllib.request.urlopen(req,timeout=30) as r:
+                  tv=json.loads(r.read().decode('utf-8'))
+              out['tradingview']={'ok':True,'first':tv[0] if isinstance(tv,list) and tv else tv}
+          except Exception as e:
+              out['tradingview']={'ok':False,'error':repr(e)}
+          for key,url in {
+              'submissions':'https://data.sec.gov/submissions/CIK0000320193.json',
+              'companyfacts':'https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json',
+              'filing':'https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm'
+          }.items():
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'qrgf-market-data/1.0 github.com/chelovekodessa/qrgf-market-data','Accept-Encoding':'identity'})
+                  with urllib.request.urlopen(req,timeout=30) as r:
+                      body=r.read(2000)
+                      out[key]={'ok':True,'status':getattr(r,'status',200),'content_type':r.headers.get('Content-Type'),'sample':body[:200].decode('utf-8','replace')}
+              except Exception as e:
+                  out[key]={'ok':False,'error':repr(e)}
+          print(json.dumps(out,indent=2))
+          PY
           git config user.name "qrgf-l3-temp-bot"
           git config user.email "qrgf-l3-temp-bot@users.noreply.github.com"
-          git add data/temp-l1/l3-diagnostic.log
-          for f in data/temp-l1/l3-input.json data/temp-l1/l3-output.json data/temp-l1/l3-collection.json data/temp-l1/l3-summary.json; do
-            if [ -f "$f" ]; then git add "$f"; fi
-          done
-          git commit -m "Temporary SEC-backed L3 research results" || true
+          git add data/temp-l1/l3-transport-probe.json
+          git commit -m "Temporary L3 transport probe" || true
           git push origin HEAD:qrgf-l1-temp-20260808 || true
           exit 0
