@@ -50,7 +50,7 @@ def source_creation_time(raw_path: Path) -> str | None:
     for line in reversed(lines[-10:]):
         if line.lower().startswith("file creation time"):
             parts = line.split(":", 1)
-            return parts[1].strip() if len(parts) == 2 else line.strip()
+            return parts[1].strip().strip("|") if len(parts) == 2 else line.strip().strip("|")
     return None
 
 
@@ -114,6 +114,7 @@ def main() -> int:
         "gzip_sha256": hashlib.sha256(gzip_bytes).hexdigest(),
         "csv_sha256": hashlib.sha256(csv_bytes).hexdigest(),
         "bytes": len(bundle_bytes),
+        "line_count": bundle_bytes.count(b"\n"),
     }
 
     producer_hashes = {path.name: sha256_file(path) for path in args.producer_file}
