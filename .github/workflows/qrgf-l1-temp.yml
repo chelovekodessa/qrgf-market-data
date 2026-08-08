@@ -1,4 +1,4 @@
-name: Temporary QRGF linewise lineage export
+name: Temporary QRGF L3 runner
 
 on:
   push:
@@ -9,10 +9,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: qrgf-l3-temp-20260808
+  cancel-in-progress: true
+
 jobs:
-  lineage:
+  l3:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,26 +24,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build linewise lineage files
+      - name: Collect SEC fundamentals and rank L3
+        shell: bash
         run: |
-          set -euo pipefail
-          python - <<'PY'
-          import csv,json
-          from pathlib import Path
-          root=Path('data/temp-l1')
-          l1=list(csv.DictReader((root/'l1-finalists.csv').open(encoding='utf-8',newline='')))
-          l2=json.loads((root/'l2-output.json').read_text(encoding='utf-8'))
-          text1=''.join('{}\t{}\t{}\n'.format(r.get('ticker'),r.get('contract_id'),r.get('l1_score')) for r in l1)
-          text2=''.join('{}\t{}\n'.format(r.get('ticker'),r.get('contract_id')) for r in l2.get('finalists',[]))
-          (root/'l1-selected.tsv').write_text(text1,encoding='utf-8')
-          (root/'l2-selected.tsv').write_text(text2,encoding='utf-8')
-          print('l1',len(l1),'l2',len(l2.get('finalists',[])))
-          PY
-      - name: Commit linewise lineage
-        run: |
-          set -euo pipefail
-          git config user.name "qrgf-l1-temp-bot"
-          git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
-          git add data/temp-l1/l1-selected.tsv data/temp-l1/l2-selected.tsv
-          git commit -m "Temporary linewise L1 L2 lineage keys"
-          git push origin HEAD:qrgf-l1-temp-20260808
+          set +e
+          mkdir -p data/temp-l1
+          LOG=data/temp-l1/l3-diagnostic.log
+          : > "$LOG"
+          python -m py_compile scripts/qrgf_common.py scripts/qrgf_l3_common.py scripts/evaluate_l3.py scripts/collect_and_rank_l3_sec.py >> "$LOG" 2>&1
+          echo "py_compile_exit=$?" >> "$LOG"
+          python scripts/collect_and_rank_l3_sec.py data/temp-l1/l2-output.json \
+            --out-dir data/temp-l1 \
+            --ruleset-version 3.1.0 \
+            --ruleset-hash d7dbf15ca011e000eed39e89bf95a056fd8a9231a945c9fe20672290e6e00493 >> "$LOG" 2>&1
+          RUN_EXIT=$?
+          echo "run_exit=$RUN_EXIT" >> "$LOG"
+          git config user.name "qrgf-l3-temp-bot"
+          git config user.email "qrgf-l3-temp-bot@users.noreply.github.com"
+          git add data/temp-l1/l3-diagnostic.log
+          for f in data/temp-l1/l3-input.json data/temp-l1/l3-output.json data/temp-l1/l3-collection.json data/temp-l1/l3-summary.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          git commit -m "Temporary SEC-backed L3 research results" || true
+          git push origin HEAD:qrgf-l1-temp-20260808 || true
+          exit 0
