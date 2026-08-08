@@ -29,8 +29,10 @@ jobs:
           root=Path('data/temp-l1')
           l1=list(csv.DictReader((root/'l1-finalists.csv').open(encoding='utf-8',newline='')))
           l2=json.loads((root/'l2-output.json').read_text(encoding='utf-8'))
-          (root/'l1-selected.tsv').write_text(''.join(f"{r.get(\"ticker\")}\t{r.get(\"contract_id\")}\t{r.get(\"l1_score\")}\n" for r in l1),encoding='utf-8')
-          (root/'l2-selected.tsv').write_text(''.join(f"{r.get(\"ticker\")}\t{r.get(\"contract_id\")}\n" for r in l2.get('finalists',[])),encoding='utf-8')
+          text1=''.join('{}\t{}\t{}\n'.format(r.get('ticker'),r.get('contract_id'),r.get('l1_score')) for r in l1)
+          text2=''.join('{}\t{}\n'.format(r.get('ticker'),r.get('contract_id')) for r in l2.get('finalists',[]))
+          (root/'l1-selected.tsv').write_text(text1,encoding='utf-8')
+          (root/'l2-selected.tsv').write_text(text2,encoding='utf-8')
           print('l1',len(l1),'l2',len(l2.get('finalists',[])))
           PY
       - name: Commit linewise lineage
