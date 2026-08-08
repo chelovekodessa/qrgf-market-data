@@ -167,6 +167,8 @@ def _approved_etf_meta(approved_etfs: set[str] | Mapping[str, Mapping[str, Any]]
     if approved_etfs is None:
         return None
     if isinstance(approved_etfs, set):
+        # Bare ticker sets do not carry contract identity, leverage metadata or
+        # verification date and are therefore not trusted in production.
         return None
     return approved_etfs.get(symbol)
 
@@ -200,6 +202,12 @@ def classify_row(
     include_etfs: bool,
     approved_etfs: set[str] | Mapping[str, Mapping[str, Any]] | None = None,
 ) -> tuple[bool, str, str, bool]:
+    """Classify one symbol-directory row.
+
+    Return ``(eligible, reason, security_type, adr_flag)``. Ambiguous records are
+    returned as ineligible with ``instrument_resolution_required`` so they are
+    quarantined outside the structural universe.
+    """
     symbol = normalize_symbol(row.get("Symbol"))
     name = str(row.get("Security Name") or "").strip()
     traded = str(row.get("Nasdaq Traded") or "").strip().upper()
@@ -230,6 +238,9 @@ def classify_row(
             return False, "exchange_traded_note_not_etf", "etn", False
         return True, "", "etf", False
 
+    # ADR/ADS descriptions often contain words such as "rights" or "units" in
+    # the ratio explanation. Detect the depositary instrument before applying
+    # security-level right/unit exclusions.
     is_adr = bool(ADR_PATTERN.search(name))
     if is_adr:
         if PREFERRED_PATTERN.search(name):
@@ -308,6 +319,8 @@ def build_universe(
             else:
                 rejected.append({**normalized, "rejection_reason": reason})
 
+    # Any duplicate symbol is a contract-resolution problem unless the records
+    # are byte-equivalent after normalization. Never silently keep the first row.
     by_symbol: dict[str, list[dict[str, Any]]] = {}
     for record in accepted:
         by_symbol.setdefault(record["ticker"], []).append(record)
@@ -362,7 +375,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
 
 def download_listing(url: str, destination: Path) -> None:
     request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 QRGF/3.0"})
-    with urllib.request.urlopen(request, timeout=60) as response:
+    with urllib.request.urlopen(request, timeout=60) as response:  # nosec B310 - explicit trusted URL supplied by operator
         data = response.read()
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(data)
