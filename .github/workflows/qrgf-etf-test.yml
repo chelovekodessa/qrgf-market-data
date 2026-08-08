@@ -1,0 +1,62 @@
+name: Temporary ETF screener probe
+
+on:
+  push:
+    branches: [qrgf-l1-temp-20260808]
+    paths:
+      - ".github/workflows/qrgf-etf-test.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: qrgf-l1-temp-20260808
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe ETF scanner
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, urllib.request, urllib.error
+          from pathlib import Path
+
+          tests = [
+            ('etf', 'https://scanner.tradingview.com/etf/scan', {'markets':['america'],'symbols':{'query':{'types':[]},'tickers':[]},'options':{'lang':'en'},'columns':['name','close','total_assets'],'range':[0,10000]}),
+            ('global_etf', 'https://scanner.tradingview.com/global/scan?label-product=screener-etf', {'markets':['america'],'symbols':{'query':{'types':[]},'tickers':[]},'options':{'lang':'en'},'columns':['name','close','total_assets'],'range':[0,10000]}),
+            ('america_etf_label', 'https://scanner.tradingview.com/america/scan?label-product=screener-etf', {'markets':['america'],'symbols':{'query':{'types':[]},'tickers':[]},'options':{'lang':'en'},'columns':['name','close','total_assets'],'range':[0,10000]}),
+          ]
+          out = {}
+          targets = {'SPY','QQQ','IWM','XLK'}
+          for key, url, payload in tests:
+              try:
+                  req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={'Content-Type':'application/json','User-Agent':'Mozilla/5.0'}, method='POST')
+                  with urllib.request.urlopen(req, timeout=60) as resp:
+                      body = json.loads(resp.read().decode())
+                  samples = []
+                  for item in body.get('data', []):
+                      sym = str(item.get('s') or '').split(':')[-1].upper()
+                      if sym in targets:
+                          samples.append({'s': item.get('s'), 'd': item.get('d')})
+                  out[key] = {'ok': True, 'totalCount': body.get('totalCount'), 'samples': samples}
+              except Exception as e:
+                  out[key] = {'ok': False, 'error': repr(e)}
+          p = Path('data/temp-l1/etf-test.json')
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(json.dumps(out, indent=2) + '\n')
+          print(json.dumps(out, indent=2))
+          PY
+      - name: Commit probe
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-l1-temp-bot"
+          git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
+          git add data/temp-l1/etf-test.json
+          git commit -m "Temporary ETF screener probe results"
+          git push origin HEAD:qrgf-l1-temp-20260808
