@@ -179,3 +179,45 @@ def source_rank(meta: Mapping[str, Any], source_id: str) -> tuple[int, float, fl
     as_of = parse_datetime(meta.get("as_of"))
     retrieved = parse_datetime(meta.get("retrieved_at"))
     return (priority, as_of.timestamp() if as_of else float("-inf"), retrieved.timestamp() if retrieved else float("-inf"), source_id)
+
+
+CANONICAL_CSV_JSON_FIELDS = {
+    "history_evidence", "sources", "source_conflicts", "component_scores",
+    "risk_component_scores", "opportunity_flags", "risk_flags", "hard_vetoes",
+    "checks_failed", "checks_missing", "critical_missing", "evidence",
+    "component_evidence_ids", "decision", "decision_validation",
+}
+CANONICAL_CSV_BOOL_FIELDS = {
+    "profitable", "fcf_positive", "quality_seed", "rankable",
+    "limited_history_recheck", "decision_eligible", "research_eligible",
+    "evidence_validated", "critical_complete", "final_status_valid", "stale",
+    "ruleset_migration_required_recheck", "selected_for_next_stage",
+}
+CANONICAL_CSV_NUMBER_FIELDS = {
+    "price", "current_price", "market_cap", "avg_dollar_volume",
+    "return_1m", "return_3m", "return_6m", "return_12m", "drawdown_52w",
+    "historical_volatility", "quality_prior_score", "trading_history_days",
+    "l1_score", "research_priority_score", "research_priority_coverage_pct",
+    "opportunity_score", "opportunity_coverage_pct", "risk_score",
+    "risk_coverage_pct", "risk_upper_bound", "l2_opportunity_score",
+    "l2_risk_score", "l3_score", "l3_coverage_pct", "l4_score", "l4_coverage_pct",
+}
+
+
+def parse_canonical_csv_value(field: str, value: Any) -> Any:
+    if value is None:
+        return None
+    raw = str(value).strip()
+    if field in CANONICAL_CSV_JSON_FIELDS:
+        if not raw:
+            return [] if field in {"sources", "source_conflicts", "evidence", "opportunity_flags", "risk_flags", "hard_vetoes", "checks_failed", "checks_missing", "critical_missing"} else None
+        return json.loads(raw)
+    if field in CANONICAL_CSV_BOOL_FIELDS:
+        return strict_bool(raw, field=field, allow_none=True)
+    if field in CANONICAL_CSV_NUMBER_FIELDS:
+        return strict_float(raw, field=field, allow_none=True)
+    return raw
+
+
+def parse_canonical_csv_row(row: Mapping[str, Any]) -> dict[str, Any]:
+    return {field: parse_canonical_csv_value(field, value) for field, value in row.items()}
