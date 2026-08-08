@@ -20,33 +20,45 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Probe ETF scanner
+      - name: Probe ETF AUM fields
         run: |
           set -euo pipefail
           python - <<'PY'
           import json, urllib.request, urllib.error
           from pathlib import Path
 
-          tests = [
-            ('etf', 'https://scanner.tradingview.com/etf/scan', {'markets':['america'],'symbols':{'query':{'types':[]},'tickers':[]},'options':{'lang':'en'},'columns':['name','close','total_assets'],'range':[0,10000]}),
-            ('global_etf', 'https://scanner.tradingview.com/global/scan?label-product=screener-etf', {'markets':['america'],'symbols':{'query':{'types':[]},'tickers':[]},'options':{'lang':'en'},'columns':['name','close','total_assets'],'range':[0,10000]}),
-            ('america_etf_label', 'https://scanner.tradingview.com/america/scan?label-product=screener-etf', {'markets':['america'],'symbols':{'query':{'types':[]},'tickers':[]},'options':{'lang':'en'},'columns':['name','close','total_assets'],'range':[0,10000]}),
+          fields = [
+            'total_assets','fund_total_assets','assets_under_management','aum','fund_aum',
+            'net_assets','total_net_assets','fund_net_assets','net_asset_value','fund_net_asset_value',
+            'total_assets_fund','assets_under_management_fund','fundamental_total_assets'
+          ]
+          urls = [
+            'https://scanner.tradingview.com/america/scan',
+            'https://scanner.tradingview.com/america/scan?label-product=screener-etf',
+            'https://scanner.tradingview.com/global/scan?label-product=screener-etf',
           ]
           out = {}
-          targets = {'SPY','QQQ','IWM','XLK'}
-          for key, url, payload in tests:
-              try:
-                  req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={'Content-Type':'application/json','User-Agent':'Mozilla/5.0'}, method='POST')
-                  with urllib.request.urlopen(req, timeout=60) as resp:
-                      body = json.loads(resp.read().decode())
-                  samples = []
-                  for item in body.get('data', []):
-                      sym = str(item.get('s') or '').split(':')[-1].upper()
-                      if sym in targets:
-                          samples.append({'s': item.get('s'), 'd': item.get('d')})
-                  out[key] = {'ok': True, 'totalCount': body.get('totalCount'), 'samples': samples}
-              except Exception as e:
-                  out[key] = {'ok': False, 'error': repr(e)}
+          for url in urls:
+              key = url.split('://',1)[1]
+              out[key] = {}
+              for field in fields:
+                  payload = {
+                    'markets':['america'],
+                    'symbols':{'query':{'types':[]},'tickers':['AMEX:SPY','NASDAQ:QQQ']},
+                    'options':{'lang':'en'},
+                    'columns':['name','close',field],
+                    'range':[0,10],
+                  }
+                  try:
+                      req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={'Content-Type':'application/json','User-Agent':'Mozilla/5.0'}, method='POST')
+                      with urllib.request.urlopen(req, timeout=30) as resp:
+                          body = json.loads(resp.read().decode())
+                      out[key][field] = {'ok': True, 'totalCount': body.get('totalCount'), 'data': body.get('data', [])[:4]}
+                  except urllib.error.HTTPError as e:
+                      text = e.read().decode('utf-8','replace')[:500]
+                      out[key][field] = {'ok': False, 'http': e.code, 'body': text}
+                  except Exception as e:
+                      out[key][field] = {'ok': False, 'error': repr(e)}
           p = Path('data/temp-l1/etf-test.json')
           p.parent.mkdir(parents=True, exist_ok=True)
           p.write_text(json.dumps(out, indent=2) + '\n')
@@ -58,5 +70,5 @@ jobs:
           git config user.name "qrgf-l1-temp-bot"
           git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
           git add data/temp-l1/etf-test.json
-          git commit -m "Temporary ETF screener probe results"
+          git commit -m "Temporary ETF AUM field probe results"
           git push origin HEAD:qrgf-l1-temp-20260808
