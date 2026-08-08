@@ -1,0 +1,3502 @@
+[
+  {
+    "ticker": "SPOT",
+    "contract_id": "nasdaqtrader:N:SPOT",
+    "l1_score": "74.9689",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KLAC",
+    "contract_id": "nasdaqtrader:Q:KLAC",
+    "l1_score": "74.9635",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LRCX",
+    "contract_id": "nasdaqtrader:Q:LRCX",
+    "l1_score": "74.1995",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ASTS",
+    "contract_id": "nasdaqtrader:Q:ASTS",
+    "l1_score": "73.7495",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "QCOM",
+    "contract_id": "nasdaqtrader:Q:QCOM",
+    "l1_score": "73.4721",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NOW",
+    "contract_id": "nasdaqtrader:N:NOW",
+    "l1_score": "73.4421",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CRM",
+    "contract_id": "nasdaqtrader:N:CRM",
+    "l1_score": "73.3672",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RKLB",
+    "contract_id": "nasdaqtrader:Q:RKLB",
+    "l1_score": "73.3236",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PINS",
+    "contract_id": "nasdaqtrader:N:PINS",
+    "l1_score": "73.2597",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HOOD",
+    "contract_id": "nasdaqtrader:Q:HOOD",
+    "l1_score": "73.2089",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SOFI",
+    "contract_id": "nasdaqtrader:Q:SOFI",
+    "l1_score": "73.1604",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CDE",
+    "contract_id": "nasdaqtrader:N:CDE",
+    "l1_score": "73.0914",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FPS",
+    "contract_id": "nasdaqtrader:N:FPS",
+    "l1_score": "73.0768",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AEM",
+    "contract_id": "nasdaqtrader:N:AEM",
+    "l1_score": "73.0754",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "INSM",
+    "contract_id": "nasdaqtrader:Q:INSM",
+    "l1_score": "73.0248",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IT",
+    "contract_id": "nasdaqtrader:N:IT",
+    "l1_score": "72.858",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TER",
+    "contract_id": "nasdaqtrader:Q:TER",
+    "l1_score": "72.8011",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RIVN",
+    "contract_id": "nasdaqtrader:Q:RIVN",
+    "l1_score": "72.7646",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DDOG",
+    "contract_id": "nasdaqtrader:Q:DDOG",
+    "l1_score": "72.7612",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AKAM",
+    "contract_id": "nasdaqtrader:Q:AKAM",
+    "l1_score": "72.7584",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CAT",
+    "contract_id": "nasdaqtrader:N:CAT",
+    "l1_score": "72.7059",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ON",
+    "contract_id": "nasdaqtrader:Q:ON",
+    "l1_score": "72.6774",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MKSI",
+    "contract_id": "nasdaqtrader:Q:MKSI",
+    "l1_score": "72.5819",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MPWR",
+    "contract_id": "nasdaqtrader:Q:MPWR",
+    "l1_score": "72.5585",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SAP",
+    "contract_id": "nasdaqtrader:N:SAP",
+    "l1_score": "72.4544",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MELI",
+    "contract_id": "nasdaqtrader:Q:MELI",
+    "l1_score": "72.3911",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AMD",
+    "contract_id": "nasdaqtrader:Q:AMD",
+    "l1_score": "72.3341",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ROP",
+    "contract_id": "nasdaqtrader:Q:ROP",
+    "l1_score": "72.3246",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GEV",
+    "contract_id": "nasdaqtrader:N:GEV",
+    "l1_score": "72.2983",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BX",
+    "contract_id": "nasdaqtrader:N:BX",
+    "l1_score": "72.2978",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SOXX",
+    "contract_id": "US:SOXX",
+    "l1_score": "72.2945",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "OWL",
+    "contract_id": "nasdaqtrader:N:OWL",
+    "l1_score": "72.2618",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "F",
+    "contract_id": "nasdaqtrader:N:F",
+    "l1_score": "72.183",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HD",
+    "contract_id": "nasdaqtrader:N:HD",
+    "l1_score": "72.167",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VRSK",
+    "contract_id": "nasdaqtrader:Q:VRSK",
+    "l1_score": "72.1564",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FN",
+    "contract_id": "nasdaqtrader:N:FN",
+    "l1_score": "72.154",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AFRM",
+    "contract_id": "nasdaqtrader:Q:AFRM",
+    "l1_score": "72.1333",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ARM",
+    "contract_id": "nasdaqtrader:Q:ARM",
+    "l1_score": "72.0779",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MRVL",
+    "contract_id": "nasdaqtrader:Q:MRVL",
+    "l1_score": "72.0763",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ARES",
+    "contract_id": "nasdaqtrader:N:ARES",
+    "l1_score": "72.0719",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DASH",
+    "contract_id": "nasdaqtrader:Q:DASH",
+    "l1_score": "72.067",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MTZ",
+    "contract_id": "nasdaqtrader:N:MTZ",
+    "l1_score": "72.0315",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ALAB",
+    "contract_id": "nasdaqtrader:Q:ALAB",
+    "l1_score": "71.9961",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AU",
+    "contract_id": "nasdaqtrader:N:AU",
+    "l1_score": "71.9822",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GLW",
+    "contract_id": "nasdaqtrader:N:GLW",
+    "l1_score": "71.9807",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CLS",
+    "contract_id": "nasdaqtrader:N:CLS",
+    "l1_score": "71.9768",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CORZ",
+    "contract_id": "nasdaqtrader:Q:CORZ",
+    "l1_score": "71.9699",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ELF",
+    "contract_id": "nasdaqtrader:N:ELF",
+    "l1_score": "71.9694",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ENPH",
+    "contract_id": "nasdaqtrader:Q:ENPH",
+    "l1_score": "71.952",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MOD",
+    "contract_id": "nasdaqtrader:N:MOD",
+    "l1_score": "71.9507",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DHR",
+    "contract_id": "nasdaqtrader:N:DHR",
+    "l1_score": "71.9168",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AA",
+    "contract_id": "nasdaqtrader:N:AA",
+    "l1_score": "71.8805",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GWRE",
+    "contract_id": "nasdaqtrader:N:GWRE",
+    "l1_score": "71.8371",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PBR",
+    "contract_id": "nasdaqtrader:N:PBR",
+    "l1_score": "71.8112",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SWKS",
+    "contract_id": "nasdaqtrader:Q:SWKS",
+    "l1_score": "71.808",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RMBS",
+    "contract_id": "nasdaqtrader:Q:RMBS",
+    "l1_score": "71.8041",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FSLR",
+    "contract_id": "nasdaqtrader:Q:FSLR",
+    "l1_score": "71.7788",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PLTR",
+    "contract_id": "nasdaqtrader:Q:PLTR",
+    "l1_score": "71.7779",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MTSI",
+    "contract_id": "nasdaqtrader:Q:MTSI",
+    "l1_score": "71.7735",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DOW",
+    "contract_id": "nasdaqtrader:N:DOW",
+    "l1_score": "71.7636",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ZS",
+    "contract_id": "nasdaqtrader:Q:ZS",
+    "l1_score": "71.7537",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NOK",
+    "contract_id": "nasdaqtrader:N:NOK",
+    "l1_score": "71.7426",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SMTC",
+    "contract_id": "nasdaqtrader:Q:SMTC",
+    "l1_score": "71.6849",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TSEM",
+    "contract_id": "nasdaqtrader:Q:TSEM",
+    "l1_score": "71.6443",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CRWV",
+    "contract_id": "nasdaqtrader:Q:CRWV",
+    "l1_score": "71.6123",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NBIS",
+    "contract_id": "nasdaqtrader:Q:NBIS",
+    "l1_score": "71.5957",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MU",
+    "contract_id": "nasdaqtrader:Q:MU",
+    "l1_score": "71.5932",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TXN",
+    "contract_id": "nasdaqtrader:Q:TXN",
+    "l1_score": "71.5887",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CTSH",
+    "contract_id": "nasdaqtrader:Q:CTSH",
+    "l1_score": "71.5814",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WDC",
+    "contract_id": "nasdaqtrader:Q:WDC",
+    "l1_score": "71.5364",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ONTO",
+    "contract_id": "nasdaqtrader:N:ONTO",
+    "l1_score": "71.5299",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WPM",
+    "contract_id": "nasdaqtrader:N:WPM",
+    "l1_score": "71.5099",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GEHC",
+    "contract_id": "nasdaqtrader:Q:GEHC",
+    "l1_score": "71.5068",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DG",
+    "contract_id": "nasdaqtrader:N:DG",
+    "l1_score": "71.4991",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AMKR",
+    "contract_id": "nasdaqtrader:Q:AMKR",
+    "l1_score": "71.4779",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ASX",
+    "contract_id": "nasdaqtrader:N:ASX",
+    "l1_score": "71.4628",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "COHR",
+    "contract_id": "nasdaqtrader:N:COHR",
+    "l1_score": "71.4585",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "STX",
+    "contract_id": "nasdaqtrader:Q:STX",
+    "l1_score": "71.4522",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CHRW",
+    "contract_id": "nasdaqtrader:Q:CHRW",
+    "l1_score": "71.4493",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AVGO",
+    "contract_id": "nasdaqtrader:Q:AVGO",
+    "l1_score": "71.396",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "INTC",
+    "contract_id": "nasdaqtrader:Q:INTC",
+    "l1_score": "71.3955",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CF",
+    "contract_id": "nasdaqtrader:N:CF",
+    "l1_score": "71.3623",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SNDK",
+    "contract_id": "nasdaqtrader:Q:SNDK",
+    "l1_score": "71.3491",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RDW",
+    "contract_id": "nasdaqtrader:N:RDW",
+    "l1_score": "71.3176",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SMH",
+    "contract_id": "US:SMH",
+    "l1_score": "71.3167",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CCJ",
+    "contract_id": "nasdaqtrader:N:CCJ",
+    "l1_score": "71.315",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "JBL",
+    "contract_id": "nasdaqtrader:N:JBL",
+    "l1_score": "71.3099",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AAL",
+    "contract_id": "nasdaqtrader:Q:AAL",
+    "l1_score": "71.2919",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "OXY",
+    "contract_id": "nasdaqtrader:N:OXY",
+    "l1_score": "71.2772",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VALE",
+    "contract_id": "nasdaqtrader:N:VALE",
+    "l1_score": "71.2511",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IGV",
+    "contract_id": "US:IGV",
+    "l1_score": "71.2418",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AMAT",
+    "contract_id": "nasdaqtrader:Q:AMAT",
+    "l1_score": "71.1981",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HAL",
+    "contract_id": "nasdaqtrader:N:HAL",
+    "l1_score": "71.1621",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CDNS",
+    "contract_id": "nasdaqtrader:Q:CDNS",
+    "l1_score": "71.1467",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ADI",
+    "contract_id": "nasdaqtrader:Q:ADI",
+    "l1_score": "71.1385",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WWD",
+    "contract_id": "nasdaqtrader:Q:WWD",
+    "l1_score": "71.1306",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TAN",
+    "contract_id": "US:TAN",
+    "l1_score": "71.1133",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TSCO",
+    "contract_id": "nasdaqtrader:Q:TSCO",
+    "l1_score": "71.0802",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WDAY",
+    "contract_id": "nasdaqtrader:Q:WDAY",
+    "l1_score": "71.0801",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GOOGL",
+    "contract_id": "nasdaqtrader:Q:GOOGL",
+    "l1_score": "71.0729",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BIDU",
+    "contract_id": "nasdaqtrader:Q:BIDU",
+    "l1_score": "71.0673",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "XOM",
+    "contract_id": "nasdaqtrader:N:XOM",
+    "l1_score": "71.0619",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PATH",
+    "contract_id": "nasdaqtrader:N:PATH",
+    "l1_score": "71.0524",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "COF",
+    "contract_id": "nasdaqtrader:N:COF",
+    "l1_score": "71.0321",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BABA",
+    "contract_id": "nasdaqtrader:N:BABA",
+    "l1_score": "71.0303",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CVX",
+    "contract_id": "nasdaqtrader:N:CVX",
+    "l1_score": "71.0277",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UL",
+    "contract_id": "nasdaqtrader:N:UL",
+    "l1_score": "71.0063",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AXP",
+    "contract_id": "nasdaqtrader:N:AXP",
+    "l1_score": "71.0052",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MCHP",
+    "contract_id": "nasdaqtrader:Q:MCHP",
+    "l1_score": "71.0048",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FTAI",
+    "contract_id": "nasdaqtrader:Q:FTAI",
+    "l1_score": "71.0044",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RELX",
+    "contract_id": "nasdaqtrader:N:RELX",
+    "l1_score": "70.9964",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NCLH",
+    "contract_id": "nasdaqtrader:N:NCLH",
+    "l1_score": "70.9734",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UNH",
+    "contract_id": "nasdaqtrader:N:UNH",
+    "l1_score": "70.9537",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IONQ",
+    "contract_id": "nasdaqtrader:N:IONQ",
+    "l1_score": "70.9162",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GOOG",
+    "contract_id": "nasdaqtrader:Q:GOOG",
+    "l1_score": "70.9023",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RIOT",
+    "contract_id": "nasdaqtrader:Q:RIOT",
+    "l1_score": "70.8929",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TMUS",
+    "contract_id": "nasdaqtrader:Q:TMUS",
+    "l1_score": "70.8842",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TRI",
+    "contract_id": "nasdaqtrader:Q:TRI",
+    "l1_score": "70.8799",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ULTA",
+    "contract_id": "nasdaqtrader:Q:ULTA",
+    "l1_score": "70.8773",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DVN",
+    "contract_id": "nasdaqtrader:N:DVN",
+    "l1_score": "70.8649",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FDS",
+    "contract_id": "nasdaqtrader:N:FDS",
+    "l1_score": "70.8469",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ANET",
+    "contract_id": "nasdaqtrader:N:ANET",
+    "l1_score": "70.8004",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LSCC",
+    "contract_id": "nasdaqtrader:Q:LSCC",
+    "l1_score": "70.7959",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VEEV",
+    "contract_id": "nasdaqtrader:N:VEEV",
+    "l1_score": "70.7699",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LMT",
+    "contract_id": "nasdaqtrader:N:LMT",
+    "l1_score": "70.759",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MDT",
+    "contract_id": "nasdaqtrader:N:MDT",
+    "l1_score": "70.7572",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UMC",
+    "contract_id": "nasdaqtrader:N:UMC",
+    "l1_score": "70.7261",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WFC",
+    "contract_id": "nasdaqtrader:N:WFC",
+    "l1_score": "70.6877",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ENTG",
+    "contract_id": "nasdaqtrader:Q:ENTG",
+    "l1_score": "70.6619",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KMB",
+    "contract_id": "nasdaqtrader:Q:KMB",
+    "l1_score": "70.6415",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "U",
+    "contract_id": "nasdaqtrader:N:U",
+    "l1_score": "70.6364",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SU",
+    "contract_id": "nasdaqtrader:N:SU",
+    "l1_score": "70.6243",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TOST",
+    "contract_id": "nasdaqtrader:N:TOST",
+    "l1_score": "70.5936",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BR",
+    "contract_id": "nasdaqtrader:N:BR",
+    "l1_score": "70.5838",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GILD",
+    "contract_id": "nasdaqtrader:Q:GILD",
+    "l1_score": "70.5773",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AEIS",
+    "contract_id": "nasdaqtrader:Q:AEIS",
+    "l1_score": "70.5554",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GFS",
+    "contract_id": "nasdaqtrader:Q:GFS",
+    "l1_score": "70.5514",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HII",
+    "contract_id": "nasdaqtrader:N:HII",
+    "l1_score": "70.5114",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TTMI",
+    "contract_id": "nasdaqtrader:Q:TTMI",
+    "l1_score": "70.5034",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KGC",
+    "contract_id": "nasdaqtrader:N:KGC",
+    "l1_score": "70.4937",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SKM",
+    "contract_id": "nasdaqtrader:N:SKM",
+    "l1_score": "70.4845",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WULF",
+    "contract_id": "nasdaqtrader:Q:WULF",
+    "l1_score": "70.4826",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CIEN",
+    "contract_id": "nasdaqtrader:N:CIEN",
+    "l1_score": "70.4792",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GS",
+    "contract_id": "nasdaqtrader:N:GS",
+    "l1_score": "70.4779",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CIFR",
+    "contract_id": "nasdaqtrader:Q:CIFR",
+    "l1_score": "70.4667",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PWR",
+    "contract_id": "nasdaqtrader:N:PWR",
+    "l1_score": "70.4549",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MSFT",
+    "contract_id": "nasdaqtrader:Q:MSFT",
+    "l1_score": "70.4259",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UPS",
+    "contract_id": "nasdaqtrader:N:UPS",
+    "l1_score": "70.4078",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IBM",
+    "contract_id": "nasdaqtrader:N:IBM",
+    "l1_score": "70.4005",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CVS",
+    "contract_id": "nasdaqtrader:N:CVS",
+    "l1_score": "70.3836",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ADBE",
+    "contract_id": "nasdaqtrader:Q:ADBE",
+    "l1_score": "70.3817",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AEO",
+    "contract_id": "nasdaqtrader:N:AEO",
+    "l1_score": "70.3761",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FSLY",
+    "contract_id": "nasdaqtrader:Q:FSLY",
+    "l1_score": "70.3748",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "COP",
+    "contract_id": "nasdaqtrader:N:COP",
+    "l1_score": "70.3598",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CLX",
+    "contract_id": "nasdaqtrader:N:CLX",
+    "l1_score": "70.3563",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ERIE",
+    "contract_id": "nasdaqtrader:Q:ERIE",
+    "l1_score": "70.3502",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RRX",
+    "contract_id": "nasdaqtrader:N:RRX",
+    "l1_score": "70.3391",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BE",
+    "contract_id": "nasdaqtrader:N:BE",
+    "l1_score": "70.3293",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DY",
+    "contract_id": "nasdaqtrader:N:DY",
+    "l1_score": "70.3135",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SLB",
+    "contract_id": "nasdaqtrader:N:SLB",
+    "l1_score": "70.2734",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AAPL",
+    "contract_id": "nasdaqtrader:Q:AAPL",
+    "l1_score": "70.2666",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DVA",
+    "contract_id": "nasdaqtrader:N:DVA",
+    "l1_score": "70.2662",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MCK",
+    "contract_id": "nasdaqtrader:N:MCK",
+    "l1_score": "70.2387",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ALGM",
+    "contract_id": "nasdaqtrader:Q:ALGM",
+    "l1_score": "70.2324",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "STM",
+    "contract_id": "nasdaqtrader:N:STM",
+    "l1_score": "70.2297",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MAR",
+    "contract_id": "nasdaqtrader:Q:MAR",
+    "l1_score": "70.2216",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LNG",
+    "contract_id": "nasdaqtrader:N:LNG",
+    "l1_score": "70.2181",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CVNA",
+    "contract_id": "nasdaqtrader:N:CVNA",
+    "l1_score": "70.2156",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CCL",
+    "contract_id": "nasdaqtrader:N:CCL",
+    "l1_score": "70.2026",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MRNA",
+    "contract_id": "nasdaqtrader:Q:MRNA",
+    "l1_score": "70.2002",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UCTT",
+    "contract_id": "nasdaqtrader:Q:UCTT",
+    "l1_score": "70.1999",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CEG",
+    "contract_id": "nasdaqtrader:Q:CEG",
+    "l1_score": "70.1972",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "C",
+    "contract_id": "nasdaqtrader:N:C",
+    "l1_score": "70.1898",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BP",
+    "contract_id": "nasdaqtrader:N:BP",
+    "l1_score": "70.189",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TDC",
+    "contract_id": "nasdaqtrader:N:TDC",
+    "l1_score": "70.1756",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RCL",
+    "contract_id": "nasdaqtrader:N:RCL",
+    "l1_score": "70.1719",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NVMI",
+    "contract_id": "nasdaqtrader:Q:NVMI",
+    "l1_score": "70.1702",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CMI",
+    "contract_id": "nasdaqtrader:N:CMI",
+    "l1_score": "70.1684",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PAAS",
+    "contract_id": "nasdaqtrader:N:PAAS",
+    "l1_score": "70.1591",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LUV",
+    "contract_id": "nasdaqtrader:N:LUV",
+    "l1_score": "70.1563",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ICLN",
+    "contract_id": "US:ICLN",
+    "l1_score": "70.1559",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AEHR",
+    "contract_id": "nasdaqtrader:Q:AEHR",
+    "l1_score": "70.1497",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "XOP",
+    "contract_id": "US:XOP",
+    "l1_score": "70.1467",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PDD",
+    "contract_id": "nasdaqtrader:Q:PDD",
+    "l1_score": "70.1406",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TPG",
+    "contract_id": "nasdaqtrader:Q:TPG",
+    "l1_score": "70.1356",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PGR",
+    "contract_id": "nasdaqtrader:N:PGR",
+    "l1_score": "70.1334",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VG",
+    "contract_id": "nasdaqtrader:N:VG",
+    "l1_score": "70.1326",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EXK",
+    "contract_id": "nasdaqtrader:N:EXK",
+    "l1_score": "70.1147",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UBER",
+    "contract_id": "nasdaqtrader:N:UBER",
+    "l1_score": "70.1092",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "XLE",
+    "contract_id": "US:XLE",
+    "l1_score": "70.0979",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NVO",
+    "contract_id": "nasdaqtrader:N:NVO",
+    "l1_score": "70.0954",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ERIC",
+    "contract_id": "nasdaqtrader:Q:ERIC",
+    "l1_score": "70.0885",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GFI",
+    "contract_id": "nasdaqtrader:N:GFI",
+    "l1_score": "70.0869",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FANG",
+    "contract_id": "nasdaqtrader:Q:FANG",
+    "l1_score": "70.0849",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LYFT",
+    "contract_id": "nasdaqtrader:Q:LYFT",
+    "l1_score": "70.0516",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EME",
+    "contract_id": "nasdaqtrader:N:EME",
+    "l1_score": "70.0469",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "APPF",
+    "contract_id": "nasdaqtrader:Q:APPF",
+    "l1_score": "70.0463",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ODFL",
+    "contract_id": "nasdaqtrader:Q:ODFL",
+    "l1_score": "70.0383",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ABBV",
+    "contract_id": "nasdaqtrader:N:ABBV",
+    "l1_score": "70.003",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "META",
+    "contract_id": "nasdaqtrader:Q:META",
+    "l1_score": "70.0019",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IR",
+    "contract_id": "nasdaqtrader:N:IR",
+    "l1_score": "69.9642",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SMCI",
+    "contract_id": "nasdaqtrader:Q:SMCI",
+    "l1_score": "69.9473",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ACN",
+    "contract_id": "nasdaqtrader:N:ACN",
+    "l1_score": "69.9411",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TRGP",
+    "contract_id": "nasdaqtrader:N:TRGP",
+    "l1_score": "69.9348",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SFM",
+    "contract_id": "nasdaqtrader:Q:SFM",
+    "l1_score": "69.9263",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RGLD",
+    "contract_id": "nasdaqtrader:Q:RGLD",
+    "l1_score": "69.9065",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KKR",
+    "contract_id": "nasdaqtrader:N:KKR",
+    "l1_score": "69.9039",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BKR",
+    "contract_id": "nasdaqtrader:Q:BKR",
+    "l1_score": "69.8959",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SYK",
+    "contract_id": "nasdaqtrader:N:SYK",
+    "l1_score": "69.893",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KDP",
+    "contract_id": "nasdaqtrader:Q:KDP",
+    "l1_score": "69.872",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ADM",
+    "contract_id": "nasdaqtrader:N:ADM",
+    "l1_score": "69.8546",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CNQ",
+    "contract_id": "nasdaqtrader:N:CNQ",
+    "l1_score": "69.8389",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ONON",
+    "contract_id": "nasdaqtrader:N:ONON",
+    "l1_score": "69.8254",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IBRX",
+    "contract_id": "nasdaqtrader:Q:IBRX",
+    "l1_score": "69.7643",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LITE",
+    "contract_id": "nasdaqtrader:Q:LITE",
+    "l1_score": "69.752",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MYRG",
+    "contract_id": "nasdaqtrader:Q:MYRG",
+    "l1_score": "69.7325",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EL",
+    "contract_id": "nasdaqtrader:N:EL",
+    "l1_score": "69.732",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BZ",
+    "contract_id": "nasdaqtrader:Q:BZ",
+    "l1_score": "69.7231",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FLEX",
+    "contract_id": "nasdaqtrader:Q:FLEX",
+    "l1_score": "69.7199",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "COHU",
+    "contract_id": "nasdaqtrader:Q:COHU",
+    "l1_score": "69.7154",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VAL",
+    "contract_id": "nasdaqtrader:N:VAL",
+    "l1_score": "69.7123",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SE",
+    "contract_id": "nasdaqtrader:N:SE",
+    "l1_score": "69.7109",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AUGO",
+    "contract_id": "nasdaqtrader:Q:AUGO",
+    "l1_score": "69.7074",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VST",
+    "contract_id": "nasdaqtrader:N:VST",
+    "l1_score": "69.6805",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SYNA",
+    "contract_id": "nasdaqtrader:Q:SYNA",
+    "l1_score": "69.6712",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DAVE",
+    "contract_id": "nasdaqtrader:Q:DAVE",
+    "l1_score": "69.6661",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VRT",
+    "contract_id": "nasdaqtrader:N:VRT",
+    "l1_score": "69.6071",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SONY",
+    "contract_id": "nasdaqtrader:N:SONY",
+    "l1_score": "69.6068",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BB",
+    "contract_id": "nasdaqtrader:N:BB",
+    "l1_score": "69.6063",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MRSH",
+    "contract_id": "nasdaqtrader:N:MRSH",
+    "l1_score": "69.59",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "OTEX",
+    "contract_id": "nasdaqtrader:Q:OTEX",
+    "l1_score": "69.5838",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NICE",
+    "contract_id": "nasdaqtrader:Q:NICE",
+    "l1_score": "69.5801",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CECO",
+    "contract_id": "nasdaqtrader:Q:CECO",
+    "l1_score": "69.5765",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CRSP",
+    "contract_id": "nasdaqtrader:Q:CRSP",
+    "l1_score": "69.5739",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HLT",
+    "contract_id": "nasdaqtrader:N:HLT",
+    "l1_score": "69.5712",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VSH",
+    "contract_id": "nasdaqtrader:N:VSH",
+    "l1_score": "69.5648",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WMT",
+    "contract_id": "nasdaqtrader:Q:WMT",
+    "l1_score": "69.5608",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IBKR",
+    "contract_id": "nasdaqtrader:Q:IBKR",
+    "l1_score": "69.5577",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SANM",
+    "contract_id": "nasdaqtrader:Q:SANM",
+    "l1_score": "69.5531",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SCCO",
+    "contract_id": "nasdaqtrader:N:SCCO",
+    "l1_score": "69.5498",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HPE",
+    "contract_id": "nasdaqtrader:N:HPE",
+    "l1_score": "69.5418",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "JEF",
+    "contract_id": "nasdaqtrader:N:JEF",
+    "l1_score": "69.5398",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AAOI",
+    "contract_id": "nasdaqtrader:Q:AAOI",
+    "l1_score": "69.5362",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CRDO",
+    "contract_id": "nasdaqtrader:Q:CRDO",
+    "l1_score": "69.5107",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CAG",
+    "contract_id": "nasdaqtrader:N:CAG",
+    "l1_score": "69.5001",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MNST",
+    "contract_id": "nasdaqtrader:Q:MNST",
+    "l1_score": "69.4865",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EFX",
+    "contract_id": "nasdaqtrader:N:EFX",
+    "l1_score": "69.4624",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CHKP",
+    "contract_id": "nasdaqtrader:Q:CHKP",
+    "l1_score": "69.4617",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ABT",
+    "contract_id": "nasdaqtrader:N:ABT",
+    "l1_score": "69.4616",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SEZL",
+    "contract_id": "nasdaqtrader:Q:SEZL",
+    "l1_score": "69.4369",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "XPO",
+    "contract_id": "nasdaqtrader:N:XPO",
+    "l1_score": "69.425",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AZO",
+    "contract_id": "nasdaqtrader:N:AZO",
+    "l1_score": "69.4144",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ELV",
+    "contract_id": "nasdaqtrader:N:ELV",
+    "l1_score": "69.4092",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AXON",
+    "contract_id": "nasdaqtrader:Q:AXON",
+    "l1_score": "69.3976",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DOCU",
+    "contract_id": "nasdaqtrader:Q:DOCU",
+    "l1_score": "69.3941",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UTHR",
+    "contract_id": "nasdaqtrader:Q:UTHR",
+    "l1_score": "69.3928",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SNEX",
+    "contract_id": "nasdaqtrader:Q:SNEX",
+    "l1_score": "69.3928",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ONDS",
+    "contract_id": "nasdaqtrader:Q:ONDS",
+    "l1_score": "69.3914",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CLF",
+    "contract_id": "nasdaqtrader:N:CLF",
+    "l1_score": "69.3782",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ELAN",
+    "contract_id": "nasdaqtrader:N:ELAN",
+    "l1_score": "69.3758",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SYF",
+    "contract_id": "nasdaqtrader:N:SYF",
+    "l1_score": "69.367",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UI",
+    "contract_id": "nasdaqtrader:N:UI",
+    "l1_score": "69.3486",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BMI",
+    "contract_id": "nasdaqtrader:N:BMI",
+    "l1_score": "69.3408",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BEAM",
+    "contract_id": "nasdaqtrader:Q:BEAM",
+    "l1_score": "69.3401",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "JKHY",
+    "contract_id": "nasdaqtrader:Q:JKHY",
+    "l1_score": "69.34",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ARGX",
+    "contract_id": "nasdaqtrader:Q:ARGX",
+    "l1_score": "69.3213",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EOG",
+    "contract_id": "nasdaqtrader:N:EOG",
+    "l1_score": "69.3198",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EQT",
+    "contract_id": "nasdaqtrader:N:EQT",
+    "l1_score": "69.317",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MXL",
+    "contract_id": "nasdaqtrader:Q:MXL",
+    "l1_score": "69.3127",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WAY",
+    "contract_id": "nasdaqtrader:Q:WAY",
+    "l1_score": "69.3119",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RSI",
+    "contract_id": "nasdaqtrader:N:RSI",
+    "l1_score": "69.3096",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DEO",
+    "contract_id": "nasdaqtrader:N:DEO",
+    "l1_score": "69.308",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SAIL",
+    "contract_id": "nasdaqtrader:Q:SAIL",
+    "l1_score": "69.3",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RIO",
+    "contract_id": "nasdaqtrader:N:RIO",
+    "l1_score": "69.2993",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "YMM",
+    "contract_id": "nasdaqtrader:N:YMM",
+    "l1_score": "69.2909",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "W",
+    "contract_id": "nasdaqtrader:N:W",
+    "l1_score": "69.288",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EGO",
+    "contract_id": "nasdaqtrader:N:EGO",
+    "l1_score": "69.2839",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NTES",
+    "contract_id": "nasdaqtrader:Q:NTES",
+    "l1_score": "69.2824",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PI",
+    "contract_id": "nasdaqtrader:Q:PI",
+    "l1_score": "69.2712",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HWM",
+    "contract_id": "nasdaqtrader:N:HWM",
+    "l1_score": "69.2677",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "B",
+    "contract_id": "nasdaqtrader:N:B",
+    "l1_score": "69.2676",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IDXX",
+    "contract_id": "nasdaqtrader:Q:IDXX",
+    "l1_score": "69.2576",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GWW",
+    "contract_id": "nasdaqtrader:N:GWW",
+    "l1_score": "69.2565",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RDDT",
+    "contract_id": "nasdaqtrader:N:RDDT",
+    "l1_score": "69.2265",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DNN",
+    "contract_id": "nasdaqtrader:A:DNN",
+    "l1_score": "69.2252",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CME",
+    "contract_id": "nasdaqtrader:Q:CME",
+    "l1_score": "69.2248",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MOH",
+    "contract_id": "nasdaqtrader:N:MOH",
+    "l1_score": "69.1951",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NU",
+    "contract_id": "nasdaqtrader:N:NU",
+    "l1_score": "69.1942",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PM",
+    "contract_id": "nasdaqtrader:N:PM",
+    "l1_score": "69.1888",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NCNO",
+    "contract_id": "nasdaqtrader:Q:NCNO",
+    "l1_score": "69.1844",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ARE",
+    "contract_id": "nasdaqtrader:N:ARE",
+    "l1_score": "69.1748",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PCOR",
+    "contract_id": "nasdaqtrader:N:PCOR",
+    "l1_score": "69.1741",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MCD",
+    "contract_id": "nasdaqtrader:N:MCD",
+    "l1_score": "69.171",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BG",
+    "contract_id": "nasdaqtrader:N:BG",
+    "l1_score": "69.1595",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TLN",
+    "contract_id": "nasdaqtrader:Q:TLN",
+    "l1_score": "69.1434",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "JD",
+    "contract_id": "nasdaqtrader:Q:JD",
+    "l1_score": "69.1384",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GNRC",
+    "contract_id": "nasdaqtrader:N:GNRC",
+    "l1_score": "69.1214",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "P",
+    "contract_id": "nasdaqtrader:N:P",
+    "l1_score": "69.1195",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MORN",
+    "contract_id": "nasdaqtrader:Q:MORN",
+    "l1_score": "69.1105",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PTEN",
+    "contract_id": "nasdaqtrader:Q:PTEN",
+    "l1_score": "69.1055",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "JBHT",
+    "contract_id": "nasdaqtrader:Q:JBHT",
+    "l1_score": "69.1054",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IBP",
+    "contract_id": "nasdaqtrader:N:IBP",
+    "l1_score": "69.0929",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MDB",
+    "contract_id": "nasdaqtrader:Q:MDB",
+    "l1_score": "69.0814",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ROK",
+    "contract_id": "nasdaqtrader:N:ROK",
+    "l1_score": "69.0809",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NVS",
+    "contract_id": "nasdaqtrader:N:NVS",
+    "l1_score": "69.0723",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ORA",
+    "contract_id": "nasdaqtrader:N:ORA",
+    "l1_score": "69.0717",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RACE",
+    "contract_id": "nasdaqtrader:N:RACE",
+    "l1_score": "69.0705",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NOC",
+    "contract_id": "nasdaqtrader:N:NOC",
+    "l1_score": "69.0703",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NFLX",
+    "contract_id": "nasdaqtrader:Q:NFLX",
+    "l1_score": "69.0674",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "Q",
+    "contract_id": "nasdaqtrader:N:Q",
+    "l1_score": "69.0376",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CASY",
+    "contract_id": "nasdaqtrader:Q:CASY",
+    "l1_score": "69.03",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "YOU",
+    "contract_id": "nasdaqtrader:N:YOU",
+    "l1_score": "69.0156",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HCA",
+    "contract_id": "nasdaqtrader:N:HCA",
+    "l1_score": "69.0132",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PARR",
+    "contract_id": "nasdaqtrader:N:PARR",
+    "l1_score": "69.0108",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EQX",
+    "contract_id": "nasdaqtrader:A:EQX",
+    "l1_score": "68.9884",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PEP",
+    "contract_id": "nasdaqtrader:Q:PEP",
+    "l1_score": "68.9823",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SPGI",
+    "contract_id": "nasdaqtrader:N:SPGI",
+    "l1_score": "68.9796",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PYPL",
+    "contract_id": "nasdaqtrader:Q:PYPL",
+    "l1_score": "68.9741",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KHC",
+    "contract_id": "nasdaqtrader:Q:KHC",
+    "l1_score": "68.9733",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LASR",
+    "contract_id": "nasdaqtrader:Q:LASR",
+    "l1_score": "68.9722",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TS",
+    "contract_id": "nasdaqtrader:N:TS",
+    "l1_score": "68.9721",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ULS",
+    "contract_id": "nasdaqtrader:N:ULS",
+    "l1_score": "68.9698",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "POWL",
+    "contract_id": "nasdaqtrader:Q:POWL",
+    "l1_score": "68.9667",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HBAN",
+    "contract_id": "nasdaqtrader:Q:HBAN",
+    "l1_score": "68.948",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GMED",
+    "contract_id": "nasdaqtrader:N:GMED",
+    "l1_score": "68.9462",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HTHT",
+    "contract_id": "nasdaqtrader:Q:HTHT",
+    "l1_score": "68.9417",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WCN",
+    "contract_id": "nasdaqtrader:N:WCN",
+    "l1_score": "68.9293",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VSNT",
+    "contract_id": "nasdaqtrader:Q:VSNT",
+    "l1_score": "68.9277",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FSM",
+    "contract_id": "nasdaqtrader:N:FSM",
+    "l1_score": "68.9143",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ESI",
+    "contract_id": "nasdaqtrader:N:ESI",
+    "l1_score": "68.9115",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AGI",
+    "contract_id": "nasdaqtrader:N:AGI",
+    "l1_score": "68.9051",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PLD",
+    "contract_id": "nasdaqtrader:N:PLD",
+    "l1_score": "68.9003",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CLSK",
+    "contract_id": "nasdaqtrader:Q:CLSK",
+    "l1_score": "68.8898",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NXT",
+    "contract_id": "nasdaqtrader:Q:NXT",
+    "l1_score": "68.8866",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HUT",
+    "contract_id": "nasdaqtrader:Q:HUT",
+    "l1_score": "68.8613",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ALGT",
+    "contract_id": "nasdaqtrader:Q:ALGT",
+    "l1_score": "68.8553",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CTAS",
+    "contract_id": "nasdaqtrader:Q:CTAS",
+    "l1_score": "68.8551",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KVUE",
+    "contract_id": "nasdaqtrader:N:KVUE",
+    "l1_score": "68.8529",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EXLS",
+    "contract_id": "nasdaqtrader:Q:EXLS",
+    "l1_score": "68.8461",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LPLA",
+    "contract_id": "nasdaqtrader:Q:LPLA",
+    "l1_score": "68.8447",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DOCN",
+    "contract_id": "nasdaqtrader:N:DOCN",
+    "l1_score": "68.8382",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LHX",
+    "contract_id": "nasdaqtrader:N:LHX",
+    "l1_score": "68.8376",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ICLR",
+    "contract_id": "nasdaqtrader:Q:ICLR",
+    "l1_score": "68.8306",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VCYT",
+    "contract_id": "nasdaqtrader:Q:VCYT",
+    "l1_score": "68.8301",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VERA",
+    "contract_id": "nasdaqtrader:Q:VERA",
+    "l1_score": "68.8287",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ALC",
+    "contract_id": "nasdaqtrader:N:ALC",
+    "l1_score": "68.8264",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ADSK",
+    "contract_id": "nasdaqtrader:Q:ADSK",
+    "l1_score": "68.825",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FIX",
+    "contract_id": "nasdaqtrader:N:FIX",
+    "l1_score": "68.8238",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HUM",
+    "contract_id": "nasdaqtrader:N:HUM",
+    "l1_score": "68.8079",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PAYX",
+    "contract_id": "nasdaqtrader:Q:PAYX",
+    "l1_score": "68.8043",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AZN",
+    "contract_id": "nasdaqtrader:N:AZN",
+    "l1_score": "68.7984",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SIMO",
+    "contract_id": "nasdaqtrader:Q:SIMO",
+    "l1_score": "68.7971",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FRPT",
+    "contract_id": "nasdaqtrader:Q:FRPT",
+    "l1_score": "68.793",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AXTI",
+    "contract_id": "nasdaqtrader:Q:AXTI",
+    "l1_score": "68.7917",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TARS",
+    "contract_id": "nasdaqtrader:Q:TARS",
+    "l1_score": "68.7833",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PTON",
+    "contract_id": "nasdaqtrader:Q:PTON",
+    "l1_score": "68.7826",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "STLD",
+    "contract_id": "nasdaqtrader:Q:STLD",
+    "l1_score": "68.7763",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BTU",
+    "contract_id": "nasdaqtrader:N:BTU",
+    "l1_score": "68.775",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ARCB",
+    "contract_id": "nasdaqtrader:Q:ARCB",
+    "l1_score": "68.7708",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NXPI",
+    "contract_id": "nasdaqtrader:Q:NXPI",
+    "l1_score": "68.7649",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RIG",
+    "contract_id": "nasdaqtrader:N:RIG",
+    "l1_score": "68.7609",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CALM",
+    "contract_id": "nasdaqtrader:Q:CALM",
+    "l1_score": "68.7581",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LOW",
+    "contract_id": "nasdaqtrader:N:LOW",
+    "l1_score": "68.7549",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VRDN",
+    "contract_id": "nasdaqtrader:Q:VRDN",
+    "l1_score": "68.7439",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CRH",
+    "contract_id": "nasdaqtrader:N:CRH",
+    "l1_score": "68.7325",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ZM",
+    "contract_id": "nasdaqtrader:Q:ZM",
+    "l1_score": "68.7311",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "A",
+    "contract_id": "nasdaqtrader:N:A",
+    "l1_score": "68.7306",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "OPCH",
+    "contract_id": "nasdaqtrader:Q:OPCH",
+    "l1_score": "68.7264",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KSS",
+    "contract_id": "nasdaqtrader:N:KSS",
+    "l1_score": "68.7131",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PCG",
+    "contract_id": "nasdaqtrader:N:PCG",
+    "l1_score": "68.7122",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VNT",
+    "contract_id": "nasdaqtrader:N:VNT",
+    "l1_score": "68.7099",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KBR",
+    "contract_id": "nasdaqtrader:N:KBR",
+    "l1_score": "68.7058",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SEI",
+    "contract_id": "nasdaqtrader:N:SEI",
+    "l1_score": "68.7004",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MKC",
+    "contract_id": "nasdaqtrader:N:MKC",
+    "l1_score": "68.6876",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CRUS",
+    "contract_id": "nasdaqtrader:Q:CRUS",
+    "l1_score": "68.6849",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TNGX",
+    "contract_id": "nasdaqtrader:Q:TNGX",
+    "l1_score": "68.6714",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FTI",
+    "contract_id": "nasdaqtrader:N:FTI",
+    "l1_score": "68.663",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MUR",
+    "contract_id": "nasdaqtrader:N:MUR",
+    "l1_score": "68.6506",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SITM",
+    "contract_id": "nasdaqtrader:Q:SITM",
+    "l1_score": "68.6438",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EXE",
+    "contract_id": "nasdaqtrader:Q:EXE",
+    "l1_score": "68.6405",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "COST",
+    "contract_id": "nasdaqtrader:Q:COST",
+    "l1_score": "68.6399",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TSLA",
+    "contract_id": "nasdaqtrader:Q:TSLA",
+    "l1_score": "68.634",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SHLS",
+    "contract_id": "nasdaqtrader:Q:SHLS",
+    "l1_score": "68.6327",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ADP",
+    "contract_id": "nasdaqtrader:Q:ADP",
+    "l1_score": "68.625",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AWK",
+    "contract_id": "nasdaqtrader:N:AWK",
+    "l1_score": "68.6227",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HLNE",
+    "contract_id": "nasdaqtrader:Q:HLNE",
+    "l1_score": "68.5967",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MIAX",
+    "contract_id": "nasdaqtrader:N:MIAX",
+    "l1_score": "68.5958",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VKTX",
+    "contract_id": "nasdaqtrader:Q:VKTX",
+    "l1_score": "68.5803",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SW",
+    "contract_id": "nasdaqtrader:N:SW",
+    "l1_score": "68.575",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "WST",
+    "contract_id": "nasdaqtrader:N:WST",
+    "l1_score": "68.568",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GGAL",
+    "contract_id": "nasdaqtrader:Q:GGAL",
+    "l1_score": "68.5673",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TPL",
+    "contract_id": "nasdaqtrader:N:TPL",
+    "l1_score": "68.5669",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CCC",
+    "contract_id": "nasdaqtrader:Q:CCC",
+    "l1_score": "68.5629",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TFII",
+    "contract_id": "nasdaqtrader:N:TFII",
+    "l1_score": "68.5596",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AXSM",
+    "contract_id": "nasdaqtrader:Q:AXSM",
+    "l1_score": "68.5592",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SYY",
+    "contract_id": "nasdaqtrader:N:SYY",
+    "l1_score": "68.5565",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TRU",
+    "contract_id": "nasdaqtrader:N:TRU",
+    "l1_score": "68.5535",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "KR",
+    "contract_id": "nasdaqtrader:N:KR",
+    "l1_score": "68.5394",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BBY",
+    "contract_id": "nasdaqtrader:N:BBY",
+    "l1_score": "68.5379",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NVR",
+    "contract_id": "nasdaqtrader:N:NVR",
+    "l1_score": "68.5305",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CX",
+    "contract_id": "nasdaqtrader:N:CX",
+    "l1_score": "68.5294",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VTR",
+    "contract_id": "nasdaqtrader:N:VTR",
+    "l1_score": "68.5276",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HUBB",
+    "contract_id": "nasdaqtrader:N:HUBB",
+    "l1_score": "68.5272",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MEOH",
+    "contract_id": "nasdaqtrader:Q:MEOH",
+    "l1_score": "68.526",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MDGL",
+    "contract_id": "nasdaqtrader:Q:MDGL",
+    "l1_score": "68.5167",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "POOL",
+    "contract_id": "nasdaqtrader:Q:POOL",
+    "l1_score": "68.5083",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SRE",
+    "contract_id": "nasdaqtrader:N:SRE",
+    "l1_score": "68.4956",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LSTR",
+    "contract_id": "nasdaqtrader:Q:LSTR",
+    "l1_score": "68.4757",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AROC",
+    "contract_id": "nasdaqtrader:N:AROC",
+    "l1_score": "68.4723",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "POWI",
+    "contract_id": "nasdaqtrader:Q:POWI",
+    "l1_score": "68.4715",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PG",
+    "contract_id": "nasdaqtrader:N:PG",
+    "l1_score": "68.4578",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DPZ",
+    "contract_id": "nasdaqtrader:Q:DPZ",
+    "l1_score": "68.4394",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CPB",
+    "contract_id": "nasdaqtrader:Q:CPB",
+    "l1_score": "68.4237",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CARR",
+    "contract_id": "nasdaqtrader:N:CARR",
+    "l1_score": "68.4026",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LUMN",
+    "contract_id": "nasdaqtrader:N:LUMN",
+    "l1_score": "68.3978",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BBIO",
+    "contract_id": "nasdaqtrader:Q:BBIO",
+    "l1_score": "68.3912",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NKE",
+    "contract_id": "nasdaqtrader:N:NKE",
+    "l1_score": "68.3845",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AJG",
+    "contract_id": "nasdaqtrader:N:AJG",
+    "l1_score": "68.3657",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CPRT",
+    "contract_id": "nasdaqtrader:Q:CPRT",
+    "l1_score": "68.3627",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ESLT",
+    "contract_id": "nasdaqtrader:Q:ESLT",
+    "l1_score": "68.361",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GVA",
+    "contract_id": "nasdaqtrader:N:GVA",
+    "l1_score": "68.3606",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DIS",
+    "contract_id": "nasdaqtrader:N:DIS",
+    "l1_score": "68.3536",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SNPS",
+    "contract_id": "nasdaqtrader:Q:SNPS",
+    "l1_score": "68.3471",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BKSY",
+    "contract_id": "nasdaqtrader:N:BKSY",
+    "l1_score": "68.3429",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BTSG",
+    "contract_id": "nasdaqtrader:Q:BTSG",
+    "l1_score": "68.3373",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FIS",
+    "contract_id": "nasdaqtrader:N:FIS",
+    "l1_score": "68.3274",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PURR",
+    "contract_id": "nasdaqtrader:Q:PURR",
+    "l1_score": "68.3237",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GSK",
+    "contract_id": "nasdaqtrader:N:GSK",
+    "l1_score": "68.2896",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DHI",
+    "contract_id": "nasdaqtrader:N:DHI",
+    "l1_score": "68.2834",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BTE",
+    "contract_id": "nasdaqtrader:N:BTE",
+    "l1_score": "68.2687",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HSY",
+    "contract_id": "nasdaqtrader:N:HSY",
+    "l1_score": "68.2641",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CRGY",
+    "contract_id": "nasdaqtrader:N:CRGY",
+    "l1_score": "68.2586",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VIST",
+    "contract_id": "nasdaqtrader:N:VIST",
+    "l1_score": "68.2518",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SNAP",
+    "contract_id": "nasdaqtrader:N:SNAP",
+    "l1_score": "68.2457",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IREN",
+    "contract_id": "nasdaqtrader:Q:IREN",
+    "l1_score": "68.2424",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BTG",
+    "contract_id": "nasdaqtrader:A:BTG",
+    "l1_score": "68.242",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ESTC",
+    "contract_id": "nasdaqtrader:N:ESTC",
+    "l1_score": "68.2418",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "EIX",
+    "contract_id": "nasdaqtrader:N:EIX",
+    "l1_score": "68.2319",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "IONS",
+    "contract_id": "nasdaqtrader:Q:IONS",
+    "l1_score": "68.2225",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SNX",
+    "contract_id": "nasdaqtrader:N:SNX",
+    "l1_score": "68.2145",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LULU",
+    "contract_id": "nasdaqtrader:Q:LULU",
+    "l1_score": "68.2099",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NTSK",
+    "contract_id": "nasdaqtrader:Q:NTSK",
+    "l1_score": "68.2084",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LYB",
+    "contract_id": "nasdaqtrader:N:LYB",
+    "l1_score": "68.2012",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TKO",
+    "contract_id": "nasdaqtrader:N:TKO",
+    "l1_score": "68.1983",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RKT",
+    "contract_id": "nasdaqtrader:N:RKT",
+    "l1_score": "68.1715",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "AMT",
+    "contract_id": "nasdaqtrader:N:AMT",
+    "l1_score": "68.1676",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ICE",
+    "contract_id": "nasdaqtrader:N:ICE",
+    "l1_score": "68.1661",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ABG",
+    "contract_id": "nasdaqtrader:N:ABG",
+    "l1_score": "68.1565",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CTVA",
+    "contract_id": "nasdaqtrader:N:CTVA",
+    "l1_score": "68.1359",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MLM",
+    "contract_id": "nasdaqtrader:N:MLM",
+    "l1_score": "68.1289",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "YPF",
+    "contract_id": "nasdaqtrader:N:YPF",
+    "l1_score": "68.1224",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CNX",
+    "contract_id": "nasdaqtrader:N:CNX",
+    "l1_score": "68.1102",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SAIA",
+    "contract_id": "nasdaqtrader:Q:SAIA",
+    "l1_score": "68.1005",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PTCT",
+    "contract_id": "nasdaqtrader:Q:PTCT",
+    "l1_score": "68.0811",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "ARW",
+    "contract_id": "nasdaqtrader:N:ARW",
+    "l1_score": "68.0628",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MUSA",
+    "contract_id": "nasdaqtrader:N:MUSA",
+    "l1_score": "68.0584",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CSTM",
+    "contract_id": "nasdaqtrader:N:CSTM",
+    "l1_score": "68.0548",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BRKR",
+    "contract_id": "nasdaqtrader:Q:BRKR",
+    "l1_score": "68.0521",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "HBM",
+    "contract_id": "nasdaqtrader:N:HBM",
+    "l1_score": "68.0303",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "COR",
+    "contract_id": "nasdaqtrader:N:COR",
+    "l1_score": "68.0297",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NE",
+    "contract_id": "nasdaqtrader:N:NE",
+    "l1_score": "68.0294",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "H",
+    "contract_id": "nasdaqtrader:N:H",
+    "l1_score": "68.0229",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "XYL",
+    "contract_id": "nasdaqtrader:N:XYL",
+    "l1_score": "68.0176",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RBC",
+    "contract_id": "nasdaqtrader:N:RBC",
+    "l1_score": "68.0106",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TMDX",
+    "contract_id": "nasdaqtrader:Q:TMDX",
+    "l1_score": "68.0017",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VIAV",
+    "contract_id": "nasdaqtrader:Q:VIAV",
+    "l1_score": "67.9846",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CHTR",
+    "contract_id": "nasdaqtrader:Q:CHTR",
+    "l1_score": "67.9753",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VIRT",
+    "contract_id": "nasdaqtrader:N:VIRT",
+    "l1_score": "67.9729",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "J",
+    "contract_id": "nasdaqtrader:N:J",
+    "l1_score": "67.9686",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TTEK",
+    "contract_id": "nasdaqtrader:Q:TTEK",
+    "l1_score": "67.9622",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NXE",
+    "contract_id": "nasdaqtrader:N:NXE",
+    "l1_score": "67.9549",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "MGM",
+    "contract_id": "nasdaqtrader:N:MGM",
+    "l1_score": "67.9503",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VFC",
+    "contract_id": "nasdaqtrader:N:VFC",
+    "l1_score": "67.9419",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GTX",
+    "contract_id": "nasdaqtrader:Q:GTX",
+    "l1_score": "67.9138",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LIN",
+    "contract_id": "nasdaqtrader:Q:LIN",
+    "l1_score": "67.9051",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "VSAT",
+    "contract_id": "nasdaqtrader:Q:VSAT",
+    "l1_score": "67.8994",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DINO",
+    "contract_id": "nasdaqtrader:N:DINO",
+    "l1_score": "67.899",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FICO",
+    "contract_id": "nasdaqtrader:N:FICO",
+    "l1_score": "67.8915",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DDS",
+    "contract_id": "nasdaqtrader:N:DDS",
+    "l1_score": "67.8746",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FLS",
+    "contract_id": "nasdaqtrader:N:FLS",
+    "l1_score": "67.8708",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CDW",
+    "contract_id": "nasdaqtrader:Q:CDW",
+    "l1_score": "67.8611",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FMX",
+    "contract_id": "nasdaqtrader:N:FMX",
+    "l1_score": "67.8594",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "CW",
+    "contract_id": "nasdaqtrader:N:CW",
+    "l1_score": "67.8582",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "TEL",
+    "contract_id": "nasdaqtrader:N:TEL",
+    "l1_score": "67.8363",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "QTWO",
+    "contract_id": "nasdaqtrader:N:QTWO",
+    "l1_score": "67.8361",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GIS",
+    "contract_id": "nasdaqtrader:N:GIS",
+    "l1_score": "67.8342",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "UGI",
+    "contract_id": "nasdaqtrader:N:UGI",
+    "l1_score": "67.8299",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SHAZ",
+    "contract_id": "nasdaqtrader:Q:SHAZ",
+    "l1_score": "67.8218",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "LEA",
+    "contract_id": "nasdaqtrader:N:LEA",
+    "l1_score": "67.8216",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "NEE",
+    "contract_id": "nasdaqtrader:N:NEE",
+    "l1_score": "67.8196",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RMD",
+    "contract_id": "nasdaqtrader:N:RMD",
+    "l1_score": "67.7987",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BWA",
+    "contract_id": "nasdaqtrader:N:BWA",
+    "l1_score": "67.7987",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "FOXA",
+    "contract_id": "nasdaqtrader:Q:FOXA",
+    "l1_score": "67.795",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RYN",
+    "contract_id": "nasdaqtrader:N:RYN",
+    "l1_score": "67.788",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "DTM",
+    "contract_id": "nasdaqtrader:N:DTM",
+    "l1_score": "67.756",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "SSNC",
+    "contract_id": "nasdaqtrader:Q:SSNC",
+    "l1_score": "67.7502",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "PENG",
+    "contract_id": "nasdaqtrader:Q:PENG",
+    "l1_score": "67.7469",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "RARE",
+    "contract_id": "nasdaqtrader:Q:RARE",
+    "l1_score": "67.7469",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "GTLB",
+    "contract_id": "nasdaqtrader:Q:GTLB",
+    "l1_score": "67.7468",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  },
+  {
+    "ticker": "BDC",
+    "contract_id": "nasdaqtrader:N:BDC",
+    "l1_score": "67.7456",
+    "l1_status": "ranked",
+    "selected_for_next_stage": true
+  }
+]

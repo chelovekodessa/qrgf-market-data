@@ -1,0 +1,198 @@
+{
+  "finalist_ceiling": 120,
+  "global_ranking": true,
+  "input_count": 500,
+  "l2_rules_hash": "6f28e4b60f023956e6965681557addafa38ac2a98879718a6c16a50db0de1133",
+  "processed_count": 500,
+  "ruleset_hash": "d7dbf15ca011e000eed39e89bf95a056fd8a9231a945c9fe20672290e6e00493",
+  "ruleset_version": "3.1.0",
+  "status_counts": {
+    "conditional": 500,
+    "pass": 0,
+    "recheck": 0,
+    "rejected": 0
+  },
+  "finalist_count": 120,
+  "top20": [
+    {
+      "ticker": "CDE",
+      "contract_id": "nasdaqtrader:N:CDE",
+      "l2_status": "conditional",
+      "research_priority_score": 96.79,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 29.94,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "ONDS",
+      "contract_id": "nasdaqtrader:Q:ONDS",
+      "l2_status": "conditional",
+      "research_priority_score": 96.79,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 31.54,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "IREN",
+      "contract_id": "nasdaqtrader:Q:IREN",
+      "l2_status": "conditional",
+      "research_priority_score": 96.79,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 34.73,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "CLS",
+      "contract_id": "nasdaqtrader:N:CLS",
+      "l2_status": "conditional",
+      "research_priority_score": 95.71,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 27.57,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "NXT",
+      "contract_id": "nasdaqtrader:Q:NXT",
+      "l2_status": "conditional",
+      "research_priority_score": 95.07,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 29.57,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "EQX",
+      "contract_id": "nasdaqtrader:A:EQX",
+      "l2_status": "conditional",
+      "research_priority_score": 95.07,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 30.76,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "AA",
+      "contract_id": "nasdaqtrader:N:AA",
+      "l2_status": "conditional",
+      "research_priority_score": 95.07,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 31.62,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "B",
+      "contract_id": "nasdaqtrader:N:B",
+      "l2_status": "conditional",
+      "research_priority_score": 94.0,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 20.74,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "AU",
+      "contract_id": "nasdaqtrader:N:AU",
+      "l2_status": "conditional",
+      "research_priority_score": 94.0,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 23.6,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "PAAS",
+      "contract_id": "nasdaqtrader:N:PAAS",
+      "l2_status": "conditional",
+      "research_priority_score": 94.0,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 24.3,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "RIG",
+      "contract_id": "nasdaqtrader:N:RIG",
+      "l2_status": "conditional",
+      "research_priority_score": 94.0,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 26.71,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "FTAI",
+      "contract_id": "nasdaqtrader:Q:FTAI",
+      "l2_status": "conditional",
+      "research_priority_score": 94.0,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 27.68,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "CIEN",
+      "contract_id": "nasdaqtrader:N:CIEN",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 28.83,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "NBIS",
+      "contract_id": "nasdaqtrader:Q:NBIS",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 29.9,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "BE",
+      "contract_id": "nasdaqtrader:N:BE",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 30.03,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "AXTI",
+      "contract_id": "nasdaqtrader:Q:AXTI",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 30.33,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "GLW",
+      "contract_id": "nasdaqtrader:N:GLW",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 30.82,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "ON",
+      "contract_id": "nasdaqtrader:Q:ON",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 31.25,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "AAOI",
+      "contract_id": "nasdaqtrader:Q:AAOI",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 32.38,
+      "preliminary_timing_status": "unknown"
+    },
+    {
+      "ticker": "WULF",
+      "contract_id": "nasdaqtrader:Q:WULF",
+      "l2_status": "conditional",
+      "research_priority_score": 93.93,
+      "research_priority_coverage_pct": 70.0,
+      "l2_risk_score": 32.81,
+      "preliminary_timing_status": "unknown"
+    }
+  ]
+}
