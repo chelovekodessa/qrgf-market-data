@@ -29,6 +29,7 @@ jobs:
           set -euo pipefail
           python - <<'PY'
           import base64, csv, gzip, hashlib, io, json, math, urllib.request
+          from collections import Counter
           from datetime import datetime, timezone
           from pathlib import Path
 
@@ -101,7 +102,6 @@ jobs:
               if rec is None and len(candidates) == 1:
                   rec = candidates[0]
               if rec is None and candidates:
-                  # Prefer primary US exchanges deterministically when the symbol is duplicated.
                   order = {'NASDAQ': 0, 'NYSE': 1, 'AMEX': 2, 'CBOE': 3}
                   rec = sorted(candidates, key=lambda x: (order.get(x['_tv_exchange'], 99), x['_tv_exchange']))[0]
 
@@ -113,6 +113,10 @@ jobs:
               if price is not None and high52 is not None and high52 > 0:
                   dd = max(0.0, 100.0 * (1.0 - price / high52))
               adv = price * avg_vol if price is not None and avg_vol is not None else None
+              r3 = finite(rec.get('Perf.3M')) if rec else None
+              r6 = finite(rec.get('Perf.6M')) if rec else None
+              r12 = finite(rec.get('Perf.Y')) if rec else None
+              hv = finite(rec.get('Volatility.M')) if rec else None
               if rec:
                   matched += 1
               else:
@@ -128,16 +132,46 @@ jobs:
                   'price': price if price is not None else '',
                   'market_cap': cap if cap is not None else '',
                   'avg_dollar_volume': adv if adv is not None else '',
-                  'return_3m': finite(rec.get('Perf.3M')) if rec else '',
-                  'return_6m': finite(rec.get('Perf.6M')) if rec else '',
-                  'return_12m': finite(rec.get('Perf.Y')) if rec else '',
+                  'return_3m': r3 if r3 is not None else '',
+                  'return_6m': r6 if r6 is not None else '',
+                  'return_12m': r12 if r12 is not None else '',
                   'drawdown_52w': dd if dd is not None else '',
-                  'historical_volatility': finite(rec.get('Volatility.M')) if rec else '',
+                  'historical_volatility': hv if hv is not None else '',
                   'as_of': retrieved,
                   'retrieved_at': retrieved,
                   'percent_unit': 'percent',
                   'source_priority': 50,
               })
+
+          def present(row, field):
+              return row.get(field) not in ('', None)
+
+          core = ['price','market_cap','avg_dollar_volume','return_3m','return_6m','return_12m','drawdown_52w','historical_volatility']
+          present_counts = {f: sum(present(r, f) for r in out) for f in core}
+          structural = []
+          unresolved = []
+          missing_reason_counts = Counter()
+          history_unknown = []
+          for r in out:
+              price = finite(r.get('price'))
+              cap = finite(r.get('market_cap'))
+              adv = finite(r.get('avg_dollar_volume'))
+              sec = str(r.get('security_type') or '').lower()
+              if price is None or price < 3 or adv is None or adv < 2_000_000:
+                  continue
+              if sec != 'etf' and (cap is None or cap < 250_000_000):
+                  continue
+              structural.append(r)
+              missing_fields = [f for f in ['price','market_cap','avg_dollar_volume','drawdown_52w','historical_volatility','return_3m','return_6m'] if not present(r, f)]
+              if present(r, 'return_12m'):
+                  pass
+              else:
+                  missing_fields.append('objective_history_evidence')
+                  history_unknown.append(r['ticker'])
+              if missing_fields:
+                  unresolved.append({'ticker': r['ticker'], 'missing': sorted(set(missing_fields))})
+                  for m in sorted(set(missing_fields)):
+                      missing_reason_counts[m] += 1
 
           fields = list(out[0].keys())
           csv_buf = io.StringIO(newline='')
@@ -161,6 +195,13 @@ jobs:
               'missing_rows': len(missing),
               'missing_tickers': missing,
               'columns_requested': columns,
+              'field_present_counts': present_counts,
+              'structurally_rankable_rows_by_L1_thresholds': len(structural),
+              'structural_unresolved_rows_without_history_resolution': len(unresolved),
+              'structural_unresolved_reason_counts': dict(sorted(missing_reason_counts.items())),
+              'structural_history_unknown_rows': len(history_unknown),
+              'structural_history_unknown_tickers_sample': history_unknown[:200],
+              'structural_unresolved_sample': unresolved[:200],
               'derivations': {
                   'avg_dollar_volume': 'close * average_volume_90d_calc',
                   'drawdown_52w': '100 * (1 - close / price_52_week_high)',
@@ -173,7 +214,7 @@ jobs:
               'bundle_line_count': len(b64_text.splitlines()),
           }
           (branch_dir / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          print(json.dumps({k: manifest[k] for k in ['scanner_total_count','l0_rows','output_rows','matched_rows','exact_exchange_matches','missing_rows']}, indent=2))
+          print(json.dumps({k: manifest[k] for k in ['scanner_total_count','l0_rows','output_rows','matched_rows','exact_exchange_matches','missing_rows','structurally_rankable_rows_by_L1_thresholds','structural_unresolved_rows_without_history_resolution']}, indent=2))
           PY
       - name: Commit temporary snapshot to temporary branch
         run: |
@@ -181,5 +222,9 @@ jobs:
           git config user.name "qrgf-l1-temp-bot"
           git config user.email "qrgf-l1-temp-bot@users.noreply.github.com"
           git add data/temp-l1
-          git commit -m "Temporary L1 bulk snapshot"
+          if git diff --cached --quiet; then
+            echo "Temporary snapshot unchanged"
+            exit 0
+          fi
+          git commit -m "Temporary L1 bulk snapshot diagnostics"
           git push origin HEAD:qrgf-l1-temp-20260808
