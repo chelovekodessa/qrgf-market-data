@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0.0",
+  "returncode": 1,
+  "stdout_tail": "",
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot.py\", line 519, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot.py\", line 398, in main\n    reference, nasdaq_meta = fetch_nasdaq_reference()\n                             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot.py\", line 159, in fetch_nasdaq_reference\n    status, payload, headers = http_json(\n                               ^^^^^^^^^^\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot.py\", line 115, in http_json\n    raise RuntimeError(f\"HTTP JSON request failed: {last_error}\")\nRuntimeError: HTTP JSON request failed: The read operation timed out\n"
+}
