@@ -4,9 +4,10 @@
 The legacy classifier correctly rejects explicit closed-end/term/income funds,
 but some investment companies publish names ending in "Common Stock" or
 "Common Shares of Beneficial Interest" and can therefore look like operating
-common equity. This wrapper rejects generic non-ETF funds, CEF-sponsor trusts,
-commodity/crypto trusts and business-development companies before delegating
-every other rule to the pinned core builder.
+common equity. This wrapper rejects generic non-ETF funds, known CEF-sponsor
+trust/beneficial-interest products, commodity/crypto trusts and explicit
+business-development companies before delegating every other rule to the
+pinned core builder.
 """
 
 from __future__ import annotations
@@ -22,7 +23,8 @@ _GENERIC_NON_ETF_FUND = re.compile(
 _CEF_SPONSOR_TRUST = re.compile(
     r"\b(?:BlackRock|Nuveen|PIMCO|Eaton\s+Vance|John\s+Hancock|Cohen\s*&\s*Steers|"
     r"Gabelli|Calamos|MFS|abrdn|Western\s+Asset|Virtus|ClearBridge|Allspring|First\s+Trust|"
-    r"Neuberger\s+Berman|DoubleLine|Tortoise|Kayne\s+Anderson|Tekla)\b.*\btrust\b",
+    r"Neuberger\s+Berman|DoubleLine|Tortoise|Kayne\s+Anderson|Tekla)\b.*"
+    r"(?:\btrust\b|\bcommon\s+shares?\s+of\s+beneficial\s+interest\b)",
     re.I,
 )
 _NON_OPERATING_INVESTMENT = re.compile(
