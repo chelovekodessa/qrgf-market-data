@@ -82,3 +82,5 @@ jobs:
           fi
           git commit -m "Update QRGF L1 snapshot"
           git push
+
+# Initial production trigger after Alpaca SIP preflight passed.
