@@ -1,7 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-EQX,Equinox Gold Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:EQX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ERAS,"Erasca, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ERIE,Erie Indemnity Company - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERIE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ERII,"Energy Recovery, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ERNA,Ernexa Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ERO,Ero Copper Corp. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ERO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +246,6 @@ FTLF,"FitLife Brands, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N
 FTNT,"Fortinet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FTRA,FutureCorp Space Acquisition 1 Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FTRE,Fortrea Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTS,Fortis Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTV,Fortive Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTW,Presidio Production Company Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

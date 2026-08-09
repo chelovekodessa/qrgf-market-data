@@ -1,7 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-DCOM,"Dime Commercial Bancshares, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:DCOM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DCOY,Decoy Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:DCOY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DCTH,"Delcath Systems, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:DCTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 DCX,Digital Currency X Technology Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:DCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 DD,"DuPont de Nemours, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:DD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 DDC,DDC Enterprise Limited Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:DDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +246,6 @@ EQPT,EquipmentShare.com Inc - Class A Common Stock,Q,Q,N,common_equity,eligible,
 EQR,Equity Residential Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EQS,"Equus Total Return, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EQT,EQT Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+EQX,Equinox Gold Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:EQX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ERAS,"Erasca, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ERIE,Erie Indemnity Company - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERIE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

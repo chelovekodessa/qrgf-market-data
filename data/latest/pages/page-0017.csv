@@ -1,12 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-SEED,Origin Agritech Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SEER,"Seer, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SEG,Seaport Entertainment Group Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SEG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SEI,"Solaris Energy Infrastructure, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SEI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SEIC,SEI Investments Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SELF,"Global Self Storage, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SELF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SENEA,Seneca Foods Corp. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SENEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SENEB,Seneca Foods Corp. - Class B Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SENEB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SENS,"Senseonics Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SENS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SEPN,"Septerna, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SER,"Serina Therapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +241,11 @@ STNG,Scorpio Tankers Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nas
 STOK,"Stoke Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STOK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STRA,"Strategic Education, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STRL,"Sterling Infrastructure, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRO,"Sutro Biopharma, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRR,"Star Equity Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRS,Stratus Properties Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRT,STRATTEC SECURITY CORPORATION - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRW,"Strawberry Fields REIT, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:STRW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRZ,Starz Entertainment Corp. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STT,State Street Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STTK,"Shattuck Labs, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

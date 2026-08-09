@@ -1,13 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-WBUY,WEBUY GLOBAL LTD. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WBUY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WBX,Wallbox N.V. Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WBX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WCC,"WESCO International, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WCN,"Waste Connections, Inc. Common Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WCN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WCT,Wellchange Holdings Company Limited - Class A Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WD,"Walker & Dunlop, Inc Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WDAY,"Workday, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WDAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WDC,Western Digital Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WDFC,WD-40 Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WDFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WEAV,"Weave Communications, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WEC,"WEC Energy Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WELL,Welltower Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WELL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

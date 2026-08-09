@@ -1,11 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-PCVX,"Vaxcyte, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PCVX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PCYO,Pure Cycle Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PCYO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PD,"PagerDuty, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PDCC,Pearl Diver Credit Company Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PDEX,"Pro-Dex, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PDFS,"PDF Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PDLB,"Ponce Financial Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDM,"Piedmont Realty Trust, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDS,Precision Drilling Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDYN,Palladyne AI Corp. - Common stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -169,7 +162,6 @@ PRU,"Prudential Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,
 PRVA,"Privia Health Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PS,Pershing Square Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PSA,Public Storage Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PSBD,Palmer Square Capital BDC Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PSFE,Paysafe Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSFE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PSHG,Performance Shipping Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PSIG,PS International Group Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +241,11 @@ QXO,"QXO, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N
 R,"Ryder System, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:R,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RACC,Research Alliance Corporation III - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RACC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RACD,Research Alliance Corporation IV - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RACD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RACE,Ferrari N.V. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RACE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAIL,"Freightcar America, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAL,Ralliant Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAMP,"LiveRamp Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RAMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAPP,"Rapport Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAPP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RARE,Ultragenyx Pharmaceutical Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RARE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAVE,"Rave Restaurant Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAVE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAY,Raytech Holding Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

@@ -1,12 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-STRO,"Sutro Biopharma, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STRR,"Star Equity Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STRS,Stratus Properties Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STRT,STRATTEC SECURITY CORPORATION - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STRW,"Strawberry Fields REIT, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:STRW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STRZ,Starz Entertainment Corp. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STT,State Street Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STTK,"Shattuck Labs, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STUB,"StubHub Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STUB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STVN,Stevanato Group S.p.A. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STX,Seagate Technology Holdings PLC - Ordinary Shares (Ireland),Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -189,7 +181,6 @@ TPET,Trio Petroleum Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasd
 TPG,TPG Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TPL,Texas Pacific Land Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TPR,"Tapestry, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-TPVG,TriplePoint Venture Growth BDC Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TPVG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TR,"Tootsie Roll Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TRAD,APEX Tech Acquisition Inc. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TRAK,"ReposiTrak, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +240,12 @@ TTMI,"TTM Technologies, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N
 TTRX,Turn Therapeutics Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TTWO,"Take-Two Interactive Software, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TTWO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TU,Telus Corporation Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TULP,"Bloomia Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TULP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TUSK,"Mammoth Energy Services, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TUSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TV,Grupo Televisa S.A.B. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TVC,Tennessee Valley Authority Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TVRD,"Tvardi Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TVRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TVTX,"Travere Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TVTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TW,Tradeweb Markets Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWAV,"TaoWeave, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWFG,"TWFG, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

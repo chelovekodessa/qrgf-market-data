@@ -1,11 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-MMS,"Maximus, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MMSI,"Merit Medical Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MMSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MMYT,MakeMyTrip Limited - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MMYT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MNDR,Mobile-health Network Solutions - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MNDY,monday.com Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNDY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MNKD,MannKind Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNKD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MNOV,"MediciNova, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNOV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNPR,Monopar Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNRO,"Monro, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNSB,"MainStreet Bancshares, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNSB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +242,10 @@ NSC,Norfolk Southern Corporation Common Stock,N,,,common_equity,eligible,True,N,
 NSIT,"Insight Enterprises, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NSIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NSP,"Insperity, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NSRX,Nasus Pharma Ltd. Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NSRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NSSC,"NAPCO Security Technologies, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NSSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NSTS,"NSTS Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NSTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NSYS,Nortech Systems Incorporated - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NSYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NTAP,"NetApp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NTB,Bank of N.T. Butterfield & Son Limited (The) Voting Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NTB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NTCL,NETCLASS TECHNOLOGY INC - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NTCT,"NetScout Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

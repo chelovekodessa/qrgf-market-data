@@ -1,7 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-FTS,Fortis Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FTV,Fortive Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FTW,Presidio Production Company Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FUBO,FuboTV Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FUBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FUFU,BitFuFu Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FUFU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FUL,H. B. Fuller Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FUL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -170,7 +167,6 @@ GRWG,GrowGeneration Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,
 GS,"Goldman Sachs Group, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GSAT,"Globalstar, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GSBC,"Great Southern Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GSBD,"Goldman Sachs BDC, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GSBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GSHD,"Goosehead Insurance, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSHD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GSIT,"GSI Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GSIW,Garden Stage Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GSIW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +245,7 @@ HHH,Howard Hughes Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N
 HHS,"Harte Hanks, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HHS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIFS,Hingham Institution for Savings - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HIFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIG,"The Hartford Insurance Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+HII,"Huntington Ingalls Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+HIMS,"Hims & Hers Health, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+HIND,"Vyome Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HIND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+HIPO,Hippo Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

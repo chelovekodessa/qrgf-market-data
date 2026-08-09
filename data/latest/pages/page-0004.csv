@@ -43,7 +43,6 @@ BANL,CBL International Limited - Class B Ordinary Shares,Q,S,N,common_equity,eli
 BANR,Banner Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BANR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BAOS,Baosheng Media Group Holdings Limited - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BAOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BAP,Credicorp Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BAR,GraniteShares Gold Trust Shares of Beneficial Interest,P,,,common_equity,eligible,True,N,N,,nasdaqtrader:P:BAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BARK,"BARK, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BARK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BATL,Battalion Oil Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BATL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BATRA,"Atlanta Braves Holdings, Inc. - Series A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BATRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -53,7 +52,6 @@ BB,BlackBerry Limited Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtr
 BBAI,"BigBear.ai, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BBBY,"Bed Bath & Beyond, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBBY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BBCP,"Concrete Pumping Holdings, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBCP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BBDC,"Barings BDC, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BBIO,"BridgeBio Pharma, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BBLG,Bone Biologics Corp - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBLG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BBNX,"Beta Bionics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +247,5 @@ BSP,Bending Spoons S.p.A. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,
 BSRR,Sierra Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BSVN,Bank7 Corp. - Common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BSX,Boston Scientific Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BSY,"Bentley Systems, Incorporated - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BTAI,"BioXcel Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

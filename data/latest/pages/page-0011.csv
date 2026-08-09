@@ -1,9 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-IRHO,Iron Horse Acquisitions II Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRHO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IRIX,IRIDEX Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IRM,Iron Mountain Incorporated (Delaware)Common Stock REIT,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:IRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IRMD,iRadimed Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IRON,"Disc Medicine, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRT,"Independence Realty Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:IRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRTC,"iRhythm Holdings, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRWD,"Ironwood Pharmaceuticals, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRWD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -88,7 +83,6 @@ KAPA,"Kairos Pharma, Ltd. Common Stock",A,,,common_equity,eligible,True,N,N,,nas
 KARD,"Kardigan, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KARD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 KARO,Karooooo Ltd. - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KARO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 KAZR,Skyline Builders Group Holding Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KAZR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KBDC,"Kayne Anderson BDC, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KBDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 KBH,KB Home Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KBH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 KBON,Karbon Capital Partners Corp. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KBON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 KBR,"KBR, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +243,9 @@ LH,Labcorp Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasda
 LHSW,Lianhe Sowell International Group Ltd - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LHSW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LHX,"L3Harris Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LHX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LICN,Lichen International Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LICN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+LIDR,"AEye, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+LIF,"Life360, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+LIFE,Ethos Technologies Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIFE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+LII,"Lennox International, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+LILA,Liberty Latin America Ltd. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LILA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+LILAK,Liberty Latin America Ltd. - Class C Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LILAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
