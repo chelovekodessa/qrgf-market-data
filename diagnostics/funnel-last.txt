@@ -1,6 +1,6 @@
-run_id=31338131462
-source_sha=eb12a68496ddd344fb0f1f1d0c58f888a09f1b19
-timestamp=2026-08-09T21:56:49Z
+run_id=31338177289
+source_sha=befad4b3fdff3b91fe3c7572ffa6fb456ff0c323
+timestamp=2026-08-09T21:57:59Z
 l1_summary=present
 {
   "actual_rankable_rows": 3226,
