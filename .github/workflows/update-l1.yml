@@ -9,7 +9,7 @@ on:
     paths:
       - ".github/workflows/update-l1.yml"
       - "scripts/build_l1_snapshot.py"
-      - "scripts/build_l1_snapshot_v350.py"
+      - "scripts/build_l1_snapshot_free.py"
       - "scripts/l1-trigger.txt"
 
 permissions:
@@ -22,7 +22,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,14 +39,14 @@ jobs:
           rm -rf .work/l1
           mkdir -p .work/l1 data/l1-diagnostics
           set +e
-          python scripts/build_l1_snapshot_v350.py \
+          python scripts/build_l1_snapshot_free.py \
             --l0-manifest data/latest/manifest.json \
             --l0-pages-dir data/latest/pages \
             --output-dir .work/l1 \
             --history-calendar-days 400 \
             --batch-size 200 \
             --producer-file scripts/build_l1_snapshot.py \
-            --producer-file scripts/build_l1_snapshot_v350.py \
+            --producer-file scripts/build_l1_snapshot_free.py \
             --producer-file .github/workflows/update-l1.yml \
             > .work/l1.stdout 2> .work/l1.stderr
           rc=$?
@@ -67,11 +67,12 @@ jobs:
               status['manifest_summary'] = {
                   'complete': manifest.get('complete'),
                   'rows': manifest.get('rows'),
+                  'source_id': manifest.get('source_id'),
                   'coverage': manifest.get('coverage'),
                   'alpaca_requests': (manifest.get('alpaca') or {}).get('requests'),
                   'alpaca_errors': len((manifest.get('alpaca') or {}).get('errors') or []),
                   'short_history_extension': (manifest.get('alpaca') or {}).get('short_history_extension'),
-                  'nasdaq_reference': manifest.get('nasdaq_reference'),
+                  'reference_provider': manifest.get('reference_provider'),
               }
           Path('data/l1-diagnostics/latest.json').write_text(json.dumps(status, indent=2) + '\n')
           PY
@@ -87,11 +88,7 @@ jobs:
           PY
             validation_rc=$?
             set -e
-            if [ "$validation_rc" -eq 0 ]; then
-              publishable=1
-            else
-              rc=3
-            fi
+            if [ "$validation_rc" -eq 0 ]; then publishable=1; else rc=3; fi
           fi
           if [ "$publishable" -eq 1 ]; then
             rm -rf data/l1-next
