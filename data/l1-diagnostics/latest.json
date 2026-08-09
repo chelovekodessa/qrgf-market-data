@@ -1,7 +1,35 @@
 {
   "schema_version": "1.0.0",
-  "returncode": 1,
-  "stdout_tail": "",
-  "stderr_tail": "Traceback (most recent call last):\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot_v350.py\", line 427, in <module>\n    rc = core.main()\n         ^^^^^^^^^^^\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot.py\", line 398, in main\n    reference, nasdaq_meta = fetch_nasdaq_reference()\n                             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot_v350.py\", line 318, in fetch_reference\n    return _fetch_sec_reference(errors)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot_v350.py\", line 180, in _fetch_sec_reference\n    _curl_file(SEC_TICKERS_URL, ticker_path, 90)\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot_v350.py\", line 142, in _curl_file\n    raise RuntimeError(f\"SEC bulk download failed rc={proc.returncode}: {proc.stderr[-500:]}\")\nRuntimeError: SEC bulk download failed rc=22: curl: (22) The requested URL returned error: 403\n\n",
-  "publishable": false
+  "returncode": 0,
+  "stdout_tail": "{\n  \"complete\": true,\n  \"rows\": 4986,\n  \"with_history\": 4984,\n  \"missing_history\": 2,\n  \"market_cap_missing_non_etf\": 4944,\n  \"mature_missing_core\": 4649,\n  \"alpaca_requests\": 156,\n  \"alpaca_errors\": 0,\n  \"nasdaq_reference_rows\": null\n}\n",
+  "stderr_tail": "",
+  "publishable": true,
+  "manifest_summary": {
+    "complete": true,
+    "rows": 4986,
+    "source_id": "alpaca_sip_daily_free_l1",
+    "coverage": {
+      "total": 4986,
+      "with_history": 4984,
+      "missing_history": 2,
+      "non_etf": 4944,
+      "market_cap_present_non_etf": 0,
+      "market_cap_missing_non_etf": 4944,
+      "mature_missing_core": 4649
+    },
+    "alpaca_requests": 156,
+    "alpaca_errors": 0,
+    "short_history_extension": {
+      "requested_symbols": 308,
+      "upgraded_to_full": 15,
+      "still_short": 293,
+      "requests": 7,
+      "errors": []
+    },
+    "reference_provider": {
+      "provider": "deferred",
+      "mode": "free_bulk_reference_not_required_for_l1",
+      "market_cap_status": "deferred_to_narrowed_research"
+    }
+  }
 }
