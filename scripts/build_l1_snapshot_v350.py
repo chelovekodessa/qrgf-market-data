@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """QRGF 3.5 production wrapper for the L1 snapshot builder.
 
-Hardens the generic builder in three places without duplicating its calculation
-logic: (1) Nasdaq reference is fetched in bounded pages rather than one heavy
-`download=true` response, (2) Alpaca history is automatically extended for
-symbols with suspiciously short initial history, and (3) short history is
-classified as young only when Nasdaq IPO-year evidence supports that conclusion.
+Hardens the generic builder without duplicating its calculation logic: Nasdaq
+reference data are attempted through bounded requests and a curl/browser-style
+fallback, Alpaca short histories are extended up to five years, and short
+history is treated as young only when listing evidence supports that conclusion.
 """
 
 from __future__ import annotations
 
 import datetime as dt
+import json
+import subprocess
 import sys
 import urllib.parse
 from typing import Any
@@ -33,12 +34,30 @@ def _parse_int(value: Any) -> int | None:
         return None
 
 
+def _reference_from_rows(rows: list[dict[str, Any]]) -> tuple[dict[str, dict[str, Any]], list[str]]:
+    result: dict[str, dict[str, Any]] = {}
+    duplicates: list[str] = []
+    for row in rows:
+        ticker = str(row.get("symbol") or "").strip().upper()
+        if not ticker:
+            continue
+        item = {
+            "market_cap": core.parse_number(row.get("marketCap")),
+            "sector": str(row.get("sector") or "").strip() or None,
+            "industry": str(row.get("industry") or "").strip() or None,
+            "nasdaq_last_sale": core.parse_number(row.get("lastsale")),
+            "nasdaq_volume": core.parse_number(row.get("volume")),
+            "ipo_year": _parse_int(row.get("ipoyear", row.get("ipoYear"))),
+        }
+        if ticker in result and result[ticker] != item:
+            duplicates.append(ticker)
+            continue
+        result[ticker] = item
+    return result, sorted(set(duplicates))
+
+
 def _nasdaq_page(limit: int, offset: int) -> tuple[list[dict[str, Any]], int | None, dict[str, str]]:
-    params = urllib.parse.urlencode({
-        "limit": str(limit),
-        "offset": str(offset),
-        "tableonly": "true",
-    })
+    params = urllib.parse.urlencode({"limit": str(limit), "offset": str(offset), "tableonly": "true"})
     status, payload, headers = core.http_json(
         f"{core.NASDAQ_SCREENER_URL}?{params}",
         {
@@ -48,8 +67,8 @@ def _nasdaq_page(limit: int, offset: int) -> tuple[list[dict[str, Any]], int | N
             "Referer": "https://www.nasdaq.com/market-activity/stocks/screener",
             "Origin": "https://www.nasdaq.com",
         },
-        attempts=4,
-        timeout=45,
+        attempts=2,
+        timeout=30,
     )
     if status != 200:
         raise RuntimeError(f"Nasdaq screener page failed with HTTP {status}")
@@ -63,10 +82,46 @@ def _nasdaq_page(limit: int, offset: int) -> tuple[list[dict[str, Any]], int | N
     return [dict(row) for row in rows if isinstance(row, dict)], total, headers
 
 
+def _fetch_nasdaq_curl() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    url = f"{core.NASDAQ_SCREENER_URL}?download=true&limit=10000&offset=0&tableonly=true"
+    command = [
+        "curl", "--fail", "--silent", "--show-error", "--compressed", "--http1.1",
+        "--connect-timeout", "20", "--max-time", "120",
+        "-H", f"User-Agent: {core.USER_AGENT}",
+        "-H", "Accept: application/json, text/plain, */*",
+        "-H", "Accept-Language: en-US,en;q=0.9",
+        "-H", "Referer: https://www.nasdaq.com/market-activity/stocks/screener",
+        "-H", "Origin: https://www.nasdaq.com",
+        url,
+    ]
+    proc = subprocess.run(command, text=True, capture_output=True, timeout=135)
+    if proc.returncode != 0:
+        raise RuntimeError(f"curl Nasdaq request failed rc={proc.returncode}: {proc.stderr[-500:]}")
+    payload = json.loads(proc.stdout)
+    data = payload.get("data") or {}
+    rows = data.get("rows") or [] if isinstance(data, dict) else []
+    if not isinstance(rows, list) or not rows:
+        raise RuntimeError("curl Nasdaq response has no rows")
+    result, duplicates = _reference_from_rows([dict(row) for row in rows if isinstance(row, dict)])
+    if not result:
+        raise RuntimeError("curl Nasdaq response produced zero symbols")
+    return result, {
+        "http_status": 200,
+        "rows": len(rows),
+        "unique_symbols": len(result),
+        "reported_total": _parse_int(data.get("totalrecords", data.get("totalRecords"))) if isinstance(data, dict) else None,
+        "pages": 1,
+        "page_size": len(rows),
+        "duplicate_conflicts": duplicates,
+        "request_ids": [],
+        "mode": "curl_full_download_http1_1",
+    }
+
+
 def fetch_nasdaq_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
-    """Fetch the public Nasdaq screener in bounded pages with adaptive size."""
-    last_error: Exception | None = None
-    for page_size in (1000, 500, 250):
+    """Fetch public Nasdaq reference data without turning a transport failure into guessed values."""
+    errors: list[str] = []
+    for page_size in (500, 250):
         try:
             result: dict[str, dict[str, Any]] = {}
             duplicates: list[str] = []
@@ -75,7 +130,7 @@ def fetch_nasdaq_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]
             raw_rows = 0
             total: int | None = None
             pages = 0
-            while pages < 60:
+            while pages < 80:
                 rows, reported_total, headers = _nasdaq_page(page_size, offset)
                 pages += 1
                 raw_rows += len(rows)
@@ -84,18 +139,9 @@ def fetch_nasdaq_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]
                 request_id = headers.get("x-request-id") or headers.get("x-amzn-requestid")
                 if request_id:
                     request_ids.append(request_id)
-                for row in rows:
-                    ticker = str(row.get("symbol") or "").strip().upper()
-                    if not ticker:
-                        continue
-                    item = {
-                        "market_cap": core.parse_number(row.get("marketCap")),
-                        "sector": str(row.get("sector") or "").strip() or None,
-                        "industry": str(row.get("industry") or "").strip() or None,
-                        "nasdaq_last_sale": core.parse_number(row.get("lastsale")),
-                        "nasdaq_volume": core.parse_number(row.get("volume")),
-                        "ipo_year": _parse_int(row.get("ipoyear", row.get("ipoYear"))),
-                    }
+                parsed, page_duplicates = _reference_from_rows(rows)
+                duplicates.extend(page_duplicates)
+                for ticker, item in parsed.items():
                     if ticker in result and result[ticker] != item:
                         duplicates.append(ticker)
                         continue
@@ -107,23 +153,28 @@ def fetch_nasdaq_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]
                     break
                 if total is None and len(rows) < page_size:
                     break
-            if not result:
-                raise RuntimeError("Nasdaq screener pagination returned zero symbols")
-            return result, {
-                "http_status": 200,
-                "rows": raw_rows,
-                "unique_symbols": len(result),
-                "reported_total": total,
-                "pages": pages,
-                "page_size": page_size,
-                "duplicate_conflicts": sorted(set(duplicates)),
-                "request_ids": request_ids,
-                "mode": "bounded_pagination_without_download_flag",
-            }
+            if result:
+                return result, {
+                    "http_status": 200,
+                    "rows": raw_rows,
+                    "unique_symbols": len(result),
+                    "reported_total": total,
+                    "pages": pages,
+                    "page_size": page_size,
+                    "duplicate_conflicts": sorted(set(duplicates)),
+                    "request_ids": request_ids,
+                    "mode": "bounded_pagination_without_download_flag",
+                }
+            raise RuntimeError("Nasdaq pagination returned zero symbols")
         except Exception as exc:
-            last_error = exc
-            continue
-    raise RuntimeError(f"Nasdaq paginated reference failed at all page sizes: {last_error}")
+            errors.append(f"page_size={page_size}:{type(exc).__name__}:{exc}")
+    try:
+        result, meta = _fetch_nasdaq_curl()
+        meta["prior_attempt_errors"] = errors
+        return result, meta
+    except Exception as exc:
+        errors.append(f"curl:{type(exc).__name__}:{exc}")
+    raise RuntimeError("Nasdaq reference failed: " + " | ".join(errors)[-2000:])
 
 
 def fetch_alpaca_history(symbols: list[str], start: str, end: str, batch_size: int):
@@ -171,8 +222,6 @@ def metrics_for(row: dict[str, str], bars: list[dict[str, Any]], reference: dict
         elif ipo_year is None:
             result["momentum_history_status"] = "unknown"
             result["history_data_status"] = "short_history_without_listing_evidence"
-        # Current/prior-year IPO evidence leaves the generic objective session
-        # classification intact: limited_but_usable or insufficient.
     return result
 
 
