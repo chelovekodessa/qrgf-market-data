@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -95,6 +95,7 @@ jobs:
           if [ "$rc" -eq 0 ]; then git add data/l1/latest; fi
           if ! git diff --cached --quiet; then
             git commit -m "Record QRGF L1 build result"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
           if [ "$rc" -ne 0 ]; then exit "$rc"; fi
