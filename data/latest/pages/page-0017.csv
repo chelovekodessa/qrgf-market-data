@@ -1,133 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-ROCK,"Gibraltar Industries, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROCK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROG,Rogers Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ROG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROIV,Roivant Sciences Ltd. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROIV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROK,"Rockwell Automation, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ROK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROKU,"Roku, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROKU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROL,"Rollins, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ROL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROLR,"High Roller Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ROLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROMA,Roma Green Finance Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROMA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROOT,"Root, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROP,"Roper Technologies, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ROST,"Ross Stores, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPAY,Repay Holdings Corporation - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RPAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPC,"Ridgepost Capital, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPD,"Rapid7, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RPD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPGL,Republic Power Group Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RPGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPID,"Rapid Micro Biosystems, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RPID,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPM,RPM International Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RPM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPRX,Royalty Pharma plc - Class A Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RPRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RPT,Rithm Property Trust Inc. Common stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RQI,Cohen & Steers Quality Income Realty Fund Inc Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RQI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RRBI,"Red River Bancshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RRBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RRC,Range Resources Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RRGB,"Red Robin Gourmet Burgers, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RRGB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RRR,"Red Rock Resorts, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RRX,Regal Rexnord Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RS,"Reliance, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RSG,"Republic Services, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RSI,"Rush Street Interactive, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RSKD,Riskified Ltd. Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RSKD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RSSS,"Research Solutions, Inc - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RSSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RSVR,"Reservoir Media, Inc.. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RSVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RTB,"RTB Digital, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RTB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RTX,RTX Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RUBI,Rubico Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RUM,RUM Group Inc. - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RUN,Sunrun Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RUSHA,"Rush Enterprises, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUSHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RUSHB,"Rush Enterprises, Inc. - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUSHB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVI,Robinhood Ventures Fund I Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVLV,"Revolve Group, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVMD,"Revolution Medicines, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVP,"Retractable Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RVP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVSB,Riverview Bancorp Inc - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVSB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVSN,Rail Vision Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVT,"Royce Small-Cap Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RVTY,"Revvity, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RWAY,Runway Growth Finance Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RWAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RWT,"Redwood Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RWT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RXO,"RXO, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RXO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RXRX,"Recursion Pharmaceuticals, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RXRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RXST,"RxSight, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RXST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RXT,"Rackspace Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RY,Royal Bank Of Canada Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYAM,Rayonier Advanced Materials Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RYAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYAN,"Ryan Specialty Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RYAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYDE,Ryde Group Ltd. Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RYDE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYET,Ruanyun Edai Technology Inc. - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RYET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYM,"RYTHM, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RYM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYN,Rayonier Inc. REIT Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYOJ,"rYojbaba Co., Ltd. - Common Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RYOJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYTM,"Rhythm Pharmaceuticals, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RYTM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYZ,Ryerson Holding Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RYZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RZLT,"Rezolute, Inc. - Common Stock (NV)",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RZLT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RZLV,Rezolve AI PLC - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RZLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-S,"SentinelOne, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:S,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SA,"Seabridge Gold, Inc. Common Shares New",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SABA,Saba Capital Income & Opportunities Fund II Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SABA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SABR,Sabre Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SABR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SABS,"SAB Biotherapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SABS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SACH,Sachem Capital Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SACH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAFE,Safehold Inc. New Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SAFE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAFT,"Safety Insurance Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SAFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAGT,SAGTEC GLOBAL LIMITED - Class A Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SAGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAGU,Shreya Acquisition Group Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SAGU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAH,"Sonic Automotive, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAIA,"Saia, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SAIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAIC,Science Applications International Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SAIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAIH,SAIHEAT Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SAIH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAIL,"SailPoint, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SAIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAM,"Boston Beer Company, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAMG,Silvercrest Asset Management Group Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SAMG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SANA,"Sana Biotechnology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SANA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SANG,Sangoma Technologies Corporation - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SANG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SANM,Sanmina Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SANM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SARO,"StandardAero, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SARO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SATL,Satellogic Inc. - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SATL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SB,"Safe Bulkers, Inc Common Stock ($0.001 par value)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBAC,SBA Communications Corporation - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBCF,Seacoast Banking Corporation of Florida - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBCF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBET,"Sharplink, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBEV,"Splash Beverage Group, Inc. (NV) Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SBEV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBFG,"SB Financial Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBFM,Sunshine Biopharma Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBFM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBGI,"Sinclair, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBH,"Sally Beauty Holdings, Inc. (Name to be changed from Sally Holdings, Inc.) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SBH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBI,Western Asset Intermediate Muni Fund Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBLK,Star Bulk Carriers Corp. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBLK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBMT,Silver Bow Mining Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SBMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBR,Sabine Royalty Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBRA,"Sabra Health Care REIT, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBSI,"Southside Bancshares, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SBSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBUX,Starbucks Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SBUX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBXD,SilverBox Corp IV Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SBXD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBXE,SilverBox Corp V Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SBXE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCCO,Southern Copper Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SCCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCHL,Scholastic Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCHL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCHW,Charles Schwab Corporation (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SCHW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCI,Service Corporation International Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCL,Stepan Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCLX,Scilex Holding Company - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCM,Stellus Capital Investment Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCOR,"comScore, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCOR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCPQ,Social Commerce Partners Corporation - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCPQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCSC,"ScanSource, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCTX,Scribe Therapeutics Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCWO,374Water Inc. - common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCWO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCYX,"SCYNEXIS, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCYX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SCZM,Santacruz Silver Mining Ltd. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SCZM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SD,"SandRidge Energy, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SDEV,Stablecoin Development Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SDEV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SDGR,"Schrodinger, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SDGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SDHC,Smith Douglas Homes Corp. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SDHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SDHY,PGIM Short Duration High Yield Opportunities Fund Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SDHY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SDOT,Sadot Group Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SDOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SDRL,Seadrill Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SDRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SEAT,Vivid Seats Inc. - Class A common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SEB,Seaboard Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SEB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SECZ,Securitize Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SECZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SEDG,"SolarEdge Technologies, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEDG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SEED,Origin Agritech Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SEER,"Seer, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SEG,Seaport Entertainment Group Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SEG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +120,132 @@ SMHI,SEACOR Marine Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,
 SMID,Smith-Midland Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SMID,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SMJF,SMJ International Holdings Inc. Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SMJF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SMMT,Summit Therapeutics Inc.  - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SMMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMP,"Standard Motor Products, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMPL,The Simply Good Foods Company - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SMPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMR,NuScale Power Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMRT,"SmartRent, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SMRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMSI,"Smith Micro Software, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SMSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMTC,Semtech Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SMTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMTI,Sanara MedTech Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SMTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMWB,Similarweb Ltd. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SMWB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SMX,SMX (Security Matters) Public Limited Company - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SN,"SharkNinja, Inc. Ordinary Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNA,Snap-On Incorporated Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNAP,Snap Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SND,"Smart Sand, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNDA,"Sonida Senior Living, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNDK,Sandisk Corporation - Common Stock When-Issued,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNDK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNDL,SNDL Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNDR,"Schneider National, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNDX,"Syndax Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNES,"SenesTech, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNEX,StoneX Group Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNFCA,Security National Financial Corporation - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNFCA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNN,"Smith & Nephew SNATS, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNOA,"Sonoma Pharmaceuticals, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNOA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNOW,Snowflake Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNPS,"Synopsys, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNT,Senstar Technologies Corporation - Common Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNTG,Sentage Holdings Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNTI,"Senti Biosciences Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNWV,"SANUWAVE Health, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNWV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNX,TD SYNNEX Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SO,Southern Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOAR,"Volato Group, Inc. Class A Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SOAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOBO,South Bow Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOC,Sable Offshore Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOFI,"SoFi Technologies, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOLS,Solstice Advanced Materials Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOLV,Solventum Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SON,Sonoco Products Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SONO,"Sonos, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SONO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOPH,SOPHiA GENETICS SA - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SORA,AsiaStrategy - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SORA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOS,SOS Limited Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOTK,Sono-Tek Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOUN,"SoundHound AI, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SOWG,Sow Good Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOWG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPAI,Safe Pro Group Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPB,"Spectrum Brands Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPCB,"SuperCom, Ltd. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPCE,"Virgin Galactic Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPCE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPCX,Space Exploration Technologies Corp. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPFI,"South Plains Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPG,"Simon Property Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPGI,S&P Global Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPH,"Suburban Propane Partners, L.P. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPHL,Springview Holdings Ltd - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPHL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPHR,Sphere Entertainment Co. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPHR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPIR,"Spire Global, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPIR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPMC,"Sound Point Meridian Capital, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPMC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPNT,SiriusPoint Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPOK,"Spok Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPOK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPOT,Spotify Technology S.A. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPPL,SIMPPLE LTD. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPRB,"Spruce Biosciences, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPRB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPRC,SciSparc Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPRO,"Spero Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPRU,Spruce Power Holding Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPRU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPRY,"ARS Pharmaceuticals, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPRY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPSC,"SPS Commerce, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPT,"Sprout Social, Inc - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPTX,"Seaport Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPWH,"Sportsman's Warehouse Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SPWH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SPXC,"SPX Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SPXC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SQFT,"Presidio Property Trust, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SQFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SQM,Sociedad Quimica y Minera S.A. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SQM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SR,Spire Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRAD,Sportradar Group AG - Class A Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRBK,"SR Bancorp, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRCE,1st Source Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRCE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRE,DBA Sempra Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRFM,Surf Air Mobility Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SRFM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRG,Seritage Growth Properties Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SRG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRI,"Stoneridge, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRPT,"Sarepta Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRRK,Scholar Rock Holding Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRTA,"Strata Critical Medical, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRTS,"Sensus Healthcare, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRXH,SRX Global Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SRXH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SRZN,"Surrozen, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SRZN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSB,SouthState Bank Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SSB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSBI,Summit State Bank - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSD,"Simpson Manufacturing Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SSD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSII,SS Innovations International Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSM,Sono Group N.V. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSMR,Sunshine Silver Mining & Refining Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SSMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSNC,"SS&C Technologies Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSP,E.W. Scripps Company (The) - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSRM,SSR Mining Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SST,"System1, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSTI,"SoundThinking, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSTK,"Shutterstock, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SSTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SSYS,"Stratasys, Ltd. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SSYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ST,Sensata Technologies Holding plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STAA,STAAR Surgical Company - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STAA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STAG,"Stag Industrial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STAK,STAK Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STBA,"S&T Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STC,Stewart Information Services Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STDN,"Standard Nuclear, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STE,STERIS plc (Ireland) Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STEM,"Stem, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STEM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STEP,StepStone Group Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STEP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STEX,Streamex Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STFS,Star Fashion Culture Holdings Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STGW,Stagwell Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STGW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STHO,Star Holdings - Shares of Beneficial Interest,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STHO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STI,"Solidion Technology, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STIM,"Neuronetics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STKE,Sol Strategies Inc. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STKS,"The ONE Group Hospitality, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STKS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STLA,Stellantis N.V. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STLD,"Steel Dynamics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STLN,"Starling Oncology, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STM,STMicroelectronics N.V. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STN,Stantec Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STNE,StoneCo Ltd. - Class A Common Share,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STNG,Scorpio Tankers Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STNG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STOK,"Stoke Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STOK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRA,"Strategic Education, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+STRL,"Sterling Infrastructure, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

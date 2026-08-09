@@ -1,9 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-ALG,"Alamo Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ALGM,"Allegro MicroSystems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ALGN,"Align Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ALGS,"Aligos Therapeutics, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ALGT,Allegiant Travel Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALH,Alliance Laundry Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALHC,"Alignment Healthcare, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALIT,"Alight, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -95,7 +90,6 @@ ANTA,Antalpha Platform Holding Company - Class A Ordinary Shares,Q,G,N,common_eq
 ANTX,"AN2 Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ANVS,"Annovis Bio, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ANVS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ANY,Sphere 3D Corp. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ANY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AOD,abrdn Total Dynamic Dividend Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AOD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AOMR,"Angel Oak Mortgage REIT, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AOMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AON,Aon plc Class A Ordinary Shares (Ireland),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AORT,"Artivion, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AORT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -139,7 +133,6 @@ ARCB,ArcBest Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,n
 ARCI,Archimedes Tech SPAC Partners III Co. - Ordinary Share,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ARCO,Arcos Dorados Holdings Inc. Class A Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ARCT,Arcturus Therapeutics Holdings Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ARDC,"Ares Dynamic Credit Allocation Fund, Inc. Common Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ARDT,"Ardent Health, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ARDX,"Ardelyx, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ARDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ARE,"Alexandria Real Estate Equities, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ARE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +242,10 @@ AVD,American Vanguard Corporation Common Stock ($0.10 Par Value),N,,,common_equi
 AVEX,AEVEX Corp. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVGO,Broadcom Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVIR,"Atea Pharmaceuticals, Inc. - common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVIR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVLN,Avalyn Pharma Inc. - common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVNT,Avient Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVNW,"Aviat Networks, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVO,"Mission Produce, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVPT,"AvePoint, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVR,Anteris Technologies Global Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVT,"Avnet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

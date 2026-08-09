@@ -1,49 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-EMN,Eastman Chemical Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EMO,ClearBridge Energy Midstream Opportunity Fund Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EMO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EMPD,Empery Digital Inc. - Common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EMPD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EMR,Emerson Electric Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENB,Enbridge Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENGN,enGene Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENGS,Energys Group Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENHA,Enhanced Group Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENLT,Enlight Renewable Energy Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENLT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENLV,Enlivex Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENOV,Enovis Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENOV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENPH,"Enphase Energy, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENR,"Energizer Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENS,EnerSys Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENSG,"The Ensign Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENTA,"Enanta Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENTG,"Entegris, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENTX,Entera Bio Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENVA,"Enova International, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENVB,"Enveric Biosciences, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENVB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENVX,Enovix Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENVX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EOD,Allspring Global Dividend Opportunity Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EOD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EOG,"EOG Resources, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EOG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EOLS,"Evolus, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EOLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EONR,EON Resources Inc. Class A Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:EONR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EOSE,"Eos Energy Enterprises, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EOSE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EP,Empire Petroleum Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:EP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPAC,Enerpac Tool Group Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EPAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPAM,"EPAM Systems, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EPAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPC,Edgewell Personal Care Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPD,Enterprise Products Partners L.P. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EPD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPM,"Evolution Petroleum Corporation, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:EPM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPR,EPR Properties Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPRT,"Essential Properties Realty Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EPRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPRX,Eupraxia Pharmaceuticals Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EPRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPSM,Epsium Enterprise Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EPSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EPSN,Epsilon Energy Ltd. - Common Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EPSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQ,"Equillium, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQBK,"Equity Bancshares, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQH,"Equitable Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQIX,"Equinix, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EQIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQPT,EquipmentShare.com Inc - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EQPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQR,Equity Residential Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQS,"Equus Total Return, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EQT,EQT Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EQT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EQX,Equinox Gold Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:EQX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ERAS,"Erasca, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ERIE,Erie Indemnity Company - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ERIE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -77,22 +32,17 @@ ETR,Entergy Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaq
 ETS,Elite Express Holding Inc. - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ETS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ETSS,Energy Transition Special Opportunities Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ETSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ETSY,"Etsy, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ETSY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ETV,Eaton Vance Corporation Eaton Vance Tax-Managed Buy-Write Opportunities Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ETV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ETW,Eaton Vance Corporation Eaton Vance Tax-Managed Global Buy-Write Opportunites Fund Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ETW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ETX,Eaton Vance Municipal Income 2028 Term Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ETX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EU,enCore Energy Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EUDA,Euda Health Holdings Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EUDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVC,Entravision Communications Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVCM,EverCommerce Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EVCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVER,"EverQuote, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EVER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVEX,"Eve Holding, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EVF,Eaton Vance Senior Income Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVGO,EVgo Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EVGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVH,"Evolent Health, Inc Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVI,"EVI Industries, Inc.  Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:EVI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVLV,"Evolv Technologies Holdings, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EVLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVMN,"Evommune, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EVN,Eaton Vance Municipal Income Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVR,Evercore Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVRG,"Evergy, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:EVRG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 EVTC,"Evertec, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EVTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -188,7 +138,6 @@ FIEE,"FiEE, Inc - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtra
 FIG,"Figma, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FIGR,"Figure Technology Solutions, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FIGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FIGS,"FIGS, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FIGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FINS,Angel Oak Financial Strategies Income Term Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FINS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FINW,FinWise Bancorp - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FINW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FIP,FTAI Infrastructure Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FIRY,Firy Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FIRY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -203,7 +152,6 @@ FIX,"Comfort Systems USA, Inc. Common Stock",N,,,common_equity,eligible,True,N,N
 FIZZ,National Beverage Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FIZZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FJET,"Starfighters Space, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FJET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FKWL,Franklin Wireless Corp. - common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FKWL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FLC,Flaherty & Crumrine Total Return Fund Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FLC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FLEX,Flex Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FLEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FLG,"Flagstar Bank, N.A. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FLG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FLGT,"Fulgent Genetics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FLGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -240,7 +188,6 @@ FNRN,First Northern Community Bancorp - Common stock,Q,S,N,common_equity,eligibl
 FNWB,First Northwest Bancorp - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FNWB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FNWD,Finward Bancorp - common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FNWD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FOA,Finance of America Companies Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FOA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FOF,"Cohen & Steers Closed-End Opportunity Fund, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FOF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FOFO,"Hang Feng Technology Innovation Co., Ltd. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FOFO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FOR,Forestar Group Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FOR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FORM,"FormFactor, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FORM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +196,56 @@ FOSL,"Fossil Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,
 FOUR,"Shift4 Payments, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FOUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FOX,Fox Corporation - Class B Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FOX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FOXA,Fox Corporation - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FOXA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FOXF,Fox Factory Holding Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FOXF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FPH,"Five Point Holdings, LLC Class A Common Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FPI,Farmland Partners Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FPS,"Forgent Power Solutions, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FR,"First Industrial Realty Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRAF,Franklin Financial Services Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRAF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRBA,First Bank  - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRBT,"Forbright, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRD,Friedman Industries Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRGT,"Freight Technologies, Inc. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRHC,Freedom Holding Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRME,First Merchants Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRME,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRMI,Fermi Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRMM,"Forum Markets, Incorporated - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRNM,"Freenome, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRNM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRO,Frontline Plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FROG,JFrog Ltd. - Ordinary shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FROG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRPH,"FRP Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRPT,"Freshpet, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRSH,Freshworks Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRST,Primis Financial Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRT,Federal Realty Investment Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRTT,Fort Technology Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FRVO,Fervo Energy Company - Class A common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSBC,Five Star Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSBW,"FS Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSBW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSCO,FS Credit Opportunities Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSEA,"First Seacoast Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSI,Flexible Solutions International Inc. Common Stock (CDA),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSK,FS KKR Capital Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSLR,"First Solar, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSLY,"Fastly, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSLY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSM,Fortuna Mining Corp. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSP,Franklin Street Properties Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSS,Federal Signal Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSTR,L.B. Foster Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSUN,FirstSun Capital Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FSV,FirstService Corporation - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FT,Franklin Universal Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTAI,FTAI Aviation Ltd. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTCI,"FTC Solar, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTDR,"Frontdoor, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTEK,"Fuel Tech, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTEK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTF,Franklin Limited Duration Income Trust Common Shares of Beneficial Interest,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:FTF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTFT,Future FinTech Group Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTH,"Faeth Therapeutics, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTHM,Fathom Holdings Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTHM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTI,TechnipFMC plc Ordinary Share,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTK,"Flotek Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTLF,"FitLife Brands, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTLF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTNT,"Fortinet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTRA,FutureCorp Space Acquisition 1 Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FTRE,Fortrea Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

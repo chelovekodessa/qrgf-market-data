@@ -1,92 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-KRT,Karat Packaging Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KRUS,"Kura Sushi USA, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KRUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KRYS,"Krystal Biotech, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KRYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KSCP,"Knightscope, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KSCP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KSS,Kohl's Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KT,KT Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KTB,"Kontoor Brands, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KTB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KTCC,Key Tronic Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KTCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KTOS,"Kratos Defense & Security Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KTOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KULR,"KULR Technology Group, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:KULR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KURA,"Kura Oncology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KURA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KUST,"Kustom Entertainment, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KUST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KVHI,"KVH Industries, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KVHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KVUE,Kenvue Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KVUE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KVYO,"Klaviyo, Inc. Series A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KVYO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KWR,Quaker Houghton Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KWR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KWY,Kingsway Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:KWY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KXIN,Kaixin Holdings - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KXIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KYIV,Kyivstar Group Ltd. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KYIV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KYMR,"Kymera Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KYMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KYTX,"Kyverna Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:KYTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-L,Loews Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:L,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LABT,Lakewood-Amedex Biotherapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LABT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAC,Lithium Americas Corp. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAD,"Lithia Motors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LADR,Ladder Capital Corp Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LADR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAES,SEALSQ Corp - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAKE,"Lakeland Industries, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAMR,Lamar Advertising Company - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAND,Gladstone Land Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LANV,Lanvin Group Holdings Limited Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LANV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAR,Lithium Argentina AG Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LARK,Landmark Bancorp Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LARK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LASE,Laser Photonics Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LASE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LASR,"nLIGHT, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LASR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAUR,"Laureate Education, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAW,"CS Disco, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LAW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAZ,"Lazard, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LAZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LB,LandBridge Company LLC Class A Shares Representing Limited Liability Company Interests,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBGJ,Li Bang International Corporation Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LBGJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBRDA,Liberty Broadband Corporation - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LBRDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBRDK,Liberty Broadband Corporation - Class C Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LBRDK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBRT,Liberty Energy Inc. Class A common stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LBRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBRX,LB Pharmaceuticals Inc - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LBRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBTYA,Liberty Global Ltd. - Class A Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LBTYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBTYB,Liberty Global Ltd. - Class B Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LBTYB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LBTYK,Liberty Global Ltd. - Class C Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LBTYK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LCFY,Locafy Limited - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LCFY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LCID,"Lucid Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LCID,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LCLN,"Lincoln International, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LCLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LCNB,LCNB Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LCNB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LCTX,"Lineage Cell Therapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:LCTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LCUT,"Lifetime Brands, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LCUT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LDI,"loanDepot, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LDI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LDOS,"Leidos Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LDOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LE,"Lands' End, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEA,Lear Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LECO,"Lincoln Electric Holdings, Inc. - Common Shares",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LECO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEDS,SemiLEDS Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LEDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEE,"Lee Enterprises, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LEE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEG,"Leggett & Platt, Incorporated Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LEG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEGH,Legacy Housing Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LEGH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEGO,Legato Merger Corp. IV Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:LEGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEN,Lennar Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LENZ,"LENZ Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LENZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEO,"BNY Mellon Strategic Municipals, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LEO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LESL,"Leslie's, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LESL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEU,Centrus Energy Corp. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LEU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEVI,Levi Strauss & Co Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LEVI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFCR,"Lifecore Biomedical, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LFCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFMD,"LifeMD, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LFMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFST,"LifeStance Health Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LFST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFT,"Lument Finance Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFTO,"Liftoff Mobile, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LFTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFUS,"Littelfuse, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LFUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFVN,Lifevantage Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LFVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFWD,Lifeward Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LFWD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGCL,Lucas GC Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LGCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGCY,Legacy Education Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:LGCY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGIH,"LGI Homes, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LGIH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGL,"LGL Group, Inc. (The) Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:LGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGN,Legence Corp. - Class A Common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGND,Ligand Pharmaceuticals Incorporated - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LGND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGPS,LogProstyle Inc. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:LGPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LH,Labcorp Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LHSW,Lianhe Sowell International Group Ltd - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LHSW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LHX,"L3Harris Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LHX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LICN,Lichen International Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LICN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LIDR,"AEye, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LIEN,"Chicago Atlantic BDC, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LIF,"Life360, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +161,91 @@ MCRB,"Seres Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True
 MCRI,"Monarch Casino & Resort, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MCRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MCRP,Micropolis AI Robotics Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MCRP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MCS,Marcus Corporation (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MCTA,Charming Medical Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MCTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MCY,Mercury General Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MCY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MD,"Pediatrix Medical Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDA,MDA Space Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDAI,"Spectral AI, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDB,"MongoDB, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDGL,"Madrigal Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDLN,Medline Inc. - Class A common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDLZ,"Mondelez International, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDLZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDRR,"Medalist Diversified, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDT,Medtronic plc. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDU,"MDU Resources Group, Inc. Common Stock (Holding Company)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDV,"Modiv Industrial, Inc. Class C Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MDV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDWD,MediWound Ltd. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDWD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MDXG,"MiMedx Group, Inc - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDXG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MEC,"Mayville Engineering Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MED,MEDIFAST INC Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MEDP,"Medpace Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MEDP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MEGL,Magic Empire Global Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MEGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MEI,"Methode Electronics, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MEI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MELI,"MercadoLibre, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MELI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MENS,Jyong Biotech Ltd. - Ordinary shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MENS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MEOH,Methanex Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MEOH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MET,"MetLife, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+META,"Meta Platforms, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:META,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+METC,"Ramaco Resources, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:METC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+METCB,"Ramaco Resources, Inc. - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:METCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MF,MindForge Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MFC,Manulife Financial Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MFI,mF International Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MFIN,Medallion Financial Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MFIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MFP,"Midera Food Processing, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MFP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MG,Mistras Group Inc Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGA,"Magna International, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MGA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGEE,MGE Energy Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGEE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGIH,Millennium Group International Holdings Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGIH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGLD,"The Marygold Companies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MGLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGM,MGM Resorts International Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGNI,"Magnite, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGNI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGNX,"MacroGenics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGPI,"MGP Ingredients, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGRC,McGrath RentCorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGRT,Mega Fortune Company Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGTX,MeiraGTx Holdings plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGX,"Metagenomi Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGY,Magnolia Oil & Gas Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MGY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MGYR,"Magyar Bancorp, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MGYR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MH,"McGraw Hill, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MHH,"Mastech Digital, Inc Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MHH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MHK,"Mohawk Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MHK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MHO,"M/I Homes, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MHO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MI,NFT Limited Class A Ordinary Share,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MIAX,"Miami International Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MIAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MICC,The Magnum Ice Cream Company N.V. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MICC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MIDD,The Middleby Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MIDD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MIMI,Mint Incorporation Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MIMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MIND,"MIND Technology, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MIND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MINE,Mayfair Gold Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MINE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MIR,"Mirion Technologies, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MIR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MIRM,"Mirum Pharmaceuticals, Inc. - common stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MIRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MIST,Milestone Pharmaceuticals Inc. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MIST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MITK,"Mitek Systems, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MITK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MITQ,"Moving iMage Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MITQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MITT,"TPG Mortgage Investment Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MITT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKC,"McCormick & Company, Incorporated Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MKC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKC.V,"McCormick & Company, Incorporated Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MKC.V,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKDW,MKDWELL Tech Inc. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MKDW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKL,Markel Group Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MKL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKSI,MKS Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MKSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKTW,"MarketWise, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MKTW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKTX,"MarketAxess Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MKTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MKZR,"MacKenzie Realty Capital, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MKZR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLAB,"Mesa Laboratories, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MLAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLCI,Mount Logan Capital Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MLCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLEC,Moolec Science SA - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MLEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLGO,"MicroAlgo, Inc. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MLGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLI,"Mueller Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MLI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLKN,"MillerKnoll, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MLKN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLM,"Martin Marietta Materials, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MLM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLP,"Maui Land & Pineapple Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MLP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLR,"Miller Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLSS,"Milestone Scientific, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MLSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLTX,MoonLake Immunotherapeutics - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MLTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MLYS,"Mineralys Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MMA,Mixed Martial Arts Group Limited Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:MMA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MMED,"MiniMed Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MMED,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MMI,"Marcus & Millichap, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+MMM,3M Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
