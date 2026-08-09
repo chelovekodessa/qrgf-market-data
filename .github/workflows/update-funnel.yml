@@ -123,6 +123,7 @@ jobs:
           python screening/engine/publish_funnel_snapshot.py \
             --l0-manifest data/latest/manifest.json \
             --l1-manifest data/l1/latest/manifest.json \
+            --l1-snapshot .work/l1.csv \
             --l1-finalists .work/l1-finalists.csv \
             --l1-summary .work/l1-summary.json \
             --l2-result .work/l2-results.json \
