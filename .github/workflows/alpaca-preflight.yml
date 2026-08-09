@@ -18,7 +18,7 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     env:
       APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
       APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
@@ -32,74 +32,17 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/alpaca_preflight.py data/preflight/alpaca.json
-      - name: Bootstrap full L1 snapshot and sanitized diagnostics
-        continue-on-error: true
-        run: |
-          set -uo pipefail
-          rm -rf .work/l1
-          mkdir -p .work/l1 data/l1-diagnostics
-          set +e
-          python scripts/build_l1_snapshot.py \
-            --l0-manifest data/latest/manifest.json \
-            --l0-pages-dir data/latest/pages \
-            --output-dir .work/l1 \
-            --history-calendar-days 400 \
-            --batch-size 200 \
-            --producer-file scripts/build_l1_snapshot.py \
-            --producer-file .github/workflows/update-l1.yml \
-            > .work/l1.stdout 2> .work/l1.stderr
-          rc=$?
-          set -e
-          python - "$rc" <<'PY'
-          import json, sys
-          from pathlib import Path
-          rc = int(sys.argv[1])
-          status = {
-              'schema_version':'1.0.0',
-              'returncode':rc,
-              'stdout_tail':Path('.work/l1.stdout').read_text(errors='replace')[-4000:],
-              'stderr_tail':Path('.work/l1.stderr').read_text(errors='replace')[-4000:],
-          }
-          manifest_path=Path('.work/l1/manifest.json')
-          if manifest_path.exists():
-              manifest=json.loads(manifest_path.read_text())
-              status['manifest_summary']={
-                  'complete':manifest.get('complete'),
-                  'rows':manifest.get('rows'),
-                  'coverage':manifest.get('coverage'),
-                  'alpaca_requests':(manifest.get('alpaca') or {}).get('requests'),
-                  'alpaca_errors':len((manifest.get('alpaca') or {}).get('errors') or []),
-                  'nasdaq_reference':manifest.get('nasdaq_reference'),
-              }
-          Path('data/l1-diagnostics/latest.json').write_text(json.dumps(status,indent=2)+'\n')
-          PY
-          if [ "$rc" -eq 0 ]; then
-            python - <<'PY'
-          import json
-          from pathlib import Path
-          m=json.loads(Path('.work/l1/manifest.json').read_text())
-          if m.get('complete') is not True or int(m.get('rows') or 0) < 3000:
-              raise SystemExit('refusing incomplete L1 bootstrap')
-          PY
-            rm -rf data/l1-next
-            mkdir -p data/l1-next
-            cp -a .work/l1/. data/l1-next/
-            rm -rf data/l1/latest
-            mkdir -p data/l1
-            mv data/l1-next data/l1/latest
-          fi
-      - name: Commit sanitized preflight and bootstrap results
+      - name: Commit sanitized preflight result
         if: always()
         run: |
           set -euo pipefail
+          test -f data/preflight/alpaca.json
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
           git add data/preflight/alpaca.json
-          if [ -f data/l1-diagnostics/latest.json ]; then git add data/l1-diagnostics/latest.json; fi
-          if [ -f data/l1/latest/manifest.json ]; then git add data/l1/latest; fi
           if git diff --cached --quiet; then
-            echo "Bootstrap outputs unchanged"
+            echo "Preflight result unchanged"
             exit 0
           fi
-          git commit -m "Record Alpaca preflight and QRGF L1 bootstrap"
+          git commit -m "Record Alpaca historical SIP preflight"
           git push
