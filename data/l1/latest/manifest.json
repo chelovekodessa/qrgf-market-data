@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-09T09:47:11Z",
-  "history_start": "2025-07-04",
-  "history_end": "2026-08-08",
+  "retrieved_at": "2026-08-09T22:50:00Z",
+  "history_start": "2026-08-07",
+  "history_end": "2026-08-07",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "a4f45020d37dff42e4108c30fe1f2c0ef36daf10df89a32f6d3d7e33ab5ed39b",
+    "manifest_sha256": "43c8c84331f7d52759f766411c3c5c22ce3fbff60983e48747788182addf9d54",
     "accepted_unique": 4986,
     "bundle_csv_sha256": "c30e8920ccccdf3fe901d41c93de523304da70d190824a45af61f4b7b162577a",
     "source_raw_sha256": "06aa282e65a094d695bdf6794f1fe523e671bab935771171e50319fd9da6f916",
-    "retrieved_at": "2026-08-09T09:23:08Z"
+    "retrieved_at": "2026-08-09T19:52:11Z"
   },
   "rows": 4986,
   "page_size": 250,
@@ -132,7 +132,7 @@
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "71d6c4d16c97822341d7d8718a258c8c482e6756570832f635d639d7feca9f67",
-    "build_l1_snapshot_free.py": "fbe589c6ca5324d4c7eafac804bcb2e4b8735736030b4e282e4903d2c64623ec",
+    "build_l1_snapshot_free.py": "4d458fddc4569e073209452f9538b0824f87f45da3d985eb0091de0bf78b84e6",
     "update-l1.yml": "2bf627afc15d41186d52a8705d44787c737722d99372cec5ec4b868f91c7b51d"
   },
   "alpaca": {
@@ -143,7 +143,7 @@
     "adjustment": "split",
     "timeframe": "1Day",
     "rate_limit": "200",
-    "rate_limit_remaining": "150",
+    "rate_limit_remaining": "199",
     "errors": [],
     "short_history_extension": {
       "requested_symbols": 308,
@@ -9772,6 +9772,10 @@
     ],
     "alpaca_provider_errors": []
   },
+  "requested_history_start": "2025-07-04",
+  "requested_history_end": "2026-08-08",
+  "history_start_semantics": "min_observed_market_session",
+  "history_end_semantics": "max_observed_market_session",
   "reference_provider": {
     "provider": "deferred",
     "mode": "free_bulk_reference_not_required_for_l1",
