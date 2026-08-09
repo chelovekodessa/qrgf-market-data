@@ -125,3 +125,31 @@ jobs:
           fi
           git rebase origin/main
           git push origin HEAD:main
+      - name: Publish failure diagnostic
+        if: failure()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p diagnostics
+          {
+            echo "run_id=$GITHUB_RUN_ID"
+            echo "source_sha=$GITHUB_SHA"
+            echo "timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            if [ -f .work/l1-summary.json ]; then
+              echo "l1_summary=present"
+              cat .work/l1-summary.json
+            else
+              echo "l1_summary=missing"
+            fi
+            if [ -f .work/l2-results.json ]; then
+              echo "l2_results=present"
+            else
+              echo "l2_results=missing"
+            fi
+          } > diagnostics/funnel-last.txt
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add diagnostics/funnel-last.txt
+          git commit -m "Record QRGF funnel failure diagnostic" || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
