@@ -54,7 +54,6 @@ jobs:
           PY
           python .work/screen/bulk_prefilter.py \
             .work/screen/l1.csv \
-            --rules .work/screen/l1-rules.json \
             --output .work/screen/l1-finalists.csv \
             --pending-output .work/screen/l1-pending.csv \
             --summary .work/screen/l1-summary.json
