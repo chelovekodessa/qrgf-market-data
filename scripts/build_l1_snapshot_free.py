@@ -10,7 +10,11 @@ rather than becoming zero or blocking the full-market recovery screen.
 
 from __future__ import annotations
 
+import base64
+import csv
 import datetime as dt
+import gzip
+import io
 import json
 import sys
 from pathlib import Path
@@ -76,6 +80,30 @@ def metrics_for(row: dict[str, str], bars: list[dict[str, Any]], reference: dict
     return result
 
 
+def observed_session_bounds(output_dir: Path, manifest: dict[str, Any]) -> tuple[str, str]:
+    """Return min/max actual market dates present in the published L1 rows."""
+    bundle = manifest.get("bundle") or {}
+    bundle_name = str(bundle.get("name") or "l1-snapshot.csv.gz.b64")
+    bundle_path = output_dir / bundle_name
+    if not bundle_path.is_file():
+        raise ValueError(f"missing L1 bundle for observed-session validation: {bundle_name}")
+    compressed = base64.b64decode(b"".join(bundle_path.read_bytes().split()), validate=True)
+    csv_bytes = gzip.decompress(compressed)
+    observed: list[dt.date] = []
+    with io.StringIO(csv_bytes.decode("utf-8-sig"), newline="") as handle:
+        for row in csv.DictReader(handle):
+            text = str(row.get("as_of") or "").strip()[:10]
+            if not text:
+                continue
+            day = dt.date.fromisoformat(text)
+            if day.weekday() >= 5:
+                raise ValueError(f"L1 observed as_of cannot be weekend: {day}")
+            observed.append(day)
+    if not observed:
+        raise ValueError("L1 snapshot contains no observed market sessions")
+    return min(observed).isoformat(), max(observed).isoformat()
+
+
 def postprocess_manifest() -> None:
     try:
         index = sys.argv.index("--output-dir")
@@ -86,6 +114,24 @@ def postprocess_manifest() -> None:
     if not path.exists():
         return
     manifest = json.loads(path.read_text(encoding="utf-8"))
+
+    # The core builder historically wrote the requested calendar bounds into
+    # history_start/history_end. Preserve those request bounds explicitly, then
+    # make history_start/history_end describe the data that actually arrived.
+    requested_start = str(manifest.get("history_start") or "").strip()
+    requested_end = str(manifest.get("history_end") or "").strip()
+    actual_start, actual_end = observed_session_bounds(output_dir, manifest)
+    if not requested_start or not requested_end:
+        raise ValueError("L1 requested history bounds are missing")
+    if dt.date.fromisoformat(actual_end) > dt.date.fromisoformat(requested_end):
+        raise ValueError("L1 observed history exceeds requested_history_end")
+    manifest["requested_history_start"] = requested_start
+    manifest["requested_history_end"] = requested_end
+    manifest["history_start"] = actual_start
+    manifest["history_end"] = actual_end
+    manifest["history_start_semantics"] = "min_observed_market_session"
+    manifest["history_end_semantics"] = "max_observed_market_session"
+
     manifest["source_id"] = "alpaca_sip_daily_free_l1"
     manifest["reference_provider"] = {
         "provider": "deferred",
