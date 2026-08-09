@@ -90,6 +90,101 @@ def transport_row(row: dict[str, Any]) -> dict[str, Any]:
     return {field: row.get(field) for field in TRANSPORT_FIELDS if field in row}
 
 
+def _observed_fixed_holiday(year: int, month: int, day: int) -> dt.date:
+    value = dt.date(year, month, day)
+    if value.weekday() == 5:
+        return value - dt.timedelta(days=1)
+    if value.weekday() == 6:
+        return value + dt.timedelta(days=1)
+    return value
+
+
+def _nth_weekday(year: int, month: int, weekday: int, n: int) -> dt.date:
+    first = dt.date(year, month, 1)
+    delta = (weekday - first.weekday()) % 7
+    return first + dt.timedelta(days=delta + 7 * (n - 1))
+
+
+def _last_weekday(year: int, month: int, weekday: int) -> dt.date:
+    if month == 12:
+        cursor = dt.date(year + 1, 1, 1) - dt.timedelta(days=1)
+    else:
+        cursor = dt.date(year, month + 1, 1) - dt.timedelta(days=1)
+    return cursor - dt.timedelta(days=(cursor.weekday() - weekday) % 7)
+
+
+def _easter_sunday(year: int) -> dt.date:
+    a = year % 19
+    b, c = divmod(year, 100)
+    d, e = divmod(b, 4)
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i, k = divmod(c, 4)
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    month = (h + l - 7 * m + 114) // 31
+    day = (h + l - 7 * m + 114) % 31 + 1
+    return dt.date(year, month, day)
+
+
+def us_equity_market_holidays(year: int) -> set[dt.date]:
+    holidays = {
+        _observed_fixed_holiday(year, 1, 1),
+        _nth_weekday(year, 1, 0, 3),
+        _nth_weekday(year, 2, 0, 3),
+        _easter_sunday(year) - dt.timedelta(days=2),
+        _last_weekday(year, 5, 0),
+        _observed_fixed_holiday(year, 6, 19),
+        _observed_fixed_holiday(year, 7, 4),
+        _nth_weekday(year, 9, 0, 1),
+        _nth_weekday(year, 11, 3, 4),
+        _observed_fixed_holiday(year, 12, 25),
+    }
+    holidays.add(_observed_fixed_holiday(year + 1, 1, 1))
+    return holidays
+
+
+def is_us_equity_market_session(day: dt.date) -> bool:
+    return day.weekday() < 5 and day not in us_equity_market_holidays(day.year)
+
+
+def validate_l1_history_contract(l1: dict[str, Any], l1_snapshot: Path) -> tuple[str, str]:
+    if str(l1.get("history_end_semantics") or "") != "max_observed_market_session":
+        raise ValueError("L1 history_end semantics are not max_observed_market_session")
+    requested_text = str(l1.get("requested_history_end") or "").strip()
+    history_text = str(l1.get("history_end") or "").strip()
+    if not requested_text or not history_text:
+        raise ValueError("L1 requested_history_end/history_end are required")
+    requested_end = dt.date.fromisoformat(requested_text)
+    history_end = dt.date.fromisoformat(history_text)
+    if not is_us_equity_market_session(history_end):
+        raise ValueError(f"L1 history_end is not a U.S. equity market session: {history_end}")
+    if history_end > requested_end:
+        raise ValueError("L1 history_end exceeds requested_history_end")
+
+    observed: list[dt.date] = []
+    with l1_snapshot.open("r", encoding="utf-8-sig", newline="") as handle:
+        for row in csv.DictReader(handle):
+            text = str(row.get("as_of") or "").strip()[:10]
+            if not text:
+                continue
+            day = dt.date.fromisoformat(text)
+            if not is_us_equity_market_session(day):
+                raise ValueError(f"L1 row as_of is not a U.S. equity market session: {day}")
+            observed.append(day)
+    if not observed:
+        raise ValueError("L1 snapshot contains no observed market sessions")
+    actual_start = min(observed)
+    actual_end = max(observed)
+    if actual_end != history_end:
+        raise ValueError(f"L1 history_end does not match max observed as_of: manifest={history_end} observed={actual_end}")
+    if str(l1.get("history_start_semantics") or "") == "min_observed_market_session":
+        if str(l1.get("history_start") or "") != actual_start.isoformat():
+            raise ValueError("L1 history_start does not match min observed as_of")
+    return actual_start.isoformat(), actual_end.isoformat()
+
+
 def status_counts(rows: list[dict[str, Any]]) -> dict[str, int]:
     statuses = ("pass", "conditional", "recheck", "rejected")
     return {name: sum(str(row.get("l2_status") or "") == name for row in rows) for name in statuses}
@@ -111,6 +206,7 @@ def main() -> int:
     parser.add_argument("--l0-manifest", type=Path, required=True)
     parser.add_argument("--l1-manifest", type=Path, required=True)
     parser.add_argument("--l1-finalists", type=Path, required=True)
+    parser.add_argument("--l1-snapshot", type=Path, required=True)
     parser.add_argument("--l1-summary", type=Path, required=True)
     parser.add_argument("--l2-result", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, required=True)
@@ -135,6 +231,7 @@ def main() -> int:
         raise ValueError("L1 merged_rows does not match source snapshot")
     if int(l1_summary.get("unresolved_mature_core_rows") or 0) != 0:
         raise ValueError("L1 contains unresolved mature core rows")
+    validate_l1_history_contract(l1, args.l1_snapshot)
 
     l1_rows = read_csv_rows(args.l1_finalists)
     if len(l1_rows) != int(l1_summary.get("ranked_l1") or -1):
@@ -198,7 +295,12 @@ def main() -> int:
         "l1": {
             "source_id": l1.get("source_id"),
             "retrieved_at": l1.get("retrieved_at"),
+            "requested_history_start": l1.get("requested_history_start"),
+            "requested_history_end": l1.get("requested_history_end"),
+            "history_start": l1.get("history_start"),
             "history_end": l1.get("history_end"),
+            "history_start_semantics": l1.get("history_start_semantics"),
+            "history_end_semantics": l1.get("history_end_semantics"),
             "rows": int(l1.get("rows") or 0),
             "csv_sha256": (l1.get("bundle") or {}).get("csv_sha256"),
             "manifest_sha256": sha256_file(args.l1_manifest),
