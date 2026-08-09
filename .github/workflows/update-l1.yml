@@ -51,16 +51,19 @@ jobs:
             > .work/l1.stdout 2> .work/l1.stderr
           rc=$?
           set -e
+          publishable=0
           python - "$rc" <<'PY'
           import json, sys
           from pathlib import Path
           rc = int(sys.argv[1])
           out = Path('.work/l1.stdout').read_text(errors='replace')[-4000:]
           err = Path('.work/l1.stderr').read_text(errors='replace')[-4000:]
-          status = {'schema_version':'1.0.0','returncode':rc,'stdout_tail':out,'stderr_tail':err}
+          status = {'schema_version':'1.0.0','returncode':rc,'stdout_tail':out,'stderr_tail':err,'publishable':False}
           manifest_path = Path('.work/l1/manifest.json')
           if manifest_path.exists():
               manifest = json.loads(manifest_path.read_text())
+              publishable = rc == 0 and manifest.get('complete') is True and int(manifest.get('rows') or 0) >= 3000
+              status['publishable'] = publishable
               status['manifest_summary'] = {
                   'complete': manifest.get('complete'),
                   'rows': manifest.get('rows'),
@@ -73,15 +76,24 @@ jobs:
           Path('data/l1-diagnostics/latest.json').write_text(json.dumps(status, indent=2) + '\n')
           PY
           if [ "$rc" -eq 0 ]; then
+            set +e
             python - <<'PY'
           import json
           from pathlib import Path
-          manifest = json.loads(Path('.work/l1/manifest.json').read_text())
-          if manifest.get('complete') is not True:
-              raise SystemExit('L1 transport snapshot incomplete; refusing publication')
-          if int(manifest.get('rows') or 0) < 3000:
-              raise SystemExit('L1 snapshot unexpectedly small; refusing publication')
+          p=Path('.work/l1/manifest.json')
+          if not p.exists(): raise SystemExit(3)
+          m=json.loads(p.read_text())
+          raise SystemExit(0 if m.get('complete') is True and int(m.get('rows') or 0) >= 3000 else 3)
           PY
+            validation_rc=$?
+            set -e
+            if [ "$validation_rc" -eq 0 ]; then
+              publishable=1
+            else
+              rc=3
+            fi
+          fi
+          if [ "$publishable" -eq 1 ]; then
             rm -rf data/l1-next
             mkdir -p data/l1-next
             cp -a .work/l1/. data/l1-next/
@@ -92,7 +104,7 @@ jobs:
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
           git add data/l1-diagnostics/latest.json
-          if [ "$rc" -eq 0 ]; then git add data/l1/latest; fi
+          if [ "$publishable" -eq 1 ]; then git add data/l1/latest; fi
           if ! git diff --cached --quiet; then
             git commit -m "Record QRGF L1 build result"
             git pull --rebase origin main
