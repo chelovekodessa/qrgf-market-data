@@ -9,6 +9,7 @@ on:
     paths:
       - ".github/workflows/update-l1.yml"
       - "scripts/build_l1_snapshot.py"
+      - "scripts/l1-trigger.txt"
       - "data/latest/manifest.json"
       - "data/latest/pages/**"
 
