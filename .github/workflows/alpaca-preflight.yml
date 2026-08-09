@@ -1,0 +1,48 @@
+name: Alpaca Historical SIP Preflight
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/alpaca-preflight.yml"
+      - "scripts/alpaca_preflight.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-alpaca-preflight
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
+      APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run read-only Alpaca market-data preflight
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python scripts/alpaca_preflight.py data/preflight/alpaca.json
+      - name: Commit sanitized preflight result
+        if: always()
+        run: |
+          set -euo pipefail
+          test -f data/preflight/alpaca.json
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add data/preflight/alpaca.json
+          if git diff --cached --quiet; then
+            echo "Preflight result unchanged"
+            exit 0
+          fi
+          git commit -m "Record Alpaca historical SIP preflight"
+          git push
