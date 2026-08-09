@@ -1,25 +1,35 @@
 #!/usr/bin/env python3
 """QRGF 3.5 production wrapper for the L1 snapshot builder.
 
-Hardens the generic builder without duplicating its calculation logic: Nasdaq
-reference data are attempted through bounded requests and a curl/browser-style
-fallback, Alpaca short histories are extended up to five years, and short
-history is treated as young only when listing evidence supports that conclusion.
+Primary market history is Alpaca SIP. Reference data first try the public Nasdaq
+screener; when that transport is unavailable from GitHub Actions, official SEC
+bulk Company Facts provide common-equity shares outstanding so market cap can be
+derived as split-adjusted Alpaca price x SEC shares. ADR market cap is never
+invented from SEC underlying-share counts because the ADR ratio may differ.
 """
 
 from __future__ import annotations
 
+import csv
 import datetime as dt
 import json
+import math
 import subprocess
 import sys
+import tempfile
 import urllib.parse
+import zipfile
+from pathlib import Path
 from typing import Any
 
 import build_l1_snapshot as core
 
 _ORIGINAL_ALPACA_HISTORY = core.fetch_alpaca_history
 _ORIGINAL_METRICS = core.metrics_for
+_TARGET_SYMBOLS: set[str] = set()
+SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers_exchange.json"
+SEC_COMPANYFACTS_ZIP = "https://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip"
+SEC_USER_AGENT = "qrgf-market-data-bot/1.0 contact=https://github.com/chelovekodessa/qrgf-market-data"
 
 
 def _parse_int(value: Any) -> int | None:
@@ -48,6 +58,7 @@ def _reference_from_rows(rows: list[dict[str, Any]]) -> tuple[dict[str, dict[str
             "nasdaq_last_sale": core.parse_number(row.get("lastsale")),
             "nasdaq_volume": core.parse_number(row.get("volume")),
             "ipo_year": _parse_int(row.get("ipoyear", row.get("ipoYear"))),
+            "reference_source": "nasdaq_screener",
         }
         if ticker in result and result[ticker] != item:
             duplicates.append(ticker)
@@ -106,6 +117,7 @@ def _fetch_nasdaq_curl() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
     if not result:
         raise RuntimeError("curl Nasdaq response produced zero symbols")
     return result, {
+        "provider": "nasdaq_screener",
         "http_status": 200,
         "rows": len(rows),
         "unique_symbols": len(result),
@@ -113,13 +125,141 @@ def _fetch_nasdaq_curl() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
         "pages": 1,
         "page_size": len(rows),
         "duplicate_conflicts": duplicates,
-        "request_ids": [],
         "mode": "curl_full_download_http1_1",
     }
 
 
-def fetch_nasdaq_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
-    """Fetch public Nasdaq reference data without turning a transport failure into guessed values."""
+def _curl_file(url: str, destination: Path, max_time: int) -> None:
+    command = [
+        "curl", "--fail", "--location", "--silent", "--show-error", "--compressed",
+        "--retry", "3", "--retry-delay", "2", "--connect-timeout", "20", "--max-time", str(max_time),
+        "-H", f"User-Agent: {SEC_USER_AGENT}",
+        "-H", "Accept-Encoding: gzip, deflate",
+        "-o", str(destination), url,
+    ]
+    proc = subprocess.run(command, text=True, capture_output=True, timeout=max_time + 30)
+    if proc.returncode != 0 or not destination.exists() or destination.stat().st_size == 0:
+        raise RuntimeError(f"SEC bulk download failed rc={proc.returncode}: {proc.stderr[-500:]}")
+
+
+def _latest_sec_shares(payload: dict[str, Any]) -> tuple[float | None, bool, str | None]:
+    facts = payload.get("facts") or {}
+    concept = ((facts.get("dei") or {}).get("EntityCommonStockSharesOutstanding") or {}) if isinstance(facts, dict) else {}
+    units = concept.get("units") or {} if isinstance(concept, dict) else {}
+    rows = units.get("shares") or [] if isinstance(units, dict) else []
+    valid: list[tuple[str, str, float]] = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        value = core.parse_number(row.get("val"))
+        filed = str(row.get("filed") or "")
+        end = str(row.get("end") or "")
+        if value is None or value <= 0 or not filed or not end:
+            continue
+        valid.append((filed, end, value))
+    if not valid:
+        return None, False, None
+    latest_filed = max(item[0] for item in valid)
+    filed_rows = [item for item in valid if item[0] == latest_filed]
+    latest_end = max(item[1] for item in filed_rows)
+    values = sorted({round(item[2], 6) for item in filed_rows if item[1] == latest_end})
+    if not values:
+        return None, False, latest_filed
+    if len(values) > 1:
+        return None, True, latest_filed
+    return float(values[0]), False, latest_filed
+
+
+def _fetch_sec_reference(prior_errors: list[str]) -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    if not _TARGET_SYMBOLS:
+        raise RuntimeError("SEC fallback has no target L0 symbols")
+    with tempfile.TemporaryDirectory(prefix="qrgf-sec-") as td:
+        root = Path(td)
+        ticker_path = root / "company_tickers_exchange.json"
+        facts_path = root / "companyfacts.zip"
+        _curl_file(SEC_TICKERS_URL, ticker_path, 90)
+        ticker_payload = json.loads(ticker_path.read_text(encoding="utf-8"))
+        fields = ticker_payload.get("fields") or []
+        data = ticker_payload.get("data") or []
+        if not isinstance(fields, list) or not isinstance(data, list):
+            raise RuntimeError("SEC ticker mapping has invalid shape")
+        index = {str(name): i for i, name in enumerate(fields)}
+        required = {"cik", "ticker"}
+        if not required.issubset(index):
+            raise RuntimeError("SEC ticker mapping is missing cik/ticker fields")
+        target_by_cik: dict[int, set[str]] = {}
+        mapped_targets: set[str] = set()
+        wanted = {symbol.upper(): symbol.upper() for symbol in _TARGET_SYMBOLS}
+        wanted.update({symbol.upper().replace(".", "-"): symbol.upper() for symbol in _TARGET_SYMBOLS if "." in symbol})
+        for row in data:
+            if not isinstance(row, list) or len(row) <= max(index.values()):
+                continue
+            sec_ticker = str(row[index["ticker"]] or "").strip().upper()
+            target = wanted.get(sec_ticker)
+            if not target:
+                continue
+            cik = _parse_int(row[index["cik"]])
+            if cik is None:
+                continue
+            target_by_cik.setdefault(cik, set()).add(target)
+            mapped_targets.add(target)
+
+        _curl_file(SEC_COMPANYFACTS_ZIP, facts_path, 420)
+        result: dict[str, dict[str, Any]] = {}
+        conflicts: list[str] = []
+        with_shares = 0
+        with zipfile.ZipFile(facts_path) as archive:
+            name_by_cik: dict[int, str] = {}
+            for name in archive.namelist():
+                base = Path(name).name
+                if base.startswith("CIK") and base.endswith(".json"):
+                    try:
+                        cik = int(base[3:-5])
+                    except ValueError:
+                        continue
+                    if cik in target_by_cik:
+                        name_by_cik[cik] = name
+            for cik, targets in target_by_cik.items():
+                name = name_by_cik.get(cik)
+                shares = None
+                conflict = False
+                filed = None
+                if name:
+                    try:
+                        payload = json.loads(archive.read(name).decode("utf-8"))
+                        shares, conflict, filed = _latest_sec_shares(payload)
+                    except (KeyError, UnicodeDecodeError, json.JSONDecodeError, OSError):
+                        shares = None
+                if shares is not None:
+                    with_shares += len(targets)
+                if conflict:
+                    conflicts.extend(sorted(targets))
+                for ticker in targets:
+                    result[ticker] = {
+                        "market_cap": None,
+                        "sector": None,
+                        "industry": None,
+                        "ipo_year": None,
+                        "shares_outstanding": shares,
+                        "shares_outstanding_conflict": conflict,
+                        "shares_filed": filed,
+                        "reference_source": "sec_companyfacts",
+                    }
+        return result, {
+            "provider": "sec_companyfacts",
+            "mode": "official_sec_bulk_fallback",
+            "target_symbols": len(_TARGET_SYMBOLS),
+            "ticker_mapped": len(mapped_targets),
+            "reference_symbols": len(result),
+            "shares_available": with_shares,
+            "shares_conflicts": sorted(set(conflicts)),
+            "companyfacts_zip_bytes": facts_path.stat().st_size,
+            "prior_nasdaq_errors": prior_errors,
+        }
+
+
+def fetch_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    """Use Nasdaq when reachable; fail over only to official SEC bulk data."""
     errors: list[str] = []
     for page_size in (500, 250):
         try:
@@ -155,6 +295,7 @@ def fetch_nasdaq_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]
                     break
             if result:
                 return result, {
+                    "provider": "nasdaq_screener",
                     "http_status": 200,
                     "rows": raw_rows,
                     "unique_symbols": len(result),
@@ -174,7 +315,7 @@ def fetch_nasdaq_reference() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]
         return result, meta
     except Exception as exc:
         errors.append(f"curl:{type(exc).__name__}:{exc}")
-    raise RuntimeError("Nasdaq reference failed: " + " | ".join(errors)[-2000:])
+    return _fetch_sec_reference(errors)
 
 
 def fetch_alpaca_history(symbols: list[str], start: str, end: str, batch_size: int):
@@ -211,24 +352,79 @@ def fetch_alpaca_history(symbols: list[str], start: str, end: str, batch_size: i
 
 def metrics_for(row: dict[str, str], bars: list[dict[str, Any]], reference: dict[str, Any] | None) -> dict[str, Any]:
     result = _ORIGINAL_METRICS(row, bars, reference)
+    ref = reference or {}
+    security_type = str(row.get("security_type") or "").strip().lower()
+    if security_type == "adr":
+        result["market_cap_applicability"] = "optional"
+    elif security_type == "etf":
+        result["market_cap_applicability"] = "not_applicable"
+    else:
+        result["market_cap_applicability"] = "required"
+        if result.get("market_cap") is None and ref.get("reference_source") == "sec_companyfacts":
+            shares = core.parse_number(ref.get("shares_outstanding"))
+            price = core.parse_number(result.get("price"))
+            if shares is not None and price is not None and not ref.get("shares_outstanding_conflict"):
+                result["market_cap"] = shares * price
+                result["market_cap_source"] = "sec_companyfacts_shares_x_alpaca_price"
+    if result.get("market_cap") is not None and ref.get("reference_source") == "nasdaq_screener":
+        result["market_cap_source"] = "nasdaq_screener"
+
     sessions = int(result.get("trading_history_days") or 0)
     if 0 < sessions < 253:
-        ref = reference or {}
         ipo_year = _parse_int(ref.get("ipo_year"))
         current_year = dt.datetime.now(dt.timezone.utc).year
         if ipo_year is not None and ipo_year <= current_year - 2:
             result["momentum_history_status"] = "source_gap"
             result["history_data_status"] = "source_gap_mature_listing"
         elif ipo_year is None:
+            # The provider was queried five years back, but absent listing-date
+            # evidence means we still do not pretend the company is young.
             result["momentum_history_status"] = "unknown"
             result["history_data_status"] = "short_history_without_listing_evidence"
     return result
 
 
-core.fetch_nasdaq_reference = fetch_nasdaq_reference
+def _load_targets_from_args() -> None:
+    global _TARGET_SYMBOLS
+    try:
+        index = sys.argv.index("--l0-pages-dir")
+        pages_dir = Path(sys.argv[index + 1])
+    except (ValueError, IndexError):
+        return
+    targets: set[str] = set()
+    for page in sorted(pages_dir.glob("page-*.csv")):
+        with page.open("r", encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                ticker = str(row.get("ticker") or "").strip().upper()
+                if ticker:
+                    targets.add(ticker)
+    _TARGET_SYMBOLS = targets
+
+
+def _postprocess_manifest() -> None:
+    try:
+        index = sys.argv.index("--output-dir")
+        output_dir = Path(sys.argv[index + 1])
+    except (ValueError, IndexError):
+        return
+    path = output_dir / "manifest.json"
+    if not path.exists():
+        return
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    manifest["source_id"] = "alpaca_sip_daily_plus_free_reference"
+    if "nasdaq_reference" in manifest:
+        manifest["reference_provider"] = manifest["nasdaq_reference"]
+    path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+core.fetch_nasdaq_reference = fetch_reference
 core.fetch_alpaca_history = fetch_alpaca_history
 core.metrics_for = metrics_for
 
 
 if __name__ == "__main__":
-    raise SystemExit(core.main())
+    _load_targets_from_args()
+    rc = core.main()
+    if rc == 0:
+        _postprocess_manifest()
+    raise SystemExit(rc)
