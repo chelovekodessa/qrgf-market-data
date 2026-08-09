@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-09T22:50:00Z",
-  "history_start": "2026-08-07",
+  "retrieved_at": "2026-08-09T22:55:23Z",
+  "history_start": "2025-07-04",
   "history_end": "2026-08-07",
   "history_feed": "sip",
   "history_adjustment": "split",
@@ -132,7 +132,7 @@
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "71d6c4d16c97822341d7d8718a258c8c482e6756570832f635d639d7feca9f67",
-    "build_l1_snapshot_free.py": "4d458fddc4569e073209452f9538b0824f87f45da3d985eb0091de0bf78b84e6",
+    "build_l1_snapshot_free.py": "70a8a33a0485e3a38626c6a109c27718ac74822e345255ee0539bf969da121c2",
     "update-l1.yml": "2bf627afc15d41186d52a8705d44787c737722d99372cec5ec4b868f91c7b51d"
   },
   "alpaca": {
@@ -9774,7 +9774,7 @@
   },
   "requested_history_start": "2025-07-04",
   "requested_history_end": "2026-08-08",
-  "history_start_semantics": "min_observed_market_session",
+  "history_start_semantics": "requested_calendar_boundary",
   "history_end_semantics": "max_observed_market_session",
   "reference_provider": {
     "provider": "deferred",
