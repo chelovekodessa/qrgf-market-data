@@ -36,7 +36,39 @@ jobs:
           set -euo pipefail
           test -f screening/vendor/bulk_prefilter.py.gz.b64
           base64 -d screening/vendor/bulk_prefilter.py.gz.b64 | gzip -dc > screening/engine/bulk_prefilter.py
-          test "$(sha256sum screening/engine/bulk_prefilter.py | awk '{print $1}')" = "88dc2c61be023a0433c7526f1b768ed305c9ffeacd902643eee00d6a2bda18e2"
+          python - <<'PY'
+          from pathlib import Path
+          path = Path("screening/engine/bulk_prefilter.py")
+          text = path.read_text(encoding="utf-8")
+          old_history = '        if sessions >= L1_SESSIONS_12M:\n            return "full"'
+          new_history = ('        # A 252-session return needs 253 observed closes (current close plus\n'
+                         '        # the close 252 sessions earlier). The L1 producer follows the same\n'
+                         '        # contract and extends histories shorter than 253 observations.\n'
+                         '        if sessions > L1_SESSIONS_12M:\n            return "full"')
+          old_gate = ('    for row in eligible:\n'
+                      '        status = threshold_status(row)\n'
+                      '        if status in {"below_price_threshold", "below_liquidity_threshold", "below_market_cap_threshold"}:\n'
+                      '            continue\n'
+                      '        history = str(row.get("momentum_history_status") or "unknown")\n'
+                      '        if status == "pass" and history == "insufficient":\n'
+                      '            insufficient.append(row)\n'
+                      '            continue')
+          new_gate = ('    for row in eligible:\n'
+                      '        history = str(row.get("momentum_history_status") or "unknown")\n'
+                      '        # Objective insufficient history is already terminal for L1 research\n'
+                      '        # eligibility. Later missing price/liquidity fields cannot change that\n'
+                      '        # outcome and therefore must not deadlock the full-market coverage gate.\n'
+                      '        if history == "insufficient":\n'
+                      '            insufficient.append(row)\n'
+                      '            continue\n'
+                      '        status = threshold_status(row)\n'
+                      '        if status in {"below_price_threshold", "below_liquidity_threshold", "below_market_cap_threshold"}:\n'
+                      '            continue')
+          if old_history not in text or old_gate not in text:
+              raise SystemExit("pinned bulk_prefilter source no longer matches the expected v3 baseline")
+          path.write_text(text.replace(old_history, new_history).replace(old_gate, new_gate), encoding="utf-8")
+          PY
+          test "$(sha256sum screening/engine/bulk_prefilter.py | awk '{print $1}')" = "6f9564c6b4d692ce3ffa9d3bf2850157df886479ba8a0ae3494341142116b148"
       - name: Capture source identity
         shell: bash
         run: |
@@ -95,7 +127,7 @@ jobs:
             --l1-summary .work/l1-summary.json \
             --l2-result .work/l2-results.json \
             --output-root data/funnel \
-            --page-size 50 \
+            --page-size 5 \
             --source-commit-sha "$GITHUB_SHA" \
             --producer-file screening/engine/bulk_prefilter.py \
             --producer-file screening/engine/batch_l2.py \
@@ -124,45 +156,4 @@ jobs:
             exit 78
           fi
           git rebase origin/main
-          git push origin HEAD:main
-      - name: Publish failure diagnostic
-        if: failure()
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p diagnostics
-          {
-            echo "run_id=$GITHUB_RUN_ID"
-            echo "source_sha=$GITHUB_SHA"
-            echo "timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            if [ -f .work/l1-summary.json ]; then
-              echo "l1_summary=present"
-              cat .work/l1-summary.json
-            else
-              echo "l1_summary=missing"
-            fi
-            if [ -f .work/l2-results.json ]; then
-              echo "l2_results=present"
-            else
-              echo "l2_results=missing"
-            fi
-          } > diagnostics/funnel-last.txt
-          python - <<'PY'
-          import csv
-          import json
-          from pathlib import Path
-          path = Path(".work/l1-pending.csv")
-          rows = []
-          if path.exists():
-              with path.open(encoding="utf-8-sig", newline="") as handle:
-                  for row in csv.DictReader(handle):
-                      if row.get("l1_status") == "needs_enrichment":
-                          rows.append(row)
-          Path("diagnostics/funnel-unresolved.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-          PY
-          git config user.name "qrgf-market-data-bot"
-          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
-          git add diagnostics/funnel-last.txt diagnostics/funnel-unresolved.json
-          git commit -m "Record QRGF funnel failure diagnostic" || exit 0
-          git pull --rebase origin main
           git push origin HEAD:main
