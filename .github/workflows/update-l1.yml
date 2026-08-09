@@ -30,14 +30,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build full L1 market-data snapshot
+      - name: Build, validate, publish and record diagnostics
         env:
           APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
           APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
         run: |
-          set -euo pipefail
+          set -uo pipefail
           rm -rf .work/l1
-          mkdir -p .work/l1
+          mkdir -p .work/l1 data/l1-diagnostics
+          set +e
           python scripts/build_l1_snapshot.py \
             --l0-manifest data/latest/manifest.json \
             --l0-pages-dir data/latest/pages \
@@ -45,8 +46,32 @@ jobs:
             --history-calendar-days 400 \
             --batch-size 200 \
             --producer-file scripts/build_l1_snapshot.py \
-            --producer-file .github/workflows/update-l1.yml
-          python - <<'PY'
+            --producer-file .github/workflows/update-l1.yml \
+            > .work/l1.stdout 2> .work/l1.stderr
+          rc=$?
+          set -e
+          python - "$rc" <<'PY'
+          import json, sys
+          from pathlib import Path
+          rc = int(sys.argv[1])
+          out = Path('.work/l1.stdout').read_text(errors='replace')[-4000:]
+          err = Path('.work/l1.stderr').read_text(errors='replace')[-4000:]
+          status = {'schema_version':'1.0.0','returncode':rc,'stdout_tail':out,'stderr_tail':err}
+          manifest_path = Path('.work/l1/manifest.json')
+          if manifest_path.exists():
+              manifest = json.loads(manifest_path.read_text())
+              status['manifest_summary'] = {
+                  'complete': manifest.get('complete'),
+                  'rows': manifest.get('rows'),
+                  'coverage': manifest.get('coverage'),
+                  'alpaca_requests': (manifest.get('alpaca') or {}).get('requests'),
+                  'alpaca_errors': len((manifest.get('alpaca') or {}).get('errors') or []),
+                  'nasdaq_reference': manifest.get('nasdaq_reference'),
+              }
+          Path('data/l1-diagnostics/latest.json').write_text(json.dumps(status, indent=2) + '\n')
+          PY
+          if [ "$rc" -eq 0 ]; then
+            python - <<'PY'
           import json
           from pathlib import Path
           manifest = json.loads(Path('.work/l1/manifest.json').read_text())
@@ -54,33 +79,20 @@ jobs:
               raise SystemExit('L1 transport snapshot incomplete; refusing publication')
           if int(manifest.get('rows') or 0) < 3000:
               raise SystemExit('L1 snapshot unexpectedly small; refusing publication')
-          print(json.dumps({
-              'rows': manifest.get('rows'),
-              'coverage': manifest.get('coverage'),
-              'alpaca_requests': (manifest.get('alpaca') or {}).get('requests'),
-              'alpaca_errors': len((manifest.get('alpaca') or {}).get('errors') or []),
-          }, indent=2))
           PY
-      - name: Publish snapshot atomically in repository
-        run: |
-          set -euo pipefail
-          rm -rf data/l1-next
-          mkdir -p data/l1-next
-          cp -a .work/l1/. data/l1-next/
-          rm -rf data/l1/latest
-          mkdir -p data/l1
-          mv data/l1-next data/l1/latest
-      - name: Commit snapshot when changed
-        run: |
-          set -euo pipefail
+            rm -rf data/l1-next
+            mkdir -p data/l1-next
+            cp -a .work/l1/. data/l1-next/
+            rm -rf data/l1/latest
+            mkdir -p data/l1
+            mv data/l1-next data/l1/latest
+          fi
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
-          git add data/l1/latest
-          if git diff --cached --quiet; then
-            echo "L1 snapshot unchanged"
-            exit 0
+          git add data/l1-diagnostics/latest.json
+          if [ "$rc" -eq 0 ]; then git add data/l1/latest; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Record QRGF L1 build result"
+            git push
           fi
-          git commit -m "Update QRGF L1 snapshot"
-          git push
-
-# Initial production trigger after Alpaca SIP preflight passed.
+          if [ "$rc" -ne 0 ]; then exit "$rc"; fi
