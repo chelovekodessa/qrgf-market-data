@@ -127,7 +127,7 @@ jobs:
             --l1-summary .work/l1-summary.json \
             --l2-result .work/l2-results.json \
             --output-root data/funnel \
-            --page-size 5 \
+            --page-size 10 \
             --source-commit-sha "$GITHUB_SHA" \
             --producer-file screening/engine/bulk_prefilter.py \
             --producer-file screening/engine/batch_l2.py \
