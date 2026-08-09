@@ -2,6 +2,9 @@ name: Update QRGF funnel
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Update QRGF L1 snapshot"]
+    types: [completed]
   push:
     branches: [main]
     paths:
@@ -21,11 +24,13 @@ concurrency:
 
 jobs:
   update:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
@@ -75,6 +80,7 @@ jobs:
           set -euo pipefail
           test -f data/l1/latest/manifest.json
           echo "L1_MANIFEST_SHA256=$(sha256sum data/l1/latest/manifest.json | awk '{print $1}')" >> "$GITHUB_ENV"
+          echo "SOURCE_COMMIT_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
       - name: Materialize L1 snapshot
         shell: bash
         run: |
@@ -129,7 +135,7 @@ jobs:
             --l2-result .work/l2-results.json \
             --output-root data/funnel \
             --page-size 10 \
-            --source-commit-sha "$GITHUB_SHA" \
+            --source-commit-sha "$SOURCE_COMMIT_SHA" \
             --producer-file screening/engine/bulk_prefilter.py \
             --producer-file screening/engine/batch_l2.py \
             --producer-file screening/engine/classify_l2.py \
