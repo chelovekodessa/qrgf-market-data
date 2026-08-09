@@ -1,0 +1,16 @@
+{
+  "schema_version": "3.0.0",
+  "minimum_production_universe": 3000,
+  "l1_max_finalists": 800,
+  "default_l1_finalists": 500,
+  "history_sessions": {
+    "three_month": 63,
+    "six_month": 126,
+    "twelve_month": 252
+  },
+  "deep_pullback_is_not_veto": true,
+  "high_volatility_is_not_veto": true,
+  "global_ranking_only": true,
+  "weak_candidates_fill_quota": false,
+  "threshold_validation_status": "working_hypotheses_not_historically_validated"
+}
