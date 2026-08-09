@@ -80,8 +80,8 @@ def metrics_for(row: dict[str, str], bars: list[dict[str, Any]], reference: dict
     return result
 
 
-def observed_session_bounds(output_dir: Path, manifest: dict[str, Any]) -> tuple[str, str]:
-    """Return min/max actual market dates present in the published L1 rows."""
+def observed_history_end(output_dir: Path, manifest: dict[str, Any]) -> str:
+    """Return the latest actual market date represented by the flattened L1 rows."""
     bundle = manifest.get("bundle") or {}
     bundle_name = str(bundle.get("name") or "l1-snapshot.csv.gz.b64")
     bundle_path = output_dir / bundle_name
@@ -101,7 +101,7 @@ def observed_session_bounds(output_dir: Path, manifest: dict[str, Any]) -> tuple
             observed.append(day)
     if not observed:
         raise ValueError("L1 snapshot contains no observed market sessions")
-    return min(observed).isoformat(), max(observed).isoformat()
+    return max(observed).isoformat()
 
 
 def postprocess_manifest() -> None:
@@ -115,21 +115,23 @@ def postprocess_manifest() -> None:
         return
     manifest = json.loads(path.read_text(encoding="utf-8"))
 
-    # The core builder historically wrote the requested calendar bounds into
-    # history_start/history_end. Preserve those request bounds explicitly, then
-    # make history_start/history_end describe the data that actually arrived.
+    # The core builder historically writes provider request boundaries into
+    # history_start/history_end. Preserve those request bounds explicitly. Only
+    # history_end is converted to a data fact because each flattened L1 row
+    # carries its latest observed as_of date; the earliest underlying bar is not
+    # represented in this compact table, especially after short-history extension.
     requested_start = str(manifest.get("history_start") or "").strip()
     requested_end = str(manifest.get("history_end") or "").strip()
-    actual_start, actual_end = observed_session_bounds(output_dir, manifest)
+    actual_end = observed_history_end(output_dir, manifest)
     if not requested_start or not requested_end:
         raise ValueError("L1 requested history bounds are missing")
     if dt.date.fromisoformat(actual_end) > dt.date.fromisoformat(requested_end):
         raise ValueError("L1 observed history exceeds requested_history_end")
     manifest["requested_history_start"] = requested_start
     manifest["requested_history_end"] = requested_end
-    manifest["history_start"] = actual_start
+    manifest["history_start"] = requested_start
     manifest["history_end"] = actual_end
-    manifest["history_start_semantics"] = "min_observed_market_session"
+    manifest["history_start_semantics"] = "requested_calendar_boundary"
     manifest["history_end_semantics"] = "max_observed_market_session"
 
     manifest["source_id"] = "alpaca_sip_daily_free_l1"
