@@ -147,9 +147,22 @@ jobs:
               echo "l2_results=missing"
             fi
           } > diagnostics/funnel-last.txt
+          python - <<'PY'
+          import csv
+          import json
+          from pathlib import Path
+          path = Path(".work/l1-pending.csv")
+          rows = []
+          if path.exists():
+              with path.open(encoding="utf-8-sig", newline="") as handle:
+                  for row in csv.DictReader(handle):
+                      if row.get("l1_status") == "needs_enrichment":
+                          rows.append(row)
+          Path("diagnostics/funnel-unresolved.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          PY
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
-          git add diagnostics/funnel-last.txt
+          git add diagnostics/funnel-last.txt diagnostics/funnel-unresolved.json
           git commit -m "Record QRGF funnel failure diagnostic" || exit 0
           git pull --rebase origin main
           git push origin HEAD:main
