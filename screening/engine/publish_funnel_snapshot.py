@@ -71,6 +71,25 @@ def identity_text(row: dict[str, Any]) -> str:
     return f"{key[0]}:{key[1]}"
 
 
+# Only fields needed to resume L3 and audit L2 selection cross the ChatGPT
+# connector. Full L1/L2 payloads remain immutable audit artifacts in GitHub.
+TRANSPORT_FIELDS = (
+    "ticker", "company", "contract_id", "security_type", "instrument_status", "exchange", "sector",
+    "price", "current_price", "market_cap", "avg_dollar_volume", "return_1m", "return_3m", "return_6m", "return_12m",
+    "return_3m_pct", "return_6m_pct", "return_12m_pct", "drawdown_52w", "drawdown_pct",
+    "historical_volatility", "historical_volatility_pct", "trading_history_days", "momentum_history_status",
+    "as_of", "l1_score", "l1_status", "opportunity_coverage_pct", "l2_status", "entry_readiness",
+    "preliminary_timing_status", "research_priority_score", "research_priority_coverage_pct",
+    "l2_opportunity_score", "l2_risk_score", "risk_coverage_pct", "risk_flags", "opportunity_flags",
+    "hard_vetoes", "checks_missing", "decision_rule_ids", "next_required_check",
+    "ruleset_version", "ruleset_hash", "l2_rules_hash", "selected_for_next_stage",
+)
+
+
+def transport_row(row: dict[str, Any]) -> dict[str, Any]:
+    return {field: row.get(field) for field in TRANSPORT_FIELDS if field in row}
+
+
 def status_counts(rows: list[dict[str, Any]]) -> dict[str, int]:
     statuses = ("pass", "conditional", "recheck", "rejected")
     return {name: sum(str(row.get("l2_status") or "") == name for row in rows) for name in statuses}
@@ -188,7 +207,8 @@ def main() -> int:
     }
     l1_selected_sha = semantic_sha256(l1_rows)
     l2_all_sha = semantic_sha256(l2_all)
-    l2_selected_sha = semantic_sha256(l2_finalists)
+    transport_finalists = [transport_row(row) for row in l2_finalists]
+    l2_selected_sha = semantic_sha256(transport_finalists)
     content_source = {key: value for key, value in source.items() if key != "source_commit_sha"}
     content_seed = {
         "source": content_source,
@@ -222,8 +242,8 @@ def main() -> int:
     pages_dir = snapshot_dir / "l2-finalists"
     pages_dir.mkdir(parents=True, exist_ok=False)
     pages: list[dict[str, Any]] = []
-    for start in range(0, len(l2_finalists), args.page_size):
-        chunk = l2_finalists[start:start + args.page_size]
+    for start in range(0, len(transport_finalists), args.page_size):
+        chunk = transport_finalists[start:start + args.page_size]
         name = f"page-{start // args.page_size + 1:04d}.jsonl"
         path = pages_dir / name
         atomic_text(path, "".join(json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n" for row in chunk))
@@ -282,6 +302,7 @@ def main() -> int:
             "selected_l2": len(l2_finalists),
             "all_results_semantic_sha256": l2_all_sha,
             "selected_semantic_sha256": l2_selected_sha,
+            "transport_projection": "l3_resume_minimal_v1",
             "l2_rules_hash": l2.get("l2_rules_hash"),
             "audit_file": "l2-results.json",
             "audit_file_sha256": sha256_file(snapshot_dir / "l2-results.json"),
