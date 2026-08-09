@@ -11,8 +11,6 @@ on:
       - "scripts/build_l1_snapshot.py"
       - "scripts/build_l1_snapshot_v350.py"
       - "scripts/l1-trigger.txt"
-      - "data/latest/manifest.json"
-      - "data/latest/pages/**"
 
 permissions:
   contents: write
