@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-BTBD,"BT Brands, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BTBT,"Bit Digital, Inc. - Ordinary Share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BTCS,BTCS Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BTCT,BTC Digital Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ CLWT,Euro Tech Holdings Company Limited - Ordinary Shares,Q,S,N,common_equity,el
 CLX,Clorox Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 CLYM,"Climb Bio, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLYM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 CM,Canadian Imperial Bank of Commerce Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+CMBT,CMB.TECH NV Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CMBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

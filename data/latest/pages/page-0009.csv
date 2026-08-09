@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-FUBO,FuboTV Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FUBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FUFU,BitFuFu Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FUFU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FUL,H. B. Fuller Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FUL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FULC,"Fulcrum Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FULC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ HII,"Huntington Ingalls Industries, Inc. Common Stock",N,,,common_equity,eligibl
 HIMS,"Hims & Hers Health, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIND,"Vyome Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HIND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIPO,Hippo Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+HIT,"Health In Tech, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

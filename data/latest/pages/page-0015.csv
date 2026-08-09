@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-PDM,"Piedmont Realty Trust, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDS,Precision Drilling Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDYN,Palladyne AI Corp. - Common stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PEB,Pebblebrook Hotel Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PEB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ RAPP,"Rapport Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,Tr
 RARE,Ultragenyx Pharmaceutical Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RARE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RAVE,"Rave Restaurant Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAVE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RAY,Raytech Holding Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RAYA,Erayak Power Solution Group Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RAYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
