@@ -3,12 +3,12 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-10T05:11:49Z",
-  "source_file_creation_time": "0807202621:33",
-  "raw_sha256": "06aa282e65a094d695bdf6794f1fe523e671bab935771171e50319fd9da6f916",
-  "raw_bytes": 989792,
-  "raw_rows": 13114,
-  "accepted_unique": 4986,
+  "retrieved_at": "2026-08-10T10:44:58Z",
+  "source_file_creation_time": "0810202606:01",
+  "raw_sha256": "0dff6bdd65fca714970eb184df9139a61e7c5e7c17b106b150b64853e2b0a354",
+  "raw_bytes": 989791,
+  "raw_rows": 13115,
+  "accepted_unique": 4985,
   "page_size": 250,
   "page_count": 20,
   "pages": [
@@ -85,7 +85,7 @@
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "713aa4c0f59809ee375f3b6c183a5b328c4868ee91477714b82c6b5bfacbe39b"
+      "sha256": "3b5e8dace4d72a4b52fcff55dc9e03134508f1d94ad08855a07030293e70de16"
     },
     {
       "name": "page-0016.csv",
@@ -95,32 +95,32 @@
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "fcd69480b6eb18ae234fd8e193cba4c45cd9b97de23c472511265fbc3e1f5d1f"
+      "sha256": "ccc3d023c82829d666ddd39a118d420cdf7dfbeaa528ebd4ac7a4459bba755b6"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "58aa8255a2126dff4cafca1bf671d2f99975f85c639059a1acb1dc4f1af6d7bd"
+      "sha256": "ce1b4edb9bc5dfa237324f0bdb024b1f8e3b034372747c1ce5713eb29a17fd90"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "0081ad8dba8adcdb40b3a26b3080e391d6d770d3c8a33c84252364f337533657"
+      "sha256": "f091650a1d52cb646d2748b9d51879afe1bf84763cbe0519480da839bc436aed"
     },
     {
       "name": "page-0020.csv",
-      "rows": 236,
-      "sha256": "11910476b8db331c19c6cff7f210f9ad37e9a62ef8844a397bd4a83dfbf2c666"
+      "rows": 235,
+      "sha256": "c262f5511a754f5cdf69d2ec22b367ca584f5941e2d98c8841d7187a2d636091"
     }
   ],
   "bundle": {
     "name": "l0-universe.csv.gz.b64",
     "encoding": "base64+gzip",
-    "rows": 4986,
-    "sha256": "2c38191c53408d9eeb80bd4b88b6d8413df43fa6f9e4b46382636cccf9fdebb7",
-    "gzip_sha256": "5c404eb40981502fc8012aa442d2f0fd8dde6d08105f48c6624cc6799b6abeb3",
-    "csv_sha256": "c30e8920ccccdf3fe901d41c93de523304da70d190824a45af61f4b7b162577a",
-    "bytes": 120651,
+    "rows": 4985,
+    "sha256": "836f723a7e7ab477ef3ff9127635c3f3ee1697ec7f643b8519c0f93b05462bdd",
+    "gzip_sha256": "c760c6521998e81d727f0722ed65ddb454632a0977ac61f3d47ccd800b206cf5",
+    "csv_sha256": "c8eb918955b13c419afa04e293a8abaa4f5794fab81396114e5982608896caea",
+    "bytes": 120631,
     "line_count": 1567
   },
   "producer_hashes": {
@@ -132,17 +132,17 @@
     "update-l0.yml": "8e144a81c40a9850583845d21955fe1d896903a54d6993142295056817ac27b9"
   },
   "summary": {
-    "raw_rows": 13114,
-    "accepted_unique": 4986,
-    "structurally_eligible": 4986,
-    "rankable_l0": 4986,
-    "rejected_rows": 7951,
+    "raw_rows": 13115,
+    "accepted_unique": 4985,
+    "structurally_eligible": 4985,
+    "rankable_l0": 4985,
+    "rejected_rows": 7953,
     "quarantined_rows": 177,
     "ambiguous_review_count": 0,
     "duplicate_contract_rows": 0,
     "quality_seed_count": 0,
     "adr_count": 314,
-    "common_equity_count": 4630,
+    "common_equity_count": 4629,
     "approved_etfs_accepted": 42,
     "etfs_included": true,
     "approved_etf_allowlist_size": 42,
@@ -155,18 +155,18 @@
     "acquisition_vehicle": 605,
     "adr_warrant_right_or_unit": 2,
     "debt_note_or_bond": 130,
-    "etf_not_in_approved_allowlist": 5540,
+    "etf_not_in_approved_allowlist": 5545,
     "instrument_resolution_required": 177,
     "limited_partnership_not_common_equity": 10,
     "metadata_or_blank": 1,
-    "non_common_symbol_pattern": 492,
+    "non_common_symbol_pattern": 491,
     "not_nasdaq_traded": 1,
     "preferred": 69,
     "preferred_depositary_security": 49,
     "right": 15,
     "test_issue": 33,
     "unit": 62,
-    "unsuitable_non_etf_fund": 367,
-    "warrant": 244
+    "unsuitable_non_etf_fund": 366,
+    "warrant": 243
   }
 }

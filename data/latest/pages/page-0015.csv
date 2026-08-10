@@ -234,7 +234,7 @@ QUBT,Quantum Computing Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N
 QUCY,Quantum Cyber N.V. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QUCY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QUIK,QuickLogic Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QUIK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QURE,uniQure N.V. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QURE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-QVC,"QVC Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+QVCG,"QVC Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QVCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QXL,Quantum X Labs Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QXL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QXO,"QXO, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:QXO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 R,"Ryder System, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:R,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
