@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+WEC,"WEC Energy Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WELL,Welltower Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WELL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WEN,Wendy's Company (The) - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WENC,West Enclave Merger Corp. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WENC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -32,6 +33,7 @@ WK,Workiva Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaq
 WKC,World Kinect Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WKC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WKHS,"Workhorse Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WKHS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WKSP,"Worksport, Ltd. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WKSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+WLCO,Wilco 63 Corporation - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WLCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WLDN,"Willdan Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WLDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WLDS,Wearable Devices Ltd. - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WLDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WLFC,Willis Lease Finance Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WLFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+AVT,"Avnet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVTR,"Avantor, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVTX,"Avalo Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVX,Avax One Technology Ltd. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ BSVN,Bank7 Corp. - Common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtra
 BSX,Boston Scientific Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BSY,"Bentley Systems, Incorporated - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BTAI,"BioXcel Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTBD,"BT Brands, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

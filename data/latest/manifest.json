@@ -3,125 +3,125 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-10T10:44:58Z",
-  "source_file_creation_time": "0810202606:01",
-  "raw_sha256": "0dff6bdd65fca714970eb184df9139a61e7c5e7c17b106b150b64853e2b0a354",
-  "raw_bytes": 989791,
-  "raw_rows": 13115,
-  "accepted_unique": 4985,
+  "retrieved_at": "2026-08-10T15:33:46Z",
+  "source_file_creation_time": "0810202611:02",
+  "raw_sha256": "6f9621d91f9eed9f65bb5acd914e8be2169c937cdb363653ff8813e9316b1d90",
+  "raw_bytes": 990012,
+  "raw_rows": 13118,
+  "accepted_unique": 4987,
   "page_size": 250,
   "page_count": 20,
   "pages": [
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "29fd3a1f921b453e5200d886a634720978633efc7214c0971516971911bd747b"
+      "sha256": "5d6bcd9f6c2dd45991d9700d48289a33350e4c121d6c807e6ba260cda844db4b"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "42411d6b320892cde6ef732f6bcf4f7fca22fb6d4464c3ac585b7849102ee0d7"
+      "sha256": "4109c27f807acae6b19eb486724f78b4f60c3dc19161083b42f3399b356170f9"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "5cfa2f8323b1718a1e70ed086d10c4d193c37b8c1063419a280042dc18aae000"
+      "sha256": "d14dd317699b941d527a32bf34b0666b321c27d6a29d6d2ecb0b9b69aecbdd6a"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "b066381a1ae4e2069fff11a79936978e51685b4420d166d941573e49df7362b5"
+      "sha256": "353f0750f9827e078874d920e9f47b5750d61b422f4b9dc0786976c69ab5f86a"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "e5a9f00e7d9386dffce545c4b0a4bf63373a09759b40a65eff49bc523288edda"
+      "sha256": "33b9a65b3e57e9c66cc3ba6f756c58c84b19800fa85d3e3e72e1e8a5c27bbc2e"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "f4546821d2e52e2c7cad9025bc75f902d6a4ee990b0b41672b9c5f99d9858d6e"
+      "sha256": "f76dfac8f2d9a02dd81cb8f956fb3d1fcb1f3ea24135c64f10255c71eb350b60"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "5079ead5c9aa4a23077b3b676cc29deeb415d66cc834d4bb821bba68f4d0eb6b"
+      "sha256": "665118b6c682afa31df5bbbd681105de2d52558e2552acd0c2ec15679f90c909"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "79093da19c06b8f1576cca8287f201645f7c53152f6b43dbe491801dfdfefe42"
+      "sha256": "998fd4f190982890907376979e472bb10fbcea1a677bb5e519fdb3b7365d0d91"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "4ac6381de53e41f51582fd52fe6ebbbee6dd4c80328c435d1e0a6d134b3e154a"
+      "sha256": "c4209250ba93fee7edaeb9af4001911ed5b0f5afe795e71e16d6a3e72a8827ac"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "1aef6f7d917800e8b9e8198ab2ef3deeee0c7c79a1bb2f149bbfcece159a26b1"
+      "sha256": "42b504763bca7166b27592ca33f2e8c2b02dbadb32e4ae28d3e8e4eab51b0072"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "a60eea2eb3b40d8bee25dbd2deb5a23ac93ea88db81c5a3441e5735424f8b71d"
+      "sha256": "7d8bf2dff1730abae7da4a8ae35a84083ce4357a93c357e85c6074503041e118"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "ef451f2271275c409f006b549b50747ee215066970f5264e8e3d116ee2d9fc35"
+      "sha256": "395f257ca5e3fe6b05d5623a8a71b698ad7e5ff9066b4676d9c7fc69a4acd4dd"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "6d729804b6189b5b93c743e771575e5d664fbabf113fbc503d4a07aeff7b1c67"
+      "sha256": "f0ee748e2087a33c4f3a1d5d349d96b6afe2cb0b89c3aac0447d3d0ec58ef0cc"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "06657c3b5081de28107d03ed25c6faacd6a4d09eada29b6a1dbd554f801db2af"
+      "sha256": "42e80b361bf837d82c44854f7e286f3e44dfe3482acba2f10f1bf6004cf0e597"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "3b5e8dace4d72a4b52fcff55dc9e03134508f1d94ad08855a07030293e70de16"
+      "sha256": "0a8b5af5597c9e1a0bc82224648498bf370a2bf837868559255ddd9e3c8c1105"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "7dadffc8a1c30cba9afadec58c7bb6d2555bfe7b7dd7f486a51d7c06b46a234b"
+      "sha256": "32a3f65d620f0de348b8e863d3f4dc182f5c1783ed5dba38fedc645c484ba149"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "ccc3d023c82829d666ddd39a118d420cdf7dfbeaa528ebd4ac7a4459bba755b6"
+      "sha256": "1c08d5c0eb8a4431f91dd40841c42ee0623edc629f1d9279f9a2c28196f3de9d"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "ce1b4edb9bc5dfa237324f0bdb024b1f8e3b034372747c1ce5713eb29a17fd90"
+      "sha256": "58aa8255a2126dff4cafca1bf671d2f99975f85c639059a1acb1dc4f1af6d7bd"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "f091650a1d52cb646d2748b9d51879afe1bf84763cbe0519480da839bc436aed"
+      "sha256": "0081ad8dba8adcdb40b3a26b3080e391d6d770d3c8a33c84252364f337533657"
     },
     {
       "name": "page-0020.csv",
-      "rows": 235,
-      "sha256": "c262f5511a754f5cdf69d2ec22b367ca584f5941e2d98c8841d7187a2d636091"
+      "rows": 237,
+      "sha256": "940f8e5ff306c97d029a0c459b69fe3c598c830a0782b6d1d9bb9ce924f4ea72"
     }
   ],
   "bundle": {
     "name": "l0-universe.csv.gz.b64",
     "encoding": "base64+gzip",
-    "rows": 4985,
-    "sha256": "836f723a7e7ab477ef3ff9127635c3f3ee1697ec7f643b8519c0f93b05462bdd",
-    "gzip_sha256": "c760c6521998e81d727f0722ed65ddb454632a0977ac61f3d47ccd800b206cf5",
-    "csv_sha256": "c8eb918955b13c419afa04e293a8abaa4f5794fab81396114e5982608896caea",
-    "bytes": 120631,
-    "line_count": 1567
+    "rows": 4987,
+    "sha256": "f9fc3c5b2cdb87dd957a93cfec89f6b49c58c58f97e51335b5525b79b82e2aa9",
+    "gzip_sha256": "5accdf6e0a15c3b617fc288df7ebef03e4bbe51754e579bead374474c4f06c55",
+    "csv_sha256": "20ba68dd78586ca552043772cbeb2a5b989fd30fb86d7db9e0217bf51599827e",
+    "bytes": 120700,
+    "line_count": 1568
   },
   "producer_hashes": {
     "build_universe.py": "fee1055e9ce7f5cdb6df451342ad88cf2106942c96489c0b525a300716cb1d28",
@@ -132,17 +132,17 @@
     "update-l0.yml": "8e144a81c40a9850583845d21955fe1d896903a54d6993142295056817ac27b9"
   },
   "summary": {
-    "raw_rows": 13115,
-    "accepted_unique": 4985,
-    "structurally_eligible": 4985,
-    "rankable_l0": 4985,
-    "rejected_rows": 7953,
+    "raw_rows": 13118,
+    "accepted_unique": 4987,
+    "structurally_eligible": 4987,
+    "rankable_l0": 4987,
+    "rejected_rows": 7954,
     "quarantined_rows": 177,
     "ambiguous_review_count": 0,
     "duplicate_contract_rows": 0,
     "quality_seed_count": 0,
-    "adr_count": 314,
-    "common_equity_count": 4629,
+    "adr_count": 315,
+    "common_equity_count": 4630,
     "approved_etfs_accepted": 42,
     "etfs_included": true,
     "approved_etf_allowlist_size": 42,
@@ -167,6 +167,6 @@
     "test_issue": 33,
     "unit": 62,
     "unsuitable_non_etf_fund": 366,
-    "warrant": 243
+    "warrant": 244
   }
 }

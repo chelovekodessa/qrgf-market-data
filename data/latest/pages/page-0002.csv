@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+SUZ,Suzano S.A. American Depositary Shares (each representing One Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SUZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SVRE,SaverOne 2014 Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SVRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SY,So-Young International Inc. - American Depository Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TAK,Takeda Pharmaceutical Company Limited American Depositary Shares (each representing 1/2 of a share of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:TAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ ALG,"Alamo Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaq
 ALGM,"Allegro MicroSystems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALGN,"Align Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALGS,"Aligos Therapeutics, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ALGT,Allegiant Travel Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

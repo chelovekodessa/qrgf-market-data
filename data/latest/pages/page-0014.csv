@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+NTGR,"NETGEAR, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTHI,"NeOnc Technologies Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTIC,Northern Technologies International Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTIP,"Network-1 Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NTIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ PDCC,Pearl Diver Credit Company Inc. Common Stock,N,,,common_equity,eligible,Tru
 PDEX,"Pro-Dex, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDFS,"PDF Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDLB,"Ponce Financial Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PDM,"Piedmont Realty Trust, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

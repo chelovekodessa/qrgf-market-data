@@ -212,6 +212,7 @@ PDC,Perpetuals.com Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,
 PDD,PDD Holdings Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PDD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PHAR,"Pharming Group N.V. - ADS, each representing 10 ordinary shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PHAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PHI,PLDT Inc. Sponsored ADR,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PHOS,First Phosphate Corp. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PHOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PKX,POSCO HOLDINGS INC. American Depositary Shares (Each representing 1/4th of a share of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PKX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 POM,POMDOCTOR LIMITED - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:POM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PONY,Pony AI Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PONY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ SSL,Sasol Ltd. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrade
 STG,"Sunlands Technology Group American Depositary Shares, representing Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:STG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STKH,Steakholder Foods Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:STKH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SUPV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SUZ,Suzano S.A. American Depositary Shares (each representing One Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SUZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
