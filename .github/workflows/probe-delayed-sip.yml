@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/probe-delayed-sip.yml"
       - "scripts/probe_delayed_sip.py"
+      - "scripts/build_l1_snapshot.py"
 
 permissions:
   contents: read
@@ -23,6 +24,7 @@ jobs:
           APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
           APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
         run: |
+          python -m py_compile scripts/build_l1_snapshot.py scripts/probe_delayed_sip.py
           python scripts/probe_delayed_sip.py
           python - <<'PY'
           import json
