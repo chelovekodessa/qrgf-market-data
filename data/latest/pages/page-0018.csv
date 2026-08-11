@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+STVN,Stevanato Group S.p.A. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STX,Seagate Technology Holdings PLC - Ordinary Shares (Ireland),Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STXS,"Stereotaxis, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:STXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STZ,"Constellation Brands, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ TWAV,"TaoWeave, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasd
 TWFG,"TWFG, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TWG,Top Wealth Group Holding Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TWI,"Titan International, Inc. (DE) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TWI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-TWIN,"Twin Disc, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
