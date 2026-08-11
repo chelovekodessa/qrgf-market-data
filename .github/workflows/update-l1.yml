@@ -58,10 +58,49 @@ jobs:
           rc = int(sys.argv[1])
           out = Path('.work/l1.stdout').read_text(errors='replace')[-4000:]
           err = Path('.work/l1.stderr').read_text(errors='replace')[-4000:]
-          status = {'schema_version':'1.0.0','returncode':rc,'stdout_tail':out,'stderr_tail':err,'publishable':False}
+          def safe_text(value):
+              text = str(value or '').replace('\\r', ' ').replace('\\n', ' ').strip()
+              return text[:500] if text else 'provider_error'
+
+          trigger = {}
+          trigger_path = Path('scripts/l1-trigger.txt')
+          if trigger_path.exists():
+              try:
+                  trigger = json.loads(trigger_path.read_text(encoding='utf-8'))
+              except (OSError, ValueError, json.JSONDecodeError):
+                  trigger = {}
+
+          status = {
+              'schema_version': '1.1.0',
+              'request_id': str(trigger.get('request_id') or 'scheduled-or-manual'),
+              'root_request_id': str(trigger.get('root_request_id') or trigger.get('request_id') or 'scheduled-or-manual'),
+              'attempt': int(trigger.get('attempt') or 1),
+              'workflow_run_id': str(__import__('os').environ.get('GITHUB_RUN_ID') or 'unknown'),
+              'workflow_run_attempt': str(__import__('os').environ.get('GITHUB_RUN_ATTEMPT') or 'unknown'),
+              'completed_at': __import__('datetime').datetime.now(__import__('datetime').timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z'),
+              'returncode': rc,
+              'stdout_tail': out,
+              'stderr_tail': err,
+              'publishable': False,
+          }
           manifest_path = Path('.work/l1/manifest.json')
           if manifest_path.exists():
               manifest = json.loads(manifest_path.read_text())
+              alpaca = manifest.get('alpaca') or {}
+              raw_errors = alpaca.get('errors') or []
+              samples = []
+              seen = set()
+              for item in raw_errors:
+                  if not isinstance(item, dict):
+                      continue
+                  sample = {
+                      'http_status': item.get('http_status'),
+                      'message': safe_text(item.get('message')),
+                  }
+                  key = (sample['http_status'], sample['message'])
+                  if key not in seen and len(samples) < 5:
+                      seen.add(key)
+                      samples.append(sample)
               publishable = rc == 0 and manifest.get('complete') is True and int(manifest.get('rows') or 0) >= 3000
               status['publishable'] = publishable
               status['manifest_summary'] = {
@@ -69,12 +108,13 @@ jobs:
                   'rows': manifest.get('rows'),
                   'source_id': manifest.get('source_id'),
                   'coverage': manifest.get('coverage'),
-                  'alpaca_requests': (manifest.get('alpaca') or {}).get('requests'),
-                  'alpaca_errors': len((manifest.get('alpaca') or {}).get('errors') or []),
-                  'short_history_extension': (manifest.get('alpaca') or {}).get('short_history_extension'),
+                  'alpaca_requests': alpaca.get('requests'),
+                  'alpaca_errors': len(raw_errors),
+                  'alpaca_error_samples': samples,
+                  'short_history_extension': alpaca.get('short_history_extension'),
                   'reference_provider': manifest.get('reference_provider'),
               }
-          Path('data/l1-diagnostics/latest.json').write_text(json.dumps(status, indent=2) + '\n')
+          Path('data/l1-diagnostics/latest.json').write_text(json.dumps(status, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
           if [ "$rc" -eq 0 ]; then
             set +e
