@@ -53,16 +53,17 @@ def adapt_l1_candidate(row: dict[str, Any]) -> dict[str, Any]:
     return result
 
 def rank_key(row: dict[str, Any]) -> tuple[Any, ...]:
-    status_rank = {"pass": 3, "conditional": 2, "recheck": 1, "rejected": 0}.get(str(row.get("l2_status")), -1)
+    # L2 is a high-recall research triage.  `conditional` means the candidate
+    # carries flags for later research; it is not incomplete data (that is
+    # `recheck`) and must not silently outrank Research Priority.
+    status_rank = {"pass": 2, "conditional": 2, "recheck": 1, "rejected": 0}.get(str(row.get("l2_status")), -1)
     research = row.get("research_priority_score")
-    risk = row.get("l2_risk_score")
     coverage = row.get("research_priority_coverage_pct") or 0.0
     ticker = str(row.get("ticker") or "")
     return (
         status_rank,
         float(research) if research is not None else -1.0,
         float(coverage),
-        -(float(risk) if risk is not None else 101.0),
         tuple(-ord(char) for char in ticker),
     )
 
