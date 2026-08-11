@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-11T03:45:42Z",
+  "retrieved_at": "2026-08-11T05:43:20Z",
   "history_start": "2025-07-06",
   "history_end": "2026-08-10",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "c90116a242b1b5e91e03d814a12aeedcdad7b9ed9c9359460158efd6aee6cb89",
+    "manifest_sha256": "b118476188f00f179752978614e4a90b2c3e017ebbd4e912713503c76ac86b59",
     "accepted_unique": 4987,
-    "bundle_csv_sha256": "20ba68dd78586ca552043772cbeb2a5b989fd30fb86d7db9e0217bf51599827e",
-    "source_raw_sha256": "4e9068e7d10de55668986b558f1117dbd2ae0eef5820e4ed23187c24164def68",
-    "retrieved_at": "2026-08-10T20:25:00Z"
+    "bundle_csv_sha256": "02b5c8c7581bbc8c75958bbd3306a1630cc5dc47ce7678c2130a6683e12103f2",
+    "source_raw_sha256": "f21f4de6ff6b3cb529a55427737deb943b0440542c3958b4ebb82f6cee2eb43a",
+    "retrieved_at": "2026-08-11T04:52:23Z"
   },
   "rows": 4987,
   "page_size": 250,
@@ -22,17 +22,17 @@
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "863e6d6ea7ec85210c6e2e079d586e69577444550a25cefada01a46b271fd2e8"
+      "sha256": "389b442ea14f62d9f95d64b0c19066c295e0bcbe45f647179205d905a7c3db58"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "4b1b8ca6b4ea06e679d8d786a43772bb483e4bd0372d36fa99431b14b9e7f0ac"
+      "sha256": "289db13c10f38d6c5274199a3de021b4cd0d63365987a436790e92cc1dcf8796"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "cd1f27816f5beac36e08e2199ae49937782d373195a2d397688ce181d08a87ca"
+      "sha256": "8480c5ed72a3d8e571ad0dc1a3bbeff73058048743cb3c0e45a4c5ce680c9c4a"
     },
     {
       "name": "page-0004.csv",
@@ -57,78 +57,78 @@
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "78f7a5ee76e80863ff079f66a9d1a9aa1b36f958a8ee8dd3ba031da136a99cbe"
+      "sha256": "ed52bfebf6e48019f91f1f83bb0badabf7bcaa1fcf15d8ff90812c88b7965ca7"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "752a16814093723613db44e46e461ea6db01d94f357a1a45aa641c34c7a3ca39"
+      "sha256": "1d734e1b92b85c81f37b79d3c8af8b1df578e0f72be40385f26a4fb3cfcbbe18"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "7f5dafcdf1bdce1513f276ec75dcf2ce893b93fd06cc8bd3841a733fcb5356de"
+      "sha256": "ecacc48f88b463e66637de2d63509b42c733f3142891146e311e336f05e3de80"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "cfa9b49762c4fab91ca5389c138ee1aa4efe2057b86347c30cd39474fd80780c"
+      "sha256": "82cbab7c389354ee93a7ed4b124c703d37f47087d947232e1d95c6314afb5f58"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "dc132995b800741de4213d420a0fa11f83126097d3e9200f07ca4efde31b07b3"
+      "sha256": "da29fc6bee54930e93271f67985a0ab69ea500c0d711179ea4d02c3d2e4c3b10"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "728f9c4fe03108de01c599c9567275b13fa479ea2eab0a098e0b99f2d6b593a2"
+      "sha256": "9e903875b1cf066d33b86ac864003c843faacdf8bb516626f85da868da42d8f8"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "dfa08ac4fda098c31766c255984a19e1ef33cc4dd907981df76722aaa258bb0c"
+      "sha256": "91d2a72458ebbd3561cc8f63281f35e9ed29316f2139ce4584b785fb6de63d69"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "06e67df3ed4fba36c7d3553fac5b87545b7c559f30e566303208c197ea0753c7"
+      "sha256": "6fd020948c8c7a47ad44bc5c6061613c448d5989abbde8521e1920dab4acc60a"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "12174503acf57013ee9b3e58be989b8131ec4e604507781c62201f637bedca3f"
+      "sha256": "b6cdee5c9b5896e47ba0e2f7d15222afa4195a842e7e806a0b601f80dfb865ca"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "5385996549f6e37ab1ee0424c9ae453812e6b0ce5c85245ddcea84415422129f"
+      "sha256": "2f876a3bec5583c031705afd7b26e25d0ffa232f932c1c515fe0b5e350b9f413"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "377d5633d3f78419e0f8814b6677308b99852b329b09ae1cce1455b1d652ae70"
+      "sha256": "fca3771782af3ad6fbf9b73dd28176581408517d161cfc1df32e4248ee45cd1c"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "0e74405f1d6c8c2d8f39a95bf1705aeea243552861e6c8dd63edc75cca149a27"
+      "sha256": "33067841de370cf8bb7da0078034328c38003574ac4f17c8bdfe5eab06b92afd"
     },
     {
       "name": "page-0020.csv",
       "rows": 237,
-      "sha256": "81c69701f48f32c285f9ec31685e3c24fe305653cbff8c1de3d360279c64b5d4"
+      "sha256": "f3e1e396a1200f02623ea3f95f96ea6e9928ad46ffac0738f0a3d3dcedca4d1c"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 4987,
-    "sha256": "17a420a4c294f273df079bcb4f7083ebe6c5589cf67e397a67fc49e615efa355",
-    "gzip_sha256": "271f3510887b6e9cdb7b1db973d9003c31d2d4d311ac46f0d1739fe9cc7ebad6",
-    "csv_sha256": "6183260258def1a2289b42de8600b0378c6437d041a290093a7a3182d15f7b8c",
-    "bytes": 614870,
-    "line_count": 7986
+    "sha256": "3ed38061fab42d6d8d9eb59fbea212ea2fcd64e669dcf759b42b927448795944",
+    "gzip_sha256": "cb2bf73bdacc520cf9ac0614d82e5cd51862e4be9987a3045698b631ddb7ee57",
+    "csv_sha256": "0ec4bcea4f1a1b09d226de81c99f9a34e5db5a83b065abed06ccd2f1abc228ca",
+    "bytes": 614975,
+    "line_count": 7987
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
@@ -148,9 +148,9 @@
     "rate_limit_remaining": "199",
     "errors": [],
     "short_history_extension": {
-      "requested_symbols": 308,
+      "requested_symbols": 307,
       "upgraded_to_full": 15,
-      "still_short": 293,
+      "still_short": 292,
       "requests": 7,
       "errors": []
     }
@@ -168,7 +168,7 @@
     "non_etf": 4945,
     "market_cap_present_non_etf": 0,
     "market_cap_missing_non_etf": 4945,
-    "mature_missing_core": 4651
+    "mature_missing_core": 4652
   },
   "diagnostics": {
     "missing_history_symbols": [
@@ -306,6 +306,7 @@
       "AGM",
       "AGM.A",
       "AGMB",
+      "AGMH",
       "AGNC",
       "AGNT",
       "AGO",
@@ -878,7 +879,6 @@
       "BRC",
       "BRCB",
       "BRCC",
-      "BRFH",
       "BRIA",
       "BRID",
       "BRK.B",
@@ -2045,7 +2045,6 @@
       "GIB",
       "GIBO",
       "GIC",
-      "GIFT",
       "GIGM",
       "GIII",
       "GIL",
@@ -2884,7 +2883,6 @@
       "MAA",
       "MAAS",
       "MAC",
-      "MAGH",
       "MAGN",
       "MAIA",
       "MAIN",
@@ -3185,6 +3183,7 @@
       "NCMI",
       "NCNA",
       "NCNO",
+      "NCRA",
       "NCSM",
       "NCT",
       "NCTY",
@@ -4118,6 +4117,7 @@
       "SGHC",
       "SGHT",
       "SGI",
+      "SGLY",
       "SGML",
       "SGMT",
       "SGP",
@@ -4364,7 +4364,6 @@
       "STXS",
       "STZ",
       "SU",
-      "SUGP",
       "SUI",
       "SUIG",
       "SUJA",
@@ -5051,6 +5050,7 @@
       "XZO",
       "YAAS",
       "YALA",
+      "YARW",
       "YB",
       "YCBD",
       "YDDL",
@@ -5245,6 +5245,7 @@
       "AGL",
       "AGM",
       "AGM.A",
+      "AGMH",
       "AGNC",
       "AGNT",
       "AGO",
@@ -5777,7 +5778,6 @@
       "BRBS",
       "BRC",
       "BRCC",
-      "BRFH",
       "BRIA",
       "BRID",
       "BRK.B",
@@ -6871,7 +6871,6 @@
       "GIB",
       "GIBO",
       "GIC",
-      "GIFT",
       "GIGM",
       "GIII",
       "GIL",
@@ -7947,6 +7946,7 @@
       "NCMI",
       "NCNA",
       "NCNO",
+      "NCRA",
       "NCSM",
       "NCT",
       "NCTY",
@@ -8823,6 +8823,7 @@
       "SGHC",
       "SGHT",
       "SGI",
+      "SGLY",
       "SGML",
       "SGMT",
       "SGRY",
@@ -9056,7 +9057,6 @@
       "STXS",
       "STZ",
       "SU",
-      "SUGP",
       "SUI",
       "SUIG",
       "SUNE",
@@ -9710,6 +9710,7 @@
       "XYZ",
       "YAAS",
       "YALA",
+      "YARW",
       "YB",
       "YCBD",
       "YDKG",
