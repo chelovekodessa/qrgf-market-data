@@ -28,12 +28,5 @@ jobs:
           import json
           from pathlib import Path
           value = json.loads(Path("data/l1-diagnostics/alpaca-sip-probe.json").read_text())
-          print(json.dumps({
-              "http_status": value.get("http_status"),
-              "message": value.get("message"),
-              "bars_returned": value.get("bars_returned"),
-              "latest_bar_timestamp": value.get("latest_bar_timestamp"),
-              "start": value.get("start"),
-              "end": value.get("end"),
-          }, ensure_ascii=False))
+          print(json.dumps(value.get("probes"), ensure_ascii=False))
           PY
