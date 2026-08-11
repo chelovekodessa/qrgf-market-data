@@ -1,35 +1,31 @@
 {
   "schema_version": "1.0.0",
-  "returncode": 0,
-  "stdout_tail": "{\n  \"complete\": true,\n  \"rows\": 4986,\n  \"with_history\": 4984,\n  \"missing_history\": 2,\n  \"market_cap_missing_non_etf\": 4944,\n  \"mature_missing_core\": 4649,\n  \"alpaca_requests\": 156,\n  \"alpaca_errors\": 0,\n  \"nasdaq_reference_rows\": null\n}\n",
-  "stderr_tail": "",
-  "publishable": true,
+  "returncode": 1,
+  "stdout_tail": "{\n  \"complete\": false,\n  \"rows\": 4987,\n  \"with_history\": 0,\n  \"missing_history\": 4987,\n  \"market_cap_missing_non_etf\": 4945,\n  \"mature_missing_core\": 0,\n  \"alpaca_requests\": 25,\n  \"alpaca_errors\": 25,\n  \"nasdaq_reference_rows\": null\n}\n",
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot_free.py\", line 159, in <module>\n    postprocess_manifest()\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot_free.py\", line 125, in postprocess_manifest\n    actual_end = observed_history_end(output_dir, manifest)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/qrgf-market-data/qrgf-market-data/scripts/build_l1_snapshot_free.py\", line 103, in observed_history_end\n    raise ValueError(\"L1 snapshot contains no observed market sessions\")\nValueError: L1 snapshot contains no observed market sessions\n",
+  "publishable": false,
   "manifest_summary": {
-    "complete": true,
-    "rows": 4986,
-    "source_id": "alpaca_sip_daily_free_l1",
+    "complete": false,
+    "rows": 4987,
+    "source_id": "alpaca_sip_daily_plus_nasdaq_reference",
     "coverage": {
-      "total": 4986,
-      "with_history": 4984,
-      "missing_history": 2,
-      "non_etf": 4944,
+      "total": 4987,
+      "with_history": 0,
+      "missing_history": 4987,
+      "non_etf": 4945,
       "market_cap_present_non_etf": 0,
-      "market_cap_missing_non_etf": 4944,
-      "mature_missing_core": 4649
+      "market_cap_missing_non_etf": 4945,
+      "mature_missing_core": 0
     },
-    "alpaca_requests": 156,
-    "alpaca_errors": 0,
+    "alpaca_requests": 25,
+    "alpaca_errors": 25,
     "short_history_extension": {
-      "requested_symbols": 308,
-      "upgraded_to_full": 15,
-      "still_short": 293,
-      "requests": 7,
+      "requested_symbols": 0,
+      "upgraded_to_full": 0,
+      "still_short": 0,
+      "requests": 0,
       "errors": []
     },
-    "reference_provider": {
-      "provider": "deferred",
-      "mode": "free_bulk_reference_not_required_for_l1",
-      "market_cap_status": "deferred_to_narrowed_research"
-    }
+    "reference_provider": null
   }
 }
