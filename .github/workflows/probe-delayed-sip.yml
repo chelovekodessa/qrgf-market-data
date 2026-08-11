@@ -1,0 +1,39 @@
+name: Probe delayed Alpaca SIP
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/probe-delayed-sip.yml"
+      - "scripts/probe_delayed_sip.py"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe explicitly delayed SIP daily bars
+        env:
+          APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
+          APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
+        run: |
+          python scripts/probe_delayed_sip.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          value = json.loads(Path("data/l1-diagnostics/alpaca-sip-probe.json").read_text())
+          print(json.dumps({
+              "http_status": value.get("http_status"),
+              "message": value.get("message"),
+              "bars_returned": value.get("bars_returned"),
+              "latest_bar_timestamp": value.get("latest_bar_timestamp"),
+              "start": value.get("start"),
+              "end": value.get("end"),
+          }, ensure_ascii=False))
+          PY
