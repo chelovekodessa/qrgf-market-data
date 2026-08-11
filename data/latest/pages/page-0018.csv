@@ -4,7 +4,6 @@ STX,Seagate Technology Holdings PLC - Ordinary Shares (Ireland),Q,Q,N,common_equ
 STXS,"Stereotaxis, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:STXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STZ,"Constellation Brands, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SU,Suncor Energy  Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SUGP,SU Group Holdings Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SUGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SUI,"Sun Communities, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SUI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SUIG,Sui Group Holdings Limited - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SUIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SUJA,"Suja Life, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SUJA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ TW,Tradeweb Markets Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,Tru
 TWAV,"TaoWeave, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TWFG,"TWFG, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TWG,Top Wealth Group Holding Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TWI,"Titan International, Inc. (DE) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TWI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

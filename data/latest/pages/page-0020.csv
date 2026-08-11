@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-WEC,"WEC Energy Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WELL,Welltower Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WELL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WEN,Wendy's Company (The) - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WENC,West Enclave Merger Corp. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WENC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -139,6 +138,7 @@ XYL,Xylem Inc. Common Stock New,N,,,common_equity,eligible,True,N,N,,nasdaqtrade
 XYZ,"Block, Inc. Class A Common Stock,",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XYZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 XZO,"Exzeo Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XZO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 YAAS,Youxin Technology Ltd - Class A Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:YAAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+YARW,"Yarrow Bioscience, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:YARW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 YCBD,"cbdMD, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:YCBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 YDDL,One and One Green Technologies. INC - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:YDDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 YDES,YD Bio Limited - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:YDES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

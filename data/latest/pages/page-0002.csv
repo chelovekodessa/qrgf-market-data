@@ -187,6 +187,7 @@ AGL,"agilon health, inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasd
 AGM,Federal Agricultural Mortgage Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AGM.A,Federal Agricultural Mortgage Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AGM.A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AGMB,AgomAb Therapeutics NV - ADRs representing one common share.,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AGMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AGMH,AGM Group Holdings Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AGMH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AGNC,AGNC Investment Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AGNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AGNT,"AGNT, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AGNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AGO,Assured Guaranty Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ ALEC,"Alector, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasda
 ALG,"Alamo Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALGM,"Allegro MicroSystems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALGN,"Align Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ALGS,"Aligos Therapeutics, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

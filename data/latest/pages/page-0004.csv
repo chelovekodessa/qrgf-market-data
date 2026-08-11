@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+AVR,Anteris Technologies Global Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVT,"Avnet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVTR,"Avantor, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVTX,"Avalo Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -222,7 +223,6 @@ BRBS,"Blue Ridge Bankshares, Inc. Common Stock",A,,,common_equity,eligible,True,
 BRC,Brady Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRCB,"Black Rock Coffee Bar, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRCC,BRC Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BRFH,Barfresh Food Group Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRFH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRIA,BrilliA Inc Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BRIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRID,Bridgford Foods Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRID,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRK.B,Berkshire Hathaway Inc. New Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRK.B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
