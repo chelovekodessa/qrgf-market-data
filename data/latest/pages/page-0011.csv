@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-IRTC,"iRhythm Holdings, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRWD,"Ironwood Pharmaceuticals, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRWD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ISBA,Isabella Bank Corporation - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ISBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ISOU,IsoEnergy Ltd. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ISOU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ LII,"Lennox International, Inc. Common Stock",N,,,common_equity,eligible,True,N,
 LILA,Liberty Latin America Ltd. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LILA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LILAK,Liberty Latin America Ltd. - Class C Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LILAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LIME,"Neutron Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIME,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+LIN,Linde plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
