@@ -211,6 +211,14 @@ def fetch_alpaca_history(symbols: list[str], start: str, end: str, batch_size: i
         raise RuntimeError("APCA_API_KEY_ID/APCA_API_SECRET_KEY are missing")
 
     history: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    start_boundary = f"{dt.date.fromisoformat(start).isoformat()}T00:00:00Z"
+    requested_end = dt.datetime.combine(
+        dt.date.fromisoformat(end),
+        dt.time(23, 59, 59),
+        tzinfo=dt.timezone.utc,
+    )
+    delayed_now = dt.datetime.now(dt.timezone.utc) - dt.timedelta(minutes=20)
+    end_boundary = min(requested_end, delayed_now).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     request_count = 0
     pages = 0
     rate_limit = None
@@ -222,8 +230,8 @@ def fetch_alpaca_history(symbols: list[str], start: str, end: str, batch_size: i
             params = {
                 "symbols": ",".join(batch),
                 "timeframe": "1Day",
-                "start": start,
-                "end": end,
+                "start": start_boundary,
+                "end": end_boundary,
                 "limit": "10000",
                 "adjustment": "split",
                 "feed": "sip",
@@ -272,6 +280,8 @@ def fetch_alpaca_history(symbols: list[str], start: str, end: str, batch_size: i
         "feed": "sip",
         "adjustment": "split",
         "timeframe": "1Day",
+        "request_start": start_boundary,
+        "request_end": end_boundary,
         "rate_limit": rate_limit,
         "rate_limit_remaining": remaining,
         "errors": provider_errors,
