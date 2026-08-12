@@ -82,7 +82,6 @@ RITM,Rithm Capital Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasda
 RIVN,"Rivian Automotive, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RIVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RJET,Republic Airways Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RJET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RJF,"Raymond James Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RJF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RKDA,"Arcadia Biosciences, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RKDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RKLB,Rocket Lab Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RKLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RKT,"Rocket Companies, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RKT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RKTO,Rocket One Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RKTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -135,6 +134,7 @@ RPID,"Rapid Micro Biosystems, Inc. - Class A Common Stock",Q,S,N,common_equity,e
 RPM,RPM International Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RPM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RPRX,Royalty Pharma plc - Class A Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RPRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RPT,Rithm Property Trust Inc. Common stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RR,Richtech Robotics Inc. - Class B Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RRBI,"Red River Bancshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RRBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RRC,Range Resources Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RRGB,"Red Robin Gourmet Burgers, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RRGB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

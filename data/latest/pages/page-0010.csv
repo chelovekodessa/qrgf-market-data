@@ -55,7 +55,6 @@ HROW,"Harrow, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaq
 HRTG,"Heritage Insurance Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HRTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HRZN,Horizon Technology Finance Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HRZN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HSBC,"HSBC Holdings, plc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HSCS,HeartSciences Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HSCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HSDT,Solana Company - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HSDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HSHP,Himalaya Shipping Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HSHP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HSIC,"Henry Schein, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HSIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ IRM,Iron Mountain Incorporated (Delaware)Common Stock REIT,N,,,common_equity,eli
 IRMD,iRadimed Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRON,"Disc Medicine, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRT,"Independence Realty Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:IRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+IRTC,"iRhythm Holdings, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

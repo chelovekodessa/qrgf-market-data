@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-MNSB,"MainStreet Bancshares, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNSB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNST,Monster Beverage Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNTK,"Montauk Renewables, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNTN,"MNTN, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MNTN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ NTB,Bank of N.T. Butterfield & Son Limited (The) Voting Ordinary Shares,N,,,comm
 NTCL,NETCLASS TECHNOLOGY INC - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTCT,"NetScout Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTGR,"NETGEAR, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NTHI,"NeOnc Technologies Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

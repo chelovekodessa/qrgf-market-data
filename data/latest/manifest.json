@@ -3,9 +3,9 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-11T20:26:27Z",
-  "source_file_creation_time": "0811202615:42",
-  "raw_sha256": "a7236b0e9340879e125b2b1a578359d49a6688d726bce6246606266704c71be7",
+  "retrieved_at": "2026-08-12T05:49:07Z",
+  "source_file_creation_time": "0811202621:33",
+  "raw_sha256": "519f95d687883dcaadb197b12857dc2aa08044b9673c0e53919d912af0705a85",
   "raw_bytes": 990637,
   "raw_rows": 13127,
   "accepted_unique": 4987,
@@ -60,27 +60,27 @@
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "1aef6f7d917800e8b9e8198ab2ef3deeee0c7c79a1bb2f149bbfcece159a26b1"
+      "sha256": "dae4785fe014699158744352063716957f932469782e69307d8d5a4e1594bd83"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "a60eea2eb3b40d8bee25dbd2deb5a23ac93ea88db81c5a3441e5735424f8b71d"
+      "sha256": "13cfd02c3892bbb0f02beebacbff083235946fe831189c78b806450cfffbbdbc"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "27bab4ebd7f7c69a20b9791b4e452fa08ff4a844d8b5ad80e3e6a8760bfb87f0"
+      "sha256": "13399a4ed11245b399e03ce2d3be8bdd9bdc4ec04e733d23dca19bdf5c66cc85"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "3978b3fc941fcbf48af80a4185fd0cefc691b71cbe2b3f9754989e4cd0649e12"
+      "sha256": "909faff5fa8bb841ec7efe13bf624c384adafd4b9a08b238c0ed3e04d3995790"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "06657c3b5081de28107d03ed25c6faacd6a4d09eada29b6a1dbd554f801db2af"
+      "sha256": "0e1803891ebb59cc5239782c74fe9939facf14615424515ded05a06e3ba4a0d2"
     },
     {
       "name": "page-0015.csv",
@@ -90,7 +90,7 @@
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "7dadffc8a1c30cba9afadec58c7bb6d2555bfe7b7dd7f486a51d7c06b46a234b"
+      "sha256": "14c3a0395c3e388008797c0448484cb9e701413465d7d90c18faff977470d51a"
     },
     {
       "name": "page-0017.csv",
@@ -117,10 +117,10 @@
     "name": "l0-universe.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 4987,
-    "sha256": "4cff4d6c5b689d86786bdc4aa2f1508b8c38b22172c114effa6981c205158456",
-    "gzip_sha256": "ecddcfe514f4ac1a77ec51ce6b33b2f99a17382ef37e2090e2c22a45462658d2",
-    "csv_sha256": "b46405bd1c45f42684ad0627cc130f2f96b62fdc27d3cad98012e94980681860",
-    "bytes": 120708,
+    "sha256": "d3717c77a926386c062fa77751624a50656345b65ce1b7868a0ae70a664e0ec7",
+    "gzip_sha256": "2972a99cd3983f69dc47f79c3cc7afc7a18ddd4e7ea71cb43951a8c5fb8be604",
+    "csv_sha256": "4befb39ad410be3c3f7c9ed29da34f974124d383a81933d56235ff010366d919",
+    "bytes": 120716,
     "line_count": 1568
   },
   "producer_hashes": {
@@ -149,9 +149,9 @@
     "complete": true
   },
   "rejection_reason_counts": {
-    "abnormal_financial_status:D": 313,
-    "abnormal_financial_status:E": 12,
-    "abnormal_financial_status:H": 6,
+    "abnormal_financial_status:D": 315,
+    "abnormal_financial_status:E": 11,
+    "abnormal_financial_status:H": 5,
     "acquisition_vehicle": 605,
     "adr_warrant_right_or_unit": 2,
     "debt_note_or_bond": 130,
