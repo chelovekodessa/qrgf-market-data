@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-SEPN,"Septerna, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SEPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SER,"Serina Therapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SERA,"Sera Prognostics, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SERA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SERV,Serve Robotics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SERV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -137,6 +136,7 @@ SNN,"Smith & Nephew SNATS, Inc. Common Stock",N,,,common_equity,eligible,True,N,
 SNOA,"Sonoma Pharmaceuticals, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNOA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SNOW,Snowflake Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SNOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SNPS,"Synopsys, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SNSC,SunScout Holding Limited Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SNSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SNT,Senstar Technologies Corporation - Common Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SNTG,Sentage Holdings Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SNTI,"Senti Biosciences Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SNTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

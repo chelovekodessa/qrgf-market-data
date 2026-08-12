@@ -16,7 +16,6 @@ NUAI,"New Era Energy & Digital, Inc. - Common Stock",Q,G,N,common_equity,eligibl
 NUCL,Eagle Nuclear Energy Corp. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NUCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NUE,Nucor Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NUE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NUS,"Nu Skin Enterprises, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NUTR,Nusatrip Incorporated - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NUTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NUTX,Nutex Health Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NUTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NUVB,Nuvation Bio Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NUVB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NUWE,"Nuwellis, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NUWE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ PDEX,"Pro-Dex, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasda
 PDFS,"PDF Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDLB,"Ponce Financial Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDM,"Piedmont Realty Trust, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PDS,Precision Drilling Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

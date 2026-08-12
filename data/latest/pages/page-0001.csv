@@ -97,6 +97,7 @@ FINV,FinVolution Group American Depositary Shares,N,,,adr,eligible,True,Y,N,,nas
 FLX,BingEx Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FMS,Fresenius Medical Care AG American Depositary Shares (Each representing 1/2 of an Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FOCL,"EDAP TMS S.A. - American Depositary Shares, each representing One Ordinary Share",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FOCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+FOIL,"Londian Wason New Energy Tech Inc. American Depositary Shares, each representing five Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FOIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FORTY,Formula Systems (1985) Ltd. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FORTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FRSX,Foresight Autonomous Holdings Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FRSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 FUTU,Futu Holdings Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FUTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ SQNS,Sequans Communications S.A. American Depositary Shares (each representing o
 SSL,Sasol Ltd. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STG,"Sunlands Technology Group American Depositary Shares, representing Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:STG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STKH,Steakholder Foods Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:STKH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SUPV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

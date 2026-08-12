@@ -125,7 +125,7 @@ TILE,"Interface, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nas
 TIPT,Tiptree Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TIPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TISI,"Team, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TISI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TITN,Titan Machinery Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TITN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-TJGC,TJGC Group Limited - ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TJGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+TJGC,TJGC Group Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TJGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TJX,"TJX Companies, Inc. (The) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TJX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TK,Teekay Corporation Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TKC,Turkcell Iletisim Hizmetleri AS Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TKC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

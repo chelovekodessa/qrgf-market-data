@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+LIN,Linde plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LINC,Lincoln Educational Services Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LINC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LIND,Lindblad Expeditions Holdings Inc.  - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LIND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 LINE,"Lineage, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LINE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -163,7 +164,6 @@ MDLZ,"Mondelez International, Inc. - Class A Common Stock",Q,Q,N,common_equity,e
 MDRR,"Medalist Diversified, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MDT,Medtronic plc. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MDU,"MDU Resources Group, Inc. Common Stock (Holding Company)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MDV,"Modiv Industrial, Inc. Class C Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MDV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MDWD,MediWound Ltd. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDWD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MDXG,"MiMedx Group, Inc - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MDXG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MEC,"Mayville Engineering Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
