@@ -174,6 +174,7 @@ VNOM,"Viper Energy, Inc.  - Class A Common Stock",Q,Q,N,common_equity,eligible,T
 VNRX,VolitionRX Limited Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:VNRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 VNT,Vontier Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 VNTG,Vantage Corp Class A Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:VNTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+VOGX,Vogenx Inc - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VOGX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 VOR,Vor Biopharma Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VOR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 VOXR,Vox Royalty Corp. - common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VOXR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 VOYA,"Voya Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VOYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ WDAY,"Workday, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,
 WDC,Western Digital Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WDFC,WD-40 Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WDFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WEAV,"Weave Communications, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-WEC,"WEC Energy Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
