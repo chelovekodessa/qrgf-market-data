@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-11T05:43:20Z",
-  "history_start": "2025-07-06",
-  "history_end": "2026-08-10",
+  "retrieved_at": "2026-08-12T06:59:07Z",
+  "history_start": "2025-07-07",
+  "history_end": "2026-08-11",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "b118476188f00f179752978614e4a90b2c3e017ebbd4e912713503c76ac86b59",
+    "manifest_sha256": "b20578240873f2fb788df6bca2baa7f22ccc6ecc621df704ff750c9b3dc3e40c",
     "accepted_unique": 4987,
-    "bundle_csv_sha256": "02b5c8c7581bbc8c75958bbd3306a1630cc5dc47ce7678c2130a6683e12103f2",
-    "source_raw_sha256": "f21f4de6ff6b3cb529a55427737deb943b0440542c3958b4ebb82f6cee2eb43a",
-    "retrieved_at": "2026-08-11T04:52:23Z"
+    "bundle_csv_sha256": "4befb39ad410be3c3f7c9ed29da34f974124d383a81933d56235ff010366d919",
+    "source_raw_sha256": "519f95d687883dcaadb197b12857dc2aa08044b9673c0e53919d912af0705a85",
+    "retrieved_at": "2026-08-12T05:49:07Z"
   },
   "rows": 4987,
   "page_size": 250,
@@ -22,113 +22,113 @@
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "389b442ea14f62d9f95d64b0c19066c295e0bcbe45f647179205d905a7c3db58"
+      "sha256": "e224e9b6778c4e1489dbf1fd120f046d887cf5db9cf063d61c5cb930edb118e5"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "289db13c10f38d6c5274199a3de021b4cd0d63365987a436790e92cc1dcf8796"
+      "sha256": "34d29684154a5c0a891219d8c479cc79fc28fe00705233519ff6df9effb75572"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "8480c5ed72a3d8e571ad0dc1a3bbeff73058048743cb3c0e45a4c5ce680c9c4a"
+      "sha256": "2182080b84e810d235e89fae9d20342d2c004e8f3a2a0e437666b15e1702d1f9"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "29ed957d9b3bc3441046c9dfe8530321b03920f0ea0345ef0bd1deac6f275cbb"
+      "sha256": "109876902ca1062f60afc2b6687a6612cb2f6a96f5182a5a4eccffa538ace243"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "0c7b11930e9a6b18792c3d1b62bfc00699d5d69ccc4634ab5ee99d0feb3d76e3"
+      "sha256": "97b84f4708a7cab1df27b0ae78a121373a802c37deab3707439d8f6b55aadef7"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "03857efd41c080b8a722d84d277b6631378996f15a518abad6fd4a4d9bac3c66"
+      "sha256": "95aeb5ef0e85ed1e05d9b74af7ce6a51cc369986f4e8df4c378562d442a8fdd4"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "e141137fd2b51931933e930c7a0d3df32a6d3e81cb17fc72492c252fe2458513"
+      "sha256": "66c794d2734578422265204cc30fd9d23b1d259bc98a913b6a657a51bb3fd5c2"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "ed52bfebf6e48019f91f1f83bb0badabf7bcaa1fcf15d8ff90812c88b7965ca7"
+      "sha256": "f31b3474c15d42a61dfac162207f09787af8881bb18143c76c27c5fd36d233fd"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "1d734e1b92b85c81f37b79d3c8af8b1df578e0f72be40385f26a4fb3cfcbbe18"
+      "sha256": "41d5cb43ed312c38a957b8f1f7f446616ce13aa732fa3525c8e8d86bce5da0f3"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "ecacc48f88b463e66637de2d63509b42c733f3142891146e311e336f05e3de80"
+      "sha256": "2066b3e4a8180918d1723ecfdedc7767e71fed843418311e3ef1e6a2a3d3f101"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "82cbab7c389354ee93a7ed4b124c703d37f47087d947232e1d95c6314afb5f58"
+      "sha256": "9a2ca3dd324c89d932db12eceba4b839ddf1d14507d2d886a7d07622e26eaf8f"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "da29fc6bee54930e93271f67985a0ab69ea500c0d711179ea4d02c3d2e4c3b10"
+      "sha256": "cbdea3d68c11709e52e272bfe7ca485744f63b54ffa527492b74002ce35e5122"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "9e903875b1cf066d33b86ac864003c843faacdf8bb516626f85da868da42d8f8"
+      "sha256": "478f5ca0458e1060becf361ed120f06e6dad7a5fbf2f0b331199faf3f08ae0a3"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "91d2a72458ebbd3561cc8f63281f35e9ed29316f2139ce4584b785fb6de63d69"
+      "sha256": "b994c172788e9a39d53fc07301047614ecf4f8e74cf58e68f8e9617d8ebecae5"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "6fd020948c8c7a47ad44bc5c6061613c448d5989abbde8521e1920dab4acc60a"
+      "sha256": "ce75a06612d5aafb5cacfbaed832d51b24fcedf71f014c82289d27c766e81f7b"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "b6cdee5c9b5896e47ba0e2f7d15222afa4195a842e7e806a0b601f80dfb865ca"
+      "sha256": "fcb6c1740cde8dcb4c6de4bfd1c5f5d3b6331aedfa571a0a3e44522cedc86da1"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "2f876a3bec5583c031705afd7b26e25d0ffa232f932c1c515fe0b5e350b9f413"
+      "sha256": "3bf49efd30b4b4a627c2304a6912d550fe9b6f0859146c9bc1d56ad9f9c2ff78"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "fca3771782af3ad6fbf9b73dd28176581408517d161cfc1df32e4248ee45cd1c"
+      "sha256": "6e168b4fc617cb74bc440d1207ae0ba31bda83789a4f8fa1e8f08a81fa34c831"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "33067841de370cf8bb7da0078034328c38003574ac4f17c8bdfe5eab06b92afd"
+      "sha256": "52eebec7ea64c2b11e4d4e521b3da091e47234ec898379c9544d0672c8e92194"
     },
     {
       "name": "page-0020.csv",
       "rows": 237,
-      "sha256": "f3e1e396a1200f02623ea3f95f96ea6e9928ad46ffac0738f0a3d3dcedca4d1c"
+      "sha256": "6f580eca07248e11aa1870465901582f4e0a0ea483b0506f4f592b37786c6cc1"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 4987,
-    "sha256": "3ed38061fab42d6d8d9eb59fbea212ea2fcd64e669dcf759b42b927448795944",
-    "gzip_sha256": "cb2bf73bdacc520cf9ac0614d82e5cd51862e4be9987a3045698b631ddb7ee57",
-    "csv_sha256": "0ec4bcea4f1a1b09d226de81c99f9a34e5db5a83b065abed06ccd2f1abc228ca",
-    "bytes": 614975,
-    "line_count": 7987
+    "sha256": "0525a4043ee57405e03ff7df7dabd56e86e0ddf81037b089ce06b5f15813023f",
+    "gzip_sha256": "c6c46425f7fa6bfec9e289ce2fde8b0f459c6278d36bcffc871def22ab5d5dc9",
+    "csv_sha256": "64a84736d70b0d03da79bbd111abd1fab26993e38772cee076ee6773a845c7fa",
+    "bytes": 614400,
+    "line_count": 7980
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
@@ -136,21 +136,21 @@
     "update-l1.yml": "d4753a8ecbb49ecfc1a649e6ebde576d73a402e1d29c36bf21c4b0a1f7824c4e"
   },
   "alpaca": {
-    "requests": 156,
-    "pages": 156,
+    "requests": 157,
+    "pages": 157,
     "batch_size": 200,
     "feed": "sip",
     "adjustment": "split",
     "timeframe": "1Day",
-    "request_start": "2025-07-06T00:00:00Z",
-    "request_end": "2026-08-10T23:59:59Z",
+    "request_start": "2025-07-07T00:00:00Z",
+    "request_end": "2026-08-11T23:59:59Z",
     "rate_limit": "200",
     "rate_limit_remaining": "199",
     "errors": [],
     "short_history_extension": {
-      "requested_symbols": 307,
+      "requested_symbols": 305,
       "upgraded_to_full": 15,
-      "still_short": 292,
+      "still_short": 290,
       "requests": 7,
       "errors": []
     }
@@ -168,7 +168,7 @@
     "non_etf": 4945,
     "market_cap_present_non_etf": 0,
     "market_cap_missing_non_etf": 4945,
-    "mature_missing_core": 4652
+    "mature_missing_core": 4654
   },
   "diagnostics": {
     "missing_history_symbols": [
@@ -2287,7 +2287,6 @@
       "HRZN",
       "HSAI",
       "HSBC",
-      "HSCS",
       "HSDT",
       "HSHP",
       "HSIC",
@@ -3329,6 +3328,7 @@
       "NUCL",
       "NUE",
       "NUS",
+      "NUTR",
       "NUTX",
       "NUVB",
       "NUWE",
@@ -3918,7 +3918,6 @@
       "RIVN",
       "RJET",
       "RJF",
-      "RKDA",
       "RKLB",
       "RKT",
       "RKTO",
@@ -3972,6 +3971,7 @@
       "RPM",
       "RPRX",
       "RPT",
+      "RR",
       "RRBI",
       "RRC",
       "RRGB",
@@ -5549,6 +5549,7 @@
       "AVAV",
       "AVB",
       "AVBC",
+      "AVBH",
       "AVBP",
       "AVD",
       "AVGO",
@@ -6344,6 +6345,7 @@
       "DJCO",
       "DJT",
       "DK",
+      "DKI",
       "DKNG",
       "DKS",
       "DLB",
@@ -7101,7 +7103,6 @@
       "HRZN",
       "HSAI",
       "HSBC",
-      "HSCS",
       "HSDT",
       "HSHP",
       "HSIC",
@@ -7111,6 +7112,7 @@
       "HTB",
       "HTCO",
       "HTCR",
+      "HTFL",
       "HTGC",
       "HTHT",
       "HTLD",
@@ -8632,7 +8634,6 @@
       "RIVN",
       "RJET",
       "RJF",
-      "RKDA",
       "RKLB",
       "RKT",
       "RKTO",
@@ -8685,6 +8686,7 @@
       "RPM",
       "RPRX",
       "RPT",
+      "RR",
       "RRBI",
       "RRC",
       "RRGB",
@@ -9777,8 +9779,8 @@
     ],
     "alpaca_provider_errors": []
   },
-  "requested_history_start": "2025-07-06",
-  "requested_history_end": "2026-08-10",
+  "requested_history_start": "2025-07-07",
+  "requested_history_end": "2026-08-11",
   "history_start_semantics": "requested_calendar_boundary",
   "history_end_semantics": "max_observed_market_session",
   "reference_provider": {

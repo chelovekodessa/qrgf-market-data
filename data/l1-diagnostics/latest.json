@@ -3,11 +3,11 @@
   "request_id": "qrgf-20260811T023443Z-26acbe74",
   "root_request_id": "qrgf-20260811T023443Z-26acbe74",
   "attempt": 1,
-  "workflow_run_id": "31462585883",
+  "workflow_run_id": "31572096938",
   "workflow_run_attempt": "1",
-  "completed_at": "2026-08-11T05:45:41Z",
+  "completed_at": "2026-08-12T07:01:17Z",
   "returncode": 0,
-  "stdout_tail": "{\n  \"complete\": true,\n  \"rows\": 4987,\n  \"with_history\": 4986,\n  \"missing_history\": 1,\n  \"market_cap_missing_non_etf\": 4945,\n  \"mature_missing_core\": 4652,\n  \"alpaca_requests\": 156,\n  \"alpaca_errors\": 0,\n  \"nasdaq_reference_rows\": null\n}\n",
+  "stdout_tail": "{\n  \"complete\": true,\n  \"rows\": 4987,\n  \"with_history\": 4986,\n  \"missing_history\": 1,\n  \"market_cap_missing_non_etf\": 4945,\n  \"mature_missing_core\": 4654,\n  \"alpaca_requests\": 157,\n  \"alpaca_errors\": 0,\n  \"nasdaq_reference_rows\": null\n}\n",
   "stderr_tail": "",
   "publishable": true,
   "manifest_summary": {
@@ -21,15 +21,15 @@
       "non_etf": 4945,
       "market_cap_present_non_etf": 0,
       "market_cap_missing_non_etf": 4945,
-      "mature_missing_core": 4652
+      "mature_missing_core": 4654
     },
-    "alpaca_requests": 156,
+    "alpaca_requests": 157,
     "alpaca_errors": 0,
     "alpaca_error_samples": [],
     "short_history_extension": {
-      "requested_symbols": 307,
+      "requested_symbols": 305,
       "upgraded_to_full": 15,
-      "still_short": 292,
+      "still_short": 290,
       "requests": 7,
       "errors": []
     },
