@@ -3,11 +3,11 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-13T05:52:25Z",
-  "source_file_creation_time": "0812202621:33",
-  "raw_sha256": "ffb228cdd437c9fabc950fc7217969725e487d1c58a8c5241b10e54d687f7774",
-  "raw_bytes": 991283,
-  "raw_rows": 13136,
+  "retrieved_at": "2026-08-13T09:49:37Z",
+  "source_file_creation_time": "0813202603:04",
+  "raw_sha256": "93ab4f73b53a33046f6204481927974cdc1f1c59ea4abce9b137dd0dbda7df65",
+  "raw_bytes": 990863,
+  "raw_rows": 13133,
   "accepted_unique": 4988,
   "page_size": 250,
   "page_count": 20,
@@ -55,7 +55,7 @@
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "d8e003bb99f50c96c6ce9421793811773391d8871711bd0caaaaf8728714d929"
+      "sha256": "6e9c7ff136cd4a7b42adb209c5862efafd05d1d454c6d79356a63fd93a07a3aa"
     },
     {
       "name": "page-0010.csv",
@@ -117,11 +117,11 @@
     "name": "l0-universe.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 4988,
-    "sha256": "24ea22286f23735336b70f4fe706c7a391b8c10feecf153530e7d2a84a70a8de",
-    "gzip_sha256": "9df82d7ea74274be7339da79d10d6a6788bc22ec33ca4f66e53acfa6223f890a",
-    "csv_sha256": "05eec06afa6a261963d0c992347017edc5b8e3c9a16a823d3f355c2879948580",
-    "bytes": 120736,
-    "line_count": 1568
+    "sha256": "e5f6ed599798f81d6a1ece93473d1a0456ee40ded5e2fc591405bae6b52af553",
+    "gzip_sha256": "8a6bb282b10ace8f69f60ad6751ce4707a2dbd734242d99ce0055456b5c3d52e",
+    "csv_sha256": "33f995318cd71847997ad4d2db636305d2443b1b558ecff71ad0284ecec2d86b",
+    "bytes": 120741,
+    "line_count": 1569
   },
   "producer_hashes": {
     "build_universe.py": "fee1055e9ce7f5cdb6df451342ad88cf2106942c96489c0b525a300716cb1d28",
@@ -132,11 +132,11 @@
     "update-l0.yml": "8e144a81c40a9850583845d21955fe1d896903a54d6993142295056817ac27b9"
   },
   "summary": {
-    "raw_rows": 13136,
+    "raw_rows": 13133,
     "accepted_unique": 4988,
     "structurally_eligible": 4988,
     "rankable_l0": 4988,
-    "rejected_rows": 7971,
+    "rejected_rows": 7968,
     "quarantined_rows": 177,
     "ambiguous_review_count": 0,
     "duplicate_contract_rows": 0,
@@ -152,9 +152,9 @@
     "abnormal_financial_status:D": 315,
     "abnormal_financial_status:E": 11,
     "abnormal_financial_status:H": 5,
-    "acquisition_vehicle": 607,
+    "acquisition_vehicle": 604,
     "adr_warrant_right_or_unit": 2,
-    "debt_note_or_bond": 130,
+    "debt_note_or_bond": 129,
     "etf_not_in_approved_allowlist": 5563,
     "instrument_resolution_required": 177,
     "limited_partnership_not_common_equity": 10,
@@ -166,7 +166,7 @@
     "right": 15,
     "test_issue": 33,
     "unit": 62,
-    "unsuitable_non_etf_fund": 366,
+    "unsuitable_non_etf_fund": 367,
     "warrant": 243
   }
 }
