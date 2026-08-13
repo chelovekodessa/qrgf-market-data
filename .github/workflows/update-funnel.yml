@@ -69,11 +69,42 @@ jobs:
                       '        status = threshold_status(row)\n'
                       '        if status in {"below_price_threshold", "below_liquidity_threshold", "below_market_cap_threshold"}:\n'
                       '            continue')
-          if old_history not in text or old_gate not in text:
+          old_merge = ('    base["quality_seed"] = bool(base.get("quality_seed")) or bool(item.get("quality_seed"))\n'
+                       '    base["momentum_history_status"] = normalize_momentum_history_status(\n'
+                       '        None,\n'
+                       '        base.get("trading_history_days"),\n'
+                       '        base.get("return_3m"),\n'
+                       '        base.get("return_6m"),\n'
+                       '        base.get("return_12m"),\n'
+                       '        base.get("listing_date"),\n'
+                       '        base.get("as_of"),\n'
+                       '    )\n')
+          new_merge = ('    base["quality_seed"] = bool(base.get("quality_seed")) or bool(item.get("quality_seed"))\n'
+                       '    # An explicit provider source gap must survive merge order and stronger-looking\n'
+                       '    # partial updates. Keep the marker private so it cannot leak into exported CSV,\n'
+                       '    # but use it when recomputing the canonical history status.\n'
+                       '    base["_explicit_history_source_gap"] = bool(base.get("_explicit_history_source_gap")) or (\n'
+                       '        str(item.get("momentum_history_status") or "").strip().lower() == "source_gap"\n'
+                       '    )\n'
+                       '    base["momentum_history_status"] = normalize_momentum_history_status(\n'
+                       '        "source_gap" if base["_explicit_history_source_gap"] else None,\n'
+                       '        base.get("trading_history_days"),\n'
+                       '        base.get("return_3m"),\n'
+                       '        base.get("return_6m"),\n'
+                       '        base.get("return_12m"),\n'
+                       '        base.get("listing_date"),\n'
+                       '        base.get("as_of"),\n'
+                       '    )\n')
+          if old_history not in text or old_gate not in text or old_merge not in text:
               raise SystemExit("pinned bulk_prefilter source no longer matches the expected v3 baseline")
-          path.write_text(text.replace(old_history, new_history).replace(old_gate, new_gate), encoding="utf-8")
+          path.write_text(text.replace(old_history, new_history).replace(old_gate, new_gate).replace(old_merge, new_merge), encoding="utf-8")
           PY
-          test "$(sha256sum screening/engine/bulk_prefilter.py | awk '{print $1}')" = "6f9564c6b4d692ce3ffa9d3bf2850157df886479ba8a0ae3494341142116b148"
+          test "$(sha256sum screening/engine/bulk_prefilter.py | awk '{print $1}')" = "0fa5bc831a1745587530ddcc33dbd3eeee3fa1146760ce82392412e5c019abf3"
+      - name: Run producer contract regression tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/tests/test_producer_contract.py
       - name: Capture source identity
         shell: bash
         run: |
@@ -143,7 +174,8 @@ jobs:
             --producer-file screening/config/l1-rules.json \
             --producer-file screening/assets/l2-rules.json \
             --producer-file screening/engine/publish_funnel_snapshot.py \
-            --producer-file .github/workflows/update-funnel.yml
+            --producer-file .github/workflows/update-funnel.yml \
+            --producer-release screening/config/producer-release.json
       - name: Commit funnel atomically
         shell: bash
         run: |
