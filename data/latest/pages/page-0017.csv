@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-SER,"Serina Therapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SERA,"Sera Prognostics, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SERA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SERV,Serve Robotics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SERV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SES,SES AI Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -56,6 +55,7 @@ SII,Sprott Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:
 SILC,Silicom Ltd - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SILC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SILO,"Silo Pharma, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SILO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SIND,Sinda Ltd. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SIND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SINT,"SiNtx Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SINT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SION,"Sionna Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SION,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SIRI,SiriusXM Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SIRI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SITC,SITE Centers Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SITC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

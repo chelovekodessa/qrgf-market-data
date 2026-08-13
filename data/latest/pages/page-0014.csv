@@ -150,7 +150,6 @@ OPXS,"Optex Systems Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,
 OPY,"Oppenheimer Holdings, Inc. Class A Common Stock (DE)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OPY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 OR,OR Royalties Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ORA,"Ormat Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ORBS,Eightco Holdings Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ORC,"Orchid Island Capital, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ORCL,Oracle Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ORI,Old Republic International Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ PDFS,"PDF Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,
 PDLB,"Ponce Financial Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDM,"Piedmont Realty Trust, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDS,Precision Drilling Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PDYN,Palladyne AI Corp. - Common stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
