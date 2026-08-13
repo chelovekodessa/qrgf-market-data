@@ -213,6 +213,7 @@ def main() -> int:
     parser.add_argument("--page-size", type=int, default=50)
     parser.add_argument("--source-commit-sha", required=True)
     parser.add_argument("--producer-file", type=Path, action="append", default=[])
+    parser.add_argument("--producer-release", type=Path, required=True)
     args = parser.parse_args()
     if not 1 <= args.page_size <= 100:
         parser.error("page-size must be between 1 and 100")
@@ -277,6 +278,19 @@ def main() -> int:
     }
     if set(producer_hashes) != required_producers:
         raise ValueError("producer-file set is incomplete or unexpected")
+    producer_release = load_json(args.producer_release)
+    if str(producer_release.get("schema_version") or "") != "1.0.0":
+        raise ValueError("unsupported producer release schema")
+    release_version = str(producer_release.get("release_version") or "").strip()
+    if not release_version:
+        raise ValueError("producer release_version is required")
+    expected_hashes = producer_release.get("producer_hashes")
+    if not isinstance(expected_hashes, dict) or expected_hashes != producer_hashes:
+        raise ValueError("actual producer hashes do not match producer release manifest")
+    history_contract = producer_release.get("history_contract") or {}
+    if int(history_contract.get("observed_closes_for_12m_return") or 0) != 253:
+        raise ValueError("producer release must require 253 observed closes for 12m return")
+    producer_release_sha256 = sha256_file(args.producer_release)
 
     source = {
         "source_commit_sha": str(args.source_commit_sha).strip(),
@@ -315,6 +329,8 @@ def main() -> int:
     content_seed = {
         "source": content_source,
         "producer_hashes": producer_hashes,
+        "producer_release_version": release_version,
+        "producer_release_sha256": producer_release_sha256,
         "l1_summary_sha256": semantic_sha256(l1_summary),
         "l1_finalists_semantic_sha256": l1_selected_sha,
         "l2_all_results_semantic_sha256": l2_all_sha,
@@ -417,6 +433,13 @@ def main() -> int:
             "sha256": sha256_file(snapshot_dir / "audit-summary.json"),
         },
         "producer_hashes": producer_hashes,
+        "producer_release": {
+            "schema_version": "1.0.0",
+            "release_version": release_version,
+            "manifest_path": "screening/config/producer-release.json",
+            "manifest_sha256": producer_release_sha256,
+            "history_contract": history_contract,
+        },
     }
     atomic_json(manifest_path, manifest)
     latest = {
