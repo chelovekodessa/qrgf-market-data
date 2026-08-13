@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+SER,"Serina Therapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:SER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SERA,"Sera Prognostics, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SERA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SERV,Serve Robotics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SERV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 SES,SES AI Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ STRW,"Strawberry Fields REIT, Inc. Common Stock",A,,,common_equity,eligible,True
 STRZ,Starz Entertainment Corp. - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STRZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STT,State Street Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STTK,"Shattuck Labs, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:STTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STUB,"StubHub Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:STUB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

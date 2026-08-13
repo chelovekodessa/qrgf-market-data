@@ -77,6 +77,7 @@ GH,"Guardant Health, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,
 GHC,Graham Holdings Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GHM,Graham Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GHM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GHRS,GH Research PLC - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GHRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+GHXI,"Gores Holdings XI, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GHXI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GIB,CGI Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GIB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GIBO,GIBO Holdings Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GIBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 GIC,Global Industrial Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ HIG,"The Hartford Insurance Group, Inc. Common Stock",N,,,common_equity,eligible
 HII,"Huntington Ingalls Industries, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIMS,"Hims & Hers Health, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIND,"Vyome Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HIND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HIPO,Hippo Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

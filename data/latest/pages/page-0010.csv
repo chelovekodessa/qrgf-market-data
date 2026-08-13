@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
+HIPO,Hippo Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HIPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIT,"Health In Tech, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HITI,High Tide Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HITI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 HIVE,HIVE Digital Technologies Ltd - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HIVE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -248,4 +249,3 @@ IRIX,IRIDEX Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,na
 IRM,Iron Mountain Incorporated (Delaware)Common Stock REIT,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:IRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRMD,iRadimed Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 IRON,"Disc Medicine, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IRON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IRT,"Independence Realty Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:IRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
