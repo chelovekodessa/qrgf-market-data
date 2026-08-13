@@ -19,7 +19,7 @@ from typing import Any
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
-from qrgf_common import clamp, is_missing, strict_bool, strict_float, tolerant_bool, tolerant_float  # noqa: E402
+from qrgf_common import clamp, is_missing, parse_datetime, strict_bool, strict_float, tolerant_bool, tolerant_float  # noqa: E402
 
 TRUSTED_EXTERNAL_HARD_VETOES = {
     "insufficient_liquidity",
@@ -150,7 +150,7 @@ def derive_history(candidate: dict[str, Any]) -> tuple[str, list[str]]:
     r12 = tolerant_float(candidate.get("return_12m_pct"))
     missing: list[str] = []
     if sessions is not None:
-        if sessions >= 252:
+        if sessions >= 253:
             status = "full"
             if r12 is None:
                 missing.append("return_12m_pct")
