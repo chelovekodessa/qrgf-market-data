@@ -2,133 +2,133 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-12T06:59:07Z",
-  "history_start": "2025-07-07",
-  "history_end": "2026-08-11",
+  "retrieved_at": "2026-08-13T07:04:32Z",
+  "history_start": "2025-07-08",
+  "history_end": "2026-08-12",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "b20578240873f2fb788df6bca2baa7f22ccc6ecc621df704ff750c9b3dc3e40c",
-    "accepted_unique": 4987,
-    "bundle_csv_sha256": "4befb39ad410be3c3f7c9ed29da34f974124d383a81933d56235ff010366d919",
-    "source_raw_sha256": "519f95d687883dcaadb197b12857dc2aa08044b9673c0e53919d912af0705a85",
-    "retrieved_at": "2026-08-12T05:49:07Z"
+    "manifest_sha256": "5a2ee6c1bac5034097077ae68229446c4cba4c1eae3396cf5595c6a3a9554f35",
+    "accepted_unique": 4988,
+    "bundle_csv_sha256": "05eec06afa6a261963d0c992347017edc5b8e3c9a16a823d3f355c2879948580",
+    "source_raw_sha256": "ffb228cdd437c9fabc950fc7217969725e487d1c58a8c5241b10e54d687f7774",
+    "retrieved_at": "2026-08-13T05:52:25Z"
   },
-  "rows": 4987,
+  "rows": 4988,
   "page_size": 250,
   "page_count": 20,
   "pages": [
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "e224e9b6778c4e1489dbf1fd120f046d887cf5db9cf063d61c5cb930edb118e5"
+      "sha256": "b02603e89d98b9dcf42a09b5052c48d43de79dfe1066142c55447df40e0b522f"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "34d29684154a5c0a891219d8c479cc79fc28fe00705233519ff6df9effb75572"
+      "sha256": "64b78e9d6a7e9c335c7fe9af7e7050318323dc434a9eb0cfd309b32539717acd"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "2182080b84e810d235e89fae9d20342d2c004e8f3a2a0e437666b15e1702d1f9"
+      "sha256": "161a244ef819ea336f00273e5193c3cecd3af3e1a7c4bd37e6d1b0cb19c5d204"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "109876902ca1062f60afc2b6687a6612cb2f6a96f5182a5a4eccffa538ace243"
+      "sha256": "2552fda970d7b3c253de6581271d7d3419d0704ed0fe3396d2fafda4275d5c35"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "97b84f4708a7cab1df27b0ae78a121373a802c37deab3707439d8f6b55aadef7"
+      "sha256": "b9b2978b08d2af9a31cfb6c0884968a2fb82995e834cf7fca7476e3e6f51f5b0"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "95aeb5ef0e85ed1e05d9b74af7ce6a51cc369986f4e8df4c378562d442a8fdd4"
+      "sha256": "c42d85a0f844ffb568cbc5ebc51e191f0cb6e02267ea732d2ad5754ffe639b7e"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "66c794d2734578422265204cc30fd9d23b1d259bc98a913b6a657a51bb3fd5c2"
+      "sha256": "b6cc80bd62ac7a0891204998acb83616ac8194226d1a2dad33a70123b2c9eeff"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "f31b3474c15d42a61dfac162207f09787af8881bb18143c76c27c5fd36d233fd"
+      "sha256": "9b4c2011451d2e6da4ec71d8598e5982d1a10c4dc1efd5b3e6d35cf95842926d"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "41d5cb43ed312c38a957b8f1f7f446616ce13aa732fa3525c8e8d86bce5da0f3"
+      "sha256": "db7f82075a9f92e6d875aaf803feb44b6ada07bf1753947c58123c7bed342659"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "2066b3e4a8180918d1723ecfdedc7767e71fed843418311e3ef1e6a2a3d3f101"
+      "sha256": "e0cf491b8a76fb9c4f0f7f928f3e7f4fad94268e30bed13286fa63b1ca32eb57"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "9a2ca3dd324c89d932db12eceba4b839ddf1d14507d2d886a7d07622e26eaf8f"
+      "sha256": "84ea09916d66de57e840e9b3bc73c7785d41761b83d337e263c3917131f2cbf2"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "cbdea3d68c11709e52e272bfe7ca485744f63b54ffa527492b74002ce35e5122"
+      "sha256": "31b3971ab33c3089d9bd4007807907f8fd3fd6ab844a45a78c0784d9bf911ab2"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "478f5ca0458e1060becf361ed120f06e6dad7a5fbf2f0b331199faf3f08ae0a3"
+      "sha256": "4b9035903684d125da13a1ca685be6070a009e8aa168eca9c1c1b2622c00adba"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "b994c172788e9a39d53fc07301047614ecf4f8e74cf58e68f8e9617d8ebecae5"
+      "sha256": "cefccbcec7514e82a31e8c3c59094dbe5d1a471c10f3ceaab36de3858d961057"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "ce75a06612d5aafb5cacfbaed832d51b24fcedf71f014c82289d27c766e81f7b"
+      "sha256": "d651ed7a08b0a0e43c51a79aca6a110c393c11d6ff2d9c87614d5986f2c26035"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "fcb6c1740cde8dcb4c6de4bfd1c5f5d3b6331aedfa571a0a3e44522cedc86da1"
+      "sha256": "35ee8aa979d327e12171600bc6c9a417aef4c1161e288567b4904f519f5e5871"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "3bf49efd30b4b4a627c2304a6912d550fe9b6f0859146c9bc1d56ad9f9c2ff78"
+      "sha256": "7db0035e5c8e1d22795963dfb763d3a17050ddee8eba65c64bf76071c0a41f4d"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "6e168b4fc617cb74bc440d1207ae0ba31bda83789a4f8fa1e8f08a81fa34c831"
+      "sha256": "357c94bb31afa57bf08d853d90791dd34938858b67711923f8e8ffd9570a1d7c"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "52eebec7ea64c2b11e4d4e521b3da091e47234ec898379c9544d0672c8e92194"
+      "sha256": "bcd4cd9a13b9d725e15146957d0f3ba88210a84c95a1be9cded9b709ded944c2"
     },
     {
       "name": "page-0020.csv",
-      "rows": 237,
-      "sha256": "6f580eca07248e11aa1870465901582f4e0a0ea483b0506f4f592b37786c6cc1"
+      "rows": 238,
+      "sha256": "4fbff119b723868e74e93fb70b77b1695b3e21a43cc91ca26673f92d10dc8661"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
-    "rows": 4987,
-    "sha256": "0525a4043ee57405e03ff7df7dabd56e86e0ddf81037b089ce06b5f15813023f",
-    "gzip_sha256": "c6c46425f7fa6bfec9e289ce2fde8b0f459c6278d36bcffc871def22ab5d5dc9",
-    "csv_sha256": "64a84736d70b0d03da79bbd111abd1fab26993e38772cee076ee6773a845c7fa",
-    "bytes": 614400,
-    "line_count": 7980
+    "rows": 4988,
+    "sha256": "8b6b4d49f56979978c3bd34cf8e78f1dc3b0be2ddd85ba784573fc0c568c4e2a",
+    "gzip_sha256": "4f31b44c05ddd861b243642173e42f870bd780bad7f43bc0065a09b92fd62ff2",
+    "csv_sha256": "6782ff01bdf6e20e4f6b5dae589f905a08b9c6a9b24be3fe64fcaad51537b69a",
+    "bytes": 613950,
+    "line_count": 7974
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
@@ -142,15 +142,15 @@
     "feed": "sip",
     "adjustment": "split",
     "timeframe": "1Day",
-    "request_start": "2025-07-07T00:00:00Z",
-    "request_end": "2026-08-11T23:59:59Z",
+    "request_start": "2025-07-08T00:00:00Z",
+    "request_end": "2026-08-12T23:59:59Z",
     "rate_limit": "200",
     "rate_limit_remaining": "199",
     "errors": [],
     "short_history_extension": {
-      "requested_symbols": 305,
+      "requested_symbols": 306,
       "upgraded_to_full": 15,
-      "still_short": 290,
+      "still_short": 291,
       "requests": 7,
       "errors": []
     }
@@ -162,12 +162,12 @@
     "sector_industry_status": "deferred_to_narrowed_research"
   },
   "coverage": {
-    "total": 4987,
-    "with_history": 4986,
+    "total": 4988,
+    "with_history": 4987,
     "missing_history": 1,
-    "non_etf": 4945,
+    "non_etf": 4946,
     "market_cap_present_non_etf": 0,
-    "market_cap_missing_non_etf": 4945,
+    "market_cap_missing_non_etf": 4946,
     "mature_missing_core": 4654
   },
   "diagnostics": {
@@ -1895,6 +1895,7 @@
       "FOA",
       "FOCL",
       "FOFO",
+      "FOIL",
       "FOR",
       "FORM",
       "FORR",
@@ -2946,7 +2947,6 @@
       "MDRR",
       "MDT",
       "MDU",
-      "MDV",
       "MDWD",
       "MDXG",
       "MEC",
@@ -3328,7 +3328,6 @@
       "NUCL",
       "NUE",
       "NUS",
-      "NUTR",
       "NUTX",
       "NUVB",
       "NUWE",
@@ -3467,7 +3466,6 @@
       "OPY",
       "OR",
       "ORA",
-      "ORBS",
       "ORC",
       "ORCL",
       "ORI",
@@ -4156,6 +4154,7 @@
       "SIM",
       "SIMO",
       "SIND",
+      "SINT",
       "SION",
       "SIRI",
       "SITC",
@@ -4239,6 +4238,7 @@
       "SNOA",
       "SNOW",
       "SNPS",
+      "SNSC",
       "SNT",
       "SNTG",
       "SNTI",
@@ -4818,6 +4818,7 @@
       "VNT",
       "VNTG",
       "VOD",
+      "VOGX",
       "VOR",
       "VOXR",
       "VOYA",
@@ -6465,6 +6466,7 @@
       "EFOR",
       "EFSC",
       "EFSI",
+      "EFTY",
       "EFX",
       "EFXT",
       "EG",
@@ -7725,7 +7727,6 @@
       "MDRR",
       "MDT",
       "MDU",
-      "MDV",
       "MDWD",
       "MDXG",
       "MEC",
@@ -8217,7 +8218,6 @@
       "OPY",
       "OR",
       "ORA",
-      "ORBS",
       "ORC",
       "ORCL",
       "ORI",
@@ -8861,6 +8861,7 @@
       "SILO",
       "SIM",
       "SIMO",
+      "SINT",
       "SION",
       "SIRI",
       "SITC",
@@ -9779,8 +9780,8 @@
     ],
     "alpaca_provider_errors": []
   },
-  "requested_history_start": "2025-07-07",
-  "requested_history_end": "2026-08-11",
+  "requested_history_start": "2025-07-08",
+  "requested_history_end": "2026-08-12",
   "history_start_semantics": "requested_calendar_boundary",
   "history_end_semantics": "max_observed_market_session",
   "reference_provider": {
