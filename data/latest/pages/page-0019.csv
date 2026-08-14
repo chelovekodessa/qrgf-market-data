@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-TWLV,Twelve Seas Investment Company III - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TWST,Twist Bioscience Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TWST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TXG,"10x Genomics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TXG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 TXMD,"TherapeuticsMD, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TXMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ WDFC,WD-40 Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqt
 WEAV,"Weave Communications, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WEC,"WEC Energy Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WELL,Welltower Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WELL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+WEN,Wendy's Company (The) - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

@@ -212,7 +212,6 @@ QH,Quhuo Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N
 QLYS,"Qualys, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QMCO,Quantum Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QMCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QMLS,"QumulusAI, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QMLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-QMMM,QMMM Holdings Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QMMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QNC,Quantum eMotion Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:QNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QNCX,"Quince Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 QNST,"QuinStreet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ RAYA,Erayak Power Solution Group Inc. - Class A Ordinary Shares,Q,S,N,common_equ
 RBA,"RB Global, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RBB,RBB Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RBB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 RBBN,Ribbon Communications Inc.  - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RBBN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+RBC,RBC Bearings Incorporated Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

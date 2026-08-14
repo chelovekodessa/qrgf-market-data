@@ -189,7 +189,6 @@ BNED,"Barnes & Noble Education, Inc Common Stock",N,,,common_equity,eligible,Tru
 BNGO,"Bionano Genomics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BNKK,"Bonk, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNKK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BNL,"Broadstone Net Lease, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BNL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BNRG,Brenmiller Energy Ltd - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNRG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BNS,Bank Nova Scotia Halifax Pfd 3 Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BNTC,Benitec Biopharma Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BNTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BNY,The Bank of New York Mellon Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -228,6 +227,7 @@ BRK.B,Berkshire Hathaway Inc. New Common Stock,N,,,common_equity,eligible,True,N
 BRKR,Bruker Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRLT,"Brilliant Earth Group, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRLT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRN,"Barnwell Industries, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+BRNX,BrenX Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRO,"Brown & Brown, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BROS,Dutch Bros Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BROS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 BRR,"ProCap Financial, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
