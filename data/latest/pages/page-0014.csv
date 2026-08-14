@@ -1,7 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-NTHI,"NeOnc Technologies Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NTIC,Northern Technologies International Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NTIP,"Network-1 Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NTIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTLA,"Intellia Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTNX,"Nutanix, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTR,Nutrien Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +246,6 @@ PDFS,"PDF Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,
 PDLB,"Ponce Financial Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDM,"Piedmont Realty Trust, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 PDS,Precision Drilling Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PDYN,Palladyne AI Corp. - Common stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PDYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PEB,Pebblebrook Hotel Trust Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PEB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+PEBK,"Peoples Bancorp of North Carolina, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PEBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

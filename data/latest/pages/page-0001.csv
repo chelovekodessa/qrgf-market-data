@@ -8,7 +8,6 @@ ADSE,ADS-TEC ENERGY PLC - Ordinary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtra
 ADXN,Addex Therapeutics Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ADXN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AERO,"Grupo Aeromexico, S.A.B. de C.V. American Depositary Shares (each representing ten (10) Common Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AERO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AHG,Akso Health Group - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AIXI,XIAO-I Corporation - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AIXI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AKTX,Akari Therapeutics Plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AKTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALAR,Alarum Technologies Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ALAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AMBO,Ambow Education Holding Ltd. American Depository Shares (each representing twenty (20) Class A Ordinary Shares),A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:AMBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ SQNS,Sequans Communications S.A. American Depositary Shares (each representing o
 SSL,Sasol Ltd. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STG,"Sunlands Technology Group American Depositary Shares, representing Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:STG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 STKH,Steakholder Foods Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:STKH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SUPV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

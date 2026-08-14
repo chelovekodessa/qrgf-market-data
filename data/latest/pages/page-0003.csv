@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-ALGN,"Align Technology, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALGS,"Aligos Therapeutics, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALGT,Allegiant Travel Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALGT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 ALH,Alliance Laundry Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -235,7 +234,6 @@ AURE,Aurelion Inc.  - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,
 AUST,Austin Gold Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:AUST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVA,Avista Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVAH,Aveanna Healthcare Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AVAT,Avalanche Treasury Corporation - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVAV,"AeroVironment, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVB,"AvalonBay Communities, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVBC,"Avidia Bancorp, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +247,5 @@ AVLN,Avalyn Pharma Inc. - common stock,Q,Q,N,common_equity,eligible,True,N,N,,na
 AVNT,Avient Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVNW,"Aviat Networks, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 AVO,"Mission Produce, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVPT,"AvePoint, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+AVR,Anteris Technologies Global Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
