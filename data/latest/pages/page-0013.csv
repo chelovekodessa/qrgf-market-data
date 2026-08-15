@@ -2,7 +2,6 @@ ticker,company_name,listing_exchange,market_category,financial_status,security_t
 MNTK,"Montauk Renewables, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNTN,"MNTN, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:MNTN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MNTS,Momentus Inc. - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MNY,MoneyHero Limited - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MOB,Mobilicom Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MOB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MOBI,"Mobia Medical, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MOBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 MOBX,"Mobix Labs, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MOBX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
@@ -249,3 +248,4 @@ NTGR,"NETGEAR, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasda
 NTHI,"NeOnc Technologies Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTIC,Northern Technologies International Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 NTIP,"Network-1 Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NTIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+NTLA,"Intellia Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NTLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed

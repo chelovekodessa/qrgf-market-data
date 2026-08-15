@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-WENC,West Enclave Merger Corp. Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WENC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WERN,"Werner Enterprises, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WERN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WEST,Westrock Coffee Company - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WEST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
 WETH,Wetouch Technology Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WETH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
