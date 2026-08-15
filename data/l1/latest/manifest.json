@@ -2,133 +2,133 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-14T07:00:09Z",
-  "history_start": "2025-07-09",
-  "history_end": "2026-08-13",
+  "retrieved_at": "2026-08-15T04:07:03Z",
+  "history_start": "2025-07-10",
+  "history_end": "2026-08-14",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "28d8cf4effcbe79635043e1970207b75783c98adff826c128145233a9133de4a",
-    "accepted_unique": 4986,
-    "bundle_csv_sha256": "fde79a7eaac6629f99912e587e5b0766588d20686a012c001077e1d259c654ff",
-    "source_raw_sha256": "f7a34e69784b0add65223f353be3489ead6d27ec578083359d1dbd8cd5ae2df2",
-    "retrieved_at": "2026-08-14T05:49:40Z"
+    "manifest_sha256": "e9d28752897be8b4da57d1e0d9c0ee3dfce8ef53a8166967999d92a54e2ea845",
+    "accepted_unique": 4984,
+    "bundle_csv_sha256": "e166f248899de90c216dbf1e22c85853a0c52f29a4775625bf992dec25716eeb",
+    "source_raw_sha256": "f47a15cf3a5422723f77ba0b9732fbf5e67c070f355e63511ecbbfb61dc88a1e",
+    "retrieved_at": "2026-08-15T03:07:37Z"
   },
-  "rows": 4986,
+  "rows": 4984,
   "page_size": 250,
   "page_count": 20,
   "pages": [
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "ce663474a4cb8dab3997f78cce99fa84a040844c27fb8aace694c3ff18ae8763"
+      "sha256": "ea180fb91bcdedb18737a1a1f824a75fedf47907915bb61225387f07550f2eaf"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "9ceb577a2dcacff7aa856a7413c51848a05a45d9613689a7519db2ac9164fe7d"
+      "sha256": "e6dfb57f435c4c24ecde6a367b911c19c4539a2e3727c76a0c88e76238915857"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "09097b5a62ef99ae501fd22ee40ffd38bc34b14b0a2bb7e6774332238f2c0bc8"
+      "sha256": "e8a0f5192aa6781a32688c76658a6792d27b5fb74b7504bbc3be1d5096dac2a1"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "60839e5718fa5ca006fa56f763724e22840739c73b7c32bbb44469e4ce9da885"
+      "sha256": "01e9816d49e945f645aa61abc3ba8371c4348137fe43b3ce22d43a895ffd175a"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "e8fa4251b58d978c03528b0b86589e16350494b8954ed939774ae8ff3e827250"
+      "sha256": "220a3d0970cadbf3aa5ff92da79f4175fad5b74d11a763dfb375093522ccdbe0"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "e9348352f29a80b27bede83354041863aaac2536e1d77a4056ada884bdb07b2d"
+      "sha256": "2200e85bf388d595353ad7ba0b9585c965aba5b507a406bb95144c62f6849734"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "ecbe6154f00e6794e7396631e3fd30917418d487d047863a1fdfe2a820f1b116"
+      "sha256": "6e35d72e67fcad70778e774a524a463ae67a24602684627d8507800596061f1f"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "a47b4c34964cec21bc1161f8e9fd248aca37166709a300cb94329613cc2007c6"
+      "sha256": "1056dcbf2720f16755768337f6f07ea5afde4c0e763a6d156bf38126c40a3a49"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "05c7b6fc392d9999efd0eb0d9d77379697ce3edc13d060bfea54457ce8b5c390"
+      "sha256": "0b1fd43d4df6086944afff9cf95890f634b0a5c019c32d3dc22cff5812398206"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "d75d154eb8c6e4c1aa1f9d085f4347e3ed17516f0fb20fbbee13003452b0de5f"
+      "sha256": "125de9c18d91ffb1f130a5dabf6da0d6d0017affb26559bc9e35ec7d4c90aca8"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "382e5f1ee52985a09b473db12c976ad3b35568c783c8a79f1a308e58e2104d31"
+      "sha256": "46546a15b9c40ba0a7377e85ec1670ba1fff54d965d3219dd240fa1bdadbe05c"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "a060763de4fcad5d03b872f81f0ec2cf08696bf8f51da9d7823c5966d30bc770"
+      "sha256": "be76cd27ae0326f6ae9219ea83a4efc5281496470b444cc8cb6a6ff2de96b617"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "e8f603196631a0ea5978c6ab9b8ddca1606192982cb5d289b9a3e80f0e832caf"
+      "sha256": "99be119306f63092b3a388fd81ba80d666f6d02434aebdfd9ec4fcdd031218d9"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "6984e321c5317e64f2c99446dd0da006eaece9606f830968f721496637e2d3d4"
+      "sha256": "3823a7a28f3a498354b98059ba6df4c1ba39eae8fb8b93438d573e0320577dd3"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "f2632c23e45c77b990a3e2ebec49594ce27b31043783e97dbcb260830ce9fa17"
+      "sha256": "e13d807b410db17b7d8d037350152d9c85b161ce71f4c2cfaba20db294b3f165"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "7bf49c210c065ec05313800b3cac7bdfb47da98b612bb97d2c575279c8b5f9da"
+      "sha256": "81606d53762b8d407b0e4523dd9d74b92118300d074d507a09d84124836be078"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "8d9f46b132c6e3365fb8a71df8a77a88c270d30a4227de5eb66bca2b5675acde"
+      "sha256": "a9a0ecf0bc865788394e2eb18998ae82ea0f98381a0b2c3bb5e04850c7b2250f"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "4de1e0e6f306c4be2bc9a572b9b467b2cc7faa343b0964c0e95bfb4c8cd7647f"
+      "sha256": "a72cb4a831fc629334f8f27e1c944aeb9145766f61446acb66de3eae10065621"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "fb343ac856871078846f301ca749010ffcec11dc1080c64281f2528904459524"
+      "sha256": "ee2e51454543d996c9293eeebd3cd21a55bcb4d0933d6ea21a1117c6ef4a38fe"
     },
     {
       "name": "page-0020.csv",
-      "rows": 236,
-      "sha256": "26dfa13045bd0998ee700322d3f5a6403ae8c361d4b9c7ff9dc9c05bcbaf7055"
+      "rows": 234,
+      "sha256": "6a066901ef0a93b061176a0598595f733ee8b72288648914d57402cf779787bf"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
-    "rows": 4986,
-    "sha256": "da1a36bdacfff4fb4fcd5cb1add4a04ba30ebec06b49af91036780065e094cc4",
-    "gzip_sha256": "85aeb6360129867365a10539bc8aed6d1754978e34fa47aa9696863cf9493ac4",
-    "csv_sha256": "f74871f709963d5a1e2f16512b8b550d4da03d324b36f4d7e96f1ce06e3d6618",
-    "bytes": 613889,
-    "line_count": 7973
+    "rows": 4984,
+    "sha256": "ef74a56790423bc9d7e6f490b7a0a8d31468c696a2b3db7e7e1f6dbd36ecfb2a",
+    "gzip_sha256": "bf5787f4acde65abbe0928d9046ce85e22bd8f29fe0355cdb972fe208df352ab",
+    "csv_sha256": "393c5b25342bfb9f9cc29d2da7d60f1a4a736e97c62138a0bde7b8232b807daf",
+    "bytes": 614323,
+    "line_count": 7979
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
@@ -144,20 +144,20 @@
     "feed": "sip",
     "adjustment": "split",
     "timeframe": "1Day",
-    "request_start": "2025-07-09T00:00:00Z",
-    "request_end": "2026-08-13T23:59:59Z",
+    "request_start": "2025-07-10T00:00:00Z",
+    "request_end": "2026-08-14T23:59:59Z",
     "rate_limit": "200",
     "rate_limit_remaining": "199",
     "errors": [],
     "short_history_extension": {
-      "requested_symbols": 307,
+      "requested_symbols": 306,
       "upgraded_to_full": 15,
-      "still_short": 292,
+      "still_short": 291,
       "requests": 7,
       "errors": []
     },
-    "effective_history_start": "2025-07-09",
-    "effective_history_end": "2026-08-13"
+    "effective_history_start": "2025-07-10",
+    "effective_history_end": "2026-08-14"
   },
   "nasdaq_reference": {
     "provider": "deferred",
@@ -166,13 +166,13 @@
     "sector_industry_status": "deferred_to_narrowed_research"
   },
   "coverage": {
-    "total": 4986,
-    "with_history": 4985,
+    "total": 4984,
+    "with_history": 4983,
     "missing_history": 1,
-    "non_etf": 4944,
+    "non_etf": 4942,
     "market_cap_present_non_etf": 0,
-    "market_cap_missing_non_etf": 4944,
-    "mature_missing_core": 4651
+    "market_cap_missing_non_etf": 4942,
+    "mature_missing_core": 4650
   },
   "diagnostics": {
     "missing_history_symbols": [
@@ -847,7 +847,6 @@
       "BNKK",
       "BNL",
       "BNR",
-      "BNRG",
       "BNS",
       "BNTC",
       "BNTX",
@@ -887,6 +886,7 @@
       "BRKR",
       "BRLT",
       "BRN",
+      "BRNX",
       "BRO",
       "BROS",
       "BRR",
@@ -1319,6 +1319,7 @@
       "CRWD",
       "CRWS",
       "CRWV",
+      "CSAI",
       "CSAN",
       "CSBR",
       "CSCO",
@@ -1641,7 +1642,6 @@
       "ELS",
       "ELTK",
       "ELTX",
-      "ELUT",
       "ELV",
       "ELVA",
       "ELVN",
@@ -3044,7 +3044,6 @@
       "MNTK",
       "MNTN",
       "MNTS",
-      "MNY",
       "MOB",
       "MOBI",
       "MOBX",
@@ -3798,7 +3797,6 @@
       "QLYS",
       "QMCO",
       "QMLS",
-      "QMMM",
       "QNC",
       "QNCX",
       "QNRX",
@@ -5727,6 +5725,7 @@
       "BLND",
       "BLNE",
       "BLRX",
+      "BLSH",
       "BLTE",
       "BLX",
       "BLZE",
@@ -5750,7 +5749,6 @@
       "BNKK",
       "BNL",
       "BNR",
-      "BNRG",
       "BNS",
       "BNTC",
       "BNTX",
@@ -6191,6 +6189,7 @@
       "CRWD",
       "CRWS",
       "CRWV",
+      "CSAI",
       "CSAN",
       "CSBR",
       "CSCO",
@@ -6499,7 +6498,6 @@
       "ELS",
       "ELTK",
       "ELTX",
-      "ELUT",
       "ELV",
       "ELVA",
       "ELVN",
@@ -7815,7 +7813,6 @@
       "MNTK",
       "MNTN",
       "MNTS",
-      "MNY",
       "MOB",
       "MOBX",
       "MOD",
@@ -8060,6 +8057,7 @@
       "NSC",
       "NSIT",
       "NSP",
+      "NSRX",
       "NSSC",
       "NSTS",
       "NSYS",
@@ -8523,7 +8521,6 @@
       "QH",
       "QLYS",
       "QMCO",
-      "QMMM",
       "QNCX",
       "QNRX",
       "QNST",
@@ -9779,11 +9776,11 @@
     ],
     "alpaca_provider_errors": []
   },
-  "requested_history_start": "2025-07-09",
-  "requested_history_end": "2026-08-13",
+  "requested_history_start": "2025-07-10",
+  "requested_history_end": "2026-08-14",
   "history_start_semantics": "requested_calendar_boundary",
   "history_end_semantics": "max_observed_market_session",
-  "observed_latest_market_session": "2026-08-13",
+  "observed_latest_market_session": "2026-08-14",
   "reference_provider": {
     "provider": "deferred",
     "mode": "free_bulk_reference_not_required_for_l1",
