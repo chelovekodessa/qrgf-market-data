@@ -137,7 +137,7 @@ def main() -> int:
     producer_hashes = {path.name: sha256_file(path) for path in args.producer_file}
     rejection_reasons = Counter(str(row.get("rejection_reason") or "unknown") for row in rejected)
     manifest = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "complete": True,
         "source_id": args.source_id,
         "source_url": args.source_url,
