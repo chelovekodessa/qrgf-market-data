@@ -229,8 +229,6 @@ CHWY,"Chewy, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nas
 CHYM,"Chime Financial, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHYM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CI,The Cigna Group Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CIA,"Citizens, Inc. Class A Common Stock ($1.00 Par)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-CICB,CION Investment Corporation 7.50% Notes due 2029,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CICB,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-CICC,CION Investment Corporation 7.50% Notes due 2031,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CICC,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 CIEN,Ciena Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CIFR,Cipher Digital Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIFR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CIGI,Colliers International Group Inc.  - Subordinate Voting Shares,Q,Q,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:CIGI,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
@@ -249,3 +247,5 @@ CKX,"CKX Lands, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtr
 CL,Colgate-Palmolive Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CLAR,Clarus Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CLB,Core Laboratories Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CLBK,"Columbia Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CLBT,Cellebrite DI Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

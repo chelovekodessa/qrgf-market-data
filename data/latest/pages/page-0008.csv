@@ -1,9 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-ENLV,Enlivex Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ENOV,Enovis Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENOV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ENPH,"Enphase Energy, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ENR,"Energizer Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ENS,EnerSys Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENSG,"The Ensign Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENTA,"Enanta Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENTG,"Entegris, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +244,8 @@ FRMI,Fermi Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrad
 FRMM,"Forum Markets, Incorporated - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRNM,"Freenome, Inc. - Common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRNM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRO,Frontline Plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FROG,JFrog Ltd. - Ordinary shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FROG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FRPH,"FRP Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FRPT,"Freshpet, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FRSH,Freshworks Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FRST,Primis Financial Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

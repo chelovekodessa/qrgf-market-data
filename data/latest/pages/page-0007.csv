@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-CYH,"Community Health Systems, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CYH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-CYN,Cyngn Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CYRX,"CryoPort, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CYTK,"Cytokinetics, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CZFS,"Citizens Financial Services, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CZFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -169,8 +167,6 @@ EBON,Ebang International Holdings Inc. - Class A Ordinary Shares,Q,Q,N,common_eq
 EBS,Emergent BioSolutions Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:EBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ECBK,"ECB Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ECBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ECC,Eagle Point Credit Company Common Share of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ECC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ECCU,Eagle Point Credit Company 7.75% Notes due 2030,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:ECCU,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-ECCV,Eagle Point Credit Company 5.375% Notes due 2029,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:ECCV,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 ECG,"Everus Construction Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ECG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ECHO,EchoStar Corporation - Common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ECHO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ECL,Ecolab Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ECL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -220,7 +216,6 @@ ELAN,Elanco Animal Health Incorporated Common Stock,N,,,common_equity,eligible,T
 ELDN,"Eledon Pharmaceuticals, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ELDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ELE,Elemental Royalty Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ELE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ELF,"e.l.f. Beauty, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ELF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ELLA,Ellington Credit Company 8.50% Notes due 2031,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:ELLA,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 ELLO,Ellomay Capital Ltd Ordinary Shares (Israel),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ELLO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ELMD,"Electromed, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:ELMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ELME,Elme Communities Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ELME,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +244,8 @@ ENGN,enGene Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N
 ENGS,Energys Group Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENHA,Enhanced Group Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENLT,Enlight Renewable Energy Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENLT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ENLV,Enlivex Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ENOV,Enovis Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENOV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ENPH,"Enphase Energy, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ENR,"Energizer Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ENS,EnerSys Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

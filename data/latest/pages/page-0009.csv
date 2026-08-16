@@ -1,9 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-FROG,JFrog Ltd. - Ordinary shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FROG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-FRPH,"FRP Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-FRPT,"Freshpet, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-FRSH,Freshworks Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-FRST,Primis Financial Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRT,Federal Realty Investment Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRTT,Fort Technology Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRVO,Fervo Energy Company - Class A common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -61,9 +56,6 @@ FXNC,First National Corporation - Common Stock,Q,S,N,common_equity,eligible,True
 G,Genpact Limited Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:G,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GABC,"German American Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GABC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GAIA,"Gaia, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GAIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-GAING,Gladstone Investment Corporation - 7.125% Notes due 2031,Q,Q,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GAING,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-GAINI,Gladstone Investment Corporation - 7.875% Notes due 2030,Q,Q,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GAINI,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-GAINZ,Gladstone Investment Corporation - 4.875% Notes due 2028,Q,Q,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GAINZ,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 GALT,Galectin Therapeutics Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GALT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GAM,"General American Investors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GAM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GANX,"Gain Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GANX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -94,13 +86,9 @@ GDRX,"GoodRx Holdings, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible
 GDTC,CytoMed Therapeutics Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GDYN,"Grid Dynamics Holdings, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GDYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GE,GE Aerospace Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-GECCG,Great Elm Capital Corp. - 7.75% Notes Due 2030,Q,G,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GECCG,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-GECCH,Great Elm Capital Corp. - 8.125% Notes Due 2029,Q,G,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GECCH,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-GECCI,Great Elm Capital Corp. - 8.50% NOTES DUE 2029,Q,G,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GECCI,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 GEF,Greif Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GEF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GEF.B,"Greif, Inc. Corporation Class B Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GEF.B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GEG,"Great Elm Group, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-GEGGL,"Great Elm Group, Inc.  - 7.25% Notes due 2027",Q,G,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GEGGL,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 GEHC,GE HealthCare Technologies Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GEMI,"Gemini Space Station, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GEN,Gen Digital Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +237,15 @@ GVA,Granite Construction Incorporated Common Stock,N,,,common_equity,eligible,Tr
 GVH,Globavend Holdings Limited - Ord Shares,Q,S,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:GVH,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 GWAV,"Greenwave Technology Solutions, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GWAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 GWH,"ESS Tech, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GWH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GWRE,"Guidewire Software, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GWRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GWRS,"Global Water Resources, Inc. - common stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GWRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GWW,"W.W. Grainger, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GWW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GXAI,Gaxos.ai Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GXAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GXO,"GXO Logistics, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:GXO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GYGY,"Game Your Game, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GYGY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GYRE,"Gyre Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GYRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GYRO,"Gyrodyne , LLC - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:GYRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+H,Hyatt Hotels Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:H,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HAE,Haemonetics Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HAE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HAFC,Hanmi Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HAFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HAFN,Hafnia Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HAFN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

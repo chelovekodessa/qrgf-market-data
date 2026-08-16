@@ -1,22 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-NEU,NewMarket Corp Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NEU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEUP,Neuphoria Therapeutics Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NEUP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEWP,New Pacific Metals Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NEWP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEWT,"NewtekOne, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NEWT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEXA,Nexa Resources S.A. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NEXA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEXM,NexMetals Mining Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NEXM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEXN,Nexxen International Ltd. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NEXN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEXR,Nexera Technologies Ltd - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NEXR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NEXT,NextDecade Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NEXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NFG,National Fuel Gas Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NFGC,New Found Gold Corp Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NFGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NFLX,"Netflix, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NFLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NG,Novagold Resources Inc.,A,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:A:NG,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-NGEN,NervGen Pharma Corp. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NGEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NGL,NGL ENERGY PARTNERS LP Common Units representing Limited Partner Interests,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:NGL,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-NGNE,Neurogene Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NGNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NGS,"Natural Gas Services Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NGVC,"Natural Grocers by Vitamin Cottage, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NGVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NGVT,Ingevity Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NGVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NHC,National HealthCare Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NHI,"National Health Investors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -43,7 +25,6 @@ NLY,Annaly Capital Management Inc. Common Stock,N,,,common_equity,eligible,True,
 NMAD,"Nomad Power Solutions, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NMAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NMAX,"Newsmax, Inc. Class B Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NMAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NMFC,New Mountain Finance Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NMFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NMFCZ,New Mountain Finance Corporation - 8.250% Notes due 2028,Q,G,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:NMFCZ,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 NMG,Nouveau Monde Graphite Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NMG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NMIH,NMI Holdings Inc - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NMIH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NMM,Navios Maritime Partners LP Common Units Representing Limited Partner Interests,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:NMM,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
@@ -89,7 +70,6 @@ NRXP,"NRX Pharmaceuticals, Inc. - Common Stock",Q,S,N,common_equity,eligible,Tru
 NRXS,"Neuraxis, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NRXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NSC,Norfolk Southern Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NSIT,"Insight Enterprises, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NSIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NSLRL,Neostellar Capital Corp. - 6.00% Notes due 2026,Q,G,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:NSLRL,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 NSP,"Insperity, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NSRX,Nasus Pharma Ltd. Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NSRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NSSC,"NAPCO Security Technologies, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NSSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -191,8 +171,6 @@ OFG,OFG Bancorp Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N
 OFIX,Orthofix Medical Inc.  - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OFIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OFLX,"Omega Flex, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OFLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OFRM,"Once Upon a Farm, PBC Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OFRM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-OFSSH,OFS Capital Corporation - 4.95% Notes due 2028,Q,Q,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:OFSSH,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
-OFSSO,OFS Capital Corporation - 7.50% Notes due 2028,Q,G,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:OFSSO,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 OGC,OceanaGold Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OGE,OGE Energy Corp Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OGE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OGEN,Oragenics Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:OGEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +227,25 @@ OPLN,"OPENLANE, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtr
 OPRT,Oportun Financial Corporation - common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OPRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OPRX,OptimizeRx Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OPRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OPTH,Optimi Health Corp. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OPTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OPTT,"Ocean Power Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:OPTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OPTU,"Optimum Communications, Inc. Class A common stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OPTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OPTX,"Syntec Optics Holdings, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OPTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OPXS,"Optex Systems Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OPXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OPY,"Oppenheimer Holdings, Inc. Class A Common Stock (DE)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OPY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OR,OR Royalties Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORA,"Ormat Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORC,"Orchid Island Capital, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORCL,Oracle Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORGO,Organogenesis Holdings Inc.  - Class A,Q,S,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:ORGO,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+ORI,Old Republic International Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ORI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORIC,"Oric Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORIQ,Origin Investment Corp I - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORIQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORKA,"Oruka Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORKA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORKT,Orangekloud Technology Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORKT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORLY,"O'Reilly Automotive, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORLY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORMP,Oramed Pharmaceuticals Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ORN,"Orion Group Holdings, Inc. Common",N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:ORN,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+ORRF,"Orrstown Financial Services, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ORRF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OSBC,"Old Second Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OSCR,"Oscar Health, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OSG,"Octave Specialty Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

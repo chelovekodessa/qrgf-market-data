@@ -256,7 +256,7 @@ ALIL,Argent Focused Small Cap ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allo
 ALIS,Calisa Acquisition Corp - Ordinary shares,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:ALIS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 ALISR,Calisa Acquisition Corp - Right,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:ALISR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 ALISU,Calisa Acquisition Corp - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:ALISU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
-ALL$B,Allstate Corporation (The) 5.100% Fixed-to-Floating Rate Subordinated Debentures due 2053,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:ALL$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+ALL$B,Allstate Corporation (The) 5.100% Fixed-to-Floating Rate Subordinated Debentures due 2053,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:ALL$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 ALL$H,"Allstate Corporation (The) Depositary Shares each representing a 1/1,000th interest in a share of Fixed Rate Noncumulative Perpetual Preferred Stock, Series H",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:ALL$H,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 ALL$I,"Allstate Corporation (The) Depositary Shares each representing a 1/1,000th interest in a share of Fixed Rate Noncumulative Perpetual Preferred Stock, Series I",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:ALL$I,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 ALL$J,"Allstate Corporation (The) Depositary Shares each representing a 1/1,000th interest in a share of Fixed Rate Noncumulative Perpetual Preferred Stock, Series J",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:ALL$J,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
@@ -637,7 +637,7 @@ BBLB,JPMorgan BetaBuilders U.S. Treasury Bond 20+ Year ETF,Z,,,etf,ineligible,Fa
 BBLGW,Bone Biologics Corp - warrants,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:BBLGW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 BBLU,EA Bridgeway Blue Chip ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBMC,JPMorgan BetaBuilders U.S. Mid Cap Equity ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-BBN,BlackRock Taxable Municipal Bond Trust Common Shares of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:BBN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+BBN,BlackRock Taxable Municipal Bond Trust Common Shares of Beneficial Interest,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:BBN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 BBP,Virtus Biotech ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBRE,JPMorgan BetaBuilders MSCI U.S. REIT ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBSB,JPMorgan BetaBuilders U.S. Treasury Bond 1-3 Year ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -645,7 +645,7 @@ BBSC,JPMorgan BetaBuilders U.S. Small Cap Equity ETF,Z,,,etf,ineligible,False,N,
 BBUL,GraniteShares 2x Long BB Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBUS,JPMorgan BetaBuilders U.S. Equity ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBYY,GraniteShares YieldBOOST BABA ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-BC$C,Brunswick Corporation 6.375% Notes due 2049,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:BC$C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+BC$C,Brunswick Corporation 6.375% Notes due 2049,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:BC$C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 BCAB,"BioAtla, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:BCAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 BCAR,D. Boral ARC Acquisition I Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:BCAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 BCARU,D. Boral ARC Acquisition I Corp. - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:BCARU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -778,10 +778,10 @@ BHFAM,"Brighthouse Financial, Inc. - Depositary shares each representing a 1/1,0
 BHFAN,"Brighthouse Financial, Inc. - depositary shares, each representing a 1/1,000th interest in a share of 5.375% Non-Cumulative Preferred Stock, Series C",Q,Q,N,preferred,ineligible,False,Y,N,,nasdaqtrader:Q:BHFAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred_depositary_security
 BHFAO,"Brighthouse Financial, Inc. - Depositary Shares, each representing a 1/1,000th interest in a share of 6.750% Non-Cumulative Preferred Stock, Series B",Q,Q,N,preferred,ineligible,False,Y,N,,nasdaqtrader:Q:BHFAO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred_depositary_security
 BHFAP,"Brighthouse Financial, Inc. - Depositary Shares 6.6% Non-Cumulative Preferred Stock, Series A",Q,Q,N,preferred,ineligible,False,Y,N,,nasdaqtrader:Q:BHFAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred_depositary_security
-BHK,Blackrock Core Bond Trust,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:BHK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+BHK,Blackrock Core Bond Trust,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:BHK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 BHR$B,"Braemar Hotels & Resorts Inc. 5.50% Series B Cumulative Convertible Preferred Stock, par value $0.01 per share",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:BHR$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 BHR$D,"Braemar Hotels & Resorts Inc. 8.25% Series D Cumulative Preferred Stock,  par value $0.01 per share",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:BHR$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-BHV,BlackRock Virginia Municipal Bond Trust,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:BHV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+BHV,BlackRock Virginia Municipal Bond Trust,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:BHV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 BHYB,Xtrackers USD High Yield BB-B ex Financials ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BHYP,Common Shares of Beneficial Interest of Bitwise Hyperliquid ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BIAF,"bioAffinity Technologies, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:BIAF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
@@ -1324,6 +1324,8 @@ CHW,Calamos Global Dynamic Income Fund - Closed End Fund,Q,Q,N,fund,ineligible,F
 CHY,Calamos Convertible and High Income Fund - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:CHY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 CHYG,Corgi 0-5 Year High Yield Corporate Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CIB,Grupo Cibest S.A. American Depositary Shares each representing four Preferred Shares,N,,,preferred,ineligible,False,Y,N,,nasdaqtrader:N:CIB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred_depositary_security
+CICB,CION Investment Corporation 7.50% Notes due 2029,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:CICB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+CICC,CION Investment Corporation 7.50% Notes due 2031,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:CICC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 CIEG,Leverage Shares 2X Long CIEN Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CIEI,Corgi 3-7 Year Treasury Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CIEX,Tradr 2X Long CIEN Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -1398,7 +1400,7 @@ CNCKW,Coincheck Group N.V. - Warrants,Q,S,N,warrant,ineligible,False,N,N,,nasdaq
 CNEQ,Alger Concentrated Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CNET,ZW Data Action Technologies Inc. - Common Stock,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:CNET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 CNEY,CN Energy Group Inc. - Class A Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:CNEY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
-CNO$A,"CNO Financial Group, Inc. 5.125% Subordinated Debentures due 2060",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:CNO$A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+CNO$A,"CNO Financial Group, Inc. 5.125% Subordinated Debentures due 2060",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:CNO$A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 CNOBP,"ConnectOne Bancorp, Inc. - Depositary Shares (each representing a 1/40th interest in a share of 5.25% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock, Series A, par value $0.00 per share)",Q,Q,N,preferred,ineligible,False,Y,N,,nasdaqtrader:Q:CNOBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred_depositary_security
 CNQQ,Rayliant-ChinaAMC Transformative China Tech ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CNRG,State Street SPDR S&P Kensho Clean Power ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -1859,7 +1861,7 @@ DMAAU,Drugs Made In America Acquisition Corp. - Units,Q,G,N,spac,ineligible,Fals
 DMAR,FT Vest U.S. Equity Deep Buffer ETF - March,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DMAX,iShares Large Cap Max Buffer Dec ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DMAY,FT Vest U.S. Equity Deep Buffer ETF - May,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-DMB,"BNY Mellon Municipal Bond Infrastructure Fund, Inc. Common Stock",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:DMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+DMB,"BNY Mellon Municipal Bond Infrastructure Fund, Inc. Common Stock",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:DMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 DMBS,DoubleLine Mortgage ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DMII,Drugs Made In America Acquisition II Corp. - Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:DMII,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 DMIIR,Drugs Made In America Acquisition II Corp. - Right,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:DMIIR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -1916,7 +1918,7 @@ DSCO,DoubleLine Securitized Credit ETF,P,,,etf,ineligible,False,N,Y,,,approved_a
 DSEP,FT Vest U.S. Equity Deep Buffer ETF - September,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DSI,iShares ESG MSCI KLD 400 ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DSL,DoubleLine Income Solutions Fund Common Shares of Beneficial Interests,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:DSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
-DSM,"BNY Mellon Strategic Municipal Bond Fund, Inc. Common Stock",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:DSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+DSM,"BNY Mellon Strategic Municipal Bond Fund, Inc. Common Stock",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:DSM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 DSMC,Distillate Small/Mid Cash Flow ETF,N,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DSPY,Tema S&P 500 Historical Weight ETF Strategy,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DSTL,Distillate U.S. Fundamental Stability & Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2030,6 +2032,8 @@ EBUF,Innovator Emerging Markets 10 Buffer ETF - Quarterly,P,,,etf,ineligible,Fal
 ECAT,BlackRock ESG Capital Allocation Term Trust Common Shares of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:ECAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 ECC$D,Eagle Point Credit Company 6.75% Series D Preferred Stock,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:ECC$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 ECCC,Eagle Point Credit Company 6.50% Series C Term Preferred Stock due 2031,N,,,preferred,ineligible,False,N,N,,nasdaqtrader:N:ECCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
+ECCU,Eagle Point Credit Company 7.75% Notes due 2030,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:ECCU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+ECCV,Eagle Point Credit Company 5.375% Notes due 2029,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:ECCV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 ECF,Ellsworth Growth and Income Fund Ltd.,A,,,fund,ineligible,False,N,N,,nasdaqtrader:A:ECF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 ECF$A,Ellsworth Growth and Income Fund Ltd. 5.25% Series A Cumulative Preferred Shares (Liquidation Preference $25.00 per share),A,,,fund,ineligible,False,N,N,,nasdaqtrader:A:ECF$A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 ECH,iShares MSCI Chile ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2107,7 +2111,7 @@ EHY,Amplify Ethereum Max Income Covered Call ETF,Z,,,etf,ineligible,False,N,Y,,,
 EICA,Eagle Point Income Company Inc. 5.00% Series A Term Preferred Stock due 2026,N,,,preferred,ineligible,False,N,N,,nasdaqtrader:N:EICA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 EIDO,iShares MSCI Indonesia ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 EIIA,Eagle Point Institutional Income Fund 8.125% Series A Term Preferred Shares Due 2029,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:EIIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
-EIM,"Eaton Vance Municipal Bond Fund Common Shares of Beneficial Interest, $.01 par value",A,,,fund,ineligible,False,N,N,,nasdaqtrader:A:EIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+EIM,"Eaton Vance Municipal Bond Fund Common Shares of Beneficial Interest, $.01 par value",A,,,debt,ineligible,False,N,N,,nasdaqtrader:A:EIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 EINC,VanEck Energy Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 EIPI,FT Energy Income Partners Enhanced Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 EIPX,FT Energy Income Partners Strategy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2123,6 +2127,7 @@ ELCV,Strategy Shares Eventide High Dividend ETF,P,,,etf,ineligible,False,N,Y,,,a
 ELD,WisdomTree Emerging Markets Local Debt Fund,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ELFY,ALPS Electrification Infrastructure ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ELIL,Direxion Daily LLY Bull 2X ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+ELLA,Ellington Credit Company 8.50% Notes due 2031,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:ELLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 ELM,Elm Market Navigator ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ELOL,Leverage Shares 100% TSLA AND 100% SPCX Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ELUT,"Elutia, Inc. - Class A Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:ELUT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
@@ -2366,9 +2371,9 @@ EZMO,AlphaDroid Broad Markets Momentum ETF,Q,G,N,etf,ineligible,False,N,Y,,,appr
 EZPZ,Franklin Crypto Index ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 EZRO,AlphaDroid Defensive Sector Rotation ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 EZU,iShares MSCI Eurozone ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-F$B,"Ford Motor Company 6.20% Notes due June 1, 2059",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:F$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-F$C,"Ford Motor Company 6% Notes due December 1, 2059",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:F$C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-F$D,"Ford Motor Company 6.500% Notes due August 15, 2062",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:F$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+F$B,"Ford Motor Company 6.20% Notes due June 1, 2059",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:F$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+F$C,"Ford Motor Company 6% Notes due December 1, 2059",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:F$C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+F$D,"Ford Motor Company 6.500% Notes due August 15, 2062",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:F$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 FAAA,Fidelity AAA CLO ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FAAR,First Trust Alternative Absolute Return Strategy ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FAB,First Trust Multi Cap Value AlphaDEX Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2605,7 +2610,7 @@ FLDZ,TrueShares Patriot Defense ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allo
 FLEE,Franklin FTSE Europe ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FLEU,Franklin FTSE Eurozone ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FLG$A,"Flagstar Bank, N.A. Depositary shares, each representing a 1/40th interest in a share of Fixed-to-Floating Rate Series A Noncumulative Perpetual Preferred Stock",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:FLG$A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-FLG$U,"Flagstar Bank, N.A. Bifurcated Option Note Unit SecuritiES",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:FLG$U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+FLG$U,"Flagstar Bank, N.A. Bifurcated Option Note Unit SecuritiES",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:FLG$U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 FLGB,Franklin FTSE United Kingdom ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FLGR,Franklin FTSE Germany ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FLGV,Franklin U.S. Treasury Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2856,6 +2861,9 @@ GAB$K,"Gabelli Equity Trust, Inc. (The) 5.00% Series K Cumulative Preferred Stoc
 GABF,Gabelli ETFs Trust Gabelli Financial Services Opportunities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GAEM,Simplify Gamma Emerging Market Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GAIN,Gladstone Investment Corporation - Business Development Company,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:GAIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+GAING,Gladstone Investment Corporation - 7.125% Notes due 2031,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:GAING,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+GAINI,Gladstone Investment Corporation - 7.875% Notes due 2030,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:GAINI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+GAINZ,Gladstone Investment Corporation - 4.875% Notes due 2028,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:GAINZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 GAIQ,Guinness Atkinson Global Innovators Fund: ETF Class Shares,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GAL,State Street Global Allocation ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GALX,VistaShares Space Supercycle ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2914,6 +2922,10 @@ GDXU,MicroSectors Gold Miners 3X Leveraged ETN,P,,,etf,ineligible,False,N,Y,,,ap
 GDXW,Roundhill Gold Miners WeeklyPay ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GDXY,YieldMax Gold Miners Option Income Strategy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GECC,Great Elm Capital Corp. - Closed End Fund,Q,G,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:GECC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+GECCG,Great Elm Capital Corp. - 7.75% Notes Due 2030,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:GECCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+GECCH,Great Elm Capital Corp. - 8.125% Notes Due 2029,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:GECCH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+GECCI,Great Elm Capital Corp. - 8.50% NOTES DUE 2029,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:GECCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+GEGGL,"Great Elm Group, Inc.  - 7.25% Notes due 2027",Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:GEGGL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 GEL,"Genesis Energy, L.P. Common Units",N,,,unit,ineligible,False,N,N,,nasdaqtrader:N:GEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unit
 GELS,Gelteq Limited - Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:GELS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 GEM,Goldman Sachs ActiveBeta Emerging Markets Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2985,7 +2997,7 @@ GJUL,FT Vest U.S. Equity Moderate Buffer ETF - July,Z,,,etf,ineligible,False,N,Y
 GJUN,FT Vest U.S. Equity Moderate Buffer ETF - June,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GK,AdvisorShares Gerber Kawasaki ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GKAT,Scharf Global Opportunity ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-GL$D,Globe Life Inc. 4.25% Junior Subordinated Debentures due 2061,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:GL$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+GL$D,Globe Life Inc. 4.25% Junior Subordinated Debentures due 2061,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:GL$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 GLAD,Gladstone Capital Corporation - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:GLAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 GLAM,"Corgi Beauty, Skincare & Aesthetics ETF",Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GLBL,Pacer MSCI World Industry Advantage ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -3099,7 +3111,7 @@ GQRE,FlexShares Global Quality Real Estate Index Fund,P,,,etf,ineligible,False,N
 GRABW,Grab Holdings Limited - Warrant,Q,Q,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:GRABW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 GRAG,Leverage Shares 2X Long GRAB Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GRBK$A,"Green Brick Partners, Inc. Depositary Shares (each representing a 1/1000th fractional interest in a share of 5.75% Series A Cumulative Perpetual Preferred Stock)",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:GRBK$A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-GREEL,Vulcan Infrastructure and Power Inc. - 8.50% Senior Notes due 2026,Q,Q,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:GREEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
+GREEL,Vulcan Infrastructure and Power Inc. - 8.50% Senior Notes due 2026,Q,Q,D,debt,ineligible,False,N,N,,nasdaqtrader:Q:GREEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 GREK,Global X MSCI Greece ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 GRF,"Eagle Capital Growth Fund, Inc. Common Stock",A,,,fund,ineligible,False,N,N,,nasdaqtrader:A:GRF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 GRID,First Trust NASDAQ Clean Edge Smart Grid Infrastructure Index Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -3247,6 +3259,7 @@ HCMAW,HCM III Acquisition Corp. - Warrants,Q,G,N,spac,ineligible,False,N,N,,nasd
 HCMT,Direxion HCM Tactical Enhanced US ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HCOW,Amplify COWS Covered Call ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HCRB,Hartford Core Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+HCXY,"Hercules Capital, Inc. 6.25% Notes due 2033",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:HCXY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 HDEF,Xtrackers MSCI EAFE High Dividend Yield Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HDG,ProShares Hedge Replication ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HDGE,Ranger Equity Bear Bear ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -3357,6 +3370,7 @@ HTAB,Hartford Schroders Tax-Aware Bond ETF,P,,,etf,ineligible,False,N,Y,,,approv
 HTAX,Nomura National High-Yield Municipal Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HTD,John Hancock Tax Advantaged Dividend Income Fund Common Shares of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:HTD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 HTEC,ROBO Global Healthcare Technology and Innovation ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+HTFC,Horizon Technology Finance Corporation 6.25% Notes due 2027,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:HTFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 HTRB,Hartford Total Return Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HTUS,Hull Tactical US ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HTZWW,"Hertz Global Holdings, Inc - Warrant",Q,Q,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:HTZWW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
@@ -3746,7 +3760,7 @@ ISCB,iShares Morningstar Small-Cap ETF,P,,,etf,ineligible,False,N,Y,,,approved_a
 ISCF,iShares International Small-Cap Equity Factor ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ISCG,iShares Morningstar Small-Cap Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ISCV,iShares Morningstar Small-Cap Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-ISD,"PGIM High Yield Bond Fund, Inc.",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:ISD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+ISD,"PGIM High Yield Bond Fund, Inc.",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:ISD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 ISEP,Innovator International Developed Power Buffer ETF  September,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ISHG,iShares 1-3 Year International Treasury Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ISHP,First Trust S-Network E-Commerce ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4474,7 +4488,7 @@ MEME,Roundhill Meme Stock ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_
 MEMS,Matthews Emerging Markets Discovery Active ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MEMX,Matthews Emerging Markets ex China Active ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MEMY,Tuttle Capital Meme Stock Income Blast ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-MER$K,"Bank of America Corporation Income Capital Obligation Notes initially due December 15, 2066",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:MER$K,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+MER$K,"Bank of America Corporation Income Capital Obligation Notes initially due December 15, 2066",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:MER$K,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 MERC,Mercer International Inc. - Common Stock,Q,Q,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:MERC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 MESH,Meshflow Acquisition Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MESH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 MESHU,Meshflow Acquisition Corp. - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MESHU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -4502,6 +4516,7 @@ MFDX,PIMCO RAFI Dynamic Multi-Factor International Equity ETF,P,,,etf,ineligible
 MFEB,Pacer Swan SOS Moderate (February) ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MFEM,PIMCO RAFI Dynamic Multi-Factor Emerging Markets Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MFIC,MidCap Financial Investment Corporation - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:MFIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+MFICL,MidCap Financial Investment Corporation - 8.00% Notes due 2028,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:MFICL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 MFIG,Motley Fool Innovative Growth ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MFLX,First Trust Flexible Municipal High Income ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MFM,Aberdeen Municipal Income Fund Common Shares of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:MFM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
@@ -4533,6 +4548,8 @@ MHD,"Blackrock MuniHoldings Fund, Inc. Common Stock",N,,,fund,ineligible,False,N
 MHF,"Western Asset Municipal High Income Fund, Inc. Common Stock",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:MHF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 MHIG,Milliman Healthcare Inflation Guard ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MHIP,Milliman Healthcare Inflation Plus ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+MHLA,"Maiden Holdings, Ltd. 6.625% Notes due 2046",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:MHLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+MHNC,"Maiden Holdings North America, Ltd. 7.75% Notes due 2043",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:MHNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 MHX,Corgi MARA 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MHY,Man Active High Yield ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MIACU,Meridian3 Industrials Acquisition Corp - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MIACU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -4572,6 +4589,7 @@ MKTN,Federated Hermes MDT Market Neutral ETF,P,,,etf,ineligible,False,N,Y,,,appr
 MLAA,Mountain Lake Acquisition Corp. II - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MLAA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 MLAAU,Mountain Lake Acquisition Corp. II - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MLAAU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 MLAAW,Mountain Lake Acquisition Corp. II - Warrants,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MLAAW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
+MLCIL,Mount Logan Capital Inc. - 8.00% Notes Due 2031,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:MLCIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 MLDR,Global X Intermediate-Term Treasury Ladder ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MLECW,Moolec Science SA - Warrant,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:MLECW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 MLN,VanEck Long Muni ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4857,12 +4875,12 @@ NE.W,Noble Corporation plc Tranche 1 Warrants,N,,,non_common_instrument,ineligib
 NEA,Nuveen AMT-Free Quality Municipal Income Fund Common Shares of Beneficial Interest Par Value $.01,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:NEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 NEAR,iShares Short Duration Bond Active ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NEBX,Tradr 2X Long NBIS Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-NEE$N,"NextEra Energy Capital Holdings Inc. Series N Junior Subordinated Debentures due March 1, 2079",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:NEE$N,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+NEE$N,"NextEra Energy Capital Holdings Inc. Series N Junior Subordinated Debentures due March 1, 2079",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:NEE$N,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 NEE$S,"NextEra Energy, Inc. 7.299% Corporate Units",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:NEE$S,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 NEE$T,"NextEra Energy, Inc. 7.234% Corporate Units",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:NEE$T,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-NEE$U,"NextEra Energy, Inc. Series U Junior Subordinated Debentures due June 1, 2085",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:NEE$U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+NEE$U,"NextEra Energy, Inc. Series U Junior Subordinated Debentures due June 1, 2085",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:NEE$U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 NEE$V,"NextEra Energy, Inc. 7.375% Corporate Units",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:NEE$V,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-NEE$W,"NextEra Energy Capital Holdings Inc. Series Z Junior Subordinated Debentures due April 15, 2086",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:NEE$W,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+NEE$W,"NextEra Energy Capital Holdings Inc. Series Z Junior Subordinated Debentures due April 15, 2086",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:NEE$W,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 NEHI,NEOS Ethereum High Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NELS,Nelson Select ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NEMD,Neuberger Emerging Markets Debt Hard Currency ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4934,6 +4952,7 @@ NMAY,Innovator Growth-100 Power Buffer ETF - May,Z,,,etf,ineligible,False,N,Y,,,
 NMB,Simplify National Muni Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NMBL,NovaTide Flexible Allocation ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NMCO,Nuveen Municipal Credit Opportunities Fund Common Shares,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:NMCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+NMFCZ,New Mountain Finance Corporation - 8.250% Notes due 2028,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:NMFCZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 NMI,"Nuveen Municipal Income Fund, Inc. Common Stock",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:NMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 NML,Neuberger Energy Infrastructure and Income Fund Inc. Common Stock,A,,,fund,ineligible,False,N,N,,nasdaqtrader:A:NML,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 NMP,NMP Acquisition Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:NMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -4985,6 +5004,7 @@ NSI,National Security Emerging Markets Index ETF,Q,G,N,etf,ineligible,False,N,Y,
 NSIG,North Square Growth Opportunities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NSIV,North Square Disciplined Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NSLR,Neostellar Capital Corp. - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:NSLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+NSLRL,Neostellar Capital Corp. - 6.00% Notes due 2026,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:NSLRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 NSPR,InspireMD Inc. - Common Stock,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:NSPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 NTAL,GraniteShares 2x Long NTAP Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NTEST,NYSE Tick Pilot Test Sym-Control,N,,,unknown,ineligible,False,N,N,,nasdaqtrader:N:NTEST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,test_issue
@@ -5101,7 +5121,7 @@ OALC,OneAscent Large Cap Core ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowl
 OARK,YieldMax Innovation Option Income Strategy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 OASC,OneAscent Enhanced Small and Mid Cap ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 OBA,Oxley Bridge Acquisition Limited - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:OBA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
-OBAI,"Our Bond, Inc. - Common Stock",Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:OBAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
+OBAI,"Our Bond, Inc. - Common Stock",Q,G,D,debt,ineligible,False,N,N,,nasdaqtrader:Q:OBAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 OBAWU,Oxley Bridge Acquisition Limited - Unit,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:OBAWU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 OBAWW,Oxley Bridge Acquisition Limited - Warrants,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:OBAWW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 OBIL,US Treasury 12 Month Bill ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -5139,6 +5159,8 @@ OEFA,ALPS O'Shares International Developed Quality Dividend ETF,P,,,etf,ineligib
 OEI,Optimized Equity Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 OFAL,OFA Group - Class A Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:OFAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 OFS,OFS Capital Corporation - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:OFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+OFSSH,OFS Capital Corporation - 4.95% Notes due 2028,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OFSSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+OFSSO,OFS Capital Corporation - 7.50% Notes due 2028,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OFSSO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 OGCP,"Empire State Realty OP, L.P. Series 60 Operating Partnership Units Representing Limited Partnership Interests",P,,,limited_partnership,ineligible,False,N,N,,nasdaqtrader:P:OGCP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,limited_partnership_not_common_equity
 OGGWZ,Osisko Gold Group Inc. - Warrant,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:OGGWZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 OGIG,ALPS O'Shares Global Internet Giants ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -5249,10 +5271,16 @@ OWNB,Bitwise Bitcoin Standard Corporations ETF,P,,,etf,ineligible,False,N,Y,,,ap
 OWNS,Quaker Investment Trust CCM Affordable Housing MBS ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 OXBRW,Oxbridge Re Holdings Limited - Warrant,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:OXBRW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 OXLC,Oxford Lane Capital Corp. - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:OXLC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+OXLCG,Oxford Lane Capital Corp. - 7.95% Notes due 2032,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OXLCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+OXLCI,Oxford Lane Capital Corp. - 8.75% Notes due 2030,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OXLCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+OXLCL,Oxford Lane Capital Corp. - 6.75% Notes due 2031,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OXLCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 OXLCM,"Oxford Lane Capital Corp. - Preferred Stock Shares, 8.25% Series 2031",Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:OXLCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 OXLCN,Oxford Lane Capital Corp. - 7.125% Series 2029 Term Preferred Stock,Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:OXLCN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 OXLCO,"Oxford Lane Capital Corp. - Preferred Stock Shares, 6.00% Series 2029",Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:OXLCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
+OXLCZ,Oxford Lane Capital Corp. - 5.00% Notes due 2027,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OXLCZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 OXSQ,Oxford Square Capital Corp. - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:OXSQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+OXSQG,Oxford Square Capital Corp. - 5.50% Notes due 2028,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OXSQG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+OXSQH,Oxford Square Capital Corp. - 7.75% Notes due 2030,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:OXSQH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 OXY.W,Occidental Petroleum Corporation Warrants,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:OXY.W,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 OYSE,Oyster Enterprises II Acquisition Corp - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:OYSE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 OYSER,Oyster Enterprises II Acquisition Corp - Rights,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:OYSER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -5305,7 +5333,7 @@ PBE,Invesco Biotechnology & Genome ETF,P,,,etf,ineligible,False,N,Y,,,approved_a
 PBEU,Portfolio Building Block European Banks Index ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PBFB,PGIM S&P 500 Buffer 20 ETF - February,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PBFR,PGIM Laddered S&P 500 Buffer 20 ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-PBI$B,Pitney Bowes Inc 6.70% Notes Due 2043,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:PBI$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+PBI$B,Pitney Bowes Inc 6.70% Notes Due 2043,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:PBI$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 PBJ,Invesco Food & Beverage ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PBJA,PGIM S&P 500 Buffer 20 ETF - January,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PBJL,PGIM S&P 500 Buffer 20 ETF - July,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -5414,6 +5442,7 @@ PFI,Invesco Dorsey Wright Financial Momentum ETF,Q,G,N,etf,ineligible,False,N,Y,
 PFIG,Invesco Fundamental Investment Grade Corporate Bond  ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PFIX,Simplify Interest Rate Hedge ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PFL,PIMCO Income Strategy Fund Shares of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:PFL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+PFLA,PennantPark Floating Rate Capital Ltd. 7.375% Notes Due 2031,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:PFLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 PFLD,AAM Low Duration Preferred and Income Securities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PFM,Invesco Dividend Achievers ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PFN,PIMCO Income Strategy Fund II,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:PFN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
@@ -5422,6 +5451,7 @@ PFOE,Pathfinder Focused Opportunities ETF,Q,G,N,etf,ineligible,False,N,Y,,,appro
 PFRL,PGIM Floating Rate Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PFSA,"Profusa, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:PFSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 PFXF,VanEck Preferred Securities ex Financials ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+PFXNZ,PhenixFIN Corporation  - 5.25% Notes due 2028,Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:PFXNZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 PGAC,Pantages Capital Acquisition Corporation - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:PGAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 PGACR,Pantages Capital Acquisition Corporation - Right,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:PGACR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 PGACU,Pantages Capital Acquisition Corporation - Unit,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:PGACU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -5572,6 +5602,7 @@ PRF,Invesco RAFI US 1000 ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_i
 PRFD,PIMCO Preferred and Capital Securities Active Exchange-Traded Fund,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PRFZ,Invesco RAFI US 1500 Small-Mid ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PRH,"Prudential Financial, Inc. 5.950% Junior Subordinated Notes due 2062",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:PRH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+PRHIZ,"Presurance Holdings, Inc. - 9.75% Senior Unsecured Notes due 2028",Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:PRHIZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 PRIF$D,"Priority Income Fund, Inc. 7.00% Series D Term Preferred Stock due 2029",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:PRIF$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 PRIF$K,"Priority Income Fund, Inc. 7.000% Series K Cumulative Preferred Stock",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:PRIF$K,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 PRIF$L,"Priority Income Fund, Inc. 6.375% Series L Term Preferred Stock Due 2029",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:PRIF$L,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
@@ -6144,6 +6175,8 @@ RVNL,GraniteShares 2x Long RIVN Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,appro
 RVNU,Xtrackers Municipal Infrastructure Revenue Bond Active ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 RVSNW,Rail Vision Ltd. - Warrant,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:RVSNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 RW,Rainwater Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+RWAYI,Runway Growth Finance Corp. - 7.25% Notes due 2031,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:RWAYI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+RWAYL,Runway Growth Finance Corp. - 7.50% Notes due 2027,Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:RWAYL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 RWEM,Rayliant Wilshire NxtGen Emerging Markets Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 RWIN,Rayliant NxtGen Multifactor International Equity ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 RWJ,Invesco S&P SmallCap 600 Revenue ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6185,18 +6218,23 @@ SAGU.R,"Shreya Acquisition Group Rights, each entitling the holder to receive on
 SAGU.U,"Shreya Acquisition Group Units, each consisting of one Class A Ordinary Share, one redeemable warrant and one right entitling the holder to one-fourth of one Class A Ordinary Share",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:SAGU.U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 SAGU.W,"Shreya Acquisition Group Redeemable warrants, entitling the holder to purchase one Class A Ordinary Share at $11.50 per share",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:SAGU.W,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 SAIHW,SAIHEAT Limited - Warrant,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:SAIHW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
+SAJ,Saratoga Investment Corp 8.00% Notes due 2027,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:SAJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 SAMM,Strategas Macro Momentum ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SAMO.U,"Samos Energy Acquisition Corporation Units, each consisting of one Class A Ordinary Share and one-half of one Warrant",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:SAMO.U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 SAMT,Strategas Macro Thematic Opportunities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SAPH,SAP SE ADRhedged,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SARK,Tradr 1X Short Innovation Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SASS,M.D. Sass Concentrated Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+SAT,Saratoga Investment Corp 6.00% Notes due 2027,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:SAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 SATA,"Strive, Inc. - Variable Rate Series A Perpetual Preferred Stock",Q,G,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:SATA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 SATLW,Satellogic Inc. - Warrant,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:SATLW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 SATO,Invesco Alerian Galaxy Crypto Economy ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SAUG,FT Vest U.S. Small Cap Moderate Buffer ETF - August,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+SAV,Saratoga Investment Corp 7.50% Notes due 2031,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:SAV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 SAWG,AAM Sawgrass US Large Cap Quality Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SAWS,AAM Sawgrass US Small Cap Quality Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+SAY,Saratoga Investment Corp 8.125% Notes due 2027,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:SAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+SAZ,Saratoga Investment Corp 8.50% Notes due 2028,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:SAZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 SB$C,"Safe Bulkers, Inc Cumulative Redeemable Perpetual Preferred Series C (Marshall Islands)",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:SB$C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 SB$D,"Safe Bulkers, Inc Perpetual Preferred Series D (Marshall Islands)",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:SB$D,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 SBAR,Simplify Barrier Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6220,6 +6258,10 @@ SCAGW,Scage Future - Warrants,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q
 SCAP,Infrastructure Capital Small Cap Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SCAU,Corgi U.S. Small-Cap 15% Structured Buffer ETF - August Series,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SCC,ProShares UltraShort Consumer Discretionary,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+SCCD,Sachem Capital Corp. 6.00% Notes due 2026,A,,,debt,ineligible,False,N,N,,nasdaqtrader:A:SCCD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+SCCE,Sachem Capital Corp. 6.00% Notes due 2027,A,,,debt,ineligible,False,N,N,,nasdaqtrader:A:SCCE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+SCCF,Sachem Capital Corp. 7.125% Notes due 2027,A,,,debt,ineligible,False,N,N,,nasdaqtrader:A:SCCF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+SCCG,Sachem Capital Corp. 8.00% Notes due 2027,A,,,debt,ineligible,False,N,N,,nasdaqtrader:A:SCCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 SCCR,Schwab Core Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SCD,LMP Capital and Income Fund Inc. Common Stock,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:SCD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 SCDL,ETRACS 2x Leveraged US Dividend Factor TR ETN,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6813,6 +6855,7 @@ TAXM,BondBloxx IR+M Tax-Aware ETF for Massachusetts Residents,P,,,etf,ineligible
 TAXS,Northern Trust Short-Term Tax-Exempt Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TAXT,Northern Trust Tax-Exempt Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TAXX,BondBloxx IR+M Tax-Aware Short Duration ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+TBB,AT&T Inc. 5.350% Global Notes due 2066,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:TBB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 TBCVU,"Thunder Bridge Capital Partners V, Ltd. - Units",Q,G,N,unit,ineligible,False,N,N,,nasdaqtrader:Q:TBCVU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unit
 TBF,ProShares Short 20+ Year Treasury,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TBFC,The Brinsmere Fund  Conservative ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7048,6 +7091,7 @@ TPOR,Direxion Daily Transportation Bull 3X ETF,P,,,etf,ineligible,False,N,Y,,,ap
 TPRY,VistaShares Target 15 TEPRTantrum Contrarian Distribution ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TPSC,Timothy Plan US Small Cap Core ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TPST,"Tempest Therapeutics, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:TPST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
+TPTS,"Terra Property Trust, Inc. 7.00% Senior Secured Notes due 2029",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:TPTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 TPUT,T. Rowe Price Capital Appreciation Market Opportunities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TPVG,TriplePoint Venture Growth BDC Corp. Common Stock,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:TPVG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 TPYP,Tortoise North American Pipeline ETF,N,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7065,6 +7109,8 @@ TRGSU,TRG Latin America Acquisitions Corp. - Units,Q,G,N,unit,ineligible,False,N
 TRIB,Trinity Biotech plc - American Depositary Shares,Q,Q,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:TRIB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 TRIO,MC Trio Equity Buffered ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TRND,Pacer Trendpilot Fund of Funds ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+TRNI,Trinity Capital Inc. 7.875% Notes Due 2029,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:TRNI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+TRNZ,Trinity Capital Inc. 7.875% Notes due 2029,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:TRNZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 TROT,Invesco MSCI Treasury Duration Rotation ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TRPA,Hartford AAA CLO ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TRSY,Xtrackers US 0-1 Year Treasury ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7384,7 +7430,7 @@ VBCG,Vanguard Target Maturity 2033 Corporate Bond ETF,Q,G,N,etf,ineligible,False
 VBCH,Vanguard Target Maturity 2034 Corporate Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VBCI,Vanguard Target Maturity 2035 Corporate Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VBCJ,Vanguard Target Maturity 2036 Corporate Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-VBF,Invesco Bond Fund Common Stock,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:VBF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+VBF,Invesco Bond Fund Common Stock,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:VBF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 VBIL,Vanguard 0-3 Month Treasury Bill ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VBIO,"Valion Bio, Inc. - Common stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:VBIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 VBK,Vanguard Morningstar Small-Cap Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7592,7 +7638,7 @@ WDIV,State Street SPDR S&P Global Dividend ETF,P,,,etf,ineligible,False,N,Y,,,ap
 WDNA,WisdomTree BioRevolution Fund,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WDRN,"WisdomTree Physical AI, Humanoids and Drones Fund",Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WDTE,Defiance S&P 500 Weekly Distribution ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-WEA,Western Asset Bond Fund Share of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:WEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+WEA,Western Asset Bond Fund Share of Beneficial Interest,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:WEA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 WEAT,Teucrium Wheat Fund ETV,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WEBL,Direxion Daily Dow Jones Internet Bull 3X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WEBS,Direxion Daily Dow Jones Internet Bear 3X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7616,6 +7662,7 @@ WFC$Y,"Wells Fargo & Company Depositary Shares, each representing a 1/1,000th in
 WFC$Z,"Wells Fargo & Company Depositary Shares, each representing a 1/1,000th interest in a share of Non-Cumulative Perpetual Class A Preferred Stock, Series Z",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:WFC$Z,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 WGMI,CoinShares Bitcoin Mining ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WHF,"WhiteHorse Finance, Inc. - Closed End Fund",Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:WHF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+WHFCL,"WhiteHorse Finance, Inc. - 7.875% Notes due 2028",Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:WHFCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 WHLRD,"Wheeler Real Estate Investment Trust, Inc. - Series D Cumulative Preferred Stock",Q,S,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:WHLRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 WHLRL,"Wheeler Real Estate Investment Trust, Inc. - 7.00% Senior Subordinated Convertible Notes Due 2031",Q,S,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:WHLRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 WHLRP,"Wheeler Real Estate Investment Trust, Inc. - Series B Preferred Stock",Q,S,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:WHLRP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
@@ -7646,10 +7693,10 @@ WPAC.R,"White Pearl Acquisition Corp. Rights, each right entitles the holder to 
 WPAC.U,"White Pearl Acquisition Corp. Units, each consisting of one Class A ordinary share and one right to receive one-fifth (1/5) of one Class A ordinary share",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:WPAC.U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 WQTM,WisdomTree Quantum Computing Fund,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WR,Corgi U.S. War Machine ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-WRB$E,W.R. Berkley Corporation 5.70% Subordinated Debentures due 2058,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:WRB$E,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-WRB$F,W.R. Berkley Corporation 5.10% Subordinated Debentures due 2059,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:WRB$F,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-WRB$G,W.R. Berkley Corporation 4.25% Subordinated Debentures due 2060,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:WRB$G,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-WRB$H,W.R. Berkley Corporation 4.125% Subordinated Debentures due 2061,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:WRB$H,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
+WRB$E,W.R. Berkley Corporation 5.70% Subordinated Debentures due 2058,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:WRB$E,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+WRB$F,W.R. Berkley Corporation 5.10% Subordinated Debentures due 2059,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:WRB$F,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+WRB$G,W.R. Berkley Corporation 4.25% Subordinated Debentures due 2060,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:WRB$G,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+WRB$H,W.R. Berkley Corporation 4.125% Subordinated Debentures due 2061,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:WRB$H,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 WRND,NYLI Global Equity R&D Leaders ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WRTH,Worth Charting Options Income ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WSBCO,"WesBanco, Inc. - Depositary Shares each representing 1/40th interest in a share of 7.375% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock, Series B",Q,Q,N,preferred,ineligible,False,Y,N,,nasdaqtrader:Q:WSBCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred_depositary_security
