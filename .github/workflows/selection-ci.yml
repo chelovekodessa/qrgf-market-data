@@ -49,6 +49,9 @@ jobs:
                       '            continue')
           new_gate = ('    for row in eligible:\n'
                       '        history = str(row.get("momentum_history_status") or "unknown")\n'
+                      '        # Objective insufficient history is already terminal for L1 research\n'
+                      '        # eligibility. Later missing price/liquidity fields cannot change that\n'
+                      '        # outcome and therefore must not deadlock the full-market coverage gate.\n'
                       '        if history == "insufficient":\n'
                       '            insufficient.append(row)\n'
                       '            continue\n'
@@ -66,6 +69,9 @@ jobs:
                        '        base.get("as_of"),\n'
                        '    )\n')
           new_merge = ('    base["quality_seed"] = bool(base.get("quality_seed")) or bool(item.get("quality_seed"))\n'
+                       '    # An explicit provider source gap must survive merge order and stronger-looking\n'
+                       '    # partial updates. Keep the marker private so it cannot leak into exported CSV,\n'
+                       '    # but use it when recomputing the canonical history status.\n'
                        '    base["_explicit_history_source_gap"] = bool(base.get("_explicit_history_source_gap")) or (\n'
                        '        str(item.get("momentum_history_status") or "").strip().lower() == "source_gap"\n'
                        '    )\n'
@@ -79,7 +85,7 @@ jobs:
                        '        base.get("as_of"),\n'
                        '    )\n')
           if old_history not in text or old_gate not in text or old_merge not in text:
-              raise SystemExit("pinned bulk_prefilter source no longer matches expected baseline")
+              raise SystemExit("pinned bulk_prefilter source no longer matches the expected v3 baseline")
           path.write_text(text.replace(old_history, new_history).replace(old_gate, new_gate).replace(old_merge, new_merge), encoding="utf-8")
           PY
           test "$(sha256sum screening/engine/bulk_prefilter.py | awk '{print $1}')" = "0fa5bc831a1745587530ddcc33dbd3eeee3fa1146760ce82392412e5c019abf3"
