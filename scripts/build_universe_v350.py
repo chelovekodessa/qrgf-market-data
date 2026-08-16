@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""QRGF 3.5 hardening wrapper for the L0 Nasdaq Trader classifier.
+"""QRGF L0 hardening and high-recall identity wrapper.
 
-The legacy classifier correctly rejects explicit closed-end/term/income funds,
-but some investment companies publish names ending in "Common Stock" or
-"Common Shares of Beneficial Interest" and can therefore look like operating
-common equity. This wrapper rejects generic non-ETF funds, known CEF-sponsor
-trust/beneficial-interest products, commodity/crypto trusts and explicit
-business-development companies before delegating every other rule to the
-pinned core builder.
+The pinned core classifier remains conservative about explicit non-common
+instruments. Rows that are neither accepted nor explicitly rejected, and would
+otherwise disappear as ``instrument_resolution_required``, stay rankable under
+a provisional internal identity. They MUST be resolved from an authoritative
+broker/exchange identity before L3 research. This prevents silent false-negative
+losses while preserving the fail-closed treatment of known warrants, preferreds,
+funds, debt, SPACs and other prohibited structures.
 """
 
 from __future__ import annotations
@@ -35,6 +35,8 @@ _NON_OPERATING_INVESTMENT = re.compile(
 )
 
 _ORIGINAL_CLASSIFY = core.classify_row
+_ORIGINAL_BUILD = core.build_universe
+_PROVISIONAL_PREFIX = "qrgf-resolution-required"
 
 
 def classify_row(row, include_etfs, approved_etfs=None):
@@ -49,7 +51,68 @@ def classify_row(row, include_etfs, approved_etfs=None):
     return _ORIGINAL_CLASSIFY(row, include_etfs, approved_etfs)
 
 
+def build_universe(listing_path, seed_membership, include_etfs, approved_etfs=None):
+    accepted, rejected, summary = _ORIGINAL_BUILD(
+        listing_path, seed_membership, include_etfs, approved_etfs
+    )
+    rescued = []
+    remaining_rejected = []
+    for row in rejected:
+        if str(row.get("rejection_reason") or "") != "instrument_resolution_required":
+            remaining_rejected.append(row)
+            continue
+        ticker = str(row.get("ticker") or "").strip().upper()
+        exchange = str(row.get("listing_exchange") or "US").strip() or "US"
+        if not ticker:
+            remaining_rejected.append(row)
+            continue
+        provisional = dict(row)
+        provisional.pop("rejection_reason", None)
+        provisional.update({
+            # Common-equity is a transport placeholder only. The exact L3
+            # security_type is resolved before research and may become ADR.
+            "security_type": "common_equity",
+            "instrument_status": "eligible",
+            "rankable": True,
+            "adr_flag": "N",
+            "contract_id": f"{_PROVISIONAL_PREFIX}:{exchange}:{ticker}",
+            "contract_id_status": "requires_authoritative_resolution_before_L3",
+            "identity_resolution_required": True,
+            "identity_resolution_reason": "instrument_resolution_required",
+        })
+        rescued.append(provisional)
+
+    combined = accepted + rescued
+    identities = [(str(row.get("ticker") or ""), str(row.get("contract_id") or "")) for row in combined]
+    if len(set(identities)) != len(identities):
+        raise ValueError("provisional identity rescue created a duplicate L0 identity")
+    combined.sort(key=lambda row: (str(row.get("security_type") or ""), str(row.get("ticker") or "")))
+
+    remaining_quarantine = [
+        row for row in remaining_rejected
+        if str(row.get("instrument_status") or "") == "resolution_required"
+    ]
+    summary = dict(summary)
+    summary.update({
+        "accepted_unique": len(combined),
+        "structurally_eligible": len(combined),
+        "rankable_l0": len(combined),
+        "rejected_rows": len(remaining_rejected) - len(remaining_quarantine),
+        "quarantined_rows": len(remaining_quarantine),
+        "ambiguous_review_count": len(rescued),
+        "identity_resolution_required_count": len(rescued),
+        "rankable_resolution_required_count": len(rescued),
+        "eligibility_resolution_complete": len(rescued) == 0 and len(remaining_quarantine) == 0,
+        "common_equity_count": sum(row.get("security_type") == "common_equity" for row in combined),
+        "adr_count": sum(row.get("adr_flag") == "Y" for row in combined),
+        "approved_etfs_accepted": sum(row.get("security_type") == "etf" for row in combined),
+        "complete": True,
+    })
+    return combined, remaining_rejected, summary
+
+
 core.classify_row = classify_row
+core.build_universe = build_universe
 
 
 if __name__ == "__main__":

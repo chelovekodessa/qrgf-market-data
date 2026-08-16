@@ -2,6 +2,9 @@ name: Update QRGF L1 snapshot
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Update QRGF L0 snapshot"]
+    types: [completed]
   schedule:
     - cron: "35 2 * * 2-6"
   push:
@@ -21,6 +24,7 @@ concurrency:
 
 jobs:
   update:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

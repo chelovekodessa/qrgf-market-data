@@ -9,6 +9,7 @@ ENGINE = ROOT / "screening" / "engine"
 if str(ENGINE) not in sys.path:
     sys.path.insert(0, str(ENGINE))
 
+import batch_l2
 import classify_l2
 import bulk_prefilter
 
@@ -46,6 +47,48 @@ def main() -> int:
     }
     bulk_prefilter._merge_item(base_row, followup)
     check(base_row["momentum_history_status"] == "unknown", "later update erased source_gap")
+
+    rules = {
+        "ruleset_version": "4.0.0",
+        "selection_setup": {
+            "model_version": "2.1.0",
+            "weights": {"prior_growth": 20, "pullback_geometry": 25, "liquidity": 15, "data_completeness": 10},
+            "require_all_components": True,
+        },
+    }
+    complete = batch_l2.apply_selection_contract({
+        "l2_status": "conditional",
+        "research_priority_score": 99.0,
+        "research_priority_coverage_pct": 70.0,
+        "research_components": {
+            "prior_growth": 80.0,
+            "pullback_geometry": 70.0,
+            "liquidity": 90.0,
+            "data_completeness": 88.0,
+            "quality_prior": None,
+            "room_to_target": None,
+        },
+    }, rules)
+    check(complete["l2_setup_score"] is not None and complete["l2_confidence_pct"] == 100.0, "fixed setup score failed")
+    check(complete["l2_quality_prior_score"] is None and complete["l2_room_to_target_score"] is None, "optional unknowns were invented")
+    check(complete["research_priority_score"] == complete["l2_setup_score"], "compatibility score does not use fixed setup")
+
+    incomplete = batch_l2.apply_selection_contract({
+        "l2_status": "conditional",
+        "research_priority_score": 99.0,
+        "research_priority_coverage_pct": 50.0,
+        "research_components": {
+            "prior_growth": 80.0,
+            "pullback_geometry": 70.0,
+            "liquidity": 90.0,
+            "data_completeness": None,
+            "quality_prior": None,
+            "room_to_target": None,
+        },
+    }, rules)
+    check(incomplete["l2_setup_score"] is None, "missing setup component was renormalized away")
+    check(incomplete["l2_status"] == "recheck" and "selection_setup_components" in incomplete["checks_missing"], "missing setup did not fail closed")
+
     print("producer contract regression tests: PASS")
     return 0
 

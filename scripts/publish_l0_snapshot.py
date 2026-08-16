@@ -117,10 +117,27 @@ def main() -> int:
         "line_count": bundle_bytes.count(b"\n"),
     }
 
+    # Publish the exact per-row exclusion ledger. Aggregate reason counts alone
+    # are insufficient to explain why a specific security disappeared from L0.
+    rejection_path = output / "l0-rejections.csv"
+    rejection_fields: list[str] = []
+    for row in rejected:
+        for key in row:
+            if key not in rejection_fields:
+                rejection_fields.append(key)
+    if not rejection_fields:
+        rejection_fields = ["ticker", "rejection_reason"]
+    write_rows(rejection_path, rejected, rejection_fields)
+    rejection_audit = {
+        "name": rejection_path.name,
+        "rows": len(rejected),
+        "sha256": sha256_file(rejection_path),
+    }
+
     producer_hashes = {path.name: sha256_file(path) for path in args.producer_file}
     rejection_reasons = Counter(str(row.get("rejection_reason") or "unknown") for row in rejected)
     manifest = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "complete": True,
         "source_id": args.source_id,
         "source_url": args.source_url,
@@ -134,6 +151,7 @@ def main() -> int:
         "page_count": len(pages),
         "pages": pages,
         "bundle": bundle,
+        "rejection_audit": rejection_audit,
         "producer_hashes": producer_hashes,
         "summary": summary,
         "rejection_reason_counts": dict(sorted(rejection_reasons.items())),

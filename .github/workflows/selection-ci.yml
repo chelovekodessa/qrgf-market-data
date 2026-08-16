@@ -1,0 +1,98 @@
+name: QRGF Selection CI
+
+on:
+  pull_request:
+    paths:
+      - "scripts/build_universe.py"
+      - "scripts/build_universe_v350.py"
+      - "scripts/publish_l0_snapshot.py"
+      - "screening/engine/**"
+      - "screening/assets/**"
+      - "screening/config/**"
+      - "screening/tests/**"
+      - ".github/workflows/selection-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Materialize pinned bulk prefilter
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f screening/vendor/bulk_prefilter.py.gz.b64
+          base64 -d screening/vendor/bulk_prefilter.py.gz.b64 | gzip -dc > screening/engine/bulk_prefilter.py
+          python - <<'PY'
+          from pathlib import Path
+          path = Path("screening/engine/bulk_prefilter.py")
+          text = path.read_text(encoding="utf-8")
+          old_history = '        if sessions >= L1_SESSIONS_12M:\n            return "full"'
+          new_history = ('        # A 252-session return needs 253 observed closes (current close plus\n'
+                         '        # the close 252 sessions earlier). The L1 producer follows the same\n'
+                         '        # contract and extends histories shorter than 253 observations.\n'
+                         '        if sessions > L1_SESSIONS_12M:\n            return "full"')
+          old_gate = ('    for row in eligible:\n'
+                      '        status = threshold_status(row)\n'
+                      '        if status in {"below_price_threshold", "below_liquidity_threshold", "below_market_cap_threshold"}:\n'
+                      '            continue\n'
+                      '        history = str(row.get("momentum_history_status") or "unknown")\n'
+                      '        if status == "pass" and history == "insufficient":\n'
+                      '            insufficient.append(row)\n'
+                      '            continue')
+          new_gate = ('    for row in eligible:\n'
+                      '        history = str(row.get("momentum_history_status") or "unknown")\n'
+                      '        # Objective insufficient history is already terminal for L1 research\n'
+                      '        # eligibility. Later missing price/liquidity fields cannot change that\n'
+                      '        # outcome and therefore must not deadlock the full-market coverage gate.\n'
+                      '        if history == "insufficient":\n'
+                      '            insufficient.append(row)\n'
+                      '            continue\n'
+                      '        status = threshold_status(row)\n'
+                      '        if status in {"below_price_threshold", "below_liquidity_threshold", "below_market_cap_threshold"}:\n'
+                      '            continue')
+          old_merge = ('    base["quality_seed"] = bool(base.get("quality_seed")) or bool(item.get("quality_seed"))\n'
+                       '    base["momentum_history_status"] = normalize_momentum_history_status(\n'
+                       '        None,\n'
+                       '        base.get("trading_history_days"),\n'
+                       '        base.get("return_3m"),\n'
+                       '        base.get("return_6m"),\n'
+                       '        base.get("return_12m"),\n'
+                       '        base.get("listing_date"),\n'
+                       '        base.get("as_of"),\n'
+                       '    )\n')
+          new_merge = ('    base["quality_seed"] = bool(base.get("quality_seed")) or bool(item.get("quality_seed"))\n'
+                       '    # An explicit provider source gap must survive merge order and stronger-looking\n'
+                       '    # partial updates. Keep the marker private so it cannot leak into exported CSV,\n'
+                       '    # but use it when recomputing the canonical history status.\n'
+                       '    base["_explicit_history_source_gap"] = bool(base.get("_explicit_history_source_gap")) or (\n'
+                       '        str(item.get("momentum_history_status") or "").strip().lower() == "source_gap"\n'
+                       '    )\n'
+                       '    base["momentum_history_status"] = normalize_momentum_history_status(\n'
+                       '        "source_gap" if base["_explicit_history_source_gap"] else None,\n'
+                       '        base.get("trading_history_days"),\n'
+                       '        base.get("return_3m"),\n'
+                       '        base.get("return_6m"),\n'
+                       '        base.get("return_12m"),\n'
+                       '        base.get("listing_date"),\n'
+                       '        base.get("as_of"),\n'
+                       '    )\n')
+          if old_history not in text or old_gate not in text or old_merge not in text:
+              raise SystemExit("pinned bulk_prefilter source no longer matches the expected v3 baseline")
+          path.write_text(text.replace(old_history, new_history).replace(old_gate, new_gate).replace(old_merge, new_merge), encoding="utf-8")
+          PY
+          test "$(sha256sum screening/engine/bulk_prefilter.py | awk '{print $1}')" = "0fa5bc831a1745587530ddcc33dbd3eeee3fa1146760ce82392412e5c019abf3"
+      - name: Compile changed Python
+        run: |
+          python -m py_compile scripts/build_universe.py scripts/build_universe_v350.py scripts/publish_l0_snapshot.py screening/engine/batch_l2.py screening/engine/classify_l2.py screening/engine/publish_funnel_snapshot.py
+      - name: Run producer regressions
+        run: |
+          python screening/tests/test_producer_contract.py
+          python screening/tests/test_l0_resolution_contract.py

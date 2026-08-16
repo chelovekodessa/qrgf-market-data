@@ -1,5 +1,5 @@
 {
-  "ruleset_version": "3.0.0",
+  "ruleset_version": "4.0.0",
   "status_values": [
     "pass",
     "conditional",
@@ -46,6 +46,20 @@
     "conditional_if_distance_pct_below": 7.0,
     "preliminary_wait_if_distance_pct_below": 5.0
   },
+  "selection_setup": {
+    "model_version": "2.1.0",
+    "weights": {
+      "prior_growth": 20,
+      "pullback_geometry": 25,
+      "liquidity": 15,
+      "data_completeness": 10
+    },
+    "require_all_components": true,
+    "missing_components_do_not_shrink_denominator": true,
+    "quality_prior_is_separate": true,
+    "room_to_target_is_separate": true,
+    "economic_rationale": "Global L2 ranking uses only cheap mass-screen inputs expected from L1. Optional quality and resistance evidence are carried separately and cannot improve a score merely by being absent."
+  },
   "research_priority": {
     "weights": {
       "prior_growth": 20,
@@ -55,6 +69,7 @@
       "quality_prior": 15,
       "data_completeness": 10
     },
+    "legacy_diagnostic_only": true,
     "global_rank_only_after_full_l2": true,
     "risk_is_separate_dimension": true,
     "entry_readiness_is_not_final_at_l2": true
