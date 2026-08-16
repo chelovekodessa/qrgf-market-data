@@ -11,6 +11,7 @@ on:
       - "screening/config/**"
       - "screening/tests/**"
       - ".github/workflows/selection-ci.yml"
+      - ".github/workflows/update-funnel.yml"
 
 permissions:
   contents: read
@@ -18,7 +19,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -91,8 +92,72 @@ jobs:
           test "$(sha256sum screening/engine/bulk_prefilter.py | awk '{print $1}')" = "0fa5bc831a1745587530ddcc33dbd3eeee3fa1146760ce82392412e5c019abf3"
       - name: Compile changed Python
         run: |
-          python -m py_compile scripts/build_universe.py scripts/build_universe_v350.py scripts/publish_l0_snapshot.py screening/engine/batch_l2.py screening/engine/classify_l2.py screening/engine/publish_funnel_snapshot.py
+          python -m py_compile \
+            scripts/build_universe.py scripts/build_universe_v350.py scripts/publish_l0_snapshot.py \
+            screening/engine/batch_l2.py screening/engine/classify_l2.py \
+            screening/engine/sec_quality_prior.py screening/engine/publish_funnel_snapshot.py
       - name: Run producer regressions
         run: |
           python screening/tests/test_producer_contract.py
           python screening/tests/test_l0_resolution_contract.py
+          python screening/tests/test_sec_quality_prior.py
+      - name: Materialize current L1 snapshot for shadow run
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import base64, gzip
+          from pathlib import Path
+          src = Path('data/l1/latest/l1-snapshot.csv.gz.b64')
+          compressed = base64.b64decode(b''.join(src.read_bytes().split()), validate=True)
+          Path('.work').mkdir(exist_ok=True)
+          Path('.work/l1.csv').write_bytes(gzip.decompress(compressed))
+          PY
+          python screening/engine/bulk_prefilter.py .work/l1.csv \
+            --output .work/l1-finalists.csv \
+            --pending-output .work/l1-pending.csv \
+            --summary .work/l1-summary.json
+      - name: Run live quality-aware shadow L2
+        run: |
+          set -euo pipefail
+          python screening/engine/batch_l2.py .work/l1-finalists.csv \
+            --rules screening/assets/l2-rules.json \
+            --keep 120 \
+            --output .work/l2-base.json
+          python screening/engine/sec_quality_prior.py .work/l1-finalists.csv \
+            --base-l2 .work/l2-base.json \
+            --rules screening/assets/l2-rules.json \
+            --keep 120 \
+            --output .work/l1-quality.csv \
+            --summary .work/quality-summary.json
+          python screening/engine/batch_l2.py .work/l1-quality.csv \
+            --rules screening/assets/l2-rules.json \
+            --keep 120 \
+            --output .work/l2-final.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          summary=json.loads(Path('.work/quality-summary.json').read_text())
+          result=json.loads(Path('.work/l2-final.json').read_text())
+          tsm=next((r for r in result['all_results'] if r.get('ticker')=='TSM'), None)
+          print('QUALITY_SUMMARY=' + json.dumps(summary, sort_keys=True))
+          print('QUALITY_RESCUED=' + json.dumps(result.get('quality_rescued_identities'), sort_keys=True))
+          print('QUALITY_DISPLACED=' + json.dumps(result.get('quality_displaced_identities'), sort_keys=True))
+          print('TSM_SHADOW=' + json.dumps({k: tsm.get(k) for k in (
+              'ticker','l2_setup_score','l2_quality_prior_score','l2_quality_prior_coverage_pct',
+              'l2_quality_rescue_bonus','l2_progression_score','selected_for_next_stage'
+          )}, sort_keys=True) if tsm else 'TSM_SHADOW=null')
+          if summary.get('provider_success_pct', 0) < 90:
+              raise SystemExit('SEC provider success below release gate')
+          PY
+      - name: Print producer hashes
+        run: |
+          sha256sum \
+            screening/engine/bulk_prefilter.py \
+            screening/engine/batch_l2.py \
+            screening/engine/classify_l2.py \
+            screening/engine/qrgf_common.py \
+            screening/engine/sec_quality_prior.py \
+            screening/config/l1-rules.json \
+            screening/assets/l2-rules.json \
+            screening/engine/publish_funnel_snapshot.py \
+            .github/workflows/update-funnel.yml
