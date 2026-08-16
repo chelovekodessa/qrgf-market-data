@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Run one ruleset over all L1 candidates and perform one global L2 ranking."""
-
 from __future__ import annotations
 
 import argparse
@@ -16,6 +15,7 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 from classify_l2 import classify  # noqa: E402
 from qrgf_common import atomic_write_json, parse_canonical_csv_row  # noqa: E402
+from sec_quality_prior import quality_rescue_bonus  # noqa: E402
 
 
 def load_candidates(path: Path) -> list[dict[str, Any]]:
@@ -31,7 +31,6 @@ def load_candidates(path: Path) -> list[dict[str, Any]]:
 
 
 def adapt_l1_candidate(row: dict[str, Any]) -> dict[str, Any]:
-    """Map canonical L1 export fields into the L2 contract without guessing units."""
     result = dict(row)
     aliases = {
         "current_price": ("current_price", "price"),
@@ -56,27 +55,19 @@ def _number(value: Any) -> float | None:
     if value in (None, "") or isinstance(value, bool):
         return None
     try:
-        number = float(value)
+        parsed = float(value)
     except (TypeError, ValueError):
         return None
-    return number if number == number else None
+    return parsed if parsed == parsed else None
 
 
 def apply_selection_contract(row: dict[str, Any], rules: dict[str, Any]) -> dict[str, Any]:
-    """Materialize a fixed-denominator market-setup score.
-
-    The previous Research Priority silently removed missing components from both
-    numerator and denominator.  That made absence of quality/resistance evidence
-    capable of improving a candidate's score.  The new L2 selection score uses
-    only cheap mass-screen inputs that are expected at L1 and requires every
-    configured component.  Optional quality and resistance evidence remain
-    separate and never shrink the denominator.
-    """
+    """Materialize fixed-denominator setup plus positive-only quality rescue."""
     result = dict(row)
     legacy_score = _number(result.get("research_priority_score"))
     legacy_coverage = _number(result.get("research_priority_coverage_pct"))
     components = result.get("research_components") if isinstance(result.get("research_components"), dict) else {}
-    setup = (rules.get("selection_setup") or {})
+    setup = rules.get("selection_setup") or {}
     weights = setup.get("weights") or {}
     if not weights:
         raise ValueError("selection_setup.weights are required")
@@ -96,16 +87,29 @@ def apply_selection_contract(row: dict[str, Any], rules: dict[str, Any]) -> dict
     require_all = bool(setup.get("require_all_components", True))
     score = None if (require_all and missing) or not full_weight else round(numerator / full_weight, 2)
 
+    quality_score = _number(result.get("quality_prior_score"))
+    if quality_score is None:
+        quality_score = _number(components.get("quality_prior"))
+    quality_coverage = _number(result.get("quality_prior_coverage_pct"))
+    rescue_cfg = dict(rules.get("quality_rescue") or {})
+    rescue_enabled = bool(rescue_cfg.get("enabled", False))
+    bonus = quality_rescue_bonus(score, quality_score, quality_coverage, rescue_cfg) if rescue_enabled else 0.0
+    progression = round(score + bonus, 4) if score is not None else None
+
     result["legacy_research_priority_score"] = legacy_score
     result["legacy_research_priority_coverage_pct"] = legacy_coverage
     result["l2_setup_score"] = score
     result["l2_confidence_pct"] = coverage
     result["l2_setup_missing"] = missing
-    result["l2_quality_prior_score"] = _number(components.get("quality_prior"))
+    result["l2_quality_prior_score"] = quality_score
+    result["l2_quality_prior_coverage_pct"] = quality_coverage
     result["l2_room_to_target_score"] = _number(components.get("room_to_target"))
+    result["l2_quality_rescue_bonus"] = bonus
+    result["l2_progression_score"] = progression
     result["l2_selection_model_version"] = str(setup.get("model_version") or rules.get("ruleset_version") or "")
-    # Compatibility fields consumed by the current skill now mean the fixed
-    # market-setup score, not the legacy dynamic-denominator score.
+    # Compatibility fields keep the pure setup score. Downstream L3 progression
+    # consumes setup and quality separately; only the L2 cutoff uses the bounded
+    # positive quality rescue.
     result["research_priority_score"] = score
     result["research_priority_coverage_pct"] = coverage
     result["l2_opportunity_score"] = score
@@ -119,44 +123,56 @@ def apply_selection_contract(row: dict[str, Any], rules: dict[str, Any]) -> dict
     return result
 
 
+def setup_rank_key(row: dict[str, Any]) -> tuple[Any, ...]:
+    status_rank = {"pass": 2, "conditional": 2, "recheck": 1, "rejected": 0}.get(str(row.get("l2_status")), -1)
+    setup = _number(row.get("l2_setup_score"))
+    coverage = _number(row.get("l2_confidence_pct")) or 0.0
+    ticker = str(row.get("ticker") or "")
+    return (status_rank, setup if setup is not None else -1.0, coverage, tuple(-ord(char) for char in ticker))
+
+
 def rank_key(row: dict[str, Any]) -> tuple[Any, ...]:
     status_rank = {"pass": 2, "conditional": 2, "recheck": 1, "rejected": 0}.get(str(row.get("l2_status")), -1)
+    progression = _number(row.get("l2_progression_score"))
     setup = _number(row.get("l2_setup_score"))
     coverage = _number(row.get("l2_confidence_pct")) or 0.0
     ticker = str(row.get("ticker") or "")
     return (
         status_rank,
+        progression if progression is not None else -1.0,
         setup if setup is not None else -1.0,
         coverage,
         tuple(-ord(char) for char in ticker),
     )
 
 
-def run(
-    candidates: list[dict[str, Any]],
-    rules: dict[str, Any],
-    rules_hash: str,
-    keep: int = 120,
-    *,
-    ruleset_version: str | None = None,
-    ruleset_hash: str | None = None,
-) -> dict[str, Any]:
+def run(candidates: list[dict[str, Any]], rules: dict[str, Any], rules_hash: str, keep: int = 120, *, ruleset_version: str | None = None, ruleset_hash: str | None = None) -> dict[str, Any]:
     effective_version = str(ruleset_version or rules.get("ruleset_version") or "")
     effective_hash = str(ruleset_hash or rules_hash)
     results = []
     for candidate in candidates:
         adapted = adapt_l1_candidate(candidate)
-        result = classify(adapted, rules, effective_hash)
-        result = apply_selection_contract(result, rules)
+        classified = classify(adapted, rules, effective_hash)
+        result = apply_selection_contract({**adapted, **classified}, rules)
         result["ruleset_version"] = effective_version
         result["ruleset_hash"] = effective_hash
         result["l2_rules_hash"] = rules_hash
-        results.append({**adapted, **result})
+        results.append(result)
+
+    base_ranked = sorted(results, key=setup_rank_key, reverse=True)
+    base_candidates = [row for row in base_ranked if row["l2_status"] in {"pass", "conditional", "recheck"} and row.get("l2_setup_score") is not None]
+    base_finalists = base_candidates[:keep]
+    base_keys = {(str(row.get("ticker") or "").upper(), str(row.get("contract_id") or "")) for row in base_finalists}
+
     ranked = sorted(results, key=rank_key, reverse=True)
-    finalists = [row for row in ranked if row["l2_status"] in {"pass", "conditional", "recheck"} and row.get("l2_setup_score") is not None][:keep]
+    finalists = [row for row in ranked if row["l2_status"] in {"pass", "conditional", "recheck"} and row.get("l2_progression_score") is not None][:keep]
     finalist_keys = {(str(row.get("ticker") or "").upper(), str(row.get("contract_id") or "")) for row in finalists}
     for row in ranked:
         row["selected_for_next_stage"] = (str(row.get("ticker") or "").upper(), str(row.get("contract_id") or "")) in finalist_keys
+    rescued = sorted(f"{ticker}:{contract}" for ticker, contract in finalist_keys - base_keys)
+    displaced = sorted(f"{ticker}:{contract}" for ticker, contract in base_keys - finalist_keys)
+    base_cutoff = _number(base_finalists[-1].get("l2_setup_score")) if len(base_finalists) == keep else None
+    final_cutoff = _number(finalists[-1].get("l2_progression_score")) if len(finalists) == keep else None
     return {
         "ruleset_version": effective_version,
         "ruleset_hash": effective_hash,
@@ -167,6 +183,11 @@ def run(
         "status_counts": {status: sum(row["l2_status"] == status for row in results) for status in ("pass", "conditional", "recheck", "rejected")},
         "global_ranking": True,
         "finalist_ceiling": keep,
+        "base_setup_cutoff_score": base_cutoff,
+        "final_progression_cutoff_score": final_cutoff,
+        "quality_rescued_count": len(rescued),
+        "quality_rescued_identities": rescued,
+        "quality_displaced_identities": displaced,
         "finalists": finalists,
         "all_results": ranked,
     }
