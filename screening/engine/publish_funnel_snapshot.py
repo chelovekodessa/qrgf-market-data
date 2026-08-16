@@ -81,6 +81,10 @@ TRANSPORT_FIELDS = (
     "as_of", "l1_score", "l1_status", "opportunity_coverage_pct", "l2_status", "entry_readiness",
     "preliminary_timing_status", "research_priority_score", "research_priority_coverage_pct",
     "l2_opportunity_score", "l2_risk_score", "risk_coverage_pct", "risk_flags", "opportunity_flags",
+    "l2_setup_score", "l2_confidence_pct", "l2_quality_prior_score", "l2_quality_prior_coverage_pct",
+    "l2_quality_rescue_bonus", "l2_progression_score", "l2_selection_model_version",
+    "quality_prior_score", "quality_prior_coverage_pct", "quality_prior_status", "quality_prior_as_of",
+    "quality_prior_filing_date", "quality_prior_source", "quality_prior_model_version", "quality_prior_cik",
     "hard_vetoes", "checks_missing", "decision_rule_ids", "next_required_check",
     "ruleset_version", "ruleset_hash", "l2_rules_hash", "selected_for_next_stage",
 )
@@ -224,6 +228,14 @@ def main() -> int:
     l1 = load_json(args.l1_manifest)
     l1_summary = load_json(args.l1_summary)
     l2 = load_json(args.l2_result)
+    quality_prior_summary = l2.get("quality_prior_summary")
+    if not isinstance(quality_prior_summary, dict) or not quality_prior_summary:
+        raise ValueError("L2 quality_prior_summary is required")
+    if str(quality_prior_summary.get("source") or "") != "sec_companyfacts":
+        raise ValueError("unsupported L2 quality-prior source")
+    if float(quality_prior_summary.get("provider_success_pct") or 0.0) < 90.0:
+        raise ValueError("SEC quality-prior provider success is below release gate")
+
     if l0.get("complete") is not True or l1.get("complete") is not True:
         raise ValueError("L0/L1 source snapshots must both be complete")
     if l1_summary.get("broad_search_complete") is not True or l1_summary.get("global_ranking_complete") is not True:
@@ -273,7 +285,7 @@ def main() -> int:
     lineage = validate_lineage(l0, l1)
     producer_hashes = {path.name: sha256_file(path) for path in args.producer_file}
     required_producers = {
-        "bulk_prefilter.py", "batch_l2.py", "classify_l2.py", "qrgf_common.py",
+        "bulk_prefilter.py", "batch_l2.py", "classify_l2.py", "qrgf_common.py", "sec_quality_prior.py",
         "l1-rules.json", "l2-rules.json", "publish_funnel_snapshot.py", "update-funnel.yml",
     }
     if set(producer_hashes) != required_producers:
@@ -325,6 +337,7 @@ def main() -> int:
     l2_all_sha = semantic_sha256(l2_all)
     transport_finalists = [transport_row(row) for row in l2_finalists]
     l2_selected_sha = semantic_sha256(transport_finalists)
+    quality_summary_sha = semantic_sha256(quality_prior_summary)
     content_source = {key: value for key, value in source.items() if key != "source_commit_sha"}
     content_seed = {
         "source": content_source,
@@ -335,6 +348,7 @@ def main() -> int:
         "l1_finalists_semantic_sha256": l1_selected_sha,
         "l2_all_results_semantic_sha256": l2_all_sha,
         "l2_finalists_semantic_sha256": l2_selected_sha,
+        "quality_prior_summary_sha256": quality_summary_sha,
         "l2_rules_hash": l2.get("l2_rules_hash"),
     }
     content_sha = semantic_sha256(content_seed)
@@ -383,6 +397,13 @@ def main() -> int:
             "status_counts": l2.get("status_counts") or {},
             "finalist_ceiling": int(l2.get("finalist_ceiling") or 0),
             "selected_l2": len(l2_finalists),
+            "selection_model_version": l2.get("selection_model_version"),
+            "base_setup_cutoff_score": l2.get("base_setup_cutoff_score"),
+            "final_progression_cutoff_score": l2.get("final_progression_cutoff_score"),
+            "quality_rescued_count": int(l2.get("quality_rescued_count") or 0),
+            "quality_rescued_identities": l2.get("quality_rescued_identities") or [],
+            "quality_displaced_identities": l2.get("quality_displaced_identities") or [],
+            "quality_prior_summary": quality_prior_summary,
         },
     }
     atomic_json(snapshot_dir / "audit-summary.json", audit)
@@ -420,7 +441,15 @@ def main() -> int:
             "selected_l2": len(l2_finalists),
             "all_results_semantic_sha256": l2_all_sha,
             "selected_semantic_sha256": l2_selected_sha,
-            "transport_projection": "l3_resume_minimal_v1",
+            "transport_projection": "l3_resume_minimal_v2",
+            "selection_model_version": l2.get("selection_model_version"),
+            "base_setup_cutoff_score": l2.get("base_setup_cutoff_score"),
+            "final_progression_cutoff_score": l2.get("final_progression_cutoff_score"),
+            "quality_rescued_count": int(l2.get("quality_rescued_count") or 0),
+            "quality_rescued_identities": l2.get("quality_rescued_identities") or [],
+            "quality_displaced_identities": l2.get("quality_displaced_identities") or [],
+            "quality_prior_summary": quality_prior_summary,
+            "quality_prior_summary_semantic_sha256": quality_summary_sha,
             "l2_rules_hash": l2.get("l2_rules_hash"),
             "audit_file": "l2-results.json",
             "audit_file_sha256": sha256_file(snapshot_dir / "l2-results.json"),
@@ -451,7 +480,7 @@ def main() -> int:
     }
     args.output_root.mkdir(parents=True, exist_ok=True)
     atomic_json(args.output_root / "latest.json", latest)
-    print(json.dumps({"snapshot_id": snapshot_id, "l1_finalists": len(l1_rows), "l2_finalists": len(l2_finalists), "pages": len(pages)}, indent=2))
+    print(json.dumps({"snapshot_id": snapshot_id, "l1_finalists": len(l1_rows), "l2_finalists": len(l2_finalists), "quality_rescued": int(l2.get("quality_rescued_count") or 0), "pages": len(pages)}, indent=2))
     return 0
 
 
