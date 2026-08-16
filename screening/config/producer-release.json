@@ -4,15 +4,15 @@
     "source_gap_is_sticky": true
   },
   "producer_hashes": {
-    "batch_l2.py": "6b9b7b2f4233d9ff696668bbf000a36c46c13659944bef9ac6a9d0da2ff2d2a4",
+    "batch_l2.py": "25b7aa6bb26a10ca9d31c2d7ce5f6bef3ff17e3afa8e75ade2c5d06ce0c641ea",
     "bulk_prefilter.py": "0fa5bc831a1745587530ddcc33dbd3eeee3fa1146760ce82392412e5c019abf3",
     "classify_l2.py": "36d29aec9a66ad9ed4b56bfac74b8026ee2e9ed7dceac6f05a8cf8df1767bb42",
     "l1-rules.json": "5287a1713d12f365272c4df799a1b31a8f5c4e26ddef3d9a94019572fb1cb3e3",
-    "l2-rules.json": "7d49705d831f47688848cdd077a9892ae537e749647e80120450261682213bf4",
+    "l2-rules.json": "c8f1bf1665a8c5dfb834c0571e7dd5f6b6e5ccd00eab00295338bd42cfde549b",
     "publish_funnel_snapshot.py": "d705fd346ef4957af6d36b1aa1acd63ab651d7fe13157155cbcea53a5f5f3d44",
     "qrgf_common.py": "34195413b2623872388ad0c769f68346199e6efe94896647c0ec120ae8233b6a",
     "update-funnel.yml": "c9342310b3d0f88727b4625d799aaadf67407c1a7bfd7d2fdb3cf18f3ae10f8d"
   },
-  "release_version": "2.0.0",
+  "release_version": "3.0.0",
   "schema_version": "1.0.0"
 }
