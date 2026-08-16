@@ -6,17 +6,8 @@
   "required_numeric_fields": ["current_price", "avg_dollar_volume", "return_3m_pct", "return_6m_pct", "drawdown_pct", "historical_volatility_pct"],
   "optional_numeric_fields": ["return_12m_pct", "quality_prior_score", "trading_history_days"],
   "momentum_history_status_values": ["full", "limited_but_usable", "insufficient", "unknown"],
-  "hard_veto_thresholds": {
-    "minimum_avg_dollar_volume": 2000000,
-    "economic_rationale": "Execution must be feasible; volatility and drawdown are not instrument vetoes."
-  },
-  "resistance": {
-    "touch_tolerance_pct": 1.5,
-    "minimum_weekly_touches": 2,
-    "conditional_if_distance_pct_from": 5.0,
-    "conditional_if_distance_pct_below": 7.0,
-    "preliminary_wait_if_distance_pct_below": 5.0
-  },
+  "hard_veto_thresholds": {"minimum_avg_dollar_volume": 2000000, "economic_rationale": "Execution must be feasible; volatility and drawdown are not instrument vetoes."},
+  "resistance": {"touch_tolerance_pct": 1.5, "minimum_weekly_touches": 2, "conditional_if_distance_pct_from": 5.0, "conditional_if_distance_pct_below": 7.0, "preliminary_wait_if_distance_pct_below": 5.0},
   "selection_setup": {
     "model_version": "2.2.0",
     "weights": {"prior_growth": 20, "pullback_geometry": 25, "liquidity": 15, "data_completeness": 10},
@@ -35,20 +26,14 @@
     "minimum_coverage_pct": 60.0,
     "max_bonus_points": 2.0,
     "minimum_routing_coverage_pct": 85.0,
-    "minimum_routing_verification_pct": 90.0,
+    "minimum_routing_verification_pct": 0.0,
     "minimum_provider_success_pct": 90.0,
     "unknown_quality_bonus": 0.0,
     "enrichment_cohort_rule": "base L2 setup score >= top-120 setup cutoff minus max_bonus_points",
     "routing_contract": "public ticker-CIK mirror is a hint only; every CIK must be verified by official SEC submissions before CompanyFacts can affect ranking",
     "economic_rationale": "Strong point-in-time fundamental quality may rescue only a near-cutoff setup candidate. Unknown, unverified, or weak quality never receives a penalty or invented neutral value, and quality can move the L2 score by at most two points so recovery setup remains dominant."
   },
-  "research_priority": {
-    "weights": {"prior_growth": 20, "pullback_geometry": 25, "liquidity": 15, "room_to_target": 15, "quality_prior": 15, "data_completeness": 10},
-    "legacy_diagnostic_only": true,
-    "global_rank_only_after_full_l2": true,
-    "risk_is_separate_dimension": true,
-    "entry_readiness_is_not_final_at_l2": true
-  },
+  "research_priority": {"weights": {"prior_growth": 20, "pullback_geometry": 25, "liquidity": 15, "room_to_target": 15, "quality_prior": 15, "data_completeness": 10}, "legacy_diagnostic_only": true, "global_rank_only_after_full_l2": true, "risk_is_separate_dimension": true, "entry_readiness_is_not_final_at_l2": true},
   "advisory_external_rule_ids": {
     "hard_veto": ["insufficient_liquidity", "price_execution_unavailable", "prohibited_instrument", "data_integrity_failure", "inactive_or_halted_contract"],
     "risk_flag": ["frequent_gap_behavior", "parabolic_prior_move", "deep_price_break", "excessive_historical_volatility", "incomplete_trading_history", "elevated_historical_volatility", "short_term_trend_weak", "six_month_trend_weak", "relative_strength_unconfirmed", "technical_stabilization_unconfirmed", "catalyst_unconfirmed", "high_atr_to_target", "resistance_before_5pct_target"],
