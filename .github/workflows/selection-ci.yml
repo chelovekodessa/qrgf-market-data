@@ -96,3 +96,33 @@ jobs:
         run: |
           python screening/tests/test_producer_contract.py
           python screening/tests/test_l0_resolution_contract.py
+      - name: Shadow current L2 cutoff
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import base64, gzip
+          from pathlib import Path
+          src=Path('data/l1/latest/l1-snapshot.csv.gz.b64')
+          Path('.work').mkdir(exist_ok=True)
+          Path('.work/l1.csv').write_bytes(gzip.decompress(base64.b64decode(b''.join(src.read_bytes().split()), validate=True)))
+          PY
+          python screening/engine/bulk_prefilter.py .work/l1.csv --output .work/l1-finalists.csv --pending-output .work/l1-pending.csv --summary .work/l1-summary.json
+          python screening/engine/batch_l2.py .work/l1-finalists.csv --rules screening/assets/l2-rules.json --keep 120 --output .work/l2-shadow.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('.work/l2-shadow.json').read_text())
+          tsm=next((x for x in r['all_results'] if x.get('ticker')=='TSM'), None)
+          print('BASE_CUTOFF=',r.get('base_setup_cutoff_score'))
+          print('FINAL_CUTOFF=',r.get('final_progression_cutoff_score'))
+          print('RESCUED=',json.dumps(r.get('research_rescued_identities'), sort_keys=True))
+          print('DISPLACED=',json.dumps(r.get('research_displaced_identities'), sort_keys=True))
+          print('TSM=',json.dumps({k:tsm.get(k) for k in ('l2_setup_score','l2_research_rescue_bonus','l2_research_rescue_tier','l2_progression_score','selected_for_next_stage','historical_volatility_pct','return_12m_pct','avg_dollar_volume','drawdown_pct')} if tsm else None, sort_keys=True))
+          if not tsm or not tsm.get('selected_for_next_stage'):
+              raise SystemExit('known TSM false-negative regression remains')
+          if float(tsm.get('l2_research_rescue_bonus') or 0)>1.5:
+              raise SystemExit('rescue bonus exceeded cap')
+          PY
+      - name: Print changed producer hashes
+        run: |
+          sha256sum screening/engine/batch_l2.py screening/assets/l2-rules.json
