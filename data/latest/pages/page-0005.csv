@@ -1,251 +1,251 @@
-ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-BTBT,"Bit Digital, Inc. - Ordinary Share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTCS,BTCS Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTCT,BTC Digital Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTDR,Bitdeer Technologies Group - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTE,Baytex Energy Corp Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BTE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTG,B2Gold Corp Common shares (Canada),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTGO,"BitGo Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BTGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTMD,Biote Corp. - Class A common stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTOG,Bit Origin Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTOG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTQ,BTQ Technologies Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTSG,"BrightSpring Health Services, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTTC,Black Titan Corp - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTU,Peabody Energy Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BUDA,"Buda Juice, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BUDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BULL,Webull Corporation - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BULL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BUR,Burford Capital Limited Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BURL,"Burlington Stores, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BURL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BUSE,First Busey Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BUSE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BUUU,BUUU Group Limited - Class A Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BUUU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BV,"BrightView Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BVC,BitVentures Limited - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BVFL,"BV Financial, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BVFL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BVS,Bioventus Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BVS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BW,"Babcock & Wilcox Enterprises, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWA,BorgWarner Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWB,"Bridgewater Bancshares, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWEN,"Broadwind, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWFG,"Bankwell Financial Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWIN,"The Baldwin Insurance Group, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWLP,BW LPG Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWLP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWMN,Bowman Consulting Group Ltd. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWMX,"Betterware de Mexico, S.A.P.I. de C.V. Ordinary Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWXT,"BWX Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BX,Blackstone Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BXBL,"BOXABL, Inc.  - Common stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BXBL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BXC,Bluelinx Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BXDC,Blackstone Digital Infrastructure Trust Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BXMT,"Blackstone Mortgage Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BXP,"BXP, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BY,"Byline Bancorp, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BYAH,"Park Ha Biological Technology Co., Ltd. - Class A Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BYD,Boyd Gaming Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BYD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BYFC,Broadway Financial Corporation - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BYRN,"Byrna Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BYSI,"BeyondSpring, Inc. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BZAI,"Blaize Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BZAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BZFD,"BuzzFeed, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BZFD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BZH,"Beazer Homes USA, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BZH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-C,"Citigroup, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAAP,Corporacion America Airports SA Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAAS,"China Automotive Systems, Inc. - Ordinary Share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CABA,"Cabaletta Bio, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CABA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CABO,"Cable One, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CABO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAC,Camden National Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CACC,Credit Acceptance Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CACC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CACI,"CACI International, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CACI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CADL,"Candel Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CADL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAE,CAE Inc - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAES,"Cantor Equity Partners VII, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAG,"ConAgra Brands, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAH,"Cardinal Health, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAI,"Caris Life Sciences, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAKE,The Cheesecake Factory Incorporated - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAL,"Caleres, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CALM,"Cal-Maine Foods, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CALM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CALX,"Calix, Inc Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CALX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CALY,Callaway Golf Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CALY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAMP,CAMP4 Therapeutics Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAMT,Camtek Ltd. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CANG,Cango Inc. Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CANG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAPR,"Capricor Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAR,"Avis Budget Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CARE,"Carter Bankshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CARE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CARG,"CarGurus, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CARG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CARL,"Carlsmed, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CARL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CARR,Carrier Global Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CARR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CARS,Cars.com Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CARS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CART,Maplebear Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CART,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CASH,"Pathward Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CASH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CASS,"Cass Information Systems, Inc - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CASS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAST,"FreeCast, Inc. - Class A common stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CASY,"Caseys General Stores, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CASY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAT,"Caterpillar, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CATO,Cato Corporation (The) Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CATO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CATX,"Perspective Therapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CATX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CATY,Cathay General Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CATY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CAVA,"CAVA Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CB,Chubb Limited  Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBAN,"Colony Bankcorp, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBC,"Central Bancompany, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBFV,"CB Financial Services, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBFV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBIO,"Crescent Biopharma, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBK,"Commercial Bancgroup, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBL,"CBL & Associates Properties, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBLL,"CeriBell, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBLL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBNA,"Chain Bridge Bancorp, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBNK,"Capital Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBNK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBOE,"Cboe Global Markets, Inc. Common Stock",Z,,,common_equity,eligible,True,N,N,,nasdaqtrader:Z:CBOE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBRE,CBRE Group Inc Common Stock Class A,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBRL,"Cracker Barrel Old Country Store, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBRS,Cerebras Systems Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBSH,"Commerce Bancshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBT,Cabot Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBU,"Community Financial System, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBUS,"Cibus, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CBZ,"CBIZ, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CC,Chemours Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCB,Coastal Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCBG,Capital City Bank Group - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCBG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCC,CCC Intelligent Solutions Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCCC,"C4 Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCCT,Columbus Circle Capital Corp III - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCEC,Capital Clean Energy Carriers Corp. - Common Share,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCEL,"Cryo-Cell International, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CCEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCEP,Coca-Cola Europacific Partners plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCEP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCG,Cheche Group Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCHH,CCH Holdings Ltd - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCHH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCI,Crown Castle Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCJ,Cameco Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCL,Carnival Corporation Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCLD,"CareCloud, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCNE,CNB Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCO,"Clear Channel Outdoor Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCOI,"Cogent Communications Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCOI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCS,"Century Communities, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCSI,"Consensus Cloud Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCU,"Compania Cervecerias Unidas, S.A. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCXI,Churchill Capital Corp XI - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCXI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CD,Chaince Digital Holdings Inc. - American Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDE,"Coeur Mining, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CDE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDIO,Cardio Diagnostics Holdings Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDLX,"Cardlytics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDNA,"CareDx, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDNL,Cardinal Infrastructure Group Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDNL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDNS,"Cadence Design Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDP,COPT Defense Properties Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CDP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDRE,"Cadre Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CDRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDRO,"Codere Online Luxembourg, S.A. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDT,CDT Equity Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDTG,CDT Environmental Technology Investment Holdings Limited - ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDW,CDW Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDXS,"Codexis, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDZI,"Cadiz, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDZI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CE,Celanese Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CECO,CECO Environmental Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CECO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEG,Constellation Energy Corporation - Common Stock When-Issued,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CELC,Celcuity Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CELC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CELH,"Celsius Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CELH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CELZ,"Creative Medical Technology Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CELZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CENN,Cenntro Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CENT,Central Garden & Pet Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CENTA,Central Garden & Pet Company - Class A Common Stock Nonvoting,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CENX,Century Aluminum Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEPF,"Cantor Equity Partners IV, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEPL,"Capstone Energy Plus, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEPO,"Cantor Equity Partners I, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEPS,"Cantor Equity Partners VI, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEPV,"Cantor Equity Partners V, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CERS,Cerus Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CERS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CERT,"Certara, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CERT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CET,Central Securities Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CETX,Cemtrex Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CETX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CETY,"Clean Energy Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CETY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEVA,"CEVA, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CF,"CF Industries Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CFBK,CF Bankshares Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CFBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CFFI,C&F Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CFFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CFFN,"Capitol Federal Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CFFN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CFG,"Citizens Financial Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CFR,"Cullen/Frost Bankers, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CFR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CG,The Carlyle Group Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGAU,Centerra Gold Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CGAU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGC,Canopy Growth Corporation - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGEM,"Cullinan Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGEM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGEN,Compugen Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGNT,Cognyte Software Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGNX,Cognex Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGON,"CG Oncology, Inc. - Common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGTL,Creative Global Technology Holdings Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CGTX,"Cognition Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHCI,"Comstock Holding Companies, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHCO,City Holding Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHCT,Community Healthcare Trust Incorporated Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHD,"Church & Dwight Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHDN,"Churchill Downs, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHEF,"The Chefs' Warehouse, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHEF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHGG,"Chegg, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHGG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHH,"Choice Hotels International, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHKP,Check Point Software Technologies Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHKP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHMG,Chemung Financial Corp  - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHMG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHMI,Cherry Hill Mortgage Investment Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHNR,"China Natural Resources, Inc. - Common Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHNR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHOW,ChowChow Cloud International Holdings Limited Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CHOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHPT,"ChargePoint Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHR,"Cheer Holding, Inc.  - Class A Ordinary Share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHRD,Chord Energy Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHRN,ChronoScale Holdings Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHRS,"Coherus Oncology, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHRW,"C.H. Robinson Worldwide, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHSN,Chanson International Holding - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHTR,"Charter Communications, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHWY,"Chewy, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHWY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHYM,"Chime Financial, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHYM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CI,The Cigna Group Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIA,"Citizens, Inc. Class A Common Stock ($1.00 Par)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIEN,Ciena Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIFR,Cipher Digital Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIFR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIIT,"Tianci International, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIM,Chimera Investment Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CINF,Cincinnati Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CINF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CING,Cingulate Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CING,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CINT,CI&T Inc Class A Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CINT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CION,CION Investment Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CION,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIRC,"Circle8 Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CISS,C3is Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CISS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CITR,CitroTech Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CITR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIVB,"Civista Bancshares, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIVB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIX,CompX International Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CKX,"CKX Lands, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CKX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CL,Colgate-Palmolive Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLAR,Clarus Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLB,Core Laboratories Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLBK,"Columbia Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLBT,Cellebrite DI Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLDI,"Calidi Biotherapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CLDI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLDT,Chatham Lodging Trust (REIT) Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLDX,"Celldex Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLF,Cleveland-Cliffs Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLFD,"Clearfield, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLFD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLH,"Clean Harbors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLIK,Click Holdings Limited - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLIK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLIR,ClearSign Technologies Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLIR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLMB,"Climb Global Solutions, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLMT,"Calumet, Inc - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLNE,Clean Energy Fuels Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLNN,Clene Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLNN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLOV,"Clover Health Investments, Corp.  - Class A Common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLOV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLPR,Clipper Realty Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLPT,ClearPoint Neuro Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLRB,"Cellectar Biosciences, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLRB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLS,"Celestica, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLSK,"CleanSpark, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLST,"Catalyst Bancorp, Inc. - common stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLVT,Clarivate Plc Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLW,Clearwater Paper Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLWT,Euro Tech Holdings Company Limited - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLWT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLX,Clorox Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLYM,"Climb Bio, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLYM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CM,Canadian Imperial Bank of Commerce Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CMBT,CMB.TECH NV Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CMBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+BRSL,"Brightstar Lottery PLC Trading under the Legal Name to begin at the market open on July 21, 2025. Ordinary Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRSP,"BrightSpire Capital, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRT,BRT Apartments Corp. (MD) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRUN,Boost Run Inc. - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRVE,"Braveheart Bio, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRVE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRX,Brixmor Property Group Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRZE,"Braze, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRZE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSBK,Bogota Financial Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSEM,"BioStem Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSEM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSET,"Bassett Furniture Industries, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSIN,Big Sky Industrial Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSM,"Black Stone Minerals, L.P. Common units representing limited partner interests",N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:BSM,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+BSP,Bending Spoons S.p.A. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSRR,Sierra Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSVN,Bank7 Corp. - Common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSVN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSX,Boston Scientific Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSY,"Bentley Systems, Incorporated - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BSY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTAI,"BioXcel Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTBD,"BT Brands, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTBT,"Bit Digital, Inc. - Ordinary Share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTCS,BTCS Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTCT,BTC Digital Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTDR,Bitdeer Technologies Group - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTE,Baytex Energy Corp Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BTE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTG,B2Gold Corp Common shares (Canada),A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTGO,"BitGo Holdings, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BTGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTMD,Biote Corp. - Class A common stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTOG,Bit Origin Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTOG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTQ,BTQ Technologies Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTSG,"BrightSpring Health Services, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTTC,Black Titan Corp - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BTTC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTU,Peabody Energy Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BUDA,"Buda Juice, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BUDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BULL,Webull Corporation - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BULL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BUR,Burford Capital Limited Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BURL,"Burlington Stores, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BURL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BUSE,First Busey Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BUSE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BUUU,BUUU Group Limited - Class A Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BUUU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BV,"BrightView Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BVC,BitVentures Limited - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BVC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BVFL,"BV Financial, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BVFL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BVN,Buenaventura Mining Company Inc.,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:BVN,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+BVS,Bioventus Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BVS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BW,"Babcock & Wilcox Enterprises, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWA,BorgWarner Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWB,"Bridgewater Bancshares, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWEN,"Broadwind, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWFG,"Bankwell Financial Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWIN,"The Baldwin Insurance Group, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWLP,BW LPG Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWLP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWMN,Bowman Consulting Group Ltd. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BWMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWMX,"Betterware de Mexico, S.A.P.I. de C.V. Ordinary Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWXT,"BWX Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BWXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BX,Blackstone Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BXBL,"BOXABL, Inc.  - Common stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BXBL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BXC,Bluelinx Holdings Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BXDC,Blackstone Digital Infrastructure Trust Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BXMT,"Blackstone Mortgage Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BXP,"BXP, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BXP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BY,"Byline Bancorp, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BYAH,"Park Ha Biological Technology Co., Ltd. - Class A Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BYD,Boyd Gaming Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BYD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BYFC,Broadway Financial Corporation - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BYRN,"Byrna Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BYSI,"BeyondSpring, Inc. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BYSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BZAI,"Blaize Holdings, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BZAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BZFD,"BuzzFeed, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BZFD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BZH,"Beazer Homes USA, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BZH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+C,"Citigroup, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAAP,Corporacion America Airports SA Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAAS,"China Automotive Systems, Inc. - Ordinary Share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CABA,"Cabaletta Bio, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CABA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CABO,"Cable One, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CABO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAC,Camden National Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CACC,Credit Acceptance Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CACC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CACI,"CACI International, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CACI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CADL,"Candel Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CADL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAE,CAE Inc - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAES,"Cantor Equity Partners VII, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAG,"ConAgra Brands, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAH,"Cardinal Health, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAI,"Caris Life Sciences, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAKE,The Cheesecake Factory Incorporated - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAL,"Caleres, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CALM,"Cal-Maine Foods, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CALM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CALX,"Calix, Inc Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CALX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CALY,Callaway Golf Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CALY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAMP,CAMP4 Therapeutics Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAMT,Camtek Ltd. - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CANG,Cango Inc. Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CANG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAPL,CrossAmerica Partners LP Common Units representing limited partner interests,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CAPL,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CAPR,"Capricor Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAR,"Avis Budget Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CARE,"Carter Bankshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CARE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CARG,"CarGurus, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CARG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CARL,"Carlsmed, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CARL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CARR,Carrier Global Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CARR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CARS,Cars.com Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CARS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CART,Maplebear Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CART,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CASH,"Pathward Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CASH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CASS,"Cass Information Systems, Inc - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CASS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAST,"FreeCast, Inc. - Class A common stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CAST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CASY,"Caseys General Stores, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CASY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAT,"Caterpillar, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CATO,Cato Corporation (The) Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CATO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CATX,"Perspective Therapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CATX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CATY,Cathay General Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CATY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CAVA,"CAVA Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CAVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CB,Chubb Limited  Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBAN,"Colony Bankcorp, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBC,"Central Bancompany, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBFV,"CB Financial Services, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBFV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBIO,"Crescent Biopharma, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBK,"Commercial Bancgroup, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBL,"CBL & Associates Properties, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBLL,"CeriBell, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBLL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBNA,"Chain Bridge Bancorp, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBNK,"Capital Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBNK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBOE,"Cboe Global Markets, Inc. Common Stock",Z,,,common_equity,eligible,True,N,N,,nasdaqtrader:Z:CBOE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBRE,CBRE Group Inc Common Stock Class A,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBRL,"Cracker Barrel Old Country Store, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBRL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBRS,Cerebras Systems Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBSH,"Commerce Bancshares, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBT,Cabot Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBU,"Community Financial System, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBUS,"Cibus, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CBUS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CBZ,"CBIZ, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CBZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CC,Chemours Company (The) Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCB,Coastal Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCBG,Capital City Bank Group - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCBG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCC,CCC Intelligent Solutions Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCCC,"C4 Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCCT,Columbus Circle Capital Corp III - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCEC,Capital Clean Energy Carriers Corp. - Common Share,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCEL,"Cryo-Cell International, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CCEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCEP,Coca-Cola Europacific Partners plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCEP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCG,Cheche Group Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCHH,CCH Holdings Ltd - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCHH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCI,Crown Castle Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCJ,Cameco Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCJ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCK,"Crown Holdings, Inc.",N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CCK,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CCL,Carnival Corporation Ltd. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCLD,"CareCloud, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCLD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCNE,CNB Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCNE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCO,"Clear Channel Outdoor Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCOI,"Cogent Communications Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCOI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCS,"Century Communities, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCSI,"Consensus Cloud Solutions, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCU,"Compania Cervecerias Unidas, S.A. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CCU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCXI,Churchill Capital Corp XI - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CCXI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCZ,Comcast Holdings ZONES,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CCZ,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CD,Chaince Digital Holdings Inc. - American Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDE,"Coeur Mining, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CDE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDIO,Cardio Diagnostics Holdings Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDLX,"Cardlytics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDNA,"CareDx, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDNL,Cardinal Infrastructure Group Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDNL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDNS,"Cadence Design Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDP,COPT Defense Properties Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CDP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDRE,"Cadre Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CDRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDRO,"Codere Online Luxembourg, S.A. - Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDT,CDT Equity Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDTG,CDT Environmental Technology Investment Holdings Limited - ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDW,CDW Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDXS,"Codexis, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDXS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDZI,"Cadiz, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CDZI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CE,Celanese Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CECO,CECO Environmental Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CECO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEG,Constellation Energy Corporation - Common Stock When-Issued,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CELC,Celcuity Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CELC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CELH,"Celsius Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CELH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CELZ,"Creative Medical Technology Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CELZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CENN,Cenntro Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CENT,Central Garden & Pet Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CENTA,Central Garden & Pet Company - Class A Common Stock Nonvoting,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CENX,Century Aluminum Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CENX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEPF,"Cantor Equity Partners IV, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEPL,"Capstone Energy Plus, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEPO,"Cantor Equity Partners I, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEPS,"Cantor Equity Partners VI, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEPV,"Cantor Equity Partners V, Inc. - Class A Ordinary Shares",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEPV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CERS,Cerus Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CERS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CERT,"Certara, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CERT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CET,Central Securities Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CETX,Cemtrex Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CETX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CETY,"Clean Energy Technologies, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CETY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEVA,"CEVA, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CEVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CF,"CF Industries Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CFBK,CF Bankshares Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CFBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CFFI,C&F Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CFFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CFFN,"Capitol Federal Financial, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CFFN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CFG,"Citizens Financial Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CFR,"Cullen/Frost Bankers, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CFR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CG,The Carlyle Group Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGAU,Centerra Gold Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CGAU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGC,Canopy Growth Corporation - Common Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGEM,"Cullinan Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGEM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGEN,Compugen Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGNT,Cognyte Software Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGNX,Cognex Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGNX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGON,"CG Oncology, Inc. - Common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGTL,Creative Global Technology Holdings Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CGTX,"Cognition Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CGTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHCI,"Comstock Holding Companies, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHCO,City Holding Company - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHCT,Community Healthcare Trust Incorporated Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHCT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHD,"Church & Dwight Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHDN,"Churchill Downs, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHE,Chemed Corp,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CHE,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CHEF,"The Chefs' Warehouse, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHEF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHGG,"Chegg, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHGG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHH,"Choice Hotels International, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHKP,Check Point Software Technologies Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHKP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHMG,Chemung Financial Corp  - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHMG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHMI,Cherry Hill Mortgage Investment Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHNR,"China Natural Resources, Inc. - Common Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHNR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHOW,ChowChow Cloud International Holdings Limited Ordinary Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CHOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHPT,"ChargePoint Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHR,"Cheer Holding, Inc.  - Class A Ordinary Share",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHRD,Chord Energy Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHRN,ChronoScale Holdings Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHRS,"Coherus Oncology, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHRW,"C.H. Robinson Worldwide, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHRW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHSN,Chanson International Holding - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHT,"Chunghwa Telecom Co., Ltd.",N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CHT,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CHTR,"Charter Communications, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHTR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHWY,"Chewy, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CHWY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHYM,"Chime Financial, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CHYM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CI,The Cigna Group Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIA,"Citizens, Inc. Class A Common Stock ($1.00 Par)",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CICB,CION Investment Corporation 7.50% Notes due 2029,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CICB,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CICC,CION Investment Corporation 7.50% Notes due 2031,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:CICC,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CIEN,Ciena Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIFR,Cipher Digital Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIFR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIGI,Colliers International Group Inc.  - Subordinate Voting Shares,Q,Q,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:CIGI,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
+CIIT,"Tianci International, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIIT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIM,Chimera Investment Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CINF,Cincinnati Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CINF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CING,Cingulate Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CING,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CINT,CI&T Inc Class A Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CINT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CION,CION Investment Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CION,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIRC,"Circle8 Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CISS,C3is Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CISS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CITR,CitroTech Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CITR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIVB,"Civista Bancshares, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CIVB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIX,CompX International Inc. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CKX,"CKX Lands, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CKX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CL,Colgate-Palmolive Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CLAR,Clarus Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CLB,Core Laboratories Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

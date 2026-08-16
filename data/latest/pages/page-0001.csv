@@ -1,251 +1,251 @@
-ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id
-AACG,"ATA Creativity Global - American Depositary Shares, each representing two common shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AACG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AAPG,Ascentage Pharma Group International - American Depository Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AAPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ABEV,Ambev S.A. American Depositary Shares (Each representing 1 Common Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ABEV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ABVX,Abivax SA - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ABVX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ADAG,"Adagene Inc. - ADS, each representing 1.25 ordinary shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ADAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ADSE,ADS-TEC ENERGY PLC - Ordinary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ADSE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ADXN,Addex Therapeutics Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ADXN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AERO,"Grupo Aeromexico, S.A.B. de C.V. American Depositary Shares (each representing ten (10) Common Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AERO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AHG,Akso Health Group - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AKTX,Akari Therapeutics Plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AKTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ALAR,Alarum Technologies Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ALAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AMBO,Ambow Education Holding Ltd. American Depository Shares (each representing twenty (20) Class A Ordinary Shares),A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:AMBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AMBR,Amber International Holding Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AMBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AMRN,Amarin Corporation plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AMRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AMTD,"AMTD IDEA Group American Depositary Shares, each representing six (6) Class A Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AMTD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AMX,"America Movil, S.A.B. de C.V. American Depositary Shares (each representing the right to receive twenty (20) Series B Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ANL,Adlai Nortye Ltd. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ANL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-API,"Agora, Inc. - ADS",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:API,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ARBK,Argo Blockchain plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ARBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ARGX,argenx SE - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ARGX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ARM,Arm Holdings plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ARM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ASX,"ASE Technology Holding Co., Ltd. American Depositary Shares (each representing Two Common Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ASX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ATAT,Atour Lifestyle Holdings Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ATAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ATHE,Alterity Therapeutics Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ATHE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ATHM,"Autohome Inc. American Depositary Shares, each representing four class A ordinary shares.",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ATHM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AUTL,Autolus Therapeutics plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AUTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-AZUL,"Azul S.A. American Depositary Shares, each representing two (2) Common Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AZUL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BABA,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BABA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BAK,Braskem SA ADR,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BBAR,Banco BBVA Argentina S.A. ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BBAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BBD,Banco Bradesco Sa American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BBDO,Banco Bradesco Sa American Depositary Shares (each representing one Common Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BBDO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BCH,Banco De Chile ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BCH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BCYC,Bicycle Therapeutics plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BCYC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BDRX,Biodexa Pharmaceuticals plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BDRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BEKE,KE Holdings Inc American Depositary Shares (each representing three Class A Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BEKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BHP,BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BHP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BIDU,"Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BIDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BILI,Bilibili Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BILI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BLRX,BioLineRx Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BLRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BLTE,"Belite Bio, Inc - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BLTE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BMA,Banco Macro S.A.  ADR (representing Ten Class B Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BMA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BNR,Burning Rock Biotech Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BNR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BNTX,BioNTech SE - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BNTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BSAC,Banco Santander - Chile ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BSAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BSBR,"Banco Santander Brasil SA American Depositary Shares, each representing one unit",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BSBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BTI,"British American Tobacco  Industries, p.l.c. Common Stock ADR",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BUD,Anheuser-Busch Inbev SA Sponsored ADR (Belgium),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BUD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BWAY,BrainsWay Ltd. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BWAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BZ,KANZHUN LIMITED - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-BZUN,Baozun Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BZUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CANF,"Can-Fite Biopharma Ltd American Depositary Shares, each representing two (2) Ordinary Shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:CANF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CCM,Concord Medical Services Holdings Limited American Depositary Shares (Each represents thirty (30) Class A ordinary shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDLR,Cadeler A/S American Depositary Share (each representing four (4) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CDLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CDZIP,"Cadiz, Inc. - Depositary Shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CDZIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CEPU,Central Puerto S.A. American Depositary Shares (each represents ten Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CEPU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CHA,"Chagee Holdings Limited - American Depositary Shares, each representing 1 Class A ordinary share",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIG,Comp En De Mn Cemig ADS American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CIG.C,Comp En De Mn Cemig ADS American Depositary Receipts,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CIG.C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CLLS,Cellectis S.A. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CLLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CMCM,"Cheetah Mobile Inc. American Depositary Shares, each representing fifty (50) Class A Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CMCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CMMB,Chemomab Therapeutics Ltd.  - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CMMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CMPS,COMPASS Pathways Plc - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CMPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CNF,"CNFinance Holdings Limited American Depositary Shares, each representing two hundred (200) Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CNF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-COE,"51Talk Online Education Group American depositary shares, each representing 60 Class A ordinary shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:COE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CPAC,Cementos Pacasmayo S.A.A. American Depositary Shares (Each representing five Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CPAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CRESY,"Cresud S.A.C.I.F. y A. - American Depositary Shares, each representing ten shares of Common Stock",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CRESY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CSAN,Cosan S.A. ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CSAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CUVL,Clinuvel Pharmaceuticals Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CUVL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-CX,"Cemex, S.A.B. de C.V. Sponsored ADR",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DAO,"Youdao, Inc. American Depositary Shares, each representing one Class A Ordinary Share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DAO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DAVA,Endava plc American Depositary Shares (each representing one Class A Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DAVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DBVT,DBV Technologies S.A. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DBVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DDI,"DoubleDown Interactive Co., Ltd. - American Depository Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DDI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DDL,Dingdong (Cayman) Limited American Depositary Shares (each two representing three Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DOYU,DouYu International Holdings Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DOYU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DQ,"DAQO New Energy Corp. American Depositary Shares, each representing five ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DRD,DRDGOLD Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DSC,DSC Holdings Ltd. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-DXF,"Eason Technology Limited American Depositary Shares (each representing sixty-thousand (60,000) Ordinary Shares)",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:DXF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EC,Ecopetrol S.A. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:EC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EDN,Empresa Distribuidora Y Comercializadora Norte S.A. (Edenor) American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:EDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EDU,"New Oriental Education & Technology Group, Inc. Sponsored ADR representing 10 Ordinary Share (Cayman Islands)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:EDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EH,EHang Holdings Limited - ADS,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:EH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ELPC,Companhia Paranaense de Energia (COPEL) American Depositary Shares (each representing four (4) Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ELPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ELVR,Elevra Lithium Limited - American Depository Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ELVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENIC,Enel Chile S.A. American Depositary Shares (Each representing 50 shares of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ENIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ENRD,Einride AB - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ENRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ERIC,Ericsson - American Depositary Shares each representing 1 underlying Class B share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ERIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EVAX,Evaxion A/S - American Depositary Share,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:EVAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-EVO,Evotec SE - American Depositary Shares each representing 1/2 of one ordinary share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:EVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FEDU,"Four Seasons Education (Cayman) Inc. American Depositary Shares, each ADS representing 10 ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FEDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FENG,"Phoenix New Media Limited American Depositary Shares, each representing 48 Class A ordinary shares.",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FENG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FINV,FinVolution Group American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FINV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FLX,BingEx Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FMS,Fresenius Medical Care AG American Depositary Shares (Each representing 1/2 of an Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FOCL,"EDAP TMS S.A. - American Depositary Shares, each representing One Ordinary Share",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FOCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FOIL,"Londian Wason New Energy Tech Inc. American Depositary Shares, each representing five Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FOIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FORTY,Formula Systems (1985) Ltd. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FORTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FRSX,Foresight Autonomous Holdings Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FRSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-FUTU,Futu Holdings Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FUTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GDS,GDS Holdings Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GFI,Gold Fields Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GGAL,"Grupo Financiero Galicia S.A. - American Depositary Shares, Class B Shares underlying",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GGAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GHG,"GreenTree Hospitality Group Ltd. American depositary shares, each representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GMAB,Genmab A/S - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GMAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GMTL,Guardian Metal Resources PLC ADS,A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:GMTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GNTA,Genenta Science S.p.A. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GNTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GOTU,Gaotu Techedu Inc. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GOTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GPCR,Structure Therapeutics Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GPCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GRFS,"Grifols, S.A. - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GRFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GRVY,"GRAVITY Co., Ltd. - American depositary shares, each representing one common share.",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GRVY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-GSK,GSK plc American Depositary Shares (Each representing two Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HCM,HUTCHMED (China) Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HDL,SUPER HI INTERNATIONAL HOLDING LTD. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HEPS,D-Market Electronic Services & Trading - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HEPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HERE,Here Group Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HERE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HIMX,"Himax Technologies, Inc. - American depositary shares, each of which represents two ordinary shares.",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HIMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HKD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HLN,Haleon plc American Depositary Shares (Each representing two Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HSAI,Hesai Group - American Depositary Share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HSAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HTHT,H World Group Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HTHT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HTT,"High Templar Tech Limited American depositary shares, each representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HUIZ,Huize Holding Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HUIZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-HUYA,"HUYA Inc. American depositary shares, each  representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HUYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ICG,Intchains Group Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ICG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IH,"iHuman Inc. American depositary shares, each representing five Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IHG,Intercontinental Hotels Group American Depositary Shares (Each representing one Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IMCR,Immunocore Holdings plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IMCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IMOS,ChipMOS TECHNOLOGIES INC. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IMOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IMRN,Immuron Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IMRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-INFY,Infosys Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:INFY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IONR,ioneer Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IONR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IPHA,Innate Pharma S.A. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IPHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IPX,IperionX Limited - American Depositary Share,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IPX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IQ,"iQIYI, Inc. - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IQMX,IQM Quantum Computers Oyj - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IQMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IRS,IRSA Inversiones Y Representaciones S.A. Global Depositary Shares (Each representing ten shares of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IVA,Inventiva S.A. - American Depository Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-IX,ORIX Corporation American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JD,"JD.com, Inc. - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JF,J and Friends Holdings Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JFIN,Jiayin Group Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JFIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JFU,9F Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JFU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JG,Aurora Mobile Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JKS,JinkoSolar Holding Company Limited American Depositary Shares (each representing 4 Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:JKS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JMIA,"Jumia Technologies AG American Depositary Shares, each representing two Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:JMIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JOYY,JOYY Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JOYY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-JZ,Jianzhi Education Technology Group Company Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KC,Kingsoft Cloud Holdings Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KOF,"Coca Cola Femsa S.A.B. de C.V.  American Depositary Shares, each representing 10 Units (each Unit consists of 3 Series B Shares and 5 Series L Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:KOF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KRKR,36Kr Holdings Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KRKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KSPI,Joint Stock Company Kaspi.kz - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KSPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-KZIA,Kazia Therapeutics Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KZIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LAWR,"Robot Consulting Co., Ltd. - ADS",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LAWR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LEGN,Legend Biotech Corporation - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LEGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LFS,"LEIFRAS Co., Ltd. - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LGHL,Lion Group Holding Ltd. - American Depositary Share,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LGHL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LI,Li Auto Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LITB,"LightInTheBox Holding Co., Ltd. American Depositary Shares, each representing twelve ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LITB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LKFT,Lakefront Biotherapeutics - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LKFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LND,Brasilagro Brazilian Agric Real Estate Co Sponsored ADR (Brazil),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LOMA,Loma Negra Compania Industrial Argentina Sociedad Anonima ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LOMA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LOT,Lotus Technology Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LPL,"LG Display Co, Ltd AMERICAN DEPOSITORY SHARES",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LRE,"Lead Real Estate Co., Ltd - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LTM,"LATAM Airlines Group S.A. American Depositary Shares (each representing two thousand (2,000) shares of Common Stock)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LTM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LU,"Lufax Holding Ltd American Depositary Shares, each representing two (2) Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LUXE,"LuxExperience B.V. American Depositary Shares, each representing one Ordinary Share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LUXE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LX,LexinFintech Holdings Ltd. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LXEH,"Lixiang Education Holding Co., Ltd. - American Depositary Shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LXEH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-LYG,Lloyds Banking Group Plc American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LYG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MESO,Mesoblast Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MESO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MFG,"Mizuho Financial Group, Inc. Sponosred ADR (Japan)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MLCO,Melco Resorts & Entertainment Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MLCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MNSBP,"MainStreet Bancshares, Inc. - Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MNSBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MNSO,"MINISO Group Holding Limited American Depositary Shares, each representing four Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MNSO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MOGU,MOGU Inc. American Depositary Shares (each  representing 25 Class A Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MOGU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MOLN,Molecular Partners AG - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MOLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MOMO,Hello Group Inc.  - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MOMO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MSC,"Studio City International Holdings Limited American depositary shares, each representing four  Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MTLS,Materialise NV - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MTLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MWC,"Micware Co., Ltd. - American Depositary Shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MWC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-MYND,"Mynd.ai, Inc. American Depositary Shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:MYND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NAAS,NaaS Technology Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NAAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NAMI,Jinxin Technology Holding Company - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NAMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NBP,NovaBridge Biosciences - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NCNA,NuCana plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NCNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NCTY,The9 Limited - American Depository Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NCTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NEN,New England Realty Associates Limited Partnership Class A Depositary Receipts Evidencing Units of Limited Partnership,A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:NEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NGG,"National Grid Transco, PLC National Grid PLC (NEW) American Depositary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NGG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NICE,NICE Ltd - American Depositary Shares each representing one Ordinary Share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NICE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NICM,Nicola Mining Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NICM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NIO,"NIO Inc. American depositary shares, each  representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NIPG,NIP Group Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NIPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NIU,Niu Technologies - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NIU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NMR,Nomura Holdings Inc ADR American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NNDM,Nano Dimension Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NNDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NOAH,Noah Holdings Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NOAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NOK,Nokia Corporation Sponsored American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NOK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NTES,"NetEase, Inc. - American Depositary Shares, each representing 5 ordinary shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NTES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-NWG,"NatWest Group plc American Depositary Shares, (each representing two (2) Ordinary Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NWG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-OMAB,Grupo Aeroportuario del Centro Norte S.A.B. de C.V. - American Depositary Shares each representing 8 Series B shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:OMAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-ONC,BeOne Medicines Ltd. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ONC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-OPRA,Opera Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:OPRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-OTLY,Oatly Group AB - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:OTLY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PAYP,PayPay Corporation - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PAYP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PBR,Petroleo Brasileiro S.A. Petrobras ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PCLA,PicoCELA Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PCLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PDC,Perpetuals.com Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PDD,PDD Holdings Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PDD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PHAR,"Pharming Group N.V. - ADS, each representing 10 ordinary shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PHAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PHI,PLDT Inc. Sponsored ADR,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PHOS,First Phosphate Corp. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PHOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PKX,POSCO HOLDINGS INC. American Depositary Shares (Each representing 1/4th of a share of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PKX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-POM,POMDOCTOR LIMITED - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:POM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PONY,Pony AI Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PONY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PPBT,Purple Biotech Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PPBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PSNY,Polestar Automotive Holding UK Limited - Class A ADS,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PSNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-PSNYW,Polestar Automotive Holding UK Limited - Class C-1 ADS (ADW),Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PSNYW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-QFIN,"Qfin Holdings, Inc.  - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:QFIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-QNRX,"Quoin Pharmaceuticals, Ltd. - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:QNRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RADX,Radiopharm Theranostics Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:RADX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RELX,RELX PLC PLC American Depositary Shares (Each representing One Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RELX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RERE,ATRenew Inc. American Depositary Shares (every three of which representing two Class A ordinary shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RERE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RLX,"RLX Technology Inc. American Depositary Shares, each representing the right to receive one (1) Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RTO,Rentokil Initial plc American Depositary Shares (each representing five (5) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-RYAAY,"Ryanair Holdings plc - American Depositary Shares, each representing five Ordinary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:RYAAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAN,"Banco Santander, S.A. Sponsored ADR (Spain)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SAP,SAP  SE ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBS,Companhia de saneamento Basico Do Estado De Sao Paulo - Sabesp American Depositary Shares (Each repstg 250 Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SBSW,D/B/A Sibanye-Stillwater Limited ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SBSW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SE,"Sea Limited American Depositary Shares, each representing one Class A Ordinary Share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SHEL,Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SHEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SHG,Shinhan Financial Group Co Ltd American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SIFY,Sify Technologies Limited - American Depository Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SIFY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SIM,"Grupo Simec, S.A.B. de C.V. American Depositary Shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:SIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SIMO,"Silicon Motion Technology Corporation - American Depositary Shares, each representing four ordinary shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SIMO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SKHY,SK hynix Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SKHY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SLN,Silence Therapeutics Plc - American Depository Share,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SMFG,Sumitomo Mitsui Financial Group Inc Unsponsored American Depositary Shares (Japan),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SMFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SNY,Sanofi - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SOGP,Sound Group Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SOGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SOHU,Sohu.com Limited  - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SOHU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SONY,Sony Group Corporation American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SONY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SQNS,Sequans Communications S.A. American Depositary Shares (each representing one hundred (100) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SQNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SSL,Sasol Ltd. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STG,"Sunlands Technology Group American Depositary Shares, representing Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:STG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-STKH,Steakholder Foods Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:STKH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
-SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SUPV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed
+ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+AACG,"ATA Creativity Global - American Depositary Shares, each representing two common shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AACG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AAPG,Ascentage Pharma Group International - American Depository Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AAPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ABEV,Ambev S.A. American Depositary Shares (Each representing 1 Common Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ABEV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ABVX,Abivax SA - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ABVX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ADAG,"Adagene Inc. - ADS, each representing 1.25 ordinary shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ADAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ADSE,ADS-TEC ENERGY PLC - Ordinary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ADSE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ADXN,Addex Therapeutics Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ADXN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AERO,"Grupo Aeromexico, S.A.B. de C.V. American Depositary Shares (each representing ten (10) Common Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AERO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AHG,Akso Health Group - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AKTX,Akari Therapeutics Plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AKTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ALAR,Alarum Technologies Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ALAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AMBO,Ambow Education Holding Ltd. American Depository Shares (each representing twenty (20) Class A Ordinary Shares),A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:AMBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AMBR,Amber International Holding Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AMBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AMRN,Amarin Corporation plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AMRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AMTD,"AMTD IDEA Group American Depositary Shares, each representing six (6) Class A Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AMTD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AMX,"America Movil, S.A.B. de C.V. American Depositary Shares (each representing the right to receive twenty (20) Series B Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ANL,Adlai Nortye Ltd. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ANL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+API,"Agora, Inc. - ADS",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:API,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ARBK,Argo Blockchain plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ARBK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ARGX,argenx SE - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ARGX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ARM,Arm Holdings plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ARM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ASX,"ASE Technology Holding Co., Ltd. American Depositary Shares (each representing Two Common Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ASX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ATAT,Atour Lifestyle Holdings Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ATAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ATHE,Alterity Therapeutics Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ATHE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ATHM,"Autohome Inc. American Depositary Shares, each representing four class A ordinary shares.",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ATHM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AUTL,Autolus Therapeutics plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:AUTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+AZUL,"Azul S.A. American Depositary Shares, each representing two (2) Common Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:AZUL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BABA,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BABA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BAK,Braskem SA ADR,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BAK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BBAR,Banco BBVA Argentina S.A. ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BBAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BBD,Banco Bradesco Sa American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BBDO,Banco Bradesco Sa American Depositary Shares (each representing one Common Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BBDO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BCH,Banco De Chile ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BCH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BCYC,Bicycle Therapeutics plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BCYC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BDRX,Biodexa Pharmaceuticals plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BDRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BEKE,KE Holdings Inc American Depositary Shares (each representing three Class A Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BEKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BHP,BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BHP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BIDU,"Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BIDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BILI,Bilibili Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BILI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BLRX,BioLineRx Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BLRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BLTE,"Belite Bio, Inc - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BLTE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BMA,Banco Macro S.A.  ADR (representing Ten Class B Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BMA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BNR,Burning Rock Biotech Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BNR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BNTX,BioNTech SE - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BNTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSAC,Banco Santander - Chile ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BSAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BSBR,"Banco Santander Brasil SA American Depositary Shares, each representing one unit",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BSBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BTI,"British American Tobacco  Industries, p.l.c. Common Stock ADR",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BTI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BUD,Anheuser-Busch Inbev SA Sponsored ADR (Belgium),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:BUD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BWAY,BrainsWay Ltd. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BWAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BZ,KANZHUN LIMITED - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BZUN,Baozun Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:BZUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CANF,"Can-Fite Biopharma Ltd American Depositary Shares, each representing two (2) Ordinary Shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:CANF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CCM,Concord Medical Services Holdings Limited American Depositary Shares (Each represents thirty (30) Class A ordinary shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDLR,Cadeler A/S American Depositary Share (each representing four (4) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CDLR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CDZIP,"Cadiz, Inc. - Depositary Shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CDZIP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CEPU,Central Puerto S.A. American Depositary Shares (each represents ten Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CEPU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CHA,"Chagee Holdings Limited - American Depositary Shares, each representing 1 Class A ordinary share",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIG,Comp En De Mn Cemig ADS American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CIG.C,Comp En De Mn Cemig ADS American Depositary Receipts,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CIG.C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CLLS,Cellectis S.A. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CLLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CMCM,"Cheetah Mobile Inc. American Depositary Shares, each representing fifty (50) Class A Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CMCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CMMB,Chemomab Therapeutics Ltd.  - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CMMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CMPS,COMPASS Pathways Plc - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CMPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CNF,"CNFinance Holdings Limited American Depositary Shares, each representing two hundred (200) Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CNF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+COE,"51Talk Online Education Group American depositary shares, each representing 60 Class A ordinary shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:COE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CPAC,Cementos Pacasmayo S.A.A. American Depositary Shares (Each representing five Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CPAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CRESY,"Cresud S.A.C.I.F. y A. - American Depositary Shares, each representing ten shares of Common Stock",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CRESY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CSAN,Cosan S.A. ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CSAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CUVL,Clinuvel Pharmaceuticals Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:CUVL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CX,"Cemex, S.A.B. de C.V. Sponsored ADR",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:CX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DAO,"Youdao, Inc. American Depositary Shares, each representing one Class A Ordinary Share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DAO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DAVA,Endava plc American Depositary Shares (each representing one Class A Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DAVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DBVT,DBV Technologies S.A. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DBVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DDI,"DoubleDown Interactive Co., Ltd. - American Depository Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DDI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DDL,Dingdong (Cayman) Limited American Depositary Shares (each two representing three Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DOYU,DouYu International Holdings Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DOYU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DQ,"DAQO New Energy Corp. American Depositary Shares, each representing five ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DRD,DRDGOLD Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:DRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DSC,DSC Holdings Ltd. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:DSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DXF,"Eason Technology Limited American Depositary Shares (each representing sixty-thousand (60,000) Ordinary Shares)",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:DXF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+EC,Ecopetrol S.A. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:EC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+EDN,Empresa Distribuidora Y Comercializadora Norte S.A. (Edenor) American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:EDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+EDU,"New Oriental Education & Technology Group, Inc. Sponsored ADR representing 10 Ordinary Share (Cayman Islands)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:EDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+EH,EHang Holdings Limited - ADS,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:EH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ELPC,Companhia Paranaense de Energia (COPEL) American Depositary Shares (each representing four (4) Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ELPC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ELVR,Elevra Lithium Limited - American Depository Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ELVR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ENIC,Enel Chile S.A. American Depositary Shares (Each representing 50 shares of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ENIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ENRD,Einride AB - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ENRD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ERIC,Ericsson - American Depositary Shares each representing 1 underlying Class B share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ERIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+EVAX,Evaxion A/S - American Depositary Share,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:EVAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+EVO,Evotec SE - American Depositary Shares each representing 1/2 of one ordinary share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:EVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FEDU,"Four Seasons Education (Cayman) Inc. American Depositary Shares, each ADS representing 10 ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FEDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FENG,"Phoenix New Media Limited American Depositary Shares, each representing 48 Class A ordinary shares.",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FENG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FINV,FinVolution Group American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FINV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FLX,BingEx Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FMS,Fresenius Medical Care AG American Depositary Shares (Each representing 1/2 of an Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FMS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FOCL,"EDAP TMS S.A. - American Depositary Shares, each representing One Ordinary Share",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FOCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FOIL,"Londian Wason New Energy Tech Inc. American Depositary Shares, each representing five Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:FOIL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FORTY,Formula Systems (1985) Ltd. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FORTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FRSX,Foresight Autonomous Holdings Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FRSX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+FUTU,Futu Holdings Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:FUTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GDS,GDS Holdings Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GFI,Gold Fields Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GGAL,"Grupo Financiero Galicia S.A. - American Depositary Shares, Class B Shares underlying",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GGAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GHG,"GreenTree Hospitality Group Ltd. American depositary shares, each representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GMAB,Genmab A/S - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GMAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GMTL,Guardian Metal Resources PLC ADS,A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:GMTL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GNTA,Genenta Science S.p.A. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GNTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GOTU,Gaotu Techedu Inc. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GOTU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GPCR,Structure Therapeutics Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GPCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GRFS,"Grifols, S.A. - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GRFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GRVY,"GRAVITY Co., Ltd. - American depositary shares, each representing one common share.",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:GRVY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+GSK,GSK plc American Depositary Shares (Each representing two Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:GSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HCM,HUTCHMED (China) Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HCM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HDL,SUPER HI INTERNATIONAL HOLDING LTD. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HDL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HEPS,D-Market Electronic Services & Trading - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HEPS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HERE,Here Group Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HERE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HIMX,"Himax Technologies, Inc. - American depositary shares, each of which represents two ordinary shares.",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HIMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HKD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HLN,Haleon plc American Depositary Shares (Each representing two Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HSAI,Hesai Group - American Depositary Share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HSAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HTHT,H World Group Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HTHT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HTT,"High Templar Tech Limited American depositary shares, each representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HUIZ,Huize Holding Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:HUIZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HUYA,"HUYA Inc. American depositary shares, each  representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:HUYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ICG,Intchains Group Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ICG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IH,"iHuman Inc. American depositary shares, each representing five Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IHG,Intercontinental Hotels Group American Depositary Shares (Each representing one Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IMCR,Immunocore Holdings plc - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IMCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IMOS,ChipMOS TECHNOLOGIES INC. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IMOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IMRN,Immuron Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IMRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+INFY,Infosys Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:INFY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IONR,ioneer Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IONR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IPHA,Innate Pharma S.A. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IPHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IPX,IperionX Limited - American Depositary Share,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IPX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IQ,"iQIYI, Inc. - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IQ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IQMX,IQM Quantum Computers Oyj - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IQMX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IRS,IRSA Inversiones Y Representaciones S.A. Global Depositary Shares (Each representing ten shares of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IRS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IVA,Inventiva S.A. - American Depository Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:IVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IX,ORIX Corporation American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:IX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JD,"JD.com, Inc. - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JF,J and Friends Holdings Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JFIN,Jiayin Group Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JFIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JFU,9F Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JFU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JG,Aurora Mobile Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JKS,JinkoSolar Holding Company Limited American Depositary Shares (each representing 4 Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:JKS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JMIA,"Jumia Technologies AG American Depositary Shares, each representing two Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:JMIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JOYY,JOYY Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JOYY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+JZ,Jianzhi Education Technology Group Company Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:JZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+KC,Kingsoft Cloud Holdings Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+KOF,"Coca Cola Femsa S.A.B. de C.V.  American Depositary Shares, each representing 10 Units (each Unit consists of 3 Series B Shares and 5 Series L Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:KOF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+KRKR,36Kr Holdings Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KRKR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+KSPI,Joint Stock Company Kaspi.kz - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KSPI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+KZIA,Kazia Therapeutics Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:KZIA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LAWR,"Robot Consulting Co., Ltd. - ADS",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LAWR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LEGN,Legend Biotech Corporation - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LEGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LFS,"LEIFRAS Co., Ltd. - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LGHL,Lion Group Holding Ltd. - American Depositary Share,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LGHL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LI,Li Auto Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LITB,"LightInTheBox Holding Co., Ltd. American Depositary Shares, each representing twelve ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LITB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LKFT,Lakefront Biotherapeutics - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LKFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LND,Brasilagro Brazilian Agric Real Estate Co Sponsored ADR (Brazil),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LOMA,Loma Negra Compania Industrial Argentina Sociedad Anonima ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LOMA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LOT,Lotus Technology Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LOT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LPL,"LG Display Co, Ltd AMERICAN DEPOSITORY SHARES",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LRE,"Lead Real Estate Co., Ltd - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LTM,"LATAM Airlines Group S.A. American Depositary Shares (each representing two thousand (2,000) shares of Common Stock)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LTM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LU,"Lufax Holding Ltd American Depositary Shares, each representing two (2) Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LUXE,"LuxExperience B.V. American Depositary Shares, each representing one Ordinary Share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LUXE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LX,LexinFintech Holdings Ltd. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LXEH,"Lixiang Education Holding Co., Ltd. - American Depositary Shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:LXEH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LYG,Lloyds Banking Group Plc American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:LYG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MESO,Mesoblast Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MESO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MFG,"Mizuho Financial Group, Inc. Sponosred ADR (Japan)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MLCO,Melco Resorts & Entertainment Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MLCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MNSBP,"MainStreet Bancshares, Inc. - Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MNSBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MNSO,"MINISO Group Holding Limited American Depositary Shares, each representing four Ordinary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MNSO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MOGU,MOGU Inc. American Depositary Shares (each  representing 25 Class A Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MOGU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MOLN,Molecular Partners AG - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MOLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MOMO,Hello Group Inc.  - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MOMO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MSC,"Studio City International Holdings Limited American depositary shares, each representing four  Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:MSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MTLS,Materialise NV - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MTLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MWC,"Micware Co., Ltd. - American Depositary Shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:MWC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+MYND,"Mynd.ai, Inc. American Depositary Shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:MYND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NAAS,NaaS Technology Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NAAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NAMI,Jinxin Technology Holding Company - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NAMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NBP,NovaBridge Biosciences - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NCNA,NuCana plc - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NCNA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NCTY,The9 Limited - American Depository Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NCTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NEN,New England Realty Associates Limited Partnership Class A Depositary Receipts Evidencing Units of Limited Partnership,A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:NEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NGG,"National Grid Transco, PLC National Grid PLC (NEW) American Depositary Shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NGG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NICE,NICE Ltd - American Depositary Shares each representing one Ordinary Share,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NICE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NICM,Nicola Mining Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NICM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NIO,"NIO Inc. American depositary shares, each  representing one Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NIPG,NIP Group Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NIPG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NIU,Niu Technologies - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NIU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NMR,Nomura Holdings Inc ADR American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NNDM,Nano Dimension Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NNDM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NOAH,Noah Holdings Limited American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NOAH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NOK,Nokia Corporation Sponsored American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NOK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NTES,"NetEase, Inc. - American Depositary Shares, each representing 5 ordinary shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:NTES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+NWG,"NatWest Group plc American Depositary Shares, (each representing two (2) Ordinary Shares)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:NWG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OMAB,Grupo Aeroportuario del Centro Norte S.A.B. de C.V. - American Depositary Shares each representing 8 Series B shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:OMAB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ONC,BeOne Medicines Ltd. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:ONC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OPRA,Opera Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:OPRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OTLY,Oatly Group AB - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:OTLY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PAYP,PayPay Corporation - American Depository Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PAYP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PBR,Petroleo Brasileiro S.A. Petrobras ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PCLA,PicoCELA Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PCLA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PDC,Perpetuals.com Ltd - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PDD,PDD Holdings Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PDD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PHAR,"Pharming Group N.V. - ADS, each representing 10 ordinary shares",Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PHAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PHI,PLDT Inc. Sponsored ADR,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PHOS,First Phosphate Corp. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PHOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PKX,POSCO HOLDINGS INC. American Depositary Shares (Each representing 1/4th of a share of Common Stock),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:PKX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+POM,POMDOCTOR LIMITED - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:POM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PONY,Pony AI Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PONY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PPBT,Purple Biotech Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PPBT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PSNY,Polestar Automotive Holding UK Limited - Class A ADS,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PSNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PSNYW,Polestar Automotive Holding UK Limited - Class C-1 ADS (ADW),Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:PSNYW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+QFIN,"Qfin Holdings, Inc.  - American Depositary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:QFIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+QNRX,"Quoin Pharmaceuticals, Ltd. - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:QNRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RADX,Radiopharm Theranostics Limited - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:RADX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RELX,RELX PLC PLC American Depositary Shares (Each representing One Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RELX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RERE,ATRenew Inc. American Depositary Shares (every three of which representing two Class A ordinary shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RERE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RLX,"RLX Technology Inc. American Depositary Shares, each representing the right to receive one (1) Class A ordinary share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RTO,Rentokil Initial plc American Depositary Shares (each representing five (5) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:RTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RYAAY,"Ryanair Holdings plc - American Depositary Shares, each representing five Ordinary Shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:RYAAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SAN,"Banco Santander, S.A. Sponsored ADR (Spain)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SAN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SAP,SAP  SE ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SAP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SBS,Companhia de saneamento Basico Do Estado De Sao Paulo - Sabesp American Depositary Shares (Each repstg 250 Common Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SBS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SBSW,D/B/A Sibanye-Stillwater Limited ADS,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SBSW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SE,"Sea Limited American Depositary Shares, each representing one Class A Ordinary Share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SHEL,Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SHEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SHG,Shinhan Financial Group Co Ltd American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SIFY,Sify Technologies Limited - American Depository Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SIFY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SIM,"Grupo Simec, S.A.B. de C.V. American Depositary Shares",A,,,adr,eligible,True,Y,N,,nasdaqtrader:A:SIM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SIMO,"Silicon Motion Technology Corporation - American Depositary Shares, each representing four ordinary shares",Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SIMO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SKHY,SK hynix Inc. - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SKHY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SLN,Silence Therapeutics Plc - American Depository Share,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SMFG,Sumitomo Mitsui Financial Group Inc Unsponsored American Depositary Shares (Japan),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SMFG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SNY,Sanofi - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SNY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SOGP,Sound Group Inc. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SOGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SOHU,Sohu.com Limited  - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:SOHU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SONY,Sony Group Corporation American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SONY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SQNS,Sequans Communications S.A. American Depositary Shares (each representing one hundred (100) Ordinary Shares),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SQNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SSL,Sasol Ltd. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+STG,"Sunlands Technology Group American Depositary Shares, representing Class A ordinary shares",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:STG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+STKH,Steakholder Foods Ltd. - American Depositary Shares,Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:STKH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:SUPV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
