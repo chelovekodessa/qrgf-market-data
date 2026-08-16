@@ -39,6 +39,14 @@ def resolve_commit(ref: str, github_token: str | None) -> str:
     return commit
 
 
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
@@ -82,6 +90,7 @@ def main() -> int:
         "kind": "ticker_cik_routing_hint",
         "authoritative": False,
         "verification_required": "sec_submissions",
+        "materializer_sha256": sha256_file(Path(__file__).resolve()),
         "source_repository": REPO,
         "source_ref": args.ref,
         "source_commit": commit,
