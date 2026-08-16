@@ -30,7 +30,6 @@ def load_candidates(path: Path) -> list[dict[str, Any]]:
         return [parse_canonical_csv_row(row) for row in csv.DictReader(handle)]
 
 
-
 def adapt_l1_candidate(row: dict[str, Any]) -> dict[str, Any]:
     """Map canonical L1 export fields into the L2 contract without guessing units."""
     result = dict(row)
@@ -52,18 +51,83 @@ def adapt_l1_candidate(row: dict[str, Any]) -> dict[str, Any]:
                 break
     return result
 
+
+def _number(value: Any) -> float | None:
+    if value in (None, "") or isinstance(value, bool):
+        return None
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+    return number if number == number else None
+
+
+def apply_selection_contract(row: dict[str, Any], rules: dict[str, Any]) -> dict[str, Any]:
+    """Materialize a fixed-denominator market-setup score.
+
+    The previous Research Priority silently removed missing components from both
+    numerator and denominator.  That made absence of quality/resistance evidence
+    capable of improving a candidate's score.  The new L2 selection score uses
+    only cheap mass-screen inputs that are expected at L1 and requires every
+    configured component.  Optional quality and resistance evidence remain
+    separate and never shrink the denominator.
+    """
+    result = dict(row)
+    legacy_score = _number(result.get("research_priority_score"))
+    legacy_coverage = _number(result.get("research_priority_coverage_pct"))
+    components = result.get("research_components") if isinstance(result.get("research_components"), dict) else {}
+    setup = (rules.get("selection_setup") or {})
+    weights = setup.get("weights") or {}
+    if not weights:
+        raise ValueError("selection_setup.weights are required")
+    full_weight = sum(float(weight) for weight in weights.values())
+    known_weight = 0.0
+    numerator = 0.0
+    missing: list[str] = []
+    for name, raw_weight in weights.items():
+        weight = float(raw_weight)
+        value = _number(components.get(name))
+        if value is None:
+            missing.append(name)
+            continue
+        known_weight += weight
+        numerator += max(0.0, min(100.0, value)) * weight
+    coverage = round(100.0 * known_weight / full_weight, 2) if full_weight else 0.0
+    require_all = bool(setup.get("require_all_components", True))
+    score = None if (require_all and missing) or not full_weight else round(numerator / full_weight, 2)
+
+    result["legacy_research_priority_score"] = legacy_score
+    result["legacy_research_priority_coverage_pct"] = legacy_coverage
+    result["l2_setup_score"] = score
+    result["l2_confidence_pct"] = coverage
+    result["l2_setup_missing"] = missing
+    result["l2_quality_prior_score"] = _number(components.get("quality_prior"))
+    result["l2_room_to_target_score"] = _number(components.get("room_to_target"))
+    result["l2_selection_model_version"] = str(setup.get("model_version") or rules.get("ruleset_version") or "")
+    # Compatibility fields consumed by the current skill now mean the fixed
+    # market-setup score, not the legacy dynamic-denominator score.
+    result["research_priority_score"] = score
+    result["research_priority_coverage_pct"] = coverage
+    result["l2_opportunity_score"] = score
+    if score is None and result.get("l2_status") in {"pass", "conditional"}:
+        result["l2_status"] = "recheck"
+        missing_checks = list(result.get("checks_missing") or [])
+        if "selection_setup_components" not in missing_checks:
+            missing_checks.append("selection_setup_components")
+        result["checks_missing"] = missing_checks
+        result["next_required_check"] = "enrich_missing_l2_data"
+    return result
+
+
 def rank_key(row: dict[str, Any]) -> tuple[Any, ...]:
-    # L2 is a high-recall research triage.  `conditional` means the candidate
-    # carries flags for later research; it is not incomplete data (that is
-    # `recheck`) and must not silently outrank Research Priority.
     status_rank = {"pass": 2, "conditional": 2, "recheck": 1, "rejected": 0}.get(str(row.get("l2_status")), -1)
-    research = row.get("research_priority_score")
-    coverage = row.get("research_priority_coverage_pct") or 0.0
+    setup = _number(row.get("l2_setup_score"))
+    coverage = _number(row.get("l2_confidence_pct")) or 0.0
     ticker = str(row.get("ticker") or "")
     return (
         status_rank,
-        float(research) if research is not None else -1.0,
-        float(coverage),
+        setup if setup is not None else -1.0,
+        coverage,
         tuple(-ord(char) for char in ticker),
     )
 
@@ -83,14 +147,13 @@ def run(
     for candidate in candidates:
         adapted = adapt_l1_candidate(candidate)
         result = classify(adapted, rules, effective_hash)
+        result = apply_selection_contract(result, rules)
         result["ruleset_version"] = effective_version
         result["ruleset_hash"] = effective_hash
         result["l2_rules_hash"] = rules_hash
-        # Preserve stable identity and source metadata so L2 updates the existing
-        # candidate instead of creating a second ticker-only state record.
         results.append({**adapted, **result})
     ranked = sorted(results, key=rank_key, reverse=True)
-    finalists = [row for row in ranked if row["l2_status"] in {"pass", "conditional", "recheck"} and row.get("research_priority_score") is not None][:keep]
+    finalists = [row for row in ranked if row["l2_status"] in {"pass", "conditional", "recheck"} and row.get("l2_setup_score") is not None][:keep]
     finalist_keys = {(str(row.get("ticker") or "").upper(), str(row.get("contract_id") or "")) for row in finalists}
     for row in ranked:
         row["selected_for_next_stage"] = (str(row.get("ticker") or "").upper(), str(row.get("contract_id") or "")) in finalist_keys
@@ -98,12 +161,10 @@ def run(
         "ruleset_version": effective_version,
         "ruleset_hash": effective_hash,
         "l2_rules_hash": rules_hash,
+        "selection_model_version": str((rules.get("selection_setup") or {}).get("model_version") or ""),
         "input_count": len(candidates),
         "processed_count": len(results),
-        "status_counts": {
-            status: sum(row["l2_status"] == status for row in results)
-            for status in ("pass", "conditional", "recheck", "rejected")
-        },
+        "status_counts": {status: sum(row["l2_status"] == status for row in results) for status in ("pass", "conditional", "recheck", "rejected")},
         "global_ranking": True,
         "finalist_ceiling": keep,
         "finalists": finalists,
@@ -123,14 +184,7 @@ def main() -> int:
     if not 1 <= args.keep <= 120:
         parser.error("keep must be between 1 and 120")
     rules_bytes = args.rules.read_bytes()
-    result = run(
-        load_candidates(args.input),
-        json.loads(rules_bytes),
-        hashlib.sha256(rules_bytes).hexdigest(),
-        args.keep,
-        ruleset_version=args.ruleset_version,
-        ruleset_hash=args.ruleset_hash,
-    )
+    result = run(load_candidates(args.input), json.loads(rules_bytes), hashlib.sha256(rules_bytes).hexdigest(), args.keep, ruleset_version=args.ruleset_version, ruleset_hash=args.ruleset_hash)
     atomic_write_json(args.output, result)
     return 0
 

@@ -13,6 +13,7 @@ on:
       - "scripts/qrgf_common.py"
       - "scripts/publish_l0_snapshot.py"
       - "config/approved-etfs.csv"
+      - "screening/tests/test_l0_resolution_contract.py"
 
 permissions:
   contents: write
@@ -32,6 +33,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Run L0 high-recall contract regressions
+        run: |
+          set -euo pipefail
+          python screening/tests/test_l0_resolution_contract.py
       - name: Download and classify official Nasdaq Trader directory
         run: |
           set -euo pipefail
