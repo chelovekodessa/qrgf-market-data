@@ -2,9 +2,10 @@
 """Point-in-time SEC CompanyFacts quality prior for the QRGF L2 cutoff band.
 
 Enrich only candidates that can mathematically affect the final L2 top-K after
-the configured positive-only quality rescue bonus. Missing SEC facts never
-become a neutral or zero quality score: unknown quality receives no bonus and
-keeps the market-setup score unchanged.
+the configured positive-only quality rescue bonus. A public ticker/CIK mirror
+is used only as a routing hint; every hinted CIK must be confirmed by the
+official SEC submissions endpoint before CompanyFacts can affect selection.
+Missing or unverified evidence never becomes a neutral or zero quality score.
 """
 from __future__ import annotations
 
@@ -19,7 +20,7 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Iterable
 
-SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers_exchange.json"
+SEC_SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik:010d}.json"
 SEC_COMPANYFACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 DEFAULT_USER_AGENT = "qrgf-market-data/3.0 qrgf-market-data-bot@users.noreply.github.com"
 ANNUAL_FORMS = {"10-K", "10-K/A", "20-F", "20-F/A", "40-F", "40-F/A"}
@@ -160,6 +161,7 @@ class SecClient:
 
 
 def ticker_to_cik(payload: dict[str, Any]) -> dict[str, list[int]]:
+    """Parse a SEC-shaped routing payload into ticker -> candidate CIKs."""
     result: dict[str, list[int]] = {}
     fields = payload.get("fields")
     data = payload.get("data")
@@ -169,7 +171,7 @@ def ticker_to_cik(payload: dict[str, Any]) -> dict[str, list[int]]:
             cik_i = normalized.index("cik")
             ticker_i = normalized.index("ticker")
         except ValueError as exc:
-            raise ValueError("SEC ticker map lacks cik/ticker fields") from exc
+            raise ValueError("ticker map lacks cik/ticker fields") from exc
         for row in data:
             if not isinstance(row, list) or len(row) <= max(cik_i, ticker_i):
                 continue
@@ -193,6 +195,35 @@ def ticker_to_cik(payload: dict[str, Any]) -> dict[str, list[int]]:
         if ticker:
             result.setdefault(ticker, []).append(cik)
     return result
+
+
+def ticker_variants(ticker: str) -> set[str]:
+    normalized = str(ticker or "").strip().upper()
+    if not normalized:
+        return set()
+    return {normalized, normalized.replace(".", "-"), normalized.replace("/", "-")}
+
+
+def lookup_ciks(mapping: dict[str, list[int]], ticker: str) -> list[int]:
+    found: set[int] = set()
+    for variant in ticker_variants(ticker):
+        for cik in mapping.get(variant) or []:
+            try:
+                found.add(int(cik))
+            except (TypeError, ValueError):
+                continue
+    return sorted(found)
+
+
+def submission_confirms_ticker(submission: dict[str, Any], ticker: str) -> bool:
+    official = submission.get("tickers")
+    if not isinstance(official, list):
+        return False
+    expected = ticker_variants(ticker)
+    actual: set[str] = set()
+    for value in official:
+        actual.update(ticker_variants(str(value or "")))
+    return bool(expected & actual)
 
 
 def _eligible_fact(item: Any, as_of: dt.date, forms: set[str], *, annual: bool) -> bool:
@@ -411,6 +442,8 @@ def enrich_rows(
     base_l2: dict[str, Any],
     rules: dict[str, Any],
     client: SecClient,
+    mapping: dict[str, list[int]],
+    routing_meta: dict[str, Any],
     *,
     keep: int,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -422,69 +455,110 @@ def enrich_rows(
         raise ValueError("candidate CSV has no as_of date")
     as_of = max(as_of_values)
 
-    mapping = ticker_to_cik(client.get_json(SEC_TICKERS_URL))
     by_key = {
         (str(row.get("ticker") or "").strip().upper(), str(row.get("contract_id") or "").strip()): row
         for row in rows
     }
-    requested = mapped = fetched = usable = ambiguous_cik = 0
+    operating_requested = mapped = verified = facts_ok = usable = ambiguous_cik = 0
+    submission_errors = companyfacts_errors = 0
     quality_errors: list[dict[str, Any]] = []
-    cache: dict[int, dict[str, Any]] = {}
+    submission_cache: dict[int, dict[str, Any]] = {}
+    facts_cache: dict[int, dict[str, Any]] = {}
 
     for key in sorted(cohort):
         row = by_key.get(key)
         if row is None:
             continue
-        requested += 1
         ticker = key[0]
-        ciks = sorted(set(mapping.get(ticker) or []))
+        if str(row.get("security_type") or "").strip().lower() == "etf":
+            row["quality_prior_status"] = "not_applicable_etf"
+            continue
+        operating_requested += 1
+        ciks = lookup_ciks(mapping, ticker)
         if len(ciks) != 1:
             if len(ciks) > 1:
                 ambiguous_cik += 1
-            row["quality_prior_status"] = "cik_unresolved"
+            row["quality_prior_status"] = "cik_route_unresolved"
             row["quality_prior_source"] = "sec_companyfacts"
             row["quality_prior_as_of"] = as_of.isoformat()
             continue
         cik = ciks[0]
         mapped += 1
         try:
-            facts = cache.get(cik)
+            submission = submission_cache.get(cik)
+            if submission is None:
+                submission = client.get_json(SEC_SUBMISSIONS_URL.format(cik=cik))
+                submission_cache[cik] = submission
+            if not submission_confirms_ticker(submission, ticker):
+                row["quality_prior_status"] = "cik_official_verification_failed"
+                row["quality_prior_source"] = "sec_companyfacts"
+                row["quality_prior_as_of"] = as_of.isoformat()
+                quality_errors.append({"ticker": ticker, "cik": cik, "stage": "official_ticker_verification"})
+                continue
+            verified += 1
+        except Exception as exc:
+            submission_errors += 1
+            row["quality_prior_status"] = "sec_submissions_error"
+            row["quality_prior_source"] = "sec_companyfacts"
+            row["quality_prior_as_of"] = as_of.isoformat()
+            quality_errors.append({"ticker": ticker, "cik": cik, "stage": "submissions", "error": type(exc).__name__})
+            continue
+
+        try:
+            facts = facts_cache.get(cik)
             if facts is None:
                 facts = client.get_json(SEC_COMPANYFACTS_URL.format(cik=cik))
-                cache[cik] = facts
-                fetched += 1
+                facts_cache[cik] = facts
+            facts_ok += 1
             prior = derive_quality_prior(facts, as_of)
             row.update(prior)
             row["quality_prior_cik"] = str(cik).zfill(10)
+            row["quality_prior_routing_verified"] = True
             if prior.get("quality_prior_score") is not None:
                 usable += 1
         except Exception as exc:
-            row["quality_prior_status"] = "provider_error"
+            companyfacts_errors += 1
+            row["quality_prior_status"] = "companyfacts_error"
             row["quality_prior_source"] = "sec_companyfacts"
             row["quality_prior_as_of"] = as_of.isoformat()
-            quality_errors.append({"ticker": ticker, "cik": cik, "error": type(exc).__name__})
+            quality_errors.append({"ticker": ticker, "cik": cik, "stage": "companyfacts", "error": type(exc).__name__})
 
-    provider_success = (fetched / mapped * 100.0) if mapped else 100.0
+    routing_coverage = (mapped / operating_requested * 100.0) if operating_requested else 100.0
+    verification_success = (verified / mapped * 100.0) if mapped else 100.0
+    provider_success = (facts_ok / verified * 100.0) if verified else 100.0
+    minimum_routing_coverage = float(rescue_cfg.get("minimum_routing_coverage_pct", 85.0))
+    minimum_verification = float(rescue_cfg.get("minimum_routing_verification_pct", 90.0))
     minimum_provider_success = float(rescue_cfg.get("minimum_provider_success_pct", 90.0))
-    if mapped and provider_success < minimum_provider_success:
-        raise RuntimeError(f"SEC quality provider success {provider_success:.2f}% below {minimum_provider_success:.2f}%")
+    if operating_requested and routing_coverage < minimum_routing_coverage:
+        raise RuntimeError(f"ticker/CIK routing coverage {routing_coverage:.2f}% below {minimum_routing_coverage:.2f}%")
+    if mapped and verification_success < minimum_verification:
+        raise RuntimeError(f"official SEC ticker verification {verification_success:.2f}% below {minimum_verification:.2f}%")
+    if verified and provider_success < minimum_provider_success:
+        raise RuntimeError(f"SEC CompanyFacts success {provider_success:.2f}% below {minimum_provider_success:.2f}%")
 
     summary = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "model_version": "1.0.0",
         "as_of": as_of.isoformat(),
         "source": "sec_companyfacts",
+        "routing_hint": routing_meta,
+        "routing_truth": "sec_submissions",
         "selection_cutoff_setup_score": round(cutoff, 4),
         "max_quality_rescue_bonus_points": max_bonus,
         "enrichment_floor_setup_score": round(cutoff - max_bonus, 4),
         "cohort_size": len(cohort),
-        "requested_rows": requested,
+        "operating_company_rows": operating_requested,
         "mapped_unique_cik": mapped,
         "ambiguous_cik": ambiguous_cik,
-        "companyfacts_fetched": fetched,
+        "officially_verified_cik": verified,
+        "companyfacts_fetched": facts_ok,
         "usable_quality_prior": usable,
+        "routing_coverage_pct": round(routing_coverage, 2),
+        "routing_verification_pct": round(verification_success, 2),
         "provider_success_pct": round(provider_success, 2),
         "sec_request_count": client.requests,
+        "submission_errors": submission_errors,
+        "companyfacts_errors": companyfacts_errors,
         "provider_errors": quality_errors,
     }
     return [dict(row) for row in rows], summary
@@ -495,6 +569,8 @@ def main() -> int:
     parser.add_argument("input", type=Path, help="L1 finalists CSV")
     parser.add_argument("--base-l2", type=Path, required=True)
     parser.add_argument("--rules", type=Path, required=True)
+    parser.add_argument("--ticker-map-json", type=Path, required=True)
+    parser.add_argument("--ticker-map-meta", type=Path, required=True)
     parser.add_argument("--keep", type=int, default=120)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--summary", type=Path, required=True)
@@ -509,6 +585,8 @@ def main() -> int:
         load_json(args.base_l2),
         load_json(args.rules),
         client,
+        ticker_to_cik(load_json(args.ticker_map_json)),
+        load_json(args.ticker_map_meta),
         keep=args.keep,
     )
     write_csv(args.output, rows)
