@@ -27,6 +27,12 @@ def instant(val, end, filed, form="6-K"):
 
 
 def main() -> int:
+    routing = quality.ticker_to_cik({"fields": ["cik", "ticker"], "data": [[1046179, "TSM"], [320193, "AAPL"]]})
+    check(quality.lookup_ciks(routing, "TSM") == [1046179], "routing hint parser failed")
+    check(quality.submission_confirms_ticker({"tickers": ["TSM"]}, "TSM"), "official ticker verification failed")
+    check(quality.submission_confirms_ticker({"tickers": ["BRK-B"]}, "BRK.B"), "share-class normalization failed")
+    check(not quality.submission_confirms_ticker({"tickers": ["TSM"]}, "AAPL"), "wrong routed CIK was accepted")
+
     payload = {
         "facts": {
             "ifrs-full": {
