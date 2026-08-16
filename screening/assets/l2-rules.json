@@ -1,40 +1,11 @@
 {
   "ruleset_version": "5.0.0",
-  "status_values": [
-    "pass",
-    "conditional",
-    "recheck",
-    "rejected"
-  ],
-  "entry_readiness_values": [
-    "not_assessed"
-  ],
-  "preliminary_timing_status_values": [
-    "room_available",
-    "room_unconfirmed_but_no_resistance_found",
-    "conditional",
-    "wait",
-    "unknown"
-  ],
-  "required_numeric_fields": [
-    "current_price",
-    "avg_dollar_volume",
-    "return_3m_pct",
-    "return_6m_pct",
-    "drawdown_pct",
-    "historical_volatility_pct"
-  ],
-  "optional_numeric_fields": [
-    "return_12m_pct",
-    "quality_prior_score",
-    "trading_history_days"
-  ],
-  "momentum_history_status_values": [
-    "full",
-    "limited_but_usable",
-    "insufficient",
-    "unknown"
-  ],
+  "status_values": ["pass", "conditional", "recheck", "rejected"],
+  "entry_readiness_values": ["not_assessed"],
+  "preliminary_timing_status_values": ["room_available", "room_unconfirmed_but_no_resistance_found", "conditional", "wait", "unknown"],
+  "required_numeric_fields": ["current_price", "avg_dollar_volume", "return_3m_pct", "return_6m_pct", "drawdown_pct", "historical_volatility_pct"],
+  "optional_numeric_fields": ["return_12m_pct", "quality_prior_score", "trading_history_days"],
+  "momentum_history_status_values": ["full", "limited_but_usable", "insufficient", "unknown"],
   "hard_veto_thresholds": {
     "minimum_avg_dollar_volume": 2000000,
     "economic_rationale": "Execution must be feasible; volatility and drawdown are not instrument vetoes."
@@ -48,12 +19,7 @@
   },
   "selection_setup": {
     "model_version": "2.2.0",
-    "weights": {
-      "prior_growth": 20,
-      "pullback_geometry": 25,
-      "liquidity": 15,
-      "data_completeness": 10
-    },
+    "weights": {"prior_growth": 20, "pullback_geometry": 25, "liquidity": 15, "data_completeness": 10},
     "require_all_components": true,
     "missing_components_do_not_shrink_denominator": true,
     "quality_prior_is_separate": true,
@@ -68,54 +34,24 @@
     "minimum_quality_score": 70.0,
     "minimum_coverage_pct": 60.0,
     "max_bonus_points": 2.0,
+    "minimum_routing_coverage_pct": 85.0,
+    "minimum_routing_verification_pct": 90.0,
     "minimum_provider_success_pct": 90.0,
     "unknown_quality_bonus": 0.0,
     "enrichment_cohort_rule": "base L2 setup score >= top-120 setup cutoff minus max_bonus_points",
-    "economic_rationale": "Strong point-in-time fundamental quality may rescue only a near-cutoff setup candidate. Unknown or weak quality never receives a penalty or invented neutral value, and quality can move the L2 score by at most two points so recovery setup remains dominant."
+    "routing_contract": "public ticker-CIK mirror is a hint only; every CIK must be verified by official SEC submissions before CompanyFacts can affect ranking",
+    "economic_rationale": "Strong point-in-time fundamental quality may rescue only a near-cutoff setup candidate. Unknown, unverified, or weak quality never receives a penalty or invented neutral value, and quality can move the L2 score by at most two points so recovery setup remains dominant."
   },
   "research_priority": {
-    "weights": {
-      "prior_growth": 20,
-      "pullback_geometry": 25,
-      "liquidity": 15,
-      "room_to_target": 15,
-      "quality_prior": 15,
-      "data_completeness": 10
-    },
+    "weights": {"prior_growth": 20, "pullback_geometry": 25, "liquidity": 15, "room_to_target": 15, "quality_prior": 15, "data_completeness": 10},
     "legacy_diagnostic_only": true,
     "global_rank_only_after_full_l2": true,
     "risk_is_separate_dimension": true,
     "entry_readiness_is_not_final_at_l2": true
   },
   "advisory_external_rule_ids": {
-    "hard_veto": [
-      "insufficient_liquidity",
-      "price_execution_unavailable",
-      "prohibited_instrument",
-      "data_integrity_failure",
-      "inactive_or_halted_contract"
-    ],
-    "risk_flag": [
-      "frequent_gap_behavior",
-      "parabolic_prior_move",
-      "deep_price_break",
-      "excessive_historical_volatility",
-      "incomplete_trading_history",
-      "elevated_historical_volatility",
-      "short_term_trend_weak",
-      "six_month_trend_weak",
-      "relative_strength_unconfirmed",
-      "technical_stabilization_unconfirmed",
-      "catalyst_unconfirmed",
-      "high_atr_to_target",
-      "resistance_before_5pct_target"
-    ],
-    "opportunity_flag": [
-      "strong_quality_prior",
-      "strong_prior_growth",
-      "managed_pullback",
-      "ample_room_to_target",
-      "high_liquidity"
-    ]
+    "hard_veto": ["insufficient_liquidity", "price_execution_unavailable", "prohibited_instrument", "data_integrity_failure", "inactive_or_halted_contract"],
+    "risk_flag": ["frequent_gap_behavior", "parabolic_prior_move", "deep_price_break", "excessive_historical_volatility", "incomplete_trading_history", "elevated_historical_volatility", "short_term_trend_weak", "six_month_trend_weak", "relative_strength_unconfirmed", "technical_stabilization_unconfirmed", "catalyst_unconfirmed", "high_atr_to_target", "resistance_before_5pct_target"],
+    "opportunity_flag": ["strong_quality_prior", "strong_prior_growth", "managed_pullback", "ample_room_to_target", "high_liquidity"]
   }
 }
