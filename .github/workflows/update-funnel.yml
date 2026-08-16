@@ -35,6 +35,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install routing parser dependency
+        run: python -m pip install --quiet "pyarrow==17.0.0"
       - name: Materialize pinned bulk prefilter
         shell: bash
         run: |
@@ -113,7 +115,9 @@ jobs:
           test -f data/l1/latest/manifest.json
           echo "L1_MANIFEST_SHA256=$(sha256sum data/l1/latest/manifest.json | awk '{print $1}')" >> "$GITHUB_ENV"
           echo "SOURCE_COMMIT_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
-      - name: Materialize L1 snapshot
+      - name: Materialize L1 snapshot and ticker routing
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
@@ -128,6 +132,9 @@ jobs:
           Path(".work").mkdir(exist_ok=True)
           Path(".work/l1.csv").write_bytes(gzip.decompress(compressed))
           PY
+          python screening/engine/materialize_ticker_route.py \
+            --output .work/company-tickers.json \
+            --meta-output .work/company-tickers-meta.json
       - name: Run exact global L1 ranking
         shell: bash
         run: |
@@ -151,6 +158,8 @@ jobs:
           python screening/engine/sec_quality_prior.py .work/l1-finalists.csv \
             --base-l2 .work/l2-base.json \
             --rules screening/assets/l2-rules.json \
+            --ticker-map-json .work/company-tickers.json \
+            --ticker-map-meta .work/company-tickers-meta.json \
             --keep 120 \
             --output .work/l1-quality.csv \
             --summary .work/quality-summary.json
@@ -198,6 +207,7 @@ jobs:
             --producer-file screening/engine/batch_l2.py \
             --producer-file screening/engine/classify_l2.py \
             --producer-file screening/engine/qrgf_common.py \
+            --producer-file screening/engine/materialize_ticker_route.py \
             --producer-file screening/engine/sec_quality_prior.py \
             --producer-file screening/config/l1-rules.json \
             --producer-file screening/assets/l2-rules.json \
