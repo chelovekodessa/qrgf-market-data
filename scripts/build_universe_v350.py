@@ -33,6 +33,12 @@ _NON_OPERATING_INVESTMENT = re.compile(
     r"\b(?:BDC|business\s+development\s+(?:company|corporation))\b)",
     re.I,
 )
+# The core classifier intentionally names only several debt subtypes. Generic
+# exchange-listed notes/bonds/debentures can therefore reach the ambiguous lane
+# (for example "7.875% Notes Due 2029"). They are explicit non-equity securities,
+# so reject them before provisional high-recall rescue rather than letting them
+# consume L1/L2 research capacity.
+_EXPLICIT_DEBT_SECURITY = re.compile(r"\b(?:notes?|debentures?|bonds?)\b", re.I)
 
 _ORIGINAL_CLASSIFY = core.classify_row
 _ORIGINAL_BUILD = core.build_universe
@@ -42,6 +48,8 @@ _PROVISIONAL_PREFIX = "qrgf-resolution-required"
 def classify_row(row, include_etfs, approved_etfs=None):
     is_etf = str(row.get("ETF") or "").strip().upper() == "Y"
     name = str(row.get("Security Name") or "").strip()
+    if not is_etf and _EXPLICIT_DEBT_SECURITY.search(name):
+        return False, "debt_note_or_bond", "debt", False
     if not is_etf and (
         _GENERIC_NON_ETF_FUND.search(name)
         or _CEF_SPONSOR_TRUST.search(name)

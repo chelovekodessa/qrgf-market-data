@@ -60,6 +60,16 @@ def main() -> int:
                 "Test Issue": "N",
                 "Financial Status": "N",
             },
+            {
+                "Symbol": "BADN",
+                "Security Name": "Example Capital Inc. 7.875% Notes Due 2029",
+                "Nasdaq Traded": "Y",
+                "Listing Exchange": "N",
+                "Market Category": "",
+                "ETF": "N",
+                "Test Issue": "N",
+                "Financial Status": "N",
+            },
         ]
         with listing.open("w", encoding="utf-8", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=fields, delimiter="|")
@@ -85,6 +95,11 @@ def main() -> int:
         check(
             any(row.get("ticker") == "BADW" and row.get("rejection_reason") == "warrant" for row in rejected),
             "explicit warrant rejection reason was lost",
+        )
+        check("BADN" not in by_ticker, "explicit debt note leaked into provisional L0")
+        check(
+            any(row.get("ticker") == "BADN" and row.get("rejection_reason") == "debt_note_or_bond" for row in rejected),
+            "explicit debt note rejection reason was lost",
         )
         check(summary.get("identity_resolution_required_count") == 1, "resolution-required count is wrong")
 
