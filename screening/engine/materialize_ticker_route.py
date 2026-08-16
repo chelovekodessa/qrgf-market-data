@@ -21,8 +21,13 @@ RAW_URL = f"https://raw.githubusercontent.com/{REPO}/{{commit}}/{SOURCE_PATH}"
 USER_AGENT = "qrgf-market-data/3.0"
 
 
-def request_bytes(url: str, *, github_token: str | None = None) -> bytes:
-    headers = {"User-Agent": USER_AGENT, "Accept": "application/octet-stream"}
+def request_bytes(
+    url: str,
+    *,
+    github_token: str | None = None,
+    accept: str = "application/octet-stream",
+) -> bytes:
+    headers = {"User-Agent": USER_AGENT, "Accept": accept}
     if github_token:
         headers["Authorization"] = f"Bearer {github_token}"
         headers["X-GitHub-Api-Version"] = "2022-11-28"
@@ -32,7 +37,13 @@ def request_bytes(url: str, *, github_token: str | None = None) -> bytes:
 
 
 def resolve_commit(ref: str, github_token: str | None) -> str:
-    payload = json.loads(request_bytes(API_COMMIT.format(ref=ref), github_token=github_token).decode("utf-8"))
+    payload = json.loads(
+        request_bytes(
+            API_COMMIT.format(ref=ref),
+            github_token=github_token,
+            accept="application/vnd.github+json",
+        ).decode("utf-8")
+    )
     commit = str(payload.get("sha") or "").strip()
     if len(commit) != 40:
         raise ValueError("could not resolve edgartools routing commit")
