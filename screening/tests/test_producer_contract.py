@@ -49,11 +49,17 @@ def main() -> int:
     check(base_row["momentum_history_status"] == "unknown", "later update erased source_gap")
 
     rules = {
-        "ruleset_version": "4.0.0",
+        "ruleset_version": "5.0.0",
         "selection_setup": {
-            "model_version": "2.1.0",
+            "model_version": "2.2.0",
             "weights": {"prior_growth": 20, "pullback_geometry": 25, "liquidity": 15, "data_completeness": 10},
             "require_all_components": True,
+        },
+        "quality_rescue": {
+            "enabled": True,
+            "minimum_quality_score": 70.0,
+            "minimum_coverage_pct": 60.0,
+            "max_bonus_points": 2.0,
         },
     }
     complete = batch_l2.apply_selection_contract({
@@ -71,7 +77,17 @@ def main() -> int:
     }, rules)
     check(complete["l2_setup_score"] is not None and complete["l2_confidence_pct"] == 100.0, "fixed setup score failed")
     check(complete["l2_quality_prior_score"] is None and complete["l2_room_to_target_score"] is None, "optional unknowns were invented")
+    check(complete["l2_quality_rescue_bonus"] == 0.0, "unknown quality changed L2 progression")
     check(complete["research_priority_score"] == complete["l2_setup_score"], "compatibility score does not use fixed setup")
+
+    strong = batch_l2.apply_selection_contract({
+        **complete,
+        "quality_prior_score": 98.0,
+        "quality_prior_coverage_pct": 100.0,
+    }, rules)
+    check(strong["l2_quality_rescue_bonus"] > 1.5, "strong quality did not receive bounded rescue")
+    check(strong["l2_progression_score"] > strong["l2_setup_score"], "quality rescue did not affect progression")
+    check(strong["l2_quality_rescue_bonus"] <= 2.0, "quality rescue exceeded configured cap")
 
     incomplete = batch_l2.apply_selection_contract({
         "l2_status": "conditional",
