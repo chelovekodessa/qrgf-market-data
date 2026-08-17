@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "created_at": "2026-08-17T11:38:52Z",
+  "created_at": "2026-08-17T11:41:33Z",
   "issuer_identity": {
     "cik_mapped_rows": 0,
     "etf_identity_is_security_specific": true,
@@ -14,7 +14,7 @@
     "rows": 5113,
     "source_id": "alpaca_sip_daily_free_l1"
   },
-  "manifest_semantic_sha256": "55b297501eb15ce61b982c8934b5db111a7df7fe17180f2c003d7bc56aa5c4f2",
+  "manifest_semantic_sha256": "18326f683fa9e52f12880434a3c70f7a5215d3286f909aeb4ae2ef3275457a2d",
   "market_session_id": "2026-08-14",
   "page_size": 250,
   "pages": [
@@ -126,7 +126,7 @@
   ],
   "producer_release": {
     "manifest_path": "screening/config/v3-producer-release.json",
-    "manifest_sha256": "524a88501f702b762773176192786e38169869c2b561e180d3f91080d6f75404",
+    "manifest_sha256": "de0b649a784d47b8c992f565db7c73de2a6ca8c5a44d64e874bcb259a65a7ce7",
     "producer_hashes": {
       "batch_l2.py": "25b7aa6bb26a10ca9d31c2d7ce5f6bef3ff17e3afa8e75ade2c5d06ce0c641ea",
       "build_v3_radar.py": "95c1940bfc95a47544f7c904260b3a45ca609ac2cfb2cb36b6040c4306c4cd23",
@@ -134,7 +134,7 @@
       "detect-v3-registry-changes.yml": "e2c9e6f550cd13c22d2e7170fec6416507ef3e27cfe36792e5acc4d215c3382a",
       "detect_v3_registry_changes.py": "5681319cbfefb1e6e3fcfdc5228aa37e0f2f125cb5b0ffb0f96f0a65ca7700bb",
       "l2-rules.json": "c8f1bf1665a8c5dfb834c0571e7dd5f6b6e5ccd00eab00295338bd42cfde549b",
-      "promote-v3-registry.yml": "bcdf55675f7c3ed449eefbf69df551bf13c849be9496a57d7d626b1b9155e9ac",
+      "promote-v3-registry.yml": "8b1c46cfaeeca0ac59df904997241cfe9fdd5a8144de757152c3aa7b2b889a3c",
       "promote_v3_registry.py": "daad3a7228f26be185285d3903d6c8520206256b91f91fb556d0d0e7506f97bd",
       "qrgf_common.py": "34195413b2623872388ad0c769f68346199e6efe94896647c0ec120ae8233b6a",
       "update-v3.yml": "cdfe6dbc1c7838f5aaadf4e8859eef5c62a4b3174b32969b0dd77c9900f515a0"
@@ -157,6 +157,6 @@
       "pullback_geometry": 25
     }
   },
-  "snapshot_content_sha256": "c9d01d7decaa99d1d9f31e74bee2ed65510a6ce53ee58be96e48b424de669571",
-  "snapshot_id": "c9d01d7decaa99d1d9f31e74"
+  "snapshot_content_sha256": "00a3cf2a0111c6eb6a4c315809ef241186185fc2c060ad7d09958725dd1b520f",
+  "snapshot_id": "00a3cf2a0111c6eb6a4c3158"
 }
