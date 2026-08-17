@@ -1,0 +1,57 @@
+name: Promote QRGF v3 Registry proposals
+
+on:
+  pull_request:
+    paths:
+      - "screening/engine/promote_v3_registry.py"
+      - ".github/workflows/promote-v3-registry.yml"
+      - "screening/config/v3-producer-release.json"
+  push:
+    branches: [main]
+    paths:
+      - "data/v3/registry/proposals/**"
+      - "screening/engine/promote_v3_registry.py"
+      - ".github/workflows/promote-v3-registry.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-v3-registry-writer
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate proposals and publish immutable Passports/Registry
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/engine/promote_v3_registry.py \
+            --v3-root data/v3 \
+            --proposals-dir data/v3/registry/proposals \
+            --quality-policy-version 3.0.0-structural-v1
+      - name: Commit single-writer Registry promotion
+        if: ${{ github.event_name != 'pull_request' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add data/v3/registry data/v3/passports data/v3/latest.json data/v3/latest/system-snapshot.json
+          if git diff --cached --quiet; then
+            echo "No Registry changes"
+            exit 0
+          fi
+          git commit -m "Promote QRGF v3 Registry proposal"
+          git pull --rebase origin main
+          git push origin HEAD:main

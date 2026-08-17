@@ -1,0 +1,144 @@
+name: Update QRGF v3 Radar
+
+on:
+  pull_request:
+    paths:
+      - "screening/engine/build_v3_radar.py"
+      - "screening/config/v3-producer-release.json"
+      - "screening/engine/batch_l2.py"
+      - "screening/engine/classify_l2.py"
+      - "screening/engine/qrgf_common.py"
+      - "screening/assets/l2-rules.json"
+      - ".github/workflows/update-v3.yml"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Update QRGF L1 snapshot"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "screening/engine/build_v3_radar.py"
+      - "screening/config/v3-producer-release.json"
+      - "screening/engine/batch_l2.py"
+      - "screening/engine/classify_l2.py"
+      - "screening/engine/qrgf_common.py"
+      - "screening/assets/l2-rules.json"
+      - ".github/workflows/update-v3.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-v3-radar
+  cancel-in-progress: true
+
+jobs:
+  update:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Print exact v3 producer hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum \
+            screening/engine/build_v3_radar.py \
+            screening/engine/batch_l2.py \
+            screening/engine/classify_l2.py \
+            screening/engine/qrgf_common.py \
+            screening/engine/detect_v3_registry_changes.py \
+            screening/engine/promote_v3_registry.py \
+            screening/assets/l2-rules.json \
+            .github/workflows/update-v3.yml \
+            .github/workflows/detect-v3-registry-changes.yml \
+            .github/workflows/promote-v3-registry.yml
+      - name: Fetch optional SEC ticker to CIK identity map
+        shell: bash
+        run: |
+          set -uo pipefail
+          mkdir -p .work/v3
+          rm -f .work/v3/company_tickers.json
+          set +e
+          curl --fail --silent --show-error --location \
+            --retry 3 --retry-delay 2 \
+            --user-agent "qrgf-market-data-bot qrgf-market-data-bot@users.noreply.github.com" \
+            https://www.sec.gov/files/company_tickers.json \
+            -o .work/v3/company_tickers.json
+          rc=$?
+          set -e
+          if [ "$rc" -ne 0 ]; then
+            rm -f .work/v3/company_tickers.json
+            echo "SEC ticker map unavailable; continuing with conservative issuer-name fallback."
+          fi
+      - name: Build full-market Radar without fixed Top120
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_COMMIT_SHA=$(git rev-parse HEAD)
+          CREATED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          python screening/engine/build_v3_radar.py \
+            --repo-root . \
+            --l1-manifest data/l1/latest/manifest.json \
+            --l1-bundle data/l1/latest/l1-snapshot.csv.gz.b64 \
+            --rules screening/assets/l2-rules.json \
+            --release-manifest "$PWD/screening/config/v3-producer-release.json" \
+            --sec-tickers .work/v3/company_tickers.json \
+            --output-root data/v3 \
+            --source-commit-sha "$SOURCE_COMMIT_SHA" \
+            --created-at "$CREATED_AT" \
+            --page-size 250 \
+            --minimum-rows 3000
+      - name: Validate publication contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          system=json.loads(Path('data/v3/latest.json').read_text())
+          manifest=json.loads(Path(system['radar_manifest_path']).read_text())
+          registry=json.loads(Path(system['registry_manifest_path']).read_text())
+          assert system['complete'] is True
+          assert manifest['complete'] is True
+          assert manifest['rows'] >= 3000
+          assert sum(int(p['rows']) for p in manifest['pages']) == manifest['rows']
+          assert registry['registry_sha256'] == system['registry_sha256']
+          for p in manifest['pages']:
+              path=Path(system['radar_manifest_path']).parent / p['name']
+              assert hashlib.sha256(path.read_bytes()).hexdigest() == p['sha256']
+          print(json.dumps({'snapshot_id':system['snapshot_id'],'market_session_id':system['market_session_id'],'rows':manifest['rows']}, sort_keys=True))
+          PY
+      - name: Refuse stale L1 publication
+        if: ${{ github.event_name != 'pull_request' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          LOCAL_L1=$(sha256sum data/l1/latest/manifest.json | awk '{print $1}')
+          git fetch origin main
+          REMOTE_L1=$(git show origin/main:data/l1/latest/manifest.json | sha256sum | awk '{print $1}')
+          if [ "$LOCAL_L1" != "$REMOTE_L1" ]; then
+            echo "A newer L1 snapshot exists; refusing stale v3 publication."
+            exit 78
+          fi
+      - name: Commit v3 snapshot atomically
+        if: ${{ github.event_name != 'pull_request' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add data/v3
+          if git diff --cached --quiet; then
+            echo "v3 snapshot unchanged"
+            exit 0
+          fi
+          git commit -m "Publish QRGF v3 market Radar"
+          git pull --rebase origin main
+          git push origin HEAD:main
