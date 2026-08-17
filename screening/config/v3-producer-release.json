@@ -8,7 +8,7 @@
   },
   "producer_hashes": {
     "batch_l2.py": "25b7aa6bb26a10ca9d31c2d7ce5f6bef3ff17e3afa8e75ade2c5d06ce0c641ea",
-    "build_v3_radar.py": "0574d282c3f04e30c84b63a08c4fb37a1ab37b04701e00892ef4b66e9c7b06ee",
+    "build_v3_radar.py": "95c1940bfc95a47544f7c904260b3a45ca609ac2cfb2cb36b6040c4306c4cd23",
     "classify_l2.py": "36d29aec9a66ad9ed4b56bfac74b8026ee2e9ed7dceac6f05a8cf8df1767bb42",
     "detect-v3-registry-changes.yml": "e2c9e6f550cd13c22d2e7170fec6416507ef3e27cfe36792e5acc4d215c3382a",
     "detect_v3_registry_changes.py": "841fbe5c7eee36648a3b35cfedc76918b7c7c5de3be721003ff158985a433404",
