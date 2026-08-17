@@ -44,6 +44,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Print exact v3 producer hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum \
+            screening/engine/build_v3_radar.py \
+            screening/engine/batch_l2.py \
+            screening/engine/classify_l2.py \
+            screening/engine/qrgf_common.py \
+            screening/engine/detect_v3_registry_changes.py \
+            screening/engine/promote_v3_registry.py \
+            screening/assets/l2-rules.json \
+            .github/workflows/update-v3.yml \
+            .github/workflows/detect-v3-registry-changes.yml \
+            .github/workflows/promote-v3-registry.yml
       - name: Fetch optional SEC ticker to CIK identity map
         shell: bash
         run: |
