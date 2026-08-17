@@ -45,9 +45,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [ ! -d data/v3 ]; then
+            echo "v3 storage is not initialized in this checkout; nothing to publish"
+            exit 0
+          fi
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
-          git add data/v3/registry data/v3/passports data/v3/latest.json data/v3/latest/system-snapshot.json
+          git add -A -- data/v3/registry data/v3/passports data/v3/latest.json data/v3/latest/system-snapshot.json
           if git diff --cached --quiet; then
             echo "No Registry changes"
             exit 0
