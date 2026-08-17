@@ -1,0 +1,53 @@
+name: Detect QRGF v3 Registry changes
+
+on:
+  pull_request:
+    paths:
+      - "screening/engine/detect_v3_registry_changes.py"
+      - ".github/workflows/detect-v3-registry-changes.yml"
+      - "screening/config/v3-producer-release.json"
+  workflow_dispatch:
+  schedule:
+    - cron: "20 3 * * 2-6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-v3-registry-writer
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Detect new SEC filings for cached issuers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/engine/detect_v3_registry_changes.py \
+            --v3-root data/v3 \
+            --user-agent "qrgf-market-data-bot qrgf-market-data-bot@users.noreply.github.com" \
+            --min-interval-seconds 0.12
+      - name: Commit freshness downgrades
+        if: ${{ github.event_name != 'pull_request' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add data/v3/registry data/v3/latest.json data/v3/latest/system-snapshot.json
+          if git diff --cached --quiet; then
+            echo "No Registry freshness changes"
+            exit 0
+          fi
+          git commit -m "Mark QRGF v3 Registry issuers stale"
+          git pull --rebase origin main
+          git push origin HEAD:main
