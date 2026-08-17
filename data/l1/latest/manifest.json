@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-16T19:04:21Z",
+  "retrieved_at": "2026-08-17T03:29:38Z",
   "history_start": "2025-07-10",
   "history_end": "2026-08-14",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "fceeac5f7ca3e1f5dca8412943a72849b492d83e1ae4650da66b997b81d0ba57",
+    "manifest_sha256": "c22e849fc80b5e86df9748262e4e05fc063658713b9b56be8a3a34944ee1fcdb",
     "accepted_unique": 5115,
     "bundle_csv_sha256": "2129378648edcf5932822468f7b1f0ea909acb8a4cc88526cc79df965b918502",
     "source_raw_sha256": "f47a15cf3a5422723f77ba0b9732fbf5e67c070f355e63511ecbbfb61dc88a1e",
-    "retrieved_at": "2026-08-16T19:04:05Z"
+    "retrieved_at": "2026-08-17T03:29:23Z"
   },
   "rows": 5115,
   "page_size": 250,
@@ -72,7 +72,7 @@
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "cac2c6800864f6a52ee04e93d95200b536e7d2d83655bc78be63e3144b95cea1"
+      "sha256": "72e51e1735ca77ed4e77883e1fb66f0d0c1c0480806c51f9f74a2c1b829ed780"
     },
     {
       "name": "page-0012.csv",
@@ -117,22 +117,22 @@
     {
       "name": "page-0020.csv",
       "rows": 250,
-      "sha256": "d23bd6105fa74ef43d943be354c7ba2b7f13e9ea966102536378f82a3f068470"
+      "sha256": "b45d0acc123fcc4ebf5799ae1e3ce9bca54ad5a4c8241abcae9f1bd61703faa7"
     },
     {
       "name": "page-0021.csv",
       "rows": 115,
-      "sha256": "5d3d84d494979fcec1de2bda547c1edf1471ace231f534913b30a93eb6260604"
+      "sha256": "64d4522e76c5b1bdf5ea49caa3cdb8e1f473631ff3910fcfb0bed2846ab9bf4c"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 5115,
-    "sha256": "6f8c5fc2bf19a13f6a836ba24fc57a1b1b9230708680004b3b20f40bde8b265c",
-    "gzip_sha256": "ea2f9bc8a38f08c83b1921a8a8103dfb7454440a2605f8661b739bba1b0e1a74",
-    "csv_sha256": "cd2de2811d8063f1206403bc9d3863ec3cb87e848581ef16f8f0f0ba652f04a5",
-    "bytes": 632312,
+    "sha256": "82c78617ee1f08dfb334d936fc2b81dba2b3fe177785bcd8a339fe62e4062fd2",
+    "gzip_sha256": "7e6ed2b247de60be7775c9a9bda17c4e16f2fda90cccb976da07e747eb4e8235",
+    "csv_sha256": "25c8dc3b433c5c85fdff7e7ac2805ea698f9dc0d591a74ec3718d27b7ae23311",
+    "bytes": 632308,
     "line_count": 8212
   },
   "producer_hashes": {
