@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "coverage": {
+    "frontier_complete": false,
+    "market_scanned_rows": 5113,
+    "rankable_market_rows": 3612,
+    "registry_entry_count": 0,
+    "universe_rows": 5113
+  },
+  "created_at": "2026-08-17T11:34:08Z",
+  "kind": "qrgf_v3_system_snapshot",
+  "market_session_id": "2026-08-14",
+  "producer_release_sha256": "43787a04817d1748678c35f88dab8268b42541e333766a9f3e77e0df93f47f27",
+  "radar_manifest_path": "data/v3/latest/radar/manifest.json",
+  "radar_manifest_sha256": "dbe6dcb062fad7a962ba1142f63f9ef0988e314fa981a29eca31be918e70722b",
+  "registry_manifest_path": "data/v3/registry/latest.json",
+  "registry_sha256": "1e4c87f63bdc752d113b60c87c1c5289d120726b27f3013076095807857ae8ed",
+  "schema_version": "1.0.0",
+  "snapshot_content_sha256": "0cf535ae00536fde1e10d8d26b961035d60db58596b923f1700265264c7b16f1",
+  "snapshot_id": "0cf535ae00536fde1e10d8d2",
+  "source_commit_sha": "a17c6af097e3814971f45a1e80771fcd6a71207f",
+  "system_snapshot_sha256": "a2c900a3f386b2dcd100318a2b9b68f23f289ed9ade6f5cda690f839d94c398d"
+}

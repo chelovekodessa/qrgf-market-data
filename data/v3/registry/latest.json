@@ -1,0 +1,9 @@
+{
+  "created_at": "1970-01-01T00:00:00Z",
+  "entries": [],
+  "kind": "qrgf_quality_registry",
+  "quality_policy_version": "3.0.0-structural-v1",
+  "registry_id": "bootstrap-empty-v1",
+  "registry_sha256": "1e4c87f63bdc752d113b60c87c1c5289d120726b27f3013076095807857ae8ed",
+  "schema_version": "1.0.0"
+}
