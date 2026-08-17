@@ -1,4 +1,7 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+SON,Sonoco Products Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SONO,"Sonos, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SONO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SOPH,SOPHiA GENETICS SA - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 SOR,"Source Capital, Inc. Cmn Shs of BI",N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:SOR,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 SORA,AsiaStrategy - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SORA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 SOS,SOS Limited Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -246,6 +249,3 @@ TLPH,"Talphera, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasd
 TLRY,"Tilray Brands, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLRY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TLS,Telos Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TLSA,Tiziana Life Sciences Ltd - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-TLSI,"TriSalus Life Sciences, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-TLYS,"Tilly's, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-TM,Toyota Motor Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

@@ -1,4 +1,7 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+VG,"Venture Global, Inc. Class A common stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+VGAS,"Verde Clean Fuels, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VGAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+VGM,Invesco Trust for Investment Grade Municipals Common Stock (DE),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VGNT,Versigent PLC Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VGNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VGZ,Vista Gold Corp Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:VGZ,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VHC,VirnetX Holding Corp - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -102,6 +105,7 @@ WAL,Western Alliance Bancorporation Common Stock (DE),N,,,common_equity,eligible
 WALD,Waldencast plc - Class A Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WALD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WASH,"Washington Trust Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WASH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WAT,Waters Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WAT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+WATR,Air Water Ventures Limited - Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WATR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WATT,Energous Corporation - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WATT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WAY,Waystar Holding Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WBD,"Warner Bros. Discovery, Inc. - Series A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WBD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -245,7 +249,3 @@ XP,XP Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqt
 XPEL,"XPEL, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:XPEL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 XPER,Xperi Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XPER,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 XPL,Solitario Resources Corp. Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:XPL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-XPO,"XPO, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XPO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-XPOF,"Xponential Fitness, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XPOF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-XPON,Expion360 Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:XPON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-XPRO,Expro Ltd Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XPRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

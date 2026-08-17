@@ -108,6 +108,7 @@ ADACW,American Drive Acquisition Company - Warrant,Q,G,N,spac,ineligible,False,N
 ADAMG,"Adamas Trust, Inc. - 9.125% Senior Notes Due 2030",Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:ADAMG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 ADAMH,"Adamas Trust, Inc. - 9.875% Senior Notes Due 2030",Q,G,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:ADAMH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 ADAMI,"Adamas Trust, Inc. - 9.125% Senior Notes Due 2029",Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:ADAMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+ADAMK,"Adamas Trust, Inc. - 9.600% Senior Notes Due 2031",Q,Q,N,debt,ineligible,False,N,N,,nasdaqtrader:Q:ADAMK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 ADAML,"Adamas Trust, Inc. - 6.875% Series F Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock, $0.01 par value per share",Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:ADAML,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 ADAMM,"Adamas Trust, Inc. - 7.875% Series E Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock",Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:ADAMM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 ADAMN,"Adamas Trust, Inc. - 8.00% Series D Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock",Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:ADAMN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
@@ -1259,6 +1260,7 @@ CGBD,"Carlyle Secured Lending, Inc. - Closed End Fund",Q,Q,N,fund,ineligible,Fal
 CGBL,Capital Group Core Balanced ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CGCB,Capital Group Core Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CGCFU,Cartesian Growth Corporation IV - Units,Q,G,N,unit,ineligible,False,N,N,,nasdaqtrader:Q:CGCFU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unit
+CGCFW,Cartesian Growth Corporation IV - Warrants,Q,G,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:CGCFW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 CGCP,Capital Group Core Plus Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CGCV,Capital Group Conservative Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CGDG,Capital Group Dividend Growers ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4651,7 +4653,9 @@ MQY,"Blackrock MuniYield Quality Fund, Inc. Common Stock",N,,,fund,ineligible,Fa
 MRA,GraniteShares Autocallable MARA ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MRAL,GraniteShares 2x Long MARA Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MRAX,Tradr 2X Long MRAM Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+MRCO,Mercator Acquisition Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MRCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 MRCOU,Mercator Acquisition Corp. - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MRCOU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
+MRCOW,Mercator Acquisition Corp. - Warrant,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:MRCOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 MRCP,PGIM S&P 500 Buffer 12 ETF - March,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MREO,Mereo BioPharma Group plc - American Depositary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:MREO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 MRGR,ProShares Merger ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist

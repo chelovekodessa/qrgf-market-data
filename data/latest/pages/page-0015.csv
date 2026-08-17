@@ -1,4 +1,7 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+OSG,"Octave Specialty Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OSIS,"OSI Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSIS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OSK,Oshkosh Corporation (Holding Company)Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OSPN,OneSpan Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OSS,"One Stop Systems, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OST,"Ostin Technology Group Co., Ltd. - Class A Ordinary Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -246,6 +249,3 @@ PRTA,Prothena Corporation plc - Ordinary Shares,Q,Q,N,common_equity,eligible,Tru
 PRTH,"Priority Technology Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRTS,"CarParts.com, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRU,"Prudential Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-PRVA,"Privia Health Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-PS,Pershing Square Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-PSA,Public Storage Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

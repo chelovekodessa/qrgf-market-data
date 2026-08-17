@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+LAND,Gladstone Land Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 LANV,Lanvin Group Holdings Limited Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LANV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 LAR,Lithium Argentina AG Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 LARK,Landmark Bancorp Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LARK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -248,4 +249,3 @@ MET,"MetLife, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrad
 META,"Meta Platforms, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:META,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 METC,"Ramaco Resources, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:METC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 METCB,"Ramaco Resources, Inc. - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:METCB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-MF,MindForge Inc. - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:MF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
