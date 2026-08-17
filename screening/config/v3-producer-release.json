@@ -1,0 +1,22 @@
+{
+  "contracts": {
+    "full_market_no_fixed_candidate_cutoff": true,
+    "issuer_identity": "SEC CIK when available; ETF security-specific; conservative fallback otherwise",
+    "market_session_source": "l1.history_end",
+    "registry_is_cache_not_universe_gate": true,
+    "setup_model_role": "research_priority_only"
+  },
+  "producer_hashes": {
+    "batch_l2.py": "25b7aa6bb26a10ca9d31c2d7ce5f6bef3ff17e3afa8e75ade2c5d06ce0c641ea",
+    "build_v3_radar.py": "0574d282c3f04e30c84b63a08c4fb37a1ab37b04701e00892ef4b66e9c7b06ee",
+    "classify_l2.py": "36d29aec9a66ad9ed4b56bfac74b8026ee2e9ed7dceac6f05a8cf8df1767bb42",
+    "l2-rules.json": "c8f1bf1665a8c5dfb834c0571e7dd5f6b6e5ccd00eab00295338bd42cfde549b",
+    "qrgf_common.py": "34195413b2623872388ad0c769f68346199e6efe94896647c0ec120ae8233b6a",
+    "update-v3.yml": "ea5379e0278b139f45d8eb1dfea7a7f8e2ec1c40acaf3f7c1430013e90603ea6"
+  },
+  "quality_policy_version": "3.0.0-structural-v1",
+  "radar_schema_version": "1.0.0",
+  "registry_schema_version": "1.0.0",
+  "release_version": "4.0.0",
+  "schema_version": "1.0.0"
+}
