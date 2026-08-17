@@ -44,16 +44,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch SEC ticker to CIK identity map
+      - name: Fetch optional SEC ticker to CIK identity map
         shell: bash
         run: |
-          set -euo pipefail
+          set -uo pipefail
           mkdir -p .work/v3
+          rm -f .work/v3/company_tickers.json
+          set +e
           curl --fail --silent --show-error --location \
             --retry 3 --retry-delay 2 \
             --user-agent "qrgf-market-data-bot qrgf-market-data-bot@users.noreply.github.com" \
             https://www.sec.gov/files/company_tickers.json \
             -o .work/v3/company_tickers.json
+          rc=$?
+          set -e
+          if [ "$rc" -ne 0 ]; then
+            rm -f .work/v3/company_tickers.json
+            echo "SEC ticker map unavailable; continuing with conservative issuer-name fallback."
+          fi
       - name: Build full-market Radar without fixed Top120
         shell: bash
         run: |
