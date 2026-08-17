@@ -16,7 +16,7 @@
     "promote-v3-registry.yml": "812572019fa036ce4828d86090b08b85f3b5fefaf44004b65d10b375cb6acf96",
     "promote_v3_registry.py": "daad3a7228f26be185285d3903d6c8520206256b91f91fb556d0d0e7506f97bd",
     "qrgf_common.py": "34195413b2623872388ad0c769f68346199e6efe94896647c0ec120ae8233b6a",
-    "update-v3.yml": "aed25ee3fa31efef05dbc2eaa1b3dbb70567391b6437c4335acdf8e82a4dc84b"
+    "update-v3.yml": "cdfe6dbc1c7838f5aaadf4e8859eef5c62a4b3174b32969b0dd77c9900f515a0"
   },
   "quality_policy_version": "3.0.0-structural-v1",
   "radar_schema_version": "1.0.0",
