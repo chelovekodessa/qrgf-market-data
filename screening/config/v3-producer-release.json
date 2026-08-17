@@ -10,16 +10,13 @@
     "batch_l2.py": "25b7aa6bb26a10ca9d31c2d7ce5f6bef3ff17e3afa8e75ade2c5d06ce0c641ea",
     "build_v3_radar.py": "95c1940bfc95a47544f7c904260b3a45ca609ac2cfb2cb36b6040c4306c4cd23",
     "classify_l2.py": "36d29aec9a66ad9ed4b56bfac74b8026ee2e9ed7dceac6f05a8cf8df1767bb42",
+    "detect-v3-registry-changes.yml": "e2c9e6f550cd13c22d2e7170fec6416507ef3e27cfe36792e5acc4d215c3382a",
+    "detect_v3_registry_changes.py": "5681319cbfefb1e6e3fcfdc5228aa37e0f2f125cb5b0ffb0f96f0a65ca7700bb",
     "l2-rules.json": "c8f1bf1665a8c5dfb834c0571e7dd5f6b6e5ccd00eab00295338bd42cfde549b",
+    "promote-v3-registry.yml": "812572019fa036ce4828d86090b08b85f3b5fefaf44004b65d10b375cb6acf96",
+    "promote_v3_registry.py": "daad3a7228f26be185285d3903d6c8520206256b91f91fb556d0d0e7506f97bd",
     "qrgf_common.py": "34195413b2623872388ad0c769f68346199e6efe94896647c0ec120ae8233b6a",
-    "update-v3.yml": "2e79325dd049dc03ba9e5236fdb974e12dc95430bd35518ca076fa7c2a2ac737"
-  },
-  "auxiliary_registry_components": {
-    "change_detector_workflow": ".github/workflows/detect-v3-registry-changes.yml",
-    "change_detector_script": "screening/engine/detect_v3_registry_changes.py",
-    "promotion_workflow": ".github/workflows/promote-v3-registry.yml",
-    "promotion_script": "screening/engine/promote_v3_registry.py",
-    "role": "cache maintenance only; current search correctness must not depend on successful writes or detector availability"
+    "update-v3.yml": "aed25ee3fa31efef05dbc2eaa1b3dbb70567391b6437c4335acdf8e82a4dc84b"
   },
   "quality_policy_version": "3.0.0-structural-v1",
   "radar_schema_version": "1.0.0",
