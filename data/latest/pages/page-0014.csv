@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-NGVT,Ingevity Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NGVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-NHC,National HealthCare Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:NHC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NHI,"National Health Investors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:NHI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NHIC,NewHold Investment Corp III - Class A Ordinary shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NHIC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 NHIV,NewHold Investment Corp IV - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:NHIV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +247,5 @@ ORRF,"Orrstown Financial Services, Inc. - Common Stock",Q,S,N,common_equity,elig
 OSBC,"Old Second Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OSCR,"Oscar Health, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OSG,"Octave Specialty Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OSIS,"OSI Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSIS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+OSK,Oshkosh Corporation (Holding Company)Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

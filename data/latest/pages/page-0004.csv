@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-AVEX,AEVEX Corp. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AVEX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 AVGO,Broadcom Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVGO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 AVIR,"Atea Pharmaceuticals, Inc. - common stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVIR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 AVLN,Avalyn Pharma Inc. - common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AVLN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -62,7 +61,6 @@ BATRK,"Atlanta Braves Holdings, Inc. - Series C Common Stock",Q,Q,N,common_equit
 BAX,Baxter International Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BAX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BB,BlackBerry Limited Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BBAI,"BigBear.ai, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBAI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-BBBY,"Bed Bath & Beyond, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BBBY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BBCP,"Concrete Pumping Holdings, Inc.  - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBCP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BBIO,"BridgeBio Pharma, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BBLG,Bone Biologics Corp - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BBLG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -106,7 +104,7 @@ BEEM,Beam Global - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtra
 BEEP,Mobile Infrastructure Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BEEP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BELFA,Bel Fuse Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BELFA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BELFB,Bel Fuse Inc. - Class B Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BELFB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-BEN,"Franklin Resources, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BEN,"Franklin Templeton, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BEN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BENF,Beneficient - Class A Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BENF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BEPC,Brookfield Renewable Corporation Brookfield Renewable Corporation Class A Subordinate Voting Shares,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:BEPC,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 BESS,Bimergen Energy Corporation Common Stock,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:BESS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +247,5 @@ BRNX,BrenX Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqt
 BRO,"Brown & Brown, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BROS,Dutch Bros Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BROS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 BRR,"ProCap Financial, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:BRR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRSL,"Brightstar Lottery PLC Trading under the Legal Name to begin at the market open on July 21, 2025. Ordinary Shares",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRSL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+BRSP,"BrightSpire Capital, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:BRSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

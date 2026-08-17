@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-XPON,Expion360 Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:XPON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-XPRO,Expro Ltd Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XPRO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 XRAY,DENTSPLY SIRONA Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:XRAY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 XRN,Chiron Real Estate Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:XRN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 XRTX,XORTX Therapeutics Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:XRTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

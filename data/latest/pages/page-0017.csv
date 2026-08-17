@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-RVP,"Retractable Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RVP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-RVSB,Riverview Bancorp Inc - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVSB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVSN,Rail Vision Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVT,"Royce Small-Cap Trust, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVTY,"Revvity, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVTY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +247,5 @@ SOFI,"SoFi Technologies, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True
 SOLS,Solstice Advanced Materials Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 SOLV,Solventum Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 SON,Sonoco Products Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SON,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SONO,"Sonos, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SONO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+SOPH,SOPHiA GENETICS SA - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

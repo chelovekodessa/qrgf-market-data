@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-INMB,INmune Bio Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-INMD,InMode Ltd.  - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INN,"Summit Hotel Properties, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:INN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INNV,InnovAge Holding Corp. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INNV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INO,"Inovio Pharmaceuticals, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +247,5 @@ LAD,"Lithia Motors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasd
 LADR,Ladder Capital Corp Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LADR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 LAES,SEALSQ Corp - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 LAKE,"Lakeland Industries, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LAMR,Lamar Advertising Company - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAMR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+LAND,Gladstone Land Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAND,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

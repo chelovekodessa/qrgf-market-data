@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-PS,Pershing Square Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-PSA,Public Storage Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSFE,Paysafe Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSFE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSHG,Performance Shipping Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSIG,PS International Group Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +247,5 @@ RUSHA,"Rush Enterprises, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligib
 RUSHB,"Rush Enterprises, Inc. - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUSHB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVLV,"Revolve Group, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVMD,"Revolution Medicines, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RVP,"Retractable Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RVP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+RVSB,Riverview Bancorp Inc - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVSB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

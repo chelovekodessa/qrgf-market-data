@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-TLYS,"Tilly's, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-TM,Toyota Motor Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TMC,TMC the metals company Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TMCI,"Treace Medical Concepts, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMCI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TMCR,The Metals Royalty Company Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +247,5 @@ VFC,V.F. Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtra
 VFF,"Village Farms International, Inc. - Common Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VFF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VFS,VinFast Auto Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VG,"Venture Global, Inc. Class A common stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+VGAS,"Verde Clean Fuels, Inc. - Class A Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VGAS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+VGM,Invesco Trust for Investment Grade Municipals Common Stock (DE),N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VGM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
