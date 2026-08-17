@@ -15,6 +15,7 @@ import gzip
 import hashlib
 import io
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -25,6 +26,12 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 from batch_l2 import adapt_l1_candidate, apply_selection_contract  # noqa: E402
 from classify_l2 import classify, growth_score, liquidity_score, pullback_score  # noqa: E402
+
+_CLASS_SUFFIXES = (
+    re.compile(r"\s*[-–—]\s*class\s+[a-z0-9-]+\s+(?:common\s+|capital\s+)?(?:stock|shares?)\s*$", re.I),
+    re.compile(r"\s*[-–—]\s*class\s+[a-z0-9-]+\s+ordinary\s+shares?\s*$", re.I),
+    re.compile(r"\s+class\s+[a-z0-9-]+\s+(?:common\s+|capital\s+)?(?:stock|shares?)\s*$", re.I),
+)
 
 
 def canonical_bytes(value: Any) -> bytes:
@@ -72,6 +79,17 @@ def load_sec_tickers(path: Path | None) -> dict[str, str]:
     return result
 
 
+def _clean_company(value: Any) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    for pattern in _CLASS_SUFFIXES:
+        stripped = pattern.sub("", text).strip(" -–—")
+        if stripped != text:
+            return re.sub(r"[^A-Z0-9]+", " ", stripped.upper()).strip()
+    return ""
+
+
 def issuer_identity(row: dict[str, Any], sec_map: dict[str, str]) -> tuple[str, str | None]:
     ticker = str(row.get("ticker") or "").strip().upper()
     contract = str(row.get("contract_id") or "").strip()
@@ -81,10 +99,9 @@ def issuer_identity(row: dict[str, Any], sec_map: dict[str, str]) -> tuple[str, 
     cik = sec_map.get(ticker) or sec_map.get(ticker.replace(".", "-")) or sec_map.get(ticker.replace("-", "."))
     if cik:
         return f"CIK:{cik}", cik
-    company = str(row.get("company") or row.get("company_name") or "").strip().upper()
-    normalized = " ".join("".join(ch if ch.isalnum() else " " for ch in company).split())
-    if normalized:
-        return f"NAMECLASS:{normalized}", None
+    company = _clean_company(row.get("company") or row.get("company_name"))
+    if company:
+        return f"NAMECLASS:{company}", None
     return f"SECURITY:{ticker}:{contract}", None
 
 
@@ -204,10 +221,16 @@ def verify_release(release_path: Path, repo_root: Path) -> tuple[dict[str, Any],
         "build_v3_radar.py": repo_root / "screening/engine/build_v3_radar.py",
         "batch_l2.py": repo_root / "screening/engine/batch_l2.py",
         "classify_l2.py": repo_root / "screening/engine/classify_l2.py",
-        "qrgf_common.py": repo_root / "screening/engine/qrgf_common.py",
+        "detect-v3-registry-changes.yml": repo_root / ".github/workflows/detect-v3-registry-changes.yml",
+        "detect_v3_registry_changes.py": repo_root / "screening/engine/detect_v3_registry_changes.py",
         "l2-rules.json": repo_root / "screening/assets/l2-rules.json",
+        "promote-v3-registry.yml": repo_root / ".github/workflows/promote-v3-registry.yml",
+        "promote_v3_registry.py": repo_root / "screening/engine/promote_v3_registry.py",
+        "qrgf_common.py": repo_root / "screening/engine/qrgf_common.py",
         "update-v3.yml": repo_root / ".github/workflows/update-v3.yml",
     }
+    if set(hashes) != set(mapping):
+        raise ValueError("v3 producer release file set mismatch")
     for name, path in mapping.items():
         if not path.is_file() or hashes.get(name) != sha256_file(path):
             raise ValueError(f"v3 producer hash mismatch: {name}")
@@ -285,6 +308,7 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         "issuer_identity": {
             "sec_company_tickers_used": bool(sec_map),
             "cik_mapped_rows": sum(bool(row.get("issuer_cik")) for row in radar),
+            "fallback_is_conservative_share_class_normalized": True,
             "etf_identity_is_security_specific": True,
         },
         "producer_release": {
@@ -316,7 +340,7 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     if existing_registry.is_file():
         (work / "registry").mkdir(parents=True, exist_ok=True)
         shutil.copytree(real_output_root / "registry", work / "registry", dirs_exist_ok=True)
-    registry, registry_path = ensure_registry(work, release)
+    registry, _registry_path = ensure_registry(work, release)
 
     system_body = {
         "schema_version": "1.0.0",
@@ -326,7 +350,7 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         "snapshot_content_sha256": snapshot_content_sha,
         "market_session_id": market_session,
         "created_at": args.created_at,
-        "radar_manifest_path": f"data/v3/latest/radar/manifest.json",
+        "radar_manifest_path": "data/v3/latest/radar/manifest.json",
         "radar_manifest_sha256": manifest_body["manifest_semantic_sha256"],
         "registry_manifest_path": "data/v3/registry/latest.json",
         "registry_sha256": registry["registry_sha256"],
