@@ -11,7 +11,7 @@
   "producer_hashes": {
     "promote-v4-state.yml": "dcf8ca27af38ba91df13d9ad873a740bc1fc21b7a926a59d0a3b58d953002fd6",
     "promote_v4_state.py": "cd4f6d2146b3b9cba1de702c109749929466bb970079077f5d152a9377cf589d",
-    "test_promote_v4_state.py": "7b8aa2576887b6e0d32dc528908bb9cbb494a89fce2d9cbd284924b6899a125a"
+    "test_promote_v4_state.py": "3811c915a8ace09a0c6b14db795a7e51356940a62bf7a64eab9e1731d096d789"
   },
   "release_version": "1.1.0",
   "schema_version": "1.0.0"
