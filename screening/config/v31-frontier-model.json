@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "model_version": "3.0.0-baseline-bridge",
+  "selection_stage": "L3",
+  "selection_ceiling": 30,
+  "weights": {
+    "structural_quality": 55,
+    "recovery_setup": 35,
+    "evidence_confidence": 10
+  },
+  "quality_upper_bound": 100,
+  "missing_market_component_upper_bound": 100,
+  "score_round_decimals": 4,
+  "strict_cutoff_rule": "remaining_upper_bound_must_be_strictly_less_than_cutoff",
+  "selection_dedup_key": "issuer_id",
+  "research_scope_key": "issuer_id|security_overlay",
+  "page_size_is_transport_only": true,
+  "fixed_candidate_count_cutoff_forbidden": true,
+  "canonical_exact_ranking_source": "scripts/selection.py:L3"
+}
