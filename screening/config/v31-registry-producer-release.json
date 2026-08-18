@@ -1,0 +1,14 @@
+{
+  "contracts": {
+    "registry_is_cache_not_universe_gate": true,
+    "research_scope_key": "issuer_id|security_overlay",
+    "sensitive_payloads_forbidden": true,
+    "single_writer": true
+  },
+  "producer_hashes": {
+    "promote-v31-registry.yml": "d3ef889355cd314ade1d99e0af8b60676000131acf0c067a0760ac8760abcab9",
+    "promote_v31_registry.py": "987f7bec7976fc8fd3c5331d67ae6ef7fca1fa0bf9179ecd5cd7b077bca0db0c"
+  },
+  "release_version": "1.0.0",
+  "schema_version": "1.0.0"
+}
