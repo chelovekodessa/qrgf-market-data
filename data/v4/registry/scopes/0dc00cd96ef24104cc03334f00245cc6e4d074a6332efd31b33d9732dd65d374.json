@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "af2e4a8fc5b8e30e764196737ca09499a51cbcb62c4198c99f069acef0f0d014",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:APPLE_INC",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "9ca118f18d3767b30b5c07220c8db6885ccab9c7873a71fe583b85b7f13471f7",
+  "passport_hash": "48f2317993d54433c812d57d327fbfefca76b86ff359a09474d3d45996111e9e",
+  "passport_path": "data/v4/passports/0dc00cd96ef24104cc03334f00245cc6e4d074a6332efd31b33d9732dd65d374/48f2317993d54433c812d57d327fbfefca76b86ff359a09474d3d45996111e9e.json",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "quality_as_of": "2026-08-18T15:18:00Z",
+  "quality_coverage_pct": 100.0,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 86.33,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:APPLE_INC|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

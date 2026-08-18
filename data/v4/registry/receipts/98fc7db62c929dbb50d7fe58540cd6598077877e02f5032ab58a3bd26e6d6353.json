@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "e839bd1264689c60b577918b19767128fdf4fe1aa97d017720e2b1509bbfeec1",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "05e9efdbfe2fdb090e0829a6a674073a173ae58afb5a19cc0dee7cabdeb3382f",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "98fc7db62c929dbb50d7fe58540cd6598077877e02f5032ab58a3bd26e6d6353",
+  "published_at": "2026-08-18T18:30:40Z",
+  "receipt_sha256": "c01db0c53f50bc60c45222b21f3a2179bf178a471e4fe6ea492c1dbd15c2e27b",
+  "research_scope_key": "ISSUER:JPMORGAN_CHASE_AND_CO|common_equity",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,293 @@
+{
+  "as_of": "2026-08-18T15:18:00Z",
+  "component_details": {
+    "business_durability": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.competitive_position_score",
+        "facts.moat_quality_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 96.0
+    },
+    "capital_discipline": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.dilution_pct_yoy",
+        "facts.capital_allocation_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 96.0
+    },
+    "earnings_cash_quality": {
+      "expected_fact_count": 4,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.operating_margin_pct",
+        "facts.net_income_positive",
+        "facts.fcf_margin_pct",
+        "facts.fcf_positive"
+      ],
+      "known_fact_count": 4,
+      "score": 91.09
+    },
+    "financial_resilience": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.net_debt_to_ebitda",
+        "facts.cash_debt"
+      ],
+      "known_fact_count": 2,
+      "score": 75.05
+    },
+    "trajectory_quality": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.revenue_cagr_3y_pct",
+        "facts.multi_period_earnings_quality_score"
+      ],
+      "known_fact_count": 2,
+      "score": 74.63
+    }
+  },
+  "economic_archetype": "established_quality",
+  "evidence_lineage": [
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e14",
+      "field": "facts.capital_allocation_score",
+      "period": "FY2025+Q3 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079+0000320193-26-000020",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-06-27T00:00:00Z",
+      "evidence_id": "e1",
+      "field": "facts.cash",
+      "period": "Q3 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-26-000020",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e10",
+      "field": "facts.competitive_position_score",
+      "period": "FY2025+Q3 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079+0000320193-26-000020",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-06-27T00:00:00Z",
+      "evidence_id": "e2",
+      "field": "facts.debt",
+      "period": "Q3 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-26-000020",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2025-09-27T00:00:00Z",
+      "evidence_id": "e7",
+      "field": "facts.dilution_pct_yoy",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-09-27T00:00:00Z",
+      "evidence_id": "e5",
+      "field": "facts.fcf_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-09-27T00:00:00Z",
+      "evidence_id": "e9",
+      "field": "facts.fcf_positive",
+      "period": null,
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079+0000320193-21-000105",
+        "source_type": "official_filing"
+      },
+      "unit": null
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e12",
+      "field": "facts.management_quality_score",
+      "period": "FY2025+Q3 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079+0000320193-26-000020",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e11",
+      "field": "facts.moat_quality_score",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e13",
+      "field": "facts.multi_period_earnings_quality_score",
+      "period": "FY2021-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079+0000320193-21-000105",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-09-27T00:00:00Z",
+      "evidence_id": "e3",
+      "field": "facts.net_debt_to_ebitda",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079",
+        "source_type": "official_filing"
+      },
+      "unit": "x"
+    },
+    {
+      "as_of": "2025-09-27T00:00:00Z",
+      "evidence_id": "e8",
+      "field": "facts.net_income_positive",
+      "period": null,
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079",
+        "source_type": "official_filing"
+      },
+      "unit": null
+    },
+    {
+      "as_of": "2025-09-27T00:00:00Z",
+      "evidence_id": "e4",
+      "field": "facts.operating_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-09-27T00:00:00Z",
+      "evidence_id": "e6",
+      "field": "facts.revenue_cagr_3y_pct",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000320193-25-000079+0000320193-22-000108",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    }
+  ],
+  "issuer_id": "ISSUER:APPLE_INC",
+  "kind": "qrgf_quality_passport",
+  "listing_overlay": "none",
+  "quality_policy_version": "4.0.0-structural-v1",
+  "schema_version": "1.0.0",
+  "structural_facts": {
+    "capital_allocation_score": 96,
+    "cash": 39544000000,
+    "competitive_position_score": 97,
+    "debt": 84344000000,
+    "dilution_pct_yoy": -2.6180913344576284,
+    "fcf_margin_pct": 23.732882225869314,
+    "fcf_positive": true,
+    "management_quality_score": 94,
+    "moat_quality_score": 97,
+    "multi_period_earnings_quality_score": 96,
+    "net_debt_to_ebitda": 0.4815576035592892,
+    "net_income_positive": true,
+    "operating_margin_pct": 31.970799762591884,
+    "revenue_cagr_3y_pct": 1.8125357434793932
+  },
+  "summary": {
+    "archetype_resolution": "explicit_validated_archetype",
+    "as_of": "2026-08-18T15:18:00Z",
+    "contract_id": "265598",
+    "economic_archetype": "established_quality",
+    "evidence_validated": true,
+    "hard_vetoes": [],
+    "issuer_id": "ISSUER:APPLE_INC",
+    "listing_overlay": "none",
+    "missing_clearance_checks": [],
+    "quality_components": {
+      "business_durability": 96.0,
+      "capital_discipline": 96.0,
+      "earnings_cash_quality": 91.09,
+      "financial_resilience": 75.05,
+      "trajectory_quality": 74.63
+    },
+    "quality_coverage_pct": 100.0,
+    "quality_eligible": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "quality_result_sha256": "241c0e5eb0afb9c13fcf3ef63372214bbdf64d270c893e4e6fdb92711d04239b",
+    "quality_score": 86.33,
+    "quality_status": "pass",
+    "quality_status_reason": "structural_quality_gate_passed",
+    "reuse_class": "structural_quality",
+    "security_type": "common_equity",
+    "ticker": "AAPL"
+  }
+}

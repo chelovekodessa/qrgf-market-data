@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "af2e4a8fc5b8e30e764196737ca09499a51cbcb62c4198c99f069acef0f0d014",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "48f2317993d54433c812d57d327fbfefca76b86ff359a09474d3d45996111e9e",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "9ca118f18d3767b30b5c07220c8db6885ccab9c7873a71fe583b85b7f13471f7",
+  "published_at": "2026-08-18T18:30:40Z",
+  "receipt_sha256": "910c12956eef9a0906da995471ac81c04b48dea73a0302bcccf7ca6d42a169ff",
+  "research_scope_key": "ISSUER:APPLE_INC|common_equity",
+  "schema_version": "1.0.0"
+}

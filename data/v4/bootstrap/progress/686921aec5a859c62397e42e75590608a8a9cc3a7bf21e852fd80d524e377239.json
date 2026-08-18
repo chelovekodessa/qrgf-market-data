@@ -2,50 +2,10 @@
   "campaign_complete": false,
   "cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
   "durable_incomplete_count": 0,
-  "durable_reviewed_count": 8,
+  "durable_reviewed_count": 12,
   "kind": "qrgf_v4_core500_progress",
   "market_session_id": "2026-08-17",
   "next_pending_scopes": [
-    {
-      "bootstrap_best_lane": "established_quality",
-      "bootstrap_priority_score": 76.6042,
-      "contract_id": "265598",
-      "issuer_id": "ISSUER:APPLE_INC",
-      "rank": 9,
-      "research_scope_key": "ISSUER:APPLE_INC|common_equity",
-      "security_overlay": "common_equity",
-      "ticker": "AAPL"
-    },
-    {
-      "bootstrap_best_lane": "bank",
-      "bootstrap_priority_score": 74.6228,
-      "contract_id": "1520593",
-      "issuer_id": "ISSUER:JPMORGAN_CHASE_AND_CO",
-      "rank": 10,
-      "research_scope_key": "ISSUER:JPMORGAN_CHASE_AND_CO|common_equity",
-      "security_overlay": "common_equity",
-      "ticker": "JPM"
-    },
-    {
-      "bootstrap_best_lane": "recognized_growth",
-      "bootstrap_priority_score": 74.2558,
-      "contract_id": "4391",
-      "issuer_id": "ISSUER:ADVANCED_MICRO_DEVICES_INC",
-      "rank": 11,
-      "research_scope_key": "ISSUER:ADVANCED_MICRO_DEVICES_INC|common_equity",
-      "security_overlay": "common_equity",
-      "ticker": "AMD"
-    },
-    {
-      "bootstrap_best_lane": "established_quality",
-      "bootstrap_priority_score": 73.9391,
-      "contract_id": "365207014",
-      "issuer_id": "ISSUER:UBER_TECHNOLOGIES_INC",
-      "rank": 12,
-      "research_scope_key": "ISSUER:UBER_TECHNOLOGIES_INC|common_equity",
-      "security_overlay": "common_equity",
-      "ticker": "UBER"
-    },
     {
       "bootstrap_best_lane": "recognized_growth",
       "bootstrap_priority_score": 73.0935,
@@ -77,10 +37,10 @@
       "ticker": "XOM"
     }
   ],
-  "pending_count": 7,
-  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
-  "progress_sha256": "61e4eaee8d18eb6d55366a349e04f3a82049b52e310389a9b545c120209905fa",
-  "quality_resolved_count": 8,
+  "pending_count": 3,
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "progress_sha256": "de4aaccb674ef20d0077d36025cc6303e2b447327275b5b4c1eb84dade1751fa",
+  "quality_resolved_count": 12,
   "schema_version": "1.0.0",
   "selected_scope_count": 15
 }

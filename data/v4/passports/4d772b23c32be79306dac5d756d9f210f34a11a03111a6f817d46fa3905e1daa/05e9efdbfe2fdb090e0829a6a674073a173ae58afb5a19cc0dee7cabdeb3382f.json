@@ -1,0 +1,149 @@
+{
+  "as_of": "2026-08-18T15:18:00Z",
+  "component_details": {
+    "asset_quality": {
+      "expected_fact_count": 1,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.asset_quality"
+      ],
+      "known_fact_count": 1,
+      "score": 94.0
+    },
+    "capital_strength": {
+      "expected_fact_count": 1,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.capital_strength"
+      ],
+      "known_fact_count": 1,
+      "score": 92.0
+    },
+    "franchise_durability": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.competitive_position_score",
+        "facts.management_quality_score",
+        "facts.franchise_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 97.0
+    },
+    "funding_stability": {
+      "expected_fact_count": 1,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.funding_stability_score"
+      ],
+      "known_fact_count": 1,
+      "score": 98.0
+    },
+    "profitability_quality": {
+      "expected_fact_count": 1,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.profitability_quality"
+      ],
+      "known_fact_count": 1,
+      "score": 92.0
+    }
+  },
+  "economic_archetype": "bank",
+  "evidence_lineage": [
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e1",
+      "field": "facts.competitive_position_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0001628280-26-008131+0001628280-26-054343",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e3",
+      "field": "facts.franchise_quality_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0001628280-26-008131+0001628280-26-054343",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e7",
+      "field": "facts.funding_stability_score",
+      "period": "Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0001628280-26-054343",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e2",
+      "field": "facts.management_quality_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0001628280-26-008131+0001628280-26-054343",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    }
+  ],
+  "issuer_id": "ISSUER:JPMORGAN_CHASE_AND_CO",
+  "kind": "qrgf_quality_passport",
+  "listing_overlay": "none",
+  "quality_policy_version": "4.0.0-structural-v1",
+  "schema_version": "1.0.0",
+  "structural_facts": {
+    "asset_quality_score": 94,
+    "bank_profitability_score": 92,
+    "capital_quality_score": 92,
+    "competitive_position_score": 98,
+    "franchise_quality_score": 98,
+    "funding_stability_score": 98,
+    "management_quality_score": 95
+  },
+  "summary": {
+    "archetype_resolution": "bank_economics",
+    "as_of": "2026-08-18T15:18:00Z",
+    "contract_id": "1520593",
+    "economic_archetype": "bank",
+    "evidence_validated": true,
+    "hard_vetoes": [],
+    "issuer_id": "ISSUER:JPMORGAN_CHASE_AND_CO",
+    "listing_overlay": "none",
+    "missing_clearance_checks": [],
+    "quality_components": {
+      "asset_quality": 94.0,
+      "capital_strength": 92.0,
+      "franchise_durability": 97.0,
+      "funding_stability": 98.0,
+      "profitability_quality": 92.0
+    },
+    "quality_coverage_pct": 100.0,
+    "quality_eligible": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "quality_result_sha256": "ec63516df095fe1b50a60262d57bcd37dcaa46962a705f8225bbf2d3ecbf1c8d",
+    "quality_score": 94.15,
+    "quality_status": "pass",
+    "quality_status_reason": "structural_quality_gate_passed",
+    "reuse_class": "structural_quality",
+    "security_type": "common_equity",
+    "ticker": "JPM"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "e839bd1264689c60b577918b19767128fdf4fe1aa97d017720e2b1509bbfeec1",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:JPMORGAN_CHASE_AND_CO",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "98fc7db62c929dbb50d7fe58540cd6598077877e02f5032ab58a3bd26e6d6353",
+  "passport_hash": "05e9efdbfe2fdb090e0829a6a674073a173ae58afb5a19cc0dee7cabdeb3382f",
+  "passport_path": "data/v4/passports/4d772b23c32be79306dac5d756d9f210f34a11a03111a6f817d46fa3905e1daa/05e9efdbfe2fdb090e0829a6a674073a173ae58afb5a19cc0dee7cabdeb3382f.json",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "quality_as_of": "2026-08-18T15:18:00Z",
+  "quality_coverage_pct": 100.0,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 94.15,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:JPMORGAN_CHASE_AND_CO|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "249c29d440b0e9930605dbd37d26c2d8475d59bdb3567372e8fc43844ab037b1",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "726957c1f3d3b102c3184e26dc3f1b15b4293862decd3c66f7f3534572f39c97",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "15c6f29c381ffc793d600c756b64a8b0c16b0502251eeb7342de9de80cbf55d2",
+  "published_at": "2026-08-18T18:30:40Z",
+  "receipt_sha256": "878ea8f701e61011bfda507522f6702acef79179ee2cb5baf7daaa2ec5f8b568",
+  "research_scope_key": "ISSUER:ADVANCED_MICRO_DEVICES_INC|common_equity",
+  "schema_version": "1.0.0"
+}

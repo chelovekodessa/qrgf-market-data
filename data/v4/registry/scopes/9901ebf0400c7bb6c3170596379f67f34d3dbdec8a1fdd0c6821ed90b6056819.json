@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "249c29d440b0e9930605dbd37d26c2d8475d59bdb3567372e8fc43844ab037b1",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:ADVANCED_MICRO_DEVICES_INC",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "15c6f29c381ffc793d600c756b64a8b0c16b0502251eeb7342de9de80cbf55d2",
+  "passport_hash": "726957c1f3d3b102c3184e26dc3f1b15b4293862decd3c66f7f3534572f39c97",
+  "passport_path": "data/v4/passports/9901ebf0400c7bb6c3170596379f67f34d3dbdec8a1fdd0c6821ed90b6056819/726957c1f3d3b102c3184e26dc3f1b15b4293862decd3c66f7f3534572f39c97.json",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "quality_as_of": "2026-08-18T15:18:00Z",
+  "quality_coverage_pct": 92.86,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 89.44,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:ADVANCED_MICRO_DEVICES_INC|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

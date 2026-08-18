@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "ca1d7b9ab3bf9d4ca168a3af9bbf89925b6b16416e8171058004c4aa1d97c5eb",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "1ffa9a7954a4a8680d71eac612ba50dd5a9eb24a017e2756d695a1deb7712c48",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "ebfe9eb66c9e7d914a78f9677d44e29e7adb0b4799b4fb4871b88f6030e08c2a",
+  "published_at": "2026-08-18T18:30:40Z",
+  "receipt_sha256": "858947e1f76070e870b9f8f1090488e81e3e4424cb6f6161aa2c3ed31aa81f3a",
+  "research_scope_key": "ISSUER:UBER_TECHNOLOGIES_INC|common_equity",
+  "schema_version": "1.0.0"
+}

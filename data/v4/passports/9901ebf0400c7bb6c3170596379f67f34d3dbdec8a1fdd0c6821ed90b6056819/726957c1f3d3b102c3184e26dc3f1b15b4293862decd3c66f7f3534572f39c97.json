@@ -1,0 +1,278 @@
+{
+  "as_of": "2026-08-18T15:18:00Z",
+  "component_details": {
+    "business_durability": {
+      "expected_fact_count": 4,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.competitive_position_score",
+        "facts.moat_quality_score",
+        "facts.management_quality_score",
+        "facts.business_reality_score"
+      ],
+      "known_fact_count": 4,
+      "score": 92.0
+    },
+    "capital_discipline": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.dilution_pct_yoy",
+        "facts.sales_efficiency_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 92.0
+    },
+    "financial_resilience": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 66.67,
+      "fact_fields": [
+        "facts.cash_debt",
+        "facts.net_debt_to_ebitda"
+      ],
+      "known_fact_count": 2,
+      "score": 93.75
+    },
+    "growth_quality": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.revenue_cagr_3y_pct",
+        "facts.multi_period_growth_quality_score"
+      ],
+      "known_fact_count": 2,
+      "score": 81.55
+    },
+    "unit_economics": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.operating_margin_pct",
+        "facts.fcf_margin_pct"
+      ],
+      "known_fact_count": 2,
+      "score": 90.05
+    }
+  },
+  "economic_archetype": "recognized_growth",
+  "evidence_lineage": [
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e11",
+      "field": "facts.business_reality_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018+0000002488-26-000123",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-06-27T00:00:00Z",
+      "evidence_id": "e1",
+      "field": "facts.cash",
+      "period": "Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000123",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e8",
+      "field": "facts.competitive_position_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018+0000002488-26-000123",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-06-27T00:00:00Z",
+      "evidence_id": "e2",
+      "field": "facts.debt",
+      "period": "Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000123",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2025-12-27T00:00:00Z",
+      "evidence_id": "e7",
+      "field": "facts.dilution_pct_yoy",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-27T00:00:00Z",
+      "evidence_id": "e5",
+      "field": "facts.fcf_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e10",
+      "field": "facts.management_quality_score",
+      "period": "FY2025+Q2 FY2026+8-K2026-08-17",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018+0001193125-26-354029",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e9",
+      "field": "facts.moat_quality_score",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e12",
+      "field": "facts.multi_period_growth_quality_score",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018+0000002488-23-000047",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-27T00:00:00Z",
+      "evidence_id": "e3",
+      "field": "facts.net_debt_to_ebitda",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "x"
+    },
+    {
+      "as_of": "2025-12-27T00:00:00Z",
+      "evidence_id": "e4",
+      "field": "facts.operating_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-27T00:00:00Z",
+      "evidence_id": "e6",
+      "field": "facts.revenue_cagr_3y_pct",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018+0000002488-23-000047",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T15:18:00Z",
+      "evidence_id": "e13",
+      "field": "facts.sales_efficiency_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T15:18:00Z",
+      "source": {
+        "source_id": "SEC:0000002488-26-000018+0000002488-26-000123",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    }
+  ],
+  "issuer_id": "ISSUER:ADVANCED_MICRO_DEVICES_INC",
+  "kind": "qrgf_quality_passport",
+  "listing_overlay": "none",
+  "quality_policy_version": "4.0.0-structural-v1",
+  "schema_version": "1.0.0",
+  "structural_facts": {
+    "business_reality_score": 98,
+    "cash": 5086000000,
+    "competitive_position_score": 92,
+    "debt": 3226000000,
+    "dilution_pct_yoy": -0.06108735491754391,
+    "fcf_margin_pct": 19.443401945783652,
+    "management_quality_score": 89,
+    "moat_quality_score": 89,
+    "multi_period_growth_quality_score": 90,
+    "net_debt_to_ebitda": -0.3948019801980198,
+    "operating_margin_pct": 10.664280146655504,
+    "revenue_cagr_3y_pct": 13.643599335368428,
+    "sales_efficiency_score": 89
+  },
+  "summary": {
+    "archetype_resolution": "explicit_validated_archetype",
+    "as_of": "2026-08-18T15:18:00Z",
+    "contract_id": "4391",
+    "economic_archetype": "recognized_growth",
+    "evidence_validated": true,
+    "hard_vetoes": [],
+    "issuer_id": "ISSUER:ADVANCED_MICRO_DEVICES_INC",
+    "listing_overlay": "none",
+    "missing_clearance_checks": [],
+    "quality_components": {
+      "business_durability": 92.0,
+      "capital_discipline": 92.0,
+      "financial_resilience": 93.75,
+      "growth_quality": 81.55,
+      "unit_economics": 90.05
+    },
+    "quality_coverage_pct": 92.86,
+    "quality_eligible": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "quality_result_sha256": "0b12396dd1252a77040572308e1e47f0faac811e2a41b0bcbb37c4948ca3d223",
+    "quality_score": 89.44,
+    "quality_status": "pass",
+    "quality_status_reason": "structural_quality_gate_passed",
+    "reuse_class": "structural_quality",
+    "security_type": "common_equity",
+    "ticker": "AMD"
+  }
+}
