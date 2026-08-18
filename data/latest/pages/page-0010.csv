@@ -1,6 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-HAFN,Hafnia Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HAFN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-HAL,Halliburton Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 HALO,"Halozyme Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HALO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 HAO,Haoxi Health Technology Limited - Class A Ord Share,Q,S,N,common_equity,eligible,True,N,N,,qrgf-resolution-required:Q:HAO,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 HAPN,"Happen, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HAPN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -156,6 +154,7 @@ HYNE,"Hoyne Bancorp, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,
 HYPD,"Hyperion DeFi, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HYPD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 HYPR,"Hyperfine, Inc.  - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HYPR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 HZO,"MarineMax, Inc.  (FL) Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HZO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+IA,"Innovative Solutions and Support, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 IAG,Iamgold Corporation Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:IAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 IART,Integra LifeSciences Holdings Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:IART,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 IAUX,i-80 Gold Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:IAUX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +248,4 @@ INIO,INNIO N.V. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqt
 INKT,"MiNK Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INKT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INLF,INLIF LIMITED - Class A Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INLF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INLX,"Intellinetics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:INLX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+INM,InMed Pharmaceuticals Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

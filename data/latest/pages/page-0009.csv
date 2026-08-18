@@ -1,5 +1,4 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
-FRT,Federal Realty Investment Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRTT,Fort Technology Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRTT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRVO,Fervo Energy Company - Class A common stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRVO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FSBC,Five Star Bancorp - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -31,7 +30,6 @@ FTLF,"FitLife Brands, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N
 FTNT,"Fortinet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTNT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FTRA,FutureCorp Space Acquisition 1 Class A Ordinary Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTRA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FTRE,Fortrea Holdings Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTRE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-FTRK,FAST TRACK GROUP - Ordinary shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FTRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FTS,Fortis Inc. Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FTV,Fortive Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FTW,Presidio Production Company Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FTW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +247,5 @@ GYRO,"Gyrodyne , LLC - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasd
 H,Hyatt Hotels Corporation Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:H,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 HAE,Haemonetics Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HAE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 HAFC,Hanmi Financial Corporation - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:HAFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HAFN,Hafnia Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HAFN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+HAL,Halliburton Company Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:HAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

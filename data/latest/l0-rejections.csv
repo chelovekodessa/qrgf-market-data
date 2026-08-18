@@ -555,6 +555,7 @@ AXINU,Axiom Intelligence Acquisition Corp 1 - Units,Q,G,N,spac,ineligible,False,
 AXS$E,"Axis Capital Holdings Limited Depositary Shares, each representing 1/100th interest in a share of a 5.50% Series E Preferred Shares",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:AXS$E,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 AXTC,Corgi AXTI 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AXTL,Leverage Shares 2X Long AXTI Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+AXTQ,Tradr 2X Short AXTI Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AXTU,T-REX 2X Long AXTI Daily Target ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AXTX,Tradr 2X Long AXTI Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AZIO,"Azio AI Holdings, Inc. - Common stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:AZIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
@@ -616,7 +617,7 @@ BBB,CYBER HORNET S&P 500 and Bitcoin 75/25 Strategy ETF,Q,G,N,etf,ineligible,Fal
 BBBI,BondBloxx BBB Rated 5-10 Year Corporate Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBBL,BondBloxx BBB Rated 10+ Year Corporate Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBBS,BondBloxx BBB Rated 1-5 Year Corporate Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-BBBYW,Bed Bath  - Warrant,Q,Q,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:BBBYW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
+BBBYW,"Neighborhood Intelligence, Inc.  - Warrant",Q,Q,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:BBBYW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 BBC,Virtus Biotech Clinical Trials ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBCA,JPMorgan BetaBuilders Canada ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBCB,JPMorgan BetaBuilders USD Investment Grade Corporate Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -1420,6 +1421,7 @@ COF$L,"Capital One Financial Corporation Depositary Shares, Each Representing a 
 COF$N,"Capital One Financial Corporation Depositary Shares, Each Representing a 1/40th Ownership Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock, Series N",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:COF$N,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 COHC,Corgi COHR 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 COHH,Leverage Shares 2X Long COHR Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+COHQ,Tradr 2X Short COHR Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 COHX,Tradr 2X Long COHR Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 COIA,ProShares Ultra COIN,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 COIG,Leverage Shares 2X Long COIN Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -1717,7 +1719,6 @@ DECZ,TrueShares Structured Outcome (December) ETF,Z,,,etf,ineligible,False,N,Y,,
 DEED,First Trust Securitized Plus ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DEEF,Xtrackers FTSE Developed ex US Multifactor ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DEEP,Acquirers Small and Micro Deep Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-DEFI,Hashdex Bitcoin ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DEFR,Aptus Deferred Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DEFT,"Defi Technologies, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:DEFT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 DEHP,Dimensional Emerging Markets High Profitability ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -1899,7 +1900,6 @@ DRIP,Direxion Daily S&P Oil & Gas Exp. & Prod. Bear 2X ETF,P,,,etf,ineligible,Fa
 DRIV,Global X Autonomous & Electric Vehicles ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DRKY,VistaShares Target 15 DRUKMacro Distribution ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DRLL,Strive U.S. Energy ETF,N,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-DRMAW,"Dermata Therapeutics, Inc. - Warrant",Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:DRMAW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 DRMP,Tuttle Capital Memory Stack Income Blast ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DRMY,XFUNDS Memory Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DRN,Direxion Daily Real Estate Bull 3X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -3430,6 +3430,7 @@ HYTR,Counterpoint High Yield Trend ETF,N,,,etf,ineligible,False,N,Y,,,approved_a
 HYUP,Xtrackers High Beta High Yield Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HYXF,iShares ESG Advanced High Yield Corporate Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HYZD,WisdomTree Interest Rate Hedged High Yield Bond Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+IACL,GraniteShares US 100 Autocallable Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 IACO,Idea Acquisition Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:IACO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 IACOU,Idea Acquisition Corp. - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:IACOU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 IACOW,Idea Acquisition Corp. - Warrants,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:IACOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -4380,6 +4381,7 @@ LVWR.W,"LiveWire Group, Inc. Warrants, each exercisable for one share of Common 
 LWAC,LightWave Acquisition Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LWAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 LWACU,LightWave Acquisition Corp. - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LWACU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 LWACW,LightWave Acquisition Corp. - Warrants,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LWACW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
+LWLX,Tradr 2X Long LWLG Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 LXP$C,LXP Industrial Trust 6.5% Series C Cumulative Convertible Preferred Stock,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:LXP$C,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 LYLD,Cambria Large Cap Shareholder Yield ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 LYTE,Roundhill Photonics & Optics ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4496,6 +4498,7 @@ METCZ,"Ramaco Resources, Inc. - 8.375% Senior Notes due 2029",Q,Q,N,debt,ineligi
 METD,Direxion Daily META Bear 1X ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 METG,Leverage Shares 2X Long META Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 METL,Sprott Active Metals & Miners ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+METQ,Tradr 2X Short META Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 METU,Direxion Daily META Bull 2X ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 METV,Roundhill Ball Metaverse ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 METW,Roundhill META WeeklyPay ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist

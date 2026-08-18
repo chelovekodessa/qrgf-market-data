@@ -3,12 +3,12 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-18T03:12:22Z",
-  "source_file_creation_time": "0817202621:32",
-  "raw_sha256": "95697cea9f121954da2362034204c6839db69a90476cd36d4eb65035003f02e5",
-  "raw_bytes": 991737,
-  "raw_rows": 13147,
-  "accepted_unique": 5120,
+  "retrieved_at": "2026-08-18T08:04:09Z",
+  "source_file_creation_time": "0818202603:04",
+  "raw_sha256": "722f251e2c151cf7f4c74652e9029275073e15f5f8fed880de235d017226d846",
+  "raw_bytes": 991864,
+  "raw_rows": 13148,
+  "accepted_unique": 5118,
   "page_size": 250,
   "page_count": 21,
   "pages": [
@@ -50,88 +50,88 @@
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "5cf82166ed3033597842a6901b3f78302ee4b5f6660cc25c090e1531e03c422d"
+      "sha256": "056d3a6bc87a2e9738c203dc728a2338f151aa6e282c2081cf350e62e88286e4"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "06fe679c6c35693e241397cd7f34039536338d1f72217dff44094ccb4b236b3e"
+      "sha256": "6ed65375250d71b72d5412cf357229a5b59e3d7c157ab4fe0bd9cb4779d1a076"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "97374c8042ad78606e8cdb8b60bfde13242f7f8dabb18d90a4be072a1eb10c2c"
+      "sha256": "d9dae6cb92635d5697e4e0ee050c3669064935af9951655f87ce0cdc7b4184c7"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "ce44c6a18c2ed8449c73694cf9811590b02aab12269293920a686032f8754afe"
+      "sha256": "285cf36f1b96355b38625821b86a9e3395f55b5a8dd63b2295e94d38808130ec"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "8d2ecd48c33e9c78088df338199cc2d9b8425b4865eeec331d3ff9e7cb9d59f2"
+      "sha256": "23569bcaa65a337751d3da46002a7520e395963021149140cc89f93aeaea007f"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "5e7c832c6e7926cfb0ef4cdbb2fdec0fcf895a1c21dd6f7de8ef2aff40a76d3e"
+      "sha256": "4a9905c789aeb168fc23749d6e26d3fc5176e82570318fbd34fdcba738c0bca5"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "40dbb395eac1ddc17c22adac097a8b7785725b9698d686ab180a45acd47c26f6"
+      "sha256": "9eab7bd0bb710e16e3073705272fb5ef201b4f00558c56a6d152b29f24b3c2a3"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "d1cfc144031a226eaf7e805d0e4d9edf88bfeed8f9301fe16ef730e2c11df25d"
+      "sha256": "1c4fc9dae70f5bf863d5294c61ecf63ce6437a549b4c550249b003bb55c28178"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "aa178ba02a5e8f0b30b6d824e2426d60a2291e58f2c522fcd9666b59fcbdaa73"
+      "sha256": "eae9b6c6035b307e5a083074fe64b5c4932a7eb1740253ffe58610b5e2802382"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "9e414b2daa00082c8e1eb06fc5682acde6837b016ee6e39e0db31e46a2f5ec04"
+      "sha256": "f9fed5b1863207adc3f0f68ee3f8044baf60801561043eaeb3987c8bb3658093"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "9a942d9dfd2e2f23aeb417ccc9f503b31dd6091fb29d24c9afb790ebe5c33ff6"
+      "sha256": "53d8b7cc5edd8f2d945278dfa6f1fe128d123bce965510ba94201fcb0a0868b9"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "489654236288016b80d9ee0a74ae835fdc5e3271c76dc410671e635e03526a44"
+      "sha256": "0f8855a1d62c2bcde59b1103eef0b67fc8acef7ee9b246925bf218393c634396"
     },
     {
       "name": "page-0020.csv",
       "rows": 250,
-      "sha256": "2509f47ea246834eefb4badf778454549f0517967364d5799cd614f3160c17ae"
+      "sha256": "f843e09e0cc3960004eb69402bf80cd4f4a075e4e045c5727a3d4897c35b98f3"
     },
     {
       "name": "page-0021.csv",
-      "rows": 120,
-      "sha256": "a481b2cc0c8564b76c5b277fc8668041509b9f4068ddf6f8fda25312e589ccc6"
+      "rows": 118,
+      "sha256": "7f6b1ae1ed0052ed2f2375c1ff7528c9f2346b4dd0d15d065ca9e9c9b2d8af7a"
     }
   ],
   "bundle": {
     "name": "l0-universe.csv.gz.b64",
     "encoding": "base64+gzip",
-    "rows": 5120,
-    "sha256": "bb2870d49e1664fd239728a3847880b78e8334f71b1da781a201d29bca4b7d4f",
-    "gzip_sha256": "2462de478d53a180b0457fd0e177e037d14d8c7063c41b8b55f61e40dc48abb3",
-    "csv_sha256": "3b7d56ac5e51df41085d5f17d609e16bb35bf4d720537117152709bcf54c5b34",
-    "bytes": 125673,
-    "line_count": 1633
+    "rows": 5118,
+    "sha256": "b0c18bd7d495dbab81ac6e43b3bbbac5709252f6905be7f136df27c721c76fbd",
+    "gzip_sha256": "beb050455926df522528a5d9c33fcfa51b5ac3746b5a316df3178e0d9ced5e4e",
+    "csv_sha256": "efd1233240579fd63b72414e2dd7cddd4066c45c32b0c37270ef14f839d4a71e",
+    "bytes": 125640,
+    "line_count": 1632
   },
   "rejection_audit": {
     "name": "l0-rejections.csv",
-    "rows": 8027,
-    "sha256": "cb6f9bcfbd001ebd714071902bbf40319fabe102bf1166739188b90cfdb91a26"
+    "rows": 8030,
+    "sha256": "f592da9073a5b8df9d8f38e61604ff6c6d1e0959fd4063d8c87987ebe1768d31"
   },
   "producer_hashes": {
     "build_universe.py": "fee1055e9ce7f5cdb6df451342ad88cf2106942c96489c0b525a300716cb1d28",
@@ -142,17 +142,17 @@
     "update-l0.yml": "65836f913a4bbf94a1f8a055d39f4f36ecb9c468f991112ecba3f7f2ef572b56"
   },
   "summary": {
-    "raw_rows": 13147,
-    "accepted_unique": 5120,
-    "structurally_eligible": 5120,
-    "rankable_l0": 5120,
-    "rejected_rows": 8027,
+    "raw_rows": 13148,
+    "accepted_unique": 5118,
+    "structurally_eligible": 5118,
+    "rankable_l0": 5118,
+    "rejected_rows": 8030,
     "quarantined_rows": 0,
     "ambiguous_review_count": 131,
     "duplicate_contract_rows": 0,
     "quality_seed_count": 0,
     "adr_count": 314,
-    "common_equity_count": 4764,
+    "common_equity_count": 4762,
     "approved_etfs_accepted": 42,
     "etfs_included": true,
     "approved_etf_allowlist_size": 42,
@@ -168,7 +168,7 @@
     "acquisition_vehicle": 610,
     "adr_warrant_right_or_unit": 2,
     "debt_note_or_bond": 205,
-    "etf_not_in_approved_allowlist": 5569,
+    "etf_not_in_approved_allowlist": 5573,
     "limited_partnership_not_common_equity": 10,
     "metadata_or_blank": 1,
     "non_common_symbol_pattern": 470,
@@ -179,6 +179,6 @@
     "test_issue": 33,
     "unit": 64,
     "unsuitable_non_etf_fund": 358,
-    "warrant": 244
+    "warrant": 243
   }
 }
