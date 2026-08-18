@@ -5,11 +5,11 @@
   "core500_cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
   "core_path": "data/v4/market/core.json",
   "core_security_rows": 16,
-  "core_sha256": "ada2a2f8620ec31def69b07812fbfcdf4c07b6d89d3da9f93491b3cbb73df27b",
+  "core_sha256": "ba6cabbf7c7af8068d1c74945e67f1432ee912cd416989b01f0622b5a24e0776",
   "eligible_noncore_count": 3706,
   "kind": "qrgf_v4_market_pointer",
   "market_session_id": "2026-08-17",
-  "pointer_sha256": "d8c038223fb3374ab3f93c691a7b8785ca823b0d1607bf1d3f24c6f8f18b34f4",
+  "pointer_sha256": "6407d80453f3652ab6f0c5c7e64e7f1ffcc934a6c088250853c18b0b792099bd",
   "producer_release_sha256": "8c52544bb13eb1fbbfbdccb534afc3f82e18488206da8d318bfc7337a6a1d5f0",
   "schema_version": "1.0.0",
   "source_v3_snapshot_id": "aebf89995fa4d7616fe3ff43"
