@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "model_version": "3.2.0-shadow-structural-bound-v1",
+  "quality_policy_version": "3.0.0-structural-v1",
+  "unknown_fact_upper_bound": 100.0,
+  "score_round_decimals": 4,
+  "selection_weights": {
+    "structural_quality": 55.0,
+    "recovery_setup": 35.0,
+    "evidence_confidence": 10.0
+  },
+  "lane_weights": {
+    "established_quality": {
+      "business_durability": 20.0,
+      "capital_discipline": 15.0,
+      "earnings_cash_quality": 25.0,
+      "financial_resilience": 25.0,
+      "trajectory_quality": 15.0
+    },
+    "recognized_growth": {
+      "business_durability": 15.0,
+      "capital_discipline": 15.0,
+      "financial_resilience": 25.0,
+      "growth_quality": 25.0,
+      "unit_economics": 20.0
+    },
+    "cyclical": {
+      "business_durability": 15.0,
+      "capital_discipline": 15.0,
+      "cash_generation": 15.0,
+      "financial_resilience": 30.0,
+      "through_cycle_quality": 25.0
+    },
+    "bank": {
+      "asset_quality": 25.0,
+      "capital_strength": 25.0,
+      "franchise_durability": 15.0,
+      "funding_stability": 15.0,
+      "profitability_quality": 20.0
+    },
+    "etf": {
+      "concentration_control": 10.0,
+      "diversification": 20.0,
+      "fund_resilience": 15.0,
+      "holdings_quality": 30.0,
+      "sector_fundamental_quality": 25.0
+    }
+  },
+  "sec": {
+    "ticker_map_urls": [
+      "https://www.sec.gov/files/company_tickers_exchange.json",
+      "https://www.sec.gov/files/company_tickers.json"
+    ],
+    "companyfacts_url_template": "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik10}.json",
+    "submissions_url_template": "https://data.sec.gov/submissions/CIK{cik10}.json",
+    "default_user_agent": "QRGF-research qrgf-market-data-bot@users.noreply.github.com",
+    "requests_per_second": 7.0,
+    "max_retries": 4,
+    "annual_forms": ["10-K", "10-K/A", "20-F", "20-F/A", "40-F", "40-F/A"]
+  },
+  "sic_lane_hints": {
+    "bank_ranges": [[6000, 6099]],
+    "bank_exact": [6111],
+    "cyclical_ranges": [[1000, 1499], [2800, 2899], [3300, 3399]]
+  },
+  "machine_fact_fields": [
+    "cash",
+    "debt",
+    "dilution_pct_yoy",
+    "earnings_growth_pct",
+    "fcf_margin_pct",
+    "fcf_positive",
+    "net_income_positive",
+    "operating_margin_change_pp_yoy",
+    "operating_margin_pct",
+    "revenue_cagr_3y_pct",
+    "revenue_growth_pct"
+  ],
+  "shadow_only": true,
+  "production_selection_authorized": false
+}
