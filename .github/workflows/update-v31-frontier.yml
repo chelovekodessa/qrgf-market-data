@@ -1,0 +1,105 @@
+name: Update QRGF v3.1 Frontier
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Update QRGF v3 Radar"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "screening/engine/build_v31_frontier.py"
+      - "screening/engine/verify_v31_publication.py"
+      - "screening/config/v31-frontier-model.json"
+      - "screening/config/v31-frontier-producer-release.json"
+      - ".github/workflows/update-v31-frontier.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-v31-frontier
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build complete remote frontier from verified v3 Radar
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .work/v31
+          RADAR_COMMIT=$(git rev-parse HEAD)
+          CREATED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          python screening/engine/build_v31_frontier.py \
+            --repo-root . \
+            --output-root data/v31 \
+            --release-manifest screening/config/v31-frontier-producer-release.json \
+            --frontier-model screening/config/v31-frontier-model.json \
+            --radar-publication-commit-sha "$RADAR_COMMIT" \
+            --created-at "$CREATED_AT" \
+            --page-size 24 > .work/v31/build.json
+          cat .work/v31/build.json
+      - name: Independently verify full market and frontier before commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          SNAPSHOT_DIR=$(python -c "import json; print(json.load(open('.work/v31/build.json'))['snapshot_dir'])")
+          python screening/engine/verify_v31_publication.py --repo-root . --snapshot-dir "$SNAPSHOT_DIR"
+      - name: Commit immutable frontier snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          SNAPSHOT_DIR=$(python -c "import json; print(json.load(open('.work/v31/build.json'))['snapshot_dir'])")
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add "$SNAPSHOT_DIR"
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish QRGF v3.1 frontier snapshot"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD > .work/v31/publication-commit.txt
+      - name: Verify committed snapshot again
+        shell: bash
+        run: |
+          set -euo pipefail
+          SNAPSHOT_DIR=$(python -c "import json; print(json.load(open('.work/v31/build.json'))['snapshot_dir'])")
+          python screening/engine/verify_v31_publication.py --repo-root . --snapshot-dir "$SNAPSHOT_DIR"
+      - name: Publish compact pointer to exact snapshot commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          def sem(value):
+              return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'), allow_nan=False).encode()).hexdigest()
+          build=json.loads(Path('.work/v31/build.json').read_text())
+          commit=Path('.work/v31/publication-commit.txt').read_text().strip()
+          body={
+              'schema_version':'1.0.0','kind':'qrgf_v31_frontier_pointer',
+              'snapshot_id':build['snapshot_id'],'market_session_id':build['market_session_id'],
+              'publication_commit_sha':commit,
+              'certificate_path':build['certificate_path'],'certificate_sha256':build['certificate_sha256'],
+              'frontier_manifest_path':build['frontier_manifest_path'],'frontier_manifest_sha256':build['frontier_manifest_sha256'],
+          }
+          pointer={**body,'pointer_sha256':sem(body)}
+          Path('data/v31').mkdir(parents=True,exist_ok=True)
+          Path('data/v31/latest.json').write_text(json.dumps(pointer,ensure_ascii=False,indent=2,sort_keys=True)+'\n')
+          PY
+          git add data/v31/latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Point QRGF v3.1 to verified frontier snapshot"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
