@@ -13,15 +13,6 @@ on:
       - "screening/config/v31-frontier-model.json"
       - "screening/config/v31-frontier-producer-release.json"
       - ".github/workflows/update-v31-frontier.yml"
-  push:
-    branches: [main]
-    paths:
-      - "screening/engine/build_v31_frontier.py"
-      - "screening/engine/verify_v31_publication.py"
-      - "screening/config/v31-frontier-model.json"
-      - "screening/config/v31-frontier-producer-release.json"
-      - ".github/workflows/update-v31-frontier.yml"
-
 permissions:
   contents: write
 
@@ -113,7 +104,8 @@ jobs:
           Path('data/v31').mkdir(parents=True,exist_ok=True)
           Path('data/v31/latest.json').write_text(json.dumps(pointer,ensure_ascii=False,indent=2,sort_keys=True)+'\n')
           PY
-          git add data/v31/latest.json
+          rm -f data/v31/diagnostics/latest.json
+          git add -A -- data/v31/latest.json data/v31/diagnostics/latest.json
           if ! git diff --cached --quiet; then
             git commit -m "Point QRGF v3.1 to verified frontier snapshot"
             TARGET_BRANCH="${GITHUB_HEAD_REF:-main}"
