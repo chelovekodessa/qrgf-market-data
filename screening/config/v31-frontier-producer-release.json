@@ -10,7 +10,7 @@
   "frontier_model_sha256": "919cac81107c71c409ad48eb0f0a2abd759150812ada1f8b717b68dddbc400c8",
   "producer_hashes": {
     "build_v31_frontier.py": "03e71bb6dcd2fe80df0451291117a4d58bd79548108d03de86fd239771dbfb8c",
-    "update-v31-frontier.yml": "5c4e9791519bb9f5cf08359986433823f14e0e54e532fe2591c47d0d851af0ee",
+    "update-v31-frontier.yml": "8228e7e9b12a39f61877fa46a8b9f5fdf8624bddef47c142670ae61aaf62b30d",
     "v31-frontier-model.json": "c30756a6d3d4979893623288f9e5e5ac22e7ba49f46d55ebc7ca2c7e4e1aa753",
     "verify_v31_publication.py": "57de786423c196d3bcc781fd424c1be79d9b5f36a9e6154f826ef608e94d2d60"
   },
