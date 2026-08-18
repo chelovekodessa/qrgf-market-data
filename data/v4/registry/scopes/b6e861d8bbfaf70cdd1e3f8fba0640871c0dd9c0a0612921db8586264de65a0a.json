@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "685ca29dcf3827e456ae882d5767bb56d989243adb4604dc11376aa795204334",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:ELI_LILLY_AND_CO",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "584b710503605c9de83fca8f15bbba4cc36190794b39071eb9499c5c0831c63d",
+  "passport_hash": "d9d56744d4c40ee723f98ee543b4b9fa10f48297d076b87690a1f7b9c3b71f93",
+  "passport_path": "data/v4/passports/b6e861d8bbfaf70cdd1e3f8fba0640871c0dd9c0a0612921db8586264de65a0a/d9d56744d4c40ee723f98ee543b4b9fa10f48297d076b87690a1f7b9c3b71f93.json",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "quality_as_of": "2026-08-18T13:32:00Z",
+  "quality_coverage_pct": 92.86,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 76.84,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:ELI_LILLY_AND_CO|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

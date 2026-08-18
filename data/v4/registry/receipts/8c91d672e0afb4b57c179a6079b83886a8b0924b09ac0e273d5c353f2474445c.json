@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "707c392e9d1d666152df7e8ccfe0e324a578968dd4493b19f60c9eced27d39dc",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "59d3aea4a18be691662531fd27a1f16c44e9bd295af5909a36f8460d47444957",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "proposal_sha256": "8c91d672e0afb4b57c179a6079b83886a8b0924b09ac0e273d5c353f2474445c",
+  "published_at": "2026-08-18T14:26:30Z",
+  "receipt_sha256": "7d06697a8f974f9e3250ee2046a97460b7f7719827bf85dfba382449de340280",
+  "research_scope_key": "ISSUER:NVIDIA_CORP|common_equity",
+  "schema_version": "1.0.0"
+}

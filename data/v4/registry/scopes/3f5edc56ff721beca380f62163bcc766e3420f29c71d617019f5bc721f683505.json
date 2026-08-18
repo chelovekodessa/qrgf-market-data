@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "a86afedb2d18b3e75320534d28ee9c14851f1d770268c8b535a03420e2bf5cbe",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:PALANTIR_TECHNOLOGIES_INC",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "d4b3531cf14b2f330e2bc529364ce02846ce8dcf72c4727ad236781c46b66c45",
+  "passport_hash": "545540e880ad0abe22c975bba41ea30830066469d5872c2cca6bb931823d3d8b",
+  "passport_path": "data/v4/passports/3f5edc56ff721beca380f62163bcc766e3420f29c71d617019f5bc721f683505/545540e880ad0abe22c975bba41ea30830066469d5872c2cca6bb931823d3d8b.json",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "quality_as_of": "2026-08-18T13:32:00Z",
+  "quality_coverage_pct": 85.71,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 93.97,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:PALANTIR_TECHNOLOGIES_INC|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "a86afedb2d18b3e75320534d28ee9c14851f1d770268c8b535a03420e2bf5cbe",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "545540e880ad0abe22c975bba41ea30830066469d5872c2cca6bb931823d3d8b",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "proposal_sha256": "d4b3531cf14b2f330e2bc529364ce02846ce8dcf72c4727ad236781c46b66c45",
+  "published_at": "2026-08-18T14:26:30Z",
+  "receipt_sha256": "fcb8a85cb2c629942a15c83e34102f3ea2a67f3510c44be9296e13a7987b0cce",
+  "research_scope_key": "ISSUER:PALANTIR_TECHNOLOGIES_INC|common_equity",
+  "schema_version": "1.0.0"
+}
