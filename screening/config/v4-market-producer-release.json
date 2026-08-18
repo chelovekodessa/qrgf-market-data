@@ -1,0 +1,13 @@
+{
+  "contracts": {
+    "challenger_transport_is_not_quality_gate": true,
+    "core500_not_whitelist": true,
+    "direct_sec_required": false
+  },
+  "producer_hashes": {
+    "build_v4_market_view.py": "533a0c9c47dabf0075018c792ed2114cb5f51e97f1b89bd98d26b62c4fed0a79",
+    "update-v4-market.yml": "d0b5b651d91633f36ef7b997c2683e7ef96d8c91ff49181da8557a564269a7d5"
+  },
+  "release_version": "1.0.0",
+  "schema_version": "1.0.0"
+}
