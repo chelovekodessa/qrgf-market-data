@@ -98,7 +98,12 @@ def verify(args: argparse.Namespace) -> dict[str,Any]:
         parsed=parse_csv(data)
         if len(parsed)!=int(decl.get("rows") or -1): raise ValueError(f"source Radar page count mismatch: {decl['name']}")
         rows.extend(parsed)
-    if len(rows)!=int(radar_manifest.get("rows") or -1) or semantic_hash(rows)!=radar_manifest.get("rows_semantic_sha256") or semantic_hash(rows)!=cert["source_radar"]["rows_semantic_sha256"]: raise ValueError("source Radar rows proof mismatch")
+    if len(rows)!=int(radar_manifest.get("rows") or -1): raise ValueError("source Radar row-count proof mismatch")
+    declared_rows_hash=str(radar_manifest.get("rows_semantic_sha256") or "")
+    if len(declared_rows_hash)!=64 or any(ch not in "0123456789abcdef" for ch in declared_rows_hash): raise ValueError("source Radar declared rows semantic hash invalid")
+    if declared_rows_hash!=cert["source_radar"]["rows_semantic_sha256"]: raise ValueError("source Radar declared semantic lineage mismatch")
+    page_proof=[{"name":str(decl["name"]),"rows":int(decl["rows"]),"sha256":str(decl["sha256"])} for decl in radar_manifest.get("pages") or []]
+    if semantic_hash(page_proof)!=cert["source_radar"].get("page_set_sha256"): raise ValueError("source Radar ordered page-set root mismatch")
     if len(rows)!=int(cert["source_radar"]["universe_rows"]) or len(rows)!=int(cert["source_radar"]["market_scanned_rows"]): raise ValueError("certificate full-market count mismatch")
     weights=model["weights"]; quality_max=float(model["quality_upper_bound"]); market_max=float(model["missing_market_component_upper_bound"]); decimals=int(model.get("score_round_decimals") or 4)
     def upper(row: Mapping[str,Any]) -> float:
