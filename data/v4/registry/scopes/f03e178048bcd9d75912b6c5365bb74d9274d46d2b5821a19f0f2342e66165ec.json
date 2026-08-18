@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "1b5772530459bb9533b81a5bb3427e8cb0533c56a7e7fd87f9f0752d4cbfa036",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:MERCADOLIBRE_INC",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "6a506fc0d2098a3fe88f72eacbc7f2ad52955d2e495ac50ffad6d2bc9cd134c8",
+  "passport_hash": "539624361781a7e31a94a9b63bbcd374a4e781ef3030b61343d8d1ace8cfa002",
+  "passport_path": "data/v4/passports/f03e178048bcd9d75912b6c5365bb74d9274d46d2b5821a19f0f2342e66165ec/539624361781a7e31a94a9b63bbcd374a4e781ef3030b61343d8d1ace8cfa002.json",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "quality_as_of": "2026-08-18T18:36:00Z",
+  "quality_coverage_pct": 85.71,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 80.22,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:MERCADOLIBRE_INC|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

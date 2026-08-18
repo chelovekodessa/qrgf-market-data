@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "1b5772530459bb9533b81a5bb3427e8cb0533c56a7e7fd87f9f0752d4cbfa036",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "539624361781a7e31a94a9b63bbcd374a4e781ef3030b61343d8d1ace8cfa002",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "6a506fc0d2098a3fe88f72eacbc7f2ad52955d2e495ac50ffad6d2bc9cd134c8",
+  "published_at": "2026-08-18T20:09:42Z",
+  "receipt_sha256": "7251a17be1347eb980385419482b2400f98639a4b8c3415807dc6c228e48960f",
+  "research_scope_key": "ISSUER:MERCADOLIBRE_INC|common_equity",
+  "schema_version": "1.0.0"
+}

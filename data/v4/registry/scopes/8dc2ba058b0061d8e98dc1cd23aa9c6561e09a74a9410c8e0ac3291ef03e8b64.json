@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "da740f3385f0b918e1b0bdce52cf1638db867ef0ec777b3146cb84d642009982",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:CATERPILLAR_INC",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "34c36b550cde78f2090d3a7e896d83aaedd0790f6a1f30dc2e3884098819cbe0",
+  "passport_hash": "c389ac5d1b33f90a8d0abffdfeaf7a14ca5b133ee47de85098de356d1473bbee",
+  "passport_path": "data/v4/passports/8dc2ba058b0061d8e98dc1cd23aa9c6561e09a74a9410c8e0ac3291ef03e8b64/c389ac5d1b33f90a8d0abffdfeaf7a14ca5b133ee47de85098de356d1473bbee.json",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "quality_as_of": "2026-08-18T18:36:00Z",
+  "quality_coverage_pct": 100.0,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 84.97,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:CATERPILLAR_INC|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

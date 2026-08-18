@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "7685908066b06df3fb0b4e1dc017ac9d9e6349360dd0ca48ce532eed88517781",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:EXXON_MOBIL_CORP",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "984ab1c0cbe57a320215f4c78827de3c3167fe461e4f87116b69b8bbd023ffb1",
+  "passport_hash": "49570a2c2474912cd38146ff436397ee3a0cdd8616c925f081cec6aa6594417b",
+  "passport_path": "data/v4/passports/f59c74f132f3f505e1d436287ddd6fbb0ca186c479b011c793d38fffc452a96f/49570a2c2474912cd38146ff436397ee3a0cdd8616c925f081cec6aa6594417b.json",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "quality_as_of": "2026-08-18T18:36:00Z",
+  "quality_coverage_pct": 100.0,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 82.08,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:EXXON_MOBIL_CORP|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

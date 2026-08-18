@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "7685908066b06df3fb0b4e1dc017ac9d9e6349360dd0ca48ce532eed88517781",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "49570a2c2474912cd38146ff436397ee3a0cdd8616c925f081cec6aa6594417b",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "984ab1c0cbe57a320215f4c78827de3c3167fe461e4f87116b69b8bbd023ffb1",
+  "published_at": "2026-08-18T20:09:42Z",
+  "receipt_sha256": "97b5924044363ab19b1ad44363fd8095423d30f430377a5680db785709ddbac6",
+  "research_scope_key": "ISSUER:EXXON_MOBIL_CORP|common_equity",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "da740f3385f0b918e1b0bdce52cf1638db867ef0ec777b3146cb84d642009982",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "c389ac5d1b33f90a8d0abffdfeaf7a14ca5b133ee47de85098de356d1473bbee",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "34c36b550cde78f2090d3a7e896d83aaedd0790f6a1f30dc2e3884098819cbe0",
+  "published_at": "2026-08-18T20:09:42Z",
+  "receipt_sha256": "242135d09b495577cb6648ef1307fa29ae0253ea6e2d63786a4dd815e1ca425c",
+  "research_scope_key": "ISSUER:CATERPILLAR_INC|common_equity",
+  "schema_version": "1.0.0"
+}
