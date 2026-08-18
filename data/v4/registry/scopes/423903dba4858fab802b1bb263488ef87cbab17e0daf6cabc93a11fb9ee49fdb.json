@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "9239896407e1d2368afab1b80e6f1f845af0baadd16777d2221bff7787b42e3b",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "CIK:0001046179",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "e1ebf22f095d3e8b75923e141344e33b88927b2b117f1a9a6efa09b3df35f8d7",
+  "passport_hash": "ad2335eb1cec579505cf5c433fe7bced2dd930eab917509d67254653a1112625",
+  "passport_path": "data/v4/passports/423903dba4858fab802b1bb263488ef87cbab17e0daf6cabc93a11fb9ee49fdb/ad2335eb1cec579505cf5c433fe7bced2dd930eab917509d67254653a1112625.json",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "quality_as_of": "2026-08-18T14:36:00Z",
+  "quality_coverage_pct": 92.86,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 95.04,
+  "quality_status": "pass",
+  "research_scope_key": "CIK:0001046179|adr",
+  "schema_version": "1.0.0",
+  "security_overlay": "adr"
+}

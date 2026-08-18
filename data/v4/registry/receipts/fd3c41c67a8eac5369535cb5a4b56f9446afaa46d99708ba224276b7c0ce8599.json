@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "d5eeda1214a52093db9ade380e244eb5710883628e00cc9c7510ff18e654b1a0",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "a5c6469fc87752632f97b1247d3b022822dfd5ebe8e4bb126a50167c3ec971f4",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "proposal_sha256": "fd3c41c67a8eac5369535cb5a4b56f9446afaa46d99708ba224276b7c0ce8599",
+  "published_at": "2026-08-18T15:00:30Z",
+  "receipt_sha256": "4e613859fd1e540130425b2c62953ea25471fea317deef013abcfa460aab3b98",
+  "research_scope_key": "ISSUER:MICROSOFT_CORP|common_equity",
+  "schema_version": "1.0.0"
+}

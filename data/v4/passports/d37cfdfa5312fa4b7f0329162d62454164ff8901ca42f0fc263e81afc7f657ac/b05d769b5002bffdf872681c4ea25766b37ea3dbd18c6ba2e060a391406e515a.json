@@ -1,0 +1,293 @@
+{
+  "as_of": "2026-08-18T14:36:00Z",
+  "component_details": {
+    "business_durability": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.competitive_position_score",
+        "facts.moat_quality_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 93.33
+    },
+    "capital_discipline": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.dilution_pct_yoy",
+        "facts.capital_allocation_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 90.33
+    },
+    "earnings_cash_quality": {
+      "expected_fact_count": 4,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.operating_margin_pct",
+        "facts.net_income_positive",
+        "facts.fcf_margin_pct",
+        "facts.fcf_positive"
+      ],
+      "known_fact_count": 4,
+      "score": 89.92
+    },
+    "financial_resilience": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.net_debt_to_ebitda",
+        "facts.cash_debt"
+      ],
+      "known_fact_count": 2,
+      "score": 78.71
+    },
+    "trajectory_quality": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.revenue_cagr_3y_pct",
+        "facts.multi_period_earnings_quality_score"
+      ],
+      "known_fact_count": 2,
+      "score": 82.26
+    }
+  },
+  "economic_archetype": "established_quality",
+  "evidence_lineage": [
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "GOOG-e14",
+      "field": "facts.capital_allocation_score",
+      "period": "FY2025+Q2 FY2026+8-K2026-08-10",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018+0001652044-26-000071+0001193125-26-342390",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-06-30T00:00:00Z",
+      "evidence_id": "GOOG-e01",
+      "field": "facts.cash",
+      "period": "Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000071",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "GOOG-e10",
+      "field": "facts.competitive_position_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018+0001652044-26-000071",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-06-30T00:00:00Z",
+      "evidence_id": "GOOG-e02",
+      "field": "facts.debt",
+      "period": "Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000071",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "GOOG-e07",
+      "field": "facts.dilution_pct_yoy",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "GOOG-e05",
+      "field": "facts.fcf_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "GOOG-e09",
+      "field": "facts.fcf_positive",
+      "period": null,
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018+0001652044-25-000014+0001652044-24-000022+0001652044-23-000016+0001652044-22-000019",
+        "source_type": "official_filing"
+      },
+      "unit": null
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "GOOG-e12",
+      "field": "facts.management_quality_score",
+      "period": "FY2025+Q2 FY2026+8-K2026-08-10",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018+0001652044-26-000071+0001193125-26-342390",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "GOOG-e11",
+      "field": "facts.moat_quality_score",
+      "period": "FY2025+Q2 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018+0001652044-26-000071",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "GOOG-e13",
+      "field": "facts.multi_period_earnings_quality_score",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018+0001652044-23-000016",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "GOOG-e03",
+      "field": "facts.net_debt_to_ebitda",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "x"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "GOOG-e08",
+      "field": "facts.net_income_positive",
+      "period": null,
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": null
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "GOOG-e04",
+      "field": "facts.operating_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "GOOG-e06",
+      "field": "facts.revenue_cagr_3y_pct",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001652044-26-000018+0001652044-23-000016",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    }
+  ],
+  "issuer_id": "CIK:0001652044",
+  "kind": "qrgf_quality_passport",
+  "listing_overlay": "none",
+  "quality_policy_version": "4.0.0-structural-v1",
+  "schema_version": "1.0.0",
+  "structural_facts": {
+    "capital_allocation_score": 82,
+    "cash": 55911000000,
+    "competitive_position_score": 94,
+    "debt": 100164000000,
+    "dilution_pct_yoy": -1.0072885103595164,
+    "fcf_margin_pct": 18.187550268595658,
+    "fcf_positive": true,
+    "management_quality_score": 91,
+    "moat_quality_score": 95,
+    "multi_period_earnings_quality_score": 93,
+    "net_debt_to_ebitda": 0.028470118195438654,
+    "net_income_positive": true,
+    "operating_margin_pct": 32.032638592380025,
+    "revenue_cagr_3y_pct": 12.511745609215975
+  },
+  "summary": {
+    "archetype_resolution": "explicit_validated_archetype",
+    "as_of": "2026-08-18T14:36:00Z",
+    "contract_id": "208813720",
+    "economic_archetype": "established_quality",
+    "evidence_validated": true,
+    "hard_vetoes": [],
+    "issuer_id": "CIK:0001652044",
+    "listing_overlay": "none",
+    "missing_clearance_checks": [],
+    "quality_components": {
+      "business_durability": 93.33,
+      "capital_discipline": 90.33,
+      "earnings_cash_quality": 89.92,
+      "financial_resilience": 78.71,
+      "trajectory_quality": 82.26
+    },
+    "quality_coverage_pct": 100.0,
+    "quality_eligible": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "quality_result_sha256": "b23cc3e5b4ce201cf55322d8f151db2abf720bbb3b9fa81672c0831add74a734",
+    "quality_score": 86.71,
+    "quality_status": "pass",
+    "quality_status_reason": "structural_quality_gate_passed",
+    "reuse_class": "structural_quality",
+    "security_type": "common_equity",
+    "ticker": "GOOG"
+  }
+}

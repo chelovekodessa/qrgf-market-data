@@ -1,0 +1,278 @@
+{
+  "as_of": "2026-08-18T14:36:00Z",
+  "component_details": {
+    "business_durability": {
+      "expected_fact_count": 4,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.competitive_position_score",
+        "facts.moat_quality_score",
+        "facts.management_quality_score",
+        "facts.business_reality_score"
+      ],
+      "known_fact_count": 4,
+      "score": 97.25
+    },
+    "capital_discipline": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.dilution_pct_yoy",
+        "facts.sales_efficiency_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 96.33
+    },
+    "financial_resilience": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 66.67,
+      "fact_fields": [
+        "facts.cash_debt",
+        "facts.net_debt_to_ebitda"
+      ],
+      "known_fact_count": 2,
+      "score": 98.5
+    },
+    "growth_quality": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.revenue_cagr_3y_pct",
+        "facts.multi_period_growth_quality_score"
+      ],
+      "known_fact_count": 2,
+      "score": 87.26
+    },
+    "unit_economics": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.operating_margin_pct",
+        "facts.fcf_margin_pct"
+      ],
+      "known_fact_count": 2,
+      "score": 97.81
+    }
+  },
+  "economic_archetype": "recognized_growth",
+  "evidence_lineage": [
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "TSM-e11",
+      "field": "facts.business_reality_score",
+      "period": "FY2025+6-K2026-08-14",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362+0001046179-26-000541",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "TSM-e01",
+      "field": "facts.cash",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362",
+        "source_type": "official_filing"
+      },
+      "unit": "TWD"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "TSM-e08",
+      "field": "facts.competitive_position_score",
+      "period": "FY2025+6-K2026-08-14",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362+0001046179-26-000541",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "TSM-e02",
+      "field": "facts.debt",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362",
+        "source_type": "official_filing"
+      },
+      "unit": "TWD"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "TSM-e07",
+      "field": "facts.dilution_pct_yoy",
+      "period": "FY2024-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362+0001193125-25-083423",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "TSM-e05",
+      "field": "facts.fcf_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "TSM-e10",
+      "field": "facts.management_quality_score",
+      "period": "FY2025+6-K2026-08-14",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362+0001046179-26-000541",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "TSM-e09",
+      "field": "facts.moat_quality_score",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "TSM-e12",
+      "field": "facts.multi_period_growth_quality_score",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362+0001193125-23-107214",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "TSM-e03",
+      "field": "facts.net_debt_to_ebitda",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362",
+        "source_type": "official_filing"
+      },
+      "unit": "x"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "TSM-e04",
+      "field": "facts.operating_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "TSM-e06",
+      "field": "facts.revenue_cagr_3y_pct",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362+0001193125-23-107214",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T14:36:00Z",
+      "evidence_id": "TSM-e13",
+      "field": "facts.sales_efficiency_score",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T14:36:00Z",
+      "source": {
+        "source_id": "sec:0001628280-26-025362",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    }
+  ],
+  "issuer_id": "CIK:0001046179",
+  "kind": "qrgf_quality_passport",
+  "listing_overlay": "adr",
+  "quality_policy_version": "4.0.0-structural-v1",
+  "schema_version": "1.0.0",
+  "structural_facts": {
+    "business_reality_score": 98,
+    "cash": 2767856400000,
+    "competitive_position_score": 98,
+    "debt": 176760200000,
+    "dilution_pct_yoy": 0.0026998256684063193,
+    "fcf_margin_pct": 26.054188831070224,
+    "management_quality_score": 95,
+    "moat_quality_score": 98,
+    "multi_period_growth_quality_score": 94,
+    "net_debt_to_ebitda": -1.1931482119364492,
+    "operating_margin_pct": 50.82867156816325,
+    "revenue_cagr_3y_pct": 18.937972542772897,
+    "sales_efficiency_score": 96
+  },
+  "summary": {
+    "archetype_resolution": "explicit_validated_archetype",
+    "as_of": "2026-08-18T14:36:00Z",
+    "contract_id": "6223250",
+    "economic_archetype": "recognized_growth",
+    "evidence_validated": true,
+    "hard_vetoes": [],
+    "issuer_id": "CIK:0001046179",
+    "listing_overlay": "adr",
+    "missing_clearance_checks": [],
+    "quality_components": {
+      "business_durability": 97.25,
+      "capital_discipline": 96.33,
+      "financial_resilience": 98.5,
+      "growth_quality": 87.26,
+      "unit_economics": 97.81
+    },
+    "quality_coverage_pct": 92.86,
+    "quality_eligible": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "quality_result_sha256": "2b1dfa6b509a944b841e3ae35ac07e810100b429da328c875a590a07b25c9873",
+    "quality_score": 95.04,
+    "quality_status": "pass",
+    "quality_status_reason": "structural_quality_gate_passed",
+    "reuse_class": "structural_quality",
+    "security_type": "adr",
+    "ticker": "TSM"
+  }
+}

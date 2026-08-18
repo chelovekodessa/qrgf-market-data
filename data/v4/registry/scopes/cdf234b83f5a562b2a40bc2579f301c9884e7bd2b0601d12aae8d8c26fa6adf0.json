@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "bb3322e07786e2a891bc2da476ed182dfef681d230c36ecfda5b230902509f2e",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:NEWMONT_CORP",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "fb057203666f8bb36580ddeedc724eb4c782f71b7e23233130e0803b735fd2be",
+  "passport_hash": "9c07ff5e9dce5e4061dce3269301a198458517600a208f963738f7f8ba935efd",
+  "passport_path": "data/v4/passports/cdf234b83f5a562b2a40bc2579f301c9884e7bd2b0601d12aae8d8c26fa6adf0/9c07ff5e9dce5e4061dce3269301a198458517600a208f963738f7f8ba935efd.json",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "quality_as_of": "2026-08-18T14:36:00Z",
+  "quality_coverage_pct": 100.0,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 87.33,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:NEWMONT_CORP|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}

@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "bb3322e07786e2a891bc2da476ed182dfef681d230c36ecfda5b230902509f2e",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "9c07ff5e9dce5e4061dce3269301a198458517600a208f963738f7f8ba935efd",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "proposal_sha256": "fb057203666f8bb36580ddeedc724eb4c782f71b7e23233130e0803b735fd2be",
+  "published_at": "2026-08-18T15:00:30Z",
+  "receipt_sha256": "1dc712f359bf84ff67027d2ee8f09ea89f67fc65cdf58d7c18ba9a11eb2e24b6",
+  "research_scope_key": "ISSUER:NEWMONT_CORP|common_equity",
+  "schema_version": "1.0.0"
+}

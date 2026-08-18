@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "d5eeda1214a52093db9ade380e244eb5710883628e00cc9c7510ff18e654b1a0",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:MICROSOFT_CORP",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "fd3c41c67a8eac5369535cb5a4b56f9446afaa46d99708ba224276b7c0ce8599",
+  "passport_hash": "a5c6469fc87752632f97b1247d3b022822dfd5ebe8e4bb126a50167c3ec971f4",
+  "passport_path": "data/v4/passports/d37293fdf2db9b64a160b6ef3e41a5fa9c0ce7bbbf00fb5543de18cb11bcff16/a5c6469fc87752632f97b1247d3b022822dfd5ebe8e4bb126a50167c3ec971f4.json",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "quality_as_of": "2026-08-18T14:36:00Z",
+  "quality_coverage_pct": 100.0,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 88.23,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:MICROSOFT_CORP|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}
