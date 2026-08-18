@@ -6,7 +6,7 @@
     "registry_single_writer": true
   },
   "producer_hashes": {
-    "promote-v4-state.yml": "a958a80f63aa65331f0e9c9460cf8724357948841a3ee4bea3a4d38a14fd69c7",
+    "promote-v4-state.yml": "d897f58a36971710a9d782c734dcbcd44f97799e5d2c505b4d1b42e845a85a47",
     "promote_v4_state.py": "36b0ca98a5036cc883721407c5ea3d11e5287e0f0e6a98fde48e8db9921d4d64"
   },
   "release_version": "1.0.0",
