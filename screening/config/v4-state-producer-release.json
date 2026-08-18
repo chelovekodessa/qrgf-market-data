@@ -1,0 +1,14 @@
+{
+  "contracts": {
+    "core500_is_bootstrap_not_whitelist": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "readback_receipts": true,
+    "registry_single_writer": true
+  },
+  "producer_hashes": {
+    "promote-v4-state.yml": "a958a80f63aa65331f0e9c9460cf8724357948841a3ee4bea3a4d38a14fd69c7",
+    "promote_v4_state.py": "36b0ca98a5036cc883721407c5ea3d11e5287e0f0e6a98fde48e8db9921d4d64"
+  },
+  "release_version": "1.0.0",
+  "schema_version": "1.0.0"
+}
