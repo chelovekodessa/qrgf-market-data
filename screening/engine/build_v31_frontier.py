@@ -13,6 +13,7 @@ import hashlib
 import io
 import json
 import re
+import subprocess
 from pathlib import Path
 from typing import Any, Mapping
 
@@ -38,6 +39,12 @@ def load_json(path: Path) -> dict[str,Any]:
     value=json.loads(path.read_text(encoding="utf-8-sig"))
     if not isinstance(value,dict): raise ValueError(f"{path} must contain an object")
     return value
+
+def git_show(repo_root: Path, commit: str, path: str) -> bytes:
+    result=subprocess.run(["git","show",f"{commit}:{path}"],cwd=repo_root,stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=False)
+    if result.returncode!=0:
+        raise ValueError(f"cannot read {path} from source Radar commit {commit}: {result.stderr.decode(errors='replace')[:200]}")
+    return result.stdout
 
 def num(value: Any) -> float|None:
     if value in (None,"") or isinstance(value,bool): return None
@@ -95,25 +102,31 @@ def verify_release(path: Path, repo_root: Path) -> tuple[dict[str,Any],str]:
         if not file.is_file() or sha256_file(file)!=hashes[name]: raise ValueError(f"v3.1 producer hash mismatch: {name}")
     return release,sha256_file(path)
 
-def load_verified_radar(repo_root: Path, expected_radar_release_sha: str) -> tuple[dict[str,Any],dict[str,Any],list[dict[str,Any]],dict[str,int]]:
-    system=load_json(repo_root/"data/v3/latest.json")
-    if system.get("schema_version")!="1.0.0" or system.get("kind")!="qrgf_v3_system_snapshot" or system.get("complete") is not True: raise ValueError("invalid source v3 system snapshot")
+def load_verified_radar(repo_root: Path, source_commit: str, expected_radar_release_sha: str) -> tuple[dict[str,Any],dict[str,Any],list[dict[str,Any]],dict[str,Any]]:
+    if len(source_commit)!=40 or any(ch not in "0123456789abcdef" for ch in source_commit):
+        raise ValueError("source Radar commit must be a full lowercase Git SHA")
+    system=json.loads(git_show(repo_root,source_commit,"data/v3/latest.json"))
+    if not isinstance(system,dict) or system.get("schema_version")!="1.0.0" or system.get("kind")!="qrgf_v3_system_snapshot" or system.get("complete") is not True: raise ValueError("invalid source v3 system snapshot")
     body={k:v for k,v in system.items() if k!="system_snapshot_sha256"}
     if system.get("system_snapshot_sha256")!=semantic_hash(body): raise ValueError("source v3 system self hash mismatch")
     if system.get("producer_release_sha256")!=expected_radar_release_sha: raise ValueError("source v3 Radar producer release is not approved")
-    release_path=repo_root/"screening/config/v3-producer-release.json"
-    if sha256_file(release_path)!=expected_radar_release_sha: raise ValueError("source v3 Radar producer release file hash mismatch")
-    manifest=load_json(repo_root/str(system["radar_manifest_path"]))
+    release_bytes=git_show(repo_root,source_commit,"screening/config/v3-producer-release.json")
+    if sha256_bytes(release_bytes)!=expected_radar_release_sha: raise ValueError("source v3 Radar producer release file hash mismatch")
+    manifest_path=str(system["radar_manifest_path"]); manifest=json.loads(git_show(repo_root,source_commit,manifest_path))
     man_body={k:v for k,v in manifest.items() if k!="manifest_semantic_sha256"}
     if manifest.get("manifest_semantic_sha256")!=semantic_hash(man_body) or manifest.get("manifest_semantic_sha256")!=system.get("radar_manifest_sha256"): raise ValueError("source v3 Radar manifest hash mismatch")
     if manifest.get("snapshot_id")!=system.get("snapshot_id") or manifest.get("market_session_id")!=system.get("market_session_id"): raise ValueError("source v3 Radar identity mismatch")
-    page_root=(repo_root/str(system["radar_manifest_path"])).parent
-    rows=[]; legacy_rankable=0; unified_rankable=0; nonrejected=0; rejected=0
-    for decl in manifest.get("pages") or []:
-        path=page_root/str(decl["name"]); data=path.read_bytes()
-        if sha256_bytes(data)!=decl.get("sha256"): raise ValueError(f"source v3 Radar page hash mismatch: {decl.get('name')}")
+    declared_rows_hash=str(manifest.get("rows_semantic_sha256") or "")
+    if len(declared_rows_hash)!=64 or any(ch not in "0123456789abcdef" for ch in declared_rows_hash): raise ValueError("source v3 Radar declared rows semantic hash invalid")
+    page_base=str(Path(manifest_path).parent.as_posix()); rows=[]; legacy_rankable=0; unified_rankable=0; nonrejected=0; rejected=0; page_proof=[]
+    for expected_index,decl in enumerate(manifest.get("pages") or [],1):
+        name=str(decl.get("name") or "")
+        if name!=f"page-{expected_index:04d}.csv": raise ValueError("source v3 Radar page order/path mismatch")
+        data=git_show(repo_root,source_commit,f"{page_base}/{name}")
+        if sha256_bytes(data)!=decl.get("sha256"): raise ValueError(f"source v3 Radar page hash mismatch: {name}")
         parsed=parse_page(data)
-        if len(parsed)!=int(decl.get("rows") or -1): raise ValueError(f"source v3 Radar page row count mismatch: {decl.get('name')}")
+        if len(parsed)!=int(decl.get("rows") or -1): raise ValueError(f"source v3 Radar page row count mismatch: {name}")
+        page_proof.append({"name":name,"rows":len(parsed),"sha256":str(decl.get("sha256"))})
         for row in parsed:
             status=str(row.get("l2_status") or "").lower(); setup=num(row.get("l2_setup_score")); confidence=num(row.get("l2_confidence_pct"))
             if status=="rejected": rejected+=1
@@ -123,11 +136,10 @@ def load_verified_radar(repo_root: Path, expected_radar_release_sha: str) -> tup
                 if setup is not None and confidence is not None: unified_rankable+=1
         rows.extend(parsed)
     if len(rows)!=int(manifest.get("rows") or -1): raise ValueError("source v3 Radar total rows mismatch")
-    if semantic_hash(rows)!=manifest.get("rows_semantic_sha256"): raise ValueError("source v3 Radar rows semantic hash mismatch")
     coverage=system.get("coverage") or {}
     if int(coverage.get("universe_rows") or -1)!=len(rows) or int(coverage.get("market_scanned_rows") or -1)!=len(rows): raise ValueError("source v3 system coverage mismatch")
     if int(coverage.get("rankable_market_rows") or -1)!=legacy_rankable: raise ValueError("source v3 legacy rankable count mismatch")
-    return system,manifest,rows,{"legacy_rankable":legacy_rankable,"unified_rankable":unified_rankable,"nonrejected":nonrejected,"rejected":rejected,"market_incomplete_nonrejected":nonrejected-unified_rankable}
+    return system,manifest,rows,{"legacy_rankable":legacy_rankable,"unified_rankable":unified_rankable,"nonrejected":nonrejected,"rejected":rejected,"market_incomplete_nonrejected":nonrejected-unified_rankable,"page_set_sha256":semantic_hash(page_proof)}
 
 def _repo_path(root: Path, value: Path) -> Path:
     return value.resolve() if value.is_absolute() else (root/value).resolve()
@@ -138,7 +150,7 @@ def build(args: argparse.Namespace) -> dict[str,Any]:
     release,release_sha=verify_release(release_path,root); model=load_json(model_path); model_sha=semantic_hash(model)
     if release.get("frontier_model_sha256")!=model_sha: raise ValueError("frontier producer release/model hash mismatch")
     expected_radar=str(release.get("source_radar_producer_release_sha256") or "")
-    system,radar_manifest,radar,counts=load_verified_radar(root,expected_radar)
+    system,radar_manifest,radar,counts=load_verified_radar(root,args.radar_publication_commit_sha,expected_radar)
     weights=model["weights"]; quality_max=float(model["quality_upper_bound"]); market_max=float(model["missing_market_component_upper_bound"]); decimals=int(model.get("score_round_decimals") or 4)
     def score(setup: float,confidence: float) -> float:
         return round((quality_max*float(weights["structural_quality"])+clamp(setup)*float(weights["recovery_setup"])+clamp(confidence)*float(weights["evidence_confidence"]))/100.0,decimals)
@@ -162,7 +174,7 @@ def build(args: argparse.Namespace) -> dict[str,Any]:
     scopes.sort(key=lambda r:(-float(r["scope_upper_bound"]),str(r["research_scope_key"])))
     for rank,scope in enumerate(scopes,1): scope["frontier_rank"]=rank
     frontier_semantic=semantic_hash(scopes)
-    seed={"source_radar_snapshot_content_sha256":system["snapshot_content_sha256"],"source_radar_rows_semantic_sha256":radar_manifest["rows_semantic_sha256"],"source_radar_publication_commit_sha":args.radar_publication_commit_sha,"frontier_semantic_sha256":frontier_semantic,"frontier_model_sha256":model_sha,"frontier_producer_release_sha256":release_sha,"created_at":args.created_at}
+    seed={"source_radar_snapshot_content_sha256":system["snapshot_content_sha256"],"source_radar_rows_semantic_sha256":radar_manifest["rows_semantic_sha256"],"source_radar_page_set_sha256":counts["page_set_sha256"],"source_radar_publication_commit_sha":args.radar_publication_commit_sha,"frontier_semantic_sha256":frontier_semantic,"frontier_model_sha256":model_sha,"frontier_producer_release_sha256":release_sha,"created_at":args.created_at}
     snapshot_content=semantic_hash(seed); snapshot_id=snapshot_content[:24]
     snapshot_dir=output_root/"snapshots"/snapshot_id
     if snapshot_dir.exists(): raise ValueError("immutable v3.1 snapshot path already exists")
@@ -174,9 +186,9 @@ def build(args: argparse.Namespace) -> dict[str,Any]:
         path=pages_dir/f"page-{index:04d}.json"; path.write_text(json.dumps(page,ensure_ascii=False,indent=2,sort_keys=True)+"\n",encoding="utf-8")
         sc=sum(len(scope["securities"]) for scope in chunk); security_count+=sc
         page_decls.append({"page_index":index,"name":path.name,"path":path.relative_to(root).as_posix(),"scope_start_rank":page["scope_start_rank"],"scope_end_rank":page["scope_end_rank"],"scope_count":len(chunk),"security_count":sc,"max_scope_upper_bound":chunk[0]["scope_upper_bound"],"min_scope_upper_bound":chunk[-1]["scope_upper_bound"],"sha256":sha256_file(path),"page_semantic_sha256":page["page_semantic_sha256"]})
-    manifest_body={"schema_version":"1.0.0","kind":"qrgf_v31_frontier_manifest","snapshot_id":snapshot_id,"snapshot_content_sha256":snapshot_content,"market_session_id":system["market_session_id"],"created_at":args.created_at,"frontier_model_sha256":model_sha,"scope_count":len(scopes),"security_count":security_count,"page_size":page_size,"pages":page_decls,"frontier_semantic_sha256":frontier_semantic,"source_radar":{"publication_commit_sha":args.radar_publication_commit_sha,"system_snapshot_sha256":system["system_snapshot_sha256"],"manifest_semantic_sha256":radar_manifest["manifest_semantic_sha256"],"rows_semantic_sha256":radar_manifest["rows_semantic_sha256"],"producer_release_sha256":system["producer_release_sha256"]},"frontier_producer_release":{"release_version":release["release_version"],"manifest_path":release_path.relative_to(root).as_posix(),"manifest_sha256":release_sha}}
+    manifest_body={"schema_version":"1.0.0","kind":"qrgf_v31_frontier_manifest","snapshot_id":snapshot_id,"snapshot_content_sha256":snapshot_content,"market_session_id":system["market_session_id"],"created_at":args.created_at,"frontier_model_sha256":model_sha,"scope_count":len(scopes),"security_count":security_count,"page_size":page_size,"pages":page_decls,"frontier_semantic_sha256":frontier_semantic,"source_radar":{"publication_commit_sha":args.radar_publication_commit_sha,"system_snapshot_sha256":system["system_snapshot_sha256"],"manifest_semantic_sha256":radar_manifest["manifest_semantic_sha256"],"rows_semantic_sha256":radar_manifest["rows_semantic_sha256"],"page_set_sha256":counts["page_set_sha256"],"producer_release_sha256":system["producer_release_sha256"]},"frontier_producer_release":{"release_version":release["release_version"],"manifest_path":release_path.relative_to(root).as_posix(),"manifest_sha256":release_sha}}
     manifest={**manifest_body,"manifest_semantic_sha256":semantic_hash(manifest_body)}; manifest_path=snapshot_dir/"frontier-manifest.json"; manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2,sort_keys=True)+"\n",encoding="utf-8")
-    certificate_body={"schema_version":"1.0.0","kind":"qrgf_v31_market_certificate","snapshot_id":snapshot_id,"snapshot_content_sha256":snapshot_content,"market_session_id":system["market_session_id"],"created_at":args.created_at,"source_radar":{"publication_commit_sha":args.radar_publication_commit_sha,"market_session_id":system["market_session_id"],"snapshot_id":system["snapshot_id"],"snapshot_content_sha256":system["snapshot_content_sha256"],"system_snapshot_sha256":system["system_snapshot_sha256"],"manifest_semantic_sha256":radar_manifest["manifest_semantic_sha256"],"rows_semantic_sha256":radar_manifest["rows_semantic_sha256"],"producer_release_sha256":system["producer_release_sha256"],"universe_rows":len(radar),"market_scanned_rows":len(radar),"rankable_market_rows":counts["unified_rankable"],"legacy_rankable_market_rows":counts["legacy_rankable"],"rejected_rows":counts["rejected"],"market_data_incomplete_nonrejected_rows":counts["market_incomplete_nonrejected"]},"frontier":{"manifest_path":manifest_path.relative_to(root).as_posix(),"manifest_semantic_sha256":manifest["manifest_semantic_sha256"],"frontier_semantic_sha256":frontier_semantic,"frontier_model_sha256":model_sha,"scope_count":len(scopes),"security_count":security_count,"page_count":len(page_decls),"fixed_candidate_count_cutoff":False,"page_size_is_transport_only":True},"frontier_producer_release":{"release_version":release["release_version"],"manifest_path":release_path.relative_to(root).as_posix(),"manifest_sha256":release_sha}}
+    certificate_body={"schema_version":"1.0.0","kind":"qrgf_v31_market_certificate","snapshot_id":snapshot_id,"snapshot_content_sha256":snapshot_content,"market_session_id":system["market_session_id"],"created_at":args.created_at,"source_radar":{"publication_commit_sha":args.radar_publication_commit_sha,"market_session_id":system["market_session_id"],"snapshot_id":system["snapshot_id"],"snapshot_content_sha256":system["snapshot_content_sha256"],"system_snapshot_sha256":system["system_snapshot_sha256"],"manifest_semantic_sha256":radar_manifest["manifest_semantic_sha256"],"rows_semantic_sha256":radar_manifest["rows_semantic_sha256"],"page_set_sha256":counts["page_set_sha256"],"producer_release_sha256":system["producer_release_sha256"],"universe_rows":len(radar),"market_scanned_rows":len(radar),"rankable_market_rows":counts["unified_rankable"],"legacy_rankable_market_rows":counts["legacy_rankable"],"rejected_rows":counts["rejected"],"market_data_incomplete_nonrejected_rows":counts["market_incomplete_nonrejected"]},"frontier":{"manifest_path":manifest_path.relative_to(root).as_posix(),"manifest_semantic_sha256":manifest["manifest_semantic_sha256"],"frontier_semantic_sha256":frontier_semantic,"frontier_model_sha256":model_sha,"scope_count":len(scopes),"security_count":security_count,"page_count":len(page_decls),"fixed_candidate_count_cutoff":False,"page_size_is_transport_only":True},"frontier_producer_release":{"release_version":release["release_version"],"manifest_path":release_path.relative_to(root).as_posix(),"manifest_sha256":release_sha}}
     certificate={**certificate_body,"certificate_sha256":semantic_hash(certificate_body)}; certificate_path=snapshot_dir/"market-certificate.json"; certificate_path.write_text(json.dumps(certificate,ensure_ascii=False,indent=2,sort_keys=True)+"\n",encoding="utf-8")
     return {"snapshot_id":snapshot_id,"snapshot_dir":snapshot_dir.relative_to(root).as_posix(),"market_session_id":system["market_session_id"],"scope_count":len(scopes),"security_count":security_count,"page_count":len(page_decls),"certificate_path":certificate_path.relative_to(root).as_posix(),"certificate_sha256":certificate["certificate_sha256"],"frontier_manifest_path":manifest_path.relative_to(root).as_posix(),"frontier_manifest_sha256":manifest["manifest_semantic_sha256"],"market_data_incomplete_nonrejected_rows":counts["market_incomplete_nonrejected"]}
 

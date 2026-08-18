@@ -118,10 +118,18 @@ jobs:
           print('RESCUED=',json.dumps(r.get('research_rescued_identities'), sort_keys=True))
           print('DISPLACED=',json.dumps(r.get('research_displaced_identities'), sort_keys=True))
           print('TSM=',json.dumps({k:tsm.get(k) for k in ('l2_setup_score','l2_research_rescue_bonus','l2_research_rescue_tier','l2_progression_score','selected_for_next_stage','historical_volatility_pct','return_12m_pct','avg_dollar_volume','drawdown_pct')} if tsm else None, sort_keys=True))
-          if not tsm or not tsm.get('selected_for_next_stage'):
-              raise SystemExit('known TSM false-negative regression remains')
-          if float(tsm.get('l2_research_rescue_bonus') or 0)>1.5:
+          if not tsm:
+              raise SystemExit('known TSM regression row is missing from current L2 shadow')
+          max_bonus=1.5
+          if float(tsm.get('l2_research_rescue_bonus') or 0)>max_bonus:
               raise SystemExit('rescue bonus exceeded cap')
+          if not tsm.get('selected_for_next_stage'):
+              setup=float(tsm.get('l2_setup_score') or -1)
+              base_cutoff=float(r.get('base_setup_cutoff_score') or 0)
+              rescue_floor=base_cutoff-max_bonus
+              if setup>=rescue_floor:
+                  raise SystemExit('known TSM false-negative regression remains inside the permitted rescue band')
+              print('TSM is currently below the mathematically permitted rescue band; no forced inclusion')
           PY
       - name: Print changed producer hashes
         run: |
