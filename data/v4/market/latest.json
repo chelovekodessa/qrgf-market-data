@@ -1,0 +1,16 @@
+{
+  "challenger_transport_count": 250,
+  "challengers_path": "data/v4/market/challengers.json",
+  "challengers_sha256": "7f12db58169ea068a620a9f4b928c732e55b60d0e5b25671b3b5d884ec9c2420",
+  "core500_cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
+  "core_path": "data/v4/market/core.json",
+  "core_security_rows": 16,
+  "core_sha256": "a44aafe13742094b5a9bf6d645c6395f2a76b3cd33f11cd2bdb2e416d7be6b4c",
+  "eligible_noncore_count": 3706,
+  "kind": "qrgf_v4_market_pointer",
+  "market_session_id": "2026-08-17",
+  "pointer_sha256": "89e331c6fec24792672943d37996ae018421620be0d85bcbae2c6cdb52bf11df",
+  "producer_release_sha256": "8c52544bb13eb1fbbfbdccb534afc3f82e18488206da8d318bfc7337a6a1d5f0",
+  "schema_version": "1.0.0",
+  "source_v3_snapshot_id": "aebf89995fa4d7616fe3ff43"
+}
