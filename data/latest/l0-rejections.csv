@@ -215,6 +215,7 @@ AIIA.U,"AI Infrastructure Acquisition Corp. Units, each consisting of one Class 
 AIIOW,Robo.ai Inc. - Warrant,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:AIIOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 AIMDW,"Ainos, Inc. - warrants",Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:AIMDW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 AIMS,Acuitas Small Cap Active ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+AINF,Defiance Inference AI Chip ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AINP,Allspring Income Plus ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AINT,FINQ DOLLAR NEUTRAL U.S. Large Cap AI-Managed Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AIO,Virtus Artificial Intelligence & Technology Opportunities Fund Common Shares of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:AIO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
@@ -1532,6 +1533,7 @@ CRMG,Leverage Shares 2X Long CRM Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,appr
 CRMLW,Critical Metals Corp. - Warrants,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:CRMLW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 CRMU,Leverage Shares 2x Long CRML Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CRMX,Tradr 2X Long CRML Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+CROB,Defiance China Robotics ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CRPT,First Trust SkyBridge Crypto Industry and Digital Economy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CRSH,YieldMax Short TSLA Option Income Strategy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CRTC,Xtrackers US National Critical Technologies ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2766,6 +2768,7 @@ FTCE,First Trust New Constructs Core Earnings Leaders ETF,P,,,etf,ineligible,Fal
 FTCS,First Trust Capital Strength ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTDS,First Trust Dividend Strength ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTEC,Fidelity MSCI Information Technology Index ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+FTG,FullerThaler Behavioral Growth ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTGC,First Trust Global Tactical Commodity Strategy Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTGS,First Trust Growth Strength ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTHA,Forefront Tech Holdings Acquisition Corp - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:FTHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -4997,6 +5000,7 @@ NRSH,Aztlan North America Nearshoring Stock Selection ETF,P,,,etf,ineligible,Fal
 NRSN,NeuroSense Therapeutics Ltd. - Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:NRSN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 NRSNW,NeuroSense Therapeutics Ltd. - Warrant,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:NRSNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 NRUC,National Rural Utilities Cooperative Finance Corporation 5.500% Subordinated Notes due 2064 (Subordinated Deferrable Interest Notes),N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:NRUC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+NSAIU,NorthStrive Acquisition Corp I. - Units,Q,S,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:NSAIU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 NSCI,Nuveen Securitized Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NSEP,Innovator Growth-100 Power Buffer ETF - September,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 NSI,National Security Emerging Markets Index ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7765,6 +7769,7 @@ XCLR,Global X S&P 500 Collar 95-110 ETF,P,,,etf,ineligible,False,N,Y,,,approved_
 XCNY,State Street SPDR S&P Emerging Markets ex-China ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XCOM,Corgi All Commodities 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XCOR,FundX ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+XCSH,XFUNDS 1-3 Month BOX ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XCUR,"Exicure, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:XCUR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 XDAT,Franklin Exponential Data ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XDEC,FT Vest U.S. Equity Enhance & Moderate Buffer ETF - December,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7892,6 +7897,7 @@ XT,iShares Future Exponential Technologies ETF,Q,G,N,etf,ineligible,False,N,Y,,,
 XTAI,Corgi Taiwan 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XTAP,Innovator U.S. Equity Accelerated Plus ETF - April,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XTEN,BondBloxx Bloomberg Ten Year Target Duration US Treasury ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+XTERU,Karman Line Acquisition Corp. - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:XTERU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 XTJA,Innovator U.S. Equity Accelerated Plus ETF - January,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XTJL,Innovator U.S. Equity Accelerated Plus ETF - July,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XTL,State Street SPDR S&P Telecom ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
