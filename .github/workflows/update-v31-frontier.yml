@@ -5,6 +5,14 @@ on:
   workflow_run:
     workflows: ["Update QRGF v3 Radar"]
     types: [completed]
+  pull_request:
+    branches: [main]
+    paths:
+      - "screening/engine/build_v31_frontier.py"
+      - "screening/engine/verify_v31_publication.py"
+      - "screening/config/v31-frontier-model.json"
+      - "screening/config/v31-frontier-producer-release.json"
+      - ".github/workflows/update-v31-frontier.yml"
   push:
     branches: [main]
     paths:
@@ -30,6 +38,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || 'main' }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -39,7 +48,8 @@ jobs:
           set -euo pipefail
           mkdir -p .work/v31
           echo build > .work/v31/stage.txt
-          RADAR_COMMIT=$(git rev-parse HEAD)
+          RADAR_COMMIT=$(git log -1 --format=%H -- data/v3/latest.json)
+          test -n "$RADAR_COMMIT"
           CREATED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           python screening/engine/build_v31_frontier.py \
             --repo-root . \
@@ -68,8 +78,9 @@ jobs:
           git add "$SNAPSHOT_DIR"
           if ! git diff --cached --quiet; then
             git commit -m "Publish QRGF v3.1 frontier snapshot"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            TARGET_BRANCH="${GITHUB_HEAD_REF:-main}"
+            git pull --rebase origin "$TARGET_BRANCH"
+            git push origin HEAD:"$TARGET_BRANCH"
           fi
           git rev-parse HEAD > .work/v31/publication-commit.txt
       - name: Verify committed snapshot again
@@ -105,8 +116,9 @@ jobs:
           git add data/v31/latest.json
           if ! git diff --cached --quiet; then
             git commit -m "Point QRGF v3.1 to verified frontier snapshot"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            TARGET_BRANCH="${GITHUB_HEAD_REF:-main}"
+            git pull --rebase origin "$TARGET_BRANCH"
+            git push origin HEAD:"$TARGET_BRANCH"
           fi
       - name: Publish fail-closed workflow diagnostic
         if: ${{ failure() }}
@@ -142,5 +154,6 @@ jobs:
           git add data/v31/diagnostics/latest.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Record QRGF v3.1 frontier workflow failure"
-          git pull --rebase origin main || exit 0
-          git push origin HEAD:main || true
+          TARGET_BRANCH="${GITHUB_HEAD_REF:-main}"
+          git pull --rebase origin "$TARGET_BRANCH" || exit 0
+          git push origin HEAD:"$TARGET_BRANCH" || true
