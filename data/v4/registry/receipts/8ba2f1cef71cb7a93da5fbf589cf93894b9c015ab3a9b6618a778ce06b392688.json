@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "a7e0807132345cc626fad39510b893ed3a80b567e60c27586e685d501add48c7",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "c4f04c95dde255a2d447a4c28d1285793936f6add6970a626045aa4fb15c3a34",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "proposal_sha256": "8ba2f1cef71cb7a93da5fbf589cf93894b9c015ab3a9b6618a778ce06b392688",
+  "published_at": "2026-08-18T13:51:15Z",
+  "receipt_sha256": "0bcaab2c8dbb501e0afb6e238ea53849551cb9a3e2a31b062245037e381c9ebf",
+  "research_scope_key": "ISSUER:MICRON_TECHNOLOGY_INC|common_equity",
+  "schema_version": "1.0.0"
+}

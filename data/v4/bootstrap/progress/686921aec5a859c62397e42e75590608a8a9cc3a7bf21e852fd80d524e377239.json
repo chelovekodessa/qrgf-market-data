@@ -2,7 +2,7 @@
   "campaign_complete": false,
   "cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
   "durable_incomplete_count": 0,
-  "durable_reviewed_count": 0,
+  "durable_reviewed_count": 1,
   "kind": "qrgf_v4_core500_progress",
   "market_session_id": "2026-08-17",
   "next_pending_scopes": [
@@ -15,16 +15,6 @@
       "research_scope_key": "ISSUER:NVIDIA_CORP|common_equity",
       "security_overlay": "common_equity",
       "ticker": "NVDA"
-    },
-    {
-      "bootstrap_best_lane": "established_quality",
-      "bootstrap_priority_score": 84.8384,
-      "contract_id": "9939",
-      "issuer_id": "ISSUER:MICRON_TECHNOLOGY_INC",
-      "rank": 2,
-      "research_scope_key": "ISSUER:MICRON_TECHNOLOGY_INC|common_equity",
-      "security_overlay": "common_equity",
-      "ticker": "MU"
     },
     {
       "bootstrap_best_lane": "established_quality",
@@ -125,12 +115,22 @@
       "research_scope_key": "ISSUER:UBER_TECHNOLOGIES_INC|common_equity",
       "security_overlay": "common_equity",
       "ticker": "UBER"
+    },
+    {
+      "bootstrap_best_lane": "recognized_growth",
+      "bootstrap_priority_score": 73.0935,
+      "contract_id": "45602025",
+      "issuer_id": "ISSUER:MERCADOLIBRE_INC",
+      "rank": 13,
+      "research_scope_key": "ISSUER:MERCADOLIBRE_INC|common_equity",
+      "security_overlay": "common_equity",
+      "ticker": "MELI"
     }
   ],
-  "pending_count": 15,
+  "pending_count": 14,
   "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
-  "progress_sha256": "be3fba37cf9bda1ccce96a03daf1d320bbabc24bcc43356e8173f6dd74a3c835",
-  "quality_resolved_count": 0,
+  "progress_sha256": "a85a7359c2f57b12dfe864ca7964925e704a057eefb671e5e3333bb67b780e67",
+  "quality_resolved_count": 1,
   "schema_version": "1.0.0",
   "selected_scope_count": 15
 }

@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "a7e0807132345cc626fad39510b893ed3a80b567e60c27586e685d501add48c7",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "ISSUER:MICRON_TECHNOLOGY_INC",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "8ba2f1cef71cb7a93da5fbf589cf93894b9c015ab3a9b6618a778ce06b392688",
+  "passport_hash": "c4f04c95dde255a2d447a4c28d1285793936f6add6970a626045aa4fb15c3a34",
+  "passport_path": "data/v4/passports/6808c55483ce19889ba205b351adff2b0c83320742981335ea84ef2e9ab851b7/c4f04c95dde255a2d447a4c28d1285793936f6add6970a626045aa4fb15c3a34.json",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "quality_as_of": "2026-08-18T13:32:00Z",
+  "quality_coverage_pct": 90.91,
+  "quality_eligible": true,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 82.23,
+  "quality_status": "pass",
+  "research_scope_key": "ISSUER:MICRON_TECHNOLOGY_INC|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}
