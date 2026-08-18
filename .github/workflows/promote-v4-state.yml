@@ -7,6 +7,7 @@ on:
       - "data/v4/bootstrap/proposals/**"
       - "data/v4/registry/proposals/**"
       - "screening/engine/promote_v4_state.py"
+      - "screening/engine/test_promote_v4_state.py"
       - "screening/config/v4-state-producer-release.json"
       - ".github/workflows/promote-v4-state.yml"
 permissions:
@@ -25,6 +26,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Replay and crash-safety self-test
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/engine/test_promote_v4_state.py
       - name: Validate and promote V4 state
         shell: bash
         run: |
@@ -42,7 +48,6 @@ jobs:
           set -euo pipefail
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
-
           outputs=(
             data/v4/bootstrap/cohorts
             data/v4/bootstrap/latest.json
@@ -53,20 +58,14 @@ jobs:
           )
           existing=()
           for path in "${outputs[@]}"; do
-            if [ -e "$path" ]; then
-              existing+=("$path")
-            fi
+            if [ -e "$path" ]; then existing+=("$path"); fi
           done
-          if [ "${#existing[@]}" -gt 0 ]; then
-            git add -A -- "${existing[@]}"
-          fi
-
+          if [ "${#existing[@]}" -gt 0 ]; then git add -A -- "${existing[@]}"; fi
           if ! git diff --cached --quiet; then
             git commit -m "Promote QRGF v4 state"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-
           git fetch origin main
           if find data/v4/bootstrap/proposals -maxdepth 1 -type f -name '*.json' -print -quit 2>/dev/null | grep -q .; then
             git cat-file -e origin/main:data/v4/bootstrap/latest.json
