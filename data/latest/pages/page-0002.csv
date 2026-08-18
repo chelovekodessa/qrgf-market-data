@@ -18,7 +18,6 @@ TS,Tenaris S.A. American Depositary Shares,N,,,adr,eligible,True,Y,N,,nasdaqtrad
 TURB,"Turbo Energy, S.A. - American Depositary Shares",Q,S,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:TURB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TUYA,"Tuya Inc. American Depositary Shares, each representing one Class A Ordinary Share",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:TUYA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TX,"Ternium S.A. Ternium S.A. American Depositary Shares (each representing ten shares, USD1.00 par value)",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:TX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-UCL,uCloudlink Group Inc. - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:UCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 UGP,Ultrapar Participacoes S.A. (New) American Depositary Shares (Each representing one Common Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:UGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 UL,Unilever PLC American Depositary Shares (each representing One Ordinary Share),N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:UL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 UXIN,Uxin Limited - American Depositary Shares,Q,Q,N,adr,eligible,True,Y,N,,nasdaqtrader:Q:UXIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +248,4 @@ ALCO,"Alico, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqt
 ALDF,Aldel Financial II Inc. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALDF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ALDX,"Aldeyra Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ALEC,"Alector, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ALG,"Alamo Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

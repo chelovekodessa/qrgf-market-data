@@ -616,6 +616,7 @@ BBB,CYBER HORNET S&P 500 and Bitcoin 75/25 Strategy ETF,Q,G,N,etf,ineligible,Fal
 BBBI,BondBloxx BBB Rated 5-10 Year Corporate Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBBL,BondBloxx BBB Rated 10+ Year Corporate Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBBS,BondBloxx BBB Rated 1-5 Year Corporate Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+BBBYW,Bed Bath  - Warrant,Q,Q,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:BBBYW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 BBC,Virtus Biotech Clinical Trials ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBCA,JPMorgan BetaBuilders Canada ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBCB,JPMorgan BetaBuilders USD Investment Grade Corporate Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -844,9 +845,9 @@ BKEM,BNY Mellon Emerging Markets Equity ETF,P,,,etf,ineligible,False,N,Y,,,appro
 BKF,iShares MSCI BIC ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BKFI,BNY Mellon Active Core Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BKGI,BNY Mellon Global Infrastructure Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-BKHA,Black Hawk Acquisition Corporation - Class A Ordinary Shares,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:BKHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
-BKHAR,Black Hawk Acquisition Corporation - Rights,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:BKHAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
-BKHAU,Black Hawk Acquisition Corporation - Units,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:BKHAU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
+BKHA,Black Hawk Acquisition Corporation - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:BKHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
+BKHAR,Black Hawk Acquisition Corporation - Rights,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:BKHAR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
+BKHAU,Black Hawk Acquisition Corporation - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:BKHAU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 BKHY,BNY Mellon High Yield ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BKIE,BNY Mellon International Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BKKT.W,"Bakkt, Inc. Warrants to purchase Class A Common Stock, each Warrant entitles a holder to purchase 1/25th of a share of Class A common stock at an exercise price of $287.50 for one share",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:BKKT.W,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
@@ -1398,7 +1399,6 @@ CNAV,Mohr Company Nav ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_iden
 CNBS,Amplify Seymour Cannabis ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CNCKW,Coincheck Group N.V. - Warrants,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:CNCKW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 CNEQ,Alger Concentrated Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-CNET,ZW Data Action Technologies Inc. - Common Stock,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:CNET,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 CNEY,CN Energy Group Inc. - Class A Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:CNEY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 CNO$A,"CNO Financial Group, Inc. 5.125% Subordinated Debentures due 2060",N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:CNO$A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 CNOBP,"ConnectOne Bancorp, Inc. - Depositary Shares (each representing a 1/40th interest in a share of 5.25% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock, Series A, par value $0.00 per share)",Q,Q,N,preferred,ineligible,False,Y,N,,nasdaqtrader:Q:CNOBP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred_depositary_security
@@ -1761,7 +1761,6 @@ DFLV,Dimensional US Large Cap Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_
 DFMC,U.S. Micro Cap Portfolio: ETF Class Shares,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DFNL,Davis Select Financial ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 DFNM,Dimensional National Municipal Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-DFNS,T3 Defense Inc. - Common Stock,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:DFNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 DFNSW,T3 Defense Inc. - Warrants,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:DFNSW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 DFP,Flaherty & Crumrine Dynamic Preferred and Income Fund Inc. Common Stock,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:DFP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 DFSB,Dimensional Global Sustainability Fixed Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -2793,7 +2792,6 @@ FTRA.U,"FutureCorp Space Acquisition 1 Units, each consisting of one Class A ord
 FTRA.W,"FutureCorp Space Acquisition 1 Redeemable warrants, each whole warrant exercisable for one Class A ordinary share at an exercise price of $11.50",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:FTRA.W,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 FTRB,Federated Hermes Total Return Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTRI,First Trust Indxx Global Natural Resources Income ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-FTRK,FAST TRACK GROUP - Ordinary shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:FTRK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 FTSD,Franklin Short Duration U.S. Government ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTSL,First Trust Senior Loan Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FTSM,First Trust Enhanced Short Maturity ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4244,7 +4242,6 @@ LEND,SEI High Yield Bond & Alternative Credit ETF,Q,G,N,etf,ineligible,False,N,Y
 LENS,Sarmaya Thematic ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 LEUX,Tradr 2X Long LEU Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 LEXI,Alexis Practical Tactical ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-LEXX,Lexaria Bioscience Corp. - Common Stock,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:LEXX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 LFAC,Leapfrog Acquisition Corporation - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LFAC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 LFACU,Leapfrog Acquisition Corporation - Units,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LFACU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 LFACW,Leapfrog Acquisition Corporation - Warrants,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LFACW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -7244,6 +7241,7 @@ UCC,ProShares Ultra Consumer Discretionary,P,,,etf,ineligible,False,N,Y,,,approv
 UCFI,CN Healthy Food Tech Group Corp. - Common Stock,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:UCFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 UCFIW,CN Healthy Food Tech Group Corp. - Warrant,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:UCFIW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 UCIB,"ETRACS UBS Bloomberg Constant Maturity Commodity Index (CMCI) Total Return ETN Series B due April 5, 2038",P,,,debt,ineligible,False,N,N,,nasdaqtrader:P:UCIB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
+UCL,uCloudlink Group Inc. - American Depositary Shares,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:UCL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 UCO,ProShares Ultra Bloomberg Crude Oil,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 UCON,First Trust Smith Unconstrained Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 UCOP,ProShares Ultra Copper K-1 Free ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist

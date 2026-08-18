@@ -47,6 +47,7 @@ DFDV,DeFi Development Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N
 DFH,"Dream Finders Homes, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:DFH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 DFIN,"Donnelley Financial Solutions, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:DFIN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 DFLI,Dragonfly Energy Holdings Corp - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:DFLI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+DFNS,T3 Defense Inc. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:DFNS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 DFSC,"DEFSEC Technologies Inc. - common stock, no R/S concurrent with offering",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:DFSC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 DFTX,"Definium Therapeutics, Inc.  - Common Shares",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:DFTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 DG,Dollar General Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:DG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -248,4 +249,3 @@ ENOV,Enovis Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaq
 ENPH,"Enphase Energy, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENR,"Energizer Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENS,EnerSys Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ENSG,"The Ensign Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

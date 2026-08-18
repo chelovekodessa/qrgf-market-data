@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+ENSG,"The Ensign Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENTA,"Enanta Pharmaceuticals, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENTG,"Entegris, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENTX,Entera Bio Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -248,4 +249,3 @@ FRPH,"FRP Holdings, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,
 FRPT,"Freshpet, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRPT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRSH,Freshworks Inc. - Class A Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRSH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 FRST,Primis Financial Corp. - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:FRST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-FRT,Federal Realty Investment Trust Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:FRT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
