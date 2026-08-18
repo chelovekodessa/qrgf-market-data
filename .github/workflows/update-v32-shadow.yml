@@ -31,6 +31,32 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Create exact runtime shadow producer release
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .work/v32
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          def fsha(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+          def sem(value): return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()
+          model=json.loads(Path('screening/config/v32-quality-bound-model.json').read_text())
+          body={
+            'schema_version':'1.0.0','release_version':'1.0.0','kind':'qrgf_v32_shadow_runtime_release',
+            'shadow_only':True,'production_selection_authorized':False,'quality_policy_version':'3.0.0-structural-v1',
+            'quality_bound_model_sha256':sem(model),
+            'source_v31_frontier_producer_release_sha256':'55ca263d6ec20318ff6436f64eade4d47a5ca9b00ede378a55e855fb58294968',
+            'producer_hashes':{
+              'build_v32_structural_shadow.py':fsha('screening/engine/build_v32_structural_shadow.py'),
+              'verify_v32_structural_shadow.py':fsha('screening/engine/verify_v32_structural_shadow.py'),
+              'v32_quality_math.py':fsha('screening/engine/v32_quality_math.py'),
+              'v32-quality-bound-model.json':fsha('screening/config/v32-quality-bound-model.json'),
+              'update-v32-shadow.yml':fsha('.github/workflows/update-v32-shadow.yml'),
+            },
+          }
+          Path('.work/v32/runtime-release.json').write_text(json.dumps(body,indent=2,sort_keys=True)+'\n')
+          PY
       - name: Build SEC Structural Quality shadow
         shell: bash
         run: |
@@ -43,7 +69,7 @@ jobs:
             --v31-pointer data/v31/latest.json \
             --output-root data/v32-shadow \
             --model screening/config/v32-quality-bound-model.json \
-            --release-manifest screening/config/v32-shadow-producer-release.json \
+            --release-manifest .work/v32/runtime-release.json \
             --created-at "$CREATED_AT" \
             --page-size 50 > .work/v32/build.json
           cat .work/v32/build.json
@@ -54,7 +80,7 @@ jobs:
           echo precommit_verify > .work/v32/stage.txt
           SNAPSHOT_DIR=$(python -c "import json; print(json.load(open('.work/v32/build.json'))['snapshot_dir'])")
           python screening/engine/verify_v32_structural_shadow.py \
-            --repo-root . --snapshot-dir "$SNAPSHOT_DIR"
+            --repo-root . --snapshot-dir "$SNAPSHOT_DIR" --release-manifest .work/v32/runtime-release.json
       - name: Commit immutable shadow snapshot
         shell: bash
         run: |
@@ -78,7 +104,7 @@ jobs:
           echo postcommit_verify > .work/v32/stage.txt
           SNAPSHOT_DIR=$(python -c "import json; print(json.load(open('.work/v32/build.json'))['snapshot_dir'])")
           python screening/engine/verify_v32_structural_shadow.py \
-            --repo-root . --snapshot-dir "$SNAPSHOT_DIR"
+            --repo-root . --snapshot-dir "$SNAPSHOT_DIR" --release-manifest .work/v32/runtime-release.json
       - name: Publish compact shadow pointer
         shell: bash
         run: |
