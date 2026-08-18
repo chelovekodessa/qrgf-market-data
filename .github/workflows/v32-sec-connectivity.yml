@@ -1,0 +1,49 @@
+name: QRGF v3.2 SEC Connectivity Matrix
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/v32-sec-connectivity.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe official SEC endpoints
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.error, urllib.request
+          urls={
+            'ticker_map':'https://www.sec.gov/files/company_tickers_exchange.json',
+            'submissions':'https://data.sec.gov/submissions/CIK0000320193.json',
+            'companyfacts':'https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json',
+            'companyfacts_bulk':'https://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip',
+          }
+          headers={'User-Agent':'QRGF-research qrgf-market-data-bot@users.noreply.github.com','Accept':'application/json,*/*','Accept-Encoding':'identity'}
+          out={}
+          for name,url in urls.items():
+              req=urllib.request.Request(url,headers=headers,method='GET')
+              try:
+                  with urllib.request.urlopen(req,timeout=30) as response:
+                      sample=response.read(256)
+                      out[name]={'ok':True,'status':int(response.status),'content_type':response.headers.get('content-type'),'sample_bytes':len(sample)}
+              except urllib.error.HTTPError as exc:
+                  out[name]={'ok':False,'status':int(exc.code),'error':'HTTPError'}
+              except Exception as exc:
+                  out[name]={'ok':False,'error':type(exc).__name__,'message':str(exc)[:120]}
+          print(json.dumps(out,indent=2,sort_keys=True))
+          PY
