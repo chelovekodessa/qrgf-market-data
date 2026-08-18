@@ -1,0 +1,53 @@
+name: Update QRGF v4 Market View
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Update QRGF v3 Radar", "Promote QRGF v4 State"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "screening/engine/build_v4_market_view.py"
+      - "screening/config/v4-market-producer-release.json"
+      - ".github/workflows/update-v4-market.yml"
+permissions:
+  contents: write
+concurrency:
+  group: qrgf-v4-market-view
+  cancel-in-progress: true
+jobs:
+  update:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build compact V4 market view
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -f data/v4/bootstrap/latest.json ]; then
+            echo "Core500 is not published yet; V4 market view remains unavailable."
+            exit 0
+          fi
+          python screening/engine/build_v4_market_view.py \
+            --repo-root . \
+            --release-manifest screening/config/v4-market-producer-release.json \
+            --challenger-limit 250
+      - name: Commit V4 market view
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -d data/v4/market ]; then exit 0; fi
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add -A -- data/v4/market
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish QRGF v4 market view"
+          git pull --rebase origin main
+          git push origin HEAD:main
