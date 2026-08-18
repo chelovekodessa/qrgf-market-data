@@ -1,0 +1,11 @@
+{
+  "event_name": "push",
+  "head_sha": "9719344c368f048c0807a900c586ba7885d3313e",
+  "kind": "qrgf_v31_workflow_diagnostic",
+  "recorded_at": "2026-08-18T06:31:11Z",
+  "schema_version": "1.0.0",
+  "stage": "build",
+  "status": "failure",
+  "workflow_run_attempt": "1",
+  "workflow_run_id": "32107253136"
+}
