@@ -1,0 +1,11 @@
+{
+  "cohort_path": "data/v4/bootstrap/cohorts/686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239/cohort.json",
+  "cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
+  "kind": "qrgf_v4_core500_pointer",
+  "last_proposal_sha256": "9574a5c0b0b2f728988b00624b7a1a53863a1b7c20d5875d20c7c1c8a71fdc76",
+  "market_session_id": "2026-08-17",
+  "pointer_sha256": "bc71dfd0f84fd253682fdb32632d6b89aaaf8f827843915b9119e840b09d8952",
+  "producer_release_sha256": "272d992aaf5de87807575aa5c554e4f0a2088065ece98f326068f089c26915c4",
+  "schema_version": "1.0.0",
+  "selected_scope_count": 15
+}
