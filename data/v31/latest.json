@@ -1,0 +1,12 @@
+{
+  "certificate_path": "data/v31/snapshots/a3dae3b9c36f4f296a3fd9fe/market-certificate.json",
+  "certificate_sha256": "5a9ba4e08c117ab0039d8dbac5397e9916691c3f41d2cf6d145f8abab34b5a97",
+  "frontier_manifest_path": "data/v31/snapshots/a3dae3b9c36f4f296a3fd9fe/frontier-manifest.json",
+  "frontier_manifest_sha256": "612336ef9b42dfc9a085de50851115efea9906bd286a0d865dc575e675b8ef87",
+  "kind": "qrgf_v31_frontier_pointer",
+  "market_session_id": "2026-08-17",
+  "pointer_sha256": "93c06e7ff1b97a7daf2ed1844064dbf4ca6d3a1882ed096977d83a206dbd5477",
+  "publication_commit_sha": "23e7f73d0fb66ec0891dedefd162db4b062c6058",
+  "schema_version": "1.0.0",
+  "snapshot_id": "a3dae3b9c36f4f296a3fd9fe"
+}
