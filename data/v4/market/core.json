@@ -51,6 +51,7 @@
       "current_price": "1011.75",
       "data_integrity_status": "usable",
       "drawdown_pct": "16.6295856817957",
+      "event_scan_through": "2026-08-18",
       "exchange": "Q",
       "historical_volatility_pct": "94.86542465560831",
       "industry": "",
@@ -61,9 +62,14 @@
       "l2_status": "conditional",
       "market_cap": "",
       "momentum_history_status": "full",
-      "quality_reusable": false,
+      "passport_hash": "c4f04c95dde255a2d447a4c28d1285793936f6add6970a626045aa4fb15c3a34",
+      "quality_coverage_pct": 90.91,
+      "quality_eligible": true,
+      "quality_reusable": true,
+      "quality_score": 82.23,
+      "quality_status": "pass",
       "reference_52w_high": "1213.56",
-      "registry_status": "missing",
+      "registry_status": "fresh",
       "research_scope_key": "ISSUER:MICRON_TECHNOLOGY_INC|common_equity",
       "return_12m_pct": "707.5265384308403",
       "return_1m_pct": "19.17662995464986",
@@ -613,5 +619,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "view_sha256": "9e10ffcf7d653d8797b7d3ed92c461dd9450476267e635a69a91142fefefba90"
+  "view_sha256": "c64189820c39b07235bb34d93c826a8a84b397f1f0cc7e32570493f47ef2234a"
 }
