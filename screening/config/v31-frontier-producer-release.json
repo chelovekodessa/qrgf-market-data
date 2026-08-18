@@ -9,10 +9,10 @@
   },
   "frontier_model_sha256": "919cac81107c71c409ad48eb0f0a2abd759150812ada1f8b717b68dddbc400c8",
   "producer_hashes": {
-    "build_v31_frontier.py": "ab71c840ee4277ba0f905d8f5210e0829cc9ea485cfeeab96e35b50948f0b752",
-    "update-v31-frontier.yml": "afbf674936225aaf8e83f0d30678cf2555cc7569618c2695348956fe96a95a87",
+    "build_v31_frontier.py": "03e71bb6dcd2fe80df0451291117a4d58bd79548108d03de86fd239771dbfb8c",
+    "update-v31-frontier.yml": "502cb3ed15c4aef66af47a8d5fe6ff5ed839848f577b1be13c4cb6e842e67636",
     "v31-frontier-model.json": "c30756a6d3d4979893623288f9e5e5ac22e7ba49f46d55ebc7ca2c7e4e1aa753",
-    "verify_v31_publication.py": "6602628a075fbea37330717a29f31e03e70700b1092dd295c5e2af13daf54d00"
+    "verify_v31_publication.py": "57de786423c196d3bcc781fd424c1be79d9b5f36a9e6154f826ef608e94d2d60"
   },
   "release_version": "1.0.0",
   "schema_version": "1.0.0",
