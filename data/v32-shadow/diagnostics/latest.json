@@ -1,11 +1,11 @@
 {
   "event_name": "pull_request",
-  "head_sha": "9047ab6c6213fc1bcd2ad808d8879fda520918ae",
+  "head_sha": "a8f9e184dd356459be296fe620d877f04c4c0cf6",
   "kind": "qrgf_v32_shadow_workflow_diagnostic",
-  "recorded_at": "2026-08-18T08:55:11Z",
+  "recorded_at": "2026-08-18T08:57:04Z",
   "schema_version": "1.0.0",
   "stage": "build",
   "status": "failure",
   "workflow_run_attempt": "1",
-  "workflow_run_id": "32118834146"
+  "workflow_run_id": "32119001104"
 }
