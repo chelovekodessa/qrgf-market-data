@@ -1,0 +1,17 @@
+{
+  "kind": "qrgf_v32_shadow_producer_release",
+  "producer_hashes": {
+    "build_v32_structural_shadow.py": "f91db5335b45a2a8681e4bd1f3d7c971503a963d606438871fc76215e61dda9e",
+    "update-v32-shadow.yml": "b81bebbcc9103b8cd04fa0e29e12383f22cddcabff25ab6d8c8ddd96399bf10b",
+    "v32-quality-bound-model.json": "17c9be29095470fe2cbddda6080ce91d1b3a50691c9802cbefcf253eabb9595b",
+    "v32_quality_math.py": "10614000bf39fe83825128546d0853465c05d8cb73a72ceed86b4e4e584ec563",
+    "verify_v32_structural_shadow.py": "7a9f77a6246472154d6a7a4fb8aca65a08b9cc9f21f3f6f227497f3a66f932e2"
+  },
+  "production_selection_authorized": false,
+  "quality_bound_model_sha256": "930012d3647d20ba75af69389a5e8556bee67634d51951070a49cba0d275c5ef",
+  "quality_policy_version": "3.0.0-structural-v1",
+  "release_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "shadow_only": true,
+  "source_v31_frontier_producer_release_sha256": "55ca263d6ec20318ff6436f64eade4d47a5ca9b00ede378a55e855fb58294968"
+}
