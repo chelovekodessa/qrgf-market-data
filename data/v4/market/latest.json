@@ -1,16 +1,16 @@
 {
   "challenger_transport_count": 250,
   "challengers_path": "data/v4/market/challengers.json",
-  "challengers_sha256": "7f12db58169ea068a620a9f4b928c732e55b60d0e5b25671b3b5d884ec9c2420",
+  "challengers_sha256": "b4fd4128c7eb6edb3115655091653f17c5dfc3890074bd6c4fa77406975a8a8d",
   "core500_cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
   "core_path": "data/v4/market/core.json",
   "core_security_rows": 16,
-  "core_sha256": "23d47e5a038eb0820b1fac0853345326af68e18184ed405145881aaf74c5db3a",
+  "core_sha256": "59a984f894af40c5dd84d90c1a0775d7d10e83ea929e7ed3200011a0ad26319d",
   "eligible_noncore_count": 3706,
   "kind": "qrgf_v4_market_pointer",
-  "market_session_id": "2026-08-17",
-  "pointer_sha256": "2ba621aede2e09870025326031aa06bc30e76500bb11b86f046d520103bfbb66",
+  "market_session_id": "2026-08-18",
+  "pointer_sha256": "cc7d446f07a1f79edafa26fce1c1aeb1ae4377e68dfd6f8e18bd419c35bd4b3b",
   "producer_release_sha256": "8c52544bb13eb1fbbfbdccb534afc3f82e18488206da8d318bfc7337a6a1d5f0",
   "schema_version": "1.0.0",
-  "source_v3_snapshot_id": "22d5f93452d761135f33e385"
+  "source_v3_snapshot_id": "6f48234807332dd29fad6943"
 }
