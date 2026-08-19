@@ -4,6 +4,7 @@
   "source_architecture_version": "4.0.6",
   "legacy_deletion_detected": true,
   "git_history_is_authoritative_archive": true,
+  "raw_proposals_restored_to_current_journal": true,
   "future_journal_deletion_forbidden": true,
   "records": [
     {
@@ -47,5 +48,5 @@
       "historical_path": "data/v4/registry/proposals/e7f5c4fd7c1f7a13f74b8f3f29d4e6634183bda1d1d1a3c0364664a5dbb1060b.json"
     }
   ],
-  "history_sha256": "99bef1c04c370ac92b83f268a8fb97f22e71acbd648ef8662d1e17ab4dfe769d"
+  "history_sha256": "1465d8516a59cf4f3cb75e67b084b236a7995b0ec41bd841c0cc1cb54fc85f24"
 }
