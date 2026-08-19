@@ -10,8 +10,8 @@
     "direct_sec_required": false
   },
   "producer_hashes": {
-    "build_v4_market_view.py": "dbc2ef401767208dc62e7ac5f14827948921ed593c4ab179b1c82407aa004889",
-    "promote_v4_state.py": "f93c0bc7ece879d64e27d32c5f99c8d4b4e444a698b7592b185be51fdc8c5c35",
+    "build_v4_market_view.py": "11447bda713db2417ef9b7ade6d4cc31eb15df4477bf57eed0c6bc8a9460bba1",
+    "promote_v4_state.py": "bdc105105d66fb884502ae6988f36b4ae03826205098982e548aca0f8dbcbce6",
     "test_build_v41_market_view.py": "1561c82d1d2c4fa8671904796bf60483f8d2b3a6dca8158fff2494fe21228276",
     "update-v4-market.yml": "1e0a6a3b2e950c0cc226be7ffd1faca66abbb126b45686dbce4ada242a778c76"
   }
