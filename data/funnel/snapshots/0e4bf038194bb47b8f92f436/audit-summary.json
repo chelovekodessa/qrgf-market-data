@@ -1,0 +1,89 @@
+{
+  "l1_summary": {
+    "actual_rankable_rows": 3310,
+    "assessed_rows": 5118,
+    "below_liquidity_threshold_rows": 831,
+    "below_market_cap_threshold_rows": 0,
+    "below_price_threshold_rows": 880,
+    "blocked_reason": null,
+    "broad_search_complete": true,
+    "coverage_gate_passed": true,
+    "effective_core_field_coverage_pct": {
+      "avg_dollar_volume": 100.0,
+      "drawdown_52w": 100.0,
+      "historical_volatility": 99.41245593419507,
+      "price": 99.94138335287222,
+      "return_12m": 100.0,
+      "return_3m": 98.5605170387779,
+      "return_6m": 97.2385428907168
+    },
+    "global_ranking_complete": true,
+    "history_insufficient_rows": 163,
+    "input_rows": 5118,
+    "merged_rows": 5118,
+    "minimum_score": 45.0,
+    "nonselected_rows": 4618,
+    "partial_or_test_mode": false,
+    "pending_recheck_rows": 97,
+    "production_floor_met": true,
+    "qualified_rows": 2404,
+    "rankable_rows": 3310,
+    "ranked_l1": 500,
+    "raw_core_field_coverage_pct": {
+      "avg_dollar_volume": 99.94138335287222,
+      "drawdown_52w": 99.94138335287222,
+      "historical_volatility": 99.14028917545916,
+      "price": 99.94138335287222,
+      "return_12m": 94.19695193434936,
+      "return_3m": 98.18288393903869,
+      "return_6m": 96.81516217272372
+    },
+    "retained_l1": 500,
+    "sources": [
+      {
+        "config": {
+          "id": "l1.csv"
+        },
+        "resolved_columns": {
+          "as_of": "as_of",
+          "avg_dollar_volume": "avg_dollar_volume",
+          "company": "company",
+          "contract_id": "contract_id",
+          "drawdown_52w": "drawdown_52w",
+          "exchange": "exchange",
+          "historical_volatility": "historical_volatility",
+          "instrument_status": "instrument_status",
+          "market_cap": "market_cap",
+          "momentum_history_status": "momentum_history_status",
+          "percent_unit": "percent_unit",
+          "price": "price",
+          "return_12m": "return_12m",
+          "return_1m": "return_1m",
+          "return_3m": "return_3m",
+          "return_6m": "return_6m",
+          "sector": "sector",
+          "security_type": "security_type",
+          "ticker": "ticker",
+          "trading_history_days": "trading_history_days"
+        },
+        "rows": 5118,
+        "source": ".work/l1.csv"
+      }
+    ],
+    "structurally_eligible_rows": 5118,
+    "unresolved_core_rows": 0,
+    "unresolved_mature_core_rows": 0
+  },
+  "l2_summary": {
+    "finalist_ceiling": 120,
+    "input_count": 500,
+    "processed_count": 500,
+    "selected_l2": 120,
+    "status_counts": {
+      "conditional": 500,
+      "pass": 0,
+      "recheck": 0,
+      "rejected": 0
+    }
+  }
+}
