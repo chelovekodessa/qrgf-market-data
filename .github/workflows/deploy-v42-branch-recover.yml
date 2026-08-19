@@ -1,0 +1,72 @@
+name: Deploy QRGF V4.2 Branch Recover
+
+on:
+  push:
+    branches: [agent/v42-deployment]
+    paths:
+      - ".v42-deploy/RECOVER_READY"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-v42-branch-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/v42-deployment
+          fetch-depth: 0
+
+      - name: Reconstruct and verify deployment archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .v42-deploy/chunk-* > /tmp/v42.zip.b64
+          base64 -d /tmp/v42.zip.b64 > /tmp/v42-truncated.zip
+          zip -FF /tmp/v42-truncated.zip --out /tmp/v42-repaired.zip >/tmp/zip-repair.log 2>&1
+          unzip -t /tmp/v42-repaired.zip
+          rm -rf /tmp/v42-overlay
+          mkdir -p /tmp/v42-overlay
+          unzip -q /tmp/v42-repaired.zip -d /tmp/v42-overlay
+          test "$(find /tmp/v42-overlay -type f | wc -l | tr -d ' ')" = "71"
+          if find /tmp/v42-overlay -type f ! -path '/tmp/v42-overlay/.github/workflows/*' ! -path '/tmp/v42-overlay/screening/*' -print -quit | grep -q .; then
+            echo "Unexpected deployment path" >&2
+            exit 1
+          fi
+
+      - name: Install V4.2 overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -a /tmp/v42-overlay/. .
+
+      - name: Run V4.2 tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          QRGF_TEST_RESULTS=/tmp/qrgf-v42-tests.json python screening/qrgf_v42/tests/run_tests.py
+          python -m compileall -q screening/qrgf_v42 screening/engine
+
+      - name: Commit verified overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .v42-deploy
+          rm -f .github/workflows/deploy-v42-branch.yml
+          rm -f .github/workflows/deploy-v42-branch-recover.yml
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add -A -- .github/workflows screening .v42-deploy
+          git status --short
+          if git diff --cached --quiet; then
+            echo "No deployment changes produced" >&2
+            exit 1
+          fi
+          git commit -m "Stage QRGF V4.2 deployment"
+          git push origin HEAD:agent/v42-deployment
