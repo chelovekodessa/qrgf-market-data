@@ -39,6 +39,14 @@ def main():
         try:p.publish_passport(root,newer,rel2,t2);raise AssertionError("missing current receipt was bypassed")
         except ValueError as exc:check("missing its receipt" in str(exc),str(exc))
         check(p.publish_passport(root,a,rel2,t2)["status"]=="receipt_recovered","exact receipt recovery failed")
+    with tempfile.TemporaryDirectory() as td:
+        root=Path(td);p.publish_passport(root,a,rel1,t1);journal=root/"data/v4/registry/proposals"/f"{a['proposal_sha256']}.json";p.write(journal,a)
+        history_body={"schema_version":"1.0.0","kind":"qrgf_v41_legacy_proposal_journal_history","source_architecture_version":"4.0.6","legacy_deletion_detected":True,"git_history_is_authoritative_archive":True,"raw_proposals_restored_to_current_journal":True,"future_journal_deletion_forbidden":True,"records":[{"proposal_sha256":a["proposal_sha256"],"historical_commit":"a"*40,"historical_path":"data/v4/registry/proposals/historical.json"}]}
+        p.write(root/"data/v4/migrations/v410/proposal-journal-history.json",{**history_body,"history_sha256":p.sem(history_body)})
+        check(p.legacy_journal_history(root)["restored_to_current_journal"] is True,"restored proposal journal not verified")
+        journal.unlink()
+        try:p.legacy_journal_history(root);raise AssertionError("missing restored proposal was accepted")
+        except ValueError as exc:check("restoration mismatch" in str(exc),str(exc))
     bndl=bundle();master=bndl["master"];check(p.validate_master_bundle(bndl)["master"]["master_sha256"]==master["master_sha256"],"valid MASTER rejected")
     small=copy.deepcopy(master);small["requested_size"]=15;content={k:v for k,v in small.items() if k not in {"master_content_sha256","selector_certificate_sha256","master_sha256"}};small["master_content_sha256"]=p.sem(content);body={k:v for k,v in small.items() if k!="master_sha256"};small["master_sha256"]=p.sem(body)
     try:p.validate_master(small);raise AssertionError("Core15 accepted as MASTER")
