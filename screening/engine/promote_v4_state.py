@@ -52,6 +52,7 @@ MASTER_KIND="qrgf_v41_master_core500"
 SOURCE_KIND="qrgf_v41_quality_candidate_source"
 CERT_KIND="qrgf_v41_master_core500_selector_certificate"
 PHASES=("CANARY","PILOT","CORE500","COMPLETE")
+SELECTOR_ORDERING_MODEL="bootstrap_priority_score_then_coverage_market_cap_liquidity_identity-v1"
 FORBIDDEN_SOURCE_FIELDS={"price","current_price","last","close","bid","ask","quote","reference_52w_high","distance_to_high_pct","drawdown","drawdown_pct","drawdown_52w_pct","return_5d_pct","return_1m_pct","return_3m_pct","return_6m_pct","return_12m_pct","recovery_setup_score","l2_setup_score","research_priority_score","rsi","atr","momentum","historical_volatility_pct","setup_prior_growth","setup_pullback_geometry","setup_liquidity"}
 
 def require_hash(value:Any,label:str)->str:
@@ -72,7 +73,9 @@ def validate_source(value:Mapping[str,Any])->dict[str,Any]:
     v=dict(value);body={k:x for k,x in v.items() if k!="source_sha256"}
     if v.get("schema_version")!="2.0.0" or v.get("kind")!=SOURCE_KIND or v.get("architecture_version")!="4.1.0" or v.get("source_sha256")!=sem(body):raise ValueError("invalid V4.1 quality candidate source")
     if v.get("current_recovery_used") is not False or list(v.get("forbidden_recovery_fields") or [])!=[]:raise ValueError("V4.1 source recovery declaration invalid")
-    ident=v.get("candidate_source_identity") or {};require_hash(ident.get("snapshot_sha256"),"source snapshot hash")
+    ident=v.get("candidate_source_identity") or {}
+    if not str(ident.get("kind") or ""):raise ValueError("V4.1 source identity kind missing")
+    require_hash(ident.get("snapshot_sha256"),"source snapshot hash")
     rows=v.get("candidates") or [];lanes=v.get("lane_counts") or {}
     if not isinstance(rows,list) or len(rows)<MASTER_SIZE or int(v.get("quality_candidate_union_size") or -1)!=len(rows) or int(v.get("eligible_universe_size") or 0)<len(rows):raise ValueError("invalid V4.1 source breadth")
     observed={}
@@ -101,14 +104,27 @@ def validate_certificate(value:Mapping[str,Any],master:Mapping[str,Any])->dict[s
     if v.get("schema_version")!="2.0.0" or v.get("kind")!=CERT_KIND or v.get("architecture_version")!="4.1.0" or v.get("certificate_sha256")!=sem(body):raise ValueError("invalid V4.1 selector certificate")
     if v.get("certificate_sha256")!=m["selector_certificate_sha256"] or v.get("master_content_sha256")!=m["master_content_sha256"] or v.get("candidate_source_sha256")!=m["candidate_source_sha256"] or v.get("selector_config_sha256")!=m["selector_config_sha256"] or v.get("market_session_id")!=m["market_session_id"]:raise ValueError("V4.1 selector certificate/MASTER mismatch")
     if int(v.get("requested_size") or -1)!=MASTER_SIZE or int(v.get("selected_scope_count") or -1)!=MASTER_SIZE or v.get("current_recovery_used") is not False or list(v.get("forbidden_recovery_fields") or [])!=[] or v.get("regression_expectations_satisfied") is not True:raise ValueError("V4.1 selector certificate invariant failed")
+    if v.get("selector_model_version")!=m.get("selection_model_version") or v.get("deterministic_ordering_model")!=SELECTOR_ORDERING_MODEL:raise ValueError("V4.1 selector certificate model invariant failed")
     if v.get("cohort_scope_keys_sha256")!=sem([x["research_scope_key"] for x in m["scopes"]]):raise ValueError("V4.1 selector certificate scope hash mismatch")
-    ident=v.get("candidate_source_identity") or {};require_hash(ident.get("snapshot_sha256"),"certificate source snapshot hash")
+    ident=v.get("candidate_source_identity") or {}
+    if not str(ident.get("kind") or ""):raise ValueError("V4.1 certificate source identity kind missing")
+    require_hash(ident.get("snapshot_sha256"),"certificate source snapshot hash")
+    coverage=v.get("fact_coverage") or {}
+    if not isinstance(coverage,Mapping) or not 0<float(coverage.get("minimum_pct") or -1)<=100 or int(coverage.get("eligible_scope_count") or -1)<MASTER_SIZE:raise ValueError("V4.1 certificate fact coverage invalid")
+    dedup=v.get("issuer_dedup") or {};stats=dedup.get("stats") if isinstance(dedup,Mapping) else None
+    keys=("raw_quality_candidate_count","bootstrap_score_eligible_count","unique_research_scope_count","issuer_dedup_removed_rows")
+    if dedup.get("enabled") is not True or not isinstance(stats,Mapping) or any(k not in stats for k in keys):raise ValueError("V4.1 certificate issuer dedup evidence invalid")
+    raw,eligible,unique,removed=(int(stats[k]) for k in keys)
+    if raw<eligible or eligible<unique or unique<MASTER_SIZE or removed!=eligible-unique:raise ValueError("V4.1 certificate issuer dedup stats inconsistent")
+    cutoff=v.get("cutoff_diagnostics") or {}
+    if not isinstance(cutoff,Mapping) or int(cutoff.get("cutoff_rank") or -1)!=MASTER_SIZE or any(k not in cutoff for k in ("cutoff_score","next_excluded_score")) or any(int(cutoff.get(k) if cutoff.get(k) is not None else -1)!=int(stats[k]) for k in keys):raise ValueError("V4.1 certificate cutoff diagnostics invalid")
+    if not isinstance(v.get("regression_expectations"),list):raise ValueError("V4.1 certificate regression expectations invalid")
     return v
 def validate_master_bundle(value:Mapping[str,Any])->dict[str,Any]:
     v=dict(value)
     if v.get("schema_version")!="2.0.0" or v.get("kind")!="qrgf_v41_master_core500_bundle":raise ValueError("invalid V4.1 MASTER bundle")
     source=validate_source(v.get("candidate_source") or {});master=validate_master(v.get("master") or {});certificate=validate_certificate(v.get("selector_certificate") or {},master)
-    if source["source_sha256"]!=master["candidate_source_sha256"] or source["source_sha256"]!=certificate["candidate_source_sha256"] or source.get("market_session_id")!=master.get("market_session_id") or source.get("market_session_id")!=certificate.get("market_session_id") or source.get("candidate_source_identity")!=certificate.get("candidate_source_identity") or source.get("lane_counts")!=certificate.get("lane_counts") or source.get("eligible_universe_size")!=certificate.get("eligible_universe_size") or source.get("quality_candidate_union_size")!=certificate.get("quality_candidate_union_size"):raise ValueError("V4.1 MASTER source binding mismatch")
+    if source["source_sha256"]!=master["candidate_source_sha256"] or source["source_sha256"]!=certificate["candidate_source_sha256"] or source.get("market_session_id")!=master.get("market_session_id") or source.get("market_session_id")!=certificate.get("market_session_id") or source.get("candidate_source_identity")!=certificate.get("candidate_source_identity") or source.get("lane_counts")!=certificate.get("lane_counts") or source.get("eligible_universe_size")!=certificate.get("eligible_universe_size") or source.get("quality_candidate_union_size")!=certificate.get("quality_candidate_union_size") or int(certificate["issuer_dedup"]["stats"]["raw_quality_candidate_count"])!=len(source["candidates"]):raise ValueError("V4.1 MASTER source binding mismatch")
     return {**v,"candidate_source":source,"master":master,"selector_certificate":certificate}
 def validate_master_proposal(value:Mapping[str,Any])->dict[str,Any]:
     v=dict(value);body={k:x for k,x in v.items() if k!="proposal_sha256"}
