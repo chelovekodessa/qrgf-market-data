@@ -1,13 +1,18 @@
 {
+  "schema_version": "1.0.0",
+  "release_version": "2.0.0",
   "contracts": {
+    "master_campaign_authority_required": true,
+    "daily_broad_requires_complete": true,
+    "challenger_page_size": 250,
+    "pinned_manifest_and_cursor_required": true,
     "challenger_transport_is_not_quality_gate": true,
-    "core500_not_whitelist": true,
     "direct_sec_required": false
   },
   "producer_hashes": {
-    "build_v4_market_view.py": "46e4d26f024fef1bfeeb65f4dc2ed9c93a3b13360cf93f7155ef0ee5c0839b28",
-    "update-v4-market.yml": "d0b5b651d91633f36ef7b997c2683e7ef96d8c91ff49181da8557a564269a7d5"
-  },
-  "release_version": "1.0.0",
-  "schema_version": "1.0.0"
+    "build_v4_market_view.py": "dbc2ef401767208dc62e7ac5f14827948921ed593c4ab179b1c82407aa004889",
+    "promote_v4_state.py": "6066da8fda5d243c563fdb889dbf0433155c6fd57366ac9ef2b21b2dac770a15",
+    "test_build_v41_market_view.py": "1561c82d1d2c4fa8671904796bf60483f8d2b3a6dca8158fff2494fe21228276",
+    "update-v4-market.yml": "1e0a6a3b2e950c0cc226be7ffd1faca66abbb126b45686dbce4ada242a778c76"
+  }
 }
