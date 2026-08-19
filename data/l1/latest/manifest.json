@@ -2,138 +2,138 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-19T04:23:04Z",
+  "retrieved_at": "2026-08-19T08:05:03Z",
   "history_start": "2025-07-14",
   "history_end": "2026-08-18",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "54b11a542dda1a65062821e115388611590b2ee06d94beacbf59e10aec6408cc",
-    "accepted_unique": 5117,
-    "bundle_csv_sha256": "f756178057714905fa536ba13722dc20a9af53b93ed05814c77a0e81b9ee6426",
-    "source_raw_sha256": "7e02dcfc75af796e63bdbc519c59ff4712c3f853a0152b68983c8848fb707569",
-    "retrieved_at": "2026-08-19T03:15:45Z"
+    "manifest_sha256": "88c3b6f6b930ccddb62b2d5ac98de555dbe38f69f78142c68b5cc507365376fc",
+    "accepted_unique": 5118,
+    "bundle_csv_sha256": "89eef0e6c0ee5c443117a57dd763e917a88df118511e7a2ddfd1ecad7375185b",
+    "source_raw_sha256": "5c8c98a4cd932d14103c7603faa60f66ed82641b7282af527ebc4f6ff40807e0",
+    "retrieved_at": "2026-08-19T08:04:43Z"
   },
-  "rows": 5117,
+  "rows": 5118,
   "page_size": 250,
   "page_count": 21,
   "pages": [
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "b2faa6554d53cdc23506cfc20658bb87b376b4cf6ae1c67863f85f60afd0593f"
+      "sha256": "69ac0e077abc3ab9a77ff4a5caae9bf3f86937ef9c51fe3266c6198c1a090a87"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "face7a6ea9781be1a33ea3f6ab14f4a4931b31d8a6959cddb3ac7494101ff27c"
+      "sha256": "c14c79d53f49d8718a1a5c5361c930ff35615d6198e5174e83f5740f33a93ee9"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "93da7e6543fbe98e46194a1aee76651b9bf97276eea4bd94126c3b914f1e4133"
+      "sha256": "c1a69b8aa3cba17e1a6ea96b2fe28477f5dc446bf77f5c716eef6a796c948109"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "be8a8d3c1ee609723214ef8694c698c48c97ccdd2507990b1a58cc9de7d541ce"
+      "sha256": "beea647b77722c0a65750e63f4eb3cfb5142ced5c7d5a472dbcf122d6ada7058"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "be25d0de6f99fe6274948cca00baa19c8dbfe1ea619eb378da7caecf6a026df7"
+      "sha256": "cfa92a0d20233b992165085f0006aad2da40ba3fafa090306de51693342880c3"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "bc4d58abc5b03abe6725c1c15a7a49fe766b182794e29fe5539ea7a3a2c653fd"
+      "sha256": "bfe1c5f108ccea70d3ee499d42d61dc11d5de3e5be9b7460968692d5ae5407f8"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "f9ef6f947ef527e4802c874838a74e860fe2bab91200f5920f91731568f0504b"
+      "sha256": "d3cf357e5e6e66690157414204f96fc4ef681e33263c593e54b8c4ca36643d3b"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "444b1e99a33704a76db9e9a41fb765d417e30a6a3c272bf5d55d4f90ff01e0c9"
+      "sha256": "f0ef41657eb2261a8bf94ebe07136a2e2fa6c2b01f9a1eaa13ad5861a180da7d"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "90cf3bf6a71eb9d9cb489bc6958fc957748728255b07431bd411fa6a0c5cd9a4"
+      "sha256": "614b4861340a13e8f1e47b0e50ebe3854aff074fef0ea065e687c544d780abdd"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "e0d0b155cea0ec90bfc06ed49b9d86821ff8090c32dc061743c0e525579caa23"
+      "sha256": "832e6f921e3fdfb2352052b653c8723b03f9e87c3960e2f7f87a3e3357a005e6"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "6d257a5c7980227eda1cd16debe2bcfae74bfa10bd5d98e54cbc9be440d796e2"
+      "sha256": "bc67bfa93803dcea7e9fd6f28f0e708c92dd012a0dc87b1a6d09122646557fc4"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "bc43915fba6438ef27e973e24b27cf8049c927745b28dc905ec509e2b096e71a"
+      "sha256": "799262a07016ed14f748c634a3aa56c7f0452f19d0d9540ada3ed25c34cd6ad5"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "7dc082429732a41e7932d36fd07c107cd526237080a38ff08149c8457f74ec1e"
+      "sha256": "4712f1258a59c9c343979719892bb2fa696c936f23f25220c3acfd266bf38572"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "eb8db5aa66d3889941ce7cf1364a68b85c2b43d49064965881a80c7f1e828eed"
+      "sha256": "3322f058c8173f103544c865bc2f8f8f6b42ed66859a750c1cb7f7b9998401fc"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "2acdf344b6da60993cbd2384a6942a6f1b2789ee9e9a8f8b0e500ead0c8acdb0"
+      "sha256": "c6635b092474240788093910d878cf99923aafd905a9752111f00c9877666f0a"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "7c8d8e3b2c5bdc1c26ff5db5fd5e887ce4dbad3b15b123fd05b6a7c35c6c3152"
+      "sha256": "951e216d2a5ea1521e8cba9d17e98c38830aab74c609333b51491d48e6643033"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "a3cf87d1e8975792e35a3233f22b81ffb3f3f1e2920448013df193018b929771"
+      "sha256": "8d68b37390b64cfdd8790a1b51a74681492587f5cfd21e8f321d6cec7829edea"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "f10240693c90572b022060169200c4e7d6b905254d8c0335f6ee36681cfc7f5a"
+      "sha256": "f9b9de58c01ff2bcda1ba302ca13ebf89ed3f319edab86d2fc46892b21a6b07d"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "2a73de991068242acdd3cb10c895b52c88c79d12b39fb7a4fa19a9ac4b318397"
+      "sha256": "a08bc03aeaf53aa294ecc46513c528c627dc2c5b02e90c8f09ec8b17491297c8"
     },
     {
       "name": "page-0020.csv",
       "rows": 250,
-      "sha256": "71e5d55653cb90367d2d898f1a5dddf59489944f0a429fbcf859a6a4716ee4a6"
+      "sha256": "b969b2ea46bf67c311686873c5ceab6b2aa0914564490d3d7421b402321ed293"
     },
     {
       "name": "page-0021.csv",
-      "rows": 117,
-      "sha256": "be04eca4eaab2a23f0bdb321d802371d5c959f4bfafd971b541589d945311b16"
+      "rows": 118,
+      "sha256": "a7a75deb2003083aea0df8adc2bfed729b42b0c78f0aaf201db2224ae5130939"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
-    "rows": 5117,
-    "sha256": "cabca6bc386c8f4440c24d53c54eac6b43d778830465dceadc77b6c7c8cba178",
-    "gzip_sha256": "67cda839763d255ca5acc25a0436c51ba90698a3826b3e1e78f597590de69381",
-    "csv_sha256": "fb524bac8a0c049cea1b75dcde0c3b14afca32aec66c3cc9dfc6b9bfb962b89d",
-    "bytes": 633334,
-    "line_count": 8226
+    "rows": 5118,
+    "sha256": "3fd2e1cf329ceeec0ac808387af31a964a04548093f353679134d48bef61d14f",
+    "gzip_sha256": "07061b8d52b3d5544a1e8702dbbed7d7ceaa6d93e1ee4beb54798a8fdb6e721c",
+    "csv_sha256": "b9d15956bad9b0d03217b3dfcdec52e812c2159960d6b86e9f0098cc3b5a8d6c",
+    "bytes": 633265,
+    "line_count": 8225
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
@@ -152,12 +152,12 @@
     "request_start": "2025-07-14T00:00:00Z",
     "request_end": "2026-08-18T23:59:59Z",
     "rate_limit": "200",
-    "rate_limit_remaining": "160",
+    "rate_limit_remaining": "198",
     "errors": [],
     "short_history_extension": {
-      "requested_symbols": 311,
+      "requested_symbols": 309,
       "upgraded_to_full": 15,
-      "still_short": 296,
+      "still_short": 294,
       "requests": 7,
       "errors": []
     },
@@ -171,17 +171,18 @@
     "sector_industry_status": "deferred_to_narrowed_research"
   },
   "coverage": {
-    "total": 5117,
+    "total": 5118,
     "with_history": 5115,
-    "missing_history": 2,
-    "non_etf": 5075,
+    "missing_history": 3,
+    "non_etf": 5076,
     "market_cap_present_non_etf": 0,
-    "market_cap_missing_non_etf": 5075,
-    "mature_missing_core": 4777
+    "market_cap_missing_non_etf": 5076,
+    "mature_missing_core": 4779
   },
   "diagnostics": {
     "missing_history_symbols": [
       "GFR.V",
+      "LYNX",
       "SVA"
     ],
     "missing_market_cap_symbols": [
@@ -2954,6 +2955,7 @@
       "LYEL",
       "LYFT",
       "LYG",
+      "LYNX",
       "LYTS",
       "LYV",
       "LZ",
@@ -7340,6 +7342,7 @@
       "HYPD",
       "HYPR",
       "HZO",
+      "IA",
       "IAG",
       "IART",
       "IAUX",
@@ -9738,6 +9741,7 @@
       "VMD",
       "VMI",
       "VMO",
+      "VMRK",
       "VNCE",
       "VNDA",
       "VNET",
