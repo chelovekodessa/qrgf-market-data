@@ -1,0 +1,45 @@
+name: Deploy QRGF V4.2 Overlay Branch
+on:
+  push:
+    branches: ["agent/v42-deployment"]
+    paths:
+      - ".v42-deploy/READY"
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/v42-deployment
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Reconstruct and verify overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .v42-deploy/chunk-* > /tmp/v42.zip.b64
+          base64 -d /tmp/v42.zip.b64 > /tmp/github-v42-deployment.zip
+          echo "cdcdcf649f82c4dab55fda59b967e94eed17b6f932520536ad7b9254e9bf1714  /tmp/github-v42-deployment.zip" | sha256sum -c -
+          rm -rf /tmp/v42-overlay
+          mkdir -p /tmp/v42-overlay
+          unzip -q /tmp/github-v42-deployment.zip -d /tmp/v42-overlay
+          cp -a /tmp/v42-overlay/. .
+          QRGF_TEST_RESULTS=/tmp/qrgf-v42-tests.json python screening/qrgf_v42/tests/run_tests.py
+          python -m py_compile $(find screening/qrgf_v42 screening/engine -type f -name '*.py' -print)
+      - name: Commit verified overlay to deployment branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .v42-deploy
+          rm -f .github/workflows/deploy-v42-branch.yml
+          git config user.name "qrgf-v42-deployer"
+          git config user.email "qrgf-v42-deployer@users.noreply.github.com"
+          git add -A -- .github/workflows screening
+          git add -A -- .v42-deploy || true
+          git commit -m "Stage QRGF V4.2 deployment"
+          git push origin HEAD:agent/v42-deployment
