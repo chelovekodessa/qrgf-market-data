@@ -1,0 +1,119 @@
+name: Merge verified QRGF V4.2 branch
+
+on:
+  push:
+    branches: [agent/v42-deployment]
+    paths:
+      - ".v42-merge/READY"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: qrgf-v42-final-merge
+  cancel-in-progress: false
+
+jobs:
+  verify-and-merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/v42-deployment
+          fetch-depth: 0
+
+      - name: Resolve and validate pull request
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          PR_NUMBER="$(gh pr list --repo '${{ github.repository }}' --state open --head agent/v42-deployment --base main --json number --jq '.[0].number')"
+          test -n "$PR_NUMBER"
+          test "$(gh pr view "$PR_NUMBER" --repo '${{ github.repository }}' --json baseRefName --jq .baseRefName)" = "main"
+          test "$(gh pr view "$PR_NUMBER" --repo '${{ github.repository }}' --json headRefName --jq .headRefName)" = "agent/v42-deployment"
+          echo "PR_NUMBER=$PR_NUMBER" >> "$GITHUB_ENV"
+
+      - name: Verify final diff scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t changed < <(git diff --name-only origin/main...HEAD)
+          overlay_count=0
+          for path in "${changed[@]}"; do
+            case "$path" in
+              .github/workflows/merge-v42-branch.yml|.v42-merge/READY)
+                ;;
+              .github/workflows/*|screening/*)
+                overlay_count=$((overlay_count + 1))
+                ;;
+              *)
+                echo "Unexpected changed path: $path" >&2
+                exit 1
+                ;;
+            esac
+          done
+          test "$overlay_count" = "71"
+          if git diff --name-status origin/main...HEAD | grep '^D' | grep -v -E '^D[[:space:]]+\.github/workflows/merge-v42-branch\.yml$|^D[[:space:]]+\.v42-merge/READY$' | grep -q .; then
+            echo "Unexpected deletion in V4.2 overlay" >&2
+            exit 1
+          fi
+
+      - name: Run V4.2 verification
+        shell: bash
+        run: |
+          set -euo pipefail
+          QRGF_TEST_RESULTS=/tmp/qrgf-v42-merge-tests.json python screening/qrgf_v42/tests/run_tests.py
+          python -m compileall -q screening/qrgf_v42 screening/engine
+
+      - name: Smoke fail-closed production start
+        shell: bash
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp -d)"
+          cp -a . "$tmp/repo"
+          cd "$tmp/repo"
+          before_registry="$(find data/v4/registry -type f 2>/dev/null | wc -l | tr -d ' ')"
+          python screening/engine/promote_v42_state.py --repo-root . --published-at 2026-08-19T14:00:00Z >/tmp/v42-merge-promote-smoke.out 2>&1
+          test ! -f data/v42/master-core500/latest.json
+          after_registry="$(find data/v4/registry -type f 2>/dev/null | wc -l | tr -d ' ')"
+          test "$before_registry" = "$after_registry"
+          python screening/engine/build_v42_market_view.py --repo-root . >/tmp/v42-merge-market-smoke.out 2>&1
+          grep -q 'MASTER_CORE500_NOT_INITIALIZED' data/v42/market/latest.json
+
+      - name: Remove temporary merge helper
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .v42-merge
+          rm -f .github/workflows/merge-v42-branch.yml
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add -A -- .github/workflows .v42-merge
+          git commit -m "Remove temporary V4.2 merge helper"
+          git push origin HEAD:agent/v42-deployment
+
+      - name: Merge verified pull request
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh pr ready "$PR_NUMBER" --repo '${{ github.repository }}' >/dev/null 2>&1 || true
+          HEAD_SHA="$(git rev-parse HEAD)"
+          gh pr merge "$PR_NUMBER" --repo '${{ github.repository }}' --merge --match-head-commit "$HEAD_SHA" --delete-branch=false
+
+      - name: Verify merged main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git cat-file -e origin/main:screening/engine/promote_v42_state.py
+          git cat-file -e origin/main:screening/engine/build_v42_market_view.py
+          git cat-file -e origin/main:.github/workflows/promote-v42-state.yml
+          git cat-file -e origin/main:.github/workflows/update-v42-market.yml
+          if git cat-file -e origin/main:.github/workflows/merge-v42-branch.yml 2>/dev/null; then
+            echo "Temporary merge helper leaked into main" >&2
+            exit 1
+          fi
