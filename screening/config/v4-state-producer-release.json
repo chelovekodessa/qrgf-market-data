@@ -13,8 +13,8 @@
     "registry_single_writer": true
   },
   "producer_hashes": {
-    "promote_v4_state.py": "a48398b207c39cb6939face74fece8e4d4c03a76d954779ab81ecd5c089b768e",
-    "test_promote_v4_state.py": "8ff79e08d158145d0eed1d60070cacd57d2b69f8eeaf93ef00a61bcb6b67ce72",
+    "promote_v4_state.py": "291f61e61ed60b098d0467ce5ab5173868c64aec9b3e25acb433468974a1fb63",
+    "test_promote_v4_state.py": "7938e332c7565160de3ec83560baa82be8707d62c4d4ae879ca61435bd181771",
     "promote-v4-state.yml": "4395d4dd422df80123d4d991cd8d6e20ca808db0e458b5e71b5027659d24e0bb"
   }
 }
