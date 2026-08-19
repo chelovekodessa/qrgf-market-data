@@ -395,12 +395,13 @@ def legacy_journal_history(root:Path)->dict[str,Any]:
     path=root/"data/v4/migrations/v410/proposal-journal-history.json"
     if not path.exists():return {"present":False,"verified":False,"records":0}
     value=load(path);body={k:x for k,x in value.items() if k!="history_sha256"}
-    if value.get("schema_version")!="1.0.0" or value.get("kind")!="qrgf_v41_legacy_proposal_journal_history" or value.get("history_sha256")!=sem(body) or value.get("git_history_is_authoritative_archive") is not True or value.get("future_journal_deletion_forbidden") is not True:raise ValueError("invalid V4.1 legacy proposal journal history")
+    if value.get("schema_version")!="1.0.0" or value.get("kind")!="qrgf_v41_legacy_proposal_journal_history" or value.get("history_sha256")!=sem(body) or value.get("git_history_is_authoritative_archive") is not True or value.get("raw_proposals_restored_to_current_journal") is not True or value.get("future_journal_deletion_forbidden") is not True:raise ValueError("invalid V4.1 legacy proposal journal history")
     records=value.get("records") or []
+    restored={str(item.get("proposal_sha256") or "") for item in expand_registry_files(root/"data/v4/registry/proposals")}
     for record in records:
         proposal_sha=require_hash(record.get("proposal_sha256"),"legacy proposal hash");receipt=receipt_path(root,proposal_sha)
-        if not receipt.exists() or validate_receipt_record(load(receipt)).get("proposal_sha256")!=proposal_sha:raise ValueError("legacy proposal history receipt mismatch")
-    return {"present":True,"verified":True,"records":len(records),"history_sha256":value["history_sha256"]}
+        if proposal_sha not in restored or not receipt.exists() or validate_receipt_record(load(receipt)).get("proposal_sha256")!=proposal_sha:raise ValueError("legacy proposal history restoration mismatch")
+    return {"present":True,"verified":True,"restored_to_current_journal":True,"records":len(records),"history_sha256":value["history_sha256"]}
 def migration_report(root:Path)->dict[str,Any]:
     legacy=root/"data/v4/bootstrap/latest.json";detail={"present":legacy.exists(),"classification":"historical_validation_artifact_only"};legacy_keys=[]
     if legacy.exists():
