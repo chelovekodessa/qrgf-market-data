@@ -1,18 +1,20 @@
 {
+  "schema_version": "1.0.0",
+  "release_version": "2.0.0",
   "contracts": {
+    "master_core500_exactly_500": true,
+    "selector_certificate_required": true,
+    "campaign_state_machine_hash_bound": true,
+    "daily_broad_requires_complete": true,
     "append_only_proposal_journal": true,
-    "core500_is_bootstrap_not_whitelist": true,
     "progress_requires_current_receipt": true,
     "quality_policy_version": "4.0.0-structural-v1",
-    "readback_receipts": true,
     "registry_replay_safe": true,
     "registry_single_writer": true
   },
   "producer_hashes": {
-    "promote-v4-state.yml": "dcf8ca27af38ba91df13d9ad873a740bc1fc21b7a926a59d0a3b58d953002fd6",
-    "promote_v4_state.py": "cd4f6d2146b3b9cba1de702c109749929466bb970079077f5d152a9377cf589d",
-    "test_promote_v4_state.py": "3811c915a8ace09a0c6b14db795a7e51356940a62bf7a64eab9e1731d096d789"
-  },
-  "release_version": "1.1.0",
-  "schema_version": "1.0.0"
+    "promote_v4_state.py": "6066da8fda5d243c563fdb889dbf0433155c6fd57366ac9ef2b21b2dac770a15",
+    "test_promote_v4_state.py": "3491565edae35f6d6e61763eeab57e075e8bb515b6f2414b40b9cefabc07e169",
+    "promote-v4-state.yml": "4395d4dd422df80123d4d991cd8d6e20ca808db0e458b5e71b5027659d24e0bb"
+  }
 }
