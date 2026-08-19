@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-19T08:05:03Z",
+  "retrieved_at": "2026-08-19T14:09:25Z",
   "history_start": "2025-07-14",
   "history_end": "2026-08-18",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "88c3b6f6b930ccddb62b2d5ac98de555dbe38f69f78142c68b5cc507365376fc",
+    "manifest_sha256": "b330391025d1b84618cba5bcb491e6e56dc56b1c9eb58e2ef4d3f039c46dfef5",
     "accepted_unique": 5118,
     "bundle_csv_sha256": "89eef0e6c0ee5c443117a57dd763e917a88df118511e7a2ddfd1ecad7375185b",
-    "source_raw_sha256": "5c8c98a4cd932d14103c7603faa60f66ed82641b7282af527ebc4f6ff40807e0",
-    "retrieved_at": "2026-08-19T08:04:43Z"
+    "source_raw_sha256": "73c4273446d01b013b70d43950ad96c84a556fdeef8252f6518afa707178d833",
+    "retrieved_at": "2026-08-19T14:09:04Z"
   },
   "rows": 5118,
   "page_size": 250,
@@ -57,7 +57,7 @@
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "f0ef41657eb2261a8bf94ebe07136a2e2fa6c2b01f9a1eaa13ad5861a180da7d"
+      "sha256": "6bf0a94cc2dd43aa5c8b9177ed393f5637bf51f0d094715bf21a7afd9cf18005"
     },
     {
       "name": "page-0009.csv",
@@ -129,10 +129,10 @@
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 5118,
-    "sha256": "3fd2e1cf329ceeec0ac808387af31a964a04548093f353679134d48bef61d14f",
-    "gzip_sha256": "07061b8d52b3d5544a1e8702dbbed7d7ceaa6d93e1ee4beb54798a8fdb6e721c",
-    "csv_sha256": "b9d15956bad9b0d03217b3dfcdec52e812c2159960d6b86e9f0098cc3b5a8d6c",
-    "bytes": 633265,
+    "sha256": "7034b313347de1b73d1a640e712a26f631db2bc6ad20cfedbc4734d5b3acc901",
+    "gzip_sha256": "63fe22b5376945a7ce9df4cefe9d5312b4c55a96a5284008a2417a7aba989f12",
+    "csv_sha256": "92e181963b40120c6053da069f5102d416c474557107bb6476f66d4d19139df1",
+    "bytes": 633269,
     "line_count": 8225
   },
   "producer_hashes": {
@@ -152,7 +152,7 @@
     "request_start": "2025-07-14T00:00:00Z",
     "request_end": "2026-08-18T23:59:59Z",
     "rate_limit": "200",
-    "rate_limit_remaining": "198",
+    "rate_limit_remaining": "199",
     "errors": [],
     "short_history_extension": {
       "requested_symbols": 309,
