@@ -68,6 +68,12 @@ def main():
         p.immutable(root/"data/v4/campaigns"/master["master_sha256"]/"gates/runtime-reconstruction.json",gate(master,"runtime"))
         blocked=p.rebuild_campaign_state(root,rel1,t1)
         check(blocked["phase"]=="PILOT" and blocked["daily_broad_allowed"] is False,"500 durable records bypassed PILOT gate")
+    with tempfile.TemporaryDirectory() as td:
+        root=Path(td);p.publish_master(root,proposal(bndl),rel1,t1)
+        for scope in master["scopes"][:50]:p.publish_passport(root,make_passport(scope["ticker"],scope["issuer_id"]),rel1,t1)
+        p.immutable(root/"data/v4/campaigns"/master["master_sha256"]/"gates/pilot-registry.json",gate(master,"pilot"))
+        blocked=p.rebuild_campaign_state(root,rel1,t1)
+        check(blocked["phase"]=="CANARY" and blocked["daily_broad_allowed"] is False,"PILOT gate bypassed runtime reconstruction")
     print("V4.1 STATE PRODUCER SELFTEST PASS")
     return 0
 if __name__=="__main__":raise SystemExit(main())
