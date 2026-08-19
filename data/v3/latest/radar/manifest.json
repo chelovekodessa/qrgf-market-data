@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "created_at": "2026-08-19T03:18:16Z",
+  "created_at": "2026-08-19T08:06:39Z",
   "issuer_identity": {
     "cik_mapped_rows": 0,
     "etf_identity_is_security_specific": true,
@@ -10,118 +10,118 @@
   "kind": "qrgf_market_radar",
   "l1_lineage": {
     "history_end": "2026-08-18",
-    "manifest_sha256": "76181b14d7aa658998583865442ed7ba66960d8b1ad996f3fbb14e10d24c64cd",
-    "rows": 5117,
+    "manifest_sha256": "1d1610fd681fc9f1a1a3540f5eafd155d85a8a9ef85b9543775b925fa58247fd",
+    "rows": 5118,
     "source_id": "alpaca_sip_daily_free_l1"
   },
-  "manifest_semantic_sha256": "80a8c678fa1acb4cece9a75e8f9ccf6addd3d1d0d0ab79f7c91dbc99446a6d1d",
+  "manifest_semantic_sha256": "9b8407c69e38bdbe58e13a62ed35ff9b748ce9e79121483a399ccb04579ad6ee",
   "market_session_id": "2026-08-18",
   "page_size": 250,
   "pages": [
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "9d7c09ddb8e24416275812eb23d7821f9aff47458b616b25f43845076ee5d2de"
+      "sha256": "4af41b41bee1f01044ee2152dc31c71badac477cef550b4a020498c114c98d6c"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "cdf37f2503dc39544ae800f6ff6bb4c1d3343b31aacfc1a20c599749078396c2"
+      "sha256": "f2f74820957e1145d74c43cdcd9d9ee7286cb0c5c38cd622c21897db96aa9fb6"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "cbe1ff6c692609dc48a7b2b9aaca328c43ed3f9fa2feda8356e05ddb5e572e22"
+      "sha256": "312f3493dadbbf2e938223671d352b6b1fbb9a4d9c31ade6b13e1565297e4551"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "4b6444265c83ba2eef53957aeaca7a06039c4941aee0f748b6ef0090b2d07237"
+      "sha256": "d32bf29f94c8137a35015044d08016850b7bb115b4417304d327a66d2066a6b4"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "5ac04bd1ae6dad52484b8e1216a951e22973f7f9135eb5e3116f91e0700f2cbd"
+      "sha256": "3ad4b587c34e945d57bbfc24ea740e202bf3532d4c3096c6f4ef81db2980a9bd"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "8b4df5e02a609f6fdb1873b706f1d09362635a4a616225559b7e0780133420f5"
+      "sha256": "48726e546cb1d4f7e36e07d810575a1ae1dd369f1edb00263c4203009ddc10c3"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "659ee5f41a350e17289a2021384b5125127021a6ef81076af5274d3a68ecd136"
+      "sha256": "9f8a64d39273e42bbac6f6906e48a60a8d6db3d0bc1fcba4da65bc15c178743f"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "b84f8112f28c7dacb1ca4feacee35e8e7644a24cda2b2f6dfc650933a05dbd87"
+      "sha256": "0cb950a51b0048961618311e04c5ddf5c614f734cdbe1c38faeee9740f8ea9b2"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "09a5ba6b19dab9002be2bde5a047327ab50b9c08717156f1e6cffde4523527fc"
+      "sha256": "527e9197a66548338c80be1b481eb6bef1b018ac8197fef974554b8e3e483ea8"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "eafa3e49a99496e9b847c94a13ce17cee5a121aa9241588119bb285a2e9259bf"
+      "sha256": "e4e90e1dd4b6fad1fc2ede982651a347e870f301bf01a86bd960e3c38109eec4"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "7b02a0b64656cf1792e7a61019bb7a863092d5c5d0c013e724991136f7f40d03"
+      "sha256": "53c7e520bea341f832fa7ef48a9d0d614c2a642fa289bc970f3fd385bfe28589"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "1a80121c22c954394c51e164df12d044a03579b6aa15f9e573187d5910e3a808"
+      "sha256": "534ed3da0ba3d0c7badecd0666dd493ce9185fc9f1046749bcdc9fbac5179506"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "99684230fa604d56f9b41bee104b1064bf4843b29667b88cff37602c665cff68"
+      "sha256": "da1a3846b68ca3800e6e58c561ebf4d547b421c7ed111567dd7defeb0278fa18"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "b51e5bc2d1eaee041cc4d91477825dd819d009a7f2de684739ef55340c42127e"
+      "sha256": "381ab47136e6c5d33a75278f2328a1c7c3a78910b8683d02015f38ef66e5d57a"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "9d7b85d764505f2e4753718fc2a905f2e88f06ba0955f2cc6fdeeff8ae92e183"
+      "sha256": "cd7b29584ca7da81e1a2b71888107ee8f31bc044f923d5943d406e007c23e076"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "94cc77e9002f59f848e3222d18f5a43565cbc0d07dc01fa5af9fe889a861b594"
+      "sha256": "64d4f3d6d034358c91dd4c9ba5674eb2e4513a4aa1025ba3645c8fd85a5ccfc1"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "71e1190b0cd72b2ca2960300b9313fff049fee0f0cbccf412d58da3ad7c464e4"
+      "sha256": "a2a5291ec0eb6e7ef77e50ce06ff6e163105d9fc76aadccdfd50e7f5a28135fa"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "dde19ee4d2cc797c022af3d42ac3c9ee99d97d7e11fd93534ff0511f61241914"
+      "sha256": "27a0767943a7f84abe3bb9d86fc4382d23b11cb59421bba15491a113ef4af8cc"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "0085166c9bab8171d23574b225d43abcded67d6a5487cae264872dd7b896d4ef"
+      "sha256": "7aab8b8b8512065645ad2c63236d7eeda1c6593581e5445c68433514deda5ca3"
     },
     {
       "name": "page-0020.csv",
       "rows": 250,
-      "sha256": "75afd58479061a77ed3b6d6612344a1c55723262f51273cff00e9c13f82ec792"
+      "sha256": "cabf4167d8fd7f4623e51392c8998465827330812a7943cdf2a49a7057530338"
     },
     {
       "name": "page-0021.csv",
-      "rows": 117,
-      "sha256": "eb61c1fe5b77888fa09ea87ac5b94b5a274914a6aa90f02c57e97c6093e4c3a4"
+      "rows": 118,
+      "sha256": "6dd05bdc2239f56254ad6c0b8c73edd091b4801f5799fa5082e4a01c11d39407"
     }
   ],
   "producer_release": {
@@ -141,9 +141,9 @@
     },
     "release_version": "4.0.0"
   },
-  "rankable_rows": 3615,
-  "rows": 5117,
-  "rows_semantic_sha256": "aadc6303f205030d2568cf86cb062804bfff330d1914cbe193d4622ab2de5124",
+  "rankable_rows": 3617,
+  "rows": 5118,
+  "rows_semantic_sha256": "94462099219d80c906d1f2823f13207f86988a76e94c8d0594d75890ac1d157c",
   "schema_version": "1.0.0",
   "setup_model": {
     "fixed_candidate_count_cutoff": false,
@@ -157,6 +157,6 @@
       "pullback_geometry": 25
     }
   },
-  "snapshot_content_sha256": "6f48234807332dd29fad6943649ce227f3087cef3a46c061549cee9839e2bdab",
-  "snapshot_id": "6f48234807332dd29fad6943"
+  "snapshot_content_sha256": "7e9018a5714b3e8ca21b7f9790d57c51076fa6b3dee870e823741d1ee5fb02af",
+  "snapshot_id": "7e9018a5714b3e8ca21b7f97"
 }
