@@ -46,6 +46,9 @@ def main():
     contaminated=copy.deepcopy(bndl);contaminated["candidate_source"]["candidates"][0]["facts"]["current_price"]=100;contaminated["candidate_source"]["source_sha256"]=p.sem({k:v for k,v in contaminated["candidate_source"].items() if k!="source_sha256"})
     try:p.validate_master_bundle(contaminated);raise AssertionError("recovery contaminated source accepted")
     except ValueError as exc:check("recovery/current-price" in str(exc),str(exc))
+    aliased=copy.deepcopy(bndl);aliased["candidate_source"]["candidates"][0]["facts"]["last_price"]=100;aliased["candidate_source"]["source_sha256"]=p.sem({k:v for k,v in aliased["candidate_source"].items() if k!="source_sha256"})
+    try:p.validate_master_bundle(aliased);raise AssertionError("aliased market source accepted")
+    except ValueError as exc:check("recovery/current-price" in str(exc),str(exc))
     with tempfile.TemporaryDirectory() as td:
         root=Path(td);pr=proposal(bndl);first=p.publish_master(root,pr,rel1,t1);check(first["status"]=="applied","MASTER publish failed");check(p.publish_master(root,pr,rel2,t2)["status"]=="already_applied","MASTER replay failed")
         state0=p.rebuild_campaign_state(root,rel1,t1);check(state0["phase"]=="CANARY" and state0["daily_broad_allowed"] is False,"initial phase wrong")
