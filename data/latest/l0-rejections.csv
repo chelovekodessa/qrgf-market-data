@@ -4171,6 +4171,7 @@ KRYP,ProShares CoinDesk 20 Crypto ETF,P,,,etf,ineligible,False,N,Y,,,approved_al
 KSA,iShares MSCI Saudi Arabia ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KSEP,Innovator U.S. Small Cap Power Buffer ETF - September,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KSLV,Kurv Silver Enhanced Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+KSMH,xETFs Korea AI Semiconductor,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KSPY,KraneShares Hedgeye Hedged Equity Index ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KSTR,KraneShares China Technology & Semiconductor STAR 50 Index ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KTEC,KraneShares Hang Seng TECH Index ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist

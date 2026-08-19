@@ -3,11 +3,11 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-19T08:04:43Z",
-  "source_file_creation_time": "0819202603:04",
-  "raw_sha256": "5c8c98a4cd932d14103c7603faa60f66ed82641b7282af527ebc4f6ff40807e0",
-  "raw_bytes": 992605,
-  "raw_rows": 13161,
+  "retrieved_at": "2026-08-19T14:09:04Z",
+  "source_file_creation_time": "0819202610:03",
+  "raw_sha256": "73c4273446d01b013b70d43950ad96c84a556fdeef8252f6518afa707178d833",
+  "raw_bytes": 992664,
+  "raw_rows": 13162,
   "accepted_unique": 5118,
   "page_size": 250,
   "page_count": 21,
@@ -130,8 +130,8 @@
   },
   "rejection_audit": {
     "name": "l0-rejections.csv",
-    "rows": 8043,
-    "sha256": "874f794a8607edcb7d8405c38448e75a37bda91d2064040eb5e51c219732ae6d"
+    "rows": 8044,
+    "sha256": "9797606dba3b18f44f7ccbf21f0bcc506343ab7ae895514a511430eb58d1026b"
   },
   "producer_hashes": {
     "build_universe.py": "fee1055e9ce7f5cdb6df451342ad88cf2106942c96489c0b525a300716cb1d28",
@@ -142,11 +142,11 @@
     "update-l0.yml": "65836f913a4bbf94a1f8a055d39f4f36ecb9c468f991112ecba3f7f2ef572b56"
   },
   "summary": {
-    "raw_rows": 13161,
+    "raw_rows": 13162,
     "accepted_unique": 5118,
     "structurally_eligible": 5118,
     "rankable_l0": 5118,
-    "rejected_rows": 8043,
+    "rejected_rows": 8044,
     "quarantined_rows": 0,
     "ambiguous_review_count": 131,
     "duplicate_contract_rows": 0,
@@ -168,7 +168,7 @@
     "acquisition_vehicle": 612,
     "adr_warrant_right_or_unit": 2,
     "debt_note_or_bond": 205,
-    "etf_not_in_approved_allowlist": 5583,
+    "etf_not_in_approved_allowlist": 5584,
     "limited_partnership_not_common_equity": 10,
     "metadata_or_blank": 1,
     "non_common_symbol_pattern": 470,
