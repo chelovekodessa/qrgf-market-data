@@ -59,6 +59,15 @@ def main():
         state499=p.rebuild_campaign_state(root,rel1,t1);check(state499["phase"]=="CORE500" and state499["daily_broad_allowed"] is False,"499 enabled broad")
         p.publish_passport(root,make_passport(master["scopes"][499]["ticker"],master["scopes"][499]["issuer_id"]),rel1,t1);complete=p.rebuild_campaign_state(root,rel1,t1);check(complete["phase"]=="COMPLETE" and complete["daily_broad_allowed"] is True,"500 did not complete")
         recovered=p.rebuild_campaign_state(root,rel1,t1);check(recovered["phase"]=="COMPLETE" and recovered["master_durable_count"]==500,"runtime reconstruction failed")
+    # A full set of durable records is still only PILOT until the separate
+    # zero-loss/reuse attestation exists.  This catches the old count-only
+    # completion defect directly.
+    with tempfile.TemporaryDirectory() as td:
+        root=Path(td);p.publish_master(root,proposal(bndl),rel1,t1)
+        for scope in master["scopes"]:p.publish_passport(root,make_passport(scope["ticker"],scope["issuer_id"]),rel1,t1)
+        p.immutable(root/"data/v4/campaigns"/master["master_sha256"]/"gates/runtime-reconstruction.json",gate(master,"runtime"))
+        blocked=p.rebuild_campaign_state(root,rel1,t1)
+        check(blocked["phase"]=="PILOT" and blocked["daily_broad_allowed"] is False,"500 durable records bypassed PILOT gate")
     print("V4.1 STATE PRODUCER SELFTEST PASS")
     return 0
 if __name__=="__main__":raise SystemExit(main())
