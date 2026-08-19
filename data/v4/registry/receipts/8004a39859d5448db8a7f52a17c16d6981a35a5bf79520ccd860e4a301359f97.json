@@ -1,0 +1,11 @@
+{
+  "entry_sha256": "4bef8e3e369d338da8e5b4a2fe3fbded168842e031a02444b6117a5726fdc688",
+  "kind": "qrgf_v4_registry_write_receipt",
+  "passport_hash": "2ddc63d58fb3020f9c68892d75248ae2c0520ee500db4f1b08a0f5b817270531",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "proposal_sha256": "8004a39859d5448db8a7f52a17c16d6981a35a5bf79520ccd860e4a301359f97",
+  "published_at": "2026-08-19T02:20:08Z",
+  "receipt_sha256": "ca62fe1e3f013552b33ec8b3dfe6948523a674f8507a757968d117cfda238bea",
+  "research_scope_key": "CIK:0001878848|common_equity",
+  "schema_version": "1.0.0"
+}

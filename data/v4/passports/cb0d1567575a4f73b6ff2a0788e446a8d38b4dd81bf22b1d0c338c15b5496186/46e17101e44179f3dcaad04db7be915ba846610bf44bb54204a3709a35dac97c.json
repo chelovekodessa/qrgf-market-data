@@ -1,0 +1,263 @@
+{
+  "as_of": "2026-08-18T20:14:00Z",
+  "component_details": {
+    "business_durability": {
+      "expected_fact_count": 4,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.competitive_position_score",
+        "facts.moat_quality_score",
+        "facts.management_quality_score",
+        "facts.business_reality_score"
+      ],
+      "known_fact_count": 4,
+      "score": 46.0
+    },
+    "capital_discipline": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.dilution_pct_yoy",
+        "facts.sales_efficiency_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 22.33
+    },
+    "financial_resilience": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 33.33,
+      "fact_fields": [
+        "facts.cash_debt"
+      ],
+      "known_fact_count": 1,
+      "score": 99.0
+    },
+    "growth_quality": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.revenue_cagr_3y_pct",
+        "facts.multi_period_growth_quality_score"
+      ],
+      "known_fact_count": 2,
+      "score": 76.5
+    },
+    "unit_economics": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.operating_margin_pct",
+        "facts.fcf_margin_pct"
+      ],
+      "known_fact_count": 2,
+      "score": 10.0
+    }
+  },
+  "economic_archetype": "recognized_growth",
+  "evidence_lineage": [
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "5c8f574e0c28bf6e14943657ce5202b298d1808104387838229cabbfb93f0e69",
+      "field": "facts.business_reality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981+0001193125-26-349288+0001193125-26-347973",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "8614abf9a260a647cd0470608d11756570a727feb05c194611b6119edfb98152",
+      "field": "facts.cash",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "9ce53c1d6d115c112dcb3272a5fd94353b60dec6c8f90752df70c8a7d5d19e98",
+      "field": "facts.competitive_position_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981+0001193125-26-349288+0001193125-26-347973",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "7e6c01eb56c0bbd6cad33ef8bc51b0e29f02d37ae61c5490a788b32b574f2a5a",
+      "field": "facts.debt",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "d827c1e1f3c12ec677d261dc056972c0c871cbc1e4805c41901b71449ce0d86e",
+      "field": "facts.dilution_pct_yoy",
+      "period": "FY2025 vs FY2024",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "d30e61b21c34fa6816f062d609a7ae6521ce54ea97371dc94436adb6fef98bbe",
+      "field": "facts.fcf_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "19584b605ae4666d024488c8798c9b9a5ef2070445c1782e19c64a54073073b7",
+      "field": "facts.management_quality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981+0001193125-26-349288+0001193125-26-347973",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "2765497ace658f33100411d6e956dff507e8238844efe494c2b61f9cdbde7ab6",
+      "field": "facts.moat_quality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981+0001193125-26-349288+0001193125-26-347973",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "e82df93b177fb22d2dd187ae2d0516b73abff84b69608e84b7fcb88cb0e50f6c",
+      "field": "facts.multi_period_growth_quality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981+0001193125-26-349288+0001193125-26-347973",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "aa617f96ab8546c2c59304fc1c10f93f517653083325a9ebe06b309e19734c00",
+      "field": "facts.operating_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-12-31T00:00:00Z",
+      "evidence_id": "17d82a53ac5943490f639819a3c92561fb83978de82cfc5e13a455e494d3a914",
+      "field": "facts.revenue_cagr_3y_pct",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981+0001213900-23-019939",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "8bd27364ab118b98d1ac4e1c552f619ca38169ead0317a18d5e78ca021ecc36d",
+      "field": "facts.sales_efficiency_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001213900-26-035981+0001193125-26-349288+0001193125-26-347973",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    }
+  ],
+  "issuer_id": "CIK:0001646188",
+  "kind": "qrgf_quality_passport",
+  "listing_overlay": "none",
+  "quality_policy_version": "4.0.0-structural-v1",
+  "schema_version": "1.0.0",
+  "structural_facts": {
+    "business_reality_score": 58,
+    "cash": 550744000,
+    "competitive_position_score": 52,
+    "debt": 8284000,
+    "dilution_pct_yoy": 308.662059,
+    "fcf_margin_pct": -80.516844,
+    "management_quality_score": 32,
+    "moat_quality_score": 42,
+    "multi_period_growth_quality_score": 55,
+    "operating_margin_pct": -115.085451,
+    "revenue_cagr_3y_pct": 187.90498,
+    "sales_efficiency_score": 30
+  },
+  "summary": {
+    "archetype_resolution": "explicit_validated_archetype",
+    "as_of": "2026-08-18T20:14:00Z",
+    "contract_id": "nasdaqtrader:Q:ONDS",
+    "economic_archetype": "recognized_growth",
+    "evidence_validated": true,
+    "hard_vetoes": [],
+    "issuer_id": "CIK:0001646188",
+    "listing_overlay": "none",
+    "missing_clearance_checks": [],
+    "quality_components": {
+      "business_durability": 46.0,
+      "capital_discipline": 22.33,
+      "financial_resilience": 99.0,
+      "growth_quality": 76.5,
+      "unit_economics": 10.0
+    },
+    "quality_coverage_pct": 85.71,
+    "quality_eligible": false,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "quality_result_sha256": "26f3073c290b9fffee26f71b348facbda14e7960dbedeb2910ebfa89b0de5656",
+    "quality_score": 56.12,
+    "quality_status": "rejected",
+    "quality_status_reason": "below_minimum_structural_quality",
+    "reuse_class": "structural_quality",
+    "security_type": "common_equity",
+    "ticker": "ONDS"
+  }
+}

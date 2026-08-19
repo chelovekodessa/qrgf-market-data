@@ -1,0 +1,263 @@
+{
+  "as_of": "2026-08-18T20:14:00Z",
+  "component_details": {
+    "business_durability": {
+      "expected_fact_count": 4,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.competitive_position_score",
+        "facts.moat_quality_score",
+        "facts.management_quality_score",
+        "facts.business_reality_score"
+      ],
+      "known_fact_count": 4,
+      "score": 79.25
+    },
+    "capital_discipline": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.dilution_pct_yoy",
+        "facts.sales_efficiency_score",
+        "facts.management_quality_score"
+      ],
+      "known_fact_count": 3,
+      "score": 45.0
+    },
+    "financial_resilience": {
+      "expected_fact_count": 3,
+      "fact_coverage_pct": 33.33,
+      "fact_fields": [
+        "facts.cash_debt"
+      ],
+      "known_fact_count": 1,
+      "score": 64.41
+    },
+    "growth_quality": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.revenue_cagr_3y_pct",
+        "facts.multi_period_growth_quality_score"
+      ],
+      "known_fact_count": 2,
+      "score": 91.5
+    },
+    "unit_economics": {
+      "expected_fact_count": 2,
+      "fact_coverage_pct": 100.0,
+      "fact_fields": [
+        "facts.operating_margin_pct",
+        "facts.fcf_margin_pct"
+      ],
+      "known_fact_count": 2,
+      "score": 43.25
+    }
+  },
+  "economic_archetype": "recognized_growth",
+  "evidence_lineage": [
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "5ef4425404dca7cdec1801de963d6eb67649e7c448c2e10c6dcd68e08cf0d739",
+      "field": "facts.business_reality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063+0001878848-26-000026+0001140361-26-028871",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-03-31T00:00:00Z",
+      "evidence_id": "5d5d501c5a9faeacef4104121a4c12784ab64bc787a62dd748f4e5482ad4a6fc",
+      "field": "facts.cash",
+      "period": "Q3 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-26-000026",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "a5e01d6ca6b54c23fc79e51bec36f7ec86c8fc5ab26362ed921bdd80dfab98cb",
+      "field": "facts.competitive_position_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063+0001878848-26-000026+0001140361-26-028871",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-03-31T00:00:00Z",
+      "evidence_id": "8d79bd80c4f0892c9261acfa69d2570c6beedf65765ef03e16e47e448039d364",
+      "field": "facts.debt",
+      "period": "Q3 FY2026",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-26-000026",
+        "source_type": "official_filing"
+      },
+      "unit": "USD"
+    },
+    {
+      "as_of": "2025-06-30T00:00:00Z",
+      "evidence_id": "d2fe194af4fb2d55ca8a4009ab86389c7add86c493a7254272b1ee040da11287",
+      "field": "facts.dilution_pct_yoy",
+      "period": "FY2025 vs FY2024",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-06-30T00:00:00Z",
+      "evidence_id": "8e9d2dafe502b77d5cb395a32eb6d4d042e199737df81b657e36d129d1d78aff",
+      "field": "facts.fcf_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "1cf6b4a571597043708741e03d59e80ecdd1fe394b17cf1fac91f4bda3d582ff",
+      "field": "facts.management_quality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063+0001878848-26-000026+0001140361-26-028871",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "9e50bc92dc5891fed597fe0259c3d6b6903ec88d66c8cbd788987d44f898e8d2",
+      "field": "facts.moat_quality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063+0001878848-26-000026+0001140361-26-028871",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "3995df3d33be449ab5c79a24a6f41e5a2c5cbec5a7194fdf6ee8c4e3595b4f6a",
+      "field": "facts.multi_period_growth_quality_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063+0001878848-26-000026+0001140361-26-028871",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    },
+    {
+      "as_of": "2025-06-30T00:00:00Z",
+      "evidence_id": "c9ad20fac6ab97eeb33d87b64631c60d031597b5f98077be09ea7325a0b0ded1",
+      "field": "facts.operating_margin_pct",
+      "period": "FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2025-06-30T00:00:00Z",
+      "evidence_id": "994e028094fd8d763cf7e51caaeca6af3dcae363e0cd62cc98c17c921a941f42",
+      "field": "facts.revenue_cagr_3y_pct",
+      "period": "FY2022-FY2025",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063+0001140361-22-033208",
+        "source_type": "official_filing"
+      },
+      "unit": "percent"
+    },
+    {
+      "as_of": "2026-08-18T20:14:00Z",
+      "evidence_id": "88a25266d676dfb8311e378fc9eb72e178965e7f1b1c31a251e2fadca2d14007",
+      "field": "facts.sales_efficiency_score",
+      "period": "multi-period structural review",
+      "quality_status": "verified",
+      "retrieved_at": "2026-08-18T20:14:00Z",
+      "source": {
+        "source_id": "SEC:0001878848-25-000063+0001878848-26-000026+0001140361-26-028871",
+        "source_type": "official_filing"
+      },
+      "unit": "score_0_100"
+    }
+  ],
+  "issuer_id": "CIK:0001878848",
+  "kind": "qrgf_quality_passport",
+  "listing_overlay": "none",
+  "quality_policy_version": "4.0.0-structural-v1",
+  "schema_version": "1.0.0",
+  "structural_facts": {
+    "business_reality_score": 90,
+    "cash": 2213274000,
+    "competitive_position_score": 82,
+    "debt": 3687832000,
+    "dilution_pct_yoy": 231.421048,
+    "fcf_margin_pct": -65.380232,
+    "management_quality_score": 70,
+    "moat_quality_score": 75,
+    "multi_period_growth_quality_score": 85,
+    "operating_margin_pct": 3.458318,
+    "revenue_cagr_3y_pct": 103.9754,
+    "sales_efficiency_score": 60
+  },
+  "summary": {
+    "archetype_resolution": "explicit_validated_archetype",
+    "as_of": "2026-08-18T20:14:00Z",
+    "contract_id": "nasdaqtrader:Q:IREN",
+    "economic_archetype": "recognized_growth",
+    "evidence_validated": true,
+    "hard_vetoes": [],
+    "issuer_id": "CIK:0001878848",
+    "listing_overlay": "none",
+    "missing_clearance_checks": [],
+    "quality_components": {
+      "business_durability": 79.25,
+      "capital_discipline": 45.0,
+      "financial_resilience": 64.41,
+      "growth_quality": 91.5,
+      "unit_economics": 43.25
+    },
+    "quality_coverage_pct": 85.71,
+    "quality_eligible": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "quality_result_sha256": "530101963f56c411921df7114b6ff98b932d584943232469c36655d69dcdac15",
+    "quality_score": 66.27,
+    "quality_status": "pass",
+    "quality_status_reason": "structural_quality_gate_passed",
+    "reuse_class": "structural_quality",
+    "security_type": "common_equity",
+    "ticker": "IREN"
+  }
+}

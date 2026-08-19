@@ -1,0 +1,20 @@
+{
+  "entry_sha256": "2855edfdddfff231bd80f108cd8f5a3a892f5f8082bca4d1aed7a808d9ae9d88",
+  "event_scan_through": "2026-08-18",
+  "freshness_status": "fresh",
+  "issuer_id": "CIK:0001646188",
+  "kind": "qrgf_v4_registry_scope_entry",
+  "last_proposal_sha256": "29188850d138699d729941c8b07a55f323b237f7aadcd15ba95715e539c4c356",
+  "passport_hash": "46e17101e44179f3dcaad04db7be915ba846610bf44bb54204a3709a35dac97c",
+  "passport_path": "data/v4/passports/cb0d1567575a4f73b6ff2a0788e446a8d38b4dd81bf22b1d0c338c15b5496186/46e17101e44179f3dcaad04db7be915ba846610bf44bb54204a3709a35dac97c.json",
+  "producer_release_sha256": "5d258b22bcc21ad8a5d4284a05edf441a7a787839977bcc67b3ca58c43700aff",
+  "quality_as_of": "2026-08-18T20:14:00Z",
+  "quality_coverage_pct": 85.71,
+  "quality_eligible": false,
+  "quality_policy_version": "4.0.0-structural-v1",
+  "quality_score": 56.12,
+  "quality_status": "rejected",
+  "research_scope_key": "CIK:0001646188|common_equity",
+  "schema_version": "1.0.0",
+  "security_overlay": "common_equity"
+}
