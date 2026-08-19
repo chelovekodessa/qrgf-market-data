@@ -357,6 +357,12 @@ def validate_campaign_state(value:Mapping[str,Any],master:Mapping[str,Any])->dic
     if v["phase"]=="CORE500" and v.get("pilot_registry_loss_gate_passed") is not True:raise ValueError("CORE500 without PILOT gate")
     if v["phase"] in {"PILOT","CORE500","COMPLETE"} and v.get("runtime_reconstruction_gate_passed") is not True:raise ValueError("phase advanced without runtime reconstruction gate")
     return v
+def validate_campaign_pointer(value:Mapping[str,Any],master:Mapping[str,Any])->dict[str,Any]:
+    v=dict(value);body={k:x for k,x in v.items() if k!="pointer_sha256"}
+    expected_path=f"data/v4/campaigns/{master['master_sha256']}/state.json"
+    if v.get("schema_version")!="2.0.0" or v.get("kind")!="qrgf_v41_campaign_pointer" or v.get("pointer_sha256")!=sem(body) or v.get("master_sha256")!=master["master_sha256"] or v.get("state_path")!=expected_path or v.get("phase") not in PHASES or not isinstance(v.get("daily_broad_allowed"),bool):raise ValueError("invalid V4.1 campaign pointer")
+    require_hash(v.get("state_sha256"),"campaign pointer state hash");require_hash(v.get("producer_release_sha256"),"campaign pointer producer release hash")
+    return v
 def rebuild_campaign_state(root:Path,release_sha:str,published_at:str)->dict[str,Any]|None:
     loaded=load_master_bundle(root)
     if loaded is None:return None
@@ -370,12 +376,13 @@ def rebuild_campaign_state(root:Path,release_sha:str,published_at:str)->dict[str
     phase_keys=canary if phase=="CANARY" else pilot if phase=="PILOT" else keys;by_key={str(x["research_scope_key"]):x for x in master["scopes"]};next_scopes=[{k:by_key[key].get(k) for k in ("rank","ticker","contract_id","issuer_id","security_overlay","research_scope_key","bootstrap_best_lane","bootstrap_priority_score")} for key in phase_keys if key not in records]
     input_body={"master_sha256":master["master_sha256"],"selector_certificate_sha256":master["selector_certificate_sha256"],"registry_snapshot_sha256":snap["snapshot_sha256"],"runtime_gate_sha256":runtime.get("gate_sha256") if runtime else None,"pilot_gate_sha256":pilot_gate.get("gate_sha256") if pilot_gate else None}
     body={"schema_version":"2.0.0","kind":"qrgf_v41_campaign_state","state_machine_version":"4.1.0-master500-phases-v1","master_sha256":master["master_sha256"],"master_content_sha256":master["master_content_sha256"],"selector_certificate_sha256":master["selector_certificate_sha256"],"market_session_id":master["market_session_id"],"campaign_input_sha256":sem(input_body),"registry_snapshot_sha256":snap["snapshot_sha256"],"phase":phase,"canary_scope_count":15,"canary_durable_count":canary_count,"pilot_scope_count":50,"pilot_durable_count":pilot_count,"master_scope_count":MASTER_SIZE,"master_durable_count":total,"quality_resolved_count":sum(x["quality_status"] in {"pass","conditional","rejected"} for x in records.values()),"durable_incomplete_count":sum(x["quality_status"]=="insufficient_data" for x in records.values()),"canary_durable_complete":canary_count==15,"runtime_reconstruction_gate_passed":runtime_ok,"pilot_registry_loss_gate_passed":pilot_ok,"core500_complete":total==MASTER_SIZE,"daily_broad_allowed":phase=="COMPLETE","next_scope_count":len(next_scopes),"next_scopes":next_scopes[:12],"generated_at":published_at,"producer_release_sha256":release_sha}
-    state={**body,"state_sha256":sem(body)};state_path=root/"data/v4/campaigns"/master["master_sha256"]/"state.json";latest=root/"data/v4/campaign/latest.json"
+    state={**body,"state_sha256":sem(body)};validate_campaign_state(state,master);state_path=root/"data/v4/campaigns"/master["master_sha256"]/"state.json";latest=root/"data/v4/campaign/latest.json"
     if latest.exists():
-        old_pointer=load(latest);old_state=validate_campaign_state(load(root/old_pointer["state_path"]),master)
+        old_pointer=validate_campaign_pointer(load(latest),master);old_state=validate_campaign_state(load(root/old_pointer["state_path"]),master)
+        if old_pointer.get("state_sha256")!=old_state.get("state_sha256") or old_pointer.get("phase")!=old_state.get("phase") or old_pointer.get("daily_broad_allowed")!=old_state.get("daily_broad_allowed"):raise ValueError("V4.1 campaign pointer/state mismatch")
         if PHASES.index(phase)<PHASES.index(old_state["phase"]):raise ValueError("V4.1 campaign backward transition is forbidden")
         if PHASES.index(phase)>PHASES.index(old_state["phase"])+1:raise ValueError("V4.1 campaign phase skip is forbidden")
-    write(state_path,state);pointer_body={"schema_version":"2.0.0","kind":"qrgf_v41_campaign_pointer","state_path":state_path.relative_to(root).as_posix(),"state_sha256":state["state_sha256"],"master_sha256":master["master_sha256"],"phase":phase,"daily_broad_allowed":state["daily_broad_allowed"],"published_at":published_at,"producer_release_sha256":release_sha};write(latest,{**pointer_body,"pointer_sha256":sem(pointer_body)})
+    write(state_path,state);pointer_body={"schema_version":"2.0.0","kind":"qrgf_v41_campaign_pointer","state_path":state_path.relative_to(root).as_posix(),"state_sha256":state["state_sha256"],"master_sha256":master["master_sha256"],"phase":phase,"daily_broad_allowed":state["daily_broad_allowed"],"published_at":published_at,"producer_release_sha256":release_sha};pointer={**pointer_body,"pointer_sha256":sem(pointer_body)};validate_campaign_pointer(pointer,master);write(latest,pointer)
     return state
 def legacy_journal_history(root:Path)->dict[str,Any]:
     path=root/"data/v4/migrations/v410/proposal-journal-history.json"
