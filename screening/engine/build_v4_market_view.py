@@ -45,10 +45,9 @@ def load_authority(root:Path)->tuple[dict[str,Any],dict[str,Any],dict[str,Any]]|
     if loaded is None:return None
     _,bundle=loaded;master=bundle["master"];latest=root/"data/v4/campaign/latest.json"
     if not latest.exists():return bundle,master,{}
-    pointer=load(latest);body={k:v for k,v in pointer.items() if k!="pointer_sha256"}
-    if pointer.get("schema_version")!="2.0.0" or pointer.get("kind")!="qrgf_v41_campaign_pointer" or pointer.get("pointer_sha256")!=sem(body):raise ValueError("invalid V4.1 campaign pointer")
+    pointer=state.validate_campaign_pointer(load(latest),master)
     campaign_state=state.validate_campaign_state(load(root/pointer["state_path"]),master)
-    if pointer.get("master_sha256")!=master["master_sha256"] or pointer.get("state_sha256")!=campaign_state["state_sha256"]:raise ValueError("V4.1 market authority mismatch")
+    if pointer.get("state_sha256")!=campaign_state["state_sha256"] or pointer.get("phase")!=campaign_state["phase"] or pointer.get("daily_broad_allowed")!=campaign_state["daily_broad_allowed"]:raise ValueError("V4.1 market authority mismatch")
     return bundle,master,campaign_state
 def registry_summary(root:Path,scope:Mapping[str,Any],market_session:str)->dict[str,Any]:
     key=str(scope["research_scope_key"]);path=root/"data/v4/registry/scopes"/f"{digest(key)}.json"
