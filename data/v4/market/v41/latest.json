@@ -1,0 +1,10 @@
+{
+  "campaign_phase": null,
+  "kind": "qrgf_v41_market_pointer",
+  "master_sha256": null,
+  "ordinary_daily_broad_allowed": false,
+  "pointer_sha256": "bd2551e37051aabaad8de94c766249685b900e9e87020af53be88a2ace803a82",
+  "producer_release_sha256": "7bdf7343fda84195944615700f0b57437b5518bad899e29e325780a0ce9819ec",
+  "reason": "MASTER_CORE500_NOT_INITIALIZED",
+  "schema_version": "2.0.0"
+}

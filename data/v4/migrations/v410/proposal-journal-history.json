@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "qrgf_v41_legacy_proposal_journal_history",
+  "source_architecture_version": "4.0.6",
+  "legacy_deletion_detected": true,
+  "git_history_is_authoritative_archive": true,
+  "raw_proposals_restored_to_current_journal": true,
+  "future_journal_deletion_forbidden": true,
+  "records": [
+    {
+      "proposal_sha256": "0f58ec77bb3a0336467c44820c955783a5b12f3a8b7e6c9f1ae44b1a179817a5",
+      "historical_commit": "b6d1b65b80dbda61bcb71888250801b33107b4d8",
+      "historical_path": "data/v4/registry/proposals/e7f5c4fd7c1f7a13f74b8f3f29d4e6634183bda1d1d1a3c0364664a5dbb1060b.json"
+    },
+    {
+      "proposal_sha256": "584b710503605c9de83fca8f15bbba4cc36190794b39071eb9499c5c0831c63d",
+      "historical_commit": "36e72f4e1995979a4643781fa8f90fba5765384a",
+      "historical_path": "data/v4/registry/proposals/584b710503605c9de83fca8f15bbba4cc36190794b39071eb9499c5c0831c63d.json"
+    },
+    {
+      "proposal_sha256": "8ba2f1cef71cb7a93da5fbf589cf93894b9c015ab3a9b6618a778ce06b392688",
+      "historical_commit": "98ddfa0622eb3985eaa0d4ca6dab8a722469df86",
+      "historical_path": "data/v4/registry/proposals/8ba2f1cef71cb7a93da5fbf589cf93894b9c015ab3a9b6618a778ce06b392688.json"
+    },
+    {
+      "proposal_sha256": "8c91d672e0afb4b57c179a6079b83886a8b0924b09ac0e273d5c353f2474445c",
+      "historical_commit": "3eb9188ca20e1aaaab6399904392a0f802522df5",
+      "historical_path": "data/v4/registry/proposals/8c91d672e0afb4b57c179a6079b83886a8b0924b09ac0e273d5c353f2474445c.json"
+    },
+    {
+      "proposal_sha256": "d4b3531cf14b2f330e2bc529364ce02846ce8dcf72c4727ad236781c46b66c45",
+      "historical_commit": "e407b039c79094372d33b24579a8914ca2246e2c",
+      "historical_path": "data/v4/registry/proposals/d4b3531cf14b2f330e2bc529364ce02846ce8dcf72c4727ad236781c46b66c45.json"
+    },
+    {
+      "proposal_sha256": "e1ebf22f095d3e8b75923e141344e33b88927b2b117f1a9a6efa09b3df35f8d7",
+      "historical_commit": "b6d1b65b80dbda61bcb71888250801b33107b4d8",
+      "historical_path": "data/v4/registry/proposals/e7f5c4fd7c1f7a13f74b8f3f29d4e6634183bda1d1d1a3c0364664a5dbb1060b.json"
+    },
+    {
+      "proposal_sha256": "fb057203666f8bb36580ddeedc724eb4c782f71b7e23233130e0803b735fd2be",
+      "historical_commit": "b6d1b65b80dbda61bcb71888250801b33107b4d8",
+      "historical_path": "data/v4/registry/proposals/e7f5c4fd7c1f7a13f74b8f3f29d4e6634183bda1d1d1a3c0364664a5dbb1060b.json"
+    },
+    {
+      "proposal_sha256": "fd3c41c67a8eac5369535cb5a4b56f9446afaa46d99708ba224276b7c0ce8599",
+      "historical_commit": "b6d1b65b80dbda61bcb71888250801b33107b4d8",
+      "historical_path": "data/v4/registry/proposals/e7f5c4fd7c1f7a13f74b8f3f29d4e6634183bda1d1d1a3c0364664a5dbb1060b.json"
+    }
+  ],
+  "history_sha256": "1465d8516a59cf4f3cb75e67b084b236a7995b0ec41bd841c0cc1cb54fc85f24"
+}

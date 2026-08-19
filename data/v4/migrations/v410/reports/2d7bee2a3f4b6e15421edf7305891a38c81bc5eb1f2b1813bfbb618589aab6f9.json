@@ -1,0 +1,26 @@
+{
+  "kind": "qrgf_v41_migration_report",
+  "legacy_bootstrap": {
+    "classification": "historical_validation_artifact_only",
+    "cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
+    "historical_hash_valid": true,
+    "present": true,
+    "requested_size": 15,
+    "selected_scope_count": 15
+  },
+  "legacy_is_not_authoritative_master": true,
+  "legacy_proposal_journal_history": {
+    "history_sha256": "1465d8516a59cf4f3cb75e67b084b236a7995b0ec41bd841c0cc1cb54fc85f24",
+    "present": true,
+    "records": 8,
+    "restored_to_current_journal": true,
+    "verified": true
+  },
+  "legacy_scopes_preserved_count": 15,
+  "registry_knowledge_outside_master_preserved": true,
+  "registry_scope_count": 19,
+  "report_sha256": "2d7bee2a3f4b6e15421edf7305891a38c81bc5eb1f2b1813bfbb618589aab6f9",
+  "schema_version": "2.0.0",
+  "source_architecture_version": "4.0.6",
+  "target_architecture_version": "4.1.0"
+}
