@@ -11,7 +11,7 @@
   },
   "producer_hashes": {
     "build_v4_market_view.py": "11447bda713db2417ef9b7ade6d4cc31eb15df4477bf57eed0c6bc8a9460bba1",
-    "promote_v4_state.py": "a48398b207c39cb6939face74fece8e4d4c03a76d954779ab81ecd5c089b768e",
+    "promote_v4_state.py": "291f61e61ed60b098d0467ce5ab5173868c64aec9b3e25acb433468974a1fb63",
     "test_build_v41_market_view.py": "1561c82d1d2c4fa8671904796bf60483f8d2b3a6dca8158fff2494fe21228276",
     "update-v4-market.yml": "1e0a6a3b2e950c0cc226be7ffd1faca66abbb126b45686dbce4ada242a778c76"
   }
