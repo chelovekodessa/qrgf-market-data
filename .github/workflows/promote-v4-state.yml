@@ -1,10 +1,11 @@
-name: Promote QRGF v4 State
+name: Promote QRGF V4.1 State
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - "data/v4/bootstrap/proposals/**"
+      - "data/v4/master-core500/proposals/**"
+      - "data/v4/campaign/proposals/**"
       - "data/v4/registry/proposals/**"
       - "screening/engine/promote_v4_state.py"
       - "screening/engine/test_promote_v4_state.py"
@@ -13,7 +14,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: qrgf-v4-state-single-writer
+  group: qrgf-v41-state-single-writer
   cancel-in-progress: false
 jobs:
   promote:
@@ -26,12 +27,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Replay and crash-safety self-test
+      - name: Replay, exact-size and phase self-test
         shell: bash
         run: |
           set -euo pipefail
           python screening/engine/test_promote_v4_state.py
-      - name: Validate and promote V4 state
+      - name: Validate and promote V4.1 state
         shell: bash
         run: |
           set -euo pipefail
@@ -39,19 +40,24 @@ jobs:
             --repo-root . \
             --release-manifest screening/config/v4-state-producer-release.json \
             --published-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          if find data/v4/bootstrap/proposals -maxdepth 1 -type f -name '*.json' -print -quit 2>/dev/null | grep -q .; then
-            test -f data/v4/bootstrap/latest.json
+          if find data/v4/master-core500/proposals -maxdepth 1 -type f -name '*.json' -print -quit 2>/dev/null | grep -q .; then
+            test -f data/v4/master-core500/latest.json
+            test -f data/v4/campaign/latest.json
           fi
-      - name: Commit promoted V4 state
+      - name: Commit V4.1 state without consuming journals
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
           outputs=(
-            data/v4/bootstrap/cohorts
-            data/v4/bootstrap/latest.json
-            data/v4/bootstrap/progress
+            data/v4/master-core500/sources
+            data/v4/master-core500/masters
+            data/v4/master-core500/certificates
+            data/v4/master-core500/latest.json
+            data/v4/campaigns
+            data/v4/campaign/latest.json
+            data/v4/migrations
             data/v4/registry/scopes
             data/v4/passports
             data/v4/registry/receipts
@@ -62,11 +68,12 @@ jobs:
           done
           if [ "${#existing[@]}" -gt 0 ]; then git add -A -- "${existing[@]}"; fi
           if ! git diff --cached --quiet; then
-            git commit -m "Promote QRGF v4 state"
+            git commit -m "Promote QRGF V4.1 state"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
           git fetch origin main
-          if find data/v4/bootstrap/proposals -maxdepth 1 -type f -name '*.json' -print -quit 2>/dev/null | grep -q .; then
-            git cat-file -e origin/main:data/v4/bootstrap/latest.json
+          if find data/v4/master-core500/proposals -maxdepth 1 -type f -name '*.json' -print -quit 2>/dev/null | grep -q .; then
+            git cat-file -e origin/main:data/v4/master-core500/latest.json
+            git cat-file -e origin/main:data/v4/campaign/latest.json
           fi
