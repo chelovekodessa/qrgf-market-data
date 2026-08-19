@@ -2386,6 +2386,7 @@ FACWW,Factorial Energy Inc. - Warrant,Q,G,N,warrant,ineligible,False,N,N,,nasdaq
 FAD,First Trust Multi Cap Growth AlphaDEX Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FAI,First Trust Bloomberg Artificial Intelligence ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FALN,iShares Fallen Angels USD Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+FAMI,"Farmmi, Inc. - Class A Ordinary Shares",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:FAMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 FAN,First Trust Global Wind Energy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FAPR,FT Vest U.S. Equity Buffer ETF - April,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 FARX,Frontier Asset Absolute Return ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4184,7 +4185,6 @@ KVLE,KraneShares Value Line Dynamic Dividend Equity Index ETF,P,,,etf,ineligible
 KWEB,KraneShares CSI China Internet ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KWH,GMO Power Infrastructure ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KWIN,KraneShares Wahed Alternative Income Index ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-KWM,"K Wave Media, Ltd. - Ordinary Shares",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:KWM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 KWMWW,"K Wave Media, Ltd. - Warrant",Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:KWMWW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 KWT,iShares MSCI Kuwait ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 KXI,iShares Global Consumer Staples ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6909,6 +6909,7 @@ TDVI,FT Vest Technology Dividend Target Income ETF,Z,,,etf,ineligible,False,N,Y,
 TDWD,Tailwind 2.0 Acquisition Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:TDWD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 TDWDR,Tailwind 2.0 Acquisition Corp. - Rights,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:TDWDR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 TDWDU,Tailwind 2.0 Acquisition Corp. - Unit,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:TDWDU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
+TEAD,Teads Holding Co. - Common Stock,Q,Q,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:TEAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 TEC,Harbor Transformative Technologies ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TECB,iShares U.S. Tech Breakthrough Multisector ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TECL,Direxion Daily Technology Bull 3X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
