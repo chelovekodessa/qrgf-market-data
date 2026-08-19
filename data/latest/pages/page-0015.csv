@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+OSBC,"Old Second Bancorp, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OSCR,"Oscar Health, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OSG,"Octave Specialty Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:OSG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 OSIS,"OSI Systems, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:OSIS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -248,4 +249,3 @@ PRSU,"Pursuit Attractions and Hospitality, Inc. Common Stock",N,,,common_equity,
 PRT,PermRock Royalty Trust Units of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:PRT,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 PRTA,Prothena Corporation plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRTH,"Priority Technology Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-PRTS,"CarParts.com, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+RUSHB,"Rush Enterprises, Inc. - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUSHB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVLV,"Revolve Group, Inc. Class A Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RVLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVMD,"Revolution Medicines, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RVMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RVP,"Retractable Technologies, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:RVP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -248,4 +249,3 @@ SOAR,"Volato Group, Inc. Class A Common Stock",A,,,common_equity,eligible,True,N
 SOBO,South Bow Corporation Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOBO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 SOC,Sable Offshore Corp. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:SOC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 SOFI,"SoFi Technologies, Inc.  - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOFI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-SOLS,Solstice Advanced Materials Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:SOLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
