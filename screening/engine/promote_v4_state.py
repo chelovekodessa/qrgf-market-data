@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Replay-safe single-writer publisher for QRGF V4 state and Registry."""
 from __future__ import annotations
-import argparse, hashlib, json
+import argparse, hashlib, json, re
 from pathlib import Path
 from typing import Any, Mapping
 
@@ -59,12 +59,19 @@ def require_hash(value:Any,label:str)->str:
     text=str(value or "")
     if len(text)!=64 or any(x not in "0123456789abcdef" for x in text):raise ValueError(f"{label} must be lowercase SHA-256")
     return text
+def forbidden_field_name(value:Any)->bool:
+    name=re.sub(r"[^a-z0-9]+","_",str(value).lower()).strip("_")
+    if name in FORBIDDEN_SOURCE_FIELDS:return True
+    if name.startswith(("price_","quote_","rsi_","atr_","momentum_","drawdown_","recovery_","setup_","current_market_")):return True
+    if name.startswith("return_") and not name.startswith("return_on_"):return True
+    if name.endswith(("_price","_quote","_rsi","_atr","_momentum","_drawdown","_recovery","_setup")):return True
+    return name in {"open","high","low","prev_close","previous_close","last_price","last_trade_price","last_sale_price","change_pct","percent_change","day_change_pct","macd","stochastic","relative_strength","relative_volume","moving_average","sma","ema","vwap","implied_volatility"}
 def forbidden_paths(value:Any,path="")->list[str]:
     out=[]
     if isinstance(value,Mapping):
         for key,item in value.items():
             dotted=f"{path}.{key}" if path else str(key)
-            if str(key).lower() in FORBIDDEN_SOURCE_FIELDS:out.append(dotted)
+            if forbidden_field_name(key):out.append(dotted)
             out.extend(forbidden_paths(item,dotted))
     elif isinstance(value,list):
         for index,item in enumerate(value):out.extend(forbidden_paths(item,f"{path}[{index}]"))
