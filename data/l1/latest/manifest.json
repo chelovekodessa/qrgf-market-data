@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-20T03:14:57Z",
+  "retrieved_at": "2026-08-20T04:22:12Z",
   "history_start": "2025-07-15",
   "history_end": "2026-08-19",
   "history_feed": "sip",
