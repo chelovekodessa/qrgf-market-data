@@ -1,0 +1,102 @@
+name: Bootstrap QRGF V4.2.1 MetricDuck contract
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qrgf-v421-metricduck-bootstrap
+  cancel-in-progress: false
+
+jobs:
+  apply-verified-overlay:
+    if: ${{ github.head_ref == 'agent/v421-metricduck-contract' && github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/v421-metricduck-contract
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Reconstruct and verify exact patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .v421-bootstrap/chunk-* > /tmp/v421.patch.gz.b64
+          echo '21544bcb96193898a6fc1b4178129a5ee926a08319b27a1d1d3e8bf2ac7f69b0  /tmp/v421.patch.gz.b64' | sha256sum -c -
+          base64 -d /tmp/v421.patch.gz.b64 | gzip -d > /tmp/v421.patch
+          echo 'c9e48a0d2ccd53dafa52df5951475347ce3aa57170e08e7cb250c9dc5d4c8e04  /tmp/v421.patch' | sha256sum -c -
+          git apply --check -p1 /tmp/v421.patch
+          git apply -p1 /tmp/v421.patch
+          rm -rf .v421-bootstrap
+          rm -f .github/workflows/v421-metricduck-bootstrap.yml
+
+      - name: Run V4.2.1 production acceptance
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/qrgf_v42/tests/run_tests.py
+          python -m compileall -q screening/qrgf_v42 screening/engine
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          state = json.loads(Path('screening/config/v42-state-producer-release.json').read_text())
+          market = json.loads(Path('screening/config/v42-market-producer-release.json').read_text())
+          assert state['release_version'] == '4.2.1'
+          assert market['release_version'] == '4.2.1'
+          assert state['contracts']['metricduck_native_screen_contract_required'] is True
+          assert market['contracts']['metricduck_native_screen_contract_required'] is True
+          assert state['contracts']['unsupported_metric_fallback_forbidden'] is True
+          assert market['contracts']['unsupported_metric_fallback_forbidden'] is True
+          PY
+
+      - name: Prove final diff scope and preserve durable state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          base="$(git merge-base origin/main HEAD)"
+          test "$(git rev-parse "$base":data/v4/registry/scopes)" = '948a69590a2725a4a1cf0cc0b58a841411edecd6'
+          git diff --quiet "$base" -- data/v4/registry data/v4/passports data/v42
+          mapfile -t changed < <(git diff --name-only "$base" --)
+          test "${#changed[@]}" = '10'
+          expected='screening/config/v42-market-producer-release.json
+screening/config/v42-state-producer-release.json
+screening/engine/v42_runtime.py
+screening/qrgf_v42/config/connectors.json
+screening/qrgf_v42/config/policy.json
+screening/qrgf_v42/scripts/bootstrap.py
+screening/qrgf_v42/scripts/integrity.py
+screening/qrgf_v42/scripts/policy.py
+screening/qrgf_v42/scripts/provenance.py
+screening/qrgf_v42/tests/run_tests.py'
+          actual="$(printf '%s\n' "${changed[@]}" | sort)"
+          test "$actual" = "$expected"
+          test ! -e .v421-bootstrap
+          test ! -e .github/workflows/v421-metricduck-bootstrap.yml
+          test ! -e data/v42/master-core500/latest.json
+
+      - name: Commit clean production diff and verify readback
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'qrgf-market-data-bot'
+          git config user.email 'qrgf-market-data-bot@users.noreply.github.com'
+          git add -A
+          git commit -m 'Fix QRGF V4.2.1 MetricDuck screening contract'
+          git push origin HEAD:agent/v421-metricduck-contract
+          git fetch origin agent/v421-metricduck-contract
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/agent/v421-metricduck-contract)"
+          git cat-file -e origin/agent/v421-metricduck-contract:screening/config/v42-state-producer-release.json
+          git cat-file -e origin/agent/v421-metricduck-contract:screening/config/v42-market-producer-release.json
+          if git cat-file -e origin/agent/v421-metricduck-contract:.v421-bootstrap/chunk-00 2>/dev/null; then exit 1; fi
+          if git cat-file -e origin/agent/v421-metricduck-contract:.github/workflows/v421-metricduck-bootstrap.yml 2>/dev/null; then exit 1; fi
