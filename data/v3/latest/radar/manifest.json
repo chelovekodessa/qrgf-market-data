@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "created_at": "2026-08-19T14:14:22Z",
+  "created_at": "2026-08-20T03:16:53Z",
   "issuer_identity": {
     "cik_mapped_rows": 0,
     "etf_identity_is_security_specific": true,
@@ -9,119 +9,119 @@
   },
   "kind": "qrgf_market_radar",
   "l1_lineage": {
-    "history_end": "2026-08-18",
-    "manifest_sha256": "1ef39d4b0810ed37d2223553a1872b6e369db74d90945fb36e994b280e31656d",
+    "history_end": "2026-08-19",
+    "manifest_sha256": "7b4494805adce08c50db41b1cc3ed8c8a0801025a7d611f166c524a33f477163",
     "rows": 5118,
     "source_id": "alpaca_sip_daily_free_l1"
   },
-  "manifest_semantic_sha256": "78a6f73c9e2de6292042d5e5172936186137c2e716c0693de31cad9b19022eba",
-  "market_session_id": "2026-08-18",
+  "manifest_semantic_sha256": "0e16a6c6376299e03fba76e83bdeb5c8a3f30207606fe6e1d9cc2f499ba0a6da",
+  "market_session_id": "2026-08-19",
   "page_size": 250,
   "pages": [
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "4af41b41bee1f01044ee2152dc31c71badac477cef550b4a020498c114c98d6c"
+      "sha256": "b9d6009fbe205dd36813e9dc49615c48690ddf78696c6ad6cfb3cec357f13cba"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "f2f74820957e1145d74c43cdcd9d9ee7286cb0c5c38cd622c21897db96aa9fb6"
+      "sha256": "635a87de5ee556faf2f9f2ba567d57be2514f757b4fd15d73ee1bff642cfa2b7"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "312f3493dadbbf2e938223671d352b6b1fbb9a4d9c31ade6b13e1565297e4551"
+      "sha256": "32141009962945430d1ff0bc9c9e0ea5905ebe42491eb888bbf6a2584c5c5b40"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "d32bf29f94c8137a35015044d08016850b7bb115b4417304d327a66d2066a6b4"
+      "sha256": "9dc88f1429d2703b996e2608c0bff52db4ef0fbbcbeed01bfda228ba1c19eced"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "3ad4b587c34e945d57bbfc24ea740e202bf3532d4c3096c6f4ef81db2980a9bd"
+      "sha256": "d52375ec7b9afe233926463d0e75c8a3eb22a61c1085dde482f3a2c1695db443"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "48726e546cb1d4f7e36e07d810575a1ae1dd369f1edb00263c4203009ddc10c3"
+      "sha256": "de35b0f16f379e39098c62c8d1c7a9cd74475004a5345c9dc83e10c169d757d5"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "9f8a64d39273e42bbac6f6906e48a60a8d6db3d0bc1fcba4da65bc15c178743f"
+      "sha256": "fcc849106c274b402ac3877ac07c9f3cefe114b5eecb15bffefe2326a2f6c151"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "551185ba6ddee85c773e47747330329747219dc57628cabd38d1f516f232da19"
+      "sha256": "a413831d29bebafeaa6678efbc8d4b796b541f2abb875f6fda92be5192483282"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "527e9197a66548338c80be1b481eb6bef1b018ac8197fef974554b8e3e483ea8"
+      "sha256": "1f2c6744c8bbfbf78608bef71696a830f47ed55a2cb21785cc2c0408c5c0cf07"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "e4e90e1dd4b6fad1fc2ede982651a347e870f301bf01a86bd960e3c38109eec4"
+      "sha256": "83d68040da97b339ec2a54378d57f755d44a3a53388946ca638c04a492339a02"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "53c7e520bea341f832fa7ef48a9d0d614c2a642fa289bc970f3fd385bfe28589"
+      "sha256": "ce7921fb28327a018d06b894ce07554233c123d146056de33c6fc367ba61dae2"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "534ed3da0ba3d0c7badecd0666dd493ce9185fc9f1046749bcdc9fbac5179506"
+      "sha256": "636035f60eb64409dd9024a274a1c7ba5098d97c566e84d3deac18888e29e2d2"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "da1a3846b68ca3800e6e58c561ebf4d547b421c7ed111567dd7defeb0278fa18"
+      "sha256": "945895d3ee0c9b9d5afd18b46b4dbda712ba659c12d542c68fa9dcd124f2d305"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "381ab47136e6c5d33a75278f2328a1c7c3a78910b8683d02015f38ef66e5d57a"
+      "sha256": "42e654cff166c2d94bdccb2512e22c97e8a2383e29cc1f3ef0ab278022753cd1"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "cd7b29584ca7da81e1a2b71888107ee8f31bc044f923d5943d406e007c23e076"
+      "sha256": "da9fb6c3913d904f54bf8f838c81f2fbfb3476c1e1e93c4431ccf508957f0124"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "64d4f3d6d034358c91dd4c9ba5674eb2e4513a4aa1025ba3645c8fd85a5ccfc1"
+      "sha256": "ef86a9ce0684af0762728eba403ab4439c2491ac8bdb7ede14a0c22e5ec00a30"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "a2a5291ec0eb6e7ef77e50ce06ff6e163105d9fc76aadccdfd50e7f5a28135fa"
+      "sha256": "fa034e6d85c6a79efd244036fcd932d042d26b7bb8c040c6bd88404e9b3c6faa"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "27a0767943a7f84abe3bb9d86fc4382d23b11cb59421bba15491a113ef4af8cc"
+      "sha256": "d421bd017450a393c3ea5e17b18ad6f2f005cc99dad57bb572c07a4947dbcedc"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "7aab8b8b8512065645ad2c63236d7eeda1c6593581e5445c68433514deda5ca3"
+      "sha256": "0a1ba89e542fbc9db74e229fa5c0150027151ae2510db050f168b473311434b3"
     },
     {
       "name": "page-0020.csv",
       "rows": 250,
-      "sha256": "cabf4167d8fd7f4623e51392c8998465827330812a7943cdf2a49a7057530338"
+      "sha256": "301e875287dc384311a233614821222cf1227dceac4f17ca7a814f5ec8e77693"
     },
     {
       "name": "page-0021.csv",
       "rows": 118,
-      "sha256": "6dd05bdc2239f56254ad6c0b8c73edd091b4801f5799fa5082e4a01c11d39407"
+      "sha256": "8ae49eb49732f04b66ff6e907286069764deb3feb344351fde843aafb011fba6"
     }
   ],
   "producer_release": {
@@ -141,9 +141,9 @@
     },
     "release_version": "4.0.0"
   },
-  "rankable_rows": 3617,
+  "rankable_rows": 3618,
   "rows": 5118,
-  "rows_semantic_sha256": "5275e3e57d22427085396ae8f9164962ea037f513780955b80fc4631f69119d2",
+  "rows_semantic_sha256": "51adf951f3b11cee38df7893fb5b987d1ee37b308094a5d2b332b73ceae1a506",
   "schema_version": "1.0.0",
   "setup_model": {
     "fixed_candidate_count_cutoff": false,
@@ -157,6 +157,6 @@
       "pullback_geometry": 25
     }
   },
-  "snapshot_content_sha256": "97450cf83ae26c91dbb2d377b9cf77cd14787b98e984cfedbb62f0858f90c19e",
-  "snapshot_id": "97450cf83ae26c91dbb2d377"
+  "snapshot_content_sha256": "88e9797d28aa366a05a9f55fd7d333d316078e119c5b8a94e33ccc540e588fcb",
+  "snapshot_id": "88e9797d28aa366a05a9f55f"
 }
