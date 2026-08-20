@@ -1,22 +1,24 @@
 {
   "architecture_version": "4.2.0",
-  "connectors_contract_sha256": "cae275e77b10d1b02596ec36fee4e4cd27e1d72300d8ea2d343e6ba395142647",
+  "connectors_contract_sha256": "6005bea6e91afca4aa21b079dcbc4a42a0448e8383ac53f9fd4b0e31b262f41c",
   "contracts": {
     "competitive_frontier_required": true,
     "daily_broad_requires_complete": true,
     "deployment_release_manifest_required": true,
     "durable_triage_before_cursor_advance": true,
     "insufficient_data_competitive_unresolved": true,
+    "metricduck_native_screen_contract_required": true,
     "page_size_is_transport_not_cutoff": true,
-    "remote_release_must_match_pinned_hash": true
+    "remote_release_must_match_pinned_hash": true,
+    "unsupported_metric_fallback_forbidden": true
   },
   "files": {
     ".github/workflows/update-v42-market.yml": "eb93639b45df7837fe2fb060950f543a9d5cdb8f098237c7b592dfd7963ef665",
     "screening/engine/build_v42_market_view.py": "5e691a3bbe2ac01b4524f8e1dee534e45402c777d6e8baa71acad4c4638ee55c",
-    "screening/engine/v42_runtime.py": "bea7600829e84dec2b51d15dc04524444a474a23d7614d4e3c233b5740b28df5",
+    "screening/engine/v42_runtime.py": "f2345f2de198f5605de7e170f9ce8f587eb070a712236b5d21dabda561053ab2",
     "screening/qrgf_v42/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "screening/qrgf_v42/config/approved-etfs.csv": "9250021e4b32f812078bd07ec382192461c383c8931c7f181335064b25581b2d",
-    "screening/qrgf_v42/config/policy.json": "ffc49a0511b94187dc61b61fee3dae7cea66c1b9a7e8deac0daf16d923c9305e",
+    "screening/qrgf_v42/config/policy.json": "76da7f53397c0a086d1522917149adb06c5fa28bef719ce8c540a7e3a074f189",
     "screening/qrgf_v42/schemas/execution-context.schema.json": "d2d91d909b94ff980afc5ce79633da4871857c4389ed47148fbdd1e2952fc0fe",
     "screening/qrgf_v42/schemas/final-decision.schema.json": "8532be425663c8c94338c1b812566b21291ff1bd2a8f174fe72f180df114b0d8",
     "screening/qrgf_v42/schemas/l3-input.schema.json": "7c6bc35b10b988d0f9d0e71b205a9a0032f68df89936172fc1faa01a3edb4e20",
@@ -50,7 +52,7 @@
     "screening/qrgf_v42/schemas/v42-selector-certificate.schema.json": "8b363b56f7d19524cbf6f6b09cbd6ac37320f394032bfa4244cfe190fca7a509",
     "screening/qrgf_v42/schemas/wave-results.schema.json": "ccc67643366e43e6169c3b4d7c54e46a6edb8ec523367455e91c6836a8babddd",
     "screening/qrgf_v42/scripts/batch.py": "a07c0c9e3d2d5d176c3c840635ca7035eeb4b12b934f2c3adefcfe91446fa53b",
-    "screening/qrgf_v42/scripts/bootstrap.py": "c0c60c7f9e44891b7f09c4d498cf00701284d3e0a17e203140055d66d42682c9",
+    "screening/qrgf_v42/scripts/bootstrap.py": "0aa52fe38d3c719f5ca19c11a2c37874a28d8addd192259bfef812cf2d5ef559",
     "screening/qrgf_v42/scripts/campaign.py": "c642e0323aeca5be498755ccc045bffef7bd936af60d16c97761a92411cb7f10",
     "screening/qrgf_v42/scripts/common.py": "909c1b9d995ce9ce54efd7bc1d4f066fc5b2f9f76a04b965a48efa3af68e704d",
     "screening/qrgf_v42/scripts/contracts.py": "4a6e082ab27b06907fe60e52d64a2823835e52eac99125523d4ba3bf3c2c9833",
@@ -58,13 +60,13 @@
     "screening/qrgf_v42/scripts/eligibility.py": "01656ea1ca779b5d8d2adb048986b90045da65a5aa8f548f061659b1f1f7bdfd",
     "screening/qrgf_v42/scripts/evidence.py": "f8e7efe5b7638694374f7fba06dad224c5b16cacb28ea9a2d1a946ef14c6f4f4",
     "screening/qrgf_v42/scripts/factpack.py": "c86229166d058d2ad0577329b11067aa6f820e832e2c0bb748e15359b74c70af",
-    "screening/qrgf_v42/scripts/integrity.py": "dff1ee970bc701c6421274257d14023a463788b1f0406c0aa2278b02a576e7e8",
+    "screening/qrgf_v42/scripts/integrity.py": "c87d7cdc35c2f81cc6c406e5df37fc8c58856a454105828bcca505148e8e53ab",
     "screening/qrgf_v42/scripts/market_view.py": "12bd6550e7b3691dbd0ca8b22f33973c8705559ba1e85bf33aa26d98cd9fc36f",
     "screening/qrgf_v42/scripts/migration.py": "99847924e6632102f3f4a34ba9d3f9b93ebf779fbd894eb9fb9c439797e80b19",
     "screening/qrgf_v42/scripts/passport.py": "20317fc4bc6e252b53ec09ce15eba257cdb6a2b0ef52b6a438682718f8fc2d6a",
-    "screening/qrgf_v42/scripts/policy.py": "83c8e4ac3de0dc3a0a53ac21f15f35d50a92c4f04467012dcb6da32515f1abf7",
+    "screening/qrgf_v42/scripts/policy.py": "aa3469ccfac450c9a07ae823bb15cced8e8170ef9163959dc6f9847bae0f4ad0",
     "screening/qrgf_v42/scripts/position.py": "44056e957c06915fbc2cf52cfe46ec82172b5bd59a9caf5ac3cd8b9b24a31be7",
-    "screening/qrgf_v42/scripts/provenance.py": "3a64e53c2aa3b876e420a369e9af6f4f93eac446c292ab954565a353a9fd7ee5",
+    "screening/qrgf_v42/scripts/provenance.py": "be83f9aa3e01b746187bdd3d8a817a1ba9b1064794ac102c6de71e2207c0725b",
     "screening/qrgf_v42/scripts/recovery.py": "3c00dcf62cff94b70398df55c61e1058f8671a5fe70042b19b116bcc070db453",
     "screening/qrgf_v42/scripts/registry.py": "51bb909137ffb2cae559c17a02d12a3060ea501a56692016f425e9b91f977f23",
     "screening/qrgf_v42/scripts/registry_store.py": "9044a0d09fd583cb0f34100925ff9c78ab9d230b2320fb569470c7baac94fe42",
@@ -73,10 +75,10 @@
     "screening/qrgf_v42/scripts/selection.py": "46bfafb3c91327f6907fa7f76a4fc4d35594a800aaac27be9d86f14b371d30cd",
     "screening/qrgf_v42/scripts/technical.py": "b67108e434208310d17cec28da40d0c9f67df0569b2dcaec4373352e7d7b74ac",
     "screening/qrgf_v42/tests/golden/l3-v430-baseline.json": "9dfc1b7b2d3fe3c5859fc4b1640c81f82b34e9a04f9a1d5b213fe8c6195dd46f",
-    "screening/qrgf_v42/tests/run_tests.py": "a17818c643bae300ae32a237a26326ad8c5d5d2a962d5f5a697c2806598c81bc"
+    "screening/qrgf_v42/tests/run_tests.py": "3904a0bba64a3f39633e5a5d12ee75c4564354bb0bbbfe46729e8bc409d48bd6"
   },
   "kind": "qrgf_v42_market_producer_release",
-  "policy_file_sha256": "ffc49a0511b94187dc61b61fee3dae7cea66c1b9a7e8deac0daf16d923c9305e",
-  "release_version": "4.2.0",
+  "policy_file_sha256": "76da7f53397c0a086d1522917149adb06c5fa28bef719ce8c540a7e3a074f189",
+  "release_version": "4.2.1",
   "schema_version": "2.0.0"
 }

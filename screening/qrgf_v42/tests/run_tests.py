@@ -159,6 +159,26 @@ def bootstrap_facts(boost: float = 0.0) -> dict[str, Any]:
     return {"roic": 0.18 + boost, "operating_margin_pct": 0.22 + boost, "fcf_margin_pct": 0.20 + boost, "revenue_cagr_3y_pct": 0.15 + boost, "net_debt_to_ebitda": 0.5, "cash": 20e9, "debt": 5e9, "dilution_pct_yoy": 0.01}
 
 
+def metricduck_fixture_row(member: Mapping[str, Any]) -> dict[str, Any]:
+    cap = float(member["market_cap"])
+    return {
+        "ticker": member["ticker"],
+        "contract_id": member["contract_id"],
+        "company": member["company"],
+        "sector_code": "TECH",
+        "connector_market_cap": cap,
+        "connector_metrics": {
+            "roic@ttm": 0.18,
+            "oper_margin@ttm": 0.22,
+            "roe@ttm": 0.20,
+            "roa@ttm": 0.10,
+            "revenues@ttm": 100e9,
+            "revenues@ttm.cagr3": 0.15,
+            "fcf@ttm": 20e9,
+        },
+    }
+
+
 def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     identity_entries: list[dict[str, Any]] = []
@@ -185,17 +205,13 @@ def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[d
         boundaries.append((start, high))
         start = high
     boundaries.append((start, None))
-    filters = policy.load_policy()["bootstrap"]["metricduck_query_plan"]["approved_lane_filters"] if hasattr(policy, "load_policy") else json.loads((ROOT / "config/policy.json").read_text())["bootstrap"]["metricduck_query_plan"]["approved_lane_filters"]
     leaves: list[dict[str, Any]] = []
     receipts: list[dict[str, Any]] = []
-    for lane in sorted(filters):
+    for lane in ("established_quality", "recognized_growth"):
         for part, (low, high) in enumerate(boundaries):
-            spec = {"lane": lane, "sector": "Technology", "market_cap_min": low, "market_cap_max": high, "filters": filters[lane], "sort": "market_cap_desc", "limit": 50}
-            result_rows: list[dict[str, Any]] = []
-            if lane == "established_quality":
-                members = [row for row in rows if float(row["market_cap"]) >= low and (high is None or float(row["market_cap"]) < high)]
-                for member in members:
-                    result_rows.append({"ticker": member["ticker"], "contract_id": member["contract_id"], "company": member["company"], "sector": member["sector"], "facts": bootstrap_facts()})
+            spec = {"lane": lane, "sector": "Technology", "market_cap_min": low, "market_cap_max": high, "limit": 50}
+            members = [row for row in rows if float(row["market_cap"]) >= low and (high is None or float(row["market_cap"]) < high)]
+            result_rows = [metricduck_fixture_row(member) for member in members]
             receipt = provenance.build_query_receipt(spec, result_rows=result_rows, matched_count=len(result_rows), retrieved_at=NOW_TEXT, response_handle=f"fixture://MetricDuck/{lane}/{part}")
             leaves.append(spec)
             receipts.append(receipt)
@@ -246,6 +262,9 @@ def main() -> int:
     record("V4.1 production connectors are absent", "master_core500_v41" not in connectors and "market_view_v41" not in connectors)
     record("V4.2 MASTER publisher must recompute", connectors["master_core500_v42"]["publisher_recomputes_master_from_evidence"] is True)
     record("MetricDuck screen trust is connector-attested, not falsely signed", connectors["primary_evidence"]["metricduck"]["cross_company_screen_trust_class"] == "connector_attested" and connectors["primary_evidence"]["metricduck"]["external_cryptographic_signature_available"] is False)
+    bank_spec = provenance.normalize_query_spec({"lane":"bank","sector":"Financials","market_cap_min":0,"market_cap_max":None,"limit":50})
+    bank_args = provenance.connector_query_args(bank_spec)
+    record("Bank discovery uses the native MetricDuck classification tag", bank_args.get("required_tags") == ["financial_services_traditional"] and bank_args["filters"][0] == {"metric_id":"roa","operator":"gte","value":0.005,"period_type":"ttm"})
 
     # Structural scoring parity with the frozen analytical model.
     golden = json.loads((ROOT / "tests/golden/l3-v430-baseline.json").read_text())
@@ -295,9 +314,11 @@ def main() -> int:
     record("Market index is bound to the identity map", market_index["identity_map_sha256"] == identity_map["identity_map_sha256"])
     record("Market index requires publisher recomputation", market_index["publisher_recompute_required"] is True)
     record("All MASTER-eligible operating companies use official CIK identities", all(row["issuer_id"].startswith("CIK:") for row in market_index["rows"] if row["master_eligible"]))
-    record("MetricDuck plan covers every lane and sector", query_plan["partition_coverage_complete"] is True and query_plan["required_lanes"] == sorted(json.loads((ROOT / "config/policy.json").read_text())["bootstrap"]["lane_score_weights"]))
+    record("MetricDuck plan covers every applicable native lane and sector", query_plan["partition_coverage_complete"] is True and query_plan["required_lanes"] == sorted(json.loads((ROOT / "config/policy.json").read_text())["bootstrap"]["metricduck_query_plan"]["screen_lanes"]))
     record("Every MetricDuck leaf is unsaturated", all(receipt["complete"] is True and receipt["requires_split"] is False for receipt in query_plan["receipts"]))
     record("MetricDuck receipts preserve connector response provenance", all(receipt["response_handle"] for receipt in query_plan["receipts"]))
+    sample_native_row = next(row for receipt in query_plan["receipts"] for row in receipt["rows"] if row["ticker"] == "GOOG")
+    record("Native MetricDuck values derive only semantically exact canonical facts", abs(sample_native_row["facts"]["fcf_margin_pct"] - 0.20) < 1e-12 and abs(sample_native_row["facts"]["revenue_cagr_3y_pct"] - 0.15) < 1e-12)
     record("Candidate source is derived from market plus query plan", source["market_index_sha256"] == market_index["market_index_sha256"] and source["query_plan_sha256"] == query_plan["query_plan_sha256"])
     record("Candidate source contains at least 500 market-bound rows", source["quality_candidate_union_size"] >= 500 and all(row["market_membership_bound"] is True for row in source["candidates"]))
     record("MASTER CORE500 is exactly 500", len(master["scopes"]) == 500 and master["selected_scope_count"] == 500)
@@ -327,7 +348,8 @@ def main() -> int:
 
     # Negative provenance tests that V4.1 failed.
     fake_spec = copy.deepcopy(next(item for item in query_plan["leaves"] if item["lane"] == "established_quality"))
-    fake_receipt = provenance.build_query_receipt(fake_spec, result_rows=[{"ticker": "FAKE000", "contract_id": "US:FAKE000", "company": "Fake", "sector": "Technology", "facts": bootstrap_facts()}], matched_count=1, retrieved_at=NOW_TEXT, response_handle="fixture://fake")
+    fake_member = {"ticker":"FAKE000","contract_id":"US:FAKE000","company":"Fake","market_cap":float(fake_spec["market_cap_min"] + 1_000_000)}
+    fake_receipt = provenance.build_query_receipt(fake_spec, result_rows=[metricduck_fixture_row(fake_member)], matched_count=1, retrieved_at=NOW_TEXT, response_handle="fixture://fake")
     fake_plan = copy.deepcopy(query_plan)
     target_sha = fake_spec["query_sha256"] if "query_sha256" in fake_spec else provenance.normalize_query_spec(fake_spec)["query_sha256"]
     fake_plan["receipts"] = [fake_receipt if item["query_sha256"] == target_sha else item for item in fake_plan["receipts"]]
@@ -349,11 +371,14 @@ def main() -> int:
     record("Omitted MetricDuck partition is rejected", rejects(lambda: provenance.validate_query_plan(omitted, market_index_value=market_index), "gap"))
 
     wrong_filter = copy.deepcopy(query_plan["leaves"][0])
-    wrong_filter["filters"] = {"roic": {"operator": "gte", "value": 0.01}}
-    record("Unapproved lane filter is rejected", rejects(lambda: provenance.normalize_query_spec(wrong_filter), "approved lane profile"))
+    wrong_filter["connector_filters"] = [{"metric_id":"roic","operator":"gte","value":0.01,"period_type":"ttm"}]
+    record("Unapproved native MetricDuck filter is rejected", rejects(lambda: provenance.normalize_query_spec(wrong_filter), "native filters"))
+    legacy_filter = copy.deepcopy(query_plan["leaves"][0])
+    legacy_filter["filters"] = {"fcf_margin_pct": {"operator": "gte", "value": 0.05}}
+    record("Legacy internal MetricDuck field filter is rejected", rejects(lambda: provenance.normalize_query_spec(legacy_filter), "legacy V4.2"))
     price_filter = copy.deepcopy(query_plan["leaves"][0])
     price_filter["filters"] = {"current_price": {"operator": "gte", "value": 3}}
-    record("Price-based query filter is rejected", rejects(lambda: provenance.normalize_query_spec(price_filter)))
+    record("Price-based legacy query filter is rejected", rejects(lambda: provenance.normalize_query_spec(price_filter)))
 
     tampered_source = copy.deepcopy(source)
     tampered_source["candidates"][0]["facts"]["roic"] = 9.9

@@ -13,6 +13,7 @@
     "official_issuer_identity_required_for_master": true,
     "publisher_recomputes_master_from_evidence": true,
     "registry_is_cache_not_universe_gate": true,
+    "release_version": "4.2.1",
     "remote_release_must_match_pinned_hash": true,
     "unknown_never_becomes_fail_by_missingness": true,
     "v41_is_historical_read_only": true,
@@ -21,7 +22,7 @@
   "bootstrap": {
     "arbitrary_candidate_list_forbidden": true,
     "canaries_are_tests_not_forced_inclusions": true,
-    "candidate_source": "verified_market_index_plus_complete_metricduck_query_plan",
+    "candidate_source": "verified_market_index_plus_metricduck_native_query_plan_plus_approved_etf_catalog",
     "cohort_size": 500,
     "competitive_resolved_statuses": [
       "pass",
@@ -95,63 +96,154 @@
     "master_core500_exact_size": 500,
     "master_core500_immutable": true,
     "metricduck_query_plan": {
-      "approved_lane_filters": {
-        "bank": {
-          "cet1_ratio_pct": {
-            "operator": "gte",
-            "value": 9.0
-          },
-          "roa_pct": {
-            "operator": "gte",
-            "value": 0.5
-          }
+      "canonical_metric_mapping": {
+        "fcf_margin_pct": {
+          "derived_from": [
+            "fcf@ttm",
+            "revenues@ttm"
+          ],
+          "transform": "ratio_fcf_to_revenues"
         },
-        "cyclical": {
-          "fcf_margin_pct": {
-            "operator": "gte",
-            "value": 0.04
-          },
-          "net_debt_to_ebitda": {
-            "operator": "lte",
-            "value": 2.5
-          }
+        "operating_margin_pct": {
+          "metric_id": "oper_margin",
+          "period_type": "ttm",
+          "transform": "identity_decimal"
         },
-        "established_quality": {
-          "fcf_margin_pct": {
-            "operator": "gte",
-            "value": 0.05
-          },
-          "roic": {
-            "operator": "gte",
-            "value": 0.12
-          }
+        "revenue_cagr_3y_pct": {
+          "metric_id": "revenues",
+          "period_type": "ttm.cagr3",
+          "transform": "identity_decimal"
         },
-        "etf": {
-          "fund_aum": {
-            "operator": "gte",
-            "value": 1000000000
-          },
-          "fund_structure_quality_score": {
-            "operator": "gte",
-            "value": 65.0
-          }
+        "roa_pct": {
+          "metric_id": "roa",
+          "period_type": "ttm",
+          "transform": "identity_decimal"
         },
-        "recognized_growth": {
-          "fcf_margin_pct": {
-            "operator": "gte",
-            "value": 0.0
-          },
-          "revenue_cagr_3y_pct": {
-            "operator": "gte",
-            "value": 0.12
-          }
+        "roe_pct": {
+          "metric_id": "roe",
+          "period_type": "ttm",
+          "transform": "identity_decimal"
+        },
+        "roic": {
+          "metric_id": "roic",
+          "period_type": "ttm",
+          "transform": "identity_decimal"
         }
       },
+      "connector_contract_version": "2026-08-20",
       "connector_max_rows_per_query": 50,
+      "connector_sort_by": "market_cap",
+      "connector_tool": "screen_companies",
       "connector_trust_class": "connector_attested",
+      "etf_candidate_source": "approved_etf_catalog_plus_pinned_market_membership",
       "external_cryptographic_signature_available": false,
+      "lane_discovery_profiles": {
+        "bank": {
+          "filters": [
+            {
+              "metric_id": "roa",
+              "operator": "gte",
+              "period_type": "ttm",
+              "value": 0.005
+            }
+          ],
+          "required_tags": [
+            "financial_services_traditional"
+          ],
+          "sector_codes": [
+            "FIN"
+          ],
+          "semantic_relation": "bank_model_superset_of_v420_lane_gate_by_dropping_only_unsupported_cet1_filter"
+        },
+        "cyclical": {
+          "filters": [],
+          "sector_codes": [
+            "ENERGY",
+            "MAT"
+          ],
+          "semantic_relation": "full_sector_discovery_because_v420_fcf_margin_and_net_debt_to_ebitda_are_not_screen_companies_filters"
+        },
+        "established_quality": {
+          "applies_to": "all_supported_company_sectors",
+          "filters": [
+            {
+              "metric_id": "roic",
+              "operator": "gte",
+              "period_type": "ttm",
+              "value": 0.12
+            }
+          ],
+          "semantic_relation": "superset_of_v420_lane_gate_by_dropping_unsupported_fcf_margin_filter"
+        },
+        "recognized_growth": {
+          "applies_to": "all_supported_company_sectors",
+          "filters": [
+            {
+              "metric_id": "revenues",
+              "operator": "gte",
+              "period_type": "ttm.cagr3",
+              "value": 0.12
+            }
+          ],
+          "semantic_relation": "superset_of_v420_lane_gate_by_dropping_unsupported_fcf_margin_filter"
+        }
+      },
+      "legacy_internal_field_filters_forbidden": true,
+      "not_screenable_as_exact_lane_filters": [
+        "fcf_margin_pct",
+        "net_debt_to_ebitda",
+        "cet1_ratio_pct",
+        "nonperforming_assets_pct",
+        "fund_aum",
+        "fund_structure_quality_score",
+        "dilution_pct_yoy",
+        "cash_to_debt"
+      ],
       "partition_dimension": "market_cap",
-      "saturated_leaf_forbidden": true
+      "saturated_leaf_forbidden": true,
+      "screen_lanes": [
+        "bank",
+        "cyclical",
+        "established_quality",
+        "recognized_growth"
+      ],
+      "sector_code_map": {
+        "banking": "FIN",
+        "banks": "FIN",
+        "basic materials": "MAT",
+        "communication": "COMM",
+        "communication services": "COMM",
+        "communications": "COMM",
+        "consumer cyclical": "CONS_DISC",
+        "consumer defensive": "CONS_STAPLES",
+        "consumer discretionary": "CONS_DISC",
+        "consumer staples": "CONS_STAPLES",
+        "energy": "ENERGY",
+        "fin": "FIN",
+        "finance": "FIN",
+        "financial": "FIN",
+        "financials": "FIN",
+        "health": "HEALTH",
+        "health care": "HEALTH",
+        "healthcare": "HEALTH",
+        "industrial": "IND",
+        "industrials": "IND",
+        "information technology": "TECH",
+        "materials": "MAT",
+        "metals & mining": "MAT",
+        "metals and mining": "MAT",
+        "real estate": "RE",
+        "reit": "RE",
+        "reits": "RE",
+        "tech": "TECH",
+        "technology": "TECH",
+        "telecom": "COMM",
+        "transport": "IND",
+        "transportation": "IND",
+        "utilities": "UTIL",
+        "utility": "UTIL"
+      },
+      "unsupported_metrics_must_remain_unknown": true
     },
     "minimum_fact_coverage_pct": 40,
     "official_issuer_identity_required": true,
@@ -165,7 +257,7 @@
     ],
     "quality_score_not_final_until_deep_structural_research": true,
     "query_lane_membership_must_be_computed_from_receipts": true,
-    "selection_model_version": "4.2.0-bootstrap-provenance-v1",
+    "selection_model_version": "4.2.1-bootstrap-provenance-v2",
     "selector_certificate_must_bind_cohort": true,
     "selector_certificate_required": true,
     "wave_size": 4

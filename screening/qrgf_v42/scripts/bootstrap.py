@@ -6,12 +6,13 @@ It ranks a research cohort only; it does not declare Structural Quality pass/fai
 """
 from __future__ import annotations
 
+import csv
 import math
 import re
 from collections import Counter
 from typing import Any, Iterable, Mapping
 
-from common import clamp, load_policy, number, piecewise, semantic_hash
+from common import ROOT, clamp, file_hash, load_policy, number, piecewise, semantic_hash
 from contracts import validate as validate_contract
 import provenance, selection
 
@@ -166,7 +167,8 @@ def _lane_allowed(lane: str, row: Mapping[str, Any]) -> bool:
         return sec == "etf"
     if sec == "etf": return False
     if lane == "bank":
-        return "bank" in sector or any(f.get(x) is not None for x in ("cet1_ratio_pct","nonperforming_assets_pct"))
+        discovered = {str(x) for x in row.get("quality_candidate_lanes") or []}
+        return "bank" in discovered or "bank" in sector or any(f.get(x) is not None for x in ("cet1_ratio_pct","nonperforming_assets_pct"))
     if lane == "cyclical":
         return any(word in sector for word in ("energy","materials","metal","mining"))
     return lane in {"established_quality","recognized_growth"}
@@ -220,7 +222,7 @@ BUNDLE_KIND = "qrgf_v42_master_core500_bundle"
 BUILD_REQUEST_KIND = "qrgf_v42_master_core500_build_request"
 POINTER_KIND = "qrgf_v42_master_core500_pointer"
 SELECTOR_ORDERING_MODEL = "bootstrap_priority_score_then_coverage_market_cap_liquidity_identity-v2"
-SOURCE_DERIVATION_MODEL = "identity_map_plus_market_index_plus_complete_metricduck_plan-v2"
+SOURCE_DERIVATION_MODEL = "identity_map_plus_market_index_plus_metricduck_native_plan_plus_etf_catalog-v3"
 
 
 def _exact_master_size() -> int:
@@ -254,6 +256,23 @@ def _membership_for_result(row: Mapping[str, Any], *, by_contract: Mapping[str, 
     return matches[0]
 
 
+def _approved_etf_rows() -> tuple[dict[tuple[str, str], dict[str, Any]], str]:
+    path = ROOT / "config" / "approved-etfs.csv"
+    approved: dict[tuple[str, str], dict[str, Any]] = {}
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        for raw in csv.DictReader(handle):
+            ticker = str(raw.get("ticker") or "").strip().upper()
+            contract = str(raw.get("contract_id") or "").strip()
+            status = str(raw.get("status") or "").strip().lower()
+            inverse = str(raw.get("inverse") or "").strip().lower() == "true"
+            daily_reset = str(raw.get("daily_reset") or "").strip().lower() == "true"
+            leverage = number(raw.get("leverage_multiple"))
+            if ticker and contract and status == "approved" and not inverse and not daily_reset and leverage == 1:
+                body = {str(k): v for k, v in raw.items()}
+                approved[(ticker, contract)] = {**body, "approved_etf_row_sha256": semantic_hash(body)}
+    return approved, file_hash(path)
+
+
 def build_candidate_source(identity_map_value: Mapping[str, Any], market_index_value: Mapping[str, Any], query_plan_value: Mapping[str, Any]) -> dict[str, Any]:
     """Derive the only production candidate source from pinned evidence.
 
@@ -280,9 +299,9 @@ def build_candidate_source(identity_map_value: Mapping[str, Any], market_index_v
             membership = _membership_for_result(result_row, by_contract=by_contract, by_ticker=by_ticker)
             if str(membership.get("sector") or "Unclassified") != expected_sector:
                 raise ValueError("MetricDuck result sector differs from the pinned market membership sector")
-            market_cap = number(membership.get("market_cap"))
-            if market_cap is None or market_cap < cap_low or (cap_high is not None and market_cap >= float(cap_high)):
-                raise ValueError("MetricDuck result falls outside its declared market-cap partition")
+            connector_cap = number(result_row.get("connector_market_cap"))
+            if connector_cap is None or connector_cap < cap_low or (cap_high is not None and connector_cap >= float(cap_high)):
+                raise ValueError("MetricDuck result falls outside its declared connector market-cap partition")
             if membership.get("master_eligible") is not True:
                 excluded.append({
                     "ticker": membership["ticker"],
@@ -330,6 +349,48 @@ def build_candidate_source(identity_map_value: Mapping[str, Any], market_index_v
                 if field in candidate["facts"] and semantic_hash(candidate["facts"][field]) != semantic_hash(value):
                     raise ValueError(f"conflicting MetricDuck fact for {candidate['ticker']}: {field}")
                 candidate["facts"][field] = value
+    approved_etfs, approved_etf_catalog_sha256 = _approved_etf_rows()
+    approved_etf_candidate_count = 0
+    for membership in market_index["rows"]:
+        if membership.get("master_eligible") is not True or str(membership.get("security_type") or "").lower() != "etf":
+            continue
+        key_tuple = (str(membership.get("ticker") or "").upper(), str(membership.get("contract_id") or ""))
+        catalog_row = approved_etfs.get(key_tuple)
+        if catalog_row is None:
+            continue
+        key = str(membership["market_membership_sha256"])
+        if key in candidates:
+            raise ValueError("ETF candidate unexpectedly overlaps a MetricDuck company row")
+        candidates[key] = {
+            "ticker": membership["ticker"],
+            "contract_id": membership["contract_id"],
+            "company": membership.get("company"),
+            "issuer_id": membership["issuer_id"],
+            "share_class_group": membership.get("share_class_group"),
+            "security_type": membership["security_type"],
+            "security_overlay": membership["security_overlay"],
+            "research_scope_key": membership["research_scope_key"],
+            "identity_resolution_status": membership["identity_resolution_status"],
+            "sector": membership["sector"],
+            "industry": membership.get("industry"),
+            "market_cap": membership.get("market_cap"),
+            "avg_dollar_volume": membership.get("avg_dollar_volume"),
+            "market_membership_sha256": membership["market_membership_sha256"],
+            "market_source_row_sha256": membership["source_row_sha256"],
+            "market_index_sha256": market_index["market_index_sha256"],
+            "query_plan_sha256": query_plan["query_plan_sha256"],
+            "market_membership_bound": True,
+            "provenance_class": "market_bound_approved_etf_catalog",
+            "approved_etf_catalog_sha256": approved_etf_catalog_sha256,
+            "approved_etf_row_sha256": catalog_row["approved_etf_row_sha256"],
+            "quality_candidate_lanes": ["etf"],
+            "query_receipt_sha256s": [],
+            "query_sha256s": [],
+            "result_row_sha256s": [],
+            "facts": {},
+        }
+        approved_etf_candidate_count += 1
+
     rows: list[dict[str, Any]] = []
     lane_counts: Counter[str] = Counter()
     for raw in candidates.values():
@@ -351,6 +412,7 @@ def build_candidate_source(identity_map_value: Mapping[str, Any], market_index_v
         "market_snapshot_sha256": market_index["source_manifest_sha256"],
         "trust_class": "market_bound_connector_attested",
         "external_cryptographic_signature_available": False,
+        "approved_etf_catalog_sha256": approved_etf_catalog_sha256,
     }
     body = {
         "schema_version": "2.0.0",
@@ -365,6 +427,8 @@ def build_candidate_source(identity_map_value: Mapping[str, Any], market_index_v
         "query_plan_sha256": query_plan["query_plan_sha256"],
         "query_receipt_count": query_plan["receipt_count"],
         "query_result_row_count": total_query_rows,
+        "approved_etf_candidate_count": approved_etf_candidate_count,
+        "approved_etf_catalog_sha256": approved_etf_catalog_sha256,
         "excluded_query_row_count": len(excluded),
         "quality_candidate_union_size": len(rows),
         "lane_counts": dict(sorted(lane_counts.items())),
@@ -406,6 +470,9 @@ def validate_candidate_source(value: Mapping[str, Any]) -> dict[str, Any]:
     _require_hash(identity.get("identity_map_sha256"), "candidate source identity map hash")
     if identity.get("trust_class") != "market_bound_connector_attested" or identity.get("external_cryptographic_signature_available") is not False:
         raise ValueError("quality candidate source trust boundary mismatch")
+    _require_hash(identity.get("approved_etf_catalog_sha256"), "candidate source ETF catalog hash")
+    if identity.get("approved_etf_catalog_sha256") != v.get("approved_etf_catalog_sha256"):
+        raise ValueError("candidate source ETF catalog binding mismatch")
     rows = v.get("candidates")
     if not isinstance(rows, list) or len(rows) < MASTER_SIZE:
         raise ValueError("quality candidate source must contain at least 500 rows")
@@ -415,8 +482,9 @@ def validate_candidate_source(value: Mapping[str, Any]) -> dict[str, Any]:
         raise ValueError("quality candidate source universe is smaller than its union")
     if int(v.get("master_eligible_market_rows") or 0) < len(rows):
         raise ValueError("quality candidate source exceeds resolved market membership")
-    if int(v.get("query_result_row_count") or -1) < len(rows) + int(v.get("excluded_query_row_count") or 0):
-        raise ValueError("quality candidate source query row accounting mismatch")
+    accounted = int(v.get("query_result_row_count") or 0) + int(v.get("approved_etf_candidate_count") or 0)
+    if accounted < len(rows) + int(v.get("excluded_query_row_count") or 0):
+        raise ValueError("quality candidate source query/catalog row accounting mismatch")
     lane_counts = v.get("lane_counts")
     if not isinstance(lane_counts, Mapping) or not lane_counts:
         raise ValueError("quality candidate source lane coverage missing")
@@ -436,8 +504,12 @@ def validate_candidate_source(value: Mapping[str, Any]) -> dict[str, Any]:
         if not contract or contract in contracts:
             raise ValueError("quality candidate source duplicate or missing contract")
         contracts.add(contract)
-        if row.get("market_membership_bound") is not True or row.get("provenance_class") != "market_bound_connector_attested":
-            raise ValueError("quality candidate source row is not market/provenance bound")
+        if row.get("market_membership_bound") is not True:
+            raise ValueError("quality candidate source row is not market bound")
+        is_etf = str(row.get("security_type") or "").lower() == "etf"
+        expected_provenance = "market_bound_approved_etf_catalog" if is_etf else "market_bound_connector_attested"
+        if row.get("provenance_class") != expected_provenance:
+            raise ValueError("quality candidate source row provenance class mismatch")
         if row.get("market_index_sha256") != v["market_index_sha256"] or row.get("query_plan_sha256") != v["query_plan_sha256"]:
             raise ValueError("quality candidate source row evidence hash mismatch")
         _require_hash(row.get("market_membership_sha256"), "candidate market membership hash")
@@ -454,10 +526,18 @@ def validate_candidate_source(value: Mapping[str, Any]) -> dict[str, Any]:
         result_rows = row.get("result_row_sha256s")
         if not isinstance(lanes, list) or not lanes or any(str(lane) not in load_policy()["bootstrap"]["lane_score_weights"] for lane in lanes):
             raise ValueError("quality candidate source row has no valid quality lane")
-        if not isinstance(receipts, list) or not receipts or not isinstance(queries, list) or not queries or not isinstance(result_rows, list) or not result_rows:
-            raise ValueError("quality candidate source row has incomplete query provenance")
-        for digest in [*receipts, *queries, *result_rows]:
-            _require_hash(digest, "candidate query provenance hash")
+        if not isinstance(receipts, list) or not isinstance(queries, list) or not isinstance(result_rows, list):
+            raise ValueError("quality candidate source row query provenance containers invalid")
+        if is_etf:
+            if receipts or queries or result_rows or lanes != ["etf"]:
+                raise ValueError("ETF candidate must use only the approved ETF catalog lane")
+            _require_hash(row.get("approved_etf_catalog_sha256"), "ETF catalog hash")
+            _require_hash(row.get("approved_etf_row_sha256"), "ETF catalog row hash")
+        else:
+            if not receipts or not queries or not result_rows:
+                raise ValueError("quality candidate source row has incomplete MetricDuck query provenance")
+            for digest in [*receipts, *queries, *result_rows]:
+                _require_hash(digest, "candidate query provenance hash")
         for lane in sorted(set(str(x) for x in lanes)):
             observed[lane] += 1
     if {str(k): int(vv) for k, vv in lane_counts.items()} != dict(sorted(observed.items())):
