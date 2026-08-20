@@ -1,0 +1,196 @@
+{
+  "audit_summary": {
+    "path": "audit-summary.json",
+    "sha256": "5760bb9132ac2880a62de33a5706257ad2beb5175fb92966c1386cd228a98e6c"
+  },
+  "complete": true,
+  "created_at": "2026-08-20T14:25:44Z",
+  "kind": "qrgf_funnel_snapshot",
+  "l1": {
+    "actual_rankable_rows": 3323,
+    "assessed_rows": 5119,
+    "audit_file": "l1-finalists.csv",
+    "audit_file_sha256": "5d29179478a12dca2446404f799a4db4f044bf7e1c2d5d56e34cfa47bb3da09a",
+    "broad_search_complete": true,
+    "finalists_semantic_sha256": "d96cc8980856ee15c0f1e11fe6cf61039d025007d568dcfc70b99b4641e2763c",
+    "global_ranking_complete": true,
+    "merged_rows": 5119,
+    "ranked_l1": 500,
+    "summary_semantic_sha256": "a672bbd77ab6e7d37be7bc94cec3adbd597c80ec9cd5efe356e7cbddd8fabdf3",
+    "unresolved_core_rows": 0,
+    "unresolved_mature_core_rows": 0
+  },
+  "l2": {
+    "all_results_semantic_sha256": "c3c6f1b0491533b35171e0289791bffc740a4f6b2cd3b66616c5429a88a8eb3c",
+    "audit_file": "l2-results.json",
+    "audit_file_sha256": "dcc84dcbd2b50c280c804567e4fc4c4656fb3151068d3a293993e423a5eb7027",
+    "finalist_ceiling": 120,
+    "global_ranking_complete": true,
+    "input_count": 500,
+    "l2_rules_hash": "c8f1bf1665a8c5dfb834c0571e7dd5f6b6e5ccd00eab00295338bd42cfde549b",
+    "page_count": 12,
+    "page_size": 10,
+    "pages": [
+      {
+        "first_identity": "ON:nasdaqtrader:Q:ON",
+        "last_identity": "MPWR:nasdaqtrader:Q:MPWR",
+        "name": "page-0001.jsonl",
+        "rows": 10,
+        "semantic_sha256": "25dd0386595046667e9ddce12107343f83a6db6838e0676edaf8de14f8d1a35e"
+      },
+      {
+        "first_identity": "AA:nasdaqtrader:N:AA",
+        "last_identity": "AKAM:nasdaqtrader:Q:AKAM",
+        "name": "page-0002.jsonl",
+        "rows": 10,
+        "semantic_sha256": "be497806cac2613285d78e086d4ecefdbdafdbed1820727cd121061f100fd427"
+      },
+      {
+        "first_identity": "FDX:nasdaqtrader:N:FDX",
+        "last_identity": "GLW:nasdaqtrader:N:GLW",
+        "name": "page-0003.jsonl",
+        "rows": 10,
+        "semantic_sha256": "ea54b2191df2ef3349bda01298e9a1df8d9a4ec88d9e32f4eb81d3dbe471c46a"
+      },
+      {
+        "first_identity": "NOK:nasdaqtrader:N:NOK",
+        "last_identity": "MCHP:nasdaqtrader:Q:MCHP",
+        "name": "page-0004.jsonl",
+        "rows": 10,
+        "semantic_sha256": "f5e96ef2005489511545418a623a58833acbd788177e4a79a240ecd00c803eaf"
+      },
+      {
+        "first_identity": "HL:nasdaqtrader:N:HL",
+        "last_identity": "ALGM:nasdaqtrader:Q:ALGM",
+        "name": "page-0005.jsonl",
+        "rows": 10,
+        "semantic_sha256": "2b1ca68ac6a343618e0af37104dba619472bbc8a4b873d2cbf39c486e19398e3"
+      },
+      {
+        "first_identity": "CORZ:nasdaqtrader:Q:CORZ",
+        "last_identity": "CCJ:nasdaqtrader:N:CCJ",
+        "name": "page-0006.jsonl",
+        "rows": 10,
+        "semantic_sha256": "b32d28c90d900c40c24ca51992279a6ae889af1ca7f29c0e7df04f3afda5e191"
+      },
+      {
+        "first_identity": "DOW:nasdaqtrader:N:DOW",
+        "last_identity": "TTMI:nasdaqtrader:Q:TTMI",
+        "name": "page-0007.jsonl",
+        "rows": 10,
+        "semantic_sha256": "76d576d7b6ecd16fcfc0f7d25724daa1980e2069355e78eb4d233c94896e1b1d"
+      },
+      {
+        "first_identity": "UCTT:nasdaqtrader:Q:UCTT",
+        "last_identity": "FTAI:nasdaqtrader:Q:FTAI",
+        "name": "page-0008.jsonl",
+        "rows": 10,
+        "semantic_sha256": "9014edf0554476035d99df65619e90080aace893ca2fef00459632c312663d42"
+      },
+      {
+        "first_identity": "ICLN:US:ICLN",
+        "last_identity": "DNN:nasdaqtrader:A:DNN",
+        "name": "page-0009.jsonl",
+        "rows": 10,
+        "semantic_sha256": "5e519009805186955c18e9e8a5e514846395bdafeee9e9426fc080cd99f90cf3"
+      },
+      {
+        "first_identity": "ESLT:nasdaqtrader:Q:ESLT",
+        "last_identity": "FORM:nasdaqtrader:Q:FORM",
+        "name": "page-0010.jsonl",
+        "rows": 10,
+        "semantic_sha256": "d17114dfc88896045d9646ac5759e6cf2b72a4f808bbe56a81d6541522fd3577"
+      },
+      {
+        "first_identity": "KGS:nasdaqtrader:N:KGS",
+        "last_identity": "VIAV:nasdaqtrader:Q:VIAV",
+        "name": "page-0011.jsonl",
+        "rows": 10,
+        "semantic_sha256": "99f96cb96c3805f8c78526bf226f35c6b51b306f65b1d3527b4287c782960a7c"
+      },
+      {
+        "first_identity": "CSCO:nasdaqtrader:Q:CSCO",
+        "last_identity": "CRWV:nasdaqtrader:Q:CRWV",
+        "name": "page-0012.jsonl",
+        "rows": 10,
+        "semantic_sha256": "7293eeb2709416ac809e43cc8b9e1ee44635be357fc71580ea9212b97766ca55"
+      }
+    ],
+    "processed_count": 500,
+    "selected_l2": 120,
+    "selected_semantic_sha256": "f6b4cf204afa0ab748aa9c3c1f65047c1555705dc04b8cf80cb6916de14323cd",
+    "status_counts": {
+      "conditional": 500,
+      "pass": 0,
+      "recheck": 0,
+      "rejected": 0
+    },
+    "transport_projection": "l3_resume_minimal_v1"
+  },
+  "manifest_path": "data/funnel/snapshots/e05688d195b0ee70d7e6be33/manifest.json",
+  "producer_hashes": {
+    "batch_l2.py": "25b7aa6bb26a10ca9d31c2d7ce5f6bef3ff17e3afa8e75ade2c5d06ce0c641ea",
+    "bulk_prefilter.py": "0fa5bc831a1745587530ddcc33dbd3eeee3fa1146760ce82392412e5c019abf3",
+    "classify_l2.py": "36d29aec9a66ad9ed4b56bfac74b8026ee2e9ed7dceac6f05a8cf8df1767bb42",
+    "l1-rules.json": "5287a1713d12f365272c4df799a1b31a8f5c4e26ddef3d9a94019572fb1cb3e3",
+    "l2-rules.json": "c8f1bf1665a8c5dfb834c0571e7dd5f6b6e5ccd00eab00295338bd42cfde549b",
+    "publish_funnel_snapshot.py": "d705fd346ef4957af6d36b1aa1acd63ab651d7fe13157155cbcea53a5f5f3d44",
+    "qrgf_common.py": "34195413b2623872388ad0c769f68346199e6efe94896647c0ec120ae8233b6a",
+    "update-funnel.yml": "c9342310b3d0f88727b4625d799aaadf67407c1a7bfd7d2fdb3cf18f3ae10f8d"
+  },
+  "producer_release": {
+    "history_contract": {
+      "observed_closes_for_12m_return": 253,
+      "source_gap_is_sticky": true
+    },
+    "manifest_path": "screening/config/producer-release.json",
+    "manifest_sha256": "b8c9d75cdfdca43e1953049c7c36e66822bab0533bfa845428eb7bf6cbae549d",
+    "release_version": "3.0.0",
+    "schema_version": "1.0.0"
+  },
+  "schema_version": "2.0.0",
+  "snapshot_content_sha256": "e05688d195b0ee70d7e6be339879185951c0a8cd2855dd80c832d4c1959d1d4a",
+  "snapshot_id": "e05688d195b0ee70d7e6be33",
+  "source": {
+    "l0": {
+      "accepted_csv_sha256": "5eb8f2fb840e0708f0217bfaf76653ec4a5f8db76fcfefa3ef690f0f6462c5f0",
+      "accepted_unique": 5119,
+      "lineage_manifest_sha256": "f3a0f804dd182b8b3535a83281397913f6d1e01761f80df523fc07b3b6bdd828",
+      "producer_hashes": {
+        "approved-etfs.csv": "9250021e4b32f812078bd07ec382192461c383c8931c7f181335064b25581b2d",
+        "build_universe.py": "fee1055e9ce7f5cdb6df451342ad88cf2106942c96489c0b525a300716cb1d28",
+        "build_universe_v350.py": "9d46b8274595448f84001df38eca9d938e3eef1cb0fc38d3b3797efe73766e5f",
+        "publish_l0_snapshot.py": "93dc0dab073659b6efc137a79167a022fe863373c26312cd0119346b6e47faa3",
+        "qrgf_common.py": "8f63036ae8cd977bb3b428cb6a476c50f3b8c736317c46e646ae403eddbc247a",
+        "update-l0.yml": "65836f913a4bbf94a1f8a055d39f4f36ecb9c468f991112ecba3f7f2ef572b56"
+      },
+      "quarantined_rows": 0,
+      "raw_rows": 13169,
+      "raw_sha256": "6c21e8cbb654040bd8199d7f406fa808d8c182daadc1cb875eb41ae95bcf4f84",
+      "retrieved_at": "2026-08-20T14:20:20Z",
+      "source_id": "nasdaq_trader_all_us_listed",
+      "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt"
+    },
+    "l1": {
+      "csv_sha256": "74cbdf3dbc7afa2f374f13faef2cb6a53572431b8ff2ce60f99aacf5cbc3e33a",
+      "history_end": "2026-08-19",
+      "history_end_semantics": "max_observed_market_session",
+      "history_start": "2025-07-15",
+      "history_start_semantics": "requested_calendar_boundary",
+      "manifest_sha256": "7d165c8f0513f6928501ba710af65fc8c254f15b6e1b4ba27ae1cab5542f3814",
+      "producer_hashes": {
+        "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
+        "build_l1_snapshot_free.py": "31b9f4f24de291e8c146b3fbb0424095d301e548e3a68f5784a2ddf694c68535",
+        "l1_free_support.py": "72de1ee4ea7008d413e7ed21a1ddc98fe2fb1656eaf81c39c7ea38aefb612661",
+        "l1_market_session.py": "b032b8d36ed0fc59ad60126598003a27b62a6734f67c9814e25c2c54540137d4",
+        "update-l1.yml": "9119a5e12fd20df3b32a6b3ec71aee22b33c777a74f6ff419e26fe4e972ba904"
+      },
+      "requested_history_end": "2026-08-19",
+      "requested_history_start": "2025-07-15",
+      "retrieved_at": "2026-08-20T14:20:36Z",
+      "rows": 5119,
+      "source_id": "alpaca_sip_daily_free_l1"
+    },
+    "source_commit_sha": "6e1153f9ccdc367c94bf62e9cc542dc78cf955e1"
+  }
+}
