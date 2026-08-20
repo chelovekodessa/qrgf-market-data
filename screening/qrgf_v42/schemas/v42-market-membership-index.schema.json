@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "market_session_id",
+    "source_manifest_sha256",
+    "identity_map_sha256",
+    "publisher_recompute_required",
+    "row_count",
+    "master_eligible_count",
+    "rows",
+    "market_index_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_market_membership_index"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "market_session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_manifest_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "identity_map_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "publisher_recompute_required": {
+      "const": true
+    },
+    "row_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "master_eligible_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "market_index_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

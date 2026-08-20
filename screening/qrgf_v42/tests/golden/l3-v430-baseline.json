@@ -1,0 +1,7 @@
+{
+  "bank": {"l3_score": 85.25, "l3_status": "pass", "l3_coverage_pct": 100.0},
+  "cyclical": {"l3_score": 84.79, "l3_status": "pass", "l3_coverage_pct": 100.0},
+  "established_quality": {"l3_score": 85.47, "l3_status": "pass", "l3_coverage_pct": 100.0},
+  "etf": {"l3_score": 84.21, "l3_status": "pass", "l3_coverage_pct": 100.0},
+  "recognized_growth": {"l3_score": 88.91, "l3_status": "pass", "l3_coverage_pct": 100.0}
+}

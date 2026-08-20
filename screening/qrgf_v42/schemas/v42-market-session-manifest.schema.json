@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "ordinary_daily_broad_allowed",
+    "page_size",
+    "total_eligible_challengers",
+    "page_count",
+    "pages",
+    "manifest_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_market_session_manifest"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "ordinary_daily_broad_allowed": {
+      "const": true
+    },
+    "page_size": {
+      "const": 250
+    },
+    "total_eligible_challengers": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "page_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "manifest_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

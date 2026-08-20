@@ -1,0 +1,128 @@
+{
+  "execution": {
+    "account": {
+      "allocation_type": "ALL",
+      "max_age_hours": 0.25,
+      "persist_sensitive_values_in_remote_checkpoint": false,
+      "refresh_on_resume_before_executable_decision": true,
+      "tools": [
+        "get_account_summary",
+        "get_account_balances",
+        "get_account_positions",
+        "get_pa_allocation"
+      ]
+    },
+    "automatic_order_creation_allowed": false,
+    "contract": {
+      "require_contract_id": true,
+      "require_exact_symbol": true,
+      "require_exchange": true,
+      "tool": "search_contracts"
+    },
+    "history": {
+      "daily_period": "ONE_YEAR",
+      "daily_step": "ONE_DAY",
+      "minimum_daily_bars_if_history_exists": 200,
+      "minimum_weekly_bars_if_history_exists": 130,
+      "tool": "get_price_history",
+      "weekly_period": "FIVE_YEARS",
+      "weekly_step": "ONE_WEEK"
+    },
+    "provider": "Interactive Brokers",
+    "provider_short_name": "IBKR",
+    "quote": {
+      "fields": [
+        "last",
+        "bid_ask",
+        "volume",
+        "avg_90d_usd_volume",
+        "historical_vol"
+      ],
+      "max_open_now_quote_age_seconds": 180,
+      "max_open_now_spread_pct": 0.75,
+      "minimum_average_dollar_volume_usd": 2000000,
+      "require_executable_bid_ask_for_open_now": true,
+      "tool": "get_price_snapshot"
+    }
+  },
+  "market_radar": {
+    "branch": "main",
+    "full_market_materialization_in_chatgpt_forbidden": true,
+    "full_market_source_reused_from_validated_v3_producer": true,
+    "pointer_path": "data/v3/latest.json",
+    "provider": "GitHub",
+    "repository_full_name": "chelovekodessa/qrgf-market-data"
+  },
+  "market_view_v42": {
+    "branch": "main",
+    "challenger_page_size": 250,
+    "challenger_transport_is_not_quality_whitelist": true,
+    "expected_producer_release_sha256": "0bdc5a4b44688b7ff429aba99fd4784bafe6c0fafdd4875d779772052bf6817b",
+    "frontier_prefix": "data/v42/market/frontiers",
+    "latest_pointer_path": "data/v42/market/latest.json",
+    "producer_release_path": "screening/config/v42-market-producer-release.json",
+    "progress_prefix": "data/v42/market/progress",
+    "provider": "GitHub",
+    "repository_full_name": "chelovekodessa/qrgf-market-data",
+    "session_prefix": "data/v42/market/sessions",
+    "triage_prefix": "data/v42/market/triage",
+    "triage_proposal_prefix": "data/v42/market/triage-proposals",
+    "workflow_path": ".github/workflows/update-v42-market.yml"
+  },
+  "master_core500_v42": {
+    "branch": "main",
+    "campaign_latest_pointer_path": "data/v42/campaign/latest.json",
+    "campaign_prefix": "data/v42/campaigns",
+    "certificates_prefix": "data/v42/master-core500/certificates",
+    "expected_producer_release_sha256": "7772a75b252bd6e4b8cc654274df9292f583ee8fe444a11bc478c4afb38c8047",
+    "identity_prefix": "data/v42/identity",
+    "latest_pointer_path": "data/v42/master-core500/latest.json",
+    "masters_prefix": "data/v42/master-core500/masters",
+    "producer_release_path": "screening/config/v42-state-producer-release.json",
+    "proposal_prefix": "data/v42/master-core500/requests",
+    "provider": "GitHub",
+    "publisher_recomputes_master_from_evidence": true,
+    "query_plan_prefix": "data/v42/query-plans",
+    "repository_full_name": "chelovekodessa/qrgf-market-data",
+    "sources_prefix": "data/v42/master-core500/sources",
+    "workflow_path": ".github/workflows/promote-v42-state.yml"
+  },
+  "primary_evidence": {
+    "github_direct_sec": {
+      "production_required": false,
+      "self_hosted_optional": true,
+      "standard_hosted_runner_supported": false
+    },
+    "metricduck": {
+      "accession_lineage_required": true,
+      "complete_leaf_requires_matched_equals_returned": true,
+      "connector_max_rows_per_query": 50,
+      "cross_company_screen_trust_class": "connector_attested",
+      "external_cryptographic_signature_available": false,
+      "provider": "MetricDuck",
+      "role": "licensed_sec_filing_transport"
+    },
+    "official_web": {
+      "role": "conflict_clearance_and_current_delta"
+    }
+  },
+  "quality_registry_v4": {
+    "branch": "main",
+    "expected_producer_release_sha256": "7772a75b252bd6e4b8cc654274df9292f583ee8fe444a11bc478c4afb38c8047",
+    "passport_prefix": "data/v4/passports",
+    "producer_release_path": "screening/config/v42-state-producer-release.json",
+    "progress_requires_current_receipt": true,
+    "proposal_journal_append_only": true,
+    "proposal_prefix": "data/v4/registry/proposals",
+    "provider": "GitHub",
+    "read_after_write_required_for_bootstrap": true,
+    "receipt_is_idempotency_key": true,
+    "receipt_prefix": "data/v4/registry/receipts",
+    "replay_safe_required": true,
+    "repository_full_name": "chelovekodessa/qrgf-market-data",
+    "scope_pointer_prefix": "data/v4/registry/scopes",
+    "single_writer_required": true,
+    "workflow_path": ".github/workflows/promote-v42-state.yml"
+  },
+  "schema_version": "2.0.0"
+}

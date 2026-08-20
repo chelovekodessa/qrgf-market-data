@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["ticker", "contract_id", "security_type", "instrument_status", "facts", "clearances", "evidence", "research_cutoff_at"],
+  "properties": {
+    "ticker": {"type": "string", "minLength": 1},
+    "contract_id": {"type": "string", "minLength": 1},
+    "security_type": {"enum": ["common_equity", "adr", "etf"]},
+    "instrument_status": {"enum": ["eligible", "verified", "active"]},
+    "facts": {"type": "object"},
+    "clearances": {"type": "object"},
+    "evidence": {"type": "array", "minItems": 1},
+    "research_cutoff_at": {"type": "string", "minLength": 10},
+    "collection_status": {"enum": ["ready", "exhausted", "retryable_failure", "global_blocked"]}
+  },
+  "additionalProperties": true
+}

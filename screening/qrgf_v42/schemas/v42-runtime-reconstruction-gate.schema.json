@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "attestation_class",
+    "clean_checkout",
+    "local_state_used",
+    "source_commit_sha",
+    "workflow_run_id",
+    "validator_release_sha256",
+    "master_sha256",
+    "source_registry_snapshot_sha256",
+    "reconstructed_registry_snapshot_sha256",
+    "canary_scope_count",
+    "source_canary_durable_count",
+    "reconstructed_canary_durable_count",
+    "canary_records_identical",
+    "runtime_reconstruction_passed",
+    "gate_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "attestation_class": {
+      "const": "github_actions_computed"
+    },
+    "clean_checkout": {
+      "const": true
+    },
+    "local_state_used": {
+      "const": false
+    },
+    "source_commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "workflow_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validator_release_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "master_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_registry_snapshot_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "reconstructed_registry_snapshot_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "gate_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "kind": {
+      "const": "qrgf_v42_runtime_reconstruction_gate"
+    },
+    "canary_scope_count": {
+      "const": 15
+    },
+    "source_canary_durable_count": {
+      "const": 15
+    },
+    "reconstructed_canary_durable_count": {
+      "const": 15
+    },
+    "canary_records_identical": {
+      "const": true
+    },
+    "runtime_reconstruction_passed": {
+      "const": true
+    }
+  },
+  "additionalProperties": true
+}

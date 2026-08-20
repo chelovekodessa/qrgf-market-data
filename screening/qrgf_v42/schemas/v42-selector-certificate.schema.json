@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "master_content_sha256",
+    "candidate_source_sha256",
+    "identity_map_sha256",
+    "market_index_sha256",
+    "query_plan_sha256",
+    "requested_size",
+    "selected_scope_count",
+    "publisher_recompute_required",
+    "regression_expectations_satisfied",
+    "certificate_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_master_core500_selector_certificate"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "master_content_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "candidate_source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "identity_map_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "market_index_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "query_plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "requested_size": {
+      "const": 500
+    },
+    "selected_scope_count": {
+      "const": 500
+    },
+    "publisher_recompute_required": {
+      "const": true
+    },
+    "regression_expectations_satisfied": {
+      "const": true
+    },
+    "certificate_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

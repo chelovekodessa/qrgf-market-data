@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "source_architecture_version",
+    "target_architecture_version",
+    "legacy_is_not_authoritative_master",
+    "v41_production_state_is_historical_read_only",
+    "registry_knowledge_outside_master_preserved",
+    "registry_scope_count",
+    "report_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_migration_report"
+    },
+    "source_architecture_version": {
+      "const": "4.1.0"
+    },
+    "target_architecture_version": {
+      "const": "4.2.0"
+    },
+    "legacy_is_not_authoritative_master": {
+      "const": true
+    },
+    "v41_production_state_is_historical_read_only": {
+      "const": true
+    },
+    "registry_knowledge_outside_master_preserved": {
+      "const": true
+    },
+    "registry_scope_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "report_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "page_index",
+    "cursor_start",
+    "cursor_end_exclusive",
+    "row_count",
+    "page_size",
+    "rows",
+    "page_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_challenger_page"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "page_index": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cursor_start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cursor_end_exclusive": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "row_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 250
+    },
+    "page_size": {
+      "const": 250
+    },
+    "rows": {
+      "type": "array",
+      "maxItems": 250,
+      "items": {
+        "type": "object"
+      }
+    },
+    "page_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

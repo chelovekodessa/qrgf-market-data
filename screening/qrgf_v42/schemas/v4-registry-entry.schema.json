@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "entry_sha256": {
+      "maxLength": 64,
+      "minLength": 64,
+      "type": "string"
+    },
+    "event_scan_through": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "freshness_status": {
+      "enum": [
+        "fresh",
+        "needs_refresh",
+        "invalidated",
+        "unknown"
+      ]
+    },
+    "issuer_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "kind": {
+      "const": "qrgf_v4_registry_scope_entry"
+    },
+    "last_proposal_sha256": {
+      "type": "string"
+    },
+    "next_review_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "passport_hash": {
+      "maxLength": 64,
+      "minLength": 64,
+      "type": "string"
+    },
+    "passport_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "producer_release_sha256": {
+      "type": "string"
+    },
+    "quality_as_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quality_coverage_pct": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "quality_eligible": {
+      "type": "boolean"
+    },
+    "quality_policy_version": {
+      "type": "string"
+    },
+    "quality_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "quality_status": {
+      "type": "string"
+    },
+    "research_scope_key": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "security_overlay": {
+      "enum": [
+        "common_equity",
+        "adr",
+        "etf"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "research_scope_key",
+    "issuer_id",
+    "security_overlay",
+    "passport_hash",
+    "passport_path",
+    "freshness_status",
+    "event_scan_through",
+    "quality_policy_version",
+    "quality_status",
+    "quality_score",
+    "quality_coverage_pct",
+    "quality_eligible",
+    "quality_as_of",
+    "last_proposal_sha256",
+    "producer_release_sha256",
+    "entry_sha256"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "identity_map_sha256",
+    "market_index_sha256",
+    "query_plan_sha256",
+    "quality_candidate_union_size",
+    "publisher_recompute_required",
+    "current_recovery_used",
+    "candidates",
+    "source_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_quality_candidate_source"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "identity_map_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "market_index_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "query_plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "quality_candidate_union_size": {
+      "type": "integer",
+      "minimum": 500
+    },
+    "publisher_recompute_required": {
+      "const": true
+    },
+    "current_recovery_used": {
+      "const": false
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 500,
+      "items": {
+        "type": "object"
+      }
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,
+  "required":["schema_version","kind","ticker","contract_id","issuer_id","security_overlay","research_scope_key","security_type","instrument_status","facts","clearances","evidence","research_cutoff_at","collection_status","fact_pack_sha256"],
+  "properties":{
+    "schema_version":{"const":"1.0.0"},"kind":{"const":"qrgf_v4_structural_fact_pack"},"ticker":{"type":"string","minLength":1},"contract_id":{"type":"string","minLength":1},"issuer_id":{"type":"string","minLength":1},"security_overlay":{"enum":["common_equity","adr","etf"]},"research_scope_key":{"type":"string","minLength":1},"security_type":{"type":"string"},"instrument_status":{"enum":["eligible","verified","active"]},"structure":{"type":"object"},"sector":{"type":["string","null"]},"economic_archetype":{"type":["string","null"]},"facts":{"type":"object"},"clearances":{"type":"object"},"evidence":{"type":"array","items":{"type":"object"}},"research_cutoff_at":{"type":["string","null"]},"collection_status":{"type":"string"},"fact_pack_sha256":{"type":"string","minLength":64,"maxLength":64}
+  }
+}
