@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "build_request_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "certificate_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "identity_map_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "identity_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "kind": {
+      "const": "qrgf_v42_master_core500_pointer"
+    },
+    "market_index_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "market_index_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "market_session_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "master_content_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "master_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "master_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "pointer_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "producer_release_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "published_at": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "query_plan_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "query_plan_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "selected_scope_count": {
+      "const": 500
+    },
+    "selector_certificate_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "source_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "identity_path",
+    "market_index_path",
+    "query_plan_path",
+    "source_path",
+    "master_path",
+    "certificate_path",
+    "source_sha256",
+    "master_sha256",
+    "master_content_sha256",
+    "selector_certificate_sha256",
+    "identity_map_sha256",
+    "market_index_sha256",
+    "query_plan_sha256",
+    "build_request_sha256",
+    "market_session_id",
+    "selected_scope_count",
+    "published_at",
+    "producer_release_sha256",
+    "pointer_sha256"
+  ],
+  "type": "object"
+}

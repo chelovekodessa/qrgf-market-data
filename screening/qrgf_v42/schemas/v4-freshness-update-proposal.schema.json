@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","type":"object",
+  "required":["schema_version","kind","research_scope_key","issuer_id","security_overlay","passport_hash","quality_policy_version","event_scan_through","freshness_status","delta_status","proposal_sha256"],
+  "properties":{
+    "schema_version":{"const":"1.0.0"},"kind":{"const":"qrgf_v4_freshness_update_proposal"},"research_scope_key":{"type":"string"},"issuer_id":{"type":"string"},"security_overlay":{"enum":["common_equity","adr","etf"]},"passport_hash":{"type":"string"},"quality_policy_version":{"type":"string"},"event_scan_through":{"type":"string"},"freshness_status":{"enum":["fresh","needs_refresh","invalidated"]},"delta_status":{"enum":["no_structural_change","needs_refresh","invalidated"]},"proposal_sha256":{"type":"string"}
+  },"additionalProperties":false
+}

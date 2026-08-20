@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "issuer_id",
+    "quality_policy_version",
+    "economic_archetype",
+    "summary",
+    "structural_facts",
+    "component_details",
+    "evidence_lineage"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "qrgf_quality_passport"
+    },
+    "issuer_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quality_policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "economic_archetype": {
+      "type": "string",
+      "minLength": 1
+    },
+    "listing_overlay": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "summary": {
+      "type": "object"
+    },
+    "structural_facts": {
+      "type": "object"
+    },
+    "component_details": {
+      "type": "object"
+    },
+    "evidence_lineage": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "assessment_rationale": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "field",
+          "method_version",
+          "criteria",
+          "rationale",
+          "contrary_evidence",
+          "uncertainty"
+        ],
+        "properties": {
+          "field": {
+            "type": "string",
+            "minLength": 1
+          },
+          "method_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "rationale": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contrary_evidence": {
+            "type": "array"
+          },
+          "uncertainty": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "evidence_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "score": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,674 @@
+{
+  "architecture": {
+    "broad_search_trade_decision_forbidden": true,
+    "connector_attestation_is_not_external_signature": true,
+    "core500_is_research_bootstrap_not_whitelist": true,
+    "deployment_release_manifest_required": true,
+    "direct_sec_from_standard_github_runner_required": false,
+    "durable_registry_readback_required_for_bootstrap_completion": true,
+    "full_market_challenger_scan_required": true,
+    "legacy_production_paths_forbidden": true,
+    "market_membership_index_required": true,
+    "mode": "core500_quality_registry_plus_full_market_challengers",
+    "official_issuer_identity_required_for_master": true,
+    "publisher_recomputes_master_from_evidence": true,
+    "registry_is_cache_not_universe_gate": true,
+    "remote_release_must_match_pinned_hash": true,
+    "unknown_never_becomes_fail_by_missingness": true,
+    "v41_is_historical_read_only": true,
+    "version": "4.2.0"
+  },
+  "bootstrap": {
+    "arbitrary_candidate_list_forbidden": true,
+    "canaries_are_tests_not_forced_inclusions": true,
+    "candidate_source": "verified_market_index_plus_complete_metricduck_query_plan",
+    "cohort_size": 500,
+    "competitive_resolved_statuses": [
+      "pass",
+      "conditional",
+      "rejected"
+    ],
+    "current_price_or_recovery_fields_forbidden": true,
+    "current_recovery_field_recursive_rejection": true,
+    "durable_terminal_statuses": [
+      "pass",
+      "conditional",
+      "rejected",
+      "insufficient_data"
+    ],
+    "incomplete_statuses": [
+      "recheck",
+      "insufficient_data"
+    ],
+    "insufficient_data_is_competitive_unresolved": true,
+    "insufficient_data_is_quality_unknown": true,
+    "issuer_dedup": true,
+    "lane_score_aggregation": "max_valid_lane_score",
+    "lane_score_weights": {
+      "bank": {
+        "cet1_ratio_pct": 25,
+        "data_completeness": 10,
+        "market_scale": 10,
+        "nonperforming_assets_pct": 20,
+        "roa_pct": 20,
+        "roe_pct": 15
+      },
+      "cyclical": {
+        "cash_to_debt": 10,
+        "data_completeness": 10,
+        "fcf_margin_pct": 20,
+        "market_scale": 10,
+        "net_debt_to_ebitda": 25,
+        "revenue_cagr_3y_pct": 10,
+        "roic": 15
+      },
+      "established_quality": {
+        "cash_to_debt": 5,
+        "data_completeness": 5,
+        "fcf_margin_pct": 20,
+        "market_scale": 5,
+        "net_debt_to_ebitda": 15,
+        "operating_margin_pct": 15,
+        "revenue_cagr_3y_pct": 15,
+        "roic": 20
+      },
+      "etf": {
+        "breadth_quality_score": 15,
+        "data_completeness": 5,
+        "fund_aum_scale": 10,
+        "fund_structure_quality_score": 15,
+        "holdings_quality_score": 25,
+        "sector_fundamental_quality_score": 20,
+        "top10_concentration_control": 10
+      },
+      "recognized_growth": {
+        "cash_to_debt": 15,
+        "data_completeness": 5,
+        "dilution_pct_yoy": 10,
+        "fcf_margin_pct": 15,
+        "market_scale": 10,
+        "net_debt_to_ebitda": 10,
+        "operating_margin_pct": 10,
+        "revenue_cagr_3y_pct": 25
+      }
+    },
+    "master_core500_exact_size": 500,
+    "master_core500_immutable": true,
+    "metricduck_query_plan": {
+      "approved_lane_filters": {
+        "bank": {
+          "cet1_ratio_pct": {
+            "operator": "gte",
+            "value": 9.0
+          },
+          "roa_pct": {
+            "operator": "gte",
+            "value": 0.5
+          }
+        },
+        "cyclical": {
+          "fcf_margin_pct": {
+            "operator": "gte",
+            "value": 0.04
+          },
+          "net_debt_to_ebitda": {
+            "operator": "lte",
+            "value": 2.5
+          }
+        },
+        "established_quality": {
+          "fcf_margin_pct": {
+            "operator": "gte",
+            "value": 0.05
+          },
+          "roic": {
+            "operator": "gte",
+            "value": 0.12
+          }
+        },
+        "etf": {
+          "fund_aum": {
+            "operator": "gte",
+            "value": 1000000000
+          },
+          "fund_structure_quality_score": {
+            "operator": "gte",
+            "value": 65.0
+          }
+        },
+        "recognized_growth": {
+          "fcf_margin_pct": {
+            "operator": "gte",
+            "value": 0.0
+          },
+          "revenue_cagr_3y_pct": {
+            "operator": "gte",
+            "value": 0.12
+          }
+        }
+      },
+      "connector_max_rows_per_query": 50,
+      "connector_trust_class": "connector_attested",
+      "external_cryptographic_signature_available": false,
+      "partition_dimension": "market_cap",
+      "saturated_leaf_forbidden": true
+    },
+    "minimum_fact_coverage_pct": 40,
+    "official_issuer_identity_required": true,
+    "publisher_recompute_required": true,
+    "quality_candidate_source_required": true,
+    "quality_first": true,
+    "quality_resolved_statuses": [
+      "pass",
+      "conditional",
+      "rejected"
+    ],
+    "quality_score_not_final_until_deep_structural_research": true,
+    "query_lane_membership_must_be_computed_from_receipts": true,
+    "selection_model_version": "4.2.0-bootstrap-provenance-v1",
+    "selector_certificate_must_bind_cohort": true,
+    "selector_certificate_required": true,
+    "wave_size": 4
+  },
+  "broad_search": {
+    "automatic_l5": false,
+    "final_shortlist_is_trade_ready": false,
+    "final_stage": "L4",
+    "manual_deep_check_required_after_shortlist": true
+  },
+  "campaign": {
+    "canary_maximum_scope_count": 20,
+    "canary_minimum_scope_count": 12,
+    "canary_scope_count": 15,
+    "clean_checkout_required": true,
+    "daily_broad_requires_complete": true,
+    "gate_input_commit_required": true,
+    "gates_must_be_computed_by_clean_github_run": true,
+    "local_state_use_forbidden": true,
+    "manual_gate_boolean_input_forbidden": true,
+    "phases": [
+      "CANARY",
+      "PILOT",
+      "CORE500",
+      "COMPLETE"
+    ],
+    "pilot_blocked_state_reconstructed_not_quality_reused": true,
+    "pilot_registry_loss_gate_required": true,
+    "pilot_reuse_gate_required": true,
+    "pilot_scope_count": 50,
+    "runtime_reconstruction_gate_required": true,
+    "state_machine_version": "4.2.0-master500-phases-v2",
+    "state_must_be_reconstructible_from_github": true
+  },
+  "challenger_lane": {
+    "competitive_frontier_required": true,
+    "core500_is_not_exclusion_gate": true,
+    "cursor_continuation_required": true,
+    "daily_market_challenger_transport_ceiling": 250,
+    "deep_research_wave_size": 4,
+    "durable_triage_required_before_cursor_advance": true,
+    "full_market_radar_required": true,
+    "insufficient_data_remains_competitive_unknown": true,
+    "new_or_materially_changed_issuer_rescue": true,
+    "no_exhaustive_full_market_top30_claim_without_resolving_competitive_unknowns": true,
+    "page_transport_is_not_universe_cutoff": true,
+    "periodic_quality_discovery_required": true,
+    "pinned_session_manifest_required": true,
+    "quality_discovery_source": "metricduck_cross_company_screens",
+    "safe_exclusion_requires_proven_reason": true,
+    "transport_ceiling_is_not_quality_whitelist": true,
+    "transport_page_size": 250,
+    "transport_progress_independent_of_deep_resolution": true,
+    "unknown_quality_candidate_may_enter_research": true
+  },
+  "dimensions": {
+    "account_context_must_not_change_scores": true,
+    "intrinsic_risk": {
+      "atr_and_gap_risk": 20,
+      "cyclicality_and_estimate_dispersion": 10,
+      "drawdown_and_structure": 20,
+      "event_risk": 15,
+      "historical_volatility": 25,
+      "history_uncertainty": 10
+    },
+    "minimum_classification_coverage_pct": 50,
+    "opportunity": {
+      "business_quality": 20,
+      "earnings_estimates_catalyst": 10,
+      "financial_durability": 15,
+      "liquidity": 5,
+      "market_sector": 10,
+      "technical_recovery_path": 15,
+      "temporary_pullback": 15,
+      "valuation": 10
+    },
+    "opportunity_classes": {
+      "A": [
+        85,
+        100
+      ],
+      "B": [
+        78,
+        84.9999
+      ],
+      "C": [
+        70,
+        77.9999
+      ],
+      "D": [
+        0,
+        69.9999
+      ]
+    },
+    "risk_bands": {
+      "high": [
+        45.0001,
+        70
+      ],
+      "low": [
+        0,
+        25
+      ],
+      "moderate": [
+        25.0001,
+        45
+      ],
+      "very_high": [
+        70.0001,
+        100
+      ]
+    },
+    "unknown_class": "E"
+  },
+  "evidence": {
+    "assessment_uncertainty_required": true,
+    "contrary_evidence_field_required": true,
+    "critical_numeric_conflict_tolerance_pct": 0.5,
+    "metricduck_fact_requires": [
+      "accession_or_edgar_handle",
+      "period",
+      "filing_lineage"
+    ],
+    "metricduck_summary_is_evidence": false,
+    "missing_must_remain_unknown": true,
+    "model_judgment_must_be_explicit": true,
+    "negative_clearance_requires_defined_scope": true,
+    "source_priority": [
+      "official_filing",
+      "investor_relations",
+      "regulator",
+      "exchange",
+      "broker",
+      "licensed_market_data",
+      "reputable_news",
+      "public_aggregator",
+      "user_provided"
+    ],
+    "subjective_score_rationale_required": true
+  },
+  "final_decision": {
+    "allowed_statuses": [
+      "open_now",
+      "prepare_limit_order",
+      "wait",
+      "do_not_enter",
+      "do_not_consider"
+    ],
+    "automatic_order_creation_forbidden": true,
+    "open_now_requires_execution_context": true,
+    "open_now_requires_full_completeness": true,
+    "position_sizing_only_on_explicit_request": true
+  },
+  "hard_vetoes": {
+    "adr_reporting_or_listing_failure": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "bankruptcy_or_going_concern": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "binary_business_risk": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "critical_balance_sheet_failure": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "critical_bank_capital_or_funding_failure": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "critical_data_missing": {
+      "blocks_open_now": true,
+      "stage": "L5"
+    },
+    "critical_dilution_or_financing_risk": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "fund_viability_or_structure_failure": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "instrument_ineligible": {
+      "blocks_instrument": true,
+      "stage": "L0"
+    },
+    "material_accounting_failure": {
+      "blocks_entry": true,
+      "stage": "L3"
+    },
+    "quote_not_executable": {
+      "blocks_open_now": true,
+      "stage": "L5"
+    },
+    "structural_thesis_damage": {
+      "blocks_entry": true,
+      "stage": "L4"
+    }
+  },
+  "l3": {
+    "adr_overlay_clearances": [
+      "issuer_reporting_status",
+      "listing_status"
+    ],
+    "clearance_veto_map": {
+      "accounting_status": "material_accounting_failure",
+      "balance_sheet_viability_status": "critical_balance_sheet_failure",
+      "bankruptcy_status": "bankruptcy_or_going_concern",
+      "binary_business_risk_status": "binary_business_risk",
+      "capital_viability_status": "critical_bank_capital_or_funding_failure",
+      "delisting_liquidation_status": "fund_viability_or_structure_failure",
+      "dilution_financing_status": "critical_dilution_or_financing_risk",
+      "fund_viability_status": "fund_viability_or_structure_failure",
+      "funding_viability_status": "critical_bank_capital_or_funding_failure",
+      "going_concern_status": "bankruptcy_or_going_concern",
+      "issuer_reporting_status": "adr_reporting_or_listing_failure",
+      "leverage_structure_status": "fund_viability_or_structure_failure",
+      "listing_status": "adr_reporting_or_listing_failure",
+      "underlying_binary_concentration_status": "fund_viability_or_structure_failure"
+    },
+    "lanes": [
+      "established_quality",
+      "recognized_growth",
+      "cyclical",
+      "bank",
+      "etf"
+    ],
+    "minimum_coverage_pct": 70,
+    "minimum_quality_score": 65,
+    "pass_coverage_pct": 85,
+    "required_clearances": {
+      "bank": [
+        "bankruptcy_status",
+        "going_concern_status",
+        "accounting_status",
+        "capital_viability_status",
+        "funding_viability_status",
+        "binary_business_risk_status"
+      ],
+      "cyclical": [
+        "bankruptcy_status",
+        "going_concern_status",
+        "accounting_status",
+        "dilution_financing_status",
+        "balance_sheet_viability_status",
+        "binary_business_risk_status"
+      ],
+      "established_quality": [
+        "bankruptcy_status",
+        "going_concern_status",
+        "accounting_status",
+        "dilution_financing_status",
+        "balance_sheet_viability_status",
+        "binary_business_risk_status"
+      ],
+      "etf": [
+        "fund_viability_status",
+        "delisting_liquidation_status",
+        "leverage_structure_status",
+        "underlying_binary_concentration_status"
+      ],
+      "recognized_growth": [
+        "bankruptcy_status",
+        "going_concern_status",
+        "accounting_status",
+        "dilution_financing_status",
+        "balance_sheet_viability_status",
+        "binary_business_risk_status"
+      ]
+    },
+    "weights": {
+      "bank": {
+        "asset_quality": 25,
+        "capital_strength": 25,
+        "franchise_durability": 15,
+        "funding_stability": 15,
+        "profitability_quality": 20
+      },
+      "cyclical": {
+        "business_durability": 15,
+        "capital_discipline": 15,
+        "cash_generation": 15,
+        "financial_resilience": 30,
+        "through_cycle_quality": 25
+      },
+      "established_quality": {
+        "business_durability": 20,
+        "capital_discipline": 15,
+        "earnings_cash_quality": 25,
+        "financial_resilience": 25,
+        "trajectory_quality": 15
+      },
+      "etf": {
+        "concentration_control": 10,
+        "diversification": 20,
+        "fund_resilience": 15,
+        "holdings_quality": 30,
+        "sector_fundamental_quality": 25
+      },
+      "recognized_growth": {
+        "business_durability": 15,
+        "capital_discipline": 15,
+        "financial_resilience": 25,
+        "growth_quality": 25,
+        "unit_economics": 20
+      }
+    }
+  },
+  "l4": {
+    "analyst_action_freshness_hours": 72,
+    "analyst_event_window_days": 90,
+    "fresh_analyst_actions_required_for_operating_company": true,
+    "minimum_coverage_pct": 60,
+    "minimum_fresh_analyst_actions_for_complete": 5,
+    "minimum_score": 60,
+    "pass_coverage_pct": 80,
+    "target_currency": "USD"
+  },
+  "l5_market_context": {
+    "minimum_competitors": 2,
+    "require_competitors_for_operating_company": true,
+    "require_sector_etf": true,
+    "required_benchmarks": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "VIX"
+    ]
+  },
+  "primary_evidence": {
+    "metricduck_is_approved_sec_filing_transport": true,
+    "metricduck_requires_accession_or_edgar_lineage": true,
+    "official_ir_or_regulator_used_for_conflicts_and_clearances": true,
+    "self_hosted_sec_bulk_accelerator": {
+      "enabled": false,
+      "must_pass_network_preflight": true,
+      "optional_only": true
+    },
+    "standard_github_hosted_direct_sec_is_not_required": true
+  },
+  "quality_registry": {
+    "competitive_use_requires_fresh_delta_scan": true,
+    "freshness_states": [
+      "fresh",
+      "needs_refresh",
+      "invalidated",
+      "unknown"
+    ],
+    "immutable_passport": true,
+    "insufficient_data_requires_next_review_date": true,
+    "mutable_freshness_pointer": true,
+    "partial_state_receipt_recovery_requires_exact_pointer_match": true,
+    "persist_incomplete_as_nonreusable_observation": true,
+    "persist_rejected_terminal_research": true,
+    "progress_requires_current_receipt": true,
+    "proposal_hash_must_not_define_recency": true,
+    "proposal_journal_append_only": true,
+    "quality_policy_version": "4.0.0-structural-v1",
+    "raw_private_or_licensed_payloads_forbidden": true,
+    "read_after_write_required_for_bootstrap": true,
+    "receipt_is_idempotency_key": true,
+    "registry_is_cache_not_correctness_dependency": true,
+    "replay_must_preserve_original_receipt": true,
+    "research_scope_key": "issuer_id|security_overlay",
+    "reusable_quality_statuses": [
+      "pass",
+      "conditional",
+      "rejected"
+    ],
+    "reuse_requires_matching_policy_and_overlay": true,
+    "reuse_requires_passport_hash_verification": true,
+    "same_logical_version_conflict_fails_closed": true,
+    "schema_version": "2.0.0"
+  },
+  "schema_version": "2.0.0",
+  "selection": {
+    "diagnostics": {
+      "persist_best_excluded": true,
+      "persist_cutoff_gap": true,
+      "persist_sector_counts": true
+    },
+    "issuer_dedup": {
+      "conservative_share_class_name_fallback": true,
+      "cross_security_type_reuse": false,
+      "enabled": true,
+      "l3_research_reuse": true
+    },
+    "l3_to_l4": {
+      "ordering": [
+        "quality_tier",
+        "recovery_setup",
+        "fundamental_quality",
+        "evidence_confidence",
+        "liquidity"
+      ],
+      "quality_tier_is_primary": true,
+      "weighted_cross_tier_compensation_forbidden": true
+    },
+    "l4_to_final": {
+      "ordering": [
+        "quality_tier",
+        "recovery_thesis",
+        "recovery_setup",
+        "fundamental_quality",
+        "evidence_confidence",
+        "liquidity"
+      ],
+      "quality_tier_is_primary": true,
+      "weighted_cross_tier_compensation_forbidden": true
+    },
+    "model_version": "4.0.0-quality-tier-first-v1",
+    "quality_tiers": {
+      "A": [
+        85,
+        100
+      ],
+      "B": [
+        78,
+        84.9999
+      ],
+      "C": [
+        70,
+        77.9999
+      ],
+      "D": [
+        65,
+        69.9999
+      ]
+    }
+  },
+  "strategy": {
+    "name": "quality-pullback-recovery",
+    "promise_of_return_forbidden": true,
+    "target_horizon_trading_days": [
+      10,
+      50
+    ],
+    "target_recovery_pct": [
+      5.0,
+      7.0
+    ]
+  },
+  "universe": {
+    "allowed_security_types": [
+      "common_equity",
+      "adr",
+      "etf"
+    ],
+    "etf_requires_allowlist": true,
+    "forbidden_security_types": [
+      "warrant",
+      "right",
+      "unit",
+      "preferred",
+      "limited_partnership",
+      "closed_end_fund",
+      "exchange_traded_note",
+      "debt",
+      "spac",
+      "otc",
+      "leveraged_etf",
+      "inverse_etf",
+      "daily_reset_etf"
+    ],
+    "minimum_average_dollar_volume_usd": 2000000,
+    "minimum_known_market_cap_usd": 250000000,
+    "minimum_price_usd": 3.0,
+    "unknown_market_cap_is_veto": false
+  },
+  "validation_framework": {
+    "bootstrap_canaries": [
+      "GOOG/GOOGL issuer",
+      "TSM",
+      "AMD",
+      "MU",
+      "NVDA"
+    ],
+    "canaries_must_not_be_forced_by_selector": true,
+    "clean_checkout_reconstruction_required": true,
+    "deployment_overlay_hash_check_required": true,
+    "frozen_baseline_required": true,
+    "legacy_registry_scope_loss_tolerance": 0,
+    "minimum_regression_expectations": 5,
+    "negative_provenance_tests_required": true,
+    "no_performance_change_may_lower_l3_thresholds_or_evidence_requirements": true,
+    "pilot_registry_loss_tolerance": 0,
+    "pilot_size_before_core500": 50,
+    "point_in_time_ab_test_required_before_claiming_market_superiority": true,
+    "quality_regression_against_v430_required": true,
+    "registry_end_to_end_required_before_core500": true,
+    "remote_recompute_equality_required": true,
+    "runtime_loss_reuse_test_required": true
+  },
+  "waves": {
+    "L3": 4,
+    "L4": 4,
+    "L5": 3,
+    "max_inflight_connector_calls": 12,
+    "max_sequential_waves_per_user_continuation": 1,
+    "verified_checkpoint_required_between_waves": true
+  }
+}

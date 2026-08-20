@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "attestation_class": {
+      "const": "github_actions_computed"
+    },
+    "blocked_reconstruction_verified_count": {
+      "maximum": 50,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "blocked_scope_keys": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 50,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "clean_checkout": {
+      "const": true
+    },
+    "gate_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "kind": {
+      "const": "qrgf_v42_pilot_registry_gate"
+    },
+    "local_state_used": {
+      "const": false
+    },
+    "lost_scope_keys": {
+      "maxItems": 0,
+      "type": "array"
+    },
+    "master_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "pilot_gate_passed": {
+      "const": true
+    },
+    "pilot_scope_count": {
+      "const": 50
+    },
+    "reconstructed_pilot_durable_count": {
+      "const": 50
+    },
+    "reconstructed_registry_snapshot_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "registry_loss_count": {
+      "const": 0
+    },
+    "reuse_results_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "reuse_verified_count": {
+      "maximum": 50,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "source_commit_sha": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "source_pilot_durable_count": {
+      "const": 50
+    },
+    "source_registry_snapshot_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "validator_release_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "workflow_run_id": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "attestation_class",
+    "clean_checkout",
+    "local_state_used",
+    "source_commit_sha",
+    "workflow_run_id",
+    "validator_release_sha256",
+    "master_sha256",
+    "source_registry_snapshot_sha256",
+    "reconstructed_registry_snapshot_sha256",
+    "pilot_scope_count",
+    "source_pilot_durable_count",
+    "reconstructed_pilot_durable_count",
+    "registry_loss_count",
+    "lost_scope_keys",
+    "reuse_verified_count",
+    "pilot_gate_passed",
+    "blocked_reconstruction_verified_count",
+    "blocked_scope_keys",
+    "reuse_results_sha256",
+    "gate_sha256"
+  ],
+  "type": "object"
+}

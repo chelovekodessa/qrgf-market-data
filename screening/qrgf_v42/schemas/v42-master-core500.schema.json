@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "requested_size",
+    "selected_scope_count",
+    "identity_map_sha256",
+    "market_index_sha256",
+    "query_plan_sha256",
+    "publisher_recompute_required",
+    "canary_scope_keys",
+    "pilot_scope_keys",
+    "scopes",
+    "master_content_sha256",
+    "selector_certificate_sha256",
+    "master_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_master_core500"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "requested_size": {
+      "const": 500
+    },
+    "selected_scope_count": {
+      "const": 500
+    },
+    "identity_map_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "market_index_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "query_plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "publisher_recompute_required": {
+      "const": true
+    },
+    "canary_scope_keys": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "uniqueItems": true
+    },
+    "pilot_scope_keys": {
+      "type": "array",
+      "minItems": 50,
+      "maxItems": 50,
+      "uniqueItems": true
+    },
+    "scopes": {
+      "type": "array",
+      "minItems": 500,
+      "maxItems": 500,
+      "items": {
+        "type": "object"
+      }
+    },
+    "master_content_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "selector_certificate_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "master_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

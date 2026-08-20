@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,
+  "required":["schema_version","kind","items","batch_sha256"],
+  "properties":{"schema_version":{"const":"1.0.0"},"kind":{"const":"qrgf_v4_registry_batch"},"items":{"type":"array","minItems":1,"maxItems":4,"items":{"type":"object"}},"batch_sha256":{"type":"string","minLength":64,"maxLength":64}}
+}

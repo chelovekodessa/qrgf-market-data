@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","type":"object",
+  "required":["schema_version","kind","research_scope_key","issuer_id","security_overlay","quality_policy_version","event_scan_through","summary","passport_sha256","passport_payload","proposal_sha256"],
+  "properties":{
+    "schema_version":{"const":"1.0.0"},"kind":{"const":"qrgf_v4_passport_update_proposal"},"research_scope_key":{"type":"string","minLength":1},"issuer_id":{"type":"string","minLength":1},"security_overlay":{"enum":["common_equity","adr","etf"]},"quality_policy_version":{"type":"string","minLength":1},"event_scan_through":{"type":["string","null"]},"summary":{"type":"object"},"passport_sha256":{"type":"string","minLength":64,"maxLength":64},"passport_payload":{"type":"object"},"proposal_sha256":{"type":"string","minLength":64,"maxLength":64}
+  },"additionalProperties":false
+}

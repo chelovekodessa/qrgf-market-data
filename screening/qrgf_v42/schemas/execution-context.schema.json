@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["provider", "ticker", "requested_status", "contract", "quote", "history", "account", "explicit_order_request"],
+  "properties": {
+    "provider": {"enum": ["IBKR", "Interactive Brokers"]},
+    "ticker": {"type": "string", "minLength": 1},
+    "requested_status": {"enum": ["open_now", "prepare_limit_order", "wait", "do_not_enter", "do_not_consider"]},
+    "contract": {"type": "object"},
+    "quote": {"type": "object"},
+    "history": {"type": "object"},
+    "account": {"type": "object"},
+    "explicit_order_request": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

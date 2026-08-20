@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "phase",
+    "master_scope_count",
+    "master_durable_count",
+    "terminal_attempt_count",
+    "quality_resolved_count",
+    "quality_unknown_count",
+    "competitive_resolved_count",
+    "competitive_unresolved_count",
+    "daily_broad_allowed",
+    "state_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_campaign_state"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "phase": {
+      "enum": [
+        "CANARY",
+        "PILOT",
+        "CORE500",
+        "COMPLETE"
+      ]
+    },
+    "master_scope_count": {
+      "const": 500
+    },
+    "master_durable_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500
+    },
+    "terminal_attempt_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500
+    },
+    "quality_resolved_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500
+    },
+    "quality_unknown_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500
+    },
+    "competitive_resolved_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500
+    },
+    "competitive_unresolved_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500
+    },
+    "daily_broad_allowed": {
+      "type": "boolean"
+    },
+    "state_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}
