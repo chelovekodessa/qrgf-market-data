@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "source_kind",
+    "source_snapshot_sha256",
+    "publisher_recompute_required",
+    "entry_count",
+    "entries",
+    "identity_map_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_official_identity_map"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "source_kind": {
+      "const": "sec_company_tickers_plus_security_specific_etfs"
+    },
+    "source_snapshot_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "publisher_recompute_required": {
+      "const": true
+    },
+    "entry_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "identity_map_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

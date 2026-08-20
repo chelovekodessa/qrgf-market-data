@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["ticker", "contract_id", "final_status", "l5", "l5_input"],
+  "properties": {
+    "ticker": {"type": "string", "minLength": 1},
+    "contract_id": {"type": "string", "minLength": 1},
+    "final_status": {"enum": ["open_now", "prepare_limit_order", "wait", "do_not_enter", "do_not_consider"]},
+    "l5": {
+      "type": "object",
+      "required": ["ticker", "contract_id", "security_type", "depth", "entry_readiness", "critical_complete", "evidence_validated", "evidence", "evidence_links", "technical_stabilization", "room_to_5pct", "room_to_7pct", "historical_recovery_sample_status", "opportunity_class", "intrinsic_risk_coverage_pct", "opportunity_components", "intrinsic_risk_components", "quote", "l3", "l4"],
+      "properties": {
+        "security_type": {"enum": ["common_equity", "adr", "etf"]},
+        "depth": {"const": "L5"},
+        "evidence": {"type": "array", "minItems": 1},
+        "evidence_links": {"type": "object"},
+        "l3": {"type": "object"},
+        "l4": {"type": "object"}
+      }
+    },
+    "l5_input": {"type": "object"},
+    "execution_context": {"type": "object"},
+    "trade_plan": {"type": "object"}
+  },
+  "additionalProperties": true
+}

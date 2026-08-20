@@ -1,0 +1,75 @@
+name: Promote QRGF V4.2 State
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/v42/master-core500/requests/**"
+      - "data/v4/registry/proposals/**"
+      - "data/v42/campaigns/**/gates/**"
+      - "screening/qrgf_v42/**"
+      - "screening/engine/v42_runtime.py"
+      - "screening/engine/promote_v42_state.py"
+      - "screening/config/v42-state-producer-release.json"
+      - ".github/workflows/promote-v42-state.yml"
+permissions:
+  contents: write
+concurrency:
+  group: qrgf-v42-state-single-writer
+  cancel-in-progress: false
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Full V4.2 provenance and state self-test
+        shell: bash
+        run: |
+          set -euo pipefail
+          QRGF_TEST_RESULTS=/tmp/qrgf-v42-tests.json python screening/qrgf_v42/tests/run_tests.py
+      - name: Recompute and publish V4.2 state
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/engine/promote_v42_state.py --published-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+      - name: Commit durable outputs without consuming proposal journals
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          outputs=(
+            data/v42/identity
+            data/v42/query-plans
+            data/v42/master-core500/sources
+            data/v42/master-core500/masters
+            data/v42/master-core500/certificates
+            data/v42/master-core500/latest.json
+            data/v42/campaign
+            data/v42/campaigns
+            data/v42/migrations
+            data/v4/registry/scopes
+            data/v4/registry/receipts
+            data/v4/passports
+          )
+          existing=()
+          for path in "${outputs[@]}"; do
+            if [ -e "$path" ]; then existing+=("$path"); fi
+          done
+          if [ "${#existing[@]}" -gt 0 ]; then git add -A -- "${existing[@]}"; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Promote QRGF V4.2 state"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          git fetch origin main
+          if [ -f data/v42/master-core500/latest.json ]; then
+            git cat-file -e origin/main:data/v42/master-core500/latest.json
+            git cat-file -e origin/main:data/v42/campaign/latest.json
+          fi

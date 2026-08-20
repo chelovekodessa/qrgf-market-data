@@ -1,0 +1,44 @@
+name: Verify QRGF V4.2 Pilot Registry
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Promote QRGF V4.2 State"]
+    types: [completed]
+permissions:
+  contents: write
+concurrency:
+  group: qrgf-v42-campaign-gates
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compute zero-loss and selective-reuse gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/engine/verify_v42_gate.py pilot \
+            --source-commit-sha "$(git rev-parse HEAD)" \
+            --workflow-run-id "${GITHUB_RUN_ID}" \
+            --verified-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+      - name: Commit immutable pilot gate when produced
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          if [ -d data/v42/campaigns ]; then git add -A -- data/v42/campaigns; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Verify QRGF V4.2 pilot Registry"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

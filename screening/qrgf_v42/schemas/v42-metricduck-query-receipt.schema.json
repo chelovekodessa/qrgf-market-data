@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "trust_class",
+    "query_spec",
+    "query_sha256",
+    "matched_count",
+    "returned_count",
+    "complete",
+    "requires_split",
+    "response_handle",
+    "retrieved_at",
+    "rows",
+    "receipt_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_metricduck_query_receipt"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "trust_class": {
+      "const": "connector_attested"
+    },
+    "query_spec": {
+      "type": "object"
+    },
+    "query_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "matched_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "returned_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "complete": {
+      "type": "boolean"
+    },
+    "requires_split": {
+      "type": "boolean"
+    },
+    "response_handle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "receipt_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

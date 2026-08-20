@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "research_scope_key",
+    "disposition",
+    "competitive_resolution",
+    "triage_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "kind": {
+      "const": "qrgf_v42_challenger_triage"
+    },
+    "architecture_version": {
+      "const": "4.2.0"
+    },
+    "research_scope_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "disposition": {
+      "enum": [
+        "safe_exclusion",
+        "resolved_candidate",
+        "deep_research_required",
+        "deferred_unknown"
+      ]
+    },
+    "competitive_resolution": {
+      "enum": [
+        "resolved_eligible",
+        "resolved_ineligible",
+        "unresolved"
+      ]
+    },
+    "triage_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

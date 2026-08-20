@@ -1,0 +1,63 @@
+name: Update QRGF V4.2 Market Session
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Update QRGF v3 Radar", "Promote QRGF V4.2 State"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "data/v42/market/triage-proposals/**"
+      - "screening/qrgf_v42/**"
+      - "screening/engine/v42_runtime.py"
+      - "screening/engine/build_v42_market_view.py"
+      - "screening/config/v42-market-producer-release.json"
+      - ".github/workflows/update-v42-market.yml"
+permissions:
+  contents: write
+concurrency:
+  group: qrgf-v42-market-session
+  cancel-in-progress: true
+jobs:
+  update:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Full V4.2 market and frontier self-test
+        shell: bash
+        run: |
+          set -euo pipefail
+          QRGF_TEST_RESULTS=/tmp/qrgf-v42-tests.json python screening/qrgf_v42/tests/run_tests.py
+      - name: Build market session or explicit blocked pointer
+        shell: bash
+        run: |
+          set -euo pipefail
+          python screening/engine/build_v42_market_view.py
+          test -f data/v42/market/latest.json
+      - name: Commit market outputs without consuming triage proposals
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          outputs=(data/v42/market/latest.json data/v42/market/sessions data/v42/market/frontiers data/v42/market/progress data/v42/market/triage)
+          existing=()
+          for path in "${outputs[@]}"; do
+            if [ -e "$path" ]; then existing+=("$path"); fi
+          done
+          if [ "${#existing[@]}" -gt 0 ]; then git add -A -- "${existing[@]}"; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish QRGF V4.2 market session"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          git fetch origin main
+          git cat-file -e origin/main:data/v42/market/latest.json

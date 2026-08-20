@@ -1,0 +1,43 @@
+ticker,contract_id,full_name,product_type,sector,leverage_multiple,inverse,daily_reset,status,last_verified_at
+SPY,US:SPY,,broad_etf,Broad US market,1,false,false,approved,2026-08-07
+VOO,US:VOO,,broad_etf,Broad US market,1,false,false,approved,2026-08-07
+QQQ,US:QQQ,,broad_etf,Nasdaq growth,1,false,false,approved,2026-08-07
+ONEQ,US:ONEQ,,broad_etf,Nasdaq growth,1,false,false,approved,2026-08-07
+IWM,US:IWM,,broad_etf,US small caps,1,false,false,approved,2026-08-07
+IJR,US:IJR,,broad_etf,US small caps,1,false,false,approved,2026-08-07
+XLK,US:XLK,,sector_etf,Information technology,1,false,false,approved,2026-08-07
+VGT,US:VGT,,sector_etf,Information technology,1,false,false,approved,2026-08-07
+SMH,US:SMH,,sector_etf,Semiconductors,1,false,false,approved,2026-08-07
+SOXX,US:SOXX,,sector_etf,Semiconductors,1,false,false,approved,2026-08-07
+XLF,US:XLF,,sector_etf,Financials,1,false,false,approved,2026-08-07
+VFH,US:VFH,,sector_etf,Financials,1,false,false,approved,2026-08-07
+KBE,US:KBE,,sector_etf,Banks,1,false,false,approved,2026-08-07
+KRE,US:KRE,,sector_etf,Banks,1,false,false,approved,2026-08-07
+XLE,US:XLE,,sector_etf,Energy,1,false,false,approved,2026-08-07
+XOP,US:XOP,,sector_etf,Energy,1,false,false,approved,2026-08-07
+XLI,US:XLI,,sector_etf,Industrials,1,false,false,approved,2026-08-07
+VIS,US:VIS,,sector_etf,Industrials,1,false,false,approved,2026-08-07
+XLY,US:XLY,,sector_etf,Consumer discretionary,1,false,false,approved,2026-08-07
+VCR,US:VCR,,sector_etf,Consumer discretionary,1,false,false,approved,2026-08-07
+XLP,US:XLP,,sector_etf,Consumer staples,1,false,false,approved,2026-08-07
+VDC,US:VDC,,sector_etf,Consumer staples,1,false,false,approved,2026-08-07
+XLV,US:XLV,,sector_etf,Health care,1,false,false,approved,2026-08-07
+VHT,US:VHT,,sector_etf,Health care,1,false,false,approved,2026-08-07
+XBI,US:XBI,,sector_etf,Biotechnology,1,false,false,approved,2026-08-07
+IBB,US:IBB,,sector_etf,Biotechnology,1,false,false,approved,2026-08-07
+XLC,US:XLC,,sector_etf,Communication services,1,false,false,approved,2026-08-07
+VOX,US:VOX,,sector_etf,Communication services,1,false,false,approved,2026-08-07
+XLU,US:XLU,,sector_etf,Utilities,1,false,false,approved,2026-08-07
+VPU,US:VPU,,sector_etf,Utilities,1,false,false,approved,2026-08-07
+XLRE,US:XLRE,,sector_etf,Real estate,1,false,false,approved,2026-08-07
+VNQ,US:VNQ,,sector_etf,Real estate,1,false,false,approved,2026-08-07
+XLB,US:XLB,,sector_etf,Materials,1,false,false,approved,2026-08-07
+VAW,US:VAW,,sector_etf,Materials,1,false,false,approved,2026-08-07
+IGV,US:IGV,,sector_etf,Software,1,false,false,approved,2026-08-07
+WCLD,US:WCLD,,sector_etf,Software,1,false,false,approved,2026-08-07
+CIBR,US:CIBR,,sector_etf,Cybersecurity,1,false,false,approved,2026-08-07
+HACK,US:HACK,,sector_etf,Cybersecurity,1,false,false,approved,2026-08-07
+SKYY,US:SKYY,,sector_etf,Cloud computing,1,false,false,approved,2026-08-07
+CLOU,US:CLOU,,sector_etf,Cloud computing,1,false,false,approved,2026-08-07
+ICLN,US:ICLN,,sector_etf,Clean energy,1,false,false,approved,2026-08-07
+TAN,US:TAN,,sector_etf,Clean energy,1,false,false,approved,2026-08-07
