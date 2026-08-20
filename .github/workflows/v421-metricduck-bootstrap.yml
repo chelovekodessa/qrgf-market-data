@@ -1,6 +1,8 @@
 name: Bootstrap QRGF V4.2.1 MetricDuck contract
 
 on:
+  push:
+    branches: [agent/v421-metricduck-contract]
   pull_request:
     branches: [main]
     types: [opened, reopened, synchronize]
@@ -14,7 +16,7 @@ concurrency:
 
 jobs:
   apply-verified-overlay:
-    if: ${{ github.head_ref == 'agent/v421-metricduck-contract' && github.event.pull_request.head.repo.full_name == github.repository }}
+    if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/agent/v421-metricduck-contract') || (github.event_name == 'pull_request' && github.head_ref == 'agent/v421-metricduck-contract' && github.event.pull_request.head.repo.full_name == github.repository) }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
