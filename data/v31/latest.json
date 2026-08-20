@@ -1,12 +1,12 @@
 {
-  "certificate_path": "data/v31/snapshots/464d6574c312c4f655832135/market-certificate.json",
-  "certificate_sha256": "7628f2876266e564d5107a70efdba5627ee4f6a7d4876c9cd7ae11ee32cfa3ad",
-  "frontier_manifest_path": "data/v31/snapshots/464d6574c312c4f655832135/frontier-manifest.json",
-  "frontier_manifest_sha256": "1546722add9bdeff940312fe3735f2487fa2300b54fc6e30caefe75e24287c51",
+  "certificate_path": "data/v31/snapshots/d40904805f1b1ef60cf2250b/market-certificate.json",
+  "certificate_sha256": "f87a3d9203f1e3287d4e54a5e0670254cbff99ec8360bba1ef73acb2dcff32d0",
+  "frontier_manifest_path": "data/v31/snapshots/d40904805f1b1ef60cf2250b/frontier-manifest.json",
+  "frontier_manifest_sha256": "7d9e19474215e499c5bc91b9c9eb3807e244de521e157a2a1b02c7e27e16b7f3",
   "kind": "qrgf_v31_frontier_pointer",
   "market_session_id": "2026-08-19",
-  "pointer_sha256": "0aafefc6c559024b419b55f29540fef412b69ec0b318d711049b1e8aaa6c985a",
-  "publication_commit_sha": "b8c1a845fe56b6afdb2c51dbbd38a6b0e91caeea",
+  "pointer_sha256": "1fc4a1b825061a1978b8c2be9e7ab1c5b12d23e500bd52776d7a62552cb0070f",
+  "publication_commit_sha": "d6ad8dc39e05d4b3c0b51db38f699c5c8bc5352f",
   "schema_version": "1.0.0",
-  "snapshot_id": "464d6574c312c4f655832135"
+  "snapshot_id": "d40904805f1b1ef60cf2250b"
 }
