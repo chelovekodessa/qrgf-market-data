@@ -2,20 +2,20 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-20T08:07:48Z",
+  "retrieved_at": "2026-08-20T14:20:36Z",
   "history_start": "2025-07-15",
   "history_end": "2026-08-19",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "ae5ff73f74fa03283e111d6be6d804ba653359a8e4e525fd046f9485c7ac45d7",
-    "accepted_unique": 5116,
-    "bundle_csv_sha256": "f72dc229e2d225889ab540d535f4253a48ffb715c8e4e1ec0909823eb14f6de4",
-    "source_raw_sha256": "75ee857d798ee50ef881f51a4e44e00ce1211e7673d7b4cd50ff68272f33e564",
-    "retrieved_at": "2026-08-20T08:07:27Z"
+    "manifest_sha256": "f3a0f804dd182b8b3535a83281397913f6d1e01761f80df523fc07b3b6bdd828",
+    "accepted_unique": 5119,
+    "bundle_csv_sha256": "5eb8f2fb840e0708f0217bfaf76653ec4a5f8db76fcfefa3ef690f0f6462c5f0",
+    "source_raw_sha256": "6c21e8cbb654040bd8199d7f406fa808d8c182daadc1cb875eb41ae95bcf4f84",
+    "retrieved_at": "2026-08-20T14:20:20Z"
   },
-  "rows": 5116,
+  "rows": 5119,
   "page_size": 250,
   "page_count": 21,
   "pages": [
@@ -52,88 +52,88 @@
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "c107432fe624dc3e43e683dfdd44eacd652b6c63c710a844f116facda5235845"
+      "sha256": "f3b578447c6b71a32531accda47224d1d0d2ffd8aeba1377cba7e5254c96645e"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "60eee71bd54e0ace26d9156ea68ae745ed433e3c476e20ebe8696df89d3aaad4"
+      "sha256": "dbab3aa3289d878b62e0dc05a303a79278ce0a95fbeb2914069abeb5c31c681c"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "8a775648f8be47d86770fdd1cd41879eccffbc872db92f227e821e2f9aa5c535"
+      "sha256": "02f965ff0eb886e8ccc7a9af1b7d8cfde3ec7cb521a52b4069858b122f4c3db9"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "cc0b0aa70ee25990dd043d8979fbf7befbbfec08cb7c3f1e9b7e1d3bd62e494d"
+      "sha256": "c9cb3fc6d3caffee7afc4bdbbbeadbb3a7511cc5188f403927b1cb29d78b870b"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "da40a8d7562d8a56a9988cba8bac493944f49001284fff1f20475544f2a6caf8"
+      "sha256": "717a479b016ceab290c82f8af5de6349d46286a3ff401974c641fe81d4f9e405"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "e4057a27160a6f4af8f8f313f13b41ee24f23c30311a36a234bac3eded00e8d0"
+      "sha256": "619d08a88806fe495ac349b6486cf506de2ebabe9f6d5ef8ec55f6f3d8cd9b28"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "538403f35d55210a46ba3d364589322adf52c45649e648e6b88e327c51cce2d0"
+      "sha256": "2eda3792fddf4ba32448d63314147560dc09ba879e645efe35c26b19704d9759"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "403a64caa53570fd3987039ec6be8e40a1fc692100971effdd7fb23899894d8b"
+      "sha256": "c5ab67f706fa85309bfbb786c448ec297999b6ed4424cf09ab95f2504f52621b"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "e632e547e8a73d5b686fe4f85f861ff08a0b24f45e18877c6a15da8671a1c50a"
+      "sha256": "6c3a36b1cebb9e7718e708a46841254ebe2bb7a9a05921edc7435616eb6723bd"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "b44d0bdd89b3cc9cdb9927dc0c37bb7adff21626de23cc9ff36d18b9f9f2d27c"
+      "sha256": "5fed17992ccc5018bf818d6cbf81590937c4805845b3008b8e2c4c390d2eb262"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "dbb18b91e7fb053f75898ca28e7d7402cde96ce71d50703af8ff1c40f23feba9"
+      "sha256": "ea5c1a5c9f858679901a27a2c8c793cb50f3c7d88c1df0a0e1ccae4547cf26bf"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "39d9c3895830f15b670a5bf048563c0a43ca436dbaa6ac4556e55106c5d970c9"
+      "sha256": "fb7a6ede5fb45affff49eeff0427e47a191ff524fcaad8ce41856b1e4f10cd1a"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "366a4a3e4c9506777a3ea2b166390661b5fe0421191c68575a6d2a8e492106f7"
+      "sha256": "e75e04dda44447c7d867c6488494e78132ad8d618e82da8603dd2fc2e366460e"
     },
     {
       "name": "page-0020.csv",
       "rows": 250,
-      "sha256": "cda6ee988509aa4b91d103fdcc8bf7c0b1817691bed16bcad2cdba7698fedac0"
+      "sha256": "2048d6e21490692dc9aa75964d26cafa2b5291eab48c276ee47895ef6e35cbc2"
     },
     {
       "name": "page-0021.csv",
-      "rows": 116,
-      "sha256": "e0fe34d0bf229fa388a06da01757183a8ca07ede5ba150df0e4b9eff972b7f20"
+      "rows": 119,
+      "sha256": "9c145494e9b28d8fb30f80cd736416911cb7db3b2e60f2165b454d27eacd28b1"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
-    "rows": 5116,
-    "sha256": "1f30e729b45f9e9f143a3ddd3ced7645ce6169f48f2be7f66decd5ee52fbdc95",
-    "gzip_sha256": "3bf6c3c54b54d580527bbd562bf50e31af4b6b019cab6a5d2170d3f9958d4118",
-    "csv_sha256": "00e0c91e038840d645b20878d2b162cc91cf44e4d1582b2b7327695f7c3ef59d",
-    "bytes": 632179,
-    "line_count": 8211
+    "rows": 5119,
+    "sha256": "e029066078381439a11167e73d95524f318d4c3a493c2d5f9e094d030bc0fe7d",
+    "gzip_sha256": "a8518ad4b8aa8b498c1d3bf03c8c6f0ccef7874deb1ae03f457ac805bd740e19",
+    "csv_sha256": "74cbdf3dbc7afa2f374f13faef2cb6a53572431b8ff2ce60f99aacf5cbc3e33a",
+    "bytes": 632316,
+    "line_count": 8212
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
@@ -171,18 +171,21 @@
     "sector_industry_status": "deferred_to_narrowed_research"
   },
   "coverage": {
-    "total": 5116,
+    "total": 5119,
     "with_history": 5114,
-    "missing_history": 2,
-    "non_etf": 5074,
+    "missing_history": 5,
+    "non_etf": 5077,
     "market_cap_present_non_etf": 0,
-    "market_cap_missing_non_etf": 5074,
+    "market_cap_missing_non_etf": 5077,
     "mature_missing_core": 4777
   },
   "diagnostics": {
     "missing_history_symbols": [
+      "FBDT",
       "GFR.V",
-      "SVA"
+      "QNBC",
+      "SVA",
+      "TREO"
     ],
     "missing_market_cap_symbols": [
       "A",
@@ -1823,6 +1826,7 @@
       "FAST",
       "FATE",
       "FATN",
+      "FBDT",
       "FBIN",
       "FBIO",
       "FBIZ",
@@ -3904,6 +3908,7 @@
       "QLYS",
       "QMCO",
       "QMLS",
+      "QNBC",
       "QNC",
       "QNCX",
       "QNRX",
@@ -4681,6 +4686,7 @@
       "TRC",
       "TRDA",
       "TREE",
+      "TREO",
       "TREX",
       "TRGP",
       "TRGS",
