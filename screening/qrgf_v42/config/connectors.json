@@ -57,7 +57,7 @@
     "branch": "main",
     "challenger_page_size": 250,
     "challenger_transport_is_not_quality_whitelist": true,
-    "expected_producer_release_sha256": "0bdc5a4b44688b7ff429aba99fd4784bafe6c0fafdd4875d779772052bf6817b",
+    "expected_producer_release_sha256": "8fb7ab74f3059b32e064faa7e763b0ccc3ea96962953b88a0bdf0312ff1aa202",
     "frontier_prefix": "data/v42/market/frontiers",
     "latest_pointer_path": "data/v42/market/latest.json",
     "producer_release_path": "screening/config/v42-market-producer-release.json",
@@ -74,7 +74,7 @@
     "campaign_latest_pointer_path": "data/v42/campaign/latest.json",
     "campaign_prefix": "data/v42/campaigns",
     "certificates_prefix": "data/v42/master-core500/certificates",
-    "expected_producer_release_sha256": "7772a75b252bd6e4b8cc654274df9292f583ee8fe444a11bc478c4afb38c8047",
+    "expected_producer_release_sha256": "252b10e41857095bd3df9070d1c2537679fd00e45466d78bf4809b3f46028a24",
     "identity_prefix": "data/v42/identity",
     "latest_pointer_path": "data/v42/master-core500/latest.json",
     "masters_prefix": "data/v42/master-core500/masters",
@@ -97,10 +97,57 @@
       "accession_lineage_required": true,
       "complete_leaf_requires_matched_equals_returned": true,
       "connector_max_rows_per_query": 50,
+      "cross_company_screen_contract_version": "2026-08-20",
+      "cross_company_screen_tool": "screen_companies",
       "cross_company_screen_trust_class": "connector_attested",
+      "cross_company_sort_by": "market_cap",
       "external_cryptographic_signature_available": false,
+      "not_exact_screen_filters": [
+        "fcf_margin_pct",
+        "net_debt_to_ebitda",
+        "cet1_ratio_pct",
+        "nonperforming_assets_pct",
+        "fund_aum",
+        "fund_structure_quality_score"
+      ],
       "provider": "MetricDuck",
-      "role": "licensed_sec_filing_transport"
+      "role": "licensed_sec_filing_transport",
+      "screenable_classification_tags": [
+        "financial_services_traditional"
+      ],
+      "screenable_growth_period_types": [
+        "ttm.yoy",
+        "ttm.cagr3",
+        "ttm.cagr5"
+      ],
+      "screenable_metric_ids": [
+        "cash_conversion",
+        "cash_st_invs",
+        "current_ratio",
+        "debt_to_equity",
+        "ebitda",
+        "ebitda_margin",
+        "ev",
+        "ev_ebitda",
+        "fcf",
+        "fcf_yield",
+        "gross_margin",
+        "gross_profit",
+        "market_cap",
+        "net_cf_ops",
+        "net_income",
+        "net_margin",
+        "oper_margin",
+        "pb_ratio",
+        "pe_ratio",
+        "revenues",
+        "roa",
+        "roe",
+        "roic",
+        "ttl_debt",
+        "ttl_equity"
+      ],
+      "unsupported_screen_fields_remain_unknown": true
     },
     "official_web": {
       "role": "conflict_clearance_and_current_delta"
@@ -108,7 +155,7 @@
   },
   "quality_registry_v4": {
     "branch": "main",
-    "expected_producer_release_sha256": "7772a75b252bd6e4b8cc654274df9292f583ee8fe444a11bc478c4afb38c8047",
+    "expected_producer_release_sha256": "252b10e41857095bd3df9070d1c2537679fd00e45466d78bf4809b3f46028a24",
     "passport_prefix": "data/v4/passports",
     "producer_release_path": "screening/config/v42-state-producer-release.json",
     "progress_requires_current_receipt": true,
