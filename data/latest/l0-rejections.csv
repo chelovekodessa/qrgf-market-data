@@ -1324,6 +1324,7 @@ CHSCM,"CHS Inc - Class B Reset Rate Cumulative Redeemable Preferred Stock, Serie
 CHSCN,CHS Inc - Preferred Class B Series 2 Reset Rate,Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:CHSCN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 CHSCO,CHS Inc - Class B Cumulative Redeemable Preferred Stock,Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:CHSCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 CHSCP,CHS Inc - 8%  Cumulative Redeemable Preferred Stock,Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:CHSCP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
+CHTRP,"Charter Communications, Inc. - Series A Cumulative Redeemable Preferred Stock",Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:CHTRP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 CHW,Calamos Global Dynamic Income Fund - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:CHW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 CHY,Calamos Convertible and High Income Fund - Closed End Fund,Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:CHY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 CHYG,Corgi 0-5 Year High Yield Corporate Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist

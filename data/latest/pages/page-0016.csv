@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+PRTA,Prothena Corporation plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRTH,"Priority Technology Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRTS,"CarParts.com, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRU,"Prudential Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -61,6 +62,7 @@ QH,Quhuo Limited - Class A Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N
 QLYS,"Qualys, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 QMCO,Quantum Corporation - Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QMCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 QMLS,"QumulusAI, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QMLS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+QNBC,QNB Corp. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNBC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 QNC,Quantum eMotion Corp. Common Shares,A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:QNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 QNCX,"Quince Therapeutics, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNCX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 QNST,"QuinStreet, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:QNST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -247,5 +249,3 @@ RTX,RTX Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrad
 RUBI,Rubico Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUBI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RUM,RUM Group Inc. - Class A Common Stock,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RUN,Sunrun Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-RUSHA,"Rush Enterprises, Inc. - Class A Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUSHA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-RUSHB,"Rush Enterprises, Inc. - Class B Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RUSHB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

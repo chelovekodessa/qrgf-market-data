@@ -1,4 +1,6 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+TLSA,Tiziana Life Sciences Ltd - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+TLSI,"TriSalus Life Sciences, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TLSI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TLYS,"Tilly's, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TLYS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TM,Toyota Motor Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TMC,TMC the metals company Inc. - Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TMC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -45,6 +47,7 @@ TRAX,"First Tracks Biotherapeutics, Inc. - Ordinary Shares",Q,Q,N,common_equity,
 TRC,Tejon Ranch Co Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TRDA,"Entrada Therapeutics, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRDA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TREE,"LendingTree, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TREE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+TREO,Tactical Resources Corp. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TREO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TREX,"Trex Company, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TREX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TRGP,"Targa Resources, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:TRGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 TRGS,TRG Latin America Acquisitions Corp. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:TRGS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -246,6 +249,3 @@ VERU,Veru Inc. - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrade
 VERX,"Vertex, Inc. - Class A Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VERX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VET,Vermilion Energy Inc. Common (Canada),N,,,common_equity,eligible,True,N,N,,qrgf-resolution-required:N:VET,requires_authoritative_resolution_before_L3,,,,nasdaq_trader_all_us_listed,True,instrument_resolution_required
 VFC,V.F. Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-VFF,"Village Farms International, Inc. - Common Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VFF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-VFS,VinFast Auto Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-VG,"Venture Global, Inc. Class A common stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

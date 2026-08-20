@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+INM,InMed Pharmaceuticals Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INM,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INMB,INmune Bio Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INMD,InMode Ltd.  - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:INMD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 INN,"Summit Hotel Properties, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:INN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -248,4 +249,3 @@ LAC,Lithium Americas Corp. Common Shares,N,,,common_equity,eligible,True,N,N,,na
 LAD,"Lithia Motors, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 LADR,Ladder Capital Corp Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:LADR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 LAES,SEALSQ Corp - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAES,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-LAKE,"Lakeland Industries, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:LAKE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
