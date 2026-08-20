@@ -1,0 +1,7 @@
+{
+  "kind": "qrgf_v42_migration_pointer",
+  "pointer_sha256": "a20f98dd3c5374af2d95762608b990859e3dea4d7b80446aff2dc57ea4fb6750",
+  "report_path": "data/v42/migrations/reports/ee9ab4b8cf8b871b6e79f689792cdaf77a61e482e50ddced24bdb8ba2cf7b61f.json",
+  "report_sha256": "ee9ab4b8cf8b871b6e79f689792cdaf77a61e482e50ddced24bdb8ba2cf7b61f",
+  "schema_version": "2.0.0"
+}

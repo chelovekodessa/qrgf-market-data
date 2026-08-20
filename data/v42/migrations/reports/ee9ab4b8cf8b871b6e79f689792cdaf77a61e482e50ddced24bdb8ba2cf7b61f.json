@@ -1,0 +1,55 @@
+{
+  "kind": "qrgf_v42_migration_report",
+  "legacy_bootstrap": {
+    "classification": "historical_validation_artifact_only",
+    "cohort_sha256": "686921aec5a859c62397e42e75590608a8a9cc3a7bf21e852fd80d524e377239",
+    "historical_hash_valid": true,
+    "legacy_scope_count": 15,
+    "present": true,
+    "requested_size": 15,
+    "selected_scope_count": 15
+  },
+  "legacy_is_not_authoritative_master": true,
+  "legacy_proposal_journal": {
+    "history_sha256": "1465d8516a59cf4f3cb75e67b084b236a7995b0ec41bd841c0cc1cb54fc85f24",
+    "present": true,
+    "records": 8,
+    "restored_to_current_journal": true,
+    "verified": true
+  },
+  "legacy_scopes_preserved_count": 15,
+  "master_reuse": {
+    "master_present": false,
+    "new_scope_count": 0,
+    "reused_fresh_scope_count": 0,
+    "stale_scope_count": 0
+  },
+  "registry_knowledge_outside_master_preserved": true,
+  "registry_scope_count": 19,
+  "registry_scope_keys": [
+    "CIK:0001046179|adr",
+    "CIK:0001083301|common_equity",
+    "CIK:0001144879|common_equity",
+    "CIK:0001646188|common_equity",
+    "CIK:0001652044|common_equity",
+    "CIK:0001878848|common_equity",
+    "ISSUER:ADVANCED_MICRO_DEVICES_INC|common_equity",
+    "ISSUER:APPLE_INC|common_equity",
+    "ISSUER:CATERPILLAR_INC|common_equity",
+    "ISSUER:ELI_LILLY_AND_CO|common_equity",
+    "ISSUER:EXXON_MOBIL_CORP|common_equity",
+    "ISSUER:JPMORGAN_CHASE_AND_CO|common_equity",
+    "ISSUER:MERCADOLIBRE_INC|common_equity",
+    "ISSUER:MICRON_TECHNOLOGY_INC|common_equity",
+    "ISSUER:MICROSOFT_CORP|common_equity",
+    "ISSUER:NEWMONT_CORP|common_equity",
+    "ISSUER:NVIDIA_CORP|common_equity",
+    "ISSUER:PALANTIR_TECHNOLOGIES_INC|common_equity",
+    "ISSUER:UBER_TECHNOLOGIES_INC|common_equity"
+  ],
+  "report_sha256": "ee9ab4b8cf8b871b6e79f689792cdaf77a61e482e50ddced24bdb8ba2cf7b61f",
+  "schema_version": "2.0.0",
+  "source_architecture_version": "4.1.0",
+  "target_architecture_version": "4.2.0",
+  "v41_production_state_is_historical_read_only": true
+}
