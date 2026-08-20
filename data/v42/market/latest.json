@@ -1,0 +1,11 @@
+{
+  "architecture_version": "4.2.0",
+  "campaign_phase": null,
+  "kind": "qrgf_v42_market_pointer",
+  "master_sha256": null,
+  "ordinary_daily_broad_allowed": false,
+  "pointer_sha256": "be2cdc0569437dd9655b13a7f820c4ec164c5eff9ccbe4b2f97754cd20a8d3b8",
+  "producer_release_sha256": "0bdc5a4b44688b7ff429aba99fd4784bafe6c0fafdd4875d779772052bf6817b",
+  "reason": "MASTER_CORE500_NOT_INITIALIZED",
+  "schema_version": "2.0.0"
+}
