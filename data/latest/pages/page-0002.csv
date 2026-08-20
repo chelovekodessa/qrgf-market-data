@@ -65,7 +65,6 @@ ZLAB,Zai Lab Limited - American Depositary Shares,Q,G,N,adr,eligible,True,Y,N,,n
 ZTO,"ZTO Express (Cayman) Inc. American Depositary Shares, each representing one Class A ordinary share.",N,,,adr,eligible,True,Y,N,,nasdaqtrader:N:ZTO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 A,"Agilent Technologies, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:A,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 AA,Alcoa Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-AACB,Artius II Acquisition Inc. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AACB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 AADX,"Applied Aerospace & Defense, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AADX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 AAL,"American Airlines Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:AAL,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 AAMI,Acadian Asset Management Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:AAMI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -249,3 +248,4 @@ ALCO,"Alico, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqt
 ALDF,Aldel Financial II Inc. - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALDF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ALDX,"Aldeyra Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ALEC,"Alector, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ALEC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+ALG,"Alamo Group, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ALG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
