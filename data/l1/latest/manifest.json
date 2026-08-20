@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-20T14:20:36Z",
+  "retrieved_at": "2026-08-20T19:49:37Z",
   "history_start": "2025-07-15",
   "history_end": "2026-08-19",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "f3a0f804dd182b8b3535a83281397913f6d1e01761f80df523fc07b3b6bdd828",
+    "manifest_sha256": "975bc8573144d0b74bc010013c84191012e95bceeb1fcd8aa3ef2af4d68ec986",
     "accepted_unique": 5119,
     "bundle_csv_sha256": "5eb8f2fb840e0708f0217bfaf76653ec4a5f8db76fcfefa3ef690f0f6462c5f0",
-    "source_raw_sha256": "6c21e8cbb654040bd8199d7f406fa808d8c182daadc1cb875eb41ae95bcf4f84",
-    "retrieved_at": "2026-08-20T14:20:20Z"
+    "source_raw_sha256": "4447c3812f118215a01374dbb015e5675730558133bde7c8b4218a095828c06e",
+    "retrieved_at": "2026-08-20T19:49:21Z"
   },
   "rows": 5119,
   "page_size": 250,
