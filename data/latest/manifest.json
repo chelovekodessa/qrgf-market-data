@@ -3,9 +3,9 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-19T19:35:42Z",
-  "source_file_creation_time": "0819202614:03",
-  "raw_sha256": "c9443a163b41b31edff83fff93e797f4076a01d0aa1e150da707fa2a8c560d57",
+  "retrieved_at": "2026-08-20T03:14:34Z",
+  "source_file_creation_time": "0819202621:33",
+  "raw_sha256": "3577a0e56a6c2b08040533ef07eb7fe399437c76bcd67c3846a242b7d6306b4a",
   "raw_bytes": 992664,
   "raw_rows": 13162,
   "accepted_unique": 5118,
@@ -20,77 +20,77 @@
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "5a828ad41ebf5edfbbb4a64447219967d411a535eebaf5e4c6cda1dc9cbb320d"
+      "sha256": "bb7406d5afb3926799e47552a5868b0fd5601742089bebed8e14aea2375caad2"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "d1e86069ff3d1833a89ed4823e1e8068bd59b45be595daa02078245150ee6676"
+      "sha256": "98735b4ee51115ae7ccc847444c035a1683c7e78a36d05bc316eee844999f6e9"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "a80691810b44524fd32b67c280ccca53c96078692381ae6af8adfcedb9d24c12"
+      "sha256": "8d5f4fd749e7ef56f53c0d8eab0254aaacd0033ec8b88bfc98332dc6e2bc7dda"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "53a5c3d90bec9a5171a91ec775fc97b6f765291331e57417d5ba985cfe77ec78"
+      "sha256": "a5dc8195da591745ada4c9b1f17209299b31ba11a7e0ea03e4410b01b26a3558"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "d298201a005f0fab15046ec3827406c3f5f3db99d7757c057bead3150041b25e"
+      "sha256": "fc2222872547b1ede9e5bfbfffd4c02c30f01ab074352892bf5fadbd1bc563bc"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "8b30e3116a8f4607f928a12fdf5a946b447cf7ed1524ec59cea96a0cb6af350e"
+      "sha256": "85656f1a03a0e6fb935ea5f99a337bc320ac48a6b01bca08e91fdba9f755a28c"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "f5bc05b6769ab4e62bcb437db961b3bf608468b02be4bf6f3a0ffc35fd60d75e"
+      "sha256": "c5630d3679fd50e924996afe5d7b32fa632c0ef1c367d9fee1aff58ff2a000aa"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "094a65d6fcf8363eacfb0cf6ede49af1015082e2116c449df448954c7a2d162d"
+      "sha256": "b1788b1dfc72f301b6b6e87e327f3fb79443b2f690eb57cccbdc6e9938832943"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "418b5a7b92a85b3d545c27db33856aeb79bbc874f22e8ba9a03948deca123e9c"
+      "sha256": "e4955a4ede8850de68f1ee792e7202f1745718568dd043de1d7bce82985f41e4"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "22c6f475bc392bc328a38ded9c6e263eca55cfa0f4fec35ef862a136b7bd9bc2"
+      "sha256": "785be1411e3e4258d4f602b8fbee18147c8e8951d9ba7fc5d78515db58b45277"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "e797b5213af7c1dbe0ed409bf425c699d5551264b77d1aa36ea9ffbfe6d97575"
+      "sha256": "469983b15c4aa2d08c6e6fce0c3e9a073cc90fca00a6a3f3c3640b2293dc04be"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "f44c92c4c625901e3e712b871d7b2256ee46204e52f7e61fd79a8a8ff722d41d"
+      "sha256": "361e97bb8b79b9ece3a34807526ae1d3b7bfee89b77281cfa144626c8fa51d3d"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "ccd05094c5ab1feb365d517f9e395de734a79b7a81c594c9af2dccbb6b0de049"
+      "sha256": "1b3e65c0001ab8fa9802ea8fa3e8d2e2670b46a0d39ab9d161a4eda38396bf76"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "0f7b98169a58d451931734e5937317439b56085d9c8c9d6c7ebc2c6111db6984"
+      "sha256": "f5df80d88480c655e4031d53ecf3a3e3e6bb6d55a5995dfc2bef9f57f894a7d2"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "da655f57d16f850a25e90581e94f153cbcf0030947c06b42839b271aebc4ac8c"
+      "sha256": "c8a96fa5b0df7fa7af3d10307c4bad3052092718ac111f3f2a566fcf7effe2f4"
     },
     {
       "name": "page-0017.csv",
@@ -122,16 +122,16 @@
     "name": "l0-universe.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 5118,
-    "sha256": "1e29ed360565b526ebbe3fdcfa0e948fa6a684526cad1493cec3b1ec22302112",
-    "gzip_sha256": "2b1f330e58dfeb380e89938819bb342d5770b45e4f8860a0a0007a18f44e2be2",
-    "csv_sha256": "89eef0e6c0ee5c443117a57dd763e917a88df118511e7a2ddfd1ecad7375185b",
-    "bytes": 125628,
+    "sha256": "868d009385c2301e1fa6aa3d958ac68ca70db31a2b857fc913eca4b494b1fd26",
+    "gzip_sha256": "ce6470462a9c9b57d993b48a6449e8eaa934193af1b464e35ce3fa8ea836b79d",
+    "csv_sha256": "0e5c8c2e172da418308ab113b8c26c9984bc5c533e22941a6c28a1842e323615",
+    "bytes": 125656,
     "line_count": 1632
   },
   "rejection_audit": {
     "name": "l0-rejections.csv",
     "rows": 8044,
-    "sha256": "9797606dba3b18f44f7ccbf21f0bcc506343ab7ae895514a511430eb58d1026b"
+    "sha256": "b953b23d44872bf15716e65a9be8db31accc912ac6717f8083777fd4742825b2"
   },
   "producer_hashes": {
     "build_universe.py": "fee1055e9ce7f5cdb6df451342ad88cf2106942c96489c0b525a300716cb1d28",

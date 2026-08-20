@@ -1,4 +1,6 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+CYN,Cyngn Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CYRX,"CryoPort, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CYTK,"Cytokinetics, Incorporated - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYTK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CZFS,"Citizens Financial Services, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CZFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CZNC,Citizens & Northern Corp - Common Stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CZNC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -247,5 +249,3 @@ ENLT,Enlight Renewable Energy Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligibl
 ENLV,Enlivex Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENLV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENOV,Enovis Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENOV,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ENPH,"Enphase Energy, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ENPH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ENR,"Energizer Holdings, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ENS,EnerSys Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ENS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

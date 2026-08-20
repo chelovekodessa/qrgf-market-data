@@ -1,4 +1,6 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+CLDI,"Calidi Biotherapeutics, Inc. Common Stock",A,,,common_equity,eligible,True,N,N,,nasdaqtrader:A:CLDI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+CLDT,Chatham Lodging Trust (REIT) Common Shares of Beneficial Interest,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLDT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CLDX,"Celldex Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLDX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CLF,Cleveland-Cliffs Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CLF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CLFD,"Clearfield, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CLFD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -247,5 +249,3 @@ CXW,"CoreCivic, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtr
 CYCN,"Cyclerion Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYCN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CYD,China Yuchai International Limited Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CYD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 CYH,"Community Health Systems, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:CYH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-CYN,Cyngn Inc. - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-CYRX,"CryoPort, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:CYRX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

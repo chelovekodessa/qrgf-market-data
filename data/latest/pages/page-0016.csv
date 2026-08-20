@@ -1,4 +1,6 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+PRTA,Prothena Corporation plc - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
+PRTH,"Priority Technology Holdings, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTH,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRTS,"CarParts.com, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRTS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRU,"Prudential Financial, Inc. Common Stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PRU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PRVA,"Privia Health Group, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PRVA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -6,7 +8,6 @@ PS,Pershing Square Inc. Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaq
 PSA,Public Storage Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSFE,Paysafe Limited Common Shares,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:PSFE,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSHG,Performance Shipping Inc. - Common Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSHG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-PSIG,PS International Group Ltd. - Ordinary Shares,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSIX,"Power Solutions International, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSIX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSKY,Paramount Skydance Corporation - Class B Common Stock,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSKY,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 PSMT,"PriceSmart, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:PSMT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -210,7 +211,6 @@ RNR,RenaissanceRe Holdings Ltd. Common Stock,N,,,common_equity,eligible,True,N,N
 RNST,Renasant Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:RNST,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RNTX,"Rein Therapeutics, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RNTX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 RNW,ReNew Energy Global plc - Class A Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:RNW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-ROAD,"Construction Partners, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ROC,Rank One Computing Corporation - Common stock,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ROCK,"Gibraltar Industries, Inc. - Common Stock",Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:ROCK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 ROG,Rogers Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:ROG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,

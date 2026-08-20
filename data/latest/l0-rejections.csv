@@ -6,7 +6,6 @@ AAAD,PGIM AAA CLO Aggregate Duration ETF,P,,,etf,ineligible,False,N,Y,,,approved
 AAAP,Pacer Barings CLO Market Flex ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AAAU,Goldman Sachs Physical Gold ETF Shares,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 AAC.U,"Ares Acquisition Corporation III Units, each consisting of one Class A ordinary share and one-tenth of one redeemable warrant",N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:AAC.U,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
-AACB,Artius II Acquisition Inc. - Class A Ordinary Shares,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:AACB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 AACBR,Artius II Acquisition Inc. - Rights,Q,G,N,right,ineligible,False,N,N,,nasdaqtrader:Q:AACBR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,right
 AACBU,Artius II Acquisition Inc. - Units,Q,G,N,unit,ineligible,False,N,N,,nasdaqtrader:Q:AACBU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unit
 AACI,Armada Acquisition Corp. III - Class A Ordinary Share,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:AACI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -629,7 +628,6 @@ BBCQW,Bleichroeder Acquisition Corp. II - Warrants,Q,G,N,spac,ineligible,False,N
 BBDC,"Barings BDC, Inc. Common Stock",N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:BBDC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 BBEM,JPMorgan BetaBuilders Emerging Markets Equity ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBEU,JPMorgan BetaBuilders Europe ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-BBGI,"Beasley Broadcast Group, Inc. - Class A Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:BBGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 BBH,VanEck Biotech ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBHL,BBH Select Large Cap ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 BBHM,BBH Select Mid Cap ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -5670,6 +5668,7 @@ PSFM,Pacer Swan SOS Flex (April) ETF,Z,,,etf,ineligible,False,N,Y,,,approved_all
 PSFO,Pacer Swan SOS Flex (October) ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PSH,PGIM Short Duration High Yield ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PSI,Invesco Semiconductors ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+PSIG,PS International Group Ltd. - Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:PSIG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 PSIL,AdvisorShares Psychedelics ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PSK,State Street SPDR ICE Preferred Securities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 PSL,Invesco Dorsey Wright Consumer Staples Momentum ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6102,6 +6101,7 @@ RNRG,Global X Renewable Energy Producers ETF,Q,G,N,etf,ineligible,False,N,Y,,,ap
 RNTY,YieldMax Target 12 Real Estate Option Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 RNWWW,ReNew Energy Global plc - Warrant,Q,Q,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:RNWWW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 RNXT,"RenovoRx, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:RNXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
+ROAD,"Construction Partners, Inc. - Common Stock",Q,Q,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:ROAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 ROAM,Hartford Multifactor Emerging Markets ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ROBN,T-Rex 2X Long HOOD Daily Target ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ROBO,ROBO Global Robotics and Automation Index ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
