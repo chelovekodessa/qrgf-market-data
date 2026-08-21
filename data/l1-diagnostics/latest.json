@@ -3,11 +3,11 @@
   "request_id": "fqrs-20260813T213811Z-70309b5c",
   "root_request_id": "fqrs-20260813T213811Z-70309b5c",
   "attempt": 1,
-  "workflow_run_id": "32410751270",
+  "workflow_run_id": "32443757971",
   "workflow_run_attempt": "1",
-  "completed_at": "2026-08-20T19:55:45Z",
+  "completed_at": "2026-08-21T03:33:35Z",
   "returncode": 0,
-  "stdout_tail": "{\n  \"complete\": true,\n  \"rows\": 5119,\n  \"with_history\": 5114,\n  \"missing_history\": 5,\n  \"market_cap_missing_non_etf\": 5077,\n  \"mature_missing_core\": 4777,\n  \"alpaca_requests\": 161,\n  \"alpaca_errors\": 0,\n  \"nasdaq_reference_rows\": null\n}\n",
+  "stdout_tail": "{\n  \"complete\": true,\n  \"rows\": 5119,\n  \"with_history\": 5117,\n  \"missing_history\": 2,\n  \"market_cap_missing_non_etf\": 5077,\n  \"mature_missing_core\": 4778,\n  \"alpaca_requests\": 161,\n  \"alpaca_errors\": 0,\n  \"nasdaq_reference_rows\": null\n}\n",
   "stderr_tail": "",
   "publishable": true,
   "manifest_summary": {
@@ -16,20 +16,20 @@
     "source_id": "alpaca_sip_daily_free_l1",
     "coverage": {
       "total": 5119,
-      "with_history": 5114,
-      "missing_history": 5,
+      "with_history": 5117,
+      "missing_history": 2,
       "non_etf": 5077,
       "market_cap_present_non_etf": 0,
       "market_cap_missing_non_etf": 5077,
-      "mature_missing_core": 4777
+      "mature_missing_core": 4778
     },
     "alpaca_requests": 161,
     "alpaca_errors": 0,
     "alpaca_error_samples": [],
     "short_history_extension": {
-      "requested_symbols": 310,
+      "requested_symbols": 312,
       "upgraded_to_full": 15,
-      "still_short": 295,
+      "still_short": 297,
       "requests": 7,
       "errors": []
     },
