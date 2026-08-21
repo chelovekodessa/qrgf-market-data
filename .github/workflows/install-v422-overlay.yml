@@ -28,6 +28,11 @@ jobs:
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
           stage=initializing
+          payload_size=unknown
+          payload_git_sha=unknown
+          payload_head_hex=unknown
+          payload_tail_hex=unknown
+          gzip_probe=not_run
           diagnose() {
             rc=$?
             failed_line=${BASH_LINENO[0]:-unknown}
@@ -35,12 +40,17 @@ jobs:
             set +e
             mkdir -p .github
             {
-              echo "schema_version=1"
+              echo "schema_version=2"
               echo "commit=$(git rev-parse HEAD 2>/dev/null || echo unknown)"
               echo "stage=$stage"
               echo "exit_code=$rc"
               echo "line=$failed_line"
               printf 'command=%s\n' "$failed_command"
+              echo "payload_size=$payload_size"
+              echo "payload_git_sha=$payload_git_sha"
+              echo "payload_head_hex=$payload_head_hex"
+              echo "payload_tail_hex=$payload_tail_hex"
+              printf 'gzip_probe=%s\n' "$gzip_probe"
             } > .github/v422-install-diagnostics.txt
             git add .github/v422-install-diagnostics.txt
             git commit -m "Record V4.2.2 installer failure diagnostics" >/dev/null 2>&1
@@ -60,13 +70,16 @@ jobs:
           test -s "$payload"
 
           stage=verify_git_object
-          size=$(wc -c < "$payload" | tr -d ' ')
-          actual_git_sha=$( (printf 'blob %s\0' "$size"; cat "$payload") | sha1sum | awk '{print $1}')
-          echo "payload_size=$size"
-          echo "payload_git_sha=$actual_git_sha"
-          test "$actual_git_sha" = "c44412fc371b753fc7b283138574d5648f685bd5"
+          payload_size=$(wc -c < "$payload" | tr -d ' ')
+          payload_git_sha=$( (printf 'blob %s\0' "$payload_size"; cat "$payload") | sha1sum | awk '{print $1}')
+          payload_head_hex=$(od -An -tx1 -N32 "$payload" | tr -d ' \n')
+          payload_tail_hex=$(tail -c 32 "$payload" | od -An -tx1 | tr -d ' \n')
+          echo "payload_size=$payload_size"
+          echo "payload_git_sha=$payload_git_sha"
+          test "$payload_git_sha" = "c44412fc371b753fc7b283138574d5648f685bd5"
 
           stage=verify_archive
+          gzip_probe=$(gzip -tv "$payload" 2>&1 || true)
           gzip -t "$payload"
           tar -tzf "$payload" > /tmp/v422-overlay-files.txt
           awk '
@@ -110,4 +123,4 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
           trap - ERR
-# trigger: durable-diagnostics
+# trigger: archive-probe
