@@ -4,8 +4,8 @@
   "kind": "qrgf_v42_market_pointer",
   "master_sha256": null,
   "ordinary_daily_broad_allowed": false,
-  "pointer_sha256": "448c5a6dfe7e559146ad3adcfc9a88954688d1c44240e2601972ac2b889690af",
-  "producer_release_sha256": "8fb7ab74f3059b32e064faa7e763b0ccc3ea96962953b88a0bdf0312ff1aa202",
+  "pointer_sha256": "f593722fd7e2bf3917118de08bb7ffc5662a8cd563e174c43037858311a7007e",
+  "producer_release_sha256": "dd20c547ace0f140ffaa29ddb1e1e84cca4eb250e6d7d859fd92875a8b36d1a3",
   "reason": "MASTER_CORE500_NOT_INITIALIZED",
   "schema_version": "2.0.0"
 }
