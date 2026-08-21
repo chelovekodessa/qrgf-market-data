@@ -26,15 +26,29 @@ jobs:
           git rev-parse HEAD > /tmp/base-sha
           git ls-tree -r HEAD data/v4 > /tmp/data-v4-before
           git ls-tree -r HEAD data/v42 > /tmp/data-v42-before
-      - name: Materialize reviewed V4.2.2 overlay payload
+      - name: Materialize and verify reviewed V4.2.2 overlay payload
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
-          gh api repos/${{ github.repository }}/git/blobs/c44412fc371b753fc7b283138574d5648f685bd5 --jq .content | tr -d '\n' | base64 -d > /tmp/v422-overlay.tar.gz
-          echo "e8167aefec5558b187435c4c5adb8139aa35736b5ae511d23371c5314b7bd4e8  /tmp/v422-overlay.tar.gz" | sha256sum -c -
-          tar -xzf /tmp/v422-overlay.tar.gz
+          payload=/tmp/v422-overlay.tar.gz
+          gh api repos/${{ github.repository }}/git/blobs/c44412fc371b753fc7b283138574d5648f685bd5 --jq .content | tr -d '\n' | base64 -d > "$payload"
+          test -s "$payload"
+          size=$(wc -c < "$payload" | tr -d ' ')
+          actual_git_sha=$( (printf 'blob %s\0' "$size"; cat "$payload") | sha1sum | awk '{print $1}')
+          echo "payload_size=$size"
+          echo "payload_git_sha=$actual_git_sha"
+          test "$actual_git_sha" = "c44412fc371b753fc7b283138574d5648f685bd5"
+          gzip -t "$payload"
+          tar -tzf "$payload" > /tmp/v422-overlay-files.txt
+          awk '
+            /^\// { bad=1 }
+            /(^|\/)\.\.($|\/)/ { bad=1 }
+            !/^(\.\/)?(\.github\/|screening\/)/ { bad=1 }
+            END { exit bad ? 1 : 0 }
+          ' /tmp/v422-overlay-files.txt
+          tar -xzf "$payload"
           rm -f .github/workflows/install-v422-overlay.yml
       - name: Verify no production data changed
         shell: bash
@@ -65,4 +79,4 @@ jobs:
           git commit -m "Deploy QRGF V4.2.2 bootstrap contract fix"
           git pull --rebase origin main
           git push origin HEAD:main
-# trigger: checksum-corrected
+# trigger: verify-pinned-git-object
