@@ -1,0 +1,42 @@
+{
+  "certificate_sha256": "7d2b776ab5821f4186f78ad8ba338c101599d372547bddce2a6f32632957804d",
+  "created_at": "2026-08-21T08:11:04Z",
+  "frontier": {
+    "fixed_candidate_count_cutoff": false,
+    "frontier_model_sha256": "919cac81107c71c409ad48eb0f0a2abd759150812ada1f8b717b68dddbc400c8",
+    "frontier_semantic_sha256": "03a95d2793534e51066e452acecc953eb17341a73b3ed4a906327d448f057d5f",
+    "manifest_path": "data/v31/snapshots/afb9936e575c4e8a965b9afb/frontier-manifest.json",
+    "manifest_semantic_sha256": "5efbb7f4aa6269b36c4dfbf6463cdb42682ffa3c9e552eb555b4cf51441f3afa",
+    "page_count": 155,
+    "page_size_is_transport_only": true,
+    "scope_count": 3717,
+    "security_count": 3728
+  },
+  "frontier_producer_release": {
+    "manifest_path": "screening/config/v31-frontier-producer-release.json",
+    "manifest_sha256": "55ca263d6ec20318ff6436f64eade4d47a5ca9b00ede378a55e855fb58294968",
+    "release_version": "1.0.0"
+  },
+  "kind": "qrgf_v31_market_certificate",
+  "market_session_id": "2026-08-20",
+  "schema_version": "1.0.0",
+  "snapshot_content_sha256": "afb9936e575c4e8a965b9afb1c96bdfe700d77b888d66fda8124f60f44a09819",
+  "snapshot_id": "afb9936e575c4e8a965b9afb",
+  "source_radar": {
+    "legacy_rankable_market_rows": 3620,
+    "manifest_semantic_sha256": "53ebc195779ea23e44a18a366b790d9a140a33ec87af144d510dc79049b29fe0",
+    "market_data_incomplete_nonrejected_rows": 108,
+    "market_scanned_rows": 5117,
+    "market_session_id": "2026-08-20",
+    "page_set_sha256": "b666fa2cf02aae1640e3bb0877c835a2fdfd825666e6dd9a747010a3bc13cb40",
+    "producer_release_sha256": "de0b649a784d47b8c992f565db7c73de2a6ca8c5a44d64e874bcb259a65a7ce7",
+    "publication_commit_sha": "38a35a815cae0cc7b36a0a27a556e62f4a07c7f5",
+    "rankable_market_rows": 3620,
+    "rejected_rows": 1389,
+    "rows_semantic_sha256": "08cd2526392bdd9d75127ce56639f20b59068c55693c6ce00ef8c6bcf64171f0",
+    "snapshot_content_sha256": "1e17e2839224e6af8cef3362c65b0b1dfde8557969ec6aa6c1b3e30274c7ced8",
+    "snapshot_id": "1e17e2839224e6af8cef3362",
+    "system_snapshot_sha256": "7318386546349cbe333f6c6327c4bf9e7d09b636fb66713629529dd6ebe0c367",
+    "universe_rows": 5117
+  }
+}
