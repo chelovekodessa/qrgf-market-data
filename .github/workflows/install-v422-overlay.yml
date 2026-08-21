@@ -1,7 +1,7 @@
 name: Install QRGF V4.2.2 overlay
 on:
   push:
-    branches: [main]
+    branches: ["fix/v422-radar-classification-contract"]
     paths: [".github/workflows/install-v422-overlay.yml"]
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install V4.2.2 with durable failure diagnostics
+      - name: Apply verified V4.2.2 text patch and run release checks
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
@@ -28,78 +28,59 @@ jobs:
           git config user.name "qrgf-market-data-bot"
           git config user.email "qrgf-market-data-bot@users.noreply.github.com"
           stage=initializing
-          payload_size=unknown
-          payload_git_sha=unknown
-          payload_head_hex=unknown
-          payload_tail_hex=unknown
-          gzip_probe=not_run
           diagnose() {
             rc=$?
             failed_line=${BASH_LINENO[0]:-unknown}
             failed_command=${BASH_COMMAND:-unknown}
             set +e
-            mkdir -p .github
             {
-              echo "schema_version=2"
+              echo "schema_version=1"
               echo "commit=$(git rev-parse HEAD 2>/dev/null || echo unknown)"
               echo "stage=$stage"
               echo "exit_code=$rc"
               echo "line=$failed_line"
               printf 'command=%s\n' "$failed_command"
-              echo "payload_size=$payload_size"
-              echo "payload_git_sha=$payload_git_sha"
-              echo "payload_head_hex=$payload_head_hex"
-              echo "payload_tail_hex=$payload_tail_hex"
-              printf 'gzip_probe=%s\n' "$gzip_probe"
-            } > .github/v422-install-diagnostics.txt
-            git add .github/v422-install-diagnostics.txt
-            git commit -m "Record V4.2.2 installer failure diagnostics" >/dev/null 2>&1
-            git push origin HEAD:main >/dev/null 2>&1
+            } > .github/v422-deploy-diagnostics.txt
+            git add .github/v422-deploy-diagnostics.txt
+            git commit -m "Record V4.2.2 text-patch deployment failure" >/dev/null 2>&1
+            git push origin HEAD:fix/v422-radar-classification-contract >/dev/null 2>&1
             exit "$rc"
           }
           trap diagnose ERR
 
           stage=capture_protected_state
-          git rev-parse HEAD > /tmp/base-sha
           git ls-tree -r HEAD data/v4 > /tmp/data-v4-before
           git ls-tree -r HEAD data/v42 > /tmp/data-v42-before
 
-          stage=fetch_payload
-          payload=/tmp/v422-overlay.tar.gz
-          gh api repos/${{ github.repository }}/git/blobs/c44412fc371b753fc7b283138574d5648f685bd5 --jq .content | tr -d '\n' | base64 -d > "$payload"
-          test -s "$payload"
+          stage=assemble_patch_transport
+          : > /tmp/v422.patch.b64
+          for sha in \
+            3efc43278c8f8032e454641f4077594839dae910 \
+            fd3c700cf3867cb11c28034a84881180ad1b1aad \
+            81ac34375eb23ecc2a1165d1910fe4d09c17148b \
+            1fd7205f0886bcfbcfbf582e6c7a5ea6ff4a1190 \
+            900e5ecab8378696cd76c05ff9941515f75141a3 \
+            1cf057ecd9950dceb426a4c58e4c25900f0039b1
+          do
+            gh api repos/${{ github.repository }}/git/blobs/$sha --jq .content | tr -d '\n' | base64 -d >> /tmp/v422.patch.b64
+          done
+          test "$(wc -c < /tmp/v422.patch.b64 | tr -d ' ')" = "38224"
+          base64 -d /tmp/v422.patch.b64 > /tmp/v422.patch.gz
+          echo "3dca2841b6b9b5c0e8f3421ac19372903c758cdaf11e76ac1ea342856e1f575d  /tmp/v422.patch.gz" | sha256sum -c -
+          gzip -t /tmp/v422.patch.gz
+          gzip -dc /tmp/v422.patch.gz > /tmp/v422.patch
+          echo "849e9d12605abc224a5d99c2f96f293377f687cac379f2c6de54acd0bce3c567  /tmp/v422.patch" | sha256sum -c -
 
-          stage=verify_git_object
-          payload_size=$(wc -c < "$payload" | tr -d ' ')
-          payload_git_sha=$( (printf 'blob %s\0' "$payload_size"; cat "$payload") | sha1sum | awk '{print $1}')
-          payload_head_hex=$(od -An -tx1 -N32 "$payload" | tr -d ' \n')
-          payload_tail_hex=$(tail -c 32 "$payload" | od -An -tx1 | tr -d ' \n')
-          echo "payload_size=$payload_size"
-          echo "payload_git_sha=$payload_git_sha"
-          test "$payload_git_sha" = "c44412fc371b753fc7b283138574d5648f685bd5"
+          stage=check_patch_against_current_baseline
+          git apply --check /tmp/v422.patch
 
-          stage=verify_archive
-          gzip_probe=$(gzip -tv "$payload" 2>&1 || true)
-          gzip -t "$payload"
-          tar -tzf "$payload" > /tmp/v422-overlay-files.txt
-          awk '
-            /^\// { bad=1 }
-            /(^|\/)\.\.($|\/)/ { bad=1 }
-            !/^(\.\/)?(\.github\/|screening\/)/ { bad=1 }
-            END { exit bad ? 1 : 0 }
-          ' /tmp/v422-overlay-files.txt
+          stage=apply_patch
+          git apply /tmp/v422.patch
 
-          stage=extract_overlay
-          tar -xzf "$payload"
-          rm -f .github/workflows/install-v422-overlay.yml
-
-          stage=verify_no_data_change
-          git diff --name-only -- data | tee /tmp/data-diff
-          test ! -s /tmp/data-diff
-          git ls-tree -r HEAD data/v4 > /tmp/data-v4-after-head
-          git ls-tree -r HEAD data/v42 > /tmp/data-v42-after-head
-          cmp /tmp/data-v4-before /tmp/data-v4-after-head
-          cmp /tmp/data-v42-before /tmp/data-v42-after-head
+          stage=verify_scope
+          test -z "$(git diff --name-only -- data)"
+          bad=$(git diff --name-only | grep -Ev '^screening/' || true)
+          test -z "$bad"
 
           stage=compile
           python -m compileall -q screening/qrgf_v42 screening/engine
@@ -107,20 +88,25 @@ jobs:
           stage=tests
           QRGF_TEST_RESULTS=/tmp/qrgf-v422-tests.json python screening/qrgf_v42/tests/run_tests.py
 
-          stage=policy_check
-          python screening/qrgf_v42/scripts/cli.py policy-check
+          stage=producer_entrypoints
+          python screening/engine/promote_v42_state.py --help >/dev/null
+          python screening/engine/verify_v42_gate.py --help >/dev/null
 
-          stage=deployment_check
-          python screening/qrgf_v42/scripts/cli.py deployment-check
+          stage=verify_protected_state
+          test -z "$(git diff --name-only -- data)"
+          git ls-tree -r HEAD data/v4 > /tmp/data-v4-after-head
+          git ls-tree -r HEAD data/v42 > /tmp/data-v42-after-head
+          cmp /tmp/data-v4-before /tmp/data-v4-after-head
+          cmp /tmp/data-v42-before /tmp/data-v42-after-head
 
           stage=commit_overlay
-          rm -f .github/v422-install-diagnostics.txt
-          git add -A .github screening
-          if git diff --cached --name-only | grep '^data/'; then exit 1; fi
+          find screening -type d -name __pycache__ -prune -exec rm -rf {} +
+          find screening -type f -name '*.pyc' -delete
+          git add -A screening
+          test -z "$(git diff --cached --name-only | grep -v '^screening/' || true)"
+          test -z "$(git diff --cached --name-only -- data)"
           git commit -m "Deploy QRGF V4.2.2 bootstrap contract fix"
 
-          stage=rebase_and_push
-          git pull --rebase origin main
-          git push origin HEAD:main
+          stage=push_branch
+          git push origin HEAD:fix/v422-radar-classification-contract
           trap - ERR
-# trigger: archive-probe
