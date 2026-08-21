@@ -1,0 +1,67 @@
+name: Install QRGF V4.2.2 overlay
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/install-v422-overlay.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: qrgf-v422-overlay-install
+  cancel-in-progress: false
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Capture protected durable state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rev-parse HEAD > /tmp/base-sha
+          git ls-tree -r HEAD data/v4 > /tmp/data-v4-before
+          git ls-tree -r HEAD data/v42 > /tmp/data-v42-before
+      - name: Materialize reviewed V4.2.2 overlay payload
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api repos/${{ github.repository }}/git/blobs/c44412fc371b753fc7b283138574d5648f685bd5 --jq .content | tr -d '\n' | base64 -d > /tmp/v422-overlay.tar.gz
+          echo "993bd1b9e68d4c119f3dc3cfac253b8d97040c6e4cc1b3dbab63f4af397145df  /tmp/v422-overlay.tar.gz" | sha256sum -c -
+          tar -xzf /tmp/v422-overlay.tar.gz
+          rm -f .github/workflows/install-v422-overlay.yml
+      - name: Verify no production data changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --name-only -- data | tee /tmp/data-diff
+          test ! -s /tmp/data-diff
+          git ls-tree -r HEAD data/v4 > /tmp/data-v4-after-head
+          git ls-tree -r HEAD data/v42 > /tmp/data-v42-after-head
+          cmp /tmp/data-v4-before /tmp/data-v4-after-head
+          cmp /tmp/data-v42-before /tmp/data-v42-after-head
+      - name: Compile and run V4.2.2 release checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m compileall -q screening/qrgf_v42 screening/engine
+          QRGF_TEST_RESULTS=/tmp/qrgf-v422-tests.json python screening/qrgf_v42/tests/run_tests.py
+          python screening/qrgf_v42/scripts/cli.py policy-check
+          python screening/qrgf_v42/scripts/cli.py deployment-check
+      - name: Commit verified code-only overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-bot"
+          git config user.email "qrgf-market-data-bot@users.noreply.github.com"
+          git add -A .github screening
+          if git diff --cached --name-only | grep '^data/'; then exit 1; fi
+          git commit -m "Deploy QRGF V4.2.2 bootstrap contract fix"
+          git pull --rebase origin main
+          git push origin HEAD:main
