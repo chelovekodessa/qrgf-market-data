@@ -3313,6 +3313,7 @@ HFXI,NYLI FTSE International Equity Currency Neutral ETF,P,,,etf,ineligible,Fals
 HGER,Harbor Commodity All-Weather Strategy ETF,N,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HGLB,Highland Global Allocation Fund Common Stock,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:HGLB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 HGRO,Hedgeye Quality Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+HIAI,Ai Funds High Conviction US Equity AI-Managed ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HIBL,Direxion Daily S&P 500 High Beta Bull 3X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HIBS,Direxion Daily S&P 500 High Beta Bear 3X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HIDE,Alpha Architect High Inflation and Deflation ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -3403,6 +3404,9 @@ HWH,HWH International Inc. - Common Stock,Q,S,D,unknown,ineligible,False,N,N,,na
 HWIV,Hotchkis & Wiley International Value Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HWO,Hotchkis & Wiley Opportunities Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HWSM,Hotchkis & Wiley SMID Cap Diversified Value Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+HXA,Mast HedgeIndex Corporate Arbitrage ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+HXC,Mast HedgeIndex Strategic Commodities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+HXE,Mast HedgeIndex Adaptive Equities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HXHX,Haoxin Holdings Limited - Class A Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:HXHX,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 HYBB,iShares BB Rated Corporate Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HYBI,NEOS Enhanced Income Credit Select ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -3574,7 +3578,6 @@ IDYN,iShares International Equity Factor Rotation Active ETF,P,,,etf,ineligible,
 IEAG,Infinite Eagle Acquisition Corp. - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:IEAG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 IEAGR,Infinite Eagle Acquisition Corp. - Rights,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:IEAGR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 IEAGU,Infinite Eagle Acquisition Corp. - Unit,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:IEAGU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
-IEDI,iShares U.S. Consumer Focused ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 IEF,iShares 7-10 Year Treasury Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 IEFA,iShares Core MSCI EAFE ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 IEI,iShares 3-7 Year Treasury Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4220,7 +4223,6 @@ LATR,Corgi Buy Now Pay Later ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowli
 LAZR,Tema Photonics & Optical ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 LBAY,Leatherback Long/Short Alternative Yield ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 LBO,WHITEWOLF Publicly Listed Private Equity ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-LBRDP,Liberty Broadband Corporation - Series A Cumulative Redeemable Preferred Stock,Q,Q,N,preferred,ineligible,False,N,N,,nasdaqtrader:Q:LBRDP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,preferred
 LCAP,Principal Capital Appreciation Select ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 LCCC,Lakeshore Acquisition III Corp. - Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LCCC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
 LCCCR,Lakeshore Acquisition III Corp. - Rights,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:LCCCR,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -4488,6 +4490,7 @@ MEDI,Harbor Health Care ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_id
 MEDS,"DataMeds AI, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:MEDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 MEDX,Horizon Kinetics Medical ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MEGI,NYLI CBRE Global Infrastructure Megatrends Term Fund Common Shares,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:MEGI,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+MEGX,Corgi U.S. Mega-Cap Growth 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MEIB,Direxion META Defined Income Boost ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MEM,Matthews Emerging Markets Equity Active ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MEMA,Man Active Emerging Markets Alternative ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -4541,7 +4544,6 @@ MFVL,Motley Fool Value Factor ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allo
 MGC,Vanguard Morningstar Mega Cap ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MGF,Aberdeen Government Markets Income Fund Common Shares of Beneficial Interest,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:MGF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 MGK,Vanguard Morningstar Mega Cap Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-MGKX,Corgi U.S. Mega-Cap Growth 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MGMT,Ballast Small/Mid Cap ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 MGN,Megan Holdings Limited - Class A Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:MGN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 MGNR,American Beacon Select Funds American Beacon GLG Natural Resources ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6377,6 +6379,7 @@ SEMY,GraniteShares YieldBOOST Semiconductor ETF,Q,G,N,etf,ineligible,False,N,Y,,
 SEPI,Shelton Equity Premium Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SEPM,FT Vest U.S. Equity Max Buffer ETF - September,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SEPP,PGIM S&P 500 Buffer 12 ETF - September,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+SEPQ,STF Tactical Growth & Income ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SEPT,AllianzIM U.S. Large Cap Buffer10 Sep ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SEPU,AllianzIM U.S. Equity Buffer15 Uncapped Sep ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SEPW,AllianzIM U.S. Large Cap Buffer20 Sep ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7200,7 +7203,6 @@ TTXD,Direxion Daily Technology Top 5 Bear 2X ETF,P,,,etf,ineligible,False,N,Y,,,
 TTXU,Direxion Daily Technology Top 5 Bull 2X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TUA,Simplify Short Term Treasury Futures Strategy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TUG,STF Tactical Growth ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-TUGN,STF Tactical Growth & Income ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TUR,iShares MSCI Turkey ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TURF,T. Rowe Price Natural Resources ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 TUSB,Thrivent Ultra Short Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7363,16 +7365,19 @@ USFI,BrandywineGLOBAL - U.S. Fixed Income ETF,Q,G,N,etf,ineligible,False,N,Y,,,a
 USFR,WisdomTree Floating Rate Treasury Fund,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USG,USCF Gold Strategy Plus Income Fund,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USGG,Leverage Shares 2X Long USAR Daily ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+USGX,Corgi U.S. Growth 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USHY,iShares Broad USD High Yield Corporate Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USIG,iShares Broad USD Investment Grade Corporate Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USIN,WisdomTree 7-10 Year Laddered Treasury Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USL,United States 12 Month Oil,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USLN,iShares Broad USD Floating Rate Loan ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USLV,Direxion Daily Silver Bull 2X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+USLX,Corgi U.S. Large-Cap 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USMC,Principal U.S. Mega-Cap ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USMD,CoreValues America First Technology ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USMF,WisdomTree U.S. Multifactor Fund,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USMV,iShares MSCI USA Min Vol Factor ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+USMX,Corgi U.S. Mid-Cap 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USNG,Amplify Samsung U.S. Natural Gas Infrastructure ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USNZ,Xtrackers Net Zero Pathway Paris Aligned US Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USO,United States Oil Fund,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7383,6 +7388,7 @@ USRT,iShares Core U.S. REIT ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlis
 USSE,Segall Bryant & Hamill Trust Segall Bryant & Hamill Select Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USSG,Xtrackers MSCI USA Selection Equity ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USSH,WisdomTree 1-3 Year Laddered Treasury Fund,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+USSX,Corgi U.S. Small-Cap 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 UST,ProShares Ultra 7-10 Year Treasury,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USTB,VictoryShares Short-Term Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 USVM,VictoryShares US Small Mid Cap Value Momentum ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7450,7 +7456,6 @@ VBK,Vanguard Morningstar Small-Cap Growth ETF,P,,,etf,ineligible,False,N,Y,,,app
 VBNB,VanEck BNB ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VBND,Vident U.S. Bond Strategy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VBR,Vanguard Morningstar Small-Cap Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-VBX,Corgi U.S. Small-Cap 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VCEB,Vanguard ESG U.S. Corporate Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VCHY,Vanguard U.S. High-Yield Corporate Bond Index ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VCIT,Vanguard Intermediate-Term Corporate Bond ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7552,7 +7557,6 @@ VONG,Vanguard Russell 1000 Growth ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_
 VONV,Vanguard Russell 1000 Value ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VOOG,Vanguard S&P 500 Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VOOV,Vanguard S&P 500 Value ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-VOOX,Corgi U.S. Large-Cap 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VOT,Vanguard Morningstar Mid-Cap Growth ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VOTE,TCW Transform 500 ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 VOXP,Vox Populi ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7922,9 +7926,7 @@ XUSP,Innovator Uncapped Accelerated U.S. Equity ETF,Z,,,etf,ineligible,False,N,Y
 XV,Simplify Target 15 Distribution ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XVAP,FT Vest AAPL & Target Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XVNV,FT Vest NVDA & Target Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-XVO,Corgi U.S. Mid-Cap 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XVTS,FT Vest TSLA & Target Income ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-XVUG,Corgi U.S. Growth 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XVV,iShares ESG Select Screened S&P 500 ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XW,Corgi Ex-U.S. Equities 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 XWNG,Amplify Top 10 Space ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -7938,7 +7940,6 @@ XYZY,YieldMax XYZ Option Income Strategy ETF,P,,,etf,ineligible,False,N,Y,,,appr
 YALL,Truth Social God Bless America ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 YANG,Direxion Daily FTSE China Bear 3X ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 YBIT,YieldMax Bitcoin Option Income Strategy ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-YBMN,Defiance BMNR Option Income ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 YBST,GraniteShares YieldBoost Single Stock Universe ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 YBTC,Roundhill Bitcoin Covered Call Strategy ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 YBTY,GraniteShares YieldBoost TopYielders ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
