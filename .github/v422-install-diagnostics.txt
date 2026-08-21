@@ -1,0 +1,6 @@
+schema_version=1
+commit=1b0b12f9b0c5ad5acbcf1605c6df4d5798140e47
+stage=verify_archive
+exit_code=1
+line=44
+command=gzip -t "$payload"
