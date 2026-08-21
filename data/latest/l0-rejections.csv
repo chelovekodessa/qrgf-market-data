@@ -1349,6 +1349,7 @@ CIMO,Chimera Investment Corporation 9.250% Senior Notes due 2029,N,,,debt,inelig
 CIMP,Chimera Investment Corporation 8.875% Senior Notes due 2030,N,,,debt,ineligible,False,N,N,,nasdaqtrader:N:CIMP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,debt_note_or_bond
 CINGW,Cingulate Inc. - Warrants,Q,S,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:CINGW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 CIR,Corgi CRCL 2x Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
+CIRC,"Circle8 Group, Inc. - Common Stock",Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:CIRC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 CISO,"CISO Global, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:CISO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 CIVG,Corgi 1-5 Year Investment Grade Corporate Bond ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 CJMB,Callan JMB Inc. - Common Stock,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:CJMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
@@ -3534,7 +3535,7 @@ IBX,Tradr 2X Long IBM Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlis
 ICAP,Infrastructure Capital Equity Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ICF,iShares Select U.S. REIT ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ICLO,Invesco AAA CLO Floating Rate Note ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-ICMB,"Investcorp Credit Management BDC, Inc. - Common Stock",Q,Q,N,fund,ineligible,False,N,N,,nasdaqtrader:Q:ICMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+ICMB,"Investcorp Credit Management BDC, Inc. - Common Stock",Q,Q,D,fund,ineligible,False,N,N,,nasdaqtrader:Q:ICMB,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
 ICOP,iShares Copper and Metals Mining ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ICOW,Pacer Developed Markets International Cash Cows 100 ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ICPI,iShares 0-1 Year TIPS Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6105,7 +6106,6 @@ RNR$G,"RenaissanceRe Holdings Ltd. Depositary Shares, each representing a 1/1,00
 RNRG,Global X Renewable Energy Producers ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 RNTY,YieldMax Target 12 Real Estate Option Income ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 RNWWW,ReNew Energy Global plc - Warrant,Q,Q,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:RNWWW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
-RNXT,"RenovoRx, Inc. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:RNXT,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 ROAD,"Construction Partners, Inc. - Common Stock",Q,Q,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:ROAD,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 ROAM,Hartford Multifactor Emerging Markets ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 ROBN,T-Rex 2X Long HOOD Daily Target ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
@@ -6784,7 +6784,6 @@ STXV,Strive 1000 Value ETF,N,,,etf,ineligible,False,N,Y,,,approved_allowlist_ide
 STXX,Tradr 2X Long STX Daily ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 STYL,Corgi Lifestyle Brands ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SUB,iShares Short-Term National Muni Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-SUGP,SU Group Holdings Limited - Class A Ordinary Shares,Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:SUGP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 SUIL,2x Sui ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SUIS,Canary Staked SUI ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 SUMA,SUMA Acquisition Corporation - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:SUMA,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
@@ -7685,6 +7684,7 @@ WINN,Harbor Long-Term Growers ETF,N,,,etf,ineligible,False,N,Y,,,approved_allowl
 WIP,State Street SPDR FTSE International Government Inflation-Protected Bond ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WISE,Themes Generative Artificial Intelligence ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 WIW,Western Asset Inflation-Linked Opportunities & Income Fund,N,,,fund,ineligible,False,N,N,,nasdaqtrader:N:WIW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unsuitable_non_etf_fund
+WKSP,"Worksport, Ltd. - Common Stock",Q,S,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:WKSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 WLCOU,Wilco 63 Corporation - Units,Q,G,N,unit,ineligible,False,N,N,,nasdaqtrader:Q:WLCOU,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,unit
 WLCOW,Wilco 63 Corporation - Warrant,Q,G,N,warrant,ineligible,False,N,N,,nasdaqtrader:Q:WLCOW,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,warrant
 WLDR,Simplify Affinity World Leaders Equity ETF,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist

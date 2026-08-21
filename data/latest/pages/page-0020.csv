@@ -1,4 +1,5 @@
 ticker,company_name,listing_exchange,market_category,financial_status,security_type,instrument_status,rankable,adr_flag,etf_flag,quality_seed,contract_id,contract_id_status,approved_etf_product_type,approved_etf_sector,approved_etf_last_verified_at,source_id,identity_resolution_required,identity_resolution_reason
+VFC,V.F. Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VFC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VFF,"Village Farms International, Inc. - Common Shares",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VFF,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VFS,VinFast Auto Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:VFS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 VG,"Venture Global, Inc. Class A common stock",N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:VG,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
@@ -158,7 +159,6 @@ WIX,Wix.com Ltd. - Ordinary Shares,Q,Q,N,common_equity,eligible,True,N,N,,nasdaq
 WK,Workiva Inc. Class A Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WK,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WKC,World Kinect Corporation Common Stock,N,,,common_equity,eligible,True,N,N,,nasdaqtrader:N:WKC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WKHS,"Workhorse Group, Inc. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WKHS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
-WKSP,"Worksport, Ltd. - Common Stock",Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WKSP,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WLCO,Wilco 63 Corporation - Class A Ordinary Shares,Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WLCO,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WLDN,"Willdan Group, Inc. - Common Stock",Q,G,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WLDN,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
 WLDS,Wearable Devices Ltd. - Ordinary Share,Q,S,N,common_equity,eligible,True,N,N,,nasdaqtrader:Q:WLDS,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,,
