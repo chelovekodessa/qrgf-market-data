@@ -12,11 +12,13 @@
     "publisher_recompute_required",
     "current_recovery_used",
     "candidates",
-    "source_sha256"
+    "source_sha256",
+    "radar_classification_used",
+    "classification_bound_market_rows"
   ],
   "properties": {
     "schema_version": {
-      "const": "2.0.0"
+      "const": "3.0.0"
     },
     "kind": {
       "const": "qrgf_v42_quality_candidate_source"
@@ -56,6 +58,13 @@
     "source_sha256": {
       "type": "string",
       "pattern": "^[0-9a-f]{64}$"
+    },
+    "radar_classification_used": {
+      "const": false
+    },
+    "classification_bound_market_rows": {
+      "type": "integer",
+      "minimum": 0
     }
   },
   "additionalProperties": true

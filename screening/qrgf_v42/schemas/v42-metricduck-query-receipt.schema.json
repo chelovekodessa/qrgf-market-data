@@ -19,7 +19,7 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "kind": {
       "const": "qrgf_v42_metricduck_query_receipt"

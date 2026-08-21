@@ -57,7 +57,7 @@
     "branch": "main",
     "challenger_page_size": 250,
     "challenger_transport_is_not_quality_whitelist": true,
-    "expected_producer_release_sha256": "8fb7ab74f3059b32e064faa7e763b0ccc3ea96962953b88a0bdf0312ff1aa202",
+    "expected_producer_release_sha256": "dd20c547ace0f140ffaa29ddb1e1e84cca4eb250e6d7d859fd92875a8b36d1a3",
     "frontier_prefix": "data/v42/market/frontiers",
     "latest_pointer_path": "data/v42/market/latest.json",
     "producer_release_path": "screening/config/v42-market-producer-release.json",
@@ -74,7 +74,7 @@
     "campaign_latest_pointer_path": "data/v42/campaign/latest.json",
     "campaign_prefix": "data/v42/campaigns",
     "certificates_prefix": "data/v42/master-core500/certificates",
-    "expected_producer_release_sha256": "252b10e41857095bd3df9070d1c2537679fd00e45466d78bf4809b3f46028a24",
+    "expected_producer_release_sha256": "dec23757f67f9a5e948e7495d62e2fa136609b772fc5013c7a687d9924246070",
     "identity_prefix": "data/v42/identity",
     "latest_pointer_path": "data/v42/master-core500/latest.json",
     "masters_prefix": "data/v42/master-core500/masters",
@@ -85,7 +85,10 @@
     "query_plan_prefix": "data/v42/query-plans",
     "repository_full_name": "chelovekodessa/qrgf-market-data",
     "sources_prefix": "data/v42/master-core500/sources",
-    "workflow_path": ".github/workflows/promote-v42-state.yml"
+    "workflow_path": ".github/workflows/promote-v42-state.yml",
+    "bootstrap_checkpoint_prefix": "data/v42/master-core500/bootstrap/checkpoints",
+    "bootstrap_latest_pointer_path": "data/v42/master-core500/bootstrap/latest.json",
+    "bootstrap_artifact_prefix": "data/v42/master-core500/bootstrap/artifacts"
   },
   "primary_evidence": {
     "github_direct_sec": {
@@ -155,7 +158,7 @@
   },
   "quality_registry_v4": {
     "branch": "main",
-    "expected_producer_release_sha256": "252b10e41857095bd3df9070d1c2537679fd00e45466d78bf4809b3f46028a24",
+    "expected_producer_release_sha256": "dec23757f67f9a5e948e7495d62e2fa136609b772fc5013c7a687d9924246070",
     "passport_prefix": "data/v4/passports",
     "producer_release_path": "screening/config/v42-state-producer-release.json",
     "progress_requires_current_receipt": true,

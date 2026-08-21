@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
-import batch, bootstrap, campaign, decision, eligibility, evidence, factpack, integrity, market_view, migration, passport, policy, provenance, registry, registry_store, research, selection
+import batch, bootstrap, bootstrap_state, campaign, decision, eligibility, evidence, factpack, integrity, market_view, migration, passport, policy, provenance, registry, registry_store, research, selection
 from common import semantic_hash, write_json
 
 NOW = dt.datetime(2026, 8, 18, 9, 0, tzinfo=dt.timezone.utc)
@@ -159,14 +159,14 @@ def bootstrap_facts(boost: float = 0.0) -> dict[str, Any]:
     return {"roic": 0.18 + boost, "operating_margin_pct": 0.22 + boost, "fcf_margin_pct": 0.20 + boost, "revenue_cagr_3y_pct": 0.15 + boost, "net_debt_to_ebitda": 0.5, "cash": 20e9, "debt": 5e9, "dilution_pct_yoy": 0.01}
 
 
-def metricduck_fixture_row(member: Mapping[str, Any]) -> dict[str, Any]:
-    cap = float(member["market_cap"])
+def metricduck_fixture_row(member: Mapping[str, Any], *, cap: float | None = None, sector_code: str = "TECH") -> dict[str, Any]:
+    connector_cap = float(cap if cap is not None else member.get("connector_market_cap") or member.get("market_cap"))
     return {
         "ticker": member["ticker"],
-        "contract_id": member["contract_id"],
+        "contract_id": member.get("contract_id"),
         "company": member["company"],
-        "sector_code": "TECH",
-        "connector_market_cap": cap,
+        "sector_code": sector_code,
+        "connector_market_cap": connector_cap,
         "connector_metrics": {
             "roic@ttm": 0.18,
             "oper_margin@ttm": 0.22,
@@ -180,7 +180,10 @@ def metricduck_fixture_row(member: Mapping[str, Any]) -> dict[str, Any]:
 
 
 def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str, Any]]:
+    # Model the actual production L1/V3 contract: membership/history exists but
+    # sector, industry, market_cap and CIK are absent from Radar rows.
     rows: list[dict[str, Any]] = []
+    connector_rows: list[dict[str, Any]] = []
     identity_entries: list[dict[str, Any]] = []
     for index in range(count):
         ticker = f"Q{index:03d}"
@@ -190,31 +193,101 @@ def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[d
         elif index == 1:
             ticker, cik = "GOOGL", "CIK:0001652044"
         contract = f"US:{ticker}"
-        market_cap = float((count - index + 500) * 1_000_000_000)
-        row = {"ticker": ticker, "contract_id": contract, "company": f"Company {ticker}", "security_type": "common_equity", "instrument_status": "eligible", "exchange": "NASDAQ", "sector": "Technology", "industry": "Software", "market_cap": market_cap, "avg_dollar_volume": 1_000_000_000}
+        connector_cap = float((count - index + 500) * 1_000_000_000)
+        row = {
+            "ticker": ticker,
+            "contract_id": contract,
+            "company": f"Company {ticker}",
+            "security_type": "common_equity",
+            "instrument_status": "eligible",
+            "exchange": "NASDAQ",
+            "avg_dollar_volume": 1_000_000_000,
+        }
         rows.append(row)
-        identity_entries.append({"ticker": ticker, "contract_id": contract, "security_type": "common_equity", "issuer_id": cik, "resolution_status": "official", "share_class_group": cik, "security_class": "common", "source_record_sha256": semantic_hash({"ticker": ticker, "cik": cik})})
-    identity_map = provenance.build_identity_map(source_kind=provenance.IDENTITY_SOURCE_KIND, source_snapshot_sha256="1" * 64, entries=identity_entries)
-    market_index = provenance.build_market_index(rows, market_session_id=session, source_snapshot_id="fixture-radar", source_manifest_sha256="2" * 64, identity_map_value=identity_map)
+        connector_rows.append({**row, "connector_market_cap": connector_cap})
+        identity_entries.append({
+            "ticker": ticker,
+            "contract_id": contract,
+            "security_type": "common_equity",
+            "issuer_id": cik,
+            "resolution_status": "official",
+            "share_class_group": cik,
+            "security_class": "common",
+            "source_record_sha256": semantic_hash({"ticker": ticker, "cik": cik}),
+        })
+    identity_map = provenance.build_identity_map(
+        source_kind=provenance.IDENTITY_SOURCE_KIND,
+        source_snapshot_sha256="1" * 64,
+        entries=identity_entries,
+    )
+    market_index = provenance.build_market_index(
+        rows,
+        market_session_id=session,
+        source_snapshot_id="fixture-radar",
+        source_manifest_sha256="2" * 64,
+        identity_map_value=identity_map,
+    )
 
-    sorted_rows = sorted(rows, key=lambda item: float(item["market_cap"]))
+    sorted_rows = sorted(connector_rows, key=lambda item: float(item["connector_market_cap"]))
     boundaries: list[tuple[float, float | None]] = []
     start = 0.0
     for offset in range(50, len(sorted_rows), 50):
-        high = float(sorted_rows[offset]["market_cap"])
+        high = float(sorted_rows[offset]["connector_market_cap"])
         boundaries.append((start, high))
         start = high
     boundaries.append((start, None))
+
     leaves: list[dict[str, Any]] = []
     receipts: list[dict[str, Any]] = []
-    for lane in ("established_quality", "recognized_growth"):
+
+    def add_partitioned_scope(purpose: str, lane: str | None, sector_code: str | None, members: list[dict[str, Any]]) -> None:
         for part, (low, high) in enumerate(boundaries):
-            spec = {"lane": lane, "sector": "Technology", "market_cap_min": low, "market_cap_max": high, "limit": 50}
-            members = [row for row in rows if float(row["market_cap"]) >= low and (high is None or float(row["market_cap"]) < high)]
-            result_rows = [metricduck_fixture_row(member) for member in members]
-            receipt = provenance.build_query_receipt(spec, result_rows=result_rows, matched_count=len(result_rows), retrieved_at=NOW_TEXT, response_handle=f"fixture://MetricDuck/{lane}/{part}")
+            spec = {
+                "purpose": purpose,
+                "lane": lane,
+                "sector_code": sector_code,
+                "market_cap_min": low,
+                "market_cap_max": high,
+                "limit": 50,
+            }
+            partition = [row for row in members if float(row["connector_market_cap"]) >= low and (high is None or float(row["connector_market_cap"]) < high)]
+            result_rows = [metricduck_fixture_row(member, cap=member["connector_market_cap"], sector_code="TECH") for member in partition]
+            receipt = provenance.build_query_receipt(
+                spec,
+                result_rows=result_rows,
+                matched_count=len(result_rows),
+                retrieved_at=NOW_TEXT,
+                response_handle=f"fixture://MetricDuck/{purpose}/{lane or 'all'}/{sector_code or 'all'}/{part}",
+            )
             leaves.append(spec)
             receipts.append(receipt)
+
+    # Complete sectorless classification bridge and two global quality lanes.
+    add_partitioned_scope(provenance.QUERY_PURPOSE_CLASSIFICATION, None, None, connector_rows)
+    add_partitioned_scope(provenance.QUERY_PURPOSE_QUALITY, "established_quality", None, connector_rows)
+    add_partitioned_scope(provenance.QUERY_PURPOSE_QUALITY, "recognized_growth", None, connector_rows)
+
+    # Required sector-native lanes are present and complete even when no fixture
+    # companies match those sectors.
+    for lane, sector_code in (("bank", "FIN"), ("cyclical", "ENERGY"), ("cyclical", "MAT")):
+        spec = {
+            "purpose": provenance.QUERY_PURPOSE_QUALITY,
+            "lane": lane,
+            "sector_code": sector_code,
+            "market_cap_min": 0.0,
+            "market_cap_max": None,
+            "limit": 50,
+        }
+        receipt = provenance.build_query_receipt(
+            spec,
+            result_rows=[],
+            matched_count=0,
+            retrieved_at=NOW_TEXT,
+            response_handle=f"fixture://MetricDuck/quality/{lane}/{sector_code}",
+        )
+        leaves.append(spec)
+        receipts.append(receipt)
+
     unique_expectations: list[str] = []
     for row in market_index["rows"]:
         key = row.get("research_scope_key")
@@ -222,7 +295,12 @@ def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[d
             unique_expectations.append(str(key))
         if len(unique_expectations) == 5:
             break
-    query_plan = provenance.build_query_plan(market_index, leaves=leaves, receipts=receipts, regression_expectations=unique_expectations)
+    query_plan = provenance.build_query_plan(
+        market_index,
+        leaves=leaves,
+        receipts=receipts,
+        regression_expectations=unique_expectations,
+    )
     source = bootstrap.build_candidate_source(identity_map, market_index, query_plan)
     bundle = bootstrap.build_master_bundle_from_evidence(identity_map, market_index, query_plan)
     return identity_map, market_index, query_plan, bundle
@@ -257,14 +335,23 @@ def _rehash_bundle_with_scope_mutation(bundle: Mapping[str, Any], mutate: Callab
 def main() -> int:
     # Policy and connector boundaries.
     record("V4.2 policy validates", policy.validate()["architecture_version"] == "4.2.0")
+    policy_value = json.loads((ROOT / "config/policy.json").read_text())
+    record("V4.2 deployment manifests are mandatory and pinned", policy_value["architecture"]["deployment_release_manifest_required"] is True and policy_value["architecture"]["remote_release_must_match_pinned_hash"] is True)
+    record("Insufficient data requires a durable next-review date", policy_value["quality_registry"]["insufficient_data_requires_next_review_date"] is True)
+    record("Pilot reconstructs blocked states without treating them as reused quality", policy_value["campaign"]["pilot_blocked_state_reconstructed_not_quality_reused"] is True)
+    record("Deployment overlay hash validation is mandatory", policy_value["validation_framework"]["deployment_overlay_hash_check_required"] is True)
     connectors = json.loads((ROOT / "config/connectors.json").read_text())
     record("Registry and MASTER share the V4.2 single-writer release", connectors["quality_registry_v4"]["producer_release_path"] == connectors["master_core500_v42"]["producer_release_path"])
     record("V4.1 production connectors are absent", "master_core500_v41" not in connectors and "market_view_v41" not in connectors)
     record("V4.2 MASTER publisher must recompute", connectors["master_core500_v42"]["publisher_recomputes_master_from_evidence"] is True)
     record("MetricDuck screen trust is connector-attested, not falsely signed", connectors["primary_evidence"]["metricduck"]["cross_company_screen_trust_class"] == "connector_attested" and connectors["primary_evidence"]["metricduck"]["external_cryptographic_signature_available"] is False)
-    bank_spec = provenance.normalize_query_spec({"lane":"bank","sector":"Financials","market_cap_min":0,"market_cap_max":None,"limit":50})
+    bank_spec = provenance.normalize_query_spec({"purpose":provenance.QUERY_PURPOSE_QUALITY,"lane":"bank","sector_code":"FIN","market_cap_min":0,"market_cap_max":None,"limit":50})
     bank_args = provenance.connector_query_args(bank_spec)
-    record("Bank discovery uses the native MetricDuck classification tag", bank_args.get("required_tags") == ["financial_services_traditional"] and bank_args["filters"][0] == {"metric_id":"roa","operator":"gte","value":0.005,"period_type":"ttm"})
+    record("Bank discovery uses the native MetricDuck classification tag", bank_args.get("required_tags") == ["financial_services_traditional"] and bank_args.get("sectors") == ["FIN"] and bank_args["filters"][0] == {"metric_id":"roa","operator":"gte","value":0.005,"period_type":"ttm"})
+    classification_spec = provenance.normalize_query_spec({"purpose":provenance.QUERY_PURPOSE_CLASSIFICATION,"lane":None,"sector_code":None,"market_cap_min":0,"market_cap_max":None,"limit":50})
+    classification_args = provenance.connector_query_args(classification_spec)
+    record("Classification discovery is sectorless and independent of Radar", "sectors" not in classification_args and classification_args["filters"] == [{"metric_id":"market_cap","operator":"gte","value":0.0,"period_type":"ttm"}])
+    record("Producer release hashes are nonzero", connectors["master_core500_v42"]["expected_producer_release_sha256"] != "0" * 64 and connectors["market_view_v42"]["expected_producer_release_sha256"] != "0" * 64)
 
     # Structural scoring parity with the frozen analytical model.
     golden = json.loads((ROOT / "tests/golden/l3-v430-baseline.json").read_text())
@@ -313,14 +400,20 @@ def main() -> int:
     record("Official identity map is self-hashed", provenance.validate_identity_map(identity_map)["identity_map_sha256"] == identity_map["identity_map_sha256"])
     record("Market index is bound to the identity map", market_index["identity_map_sha256"] == identity_map["identity_map_sha256"])
     record("Market index requires publisher recomputation", market_index["publisher_recompute_required"] is True)
+    record("Full Radar without sector remains valid UNKNOWN", market_index["known_market_sector_count"] == 0 and all(row["sector"] is None and row["market_sector_status"] == "unknown" for row in market_index["rows"]))
+    record("Full Radar without market cap remains valid UNKNOWN", market_index["known_market_cap_count"] == 0 and all(row["market_cap"] is None and row["market_cap_status"] == "unknown" for row in market_index["rows"]))
+    record("Radar CIK is not required because official identity is built separately", all("cik" not in row and "issuer_cik" not in row for row in market_index["rows"]) and all(row["issuer_id"].startswith("CIK:") for row in market_index["rows"] if row["master_eligible"]))
     record("All MASTER-eligible operating companies use official CIK identities", all(row["issuer_id"].startswith("CIK:") for row in market_index["rows"] if row["master_eligible"]))
-    record("MetricDuck plan covers every applicable native lane and sector", query_plan["partition_coverage_complete"] is True and query_plan["required_lanes"] == sorted(json.loads((ROOT / "config/policy.json").read_text())["bootstrap"]["metricduck_query_plan"]["screen_lanes"]))
+    record("MetricDuck plan covers classification plus every native quality scope", query_plan["partition_coverage_complete"] is True and query_plan["classification_catalog_complete"] is True and query_plan["radar_classification_required"] is False and query_plan["required_lanes"] == sorted(json.loads((ROOT / "config/policy.json").read_text())["bootstrap"]["metricduck_query_plan"]["screen_lanes"]))
     record("Every MetricDuck leaf is unsaturated", all(receipt["complete"] is True and receipt["requires_split"] is False for receipt in query_plan["receipts"]))
     record("MetricDuck receipts preserve connector response provenance", all(receipt["response_handle"] for receipt in query_plan["receipts"]))
     sample_native_row = next(row for receipt in query_plan["receipts"] for row in receipt["rows"] if row["ticker"] == "GOOG")
     record("Native MetricDuck values derive only semantically exact canonical facts", abs(sample_native_row["facts"]["fcf_margin_pct"] - 0.20) < 1e-12 and abs(sample_native_row["facts"]["revenue_cagr_3y_pct"] - 0.15) < 1e-12)
     record("Candidate source is derived from market plus query plan", source["market_index_sha256"] == market_index["market_index_sha256"] and source["query_plan_sha256"] == query_plan["query_plan_sha256"])
     record("Candidate source contains at least 500 market-bound rows", source["quality_candidate_union_size"] >= 500 and all(row["market_membership_bound"] is True for row in source["candidates"]))
+    record("Operating candidates use connector-attested classification, never Radar classification", source["radar_classification_used"] is False and all(row["classification_bound"] is True and row["sector_code"] == "TECH" for row in source["candidates"] if row["security_type"] != "etf"))
+    record("MetricDuck transport limit 50 is not a market cutoff", source["quality_candidate_union_size"] > 50 and all(int(leaf["limit"]) <= 50 for leaf in query_plan["leaves"]) and len([leaf for leaf in query_plan["leaves"] if leaf["purpose"] == provenance.QUERY_PURPOSE_CLASSIFICATION]) > 1)
+    record("Unsupported structural facts stay UNKNOWN", all("net_debt_to_ebitda" not in row["facts"] and "cet1_ratio_pct" not in row["facts"] for row in source["candidates"] if row["security_type"] != "etf"))
     record("MASTER CORE500 is exactly 500", len(master["scopes"]) == 500 and master["selected_scope_count"] == 500)
     record("MASTER is canonical deterministic derivation", bootstrap.validate_master_bundle(bundle)["master"]["master_sha256"] == master["master_sha256"])
     build_request = bootstrap.build_publish_request(identity_map, market_index, query_plan)
@@ -336,6 +429,36 @@ def main() -> int:
         build_request_sha256=build_request["request_sha256"], published_at=NOW_TEXT, producer_release_sha256="a" * 64,
     )
     record("MASTER pointer binds every evidence artifact", bootstrap.validate_master_pointer(master_pointer, bundle=bundle)["query_plan_sha256"] == query_plan["query_plan_sha256"])
+    # Durable bootstrap coordination survives chat/session boundaries and never
+    # authorizes daily broad before the real MASTER exists.
+    identity_checkpoint = bootstrap_state.build({
+        "phase": "IDENTITY",
+        "market_session_id": market_index["market_session_id"],
+        "source_manifest_sha256": market_index["source_manifest_sha256"],
+        "created_at": NOW_TEXT,
+        "artifacts": {"identity_map": {"path": f"data/v42/master-core500/bootstrap/artifacts/identity-{identity_map['identity_map_sha256']}.json", "sha256": identity_map["identity_map_sha256"]}},
+        "progress": {},
+    })
+    market_checkpoint = bootstrap_state.build({
+        "bootstrap_id": identity_checkpoint["bootstrap_id"],
+        "phase": "MARKET_INDEX",
+        "market_session_id": market_index["market_session_id"],
+        "source_manifest_sha256": market_index["source_manifest_sha256"],
+        "parent_checkpoint_sha256": identity_checkpoint["checkpoint_sha256"],
+        "created_at": LATER,
+        "artifacts": {
+            "identity_map": identity_checkpoint["artifacts"]["identity_map"],
+            "market_index": {"path": f"data/v42/master-core500/bootstrap/artifacts/market-{market_index['market_index_sha256']}.json", "sha256": market_index["market_index_sha256"]},
+        },
+        "progress": {},
+    }, identity_checkpoint)
+    pointer_checkpoint = bootstrap_state.pointer(market_checkpoint, checkpoint_path=f"data/v42/master-core500/bootstrap/checkpoints/{market_checkpoint['checkpoint_sha256']}.json", published_at=LATER)
+    record("Bootstrap checkpoint is GitHub-resumable and readback-bound", bootstrap_state.validate_pointer(pointer_checkpoint, market_checkpoint)["checkpoint_sha256"] == market_checkpoint["checkpoint_sha256"] and market_checkpoint["ordinary_daily_broad_allowed"] is False)
+    record("Bootstrap checkpoint forbids phase skip", rejects(lambda: bootstrap_state.build({
+        "bootstrap_id": identity_checkpoint["bootstrap_id"], "phase": "CLASSIFICATION", "market_session_id": market_index["market_session_id"],
+        "source_manifest_sha256": market_index["source_manifest_sha256"], "parent_checkpoint_sha256": identity_checkpoint["checkpoint_sha256"], "created_at": LATER,
+        "artifacts": {"identity_map": identity_checkpoint["artifacts"]["identity_map"], "market_index": market_checkpoint["artifacts"]["market_index"]}, "progress": {}
+    }, identity_checkpoint), "phase skip"))
     tampered_pointer = copy.deepcopy(master_pointer)
     tampered_pointer["identity_path"] = "data/v42/identity/maps/" + "f" * 64 + ".json"
     tampered_pointer["pointer_sha256"] = semantic_hash({key: value for key, value in tampered_pointer.items() if key != "pointer_sha256"})
@@ -346,15 +469,51 @@ def main() -> int:
     record("Regression expectations are not empty", len(bundle["selector_certificate"]["regression_expectations"]) >= 5)
     record("Regression expectations were naturally selected", bundle["selector_certificate"]["regression_expectations_satisfied"] is True)
 
-    # Negative provenance tests that V4.1 failed.
-    fake_spec = copy.deepcopy(next(item for item in query_plan["leaves"] if item["lane"] == "established_quality"))
-    fake_member = {"ticker":"FAKE000","contract_id":"US:FAKE000","company":"Fake","market_cap":float(fake_spec["market_cap_min"] + 1_000_000)}
-    fake_receipt = provenance.build_query_receipt(fake_spec, result_rows=[metricduck_fixture_row(fake_member)], matched_count=1, retrieved_at=NOW_TEXT, response_handle="fixture://fake")
+    # Negative provenance tests for the real V4.2.1 production failure.
+    quality_leaves = [item for item in query_plan["leaves"] if item["purpose"] == provenance.QUERY_PURPOSE_QUALITY and item["lane"] == "established_quality"]
+    fake_spec = copy.deepcopy(max(quality_leaves, key=lambda item: float(item["market_cap_min"])))
+    target_sha = str(fake_spec["query_sha256"])
+    original_receipt = next(item for item in query_plan["receipts"] if item["query_sha256"] == target_sha)
+    fake_member = {
+        "ticker": "FAKE000",
+        "contract_id": "US:FAKE000",
+        "company": "Fake",
+        "connector_market_cap": float(fake_spec["market_cap_min"] + 1_000_000),
+    }
+    fake_rows = list(original_receipt["rows"]) + [metricduck_fixture_row(fake_member, cap=fake_member["connector_market_cap"])]
+    fake_receipt = provenance.build_query_receipt(
+        fake_spec,
+        result_rows=fake_rows,
+        matched_count=len(fake_rows),
+        retrieved_at=NOW_TEXT,
+        response_handle="fixture://fake",
+    )
     fake_plan = copy.deepcopy(query_plan)
-    target_sha = fake_spec["query_sha256"] if "query_sha256" in fake_spec else provenance.normalize_query_spec(fake_spec)["query_sha256"]
     fake_plan["receipts"] = [fake_receipt if item["query_sha256"] == target_sha else item for item in fake_plan["receipts"]]
     fake_plan["query_plan_sha256"] = semantic_hash({key: value for key, value in fake_plan.items() if key != "query_plan_sha256"})
-    record("Fake ticker absent from market index is rejected", rejects(lambda: bootstrap.build_candidate_source(identity_map, market_index, fake_plan), "absent from pinned market index"))
+    fake_source = bootstrap.build_candidate_source(identity_map, market_index, fake_plan)
+    record("Connector-only ticker never enters market-bound MASTER candidates", all(row["ticker"] != "FAKE000" for row in fake_source["candidates"]) and any(row.get("ticker") == "FAKE000" and row.get("reason") == "connector_result_not_in_pinned_market" for row in fake_source["excluded_query_rows"]))
+
+    # A complete quality receipt may not create a candidate if the independent
+    # connector classification catalog lacks that market binding.
+    classification_receipt = next(item for item in query_plan["receipts"] if item["query_spec"]["purpose"] == provenance.QUERY_PURPOSE_CLASSIFICATION and item["rows"])
+    missing_ticker = classification_receipt["rows"][0]["ticker"]
+    reduced_rows = classification_receipt["rows"][1:]
+    reduced_classification = provenance.build_query_receipt(
+        classification_receipt["query_spec"],
+        result_rows=reduced_rows,
+        matched_count=len(reduced_rows),
+        retrieved_at=NOW_TEXT,
+        response_handle="fixture://classification-missing-one",
+    )
+    missing_binding_plan = copy.deepcopy(query_plan)
+    missing_binding_plan["receipts"] = [reduced_classification if item["query_sha256"] == classification_receipt["query_sha256"] else item for item in missing_binding_plan["receipts"]]
+    missing_binding_plan["query_plan_sha256"] = semantic_hash({key: value for key, value in missing_binding_plan.items() if key != "query_plan_sha256"})
+    record("MASTER candidate is refused when classification evidence binding is missing", rejects(lambda: bootstrap.build_candidate_source(identity_map, market_index, missing_binding_plan), "lacks MetricDuck classification binding"), {"ticker": missing_ticker})
+
+    guessed_sector_spec = copy.deepcopy(fake_spec)
+    guessed_sector_spec["sector"] = "Technology"
+    record("Guessed or Radar sector routing is explicitly rejected", rejects(lambda: provenance.normalize_query_spec(guessed_sector_spec), "Radar/human sector routing is forbidden"))
 
     saturated = provenance.build_query_receipt(query_plan["leaves"][0], result_rows=[], matched_count=1, retrieved_at=NOW_TEXT, response_handle="fixture://saturated")
     saturated_plan = copy.deepcopy(query_plan)
@@ -616,7 +775,8 @@ def main() -> int:
     record("IBKR execution contract remains intact", execution["valid"], execution)
     forbidden = ["v31state.py", "v3state.py", "frontier31.py", "remote_frontier.py", "legacy.py", "funnel.py", "quality_bounds.py"]
     record("Package contains no legacy production engines", not any((ROOT / "scripts" / name).exists() for name in forbidden))
-    record("V4.2 provenance module is integrity-protected", "scripts/provenance.py" in {item["path"] for item in integrity.build()["files"]})
+    protected_files = {item["path"] for item in integrity.build()["files"]}
+    record("V4.2 provenance module is integrity-protected", "scripts/provenance.py" in protected_files)
 
     passed = sum(item["pass"] for item in RESULTS)
     failed = len(RESULTS) - passed

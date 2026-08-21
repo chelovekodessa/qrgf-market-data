@@ -12,11 +12,14 @@
     "leaves",
     "receipts",
     "regression_expectations",
-    "query_plan_sha256"
+    "query_plan_sha256",
+    "classification_catalog_complete",
+    "radar_classification_required",
+    "required_connector_scopes"
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "kind": {
       "const": "qrgf_v42_metricduck_query_plan"
@@ -63,6 +66,19 @@
     "query_plan_sha256": {
       "type": "string",
       "pattern": "^[0-9a-f]{64}$"
+    },
+    "classification_catalog_complete": {
+      "const": true
+    },
+    "radar_classification_required": {
+      "const": false
+    },
+    "required_connector_scopes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
     }
   },
   "additionalProperties": true
