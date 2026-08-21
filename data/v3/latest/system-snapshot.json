@@ -2,22 +2,22 @@
   "complete": true,
   "coverage": {
     "frontier_complete": false,
-    "market_scanned_rows": 5119,
-    "rankable_market_rows": 3617,
+    "market_scanned_rows": 5117,
+    "rankable_market_rows": 3620,
     "registry_entry_count": 0,
-    "universe_rows": 5119
+    "universe_rows": 5117
   },
-  "created_at": "2026-08-20T19:56:03Z",
+  "created_at": "2026-08-21T08:10:48Z",
   "kind": "qrgf_v3_system_snapshot",
-  "market_session_id": "2026-08-19",
+  "market_session_id": "2026-08-20",
   "producer_release_sha256": "de0b649a784d47b8c992f565db7c73de2a6ca8c5a44d64e874bcb259a65a7ce7",
   "radar_manifest_path": "data/v3/latest/radar/manifest.json",
-  "radar_manifest_sha256": "371a1afa0c16eed66a862bc49fae75541e1557e49d175bba0e6c283123769851",
+  "radar_manifest_sha256": "53ebc195779ea23e44a18a366b790d9a140a33ec87af144d510dc79049b29fe0",
   "registry_manifest_path": "data/v3/registry/latest.json",
   "registry_sha256": "1e4c87f63bdc752d113b60c87c1c5289d120726b27f3013076095807857ae8ed",
   "schema_version": "1.0.0",
-  "snapshot_content_sha256": "1730335dce288ee3b7beba97004700779b32c630ac99554dad7846a9866cb892",
-  "snapshot_id": "1730335dce288ee3b7beba97",
-  "source_commit_sha": "4d2d9addd837b28a9b06d8ffcfef3767e7808f12",
-  "system_snapshot_sha256": "755dbc7ee39a8fee8c22aef346bc82a81225e257c8b3580eda6e77997be48ff5"
+  "snapshot_content_sha256": "1e17e2839224e6af8cef3362c65b0b1dfde8557969ec6aa6c1b3e30274c7ced8",
+  "snapshot_id": "1e17e2839224e6af8cef3362",
+  "source_commit_sha": "00b3c8a6893995d9db8ecac1b8e446104e16a850",
+  "system_snapshot_sha256": "7318386546349cbe333f6c6327c4bf9e7d09b636fb66713629529dd6ebe0c367"
 }
