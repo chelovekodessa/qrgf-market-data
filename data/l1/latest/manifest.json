@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-21T03:32:53Z",
+  "retrieved_at": "2026-08-21T04:24:58Z",
   "history_start": "2025-07-16",
   "history_end": "2026-08-20",
   "history_feed": "sip",
@@ -152,7 +152,7 @@
     "request_start": "2025-07-16T00:00:00Z",
     "request_end": "2026-08-20T23:59:59Z",
     "rate_limit": "200",
-    "rate_limit_remaining": "172",
+    "rate_limit_remaining": "191",
     "errors": [],
     "short_history_extension": {
       "requested_symbols": 312,
