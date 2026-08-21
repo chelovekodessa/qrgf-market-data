@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "architecture_version",
+    "bootstrap_id",
+    "phase",
+    "market_session_id",
+    "source_manifest_sha256",
+    "artifacts",
+    "progress",
+    "ordinary_daily_broad_allowed",
+    "master_published",
+    "created_at",
+    "checkpoint_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "kind": {"const": "qrgf_v42_master_bootstrap_checkpoint"},
+    "architecture_version": {"const": "4.2.0"},
+    "phase": {"enum": ["IDENTITY", "MARKET_INDEX", "CLASSIFICATION", "QUALITY_DISCOVERY", "BUILD_REQUEST_READY"]},
+    "market_session_id": {"type": "string", "minLength": 1},
+    "source_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "ordinary_daily_broad_allowed": {"const": false},
+    "master_published": {"const": false},
+    "checkpoint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

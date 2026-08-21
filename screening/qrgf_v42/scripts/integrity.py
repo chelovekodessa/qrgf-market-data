@@ -8,7 +8,7 @@ from typing import Any
 from common import ROOT, file_hash, semantic_hash, write_json
 
 MANIFEST=ROOT/"config"/"integrity-manifest.json"
-PACKAGE_VERSION="4.2.1"
+PACKAGE_VERSION="4.2.2"
 MANIFEST_SCHEMA_VERSION="2.0.0"
 RUNTIME_ROOT_FILES={"SKILL.md"}
 RUNTIME_PREFIXES=("config/","references/","schemas/","scripts/")
@@ -28,7 +28,7 @@ def build() -> dict[str, Any]:
         rel=path.relative_to(ROOT).as_posix()
         if runtime_protected(rel): files.append({"path":rel,"sha256":file_hash(path),"bytes":path.stat().st_size})
     analytical=[x for x in files if x["path"] in {
-        "config/policy.json","config/connectors.json","config/approved-etfs.csv","scripts/provenance.py","scripts/bootstrap.py","scripts/deployment.py","scripts/factpack.py","scripts/passport.py","scripts/research.py","scripts/selection.py","scripts/evidence.py","scripts/eligibility.py","scripts/registry.py","scripts/registry_store.py","scripts/campaign.py","scripts/migration.py","scripts/market_view.py","scripts/cli.py","scripts/decision.py","scripts/technical.py","scripts/recovery.py"
+        "config/policy.json","config/connectors.json","config/approved-etfs.csv","scripts/provenance.py","scripts/bootstrap.py","scripts/bootstrap_state.py","scripts/deployment.py","scripts/factpack.py","scripts/passport.py","scripts/research.py","scripts/selection.py","scripts/evidence.py","scripts/eligibility.py","scripts/registry.py","scripts/registry_store.py","scripts/campaign.py","scripts/migration.py","scripts/market_view.py","scripts/cli.py","scripts/decision.py","scripts/technical.py","scripts/recovery.py"
     } or x["path"].startswith("schemas/")]
     body={
         "schema_version":MANIFEST_SCHEMA_VERSION,"skill_name":"find-quality-recovery-stocks","package_version":PACKAGE_VERSION,

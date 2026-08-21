@@ -56,9 +56,15 @@ def _self_hash(value: Mapping[str, Any], field: str, label: str) -> dict[str, An
     return result
 
 
-def _normal_sector(value: Any) -> str:
+def _optional_text(value: Any) -> str | None:
     text = re.sub(r"\s+", " ", str(value or "").strip())
-    return text or "Unclassified"
+    return text or None
+
+
+def _normal_sector(value: Any) -> str | None:
+    # Radar classification is optional by contract. Missing is UNKNOWN, never a
+    # synthetic sector label that can leak into connector routing.
+    return _optional_text(value)
 
 
 def _normal_security_type(value: Any) -> str:
@@ -195,6 +201,12 @@ def _identity_lookup(identity_map: Mapping[str, Any]) -> tuple[dict[str, Mapping
 def build_market_index(rows: Iterable[Mapping[str, Any]], *, market_session_id: str,
                        source_snapshot_id: str, source_manifest_sha256: str,
                        identity_map_value: Mapping[str, Any]) -> dict[str, Any]:
+    """Bind exact Radar membership to official identity without requiring reference data.
+
+    L1/V3 is authoritative for membership/history, but sector, industry, market cap
+    and CIK are not required upstream fields.  Missing optional reference fields
+    remain null/UNKNOWN and are never promoted into connector classifications.
+    """
     identity_map = validate_identity_map(identity_map_value)
     by_contract, by_ticker = _identity_lookup(identity_map)
     allowed_types = set(load_policy()["universe"]["allowed_security_types"])
@@ -230,16 +242,22 @@ def build_market_index(rows: Iterable[Mapping[str, Any]], *, market_session_id: 
             and resolution_status in _ALLOWED_RESOLVED_STATUS
             and research_scope_key
         )
+        market_sector = _normal_sector(raw.get("sector"))
+        market_industry = _optional_text(raw.get("industry"))
+        market_cap = number(raw.get("market_cap"))
         body = {
             "ticker": ticker,
             "contract_id": contract_id,
-            "company": str(raw.get("company") or raw.get("company_name") or "") or None,
+            "company": _optional_text(raw.get("company") or raw.get("company_name")),
             "security_type": security_type,
             "instrument_status": instrument_status,
-            "exchange": str(raw.get("exchange") or "") or None,
-            "sector": _normal_sector(raw.get("sector")),
-            "industry": str(raw.get("industry") or "") or None,
-            "market_cap": number(raw.get("market_cap")),
+            "exchange": _optional_text(raw.get("exchange")),
+            "sector": market_sector,
+            "industry": market_industry,
+            "market_cap": market_cap,
+            "market_sector_status": "observed" if market_sector is not None else "unknown",
+            "market_industry_status": "observed" if market_industry is not None else "unknown",
+            "market_cap_status": "observed" if market_cap is not None else "unknown",
             "avg_dollar_volume": number(raw.get("avg_dollar_volume")),
             "source_row_sha256": semantic_hash(dict(raw)),
             "identity_resolution_status": resolution_status,
@@ -252,9 +270,9 @@ def build_market_index(rows: Iterable[Mapping[str, Any]], *, market_session_id: 
         }
         memberships.append({**body, "market_membership_sha256": semantic_hash(body)})
     memberships.sort(key=lambda item: (str(item["ticker"]), str(item["contract_id"])))
-    eligible_sectors = sorted({_normal_sector(row.get("sector")) for row in memberships if row.get("master_eligible") is True})
+    known_sectors = sorted({str(row["sector"]) for row in memberships if row.get("master_eligible") is True and row.get("sector")})
     body = {
-        "schema_version": "1.0.0",
+        "schema_version": "2.0.0",
         "kind": MARKET_INDEX_KIND,
         "architecture_version": ARCHITECTURE_VERSION,
         "market_session_id": str(market_session_id),
@@ -263,10 +281,13 @@ def build_market_index(rows: Iterable[Mapping[str, Any]], *, market_session_id: 
         "identity_map_sha256": identity_map["identity_map_sha256"],
         "trust_class": MARKET_TRUST_CLASS,
         "publisher_recompute_required": True,
+        "radar_reference_fields_optional": True,
         "row_count": len(memberships),
         "eligible_universe_size": eligible_universe_size,
         "master_eligible_count": sum(row["master_eligible"] is True for row in memberships),
-        "eligible_sectors": eligible_sectors,
+        "known_market_sector_count": sum(row.get("sector") is not None for row in memberships),
+        "known_market_cap_count": sum(row.get("market_cap") is not None for row in memberships),
+        "eligible_sectors": known_sectors,
         "rows": memberships,
     }
     value = {**body, "market_index_sha256": semantic_hash(body)}
@@ -276,17 +297,16 @@ def build_market_index(rows: Iterable[Mapping[str, Any]], *, market_session_id: 
 
 def validate_market_index(value: Mapping[str, Any]) -> dict[str, Any]:
     result = _self_hash(value, "market_index_sha256", "market membership index")
-    ensure(result.get("schema_version") == "1.0.0" and result.get("kind") == MARKET_INDEX_KIND, "invalid V4.2 market membership index")
+    ensure(result.get("schema_version") == "2.0.0" and result.get("kind") == MARKET_INDEX_KIND, "invalid V4.2 market membership index")
     ensure(result.get("architecture_version") == ARCHITECTURE_VERSION, "market index architecture mismatch")
     ensure(result.get("trust_class") == MARKET_TRUST_CLASS, "market index trust class mismatch")
-    ensure(result.get("publisher_recompute_required") is True, "market index publisher recomputation is disabled")
+    ensure(result.get("publisher_recompute_required") is True and result.get("radar_reference_fields_optional") is True, "market index publisher/upstream contract mismatch")
     _require_hash(result.get("source_manifest_sha256"), "market source manifest hash")
     _require_hash(result.get("identity_map_sha256"), "market identity map hash")
     rows = result.get("rows")
     ensure(isinstance(rows, list) and int(result.get("row_count", -1)) == len(rows), "market index row count mismatch")
     contracts: set[str] = set()
-    master_count = 0
-    eligible_count = 0
+    master_count = eligible_count = known_sector_count = known_cap_count = 0
     sectors: set[str] = set()
     for raw in rows:
         ensure(isinstance(raw, Mapping), "market membership row invalid")
@@ -298,20 +318,30 @@ def validate_market_index(value: Mapping[str, Any]) -> dict[str, Any]:
         _require_hash(row.get("source_row_sha256"), "market source row hash")
         status = str(row.get("identity_resolution_status") or "")
         ensure(status in _ALLOWED_IDENTITY_STATUS, "market membership identity status invalid")
-        if str(row.get("instrument_status") or "") == "eligible":
-            eligible_count += 1
+        sector = _normal_sector(row.get("sector"))
+        industry = _optional_text(row.get("industry"))
+        cap = number(row.get("market_cap"))
+        ensure(row.get("sector") == sector, "market sector must remain null or normalized source text")
+        ensure(row.get("industry") == industry, "market industry must remain null or normalized source text")
+        ensure(row.get("market_sector_status") == ("observed" if sector is not None else "unknown"), "market sector UNKNOWN status mismatch")
+        ensure(row.get("market_industry_status") == ("observed" if industry is not None else "unknown"), "market industry UNKNOWN status mismatch")
+        ensure(row.get("market_cap_status") == ("observed" if cap is not None else "unknown"), "market cap UNKNOWN status mismatch")
+        if sector is not None: known_sector_count += 1
+        if cap is not None: known_cap_count += 1
+        if str(row.get("instrument_status") or "") == "eligible": eligible_count += 1
         if row.get("master_eligible") is True:
             master_count += 1
             ensure(status in _ALLOWED_RESOLVED_STATUS, "master-eligible market row has unresolved issuer")
             ensure(str(row.get("issuer_id") or "") and str(row.get("research_scope_key") or ""), "master-eligible market row identity missing")
             _require_hash(row.get("identity_entry_sha256"), "market identity entry hash")
-            sectors.add(_normal_sector(row.get("sector")))
-        else:
-            if status == "unresolved":
-                ensure(row.get("research_scope_key") in (None, ""), "unresolved market row has research scope")
+            if sector is not None: sectors.add(sector)
+        elif status == "unresolved":
+            ensure(row.get("research_scope_key") in (None, ""), "unresolved market row has research scope")
     ensure(int(result.get("eligible_universe_size") or -1) == eligible_count, "market index eligible universe count mismatch")
     ensure(int(result.get("master_eligible_count", -1)) == master_count, "market index master-eligible count mismatch")
-    ensure(list(result.get("eligible_sectors") or []) == sorted(sectors), "market index eligible sector set mismatch")
+    ensure(int(result.get("known_market_sector_count", -1)) == known_sector_count, "market index known-sector count mismatch")
+    ensure(int(result.get("known_market_cap_count", -1)) == known_cap_count, "market index known-market-cap count mismatch")
+    ensure(list(result.get("eligible_sectors") or []) == sorted(sectors), "market index known sector set mismatch")
     return result
 
 
@@ -345,23 +375,32 @@ def validate_market_index_against_identity_map(market_index_value: Mapping[str, 
     return market_index
 
 
-def _sector_code(value: Any) -> str:
-    text = re.sub(r"\s+", " ", str(value or "").strip().lower())
-    mapping = load_policy()["bootstrap"]["metricduck_query_plan"]["sector_code_map"]
-    code = str(mapping.get(text) or "")
-    ensure(code, f"MetricDuck has no approved sector-code mapping for market sector: {value}")
-    return code
+QUERY_PURPOSE_CLASSIFICATION = "classification_catalog"
+QUERY_PURPOSE_QUALITY = "quality_discovery"
+_ALLOWED_QUERY_PURPOSES = frozenset({QUERY_PURPOSE_CLASSIFICATION, QUERY_PURPOSE_QUALITY})
 
 
-def _lane_profile(lane: str, sector_code: str) -> Mapping[str, Any]:
+def _supported_sector_codes() -> set[str]:
+    return {str(item).upper() for item in load_policy()["bootstrap"]["metricduck_query_plan"]["supported_sector_codes"]}
+
+
+def _normal_sector_code(value: Any, *, optional: bool = False) -> str | None:
+    text = str(value or "").strip().upper()
+    if not text and optional:
+        return None
+    ensure(text in _supported_sector_codes(), f"MetricDuck returned or requested an unsupported sector code: {value}")
+    return text
+
+
+def _lane_profile(lane: str, sector_code: str | None) -> Mapping[str, Any]:
     plan = load_policy()["bootstrap"]["metricduck_query_plan"]
     profile = plan["lane_discovery_profiles"].get(lane)
     ensure(isinstance(profile, Mapping), "MetricDuck query lane has no approved native profile")
     allowed = profile.get("sector_codes")
     if isinstance(allowed, list):
-        ensure(sector_code in {str(x) for x in allowed}, f"MetricDuck lane {lane} does not apply to sector {sector_code}")
+        ensure(sector_code in {str(x).upper() for x in allowed}, f"MetricDuck lane {lane} does not apply to sector {sector_code}")
     else:
-        ensure(profile.get("applies_to") == "all_supported_company_sectors", "MetricDuck lane applicability contract invalid")
+        ensure(profile.get("applies_to") == "all_supported_company_sectors" and sector_code is None, "global MetricDuck lane must not require market/Radar sector")
     return profile
 
 
@@ -371,9 +410,13 @@ def _metric_key(metric_id: Any, period_type: Any = None) -> str:
     return f"{metric}@{period}"
 
 
-def _connector_filters_for(lane: str, sector_code: str, low: float, high: float | None) -> list[dict[str, Any]]:
-    profile = _lane_profile(lane, sector_code)
-    filters = [dict(item) for item in profile.get("filters") or []]
+def _connector_filters_for(purpose: str, lane: str | None, sector_code: str | None,
+                           low: float, high: float | None) -> list[dict[str, Any]]:
+    filters: list[dict[str, Any]] = []
+    if purpose == QUERY_PURPOSE_QUALITY:
+        ensure(lane is not None, "quality discovery requires a lane")
+        profile = _lane_profile(lane, sector_code)
+        filters.extend(dict(item) for item in profile.get("filters") or [])
     filters.append({"metric_id": "market_cap", "operator": "gte", "value": float(low), "period_type": "ttm"})
     if high is not None:
         filters.append({"metric_id": "market_cap", "operator": "lt", "value": float(high), "period_type": "ttm"})
@@ -381,28 +424,42 @@ def _connector_filters_for(lane: str, sector_code: str, low: float, high: float 
 
 
 def normalize_query_spec(value: Mapping[str, Any]) -> dict[str, Any]:
-    lane = str(value.get("lane") or "").strip()
-    sector = _normal_sector(value.get("sector"))
+    """Normalize a V4.2.2 MetricDuck leaf without consulting Radar classification.
+
+    Classification is a global connector discovery pass.  Established-quality
+    and recognized-growth are global quality passes.  Only bank/cyclical lanes
+    use connector-native sector codes explicitly declared by policy.
+    """
+    ensure("sector" not in value, "Radar/human sector routing is forbidden in V4.2.2 MetricDuck plans")
+    purpose = str(value.get("purpose") or "").strip()
+    ensure(purpose in _ALLOWED_QUERY_PURPOSES, "MetricDuck query purpose invalid")
+    lane_raw = str(value.get("lane") or "").strip()
+    lane = lane_raw or None
+    sector_code = _normal_sector_code(value.get("sector_code"), optional=True)
     low = number(value.get("market_cap_min"))
     high = number(value.get("market_cap_max"))
     limit = int(value.get("limit") or 0)
     plan = load_policy()["bootstrap"]["metricduck_query_plan"]
-    ensure(lane in set(plan["screen_lanes"]), "MetricDuck query lane invalid or must use the non-MetricDuck ETF path")
+    if purpose == QUERY_PURPOSE_CLASSIFICATION:
+        ensure(lane is None and sector_code is None, "classification catalog must be sectorless and lane-less")
+    else:
+        ensure(lane in set(plan["screen_lanes"]), "MetricDuck query lane invalid or must use the non-MetricDuck ETF path")
+        _lane_profile(str(lane), sector_code)
     ensure("filters" not in value and "sort" not in value, "legacy V4.2 internal MetricDuck filter contract is forbidden")
     ensure(low is not None and low >= 0, "MetricDuck query lower market-cap bound invalid")
     ensure(high is None or high > low, "MetricDuck query upper market-cap bound invalid")
     maximum = int(plan["connector_max_rows_per_query"])
     ensure(1 <= limit <= maximum, "MetricDuck query limit exceeds connector contract")
-    sector_code = _sector_code(sector)
-    filters = _connector_filters_for(lane, sector_code, float(low), float(high) if high is not None else None)
-    profile = _lane_profile(lane, sector_code)
+    filters = _connector_filters_for(purpose, lane, sector_code, float(low), float(high) if high is not None else None)
+    profile = _lane_profile(str(lane), sector_code) if purpose == QUERY_PURPOSE_QUALITY else {}
     required_tags = sorted({str(x) for x in profile.get("required_tags") or [] if str(x)})
     excluded_tags = sorted({str(x) for x in profile.get("excluded_tags") or [] if str(x)})
     sort_by = str(plan["connector_sort_by"])
+    expected_sectors = [] if sector_code is None else [sector_code]
     if "connector_filters" in value:
         ensure(list(value.get("connector_filters") or []) == filters, "MetricDuck native filters differ from the approved connector profile")
     if "sectors" in value:
-        ensure(list(value.get("sectors") or []) == [sector_code], "MetricDuck sector code differs from the approved mapping")
+        ensure(list(value.get("sectors") or []) == expected_sectors, "MetricDuck sector arguments differ from the approved connector scope")
     if "required_tags" in value:
         ensure(sorted({str(x) for x in value.get("required_tags") or []}) == required_tags, "MetricDuck required_tags differ from the approved connector profile")
     if "excluded_tags" in value:
@@ -411,13 +468,13 @@ def normalize_query_spec(value: Mapping[str, Any]) -> dict[str, Any]:
         ensure(str(value.get("sort_by") or "") == sort_by, "MetricDuck sort_by differs from the approved connector contract")
     ensure(not _forbidden_paths(filters), "MetricDuck query filters contain current-market/recovery fields")
     body = {
+        "purpose": purpose,
         "lane": lane,
-        "sector": sector,
         "sector_code": sector_code,
         "market_cap_min": float(low),
         "market_cap_max": float(high) if high is not None else None,
         "connector_filters": filters,
-        "sectors": [sector_code],
+        "sectors": expected_sectors,
         "required_tags": required_tags,
         "excluded_tags": excluded_tags,
         "sort_by": sort_by,
@@ -428,12 +485,13 @@ def normalize_query_spec(value: Mapping[str, Any]) -> dict[str, Any]:
 
 def connector_query_args(query_spec_value: Mapping[str, Any]) -> dict[str, Any]:
     spec = normalize_query_spec(query_spec_value)
-    args = {
+    args: dict[str, Any] = {
         "filters": list(spec["connector_filters"]),
-        "sectors": list(spec["sectors"]),
         "sort_by": str(spec["sort_by"]),
         "limit": int(spec["limit"]),
     }
+    if spec["sectors"]:
+        args["sectors"] = list(spec["sectors"])
     if spec["required_tags"]:
         args["required_tags"] = list(spec["required_tags"])
     if spec["excluded_tags"]:
@@ -507,28 +565,30 @@ def build_query_receipt(query_spec_value: Mapping[str, Any], *, result_rows: Ite
         ensure(not bad, f"MetricDuck result contains current-market/recovery fields: {sorted(bad)}")
         ticker = str(raw.get("ticker") or "").strip().upper()
         ensure(ticker, "MetricDuck result ticker missing")
-        raw_sector_code = str(raw.get("sector_code") or spec["sector_code"]).strip().upper()
-        ensure(raw_sector_code == spec["sector_code"], "MetricDuck result sector differs from query sector")
+        raw_sector_code = _normal_sector_code(raw.get("sector_code"), optional=False)
+        if spec["sector_code"] is not None:
+            ensure(raw_sector_code == spec["sector_code"], "MetricDuck result sector differs from connector query sector")
         ensure(_passes_connector_filters(raw, spec["connector_filters"]), "MetricDuck result row does not satisfy its native connector query filters")
         facts, periods = _canonical_facts_from_connector_metrics(raw)
         connector_metrics = dict(raw.get("connector_metrics") or {}) if isinstance(raw.get("connector_metrics"), Mapping) else {}
         body = {
             "ticker": ticker,
             "contract_id": str(raw.get("contract_id") or "") or None,
-            "company": str(raw.get("company") or raw.get("company_name") or "") or None,
+            "company": _optional_text(raw.get("company") or raw.get("company_name")),
             "sector_code": raw_sector_code,
             "connector_market_cap": number(raw.get("connector_market_cap")),
             "connector_metrics": connector_metrics,
             "facts": facts,
             "periods": periods,
         }
+        ensure(body["connector_market_cap"] is not None, "MetricDuck result row market cap missing from market-cap partition")
         rows.append({**body, "result_row_sha256": semantic_hash(body)})
     rows.sort(key=lambda item: (str(item["ticker"]), str(item.get("contract_id") or ""), str(item["result_row_sha256"])))
     matched = int(matched_count)
     returned = len(rows)
     complete = matched == returned and returned <= int(spec["limit"])
     body = {
-        "schema_version": "1.0.0",
+        "schema_version": "2.0.0",
         "kind": QUERY_RECEIPT_KIND,
         "architecture_version": ARCHITECTURE_VERSION,
         "connector_name": "MetricDuck",
@@ -554,7 +614,7 @@ def build_query_receipt(query_spec_value: Mapping[str, Any], *, result_rows: Ite
 
 def validate_query_receipt(value: Mapping[str, Any]) -> dict[str, Any]:
     result = _self_hash(value, "receipt_sha256", "MetricDuck query receipt")
-    ensure(result.get("schema_version") == "1.0.0" and result.get("kind") == QUERY_RECEIPT_KIND, "invalid V4.2 MetricDuck query receipt")
+    ensure(result.get("schema_version") == "2.0.0" and result.get("kind") == QUERY_RECEIPT_KIND, "invalid V4.2 MetricDuck query receipt")
     ensure(result.get("architecture_version") == ARCHITECTURE_VERSION, "MetricDuck receipt architecture mismatch")
     ensure(result.get("connector_name") == "MetricDuck" and result.get("connector_tool") == "screen_companies", "MetricDuck receipt connector mismatch")
     expected_contract = load_policy()["bootstrap"]["metricduck_query_plan"]["connector_contract_version"]
@@ -572,7 +632,9 @@ def validate_query_receipt(value: Mapping[str, Any]) -> dict[str, Any]:
         row = _self_hash(raw, "result_row_sha256", "MetricDuck result row")
         ensure(str(row.get("ticker") or ""), "MetricDuck receipt row ticker missing")
         ensure(not _forbidden_paths(row), "MetricDuck receipt row contains market/recovery data")
-        ensure(str(row.get("sector_code") or "") == spec["sector_code"], "MetricDuck receipt row sector mismatch")
+        code = _normal_sector_code(row.get("sector_code"), optional=False)
+        if spec["sector_code"] is not None:
+            ensure(code == spec["sector_code"], "MetricDuck receipt row sector mismatch")
         ensure(_passes_connector_filters(row, spec["connector_filters"]), "MetricDuck receipt row does not satisfy native connector filters")
         facts, periods = _canonical_facts_from_connector_metrics(row)
         ensure(dict(row.get("facts") or {}) == facts and dict(row.get("periods") or {}) == periods, "MetricDuck canonical fact derivation mismatch")
@@ -584,39 +646,44 @@ def validate_query_receipt(value: Mapping[str, Any]) -> dict[str, Any]:
     ensure(result.get("complete") is complete and result.get("requires_split") is (not complete), "MetricDuck receipt completeness declaration mismatch")
     return result
 
-def _partition_coverage(specs: list[Mapping[str, Any]], *, lane: str, sector: str) -> None:
+
+def _scope_key(spec: Mapping[str, Any]) -> tuple[str, str, str]:
+    return (str(spec.get("purpose") or ""), str(spec.get("lane") or ""), str(spec.get("sector_code") or "ALL"))
+
+
+def _scope_label(key: tuple[str, str, str]) -> str:
+    return "/".join(key)
+
+
+def _partition_coverage(specs: list[Mapping[str, Any]], *, scope: tuple[str, str, str]) -> None:
     ordered = sorted(specs, key=lambda item: float(item["market_cap_min"]))
-    ensure(ordered, f"MetricDuck plan missing partition for {lane}/{sector}")
+    ensure(ordered, f"MetricDuck plan missing partition for {_scope_label(scope)}")
     expected_low = 0.0
     for index, spec in enumerate(ordered):
         low = float(spec["market_cap_min"])
         high = spec.get("market_cap_max")
-        ensure(math.isclose(low, expected_low, rel_tol=0, abs_tol=1e-9), f"MetricDuck plan market-cap gap or overlap for {lane}/{sector}")
+        ensure(math.isclose(low, expected_low, rel_tol=0, abs_tol=1e-9), f"MetricDuck plan market-cap gap or overlap for {_scope_label(scope)}")
         if high is None:
-            ensure(index == len(ordered) - 1, f"MetricDuck plan unbounded range is not final for {lane}/{sector}")
+            ensure(index == len(ordered) - 1, f"MetricDuck plan unbounded range is not final for {_scope_label(scope)}")
             expected_low = math.inf
         else:
             expected_low = float(high)
-    ensure(math.isinf(expected_low), f"MetricDuck plan does not cover the unbounded upper range for {lane}/{sector}")
+    ensure(math.isinf(expected_low), f"MetricDuck plan does not cover the unbounded upper range for {_scope_label(scope)}")
 
 
-def _required_metricduck_pairs(index: Mapping[str, Any]) -> set[tuple[str, str]]:
+def _required_metricduck_scopes() -> set[tuple[str, str, str]]:
     plan = load_policy()["bootstrap"]["metricduck_query_plan"]
-    company_sectors = sorted({
-        _normal_sector(row.get("sector"))
-        for row in index["rows"]
-        if row.get("master_eligible") is True and _normal_security_type(row.get("security_type")) != "etf"
-    })
-    pairs: set[tuple[str, str]] = set()
-    for sector in company_sectors:
-        code = _sector_code(sector)
-        for lane in plan["screen_lanes"]:
-            profile = plan["lane_discovery_profiles"].get(lane) or {}
-            allowed = profile.get("sector_codes")
-            if isinstance(allowed, list) and code not in {str(x) for x in allowed}:
-                continue
-            pairs.add((str(lane), sector))
-    return pairs
+    scopes: set[tuple[str, str, str]] = {(QUERY_PURPOSE_CLASSIFICATION, "", "ALL")}
+    for lane in plan["screen_lanes"]:
+        profile = plan["lane_discovery_profiles"].get(lane) or {}
+        allowed = profile.get("sector_codes")
+        if isinstance(allowed, list):
+            for code in sorted({str(x).upper() for x in allowed}):
+                scopes.add((QUERY_PURPOSE_QUALITY, str(lane), code))
+        else:
+            ensure(profile.get("applies_to") == "all_supported_company_sectors", "global MetricDuck lane applicability invalid")
+            scopes.add((QUERY_PURPOSE_QUALITY, str(lane), "ALL"))
+    return scopes
 
 
 def build_query_plan(market_index_value: Mapping[str, Any], *, leaves: Iterable[Mapping[str, Any]],
@@ -632,29 +699,30 @@ def build_query_plan(market_index_value: Mapping[str, Any], *, leaves: Iterable[
         by_query[key] = receipt
     ensure(len({spec["query_sha256"] for spec in specs}) == len(specs), "MetricDuck plan duplicate leaf query")
     ensure(set(by_query) == {str(spec["query_sha256"]) for spec in specs}, "MetricDuck plan leaf/receipt set mismatch")
-    plan_policy = load_policy()["bootstrap"]["metricduck_query_plan"]
-    lanes = sorted(plan_policy["screen_lanes"])
-    required_pairs = _required_metricduck_pairs(index)
-    sectors = sorted({sector for _, sector in required_pairs})
-    grouped: dict[tuple[str, str], list[Mapping[str, Any]]] = defaultdict(list)
+    required_scopes = _required_metricduck_scopes()
+    grouped: dict[tuple[str, str, str], list[Mapping[str, Any]]] = defaultdict(list)
     for spec in specs:
-        grouped[(str(spec["lane"]), str(spec["sector"]))].append(spec)
-    for lane, sector in sorted(required_pairs):
-        _partition_coverage(grouped.get((lane, sector), []), lane=lane, sector=sector)
-    ensure(set(grouped) == required_pairs, "MetricDuck plan contains unexpected or missing lane/sector partitions")
+        grouped[_scope_key(spec)].append(spec)
+    ensure(set(grouped) == required_scopes, "MetricDuck plan contains unexpected or missing connector scopes")
+    for scope in sorted(required_scopes):
+        _partition_coverage(grouped[scope], scope=scope)
     for receipt in receipt_rows:
         ensure(receipt.get("complete") is True and receipt.get("requires_split") is False, "MetricDuck plan contains a saturated or incomplete leaf query")
-    specs.sort(key=lambda item: (str(item["lane"]), str(item["sector"]), float(item["market_cap_min"])))
+    specs.sort(key=lambda item: (_scope_key(item), float(item["market_cap_min"])))
     receipt_rows.sort(key=lambda item: str(item["query_sha256"]))
     body = {
-        "schema_version": "1.0.0",
+        "schema_version": "2.0.0",
         "kind": QUERY_PLAN_KIND,
         "architecture_version": ARCHITECTURE_VERSION,
         "market_session_id": index["market_session_id"],
         "market_index_sha256": index["market_index_sha256"],
-        "required_lanes": lanes,
-        "eligible_sectors": sectors,
-        "required_lane_sector_pairs": [{"lane": lane, "sector": sector} for lane, sector in sorted(required_pairs)],
+        "required_lanes": sorted(load_policy()["bootstrap"]["metricduck_query_plan"]["screen_lanes"]),
+        "required_connector_scopes": [
+            {"purpose": purpose, "lane": lane or None, "sector_code": None if sector == "ALL" else sector}
+            for purpose, lane, sector in sorted(required_scopes)
+        ],
+        "classification_catalog_complete": True,
+        "radar_classification_required": False,
         "partition_dimension": "market_cap",
         "connector_trust_class": CONNECTOR_TRUST_CLASS,
         "external_cryptographic_signature_available": False,
@@ -673,33 +741,34 @@ def build_query_plan(market_index_value: Mapping[str, Any], *, leaves: Iterable[
 def validate_query_plan(value: Mapping[str, Any], *, market_index_value: Mapping[str, Any]) -> dict[str, Any]:
     index = validate_market_index(market_index_value)
     result = _self_hash(value, "query_plan_sha256", "MetricDuck query plan")
-    ensure(result.get("schema_version") == "1.0.0" and result.get("kind") == QUERY_PLAN_KIND, "invalid V4.2 MetricDuck query plan")
+    ensure(result.get("schema_version") == "2.0.0" and result.get("kind") == QUERY_PLAN_KIND, "invalid V4.2 MetricDuck query plan")
     ensure(result.get("architecture_version") == ARCHITECTURE_VERSION, "MetricDuck query plan architecture mismatch")
     ensure(result.get("market_session_id") == index["market_session_id"] and result.get("market_index_sha256") == index["market_index_sha256"], "MetricDuck query plan market binding mismatch")
     ensure(result.get("connector_trust_class") == CONNECTOR_TRUST_CLASS and result.get("external_cryptographic_signature_available") is False, "MetricDuck plan trust boundary mismatch")
     ensure(result.get("partition_dimension") == "market_cap" and result.get("partition_coverage_complete") is True, "MetricDuck plan partition declaration invalid")
+    ensure(result.get("classification_catalog_complete") is True and result.get("radar_classification_required") is False, "MetricDuck classification bridge is incomplete or depends on Radar classification")
     specs = [normalize_query_spec(raw) for raw in result.get("leaves") or []]
     receipts = [validate_query_receipt(raw) for raw in result.get("receipts") or []]
     ensure(int(result.get("leaf_count", -1)) == len(specs) and int(result.get("receipt_count", -1)) == len(receipts), "MetricDuck plan counts mismatch")
     plan_policy = load_policy()["bootstrap"]["metricduck_query_plan"]
     ensure(list(result.get("required_lanes") or []) == sorted(plan_policy["screen_lanes"]), "MetricDuck plan required lane set mismatch")
-    expected_pairs = _required_metricduck_pairs(index)
-    expected_sectors = sorted({sector for _, sector in expected_pairs})
-    ensure(list(result.get("eligible_sectors") or []) == expected_sectors, "MetricDuck plan sector set mismatch")
-    declared_pairs = {(str(item.get("lane") or ""), str(item.get("sector") or "")) for item in result.get("required_lane_sector_pairs") or [] if isinstance(item, Mapping)}
-    ensure(declared_pairs == expected_pairs, "MetricDuck plan required lane/sector declaration mismatch")
+    expected_scopes = _required_metricduck_scopes()
+    declared_scopes = {
+        (str(item.get("purpose") or ""), str(item.get("lane") or ""), str(item.get("sector_code") or "ALL"))
+        for item in result.get("required_connector_scopes") or [] if isinstance(item, Mapping)
+    }
+    ensure(declared_scopes == expected_scopes, "MetricDuck plan required connector-scope declaration mismatch")
     by_query = {str(receipt["query_sha256"]): receipt for receipt in receipts}
     ensure(len(by_query) == len(receipts) and set(by_query) == {str(spec["query_sha256"]) for spec in specs}, "MetricDuck plan receipt coverage mismatch")
-    grouped: dict[tuple[str, str], list[Mapping[str, Any]]] = defaultdict(list)
+    grouped: dict[tuple[str, str, str], list[Mapping[str, Any]]] = defaultdict(list)
     for spec in specs:
-        grouped[(str(spec["lane"]), str(spec["sector"]))].append(spec)
+        grouped[_scope_key(spec)].append(spec)
         receipt = by_query[str(spec["query_sha256"])]
         ensure(receipt["query_spec"] == spec, "MetricDuck receipt query spec differs from plan leaf")
         ensure(receipt.get("complete") is True and receipt.get("requires_split") is False, "MetricDuck plan contains incomplete query receipt")
-    expected = expected_pairs
-    ensure(set(grouped) == expected, "MetricDuck plan lane/sector coverage mismatch")
-    for lane, sector in sorted(expected):
-        _partition_coverage(grouped[(lane, sector)], lane=lane, sector=sector)
+    ensure(set(grouped) == expected_scopes, "MetricDuck plan connector-scope coverage mismatch")
+    for scope in sorted(expected_scopes):
+        _partition_coverage(grouped[scope], scope=scope)
     ensure(isinstance(result.get("regression_expectations"), list), "MetricDuck plan regression expectations missing")
     return result
 
@@ -720,8 +789,9 @@ def receipt_lane_membership(plan_value: Mapping[str, Any], *, market_index_value
     output: dict[str, dict[str, Any]] = {}
     for receipt in plan["receipts"]:
         output[str(receipt["receipt_sha256"])] = {
-            "lane": str(receipt["query_spec"]["lane"]),
-            "sector": str(receipt["query_spec"]["sector"]),
+            "purpose": str(receipt["query_spec"]["purpose"]),
+            "lane": str(receipt["query_spec"].get("lane") or ""),
+            "sector_code": receipt["query_spec"].get("sector_code"),
             "query_sha256": str(receipt["query_sha256"]),
             "rows": list(receipt["rows"]),
         }

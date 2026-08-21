@@ -12,11 +12,14 @@
     "row_count",
     "master_eligible_count",
     "rows",
-    "market_index_sha256"
+    "market_index_sha256",
+    "radar_reference_fields_optional",
+    "known_market_sector_count",
+    "known_market_cap_count"
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "kind": {
       "const": "qrgf_v42_market_membership_index"
@@ -56,6 +59,17 @@
     "market_index_sha256": {
       "type": "string",
       "pattern": "^[0-9a-f]{64}$"
+    },
+    "radar_reference_fields_optional": {
+      "const": true
+    },
+    "known_market_sector_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "known_market_cap_count": {
+      "type": "integer",
+      "minimum": 0
     }
   },
   "additionalProperties": true

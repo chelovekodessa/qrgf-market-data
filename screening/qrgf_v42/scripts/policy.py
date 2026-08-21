@@ -17,7 +17,7 @@ def validate() -> dict[str, Any]:
     ensure(p.get("schema_version") == "2.0.0", "V4.2 policy schema mismatch")
     arch = p.get("architecture") or {}
     ensure(arch.get("version") == "4.2.0", "V4.2 architecture version mismatch")
-    ensure(arch.get("release_version") == "4.2.1", "V4.2.1 release version mismatch")
+    ensure(arch.get("release_version") == "4.2.2", "V4.2.2 release version mismatch")
     ensure(arch.get("mode") == "core500_quality_registry_plus_full_market_challengers", "V4.2 architecture mode mismatch")
     for key in (
         "legacy_production_paths_forbidden",
@@ -60,14 +60,20 @@ def validate() -> dict[str, Any]:
         "insufficient_data_is_competitive_unresolved",
     ):
         ensure(bootstrap.get(key) is True, f"V4.2 bootstrap invariant changed: {key}")
-    ensure(bootstrap["candidate_source"] == "verified_market_index_plus_metricduck_native_query_plan_plus_approved_etf_catalog", "V4.2 candidate source changed")
-    ensure(bootstrap["selection_model_version"] == "4.2.1-bootstrap-provenance-v2", "V4.2 bootstrap model changed")
+    ensure(bootstrap["candidate_source"] == "verified_radar_membership_plus_official_identity_plus_metricduck_classification_and_quality_plan_plus_approved_etf_catalog", "V4.2 candidate source changed")
+    ensure(bootstrap["selection_model_version"] == "4.2.2-bootstrap-provenance-v3", "V4.2 bootstrap model changed")
     ensure(set(bootstrap["lane_score_weights"]) == {"established_quality", "recognized_growth", "cyclical", "bank", "etf"}, "V4.2 bootstrap lane set changed")
     plan = bootstrap["metricduck_query_plan"]
     ensure(plan["connector_tool"] == "screen_companies" and plan["connector_contract_version"] == "2026-08-20", "MetricDuck connector contract version changed")
     ensure(plan["connector_max_rows_per_query"] == 50 and plan["partition_dimension"] == "market_cap" and plan["connector_sort_by"] == "market_cap", "MetricDuck query-plan transport contract changed")
     ensure(plan["saturated_leaf_forbidden"] is True and plan["connector_trust_class"] == "connector_attested" and plan["external_cryptographic_signature_available"] is False, "MetricDuck query-plan trust contract changed")
     ensure(plan["legacy_internal_field_filters_forbidden"] is True and plan["unsupported_metrics_must_remain_unknown"] is True, "MetricDuck unsupported-field boundary weakened")
+    ensure(plan["classification_catalog_required"] is True and plan["classification_catalog_scope"] == "global_sectorless_market_cap_partitioned", "MetricDuck classification catalog contract changed")
+    ensure(plan["radar_sector_routing_forbidden"] is True and plan["global_sectorless_screen_supported"] is True, "Radar classification dependency reintroduced")
+    ensure(plan["transport_limit_is_not_universe_cutoff"] is True and bootstrap["market_transport_limit_is_not_universe_cutoff"] is True, "MetricDuck transport limit became a universe cutoff")
+    ensure(set(plan["supported_sector_codes"]) == {"TECH","FIN","HEALTH","CONS_STAPLES","CONS_DISC","IND","ENERGY","UTIL","RE","MAT","COMM"}, "MetricDuck supported sector-code set changed")
+    ensure(bootstrap["radar_sector_industry_market_cap_optional"] is True and bootstrap["radar_cik_optional"] is True, "Radar optional-field contract changed")
+    ensure(bootstrap["connector_classification_binding_required_for_operating_candidates"] is True and bootstrap["classification_must_not_be_model_guessed"] is True, "classification binding invariant weakened")
     ensure(set(plan["screen_lanes"]) == {"established_quality", "recognized_growth", "cyclical", "bank"}, "MetricDuck screen lane set changed")
     ensure(plan["etf_candidate_source"] == "approved_etf_catalog_plus_pinned_market_membership", "ETF discovery source changed")
     profiles = plan["lane_discovery_profiles"]
@@ -153,6 +159,7 @@ def validate() -> dict[str, Any]:
     master = c["master_core500_v42"]
     ensure(master["latest_pointer_path"] == "data/v42/master-core500/latest.json" and master["campaign_latest_pointer_path"] == "data/v42/campaign/latest.json", "V4.2 authority pointers changed")
     ensure(master["masters_prefix"] == "data/v42/master-core500/masters" and master["sources_prefix"] == "data/v42/master-core500/sources" and master["certificates_prefix"] == "data/v42/master-core500/certificates" and master["campaign_prefix"] == "data/v42/campaigns", "V4.2 immutable state paths changed")
+    ensure(master["bootstrap_checkpoint_prefix"] == "data/v42/master-core500/bootstrap/checkpoints" and master["bootstrap_latest_pointer_path"] == "data/v42/master-core500/bootstrap/latest.json", "V4.2 bootstrap checkpoint authority paths changed")
     ensure(master["publisher_recomputes_master_from_evidence"] is True, "V4.2 publisher recomputation disabled")
     _hash_shape(master["expected_producer_release_sha256"], "V4.2 state producer release hash")
 
