@@ -3,7 +3,7 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-22T03:10:58Z",
+  "retrieved_at": "2026-08-22T07:48:59Z",
   "source_file_creation_time": "0821202621:33",
   "raw_sha256": "9da04922b9e424d089320210cc2420d6249326598809f60690cd12249039bc71",
   "raw_bytes": 993212,
