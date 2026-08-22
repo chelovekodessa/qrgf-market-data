@@ -1,0 +1,110 @@
+name: Temporary V4.2 MARKET_INDEX worker
+on:
+  push:
+    branches:
+      - tmp/qrgf-market-index-20260822-0655
+    paths:
+      - .github/workflows/tmp-market-index-worker.yml
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build and validate exact MARKET_INDEX
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import csv, hashlib, io, json, sys
+          from pathlib import Path
+
+          repo = Path('.')
+          scripts = repo / 'screening/qrgf_v42/scripts'
+          sys.path.insert(0, str(scripts.resolve()))
+          import provenance
+          from common import file_hash, write_json
+
+          expected_manifest = '229646ff4e3ae146941cfdb494f0b792e0d9f27639669630c3966f39fced75e9'
+          expected_session = '2026-08-21'
+          expected_snapshot = '0411fb8cde7740dcec10fdb5'
+          expected_identity = 'be0f24a1f13fa3abdb7a692624fd01831d0fddf064410971066d8d8b57f15f68'
+          radar_dir = repo / 'data/v3/latest/radar'
+          manifest = json.loads((radar_dir / 'manifest.json').read_text(encoding='utf-8'))
+          assert manifest['complete'] is True
+          assert manifest['manifest_semantic_sha256'] == expected_manifest
+          assert manifest['market_session_id'] == expected_session
+          assert manifest['snapshot_id'] == expected_snapshot
+          assert manifest['rows'] == 5117
+          assert len(manifest['pages']) == 21
+
+          rows = []
+          verified_pages = []
+          for item in manifest['pages']:
+              path = radar_dir / item['name']
+              raw = path.read_bytes()
+              digest = hashlib.sha256(raw).hexdigest()
+              assert digest == item['sha256'], (item['name'], digest, item['sha256'])
+              text = raw.decode('utf-8-sig')
+              page_rows = list(csv.DictReader(io.StringIO(text, newline='')))
+              assert len(page_rows) == item['rows'], (item['name'], len(page_rows), item['rows'])
+              rows.extend(page_rows)
+              verified_pages.append({'name': item['name'], 'rows': len(page_rows), 'sha256': digest})
+          assert len(rows) == manifest['rows'] == 5117
+          assert len({r['contract_id'] for r in rows}) == 5117
+
+          identity_path = repo / 'data/v42/identity/maps/be0f24a1f13fa3abdb7a692624fd01831d0fddf064410971066d8d8b57f15f68.json'
+          identity = json.loads(identity_path.read_text(encoding='utf-8'))
+          identity = provenance.validate_identity_map(identity)
+          assert identity['identity_map_sha256'] == expected_identity
+
+          value = provenance.build_market_index(
+              rows,
+              market_session_id=expected_session,
+              source_snapshot_id=expected_snapshot,
+              source_manifest_sha256=expected_manifest,
+              identity_map_value=identity,
+          )
+          provenance.validate_market_index(value)
+
+          out_dir = repo / 'tmp/qrgf-v42-market-index-worker'
+          out_dir.mkdir(parents=True, exist_ok=True)
+          out = out_dir / 'market-index.json'
+          write_json(out, value)
+          report = {
+              'kind': 'qrgf_v42_temporary_market_index_worker_report',
+              'architecture_version': '4.2.0',
+              'market_session_id': expected_session,
+              'source_snapshot_id': expected_snapshot,
+              'source_manifest_sha256': expected_manifest,
+              'identity_map_sha256': expected_identity,
+              'page_count': len(verified_pages),
+              'row_count': len(rows),
+              'verified_pages': verified_pages,
+              'market_index_sha256': value['market_index_sha256'],
+              'market_index_file_sha256': file_hash(out),
+              'eligible_universe_size': value['eligible_universe_size'],
+              'master_eligible_count': value['master_eligible_count'],
+              'known_market_sector_count': value['known_market_sector_count'],
+              'known_market_cap_count': value['known_market_cap_count'],
+              'validator_passed': True,
+          }
+          write_json(out_dir / 'report.json', report)
+          print(json.dumps(report, sort_keys=True))
+          PY
+      - name: Commit worker outputs on temporary branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "qrgf-market-data-tmp-worker"
+          git config user.email "qrgf-market-data-tmp-worker@users.noreply.github.com"
+          git add tmp/qrgf-v42-market-index-worker/market-index.json tmp/qrgf-v42-market-index-worker/report.json
+          git commit -m "Build temporary V4.2 MARKET_INDEX artifact"
+          git push origin HEAD:tmp/qrgf-market-index-20260822-0655
