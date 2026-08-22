@@ -53,7 +53,7 @@ def _normalized_connectors(value: Any) -> Any:
 def verify_release(manifest_rel: str, connector_key: str) -> str:
     manifest_path = REPO_ROOT / manifest_rel
     manifest = read(manifest_path)
-    if manifest.get("schema_version") != "2.0.0" or manifest.get("architecture_version") != "4.2.0" or manifest.get("release_version") != "4.2.3":
+    if manifest.get("schema_version") != "2.0.0" or manifest.get("architecture_version") != "4.2.0" or manifest.get("release_version") != "4.2.4":
         raise ValueError("invalid QRGF V4.2 producer release manifest")
     connectors = read(RUNTIME / "config/connectors.json")
     actual_release_sha = file_hash(manifest_path)

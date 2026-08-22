@@ -13,7 +13,7 @@
     "official_issuer_identity_required_for_master": true,
     "publisher_recomputes_master_from_evidence": true,
     "registry_is_cache_not_universe_gate": true,
-    "release_version": "4.2.3",
+    "release_version": "4.2.4",
     "remote_release_must_match_pinned_hash": true,
     "unknown_never_becomes_fail_by_missingness": true,
     "v41_is_historical_read_only": true,
@@ -131,7 +131,7 @@
           "transform": "identity_decimal"
         }
       },
-      "connector_contract_version": "2026-08-22",
+      "connector_contract_version": "2026-08-20",
       "connector_max_rows_per_query": 50,
       "connector_sort_by": "market_cap",
       "connector_tool": "screen_companies",
@@ -230,7 +230,11 @@
       ],
       "returned_sector_code_semantics": "connector_attested_open_enum",
       "returned_sector_code_pattern": "^[A-Z][A-Z0-9_]*$",
-      "sector_filtered_query_requires_exact_returned_code": true
+      "sector_filtered_query_requires_exact_returned_code": true,
+      "filter_membership_attestation": "connector_query_response_membership",
+      "projected_numeric_values_may_be_display_rounded": true,
+      "projected_numeric_values_not_authoritative_for_strict_filter_replay": true,
+      "query_bound_response_handle_required": true
     },
     "minimum_fact_coverage_pct": 40,
     "official_issuer_identity_required": true,

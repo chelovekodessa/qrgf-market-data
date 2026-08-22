@@ -179,6 +179,11 @@ def metricduck_fixture_row(member: Mapping[str, Any], *, cap: float | None = Non
     }
 
 
+def response_handle(spec: Mapping[str, Any], label: str = "fixture") -> str:
+    normalized = provenance.normalize_query_spec(spec)
+    return f"connector-attested://MetricDuck.screen_companies/{normalized['query_sha256']}/{label}"
+
+
 def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str, Any]]:
     # Model the actual production L1/V3 contract: membership/history exists but
     # sector, industry, market_cap and CIK are absent from Radar rows.
@@ -257,7 +262,7 @@ def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[d
                 result_rows=result_rows,
                 matched_count=len(result_rows),
                 retrieved_at=NOW_TEXT,
-                response_handle=f"fixture://MetricDuck/{purpose}/{lane or 'all'}/{sector_code or 'all'}/{part}",
+                response_handle=response_handle(spec, f"{purpose}/{lane or 'all'}/{sector_code or 'all'}/{part}"),
             )
             leaves.append(spec)
             receipts.append(receipt)
@@ -283,7 +288,7 @@ def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[d
             result_rows=[],
             matched_count=0,
             retrieved_at=NOW_TEXT,
-            response_handle=f"fixture://MetricDuck/quality/{lane}/{sector_code}",
+            response_handle=response_handle(spec, f"quality/{lane}/{sector_code}"),
         )
         leaves.append(spec)
         receipts.append(receipt)
@@ -359,13 +364,24 @@ def main() -> int:
             metricduck_fixture_row({"ticker":"TXA","company":"Transport Example"}, cap=2_000_000_000, sector_code="TRANSPORT"),
             metricduck_fixture_row({"ticker":"OTH","company":"Other Example"}, cap=3_000_000_000, sector_code="OTHER"),
         ],
-        matched_count=2, retrieved_at=NOW_TEXT, response_handle="fixture://MetricDuck/classification/open-taxonomy",
+        matched_count=2, retrieved_at=NOW_TEXT, response_handle=response_handle(classification_spec, "classification/open-taxonomy"),
     )
     record("Sectorless classification receipt accepts provider-only sector codes", provenance.validate_query_receipt(taxonomy_receipt)["returned_count"] == 2)
     record("Sector-filtered query still rejects a mismatching returned sector", rejects(lambda: provenance.build_query_receipt(
         bank_spec, result_rows=[metricduck_fixture_row({"ticker":"BADSEC","company":"Bad Sector"}, cap=2_000_000_000, sector_code="OTHER")],
-        matched_count=1, retrieved_at=NOW_TEXT, response_handle="fixture://MetricDuck/bank/mismatch"
+        matched_count=1, retrieved_at=NOW_TEXT, response_handle=response_handle(bank_spec, "bank/mismatch")
     ), "differs from connector query sector"))
+    rounded_boundary_spec = provenance.normalize_query_spec({"purpose":provenance.QUERY_PURPOSE_CLASSIFICATION,"lane":None,"sector_code":None,"market_cap_min":0,"market_cap_max":297_310_000_000,"limit":50})
+    rounded_boundary_row = metricduck_fixture_row({"ticker":"NFLX","company":"NETFLIX INC"}, cap=297_310_000_000, sector_code="CONS_DISC")
+    rounded_boundary_receipt = provenance.build_query_receipt(
+        rounded_boundary_spec, result_rows=[rounded_boundary_row], matched_count=1, retrieved_at=NOW_TEXT,
+        response_handle=response_handle(rounded_boundary_spec, "rounded-boundary")
+    )
+    record("Rounded screen projection at strict market-cap boundary is accepted from connector response membership", provenance.validate_query_receipt(rounded_boundary_receipt)["returned_count"] == 1)
+    record("Strict market-cap boundary is preserved in connector query args without epsilon", provenance.connector_query_args(rounded_boundary_spec)["filters"][-1] == {"metric_id":"market_cap","operator":"lt","value":297_310_000_000.0,"period_type":"ttm"})
+    bad_handle = response_handle(rounded_boundary_spec, "rounded-boundary").replace(rounded_boundary_spec["query_sha256"], "f" * 64)
+    record("MetricDuck receipt rejects a response handle bound to a different query", rejects(lambda: provenance.build_query_receipt(rounded_boundary_spec, result_rows=[rounded_boundary_row], matched_count=1, retrieved_at=NOW_TEXT, response_handle=bad_handle), "query binding mismatch"))
+    record("MetricDuck connector contract version remains aligned with immutable V4.2 bootstrap receipts", json.loads((ROOT / "config/policy.json").read_text())["bootstrap"]["metricduck_query_plan"]["connector_contract_version"] == connectors["primary_evidence"]["metricduck"]["cross_company_screen_contract_version"] == "2026-08-20")
     record("Producer release hashes are nonzero", connectors["master_core500_v42"]["expected_producer_release_sha256"] != "0" * 64 and connectors["market_view_v42"]["expected_producer_release_sha256"] != "0" * 64)
 
     # Structural scoring parity with the frozen analytical model.
@@ -503,7 +519,7 @@ def main() -> int:
         result_rows=fake_rows,
         matched_count=len(fake_rows),
         retrieved_at=NOW_TEXT,
-        response_handle="fixture://fake",
+        response_handle=response_handle(fake_spec, "fake"),
     )
     fake_plan = copy.deepcopy(query_plan)
     fake_plan["receipts"] = [fake_receipt if item["query_sha256"] == target_sha else item for item in fake_plan["receipts"]]
@@ -521,7 +537,7 @@ def main() -> int:
         result_rows=reduced_rows,
         matched_count=len(reduced_rows),
         retrieved_at=NOW_TEXT,
-        response_handle="fixture://classification-missing-one",
+        response_handle=response_handle(classification_receipt["query_spec"], "classification-missing-one"),
     )
     missing_binding_plan = copy.deepcopy(query_plan)
     missing_binding_plan["receipts"] = [reduced_classification if item["query_sha256"] == classification_receipt["query_sha256"] else item for item in missing_binding_plan["receipts"]]
@@ -532,7 +548,7 @@ def main() -> int:
     guessed_sector_spec["sector"] = "Technology"
     record("Guessed or Radar sector routing is explicitly rejected", rejects(lambda: provenance.normalize_query_spec(guessed_sector_spec), "Radar/human sector routing is forbidden"))
 
-    saturated = provenance.build_query_receipt(query_plan["leaves"][0], result_rows=[], matched_count=1, retrieved_at=NOW_TEXT, response_handle="fixture://saturated")
+    saturated = provenance.build_query_receipt(query_plan["leaves"][0], result_rows=[], matched_count=1, retrieved_at=NOW_TEXT, response_handle=response_handle(query_plan["leaves"][0], "saturated"))
     saturated_plan = copy.deepcopy(query_plan)
     saturated_plan["receipts"] = [saturated if item["query_sha256"] == saturated["query_sha256"] else item for item in saturated_plan["receipts"]]
     saturated_plan["query_plan_sha256"] = semantic_hash({key: value for key, value in saturated_plan.items() if key != "query_plan_sha256"})
