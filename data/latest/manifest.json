@@ -3,9 +3,9 @@
   "complete": true,
   "source_id": "nasdaq_trader_all_us_listed",
   "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
-  "retrieved_at": "2026-08-21T19:33:42Z",
-  "source_file_creation_time": "0821202614:02",
-  "raw_sha256": "d07f7e4b3d979cd778bcd121d7100d13fd2fa7f959f6def00722f67249ec256b",
+  "retrieved_at": "2026-08-22T03:10:58Z",
+  "source_file_creation_time": "0821202621:33",
+  "raw_sha256": "9da04922b9e424d089320210cc2420d6249326598809f60690cd12249039bc71",
   "raw_bytes": 993212,
   "raw_rows": 13170,
   "accepted_unique": 5117,
@@ -131,7 +131,7 @@
   "rejection_audit": {
     "name": "l0-rejections.csv",
     "rows": 8053,
-    "sha256": "9f6fa4f2f3a462a31c113fa8c0b9575acd687e99eb0c011951851e560f672eeb"
+    "sha256": "eeea878f5a8a63b0ef5b58cd46871744b6e8f1b0bb58664a5c3c93b61ff37770"
   },
   "producer_hashes": {
     "build_universe.py": "fee1055e9ce7f5cdb6df451342ad88cf2106942c96489c0b525a300716cb1d28",
@@ -162,10 +162,10 @@
     "eligibility_resolution_complete": false
   },
   "rejection_reason_counts": {
-    "abnormal_financial_status:D": 313,
+    "abnormal_financial_status:D": 314,
     "abnormal_financial_status:E": 11,
     "abnormal_financial_status:H": 4,
-    "acquisition_vehicle": 614,
+    "acquisition_vehicle": 613,
     "adr_warrant_right_or_unit": 2,
     "debt_note_or_bond": 205,
     "etf_not_in_approved_allowlist": 5595,

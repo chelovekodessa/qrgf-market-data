@@ -3336,7 +3336,7 @@ HKPD,"Cellyan Biotechnology Co., Ltd  - Class A Ordinary Shares",Q,S,D,unknown,i
 HL$B,Hecla Mining Company Preferred Stock,N,,,non_common_instrument,ineligible,False,N,N,,nasdaqtrader:N:HL$B,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,non_common_symbol_pattern
 HLAL,Wahed FTSE USA Shariah ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HLTH,Tema Healthcare AI ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
-HLXC,Helix Acquisition Corp. III - Class A Ordinary Shares,Q,G,N,spac,ineligible,False,N,N,,nasdaqtrader:Q:HLXC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,acquisition_vehicle
+HLXC,Helix Acquisition Corp. III - Class A Ordinary Shares,Q,G,D,unknown,ineligible,False,N,N,,nasdaqtrader:Q:HLXC,provisional_symbol_directory_id,,,,nasdaq_trader_all_us_listed,abnormal_financial_status:D
 HMAY,Corgi U.S. Equities 100% Structured Buffer ETF - May Series,Z,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HMOP,Hartford Municipal Opportunities ETF,P,,,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
 HMYY,GraniteShares YieldBoost HIMS ETF,Q,G,N,etf,ineligible,False,N,Y,,,approved_allowlist_identity,,,,nasdaq_trader_all_us_listed,etf_not_in_approved_allowlist
