@@ -1,0 +1,124 @@
+{
+  "architecture_version": "4.2.0",
+  "eligible_universe_size": 5117,
+  "identity_map_sha256": "be0f24a1f13fa3abdb7a692624fd01831d0fddf064410971066d8d8b57f15f68",
+  "kind": "qrgf_v42_temporary_market_index_worker_report",
+  "known_market_cap_count": 0,
+  "known_market_sector_count": 0,
+  "market_index_file_sha256": "58196440892fd28b3f27736a46454d09cb3b252660be2178938e3fd5835f3e5a",
+  "market_index_sha256": "22c97718b954cc742a10c0a3b4f9d059fc94ae13aeb392e775d60905c804a442",
+  "market_session_id": "2026-08-21",
+  "master_eligible_count": 4980,
+  "page_count": 21,
+  "row_count": 5117,
+  "source_manifest_sha256": "229646ff4e3ae146941cfdb494f0b792e0d9f27639669630c3966f39fced75e9",
+  "source_snapshot_id": "0411fb8cde7740dcec10fdb5",
+  "validator_passed": true,
+  "verified_pages": [
+    {
+      "name": "page-0001.csv",
+      "rows": 250,
+      "sha256": "7b2faa95241713cdc9e03fe06066d547a763bea4fd0ea3a6f685a5ceb01d153a"
+    },
+    {
+      "name": "page-0002.csv",
+      "rows": 250,
+      "sha256": "410f8b60d74012a8245209c707fa0d530ac6032ee8b296cbe51cedf5f9784287"
+    },
+    {
+      "name": "page-0003.csv",
+      "rows": 250,
+      "sha256": "87a70ace2e3022b823ea9e7ba6e004a8b40fff3fc2ab377becedf540480be237"
+    },
+    {
+      "name": "page-0004.csv",
+      "rows": 250,
+      "sha256": "a48d7c9a07d44b8880ffba47cf9d07f1f22f049db549e98700278a940b0342da"
+    },
+    {
+      "name": "page-0005.csv",
+      "rows": 250,
+      "sha256": "96f96062c1f03f357e9a274baf2ac92fc7fa5bfbfc0d13fba365dce3f9c0d76a"
+    },
+    {
+      "name": "page-0006.csv",
+      "rows": 250,
+      "sha256": "4b7cc672e3d3ca37fae87e739d736e1818fa8693a8cc83c0dced97d6fa9bd3c2"
+    },
+    {
+      "name": "page-0007.csv",
+      "rows": 250,
+      "sha256": "a6c83a2c943386f56c793f9a4bdecfe8a184d037d21ced9474ea7a54218b3ff8"
+    },
+    {
+      "name": "page-0008.csv",
+      "rows": 250,
+      "sha256": "04846d3d32de436674f5cfa267cf2d8ba11058b71d341572b919d1ad68cdfb25"
+    },
+    {
+      "name": "page-0009.csv",
+      "rows": 250,
+      "sha256": "b7502e07a39ba2bfaca7336518e95a5babf0167ae4035d3349790960df1b973f"
+    },
+    {
+      "name": "page-0010.csv",
+      "rows": 250,
+      "sha256": "8b13d73931fcb7fad6795c0695964056fae627417b1e73db56121c6eeff1b3e9"
+    },
+    {
+      "name": "page-0011.csv",
+      "rows": 250,
+      "sha256": "3830e04e5adef9f42a630aa8f90111372ec95929289753c2e1c3e18b28a0e3d4"
+    },
+    {
+      "name": "page-0012.csv",
+      "rows": 250,
+      "sha256": "3554a3f774b65ee08504e8fe7892f1471b4206e90822cd8a15289123cc4ba2fc"
+    },
+    {
+      "name": "page-0013.csv",
+      "rows": 250,
+      "sha256": "bd11ec29ee6cc2300bc611cff21597ac25892f88a1fdb4cc359e7c27df37bdc4"
+    },
+    {
+      "name": "page-0014.csv",
+      "rows": 250,
+      "sha256": "a5eb033ec3c7b7917b8f8a06f6ce48f6e5dfdaf8188f3110c837975150c93b5b"
+    },
+    {
+      "name": "page-0015.csv",
+      "rows": 250,
+      "sha256": "b7618acc789fdf9b003f8805c1ab3598446b21b88fb65fdd3ec4ef2ef5a7e7e1"
+    },
+    {
+      "name": "page-0016.csv",
+      "rows": 250,
+      "sha256": "017f9e40b09c7e956429fd6e974a3bf23cee42628d0c51d4dcfe1c1712893111"
+    },
+    {
+      "name": "page-0017.csv",
+      "rows": 250,
+      "sha256": "97edce2a3b142ce18adb182154685202725bd0754c6025305441c9a40668bd2c"
+    },
+    {
+      "name": "page-0018.csv",
+      "rows": 250,
+      "sha256": "5cf25013d88943e40764bf199dbd8e13a13864138e43a3cd67aac8887d5d174c"
+    },
+    {
+      "name": "page-0019.csv",
+      "rows": 250,
+      "sha256": "84ece663b58b1ff61668388004e54b9f8a863538b0304eae30a3d05c66cc887d"
+    },
+    {
+      "name": "page-0020.csv",
+      "rows": 250,
+      "sha256": "01b96257165109d7759efafdbf75ff025c8795dfd5cd098c80b996e820b0cfad"
+    },
+    {
+      "name": "page-0021.csv",
+      "rows": 117,
+      "sha256": "3521fde6b636cb9d7262001154f732f734d106c0f4f1d46cc3f9775ca2d3a809"
+    }
+  ]
+}
