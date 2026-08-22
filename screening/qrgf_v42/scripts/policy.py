@@ -17,7 +17,7 @@ def validate() -> dict[str, Any]:
     ensure(p.get("schema_version") == "2.0.0", "V4.2 policy schema mismatch")
     arch = p.get("architecture") or {}
     ensure(arch.get("version") == "4.2.0", "V4.2 architecture version mismatch")
-    ensure(arch.get("release_version") == "4.2.2", "V4.2.2 release version mismatch")
+    ensure(arch.get("release_version") == "4.2.3", "V4.2.3 release version mismatch")
     ensure(arch.get("mode") == "core500_quality_registry_plus_full_market_challengers", "V4.2 architecture mode mismatch")
     for key in (
         "legacy_production_paths_forbidden",
@@ -61,17 +61,20 @@ def validate() -> dict[str, Any]:
     ):
         ensure(bootstrap.get(key) is True, f"V4.2 bootstrap invariant changed: {key}")
     ensure(bootstrap["candidate_source"] == "verified_radar_membership_plus_official_identity_plus_metricduck_classification_and_quality_plan_plus_approved_etf_catalog", "V4.2 candidate source changed")
-    ensure(bootstrap["selection_model_version"] == "4.2.2-bootstrap-provenance-v3", "V4.2 bootstrap model changed")
+    ensure(bootstrap["selection_model_version"] == "4.2.3-bootstrap-provenance-v4", "V4.2 bootstrap model changed")
     ensure(set(bootstrap["lane_score_weights"]) == {"established_quality", "recognized_growth", "cyclical", "bank", "etf"}, "V4.2 bootstrap lane set changed")
     plan = bootstrap["metricduck_query_plan"]
-    ensure(plan["connector_tool"] == "screen_companies" and plan["connector_contract_version"] == "2026-08-20", "MetricDuck connector contract version changed")
+    ensure(plan["connector_tool"] == "screen_companies" and plan["connector_contract_version"] == "2026-08-22", "MetricDuck connector contract version changed")
     ensure(plan["connector_max_rows_per_query"] == 50 and plan["partition_dimension"] == "market_cap" and plan["connector_sort_by"] == "market_cap", "MetricDuck query-plan transport contract changed")
     ensure(plan["saturated_leaf_forbidden"] is True and plan["connector_trust_class"] == "connector_attested" and plan["external_cryptographic_signature_available"] is False, "MetricDuck query-plan trust contract changed")
     ensure(plan["legacy_internal_field_filters_forbidden"] is True and plan["unsupported_metrics_must_remain_unknown"] is True, "MetricDuck unsupported-field boundary weakened")
     ensure(plan["classification_catalog_required"] is True and plan["classification_catalog_scope"] == "global_sectorless_market_cap_partitioned", "MetricDuck classification catalog contract changed")
     ensure(plan["radar_sector_routing_forbidden"] is True and plan["global_sectorless_screen_supported"] is True, "Radar classification dependency reintroduced")
     ensure(plan["transport_limit_is_not_universe_cutoff"] is True and bootstrap["market_transport_limit_is_not_universe_cutoff"] is True, "MetricDuck transport limit became a universe cutoff")
-    ensure(set(plan["supported_sector_codes"]) == {"TECH","FIN","HEALTH","CONS_STAPLES","CONS_DISC","IND","ENERGY","UTIL","RE","MAT","COMM"}, "MetricDuck supported sector-code set changed")
+    ensure(set(plan["query_sector_codes"]) == {"TECH","FIN","HEALTH","CONS_STAPLES","CONS_DISC","IND","ENERGY","UTIL","RE","MAT","COMM"}, "MetricDuck query sector-code set changed")
+    ensure(plan.get("returned_sector_code_semantics") == "connector_attested_open_enum", "MetricDuck returned sector taxonomy must remain provider-attested and open")
+    ensure(plan.get("returned_sector_code_pattern") == "^[A-Z][A-Z0-9_]*$", "MetricDuck returned sector-code syntax contract changed")
+    ensure(plan.get("sector_filtered_query_requires_exact_returned_code") is True, "MetricDuck filtered sector/result equality contract weakened")
     ensure(bootstrap["radar_sector_industry_market_cap_optional"] is True and bootstrap["radar_cik_optional"] is True, "Radar optional-field contract changed")
     ensure(bootstrap["connector_classification_binding_required_for_operating_candidates"] is True and bootstrap["classification_must_not_be_model_guessed"] is True, "classification binding invariant weakened")
     ensure(set(plan["screen_lanes"]) == {"established_quality", "recognized_growth", "cyclical", "bank"}, "MetricDuck screen lane set changed")
