@@ -7,17 +7,17 @@
     "registry_entry_count": 0,
     "universe_rows": 5117
   },
-  "created_at": "2026-08-22T07:50:07Z",
+  "created_at": "2026-08-22T13:49:37Z",
   "kind": "qrgf_v3_system_snapshot",
   "market_session_id": "2026-08-21",
   "producer_release_sha256": "de0b649a784d47b8c992f565db7c73de2a6ca8c5a44d64e874bcb259a65a7ce7",
   "radar_manifest_path": "data/v3/latest/radar/manifest.json",
-  "radar_manifest_sha256": "524ffd60cad04460aab776ed3a405d09fbdbae4ea4cfadb883af01c9d8995620",
+  "radar_manifest_sha256": "cd995625f8388a53c04a756918391e5b8538f48b0d61917d439d90202bf20710",
   "registry_manifest_path": "data/v3/registry/latest.json",
   "registry_sha256": "1e4c87f63bdc752d113b60c87c1c5289d120726b27f3013076095807857ae8ed",
   "schema_version": "1.0.0",
-  "snapshot_content_sha256": "15f9d987cb707cffaf44b23de1b6a6eb1b226182969c962f24384318acf4520a",
-  "snapshot_id": "15f9d987cb707cffaf44b23d",
-  "source_commit_sha": "36432f53f2b73b564618eb10b362d7918a5cb216",
-  "system_snapshot_sha256": "6584797883cf43701bee94cbc22f0ffb72889c1ff34861f06faf6ea9cc75c5a1"
+  "snapshot_content_sha256": "80dbd3bf0923d8cccc9e00d783fc197a985cbbb92e404005b719ab16b92e4442",
+  "snapshot_id": "80dbd3bf0923d8cccc9e00d7",
+  "source_commit_sha": "2d9a2903e21e7531323f34fb5411905877be450d",
+  "system_snapshot_sha256": "1cae0668ca55361cc4e2cda980656dbffe5cbe903ce1996e0dc0e178d6fe901d"
 }
