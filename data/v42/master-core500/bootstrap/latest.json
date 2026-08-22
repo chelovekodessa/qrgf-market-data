@@ -1,13 +1,1 @@
-{
-  "architecture_version": "4.2.0",
-  "bootstrap_id": "2ec1ead3472ac14d717a32ae",
-  "checkpoint_path": "data/v42/master-core500/bootstrap/checkpoints/4d85ba21a164449631a6f24700ac588684ffa61cf1d8c1eb40af92da63475cff.json",
-  "checkpoint_sha256": "4d85ba21a164449631a6f24700ac588684ffa61cf1d8c1eb40af92da63475cff",
-  "kind": "qrgf_v42_master_bootstrap_pointer",
-  "market_session_id": "2026-08-21",
-  "ordinary_daily_broad_allowed": false,
-  "phase": "MARKET_INDEX",
-  "pointer_sha256": "3daa1edfb6bc535408313deb0bb03906eb3f67b1e8b555b8e16a370cdd5dbd83",
-  "published_at": "2026-08-22T07:31:10Z",
-  "schema_version": "1.0.0"
-}
+{"architecture_version":"4.2.0","bootstrap_id":"2ec1ead3472ac14d717a32ae","checkpoint_path":"data/v42/master-core500/bootstrap/checkpoints/5414be47adcf541edf5d25480dc8134fddb6c179099896af3be0acf1b3e0ebd4.json","checkpoint_sha256":"5414be47adcf541edf5d25480dc8134fddb6c179099896af3be0acf1b3e0ebd4","kind":"qrgf_v42_master_bootstrap_pointer","market_session_id":"2026-08-21","ordinary_daily_broad_allowed":false,"phase":"CLASSIFICATION","pointer_sha256":"a24d5c971877deb4288f2533afa7daa5587bcff8acb1ac4aba8163d84c5e6189","published_at":"2026-08-22T08:24:42Z","schema_version":"1.0.0"}
