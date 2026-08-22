@@ -1,0 +1,33 @@
+{
+  "architecture_version": "4.2.0",
+  "artifacts": {
+    "build_request": null,
+    "classification_plan": null,
+    "identity_map": {
+      "path": "data/v42/identity/maps/be0f24a1f13fa3abdb7a692624fd01831d0fddf064410971066d8d8b57f15f68.json",
+      "sha256": "be0f24a1f13fa3abdb7a692624fd01831d0fddf064410971066d8d8b57f15f68"
+    },
+    "market_index": {
+      "path": "data/v42/identity/market-indexes/22c97718b954cc742a10c0a3b4f9d059fc94ae13aeb392e775d60905c804a442.json",
+      "sha256": "22c97718b954cc742a10c0a3b4f9d059fc94ae13aeb392e775d60905c804a442"
+    },
+    "quality_plan": null
+  },
+  "bootstrap_id": "2ec1ead3472ac14d717a32ae",
+  "checkpoint_sha256": "4d85ba21a164449631a6f24700ac588684ffa61cf1d8c1eb40af92da63475cff",
+  "created_at": "2026-08-22T07:30:05Z",
+  "kind": "qrgf_v42_master_bootstrap_checkpoint",
+  "market_session_id": "2026-08-21",
+  "master_published": false,
+  "ordinary_daily_broad_allowed": false,
+  "parent_checkpoint_sha256": "b5ac102eb07abc18a6992c8719b0c3e17ca8a277834a18b86d919aace3277486",
+  "phase": "MARKET_INDEX",
+  "progress": {
+    "completed_query_sha256s": [],
+    "cursor": null,
+    "pending_query_specs": [],
+    "receipt_artifacts": []
+  },
+  "schema_version": "1.0.0",
+  "source_manifest_sha256": "229646ff4e3ae146941cfdb494f0b792e0d9f27639669630c3966f39fced75e9"
+}
