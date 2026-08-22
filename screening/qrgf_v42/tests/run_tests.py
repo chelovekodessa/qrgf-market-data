@@ -204,7 +204,7 @@ def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[d
             "avg_dollar_volume": 1_000_000_000,
         }
         rows.append(row)
-        connector_rows.append({**row, "connector_market_cap": connector_cap})
+        connector_rows.append({**row, "connector_market_cap": connector_cap, "connector_sector_code": ("TRANSPORT" if index == 2 else "OTHER" if index == 3 else "TECH")})
         identity_entries.append({
             "ticker": ticker,
             "contract_id": contract,
@@ -251,7 +251,7 @@ def provenance_fixture(count: int = 520, session: str = "2026-08-18") -> tuple[d
                 "limit": 50,
             }
             partition = [row for row in members if float(row["connector_market_cap"]) >= low and (high is None or float(row["connector_market_cap"]) < high)]
-            result_rows = [metricduck_fixture_row(member, cap=member["connector_market_cap"], sector_code="TECH") for member in partition]
+            result_rows = [metricduck_fixture_row(member, cap=member["connector_market_cap"], sector_code=str(member.get("connector_sector_code") or "TECH")) for member in partition]
             receipt = provenance.build_query_receipt(
                 spec,
                 result_rows=result_rows,
@@ -351,6 +351,21 @@ def main() -> int:
     classification_spec = provenance.normalize_query_spec({"purpose":provenance.QUERY_PURPOSE_CLASSIFICATION,"lane":None,"sector_code":None,"market_cap_min":0,"market_cap_max":None,"limit":50})
     classification_args = provenance.connector_query_args(classification_spec)
     record("Classification discovery is sectorless and independent of Radar", "sectors" not in classification_args and classification_args["filters"] == [{"metric_id":"market_cap","operator":"gte","value":0.0,"period_type":"ttm"}])
+    record("MetricDuck request-sector enum remains limited to connector query inputs", rejects(lambda: provenance._normal_query_sector_code("TRANSPORT"), "unsupported query sector"))
+    record("MetricDuck returned taxonomy is open and preserves observed provider codes", provenance._normal_result_sector_code("TRANSPORT") == "TRANSPORT" and provenance._normal_result_sector_code("OTHER") == "OTHER")
+    taxonomy_receipt = provenance.build_query_receipt(
+        classification_spec,
+        result_rows=[
+            metricduck_fixture_row({"ticker":"TXA","company":"Transport Example"}, cap=2_000_000_000, sector_code="TRANSPORT"),
+            metricduck_fixture_row({"ticker":"OTH","company":"Other Example"}, cap=3_000_000_000, sector_code="OTHER"),
+        ],
+        matched_count=2, retrieved_at=NOW_TEXT, response_handle="fixture://MetricDuck/classification/open-taxonomy",
+    )
+    record("Sectorless classification receipt accepts provider-only sector codes", provenance.validate_query_receipt(taxonomy_receipt)["returned_count"] == 2)
+    record("Sector-filtered query still rejects a mismatching returned sector", rejects(lambda: provenance.build_query_receipt(
+        bank_spec, result_rows=[metricduck_fixture_row({"ticker":"BADSEC","company":"Bad Sector"}, cap=2_000_000_000, sector_code="OTHER")],
+        matched_count=1, retrieved_at=NOW_TEXT, response_handle="fixture://MetricDuck/bank/mismatch"
+    ), "differs from connector query sector"))
     record("Producer release hashes are nonzero", connectors["master_core500_v42"]["expected_producer_release_sha256"] != "0" * 64 and connectors["market_view_v42"]["expected_producer_release_sha256"] != "0" * 64)
 
     # Structural scoring parity with the frozen analytical model.
@@ -411,7 +426,9 @@ def main() -> int:
     record("Native MetricDuck values derive only semantically exact canonical facts", abs(sample_native_row["facts"]["fcf_margin_pct"] - 0.20) < 1e-12 and abs(sample_native_row["facts"]["revenue_cagr_3y_pct"] - 0.15) < 1e-12)
     record("Candidate source is derived from market plus query plan", source["market_index_sha256"] == market_index["market_index_sha256"] and source["query_plan_sha256"] == query_plan["query_plan_sha256"])
     record("Candidate source contains at least 500 market-bound rows", source["quality_candidate_union_size"] >= 500 and all(row["market_membership_bound"] is True for row in source["candidates"]))
-    record("Operating candidates use connector-attested classification, never Radar classification", source["radar_classification_used"] is False and all(row["classification_bound"] is True and row["sector_code"] == "TECH" for row in source["candidates"] if row["security_type"] != "etf"))
+    record("Operating candidates use connector-attested classification, never Radar classification", source["radar_classification_used"] is False and all(row["classification_bound"] is True and provenance._normal_result_sector_code(row["sector_code"]) == row["sector_code"] for row in source["candidates"] if row["security_type"] != "etf"))
+    provider_codes = {str(row.get("sector_code") or "") for row in source["candidates"] if row["security_type"] != "etf"}
+    record("Provider-returned TRANSPORT and OTHER survive classification without remapping", {"TRANSPORT", "OTHER"}.issubset(provider_codes), sorted(provider_codes))
     record("MetricDuck transport limit 50 is not a market cutoff", source["quality_candidate_union_size"] > 50 and all(int(leaf["limit"]) <= 50 for leaf in query_plan["leaves"]) and len([leaf for leaf in query_plan["leaves"] if leaf["purpose"] == provenance.QUERY_PURPOSE_CLASSIFICATION]) > 1)
     record("Unsupported structural facts stay UNKNOWN", all("net_debt_to_ebitda" not in row["facts"] and "cet1_ratio_pct" not in row["facts"] for row in source["candidates"] if row["security_type"] != "etf"))
     record("MASTER CORE500 is exactly 500", len(master["scopes"]) == 500 and master["selected_scope_count"] == 500)

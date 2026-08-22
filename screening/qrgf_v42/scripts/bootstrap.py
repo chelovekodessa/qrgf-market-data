@@ -165,7 +165,7 @@ def _lane_allowed(lane: str, row: Mapping[str, Any]) -> bool:
         return sec == "etf" and list(row.get("quality_candidate_lanes") or []) == ["etf"]
     if sec == "etf":
         return False
-    # V4.2.2 lane eligibility comes only from complete connector receipts.
+    # V4.2.3 lane eligibility comes only from complete connector receipts.
     # Neither Radar sector nor a model guess may create a lane.
     discovered = {str(x) for x in row.get("quality_candidate_lanes") or []}
     return lane in discovered
@@ -608,8 +608,12 @@ def validate_candidate_source(value: Mapping[str, Any]) -> dict[str, Any]:
         else:
             if not receipts or not queries or not result_rows or row.get("classification_bound") is not True:
                 raise ValueError("MASTER candidate has incomplete MetricDuck quality/classification binding")
-            if str(row.get("sector_code") or "") not in provenance._supported_sector_codes():
-                raise ValueError("MASTER candidate has unsupported connector sector code")
+            try:
+                normalized_sector = provenance._normal_result_sector_code(row.get("sector_code"), optional=False)
+            except Exception as exc:
+                raise ValueError("MASTER candidate has invalid connector sector code") from exc
+            if str(row.get("sector_code") or "") != normalized_sector:
+                raise ValueError("MASTER candidate connector sector code is not normalized")
             if number(row.get("connector_market_cap")) is None:
                 raise ValueError("MASTER candidate lacks connector-derived market cap")
             for field in ("classification_binding_sha256", "classification_receipt_sha256", "classification_query_sha256", "classification_result_row_sha256"):

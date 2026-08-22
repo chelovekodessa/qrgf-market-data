@@ -13,7 +13,7 @@
     "official_issuer_identity_required_for_master": true,
     "publisher_recomputes_master_from_evidence": true,
     "registry_is_cache_not_universe_gate": true,
-    "release_version": "4.2.2",
+    "release_version": "4.2.3",
     "remote_release_must_match_pinned_hash": true,
     "unknown_never_becomes_fail_by_missingness": true,
     "v41_is_historical_read_only": true,
@@ -131,7 +131,7 @@
           "transform": "identity_decimal"
         }
       },
-      "connector_contract_version": "2026-08-20",
+      "connector_contract_version": "2026-08-22",
       "connector_max_rows_per_query": 50,
       "connector_sort_by": "market_cap",
       "connector_tool": "screen_companies",
@@ -213,7 +213,9 @@
       "classification_catalog_scope": "global_sectorless_market_cap_partitioned",
       "classification_catalog_source": "MetricDuck.screen_companies",
       "radar_sector_routing_forbidden": true,
-      "supported_sector_codes": [
+      "global_sectorless_screen_supported": true,
+      "transport_limit_is_not_universe_cutoff": true,
+      "query_sector_codes": [
         "TECH",
         "FIN",
         "HEALTH",
@@ -226,8 +228,9 @@
         "MAT",
         "COMM"
       ],
-      "global_sectorless_screen_supported": true,
-      "transport_limit_is_not_universe_cutoff": true
+      "returned_sector_code_semantics": "connector_attested_open_enum",
+      "returned_sector_code_pattern": "^[A-Z][A-Z0-9_]*$",
+      "sector_filtered_query_requires_exact_returned_code": true
     },
     "minimum_fact_coverage_pct": 40,
     "official_issuer_identity_required": true,
@@ -241,7 +244,7 @@
     ],
     "quality_score_not_final_until_deep_structural_research": true,
     "query_lane_membership_must_be_computed_from_receipts": true,
-    "selection_model_version": "4.2.2-bootstrap-provenance-v3",
+    "selection_model_version": "4.2.3-bootstrap-provenance-v4",
     "selector_certificate_must_bind_cohort": true,
     "selector_certificate_required": true,
     "wave_size": 4,

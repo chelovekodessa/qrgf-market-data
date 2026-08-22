@@ -380,15 +380,37 @@ QUERY_PURPOSE_QUALITY = "quality_discovery"
 _ALLOWED_QUERY_PURPOSES = frozenset({QUERY_PURPOSE_CLASSIFICATION, QUERY_PURPOSE_QUALITY})
 
 
-def _supported_sector_codes() -> set[str]:
-    return {str(item).upper() for item in load_policy()["bootstrap"]["metricduck_query_plan"]["supported_sector_codes"]}
+def _query_sector_codes() -> set[str]:
+    """Sector codes accepted as *request filters* by screen_companies.
+
+    This is intentionally not used as an enum for connector-returned rows.
+    MetricDuck sectorless screens can return additional provider taxonomy codes
+    such as TRANSPORT or OTHER; those values are evidence, not query arguments.
+    """
+    return {str(item).upper() for item in load_policy()["bootstrap"]["metricduck_query_plan"]["query_sector_codes"]}
 
 
-def _normal_sector_code(value: Any, *, optional: bool = False) -> str | None:
+def _normal_query_sector_code(value: Any, *, optional: bool = False) -> str | None:
     text = str(value or "").strip().upper()
     if not text and optional:
         return None
-    ensure(text in _supported_sector_codes(), f"MetricDuck returned or requested an unsupported sector code: {value}")
+    ensure(text in _query_sector_codes(), f"MetricDuck requested an unsupported query sector code: {value}")
+    return text
+
+
+def _normal_result_sector_code(value: Any, *, optional: bool = False) -> str | None:
+    """Normalize connector-attested returned taxonomy without reclassifying it.
+
+    Returned sector values are an open provider taxonomy.  Validate only their
+    syntax, preserve the exact normalized token, and never force them through
+    the smaller request-filter enum.
+    """
+    text = str(value or "").strip().upper()
+    if not text and optional:
+        return None
+    ensure(bool(text), "MetricDuck result sector code missing")
+    pattern = str(load_policy()["bootstrap"]["metricduck_query_plan"]["returned_sector_code_pattern"])
+    ensure(re.fullmatch(pattern, text) is not None, f"MetricDuck returned malformed sector code: {value}")
     return text
 
 
@@ -424,18 +446,18 @@ def _connector_filters_for(purpose: str, lane: str | None, sector_code: str | No
 
 
 def normalize_query_spec(value: Mapping[str, Any]) -> dict[str, Any]:
-    """Normalize a V4.2.2 MetricDuck leaf without consulting Radar classification.
+    """Normalize a V4.2.3 MetricDuck leaf without consulting Radar classification.
 
     Classification is a global connector discovery pass.  Established-quality
     and recognized-growth are global quality passes.  Only bank/cyclical lanes
     use connector-native sector codes explicitly declared by policy.
     """
-    ensure("sector" not in value, "Radar/human sector routing is forbidden in V4.2.2 MetricDuck plans")
+    ensure("sector" not in value, "Radar/human sector routing is forbidden in V4.2.3 MetricDuck plans")
     purpose = str(value.get("purpose") or "").strip()
     ensure(purpose in _ALLOWED_QUERY_PURPOSES, "MetricDuck query purpose invalid")
     lane_raw = str(value.get("lane") or "").strip()
     lane = lane_raw or None
-    sector_code = _normal_sector_code(value.get("sector_code"), optional=True)
+    sector_code = _normal_query_sector_code(value.get("sector_code"), optional=True)
     low = number(value.get("market_cap_min"))
     high = number(value.get("market_cap_max"))
     limit = int(value.get("limit") or 0)
@@ -565,7 +587,7 @@ def build_query_receipt(query_spec_value: Mapping[str, Any], *, result_rows: Ite
         ensure(not bad, f"MetricDuck result contains current-market/recovery fields: {sorted(bad)}")
         ticker = str(raw.get("ticker") or "").strip().upper()
         ensure(ticker, "MetricDuck result ticker missing")
-        raw_sector_code = _normal_sector_code(raw.get("sector_code"), optional=False)
+        raw_sector_code = _normal_result_sector_code(raw.get("sector_code"), optional=False)
         if spec["sector_code"] is not None:
             ensure(raw_sector_code == spec["sector_code"], "MetricDuck result sector differs from connector query sector")
         ensure(_passes_connector_filters(raw, spec["connector_filters"]), "MetricDuck result row does not satisfy its native connector query filters")
@@ -632,7 +654,7 @@ def validate_query_receipt(value: Mapping[str, Any]) -> dict[str, Any]:
         row = _self_hash(raw, "result_row_sha256", "MetricDuck result row")
         ensure(str(row.get("ticker") or ""), "MetricDuck receipt row ticker missing")
         ensure(not _forbidden_paths(row), "MetricDuck receipt row contains market/recovery data")
-        code = _normal_sector_code(row.get("sector_code"), optional=False)
+        code = _normal_result_sector_code(row.get("sector_code"), optional=False)
         if spec["sector_code"] is not None:
             ensure(code == spec["sector_code"], "MetricDuck receipt row sector mismatch")
         ensure(_passes_connector_filters(row, spec["connector_filters"]), "MetricDuck receipt row does not satisfy native connector filters")
