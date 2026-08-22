@@ -1,0 +1,13 @@
+{
+  "architecture_version": "4.2.0",
+  "bootstrap_id": "2ec1ead3472ac14d717a32ae",
+  "checkpoint_path": "data/v42/master-core500/bootstrap/checkpoints/b5ac102eb07abc18a6992c8719b0c3e17ca8a277834a18b86d919aace3277486.json",
+  "checkpoint_sha256": "b5ac102eb07abc18a6992c8719b0c3e17ca8a277834a18b86d919aace3277486",
+  "kind": "qrgf_v42_master_bootstrap_pointer",
+  "market_session_id": "2026-08-21",
+  "ordinary_daily_broad_allowed": false,
+  "phase": "IDENTITY",
+  "pointer_sha256": "044e70bc734cbe72e72a9e7cd887df8cf0de292b671d68989bc53e7010804429",
+  "published_at": "2026-08-22T06:51:19Z",
+  "schema_version": "1.0.0"
+}
