@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "created_at": "2026-08-22T13:49:37Z",
+  "created_at": "2026-08-22T19:13:25Z",
   "issuer_identity": {
     "cik_mapped_rows": 0,
     "etf_identity_is_security_specific": true,
@@ -10,11 +10,11 @@
   "kind": "qrgf_market_radar",
   "l1_lineage": {
     "history_end": "2026-08-21",
-    "manifest_sha256": "585391b72df9062087a28f362037b6441016606096e72cbed2b36b2ad1b0dfd1",
+    "manifest_sha256": "44d34bc88aa893f7139021526bd42224941af77c0322b08349025c907c469b6b",
     "rows": 5117,
     "source_id": "alpaca_sip_daily_free_l1"
   },
-  "manifest_semantic_sha256": "cd995625f8388a53c04a756918391e5b8538f48b0d61917d439d90202bf20710",
+  "manifest_semantic_sha256": "94e0e79878edc2644e5d434356c4dc33cbcb24973f9ff2fdf9cba64d8b9572d0",
   "market_session_id": "2026-08-21",
   "page_size": 250,
   "pages": [
@@ -157,6 +157,6 @@
       "pullback_geometry": 25
     }
   },
-  "snapshot_content_sha256": "80dbd3bf0923d8cccc9e00d783fc197a985cbbb92e404005b719ab16b92e4442",
-  "snapshot_id": "80dbd3bf0923d8cccc9e00d7"
+  "snapshot_content_sha256": "6db97f5e7498b829f63a3be97939e2f6b321f7f52cc9991dbe1bd6af8ded4862",
+  "snapshot_id": "6db97f5e7498b829f63a3be9"
 }
