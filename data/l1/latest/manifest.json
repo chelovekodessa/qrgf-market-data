@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "complete": true,
   "source_id": "alpaca_sip_daily_free_l1",
-  "retrieved_at": "2026-08-21T19:33:58Z",
-  "history_start": "2025-07-16",
-  "history_end": "2026-08-20",
+  "retrieved_at": "2026-08-22T03:11:13Z",
+  "history_start": "2025-07-17",
+  "history_end": "2026-08-21",
   "history_feed": "sip",
   "history_adjustment": "split",
   "history_timeframe": "1Day",
   "l0_lineage": {
-    "manifest_sha256": "b02feda908099b03400f6239cbf54c0f147ff9bdb9562812ac3e965cdf572c1d",
+    "manifest_sha256": "a6341b883ba3c712d3c86b1fb241b58e6db51c91104d58a57a0a6ff1a5640aa8",
     "accepted_unique": 5117,
     "bundle_csv_sha256": "a652cd4c88451b01882627d0a199fca8b9daaecf03a378f251defa30ba54eb56",
-    "source_raw_sha256": "d07f7e4b3d979cd778bcd121d7100d13fd2fa7f959f6def00722f67249ec256b",
-    "retrieved_at": "2026-08-21T19:33:42Z"
+    "source_raw_sha256": "9da04922b9e424d089320210cc2420d6249326598809f60690cd12249039bc71",
+    "retrieved_at": "2026-08-22T03:10:58Z"
   },
   "rows": 5117,
   "page_size": 250,
@@ -22,118 +22,118 @@
     {
       "name": "page-0001.csv",
       "rows": 250,
-      "sha256": "26e472ce4d57ce811683f9beb4012781333ba2737b1310a74f6926bb9d6b1f5a"
+      "sha256": "ff94f7f4da6ebca9772a382815abcdcc6b87d76f27a351ef6a982f9b6191b0c0"
     },
     {
       "name": "page-0002.csv",
       "rows": 250,
-      "sha256": "c78e46f08700e25d468d60b5576c8642aee21d999873d367b2a7faacc868992f"
+      "sha256": "5a3d78e31a260c1efb61196760b9cf9804a3adaf9eee447d071d2b4cf55eb04a"
     },
     {
       "name": "page-0003.csv",
       "rows": 250,
-      "sha256": "42454c37389a0cbe847858f7aec17a50d14a312e05f4a5948a378873513f8583"
+      "sha256": "8bc9953982d4d22d43d29ca07d139071ccf65be4176b126bf513082d1dfe98f8"
     },
     {
       "name": "page-0004.csv",
       "rows": 250,
-      "sha256": "b00922f1c5cee43b6434ba3089e300a74c4737f7bfbdf0660e8a794542e9e32e"
+      "sha256": "d305c48a418cd35dd4413deb796f3b0b0ba4dbbd7d01a281cd2916d60991232b"
     },
     {
       "name": "page-0005.csv",
       "rows": 250,
-      "sha256": "5252b5de345a14c3debf63f0d10ba61bd27f49374a06e613e7a1f7697378d7ca"
+      "sha256": "fc2c8fb1ac8fde2c1e664ea5120dd29a9f47b2214aeecbf31ec7309ccef1e236"
     },
     {
       "name": "page-0006.csv",
       "rows": 250,
-      "sha256": "b24940880e9528d4cefdceda293b5114967a39b5bafc43dff8ae09d66da37de0"
+      "sha256": "032b0566fdcfb8017cbc2d9c8b0a764418cdf06a949190dbbcbf5fb7a5f79b78"
     },
     {
       "name": "page-0007.csv",
       "rows": 250,
-      "sha256": "f257228b87bc7002a27be5c6decca928e82a9f1ac6bbe4225f8bc1b5711867c9"
+      "sha256": "4b09bdc726b735c2e44f0e22689840294323a83d1bbae0d567c61e4479b6b1d5"
     },
     {
       "name": "page-0008.csv",
       "rows": 250,
-      "sha256": "b6b29d89a1fb35f3980ea9a29189fb757ddad1eda2bf9bb078c9477d29a83e99"
+      "sha256": "fba6a7757f702f6d76621acdfa8304c1d7e7becec9623ff51fc9dfdc77728474"
     },
     {
       "name": "page-0009.csv",
       "rows": 250,
-      "sha256": "6bdcef52caf2a6648bbbe3a524fc7bb9946bca04a979c86940287712df385f09"
+      "sha256": "7de0aa20720830aa9db68e16cc01804fcab986ad61bb6f636214ce602c5adfc0"
     },
     {
       "name": "page-0010.csv",
       "rows": 250,
-      "sha256": "d8f405d9a901013f1158cc0a18741ed813202b3b9fee667cc34110b1fa16f264"
+      "sha256": "49be0a363c3af19594c5c8878e1abce84e086f42274448aeeecc3742141835e2"
     },
     {
       "name": "page-0011.csv",
       "rows": 250,
-      "sha256": "2a91b049b1a34be908d8a3f42ca0afdb2677d606d1d746199a88abc7ef8563ef"
+      "sha256": "7da0f3ad7ec7532c4b3eab4f0383ecc4053c23f2f9f74e54d67993f41f7bc435"
     },
     {
       "name": "page-0012.csv",
       "rows": 250,
-      "sha256": "b127acb19e88a7068ba99975f15658212481d710729e71a13a163cbf4a714379"
+      "sha256": "006936a52285b3f4aab80f895e558a0e7ffb2b431f299ba2a973ad99e006c113"
     },
     {
       "name": "page-0013.csv",
       "rows": 250,
-      "sha256": "9e23ccb41f60ce09293ee1071ec09be06bcaa1d79178995370a05c5ab6a66e94"
+      "sha256": "72716205b8feeac0a261b3fe237e1692b843d350046d86f3ebc2892d7c8cdfc4"
     },
     {
       "name": "page-0014.csv",
       "rows": 250,
-      "sha256": "fb586ecf54355905769a22eae272fde7bd6d4f35d2bd119e6ef6f7948d63e297"
+      "sha256": "ec15768de6b3efdeb0ba9478adb074cd43242adab21913a3c4c7503cc8c55c0e"
     },
     {
       "name": "page-0015.csv",
       "rows": 250,
-      "sha256": "9f126b189ba9a71032f6839afa57ce9b2081523b3e2623727e34eb7d90165361"
+      "sha256": "6e488cb4663df475a22dae6e96a84b39804dc2df0b6244c6af3192935952dcb3"
     },
     {
       "name": "page-0016.csv",
       "rows": 250,
-      "sha256": "ee5b7120b18b98127990e63b3b1a521f28c7f1c82e1cc4d80b5a1cefee6e2f0d"
+      "sha256": "d7cd48a8ce61c9b9a9e20d4696d0789e905021444e171094b7a7fe20ae20b42b"
     },
     {
       "name": "page-0017.csv",
       "rows": 250,
-      "sha256": "4e4cf03988c8d4fc7b71aeb029dba94de7ea2fc4def5aa3eeb6d52c42a157f2a"
+      "sha256": "3048fac13c00d568328810dd374a02ab81176d73520e3b665d11eb8778853084"
     },
     {
       "name": "page-0018.csv",
       "rows": 250,
-      "sha256": "3a144a9d213a6958f72372ebdc85d5501f14cbbc29af46e70555b488b0be2722"
+      "sha256": "667af8ce9a192e6fd48cd5ba02d757aebbaaaa4fb129d371a6c9b9c594836b0d"
     },
     {
       "name": "page-0019.csv",
       "rows": 250,
-      "sha256": "570ff5a0e5dad904efb3ad99628730f594c1e6fcff1d9713be12f94e6bb201f0"
+      "sha256": "32366bdeb51a2b0a48151a4d9603dad91c1d514e223362a57f2f71e3ad224f55"
     },
     {
       "name": "page-0020.csv",
       "rows": 250,
-      "sha256": "8f12e5a6ce8717729135e7b0dcd6cc4883d493756ae4af2d0693b50c065f1d17"
+      "sha256": "799ced7dcde990d67fb377cfc082fe7748da62ce4824843d610ed1075f5d42a6"
     },
     {
       "name": "page-0021.csv",
       "rows": 117,
-      "sha256": "7abc6289663d605a0a018df9081e9aa4c1a0879bce1f74207610a02db8ee699e"
+      "sha256": "64b801d9b6497c42a746582d56e106d8b5eec61b55c9bd10e08d47b0ca0b3227"
     }
   ],
   "bundle": {
     "name": "l1-snapshot.csv.gz.b64",
     "encoding": "base64+gzip",
     "rows": 5117,
-    "sha256": "fe77e09005400609a165df74e73bcf3f108567b5125ea8f3bb741e3e7fc28744",
-    "gzip_sha256": "7b041fa4913406bcdaf51813c94444491c327e968cb9f335f487a61afcaf7c5e",
-    "csv_sha256": "9a5232a1dd9040ca926550890fa8d32d199b605c7ce0e46380d23e81daab4fa9",
-    "bytes": 633719,
-    "line_count": 8231
+    "sha256": "60ece5ecf3f9fc5ce13da85f7d5b06608212a6d90af23aa9fba0e6fa50ec4bef",
+    "gzip_sha256": "9cf021fe4094f4012a6900100db5e8f4ad9263571610fc47d41c104a4682eb50",
+    "csv_sha256": "36f1715d99b5cc02802b7af9e6ad1918b3d6433ce01c417a481c86bf813f0b7a",
+    "bytes": 632564,
+    "line_count": 8216
   },
   "producer_hashes": {
     "build_l1_snapshot.py": "69d6169bde330c446f0aa6ddde3985882f5a297c86182d243d7425393e7770f9",
@@ -149,8 +149,8 @@
     "feed": "sip",
     "adjustment": "split",
     "timeframe": "1Day",
-    "request_start": "2025-07-16T00:00:00Z",
-    "request_end": "2026-08-20T23:59:59Z",
+    "request_start": "2025-07-17T00:00:00Z",
+    "request_end": "2026-08-21T23:59:59Z",
     "rate_limit": "200",
     "rate_limit_remaining": "199",
     "errors": [],
@@ -161,8 +161,8 @@
       "requests": 7,
       "errors": []
     },
-    "effective_history_start": "2025-07-16",
-    "effective_history_end": "2026-08-20"
+    "effective_history_start": "2025-07-17",
+    "effective_history_end": "2026-08-21"
   },
   "nasdaq_reference": {
     "provider": "deferred",
@@ -10041,11 +10041,11 @@
     ],
     "alpaca_provider_errors": []
   },
-  "requested_history_start": "2025-07-16",
-  "requested_history_end": "2026-08-20",
+  "requested_history_start": "2025-07-17",
+  "requested_history_end": "2026-08-21",
   "history_start_semantics": "requested_calendar_boundary",
   "history_end_semantics": "max_observed_market_session",
-  "observed_latest_market_session": "2026-08-20",
+  "observed_latest_market_session": "2026-08-21",
   "reference_provider": {
     "provider": "deferred",
     "mode": "free_bulk_reference_not_required_for_l1",
