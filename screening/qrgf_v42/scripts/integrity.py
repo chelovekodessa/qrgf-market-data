@@ -8,7 +8,7 @@ from typing import Any
 from common import ROOT, file_hash, semantic_hash, write_json
 
 MANIFEST=ROOT/"config"/"integrity-manifest.json"
-PACKAGE_VERSION="4.2.3"
+PACKAGE_VERSION="4.2.4"
 MANIFEST_SCHEMA_VERSION="2.0.0"
 RUNTIME_ROOT_FILES={"SKILL.md"}
 RUNTIME_PREFIXES=("config/","references/","schemas/","scripts/")

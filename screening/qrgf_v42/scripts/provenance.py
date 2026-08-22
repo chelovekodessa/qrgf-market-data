@@ -19,7 +19,7 @@ import re
 from collections import Counter, defaultdict
 from typing import Any, Iterable, Mapping
 
-from common import ensure, load_policy, number, semantic_hash
+from common import ensure, load_connectors, load_policy, number, semantic_hash
 import selection
 
 ARCHITECTURE_VERSION = "4.2.0"
@@ -521,38 +521,6 @@ def connector_query_args(query_spec_value: Mapping[str, Any]) -> dict[str, Any]:
     return args
 
 
-def _filter_actual(raw: Mapping[str, Any], rule: Mapping[str, Any]) -> float | None:
-    metric_id = str(rule.get("metric_id") or "")
-    if metric_id == "market_cap":
-        return number(raw.get("connector_market_cap"))
-    metrics = raw.get("connector_metrics") if isinstance(raw.get("connector_metrics"), Mapping) else {}
-    return number(metrics.get(_metric_key(metric_id, rule.get("period_type"))))
-
-
-def _passes_connector_filters(raw: Mapping[str, Any], filters: Iterable[Mapping[str, Any]]) -> bool:
-    for rule_raw in filters:
-        if not isinstance(rule_raw, Mapping):
-            return False
-        operator = str(rule_raw.get("operator") or "")
-        actual = _filter_actual(raw, rule_raw)
-        if operator in {"gte", "lte", "gt", "lt", "eq"}:
-            target = number(rule_raw.get("value"))
-            if actual is None or target is None:
-                return False
-            if operator == "gte" and actual < target: return False
-            if operator == "lte" and actual > target: return False
-            if operator == "gt" and actual <= target: return False
-            if operator == "lt" and actual >= target: return False
-            if operator == "eq" and actual != target: return False
-        elif operator == "between":
-            lo, hi = number(rule_raw.get("min_value")), number(rule_raw.get("max_value"))
-            if actual is None or lo is None or hi is None or actual < lo or actual > hi:
-                return False
-        else:
-            return False
-    return True
-
-
 def _canonical_facts_from_connector_metrics(raw: Mapping[str, Any]) -> tuple[dict[str, Any], dict[str, str]]:
     metrics = raw.get("connector_metrics") if isinstance(raw.get("connector_metrics"), Mapping) else {}
     facts: dict[str, Any] = {}
@@ -576,6 +544,24 @@ def _canonical_facts_from_connector_metrics(raw: Mapping[str, Any]) -> tuple[dic
     return facts, periods
 
 
+def _connector_contract_version() -> str:
+    policy_version = str(load_policy()["bootstrap"]["metricduck_query_plan"]["connector_contract_version"] or "")
+    connector_version = str(load_connectors()["primary_evidence"]["metricduck"]["cross_company_screen_contract_version"] or "")
+    ensure(policy_version and policy_version == connector_version, "MetricDuck policy/connector contract version mismatch")
+    return connector_version
+
+
+def _validate_response_handle(value: Any, query_sha256: str) -> str:
+    text = str(value or "").strip()
+    ensure(text, "MetricDuck receipt lacks connector response provenance")
+    prefix = "connector-attested://MetricDuck.screen_companies/"
+    ensure(text.startswith(prefix), "MetricDuck response handle is not screen_companies connector-attested provenance")
+    tail = text[len(prefix):]
+    bound = tail.split("/", 1)[0]
+    ensure(bound == query_sha256, "MetricDuck response handle query binding mismatch")
+    return text
+
+
 def build_query_receipt(query_spec_value: Mapping[str, Any], *, result_rows: Iterable[Mapping[str, Any]],
                         matched_count: int, retrieved_at: str,
                         response_handle: str | None = None) -> dict[str, Any]:
@@ -590,7 +576,6 @@ def build_query_receipt(query_spec_value: Mapping[str, Any], *, result_rows: Ite
         raw_sector_code = _normal_result_sector_code(raw.get("sector_code"), optional=False)
         if spec["sector_code"] is not None:
             ensure(raw_sector_code == spec["sector_code"], "MetricDuck result sector differs from connector query sector")
-        ensure(_passes_connector_filters(raw, spec["connector_filters"]), "MetricDuck result row does not satisfy its native connector query filters")
         facts, periods = _canonical_facts_from_connector_metrics(raw)
         connector_metrics = dict(raw.get("connector_metrics") or {}) if isinstance(raw.get("connector_metrics"), Mapping) else {}
         body = {
@@ -615,7 +600,7 @@ def build_query_receipt(query_spec_value: Mapping[str, Any], *, result_rows: Ite
         "architecture_version": ARCHITECTURE_VERSION,
         "connector_name": "MetricDuck",
         "connector_tool": "screen_companies",
-        "connector_contract_version": load_policy()["bootstrap"]["metricduck_query_plan"]["connector_contract_version"],
+        "connector_contract_version": _connector_contract_version(),
         "trust_class": CONNECTOR_TRUST_CLASS,
         "external_cryptographic_signature_available": False,
         "query_spec": spec,
@@ -626,7 +611,7 @@ def build_query_receipt(query_spec_value: Mapping[str, Any], *, result_rows: Ite
         "complete": complete,
         "requires_split": not complete,
         "retrieved_at": str(retrieved_at),
-        "response_handle": str(response_handle or "") or None,
+        "response_handle": _validate_response_handle(response_handle, spec["query_sha256"]),
         "rows": rows,
     }
     value = {**body, "receipt_sha256": semantic_hash(body)}
@@ -639,11 +624,12 @@ def validate_query_receipt(value: Mapping[str, Any]) -> dict[str, Any]:
     ensure(result.get("schema_version") == "2.0.0" and result.get("kind") == QUERY_RECEIPT_KIND, "invalid V4.2 MetricDuck query receipt")
     ensure(result.get("architecture_version") == ARCHITECTURE_VERSION, "MetricDuck receipt architecture mismatch")
     ensure(result.get("connector_name") == "MetricDuck" and result.get("connector_tool") == "screen_companies", "MetricDuck receipt connector mismatch")
-    expected_contract = load_policy()["bootstrap"]["metricduck_query_plan"]["connector_contract_version"]
+    expected_contract = _connector_contract_version()
     ensure(result.get("connector_contract_version") == expected_contract, "MetricDuck receipt connector contract version mismatch")
     ensure(result.get("trust_class") == CONNECTOR_TRUST_CLASS and result.get("external_cryptographic_signature_available") is False, "MetricDuck receipt trust boundary mismatch")
-    ensure(str(result.get("retrieved_at") or "") and str(result.get("response_handle") or ""), "MetricDuck receipt lacks connector response provenance")
+    ensure(str(result.get("retrieved_at") or ""), "MetricDuck receipt lacks retrieval time")
     spec = normalize_query_spec(result.get("query_spec") or {})
+    _validate_response_handle(result.get("response_handle"), spec["query_sha256"])
     ensure(result.get("connector_query_args") == connector_query_args(spec), "MetricDuck receipt connector query arguments mismatch")
     ensure(result.get("query_sha256") == spec["query_sha256"], "MetricDuck receipt query hash mismatch")
     rows = result.get("rows")
@@ -657,7 +643,6 @@ def validate_query_receipt(value: Mapping[str, Any]) -> dict[str, Any]:
         code = _normal_result_sector_code(row.get("sector_code"), optional=False)
         if spec["sector_code"] is not None:
             ensure(code == spec["sector_code"], "MetricDuck receipt row sector mismatch")
-        ensure(_passes_connector_filters(row, spec["connector_filters"]), "MetricDuck receipt row does not satisfy native connector filters")
         facts, periods = _canonical_facts_from_connector_metrics(row)
         ensure(dict(row.get("facts") or {}) == facts and dict(row.get("periods") or {}) == periods, "MetricDuck canonical fact derivation mismatch")
         row_hash = str(row["result_row_sha256"])

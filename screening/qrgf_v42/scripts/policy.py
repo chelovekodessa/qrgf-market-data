@@ -17,7 +17,7 @@ def validate() -> dict[str, Any]:
     ensure(p.get("schema_version") == "2.0.0", "V4.2 policy schema mismatch")
     arch = p.get("architecture") or {}
     ensure(arch.get("version") == "4.2.0", "V4.2 architecture version mismatch")
-    ensure(arch.get("release_version") == "4.2.3", "V4.2.3 release version mismatch")
+    ensure(arch.get("release_version") == "4.2.4", "V4.2.4 release version mismatch")
     ensure(arch.get("mode") == "core500_quality_registry_plus_full_market_challengers", "V4.2 architecture mode mismatch")
     for key in (
         "legacy_production_paths_forbidden",
@@ -64,7 +64,7 @@ def validate() -> dict[str, Any]:
     ensure(bootstrap["selection_model_version"] == "4.2.3-bootstrap-provenance-v4", "V4.2 bootstrap model changed")
     ensure(set(bootstrap["lane_score_weights"]) == {"established_quality", "recognized_growth", "cyclical", "bank", "etf"}, "V4.2 bootstrap lane set changed")
     plan = bootstrap["metricduck_query_plan"]
-    ensure(plan["connector_tool"] == "screen_companies" and plan["connector_contract_version"] == "2026-08-22", "MetricDuck connector contract version changed")
+    ensure(plan["connector_tool"] == "screen_companies" and plan["connector_contract_version"] == "2026-08-20", "MetricDuck connector contract version changed")
     ensure(plan["connector_max_rows_per_query"] == 50 and plan["partition_dimension"] == "market_cap" and plan["connector_sort_by"] == "market_cap", "MetricDuck query-plan transport contract changed")
     ensure(plan["saturated_leaf_forbidden"] is True and plan["connector_trust_class"] == "connector_attested" and plan["external_cryptographic_signature_available"] is False, "MetricDuck query-plan trust contract changed")
     ensure(plan["legacy_internal_field_filters_forbidden"] is True and plan["unsupported_metrics_must_remain_unknown"] is True, "MetricDuck unsupported-field boundary weakened")
@@ -75,6 +75,9 @@ def validate() -> dict[str, Any]:
     ensure(plan.get("returned_sector_code_semantics") == "connector_attested_open_enum", "MetricDuck returned sector taxonomy must remain provider-attested and open")
     ensure(plan.get("returned_sector_code_pattern") == "^[A-Z][A-Z0-9_]*$", "MetricDuck returned sector-code syntax contract changed")
     ensure(plan.get("sector_filtered_query_requires_exact_returned_code") is True, "MetricDuck filtered sector/result equality contract weakened")
+    ensure(plan.get("filter_membership_attestation") == "connector_query_response_membership", "MetricDuck filter membership must come from connector query-response membership")
+    ensure(plan.get("projected_numeric_values_may_be_display_rounded") is True and plan.get("projected_numeric_values_not_authoritative_for_strict_filter_replay") is True, "MetricDuck rounded projection boundary weakened")
+    ensure(plan.get("query_bound_response_handle_required") is True, "MetricDuck receipt response handle must stay query-bound")
     ensure(bootstrap["radar_sector_industry_market_cap_optional"] is True and bootstrap["radar_cik_optional"] is True, "Radar optional-field contract changed")
     ensure(bootstrap["connector_classification_binding_required_for_operating_candidates"] is True and bootstrap["classification_must_not_be_model_guessed"] is True, "classification binding invariant weakened")
     ensure(set(plan["screen_lanes"]) == {"established_quality", "recognized_growth", "cyclical", "bank"}, "MetricDuck screen lane set changed")
@@ -178,7 +181,11 @@ def validate() -> dict[str, Any]:
     ensure(registry_connector["producer_release_path"] == master["producer_release_path"] and registry_connector["expected_producer_release_sha256"] == master["expected_producer_release_sha256"], "shared state producer release binding mismatch")
     metricduck = c["primary_evidence"]["metricduck"]
     ensure(metricduck["cross_company_screen_trust_class"] == "connector_attested" and metricduck["external_cryptographic_signature_available"] is False, "MetricDuck trust class changed")
+    ensure(metricduck["cross_company_screen_contract_version"] == plan["connector_contract_version"], "MetricDuck policy/connector contract version mismatch")
     ensure(metricduck["complete_leaf_requires_matched_equals_returned"] is True and metricduck["connector_max_rows_per_query"] == 50, "MetricDuck complete-leaf contract changed")
+    ensure(metricduck.get("server_side_filter_membership_attested_by_response") is True, "MetricDuck server-side filter membership contract weakened")
+    ensure(metricduck.get("screen_projection_values_may_be_display_rounded") is True and metricduck.get("screen_projection_values_not_strict_filter_proof") is True, "MetricDuck projection precision contract weakened")
+    ensure(metricduck.get("query_bound_response_handle_required") is True, "MetricDuck query-bound response handle contract weakened")
     ensure(c["primary_evidence"]["github_direct_sec"]["production_required"] is False, "GitHub direct SEC unexpectedly required")
     ensure(set(p["final_decision"]["allowed_statuses"]) == {"open_now", "prepare_limit_order", "wait", "do_not_enter", "do_not_consider"}, "final decision statuses changed")
     return {
